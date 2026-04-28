@@ -1,0 +1,87 @@
+# Lumen — Cycle-aware productivity for ambitious women
+
+Lumen is a free planner that maps the menstrual cycle's four hormonal phases to the kinds of work each phase best supports. It is privacy-first (no accounts, no server storage, no tracking) and informed by peer-reviewed research, not pop-wellness claims.
+
+## What Lumen does
+
+You enter three things — last period start date, average cycle length, and period length. Lumen calculates which of the four phases you are currently in and recommends:
+
+- What to schedule today (matched to today's hormonal state)
+- What to avoid today
+- A week-ahead view by phase
+- A 10-task-type rating per phase (deep work, meetings, creative work, admin, learning, planning, presentations, hard conversations, detail work, networking)
+
+All calculation happens in the browser. Nothing leaves your device.
+
+## The four-phase model
+
+### Menstrual phase — Reflect (cycle days 1–5)
+Estrogen and progesterone at cycle minimum. Right-brain dominance shifts toward strategic, big-picture thinking. The body is in a low-energy reset state.
+
+**Best for**: retrospectives, journaling, quarterly planning, low-pressure thinking, reading.
+**Avoid**: high-pressure presentations, demanding negotiations, intense physical training, conflict-heavy conversations.
+
+### Follicular phase — Build (cycle days 6–13)
+Rising estrogen drives BDNF and neuroplasticity. Cognitive flexibility, optimism, and willingness to try new things are at their highest.
+
+**Best for**: learning new skills, starting projects, brainstorming, complex problem solving, long-term planning, networking outreach.
+**Avoid**: pure-administrative drudgery (you'll feel stir-crazy), rote repetitive tasks.
+
+### Ovulatory phase — Connect (cycle days 14–16)
+Estrogen at peak, slight testosterone bump, LH surge. Verbal fluency, social cognition, and emotional intelligence measurably peak.
+
+**Best for**: presentations, hard conversations, negotiations, sales calls, public speaking, interviews, large meetings.
+**Avoid**: solo deep work that requires hours of focus (you'll be more easily pulled into social mode).
+
+### Luteal phase — Finish (cycle days 17–28)
+Progesterone rises then drops; estrogen drops late. Detail orientation peaks early in luteal; fatigue and emotional reactivity rise late.
+
+**Early luteal best for**: editing, organizing, finishing projects, completing detail-heavy work, financial review.
+**Late luteal best for**: low-stakes admin, light maintenance work, batch tasks. Reduce social demands.
+**Avoid late luteal**: starting major new projects, big-impact decisions, hard conversations (reactivity is high).
+
+## How recommendations are derived
+
+Each of the ten task types in Lumen is rated 1–5 in each of the four phases, based on three signals from the research:
+
+1. **Cognitive support** — does the dominant hormone of this phase support or hinder this kind of mental work?
+2. **Energetic cost** — will the task drain reserves that are already low, or work with available energy?
+3. **Risk and reactivity** — is the task sensitive to mood-state shifts (e.g. emotional reactivity in late luteal)?
+
+Ratings are deliberately coarse (5-point scale, not decimals) because the underlying research operates on group-average effects. Individual variation is large.
+
+## What Lumen claims, and doesn't claim
+
+**Does claim**: Hormonal fluctuations across the cycle have measurable, replicated effects on certain cognitive and physical functions. Time-blocking around those fluctuations is one reasonable strategy.
+
+**Does not claim**: That cycle syncing is universally required, that ignoring it makes you less successful, that the model captures all variation, or that Lumen is medical advice. It is a productivity tool informed by science, not a clinical one.
+
+## Limitations
+
+- Cycle length and ovulation timing vary; Lumen uses the conventional 14-day luteal phase rule, which is an average, not a guarantee.
+- People on hormonal contraception, in perimenopause, with PCOS, thyroid conditions, or pregnancy will have different hormone patterns. Lumen does not currently model those variants.
+- Most cycle-cognition research is conducted on small samples in controlled settings; effect sizes in real-world output are smaller than headlines suggest.
+- Lumen is not validated against clinical outcomes. Use as one input into your scheduling, not the only one.
+
+## Privacy
+
+Lumen does not collect, store, or share any of your data:
+
+- No tracking cookies
+- No fingerprinting
+- No third-party data sharing
+- No accounts required
+- No email collected unless you explicitly opt in to a future newsletter (which doesn't exist yet)
+
+When you enter cycle details, they are saved to the browser's localStorage so the calculator remembers your phase between visits. This data lives on your device only. Clear it any time via "Edit cycle" or by clearing browser data.
+
+## Terms
+
+Lumen is a free educational tool, not medical advice. Nothing on Lumen is intended to diagnose, treat, cure, or prevent any condition. If you experience symptoms that worry you — irregular cycles, severe pain, mood changes that affect your daily life — consult a qualified medical professional.
+
+Lumen is provided as-is. We make no guarantee that the recommendations will work for your specific situation. Hormonal experience varies widely; cycle science is still evolving. Take what is useful, leave what is not.
+
+---
+
+For the full source list and methodology details, see the [methodology page](/methodology).
+For a machine-readable URL list, see the [sitemap](/sitemap.xml).

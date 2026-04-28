@@ -1,12 +1,49 @@
 import type { Metadata } from "next";
 import { PageLayout, Section } from "@/components/PageLayout";
 import { references } from "@/lib/references";
+import { ArticleJsonLd, BreadcrumbJsonLd, FaqJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "The science behind Lumen — methodology + research",
   description:
     "How Lumen turns peer-reviewed research on the menstrual cycle into actionable productivity recommendations. Our four-phase model, recommendation logic, and full source list.",
+  alternates: { canonical: "/methodology" },
+  openGraph: {
+    title: "The science behind Lumen — methodology + research",
+    description:
+      "How Lumen turns peer-reviewed research on the menstrual cycle into actionable productivity recommendations.",
+    url: "/methodology",
+    type: "article",
+  },
 };
+
+const methodologyFaqs = [
+  {
+    question: "How does cycle syncing improve productivity?",
+    answer:
+      "Estrogen, progesterone, FSH, and LH fluctuate predictably across the menstrual cycle, and those fluctuations measurably affect verbal fluency, neuroplasticity, mood, and energy. Aligning task type to phase — deep learning during follicular phase, presentations near ovulation, editing during early luteal, reflection during menstruation — works with biology rather than against it.",
+  },
+  {
+    question: "What are the four phases of the menstrual cycle?",
+    answer:
+      "Menstrual (Reflect): cycle days 1–5, hormones at minimum, best for retrospectives and planning. Follicular (Build): days 6–13, rising estrogen, best for learning and complex problem solving. Ovulatory (Connect): days 14–16, estrogen peak plus LH surge, best for presentations and hard conversations. Luteal (Finish): days 17–28, progesterone rises then drops, best for editing, organizing, and closing tasks.",
+  },
+  {
+    question: "Is cycle syncing scientifically supported?",
+    answer:
+      "Hormonal fluctuations have measurable, replicated effects on certain cognitive and physical functions. Effect sizes in real-world output are smaller than headlines suggest, and most research is on group averages rather than individuals. Lumen treats phase recommendations as a hypothesis to test against your own experience, not a prescription.",
+  },
+  {
+    question: "Does Lumen work if I'm on hormonal birth control?",
+    answer:
+      "Hormonal contraception suppresses natural cycle fluctuation, so Lumen's phase model does not apply directly. The same is true for perimenopause, PCOS, thyroid conditions, and pregnancy. Lumen does not currently model these variants.",
+  },
+  {
+    question: "Is Lumen medical advice?",
+    answer:
+      "No. Lumen is a productivity tool informed by science, not a clinical one. It is not validated against clinical outcomes and does not diagnose, treat, or prevent any condition. For health concerns, consult a qualified medical professional.",
+  },
+];
 
 export default function MethodologyPage() {
   return (
@@ -15,6 +52,20 @@ export default function MethodologyPage() {
       title="The science behind Lumen."
       intro="Lumen translates peer-reviewed research on hormones and cognition into a simple weekly planner. Here is how it works — and the studies it rests on."
     >
+      <ArticleJsonLd
+        headline="The science behind Lumen — methodology and research"
+        description="How Lumen turns peer-reviewed research on the menstrual cycle into actionable productivity recommendations."
+        path="/methodology"
+        datePublished="2026-04-01"
+        dateModified="2026-04-28"
+      />
+      <FaqJsonLd faqs={methodologyFaqs} />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Lumen", path: "/" },
+          { name: "Methodology", path: "/methodology" },
+        ]}
+      />
       <Section title="The premise">
         <p>
           Estrogen, progesterone, FSH, and LH fluctuate predictably across the

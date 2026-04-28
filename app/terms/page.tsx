@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
 import { PageLayout, Section } from "@/components/PageLayout";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Terms of use — Lumen",
+  title: "Terms of use",
   description:
     "Lumen is informational only and not medical advice. Use it as a productivity tool, not a clinical one.",
+  alternates: { canonical: "/terms" },
+  openGraph: {
+    title: "Terms of use — Lumen",
+    description:
+      "Lumen is informational only and not medical advice. Use it as a productivity tool, not a clinical one.",
+    url: "/terms",
+    type: "article",
+  },
 };
 
 export default function TermsPage() {
@@ -14,6 +23,12 @@ export default function TermsPage() {
       title="How to use Lumen."
       intro="Lumen is a free educational tool. By using it, you agree to the points below. Plain English, no walls of legal text."
     >
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Lumen", path: "/" },
+          { name: "Terms", path: "/terms" },
+        ]}
+      />
       <Section title="Quick summary">
         <p>
           Lumen helps you plan your work week around your hormonal cycle. It is{" "}

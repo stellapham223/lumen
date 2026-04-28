@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
 import { PageLayout, Section } from "@/components/PageLayout";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Privacy — Lumen",
+  title: "Privacy",
   description:
     "Lumen does not collect, store, or share any of your data. Your cycle information stays in your browser.",
+  alternates: { canonical: "/privacy" },
+  openGraph: {
+    title: "Privacy — Lumen",
+    description:
+      "Lumen does not collect, store, or share any of your data. Your cycle information stays in your browser.",
+    url: "/privacy",
+    type: "article",
+  },
 };
 
 export default function PrivacyPage() {
@@ -14,6 +23,12 @@ export default function PrivacyPage() {
       title="What we don't collect."
       intro="Lumen is built on a simple principle: your menstrual cycle data should never leave your device. Here's exactly how we handle it."
     >
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Lumen", path: "/" },
+          { name: "Privacy", path: "/privacy" },
+        ]}
+      />
       <Section title="The short version">
         <p>
           Lumen does not collect your cycle data. We do not store it on any

@@ -3,6 +3,9 @@ import { Newsreader, Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { Analytics } from "@/components/Analytics";
+import { OrganizationJsonLd, WebApplicationJsonLd } from "@/components/JsonLd";
+import { BASE_URL, SITE } from "@/lib/site";
 
 const newsreader = Newsreader({
   subsets: ["latin"],
@@ -20,15 +23,60 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Lumen — Cycle-aware productivity for ambitious women",
-  description:
-    "Schedule deep work, meetings, and creative time around your four hormonal phases. A free planner for women who want to work with their biology, not against it.",
+  metadataBase: new URL(BASE_URL),
+  title: {
+    default: `${SITE.name} — ${SITE.tagline}`,
+    template: `%s — ${SITE.name}`,
+  },
+  description: SITE.description,
+  applicationName: SITE.name,
+  keywords: [...SITE.keywords],
+  authors: [{ name: SITE.name }],
+  creator: SITE.name,
+  publisher: SITE.name,
   manifest: "/manifest.json",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: SITE.locale,
+    url: "/",
+    siteName: SITE.name,
+    title: `${SITE.name} — ${SITE.tagline}`,
+    description: SITE.description,
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: `${SITE.name} logo`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE.name} — ${SITE.tagline}`,
+    description: SITE.shortDescription,
+    images: ["/logo.png"],
+  },
   appleWebApp: {
-    title: "Lumen",
+    title: SITE.name,
     capable: true,
     statusBarStyle: "default",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  category: "health",
 };
 
 export const viewport: Viewport = {
@@ -50,11 +98,14 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
           rel="stylesheet"
         />
+        <OrganizationJsonLd />
+        <WebApplicationJsonLd />
       </head>
       <body className="min-h-full flex flex-col paper-texture">
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

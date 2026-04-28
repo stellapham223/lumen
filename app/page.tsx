@@ -10,6 +10,7 @@ import {
   type CycleInput as CycleInputType,
 } from "@/lib/cycle-calculator";
 import { saveCycleInput, loadCycleInput } from "@/lib/storage";
+import { track } from "@/lib/analytics";
 
 export default function Home() {
   const router = useRouter();
@@ -22,8 +23,12 @@ export default function Home() {
     setHydrated(true);
   }, []);
 
-  function handleSubmit(values: CycleInputType) {
+  function handleSubmit(values: CycleInputType, source: "form" | "demo" = "form") {
     saveCycleInput(values);
+    track(source === "demo" ? "demo_loaded" : "calculator_complete", {
+      cycle_length: values.cycleLength,
+      period_length: values.periodLength,
+    });
     router.push("/plan");
   }
 
@@ -66,7 +71,7 @@ export default function Home() {
       </section>
 
       <div className="animate-fade-up" style={{ animationDelay: "500ms" }}>
-        <DemoToggle onDemo={handleSubmit} />
+        <DemoToggle onDemo={(values) => handleSubmit(values, "demo")} />
       </div>
     </main>
   );

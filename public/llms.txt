@@ -1,0 +1,28 @@
+# Lumen
+
+> Lumen is a free, privacy-first cycle-aware productivity planner. It calculates your current menstrual cycle phase from your last period date and cycle length, then recommends which kinds of work — deep focus, presentations, learning, editing, reflection — are best aligned with each of the four hormonal phases (menstrual, follicular, ovulatory, luteal). All data lives in the user's browser; no accounts, no tracking, no server-side storage.
+
+The four-phase model:
+
+- **Menstrual (Reflect)** — cycle days 1–5, hormones at minimum, best for retrospectives and planning
+- **Follicular (Build)** — days 6–13, rising estrogen drives neuroplasticity, best for learning and complex problem solving
+- **Ovulatory (Connect)** — days 14–16, estrogen peak plus LH surge, verbal fluency peaks, best for presentations and hard conversations
+- **Luteal (Finish)** — days 17–28, progesterone rises then drops, detail orientation peaks early, best for editing and closing tasks
+
+Lumen is informational, not medical advice. It does not model hormonal contraception, perimenopause, PCOS, thyroid conditions, or pregnancy.
+
+## Core pages
+
+- [Lumen home](/): Free cycle phase calculator. Enter last period date, cycle length, period length → see current phase and weekly plan.
+- [Methodology](/methodology): The science behind Lumen. Explains the four-phase model, recommendation logic, peer-reviewed source list, and limitations.
+- [Privacy](/privacy): Lumen's privacy stance. No data collection, no tracking cookies, all cycle data stays in browser localStorage.
+- [Terms](/terms): Plain-English terms of use. Lumen is informational only and not medical advice.
+
+## Documentation
+
+- [llms-full.txt](/llms-full.txt): Full content of all main pages concatenated for LLM ingestion.
+- [Sitemap](/sitemap.xml): Machine-readable URL list.
+
+## Optional
+
+- [Open Graph image](/logo.png): Lumen logo and brand mark.
