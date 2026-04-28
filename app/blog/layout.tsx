@@ -1,0 +1,23 @@
+import Link from "next/link";
+
+export default function BlogLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <main className="mx-auto max-w-[720px] px-6 pt-12 pb-24 sm:px-8 sm:pt-16 sm:pb-32">
+      <nav className="mb-8 flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-[color:var(--color-on-surface-variant)]">
+        <Link
+          href="/"
+          className="text-[color:var(--color-primary)] hover:opacity-70"
+        >
+          Lumen
+        </Link>
+        <span className="opacity-50">/</span>
+        <span>Blog</span>
+      </nav>
+      <article className="animate-fade-up">{children}</article>
+    </main>
+  );
+}
