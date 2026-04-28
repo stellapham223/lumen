@@ -24,10 +24,42 @@ Free SEO-discoverable cycle productivity calculator. **Content business model**:
 
 ### Activities (6-8h/week)
 - Sprint 1 ✅ MVP shipped
+- **Sprint 1.5: Viability gate** (research-only, ~4h, before Sprint 2 — see detail below)
 - Sprint 2: localStorage persistence, SEO foundation (metadata, sitemap, schema), Plausible analytics
 - Sprint 3: 120 programmatic SEO pages + 10 cornerstone articles
 - Sprint 4: Domain + minimal brand identity (functional, science-aesthetic) + email capture (Buttondown $9/mo)
 - Sprint 5: Apply Ezoic (5k pageviews threshold), Reddit value-first launch, backlink outreach (10-20 quality links)
+
+### Sprint 1.5 detail — pre-investment viability gate
+
+Research-only, ~4h total. ALL of A+B+C must pass before Sprint 2 invests dev time. Cheapest possible kill point.
+
+**Test A — Search demand** (1h)
+Sum monthly search volume across 30 target keywords (Google Keyword Planner free / Ubersuggest free): "cycle syncing schedule", "luteal phase work", "follicular phase planning", "cycle productivity calculator", etc.
+- PASS: ≥30k/month total → Phase 1 exit threshold (10k pageviews) reachable
+- FAIL: <10k → kill, niche too narrow
+
+**Test B — Affiliate ecosystem** (2-3h)
+List femtech/wellness affiliate programs with commission ≥5%, cookie ≥30 days. Categories: wearables (Oura, Whoop), cycle tracking accessories, books/courses, supplements (only if comfortable promoting).
+- PASS: ≥5 programs identified
+- FAIL: <3 → ad-only ceiling ~$50-100/mo, reconsider 6h/week × 6 months commitment
+
+**Test C — Ad CPM ceiling math** (30min)
+Wellness niche CPM $3-8. Phase 1 exit threshold $100/mo = needs ~20k pageviews × $5 CPM. Validate math holds even at best case.
+- PASS: math justifies time investment vs alternative use of 6h/week
+- FAIL: ceiling doesn't justify → kill or pivot to higher-CPM niche
+
+Tests D-F run as natural by-products of Sprint 2-3:
+- D: Reddit value-first post → 50+ upvote signal niche is active
+- E: 5 SEO test pages → ≥1 in top 30 after 3 weeks (validates SEO viability before scaling to 120 programmatic pages)
+- F: Email capture rate ≥3% on first 100 visitors
+
+### Sprint 1.5 decision gate
+- A+B+C all PASS → Sprint 2 GO
+- A or C FAIL → kill or pivot niche (do NOT proceed to Sprint 2)
+- B FAIL only → proceed but flag ad-only ceiling, revisit at Sprint 5
+
+**Run 2026-04-28: A+B+C all PASS → Sprint 2 GO.** Full results in [docs/SPRINT_1_5_RESULTS.md](docs/SPRINT_1_5_RESULTS.md). Caveats logged: (1) verify top-30 keyword volumes in Google Keyword Planner before Sprint 3 (~30min); (2) apply to Flo + Natural Cycles + Oura affiliate programs early; (3) wellness-niche RPM may land at $5-7 (low end), so Phase 1 may need 15-20k pageviews not 10k for $100/mo — monitor and adjust.
 
 ### Always-on (across all sprints)
 - Affiliate links in articles (low-friction, embed disclosure)
@@ -162,6 +194,8 @@ Loose plan, depends on Phase 1-3 results:
 
 ## Next concrete action
 
-**Sprint 2 kickoff**: localStorage persistence + SEO foundation (metadata, sitemap, schema markup, Plausible setup).
+**Sprint 1.5 ✅ ran 2026-04-28** — A+B+C all PASS. See [docs/SPRINT_1_5_RESULTS.md](docs/SPRINT_1_5_RESULTS.md).
 
-Estimated 1-2 sessions, 6-8h work.
+**Sprint 2 kickoff**: localStorage persistence + SEO foundation (metadata, sitemap, schema markup, Plausible setup). Estimated 1-2 sessions, 6-8h work.
+
+**Pre-Sprint-3 task** (~30min): verify top-30 keyword volumes in Google Keyword Planner to lock in programmatic page targets.
