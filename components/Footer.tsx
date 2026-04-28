@@ -17,6 +17,12 @@ export function Footer() {
 
         <nav className="flex flex-wrap justify-center gap-6 text-[10px] font-semibold uppercase tracking-[0.2em] text-[color:var(--color-on-surface-variant)]">
           <Link
+            href="/blog"
+            className="transition-colors hover:text-[color:var(--color-primary)]"
+          >
+            Blog
+          </Link>
+          <Link
             href="/methodology"
             className="transition-colors hover:text-[color:var(--color-primary)]"
           >

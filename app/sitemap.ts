@@ -1,13 +1,5 @@
 import type { MetadataRoute } from "next";
-import { BASE_URL } from "@/lib/site";
-
-const BLOG_POSTS = [
-  "what-is-cycle-syncing",
-  "best-cycle-syncing-app",
-  "cycle-syncing-chart",
-  "how-to-start-cycle-syncing",
-  "is-cycle-syncing-legit",
-] as const;
+import { BASE_URL, BLOG_POSTS } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -19,14 +11,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: `${BASE_URL}/blog`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: `${BASE_URL}/methodology`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
     },
-    ...BLOG_POSTS.map((slug) => ({
-      url: `${BASE_URL}/blog/${slug}`,
-      lastModified: now,
+    ...BLOG_POSTS.map((post) => ({
+      url: `${BASE_URL}/blog/${post.slug}`,
+      lastModified: new Date(post.publishedAt),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),

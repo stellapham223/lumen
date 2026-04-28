@@ -15,9 +15,14 @@ export default function BlogLayout({
           Lumen
         </Link>
         <span className="opacity-50">/</span>
-        <span>Blog</span>
+        <Link
+          href="/blog"
+          className="text-[color:var(--color-primary)] hover:opacity-70"
+        >
+          Blog
+        </Link>
       </nav>
-      <article className="animate-fade-up">{children}</article>
+      <div className="animate-fade-up">{children}</div>
     </main>
   );
 }
