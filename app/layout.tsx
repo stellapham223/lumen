@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Newsreader, Inter } from "next/font/google";
 import "./globals.css";
 
@@ -21,6 +21,16 @@ export const metadata: Metadata = {
   title: "Lumen — Cycle-aware productivity for ambitious women",
   description:
     "Schedule deep work, meetings, and creative time around your four hormonal phases. A free planner for women who want to work with their biology, not against it.",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    title: "Lumen",
+    capable: true,
+    statusBarStyle: "default",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#420093",
 };
 
 export default function RootLayout({

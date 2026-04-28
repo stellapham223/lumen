@@ -1,0 +1,23 @@
+{
+  "name": "Lumen — Cycle-aware productivity",
+  "short_name": "Lumen",
+  "description": "Schedule deep work, meetings, and creative time around your hormonal cycle phases.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fcf9f8",
+  "theme_color": "#420093",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
