@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# ChatGPT-generated source images (raw exports kept locally, not committed)
+public/ChatGPT Image*.png
+public/hero-illustration-source.*
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

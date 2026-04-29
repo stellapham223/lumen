@@ -1,27 +1,45 @@
+import Image from "next/image";
 import { MaterialIcon } from "./MaterialIcon";
 
 export function Hero() {
   return (
     <>
-      <section className="mx-auto flex max-w-[720px] flex-col gap-6 text-center">
-        <span className="eyebrow text-[color:var(--color-primary)] tracking-[0.2em] animate-fade-up">
-          For ambitious women
-        </span>
-        <h1
-          className="font-display text-[44px] sm:text-[64px] md:text-[72px] leading-[1.05] tracking-[-0.02em] text-[color:var(--color-primary)] animate-fade-up"
-          style={{ animationDelay: "100ms" }}
+      <section className="grid grid-cols-1 md:grid-cols-12 md:items-center md:gap-10">
+        <div className="mx-auto flex max-w-[720px] flex-col gap-6 text-center md:col-span-7 md:mx-0 md:max-w-none md:text-left">
+          <span className="eyebrow animate-fade-up tracking-[0.2em] text-[color:var(--color-primary)]">
+            For ambitious women
+          </span>
+          <h1
+            className="animate-fade-up font-display text-[44px] leading-[1.05] tracking-[-0.02em] text-[color:var(--color-primary)] sm:text-[64px] md:text-[56px] lg:text-[64px]"
+            style={{ animationDelay: "100ms" }}
+          >
+            Your hormones aren&apos;t a bug. They&apos;re a{" "}
+            <em className="font-display italic">feature.</em>
+          </h1>
+          <p
+            className="mx-auto mt-4 max-w-[600px] animate-fade-up font-display text-[22px] leading-[1.3] text-[color:var(--color-on-surface-variant)] md:mx-0 md:text-[20px] lg:text-[22px]"
+            style={{ animationDelay: "200ms" }}
+          >
+            A cycle-aware productivity planner. Schedule deep work, meetings, and
+            creative time around the four hormonal phases, so you stop fighting
+            your biology.
+          </p>
+        </div>
+
+        <div
+          className="hidden animate-fade-up md:col-span-5 md:block"
+          style={{ animationDelay: "150ms" }}
         >
-          Your hormones aren&apos;t a bug. They&apos;re a{" "}
-          <em className="font-display italic">feature.</em>
-        </h1>
-        <p
-          className="mx-auto mt-4 max-w-[600px] font-display text-[24px] leading-[1.3] text-[color:var(--color-on-surface-variant)] animate-fade-up"
-          style={{ animationDelay: "200ms" }}
-        >
-          A cycle-aware productivity planner. Schedule deep work, meetings, and
-          creative time around the four hormonal phases, so you stop fighting
-          your biology.
-        </p>
+          <Image
+            src="/hero-illustration.png"
+            alt="Editorial illustration of a woman planning her week with cycle phase markers in a hardcover journal"
+            width={853}
+            height={1280}
+            priority
+            sizes="(max-width: 768px) 0px, 360px"
+            className="block h-auto w-full"
+          />
+        </div>
       </section>
 
       <div
@@ -30,7 +48,7 @@ export function Hero() {
       />
 
       <section
-        className="grid grid-cols-1 gap-8 md:grid-cols-3 animate-fade-up"
+        className="grid animate-fade-up grid-cols-1 gap-8 md:grid-cols-3"
         style={{ animationDelay: "350ms" }}
       >
         <ValueProp
