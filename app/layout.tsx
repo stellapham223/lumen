@@ -1,8 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Newsreader, Inter } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
+import { PublicNavbar, PublicFooter } from "@/components/PublicChrome";
 import { Analytics } from "@/components/Analytics";
 import { OrganizationJsonLd, WebApplicationJsonLd } from "@/components/JsonLd";
 import { BASE_URL, SITE } from "@/lib/site";
@@ -102,9 +101,9 @@ export default function RootLayout({
         <WebApplicationJsonLd />
       </head>
       <body className="min-h-full flex flex-col paper-texture">
-        <Navbar />
+        <PublicNavbar />
         {children}
-        <Footer />
+        <PublicFooter />
         <Analytics />
       </body>
     </html>

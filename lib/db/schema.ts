@@ -1,0 +1,64 @@
+import {
+  pgTable,
+  serial,
+  text,
+  integer,
+  timestamp,
+  boolean,
+  jsonb,
+  uniqueIndex,
+  index,
+} from "drizzle-orm/pg-core";
+
+export const cdTopics = pgTable("cd_topics", {
+  id: serial("id").primaryKey(),
+  keyword: text("keyword").notNull().unique(),
+  isActive: boolean("is_active").notNull().default(true),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+});
+
+export const cdThreads = pgTable(
+  "cd_threads",
+  {
+    id: serial("id").primaryKey(),
+    platform: text("platform").notNull(),
+    externalId: text("external_id").notNull(),
+    sub: text("sub").notNull(),
+    title: text("title").notNull(),
+    url: text("url").notNull(),
+    body: text("body"),
+    score: integer("score").notNull().default(0),
+    commentCount: integer("comment_count").notNull().default(0),
+    publishedAt: timestamp("published_at", { withTimezone: true }).notNull(),
+    matchedKeywords: jsonb("matched_keywords").$type<string[]>().notNull().default([]),
+    scrapedAt: timestamp("scraped_at", { withTimezone: true }).notNull().defaultNow(),
+    status: text("status").notNull().default("new"),
+  },
+  (t) => [
+    uniqueIndex("cd_threads_external_unique").on(t.platform, t.externalId),
+    index("cd_threads_status_idx").on(t.status, t.publishedAt),
+  ],
+);
+
+export const cdSuggestions = pgTable("cd_suggestions", {
+  id: serial("id").primaryKey(),
+  threadId: integer("thread_id").notNull().references(() => cdThreads.id, { onDelete: "cascade" }),
+  promptText: text("prompt_text").notNull(),
+  copiedAt: timestamp("copied_at", { withTimezone: true }).notNull().defaultNow(),
+});
+
+export const cdEngagements = pgTable("cd_engagements", {
+  id: serial("id").primaryKey(),
+  threadId: integer("thread_id").notNull().references(() => cdThreads.id, { onDelete: "cascade" }),
+  commentUrl: text("comment_url").notNull().unique(),
+  postedAt: timestamp("posted_at", { withTimezone: true }).notNull().defaultNow(),
+  lastKarma: integer("last_karma"),
+  lastReplies: integer("last_replies"),
+  metricsCheckedAt: timestamp("metrics_checked_at", { withTimezone: true }),
+});
+
+export type CdThread = typeof cdThreads.$inferSelect;
+export type CdThreadInsert = typeof cdThreads.$inferInsert;
+export type CdSuggestion = typeof cdSuggestions.$inferSelect;
+export type CdEngagement = typeof cdEngagements.$inferSelect;
+export type CdTopic = typeof cdTopics.$inferSelect;
