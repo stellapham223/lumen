@@ -75,6 +75,32 @@ const components: MDXComponents = {
       {children}
     </code>
   ),
+  table: ({ children }) => (
+    <div className="mt-6 -mx-6 sm:mx-0 overflow-x-auto">
+      <table className="w-full border-collapse text-[14px] text-[color:var(--color-on-surface)]">
+        {children}
+      </table>
+    </div>
+  ),
+  thead: ({ children }) => (
+    <thead className="border-b border-[color:var(--color-outline-variant)]">
+      {children}
+    </thead>
+  ),
+  tbody: ({ children }) => <tbody>{children}</tbody>,
+  tr: ({ children }) => (
+    <tr className="border-b border-[color:var(--color-outline-variant)] last:border-b-0">
+      {children}
+    </tr>
+  ),
+  th: ({ children }) => (
+    <th className="px-3 py-3 text-left font-display text-[12px] font-semibold uppercase tracking-[0.12em] text-[color:var(--color-primary)] align-bottom">
+      {children}
+    </th>
+  ),
+  td: ({ children }) => (
+    <td className="px-3 py-3 align-top leading-relaxed">{children}</td>
+  ),
 };
 
 export function useMDXComponents(): MDXComponents {
