@@ -3,6 +3,8 @@ import {
   BreadcrumbJsonLd,
   FaqJsonLd,
 } from "@/components/JsonLd";
+import { PhaseGrid } from "@/components/PhaseGrid";
+import { PhaseScheduleCard } from "@/components/PhaseScheduleCard";
 
 export const metadata = {
   title: "Cycle syncing chart: hormones, energy, and the right work for each phase",
@@ -53,9 +55,14 @@ export const metadata = {
 
 # Cycle syncing chart
 
-**A cycle syncing chart maps the four menstrual cycle phases against hormone levels, energy patterns, and recommended work types. On a 28-day cycle: menstrual (days 1–5, reflect), follicular (6–13, build), ovulatory (14–16, connect), luteal (17–28, finish). Use it to align demanding cognitive tasks with phases that biologically support them.**
+<aside className="my-8 hairline bg-[color:var(--color-surface-container-lowest)] p-6 sm:p-8">
+  <div className="eyebrow text-[color:var(--color-primary)] mb-3">Quick takeaway</div>
+  <p className="m-0 text-[16px] leading-relaxed text-[color:var(--color-on-surface)]">
+    A cycle syncing chart maps the four menstrual cycle phases against hormone levels, energy patterns, and recommended work types. On a 28-day cycle: menstrual (days 1–5, reflect), follicular (6–13, build), ovulatory (14–16, connect), luteal (17–28, finish). Use it to align demanding cognitive tasks with phases that biologically support them.
+  </p>
+</aside>
 
-A complete reference for what is happening hormonally, energetically, and cognitively in each of the four menstrual cycle phases — and which kinds of work best fit each one.
+A complete reference for what is happening hormonally, energetically, and cognitively in each of the four menstrual cycle phases, and which kinds of work best fit each one.
 
 This is a printable chart. Save it, share it, post it where you do your weekly planning. For a personalized version of this chart that highlights your current phase, [use Lumen](/).
 
@@ -78,82 +85,184 @@ This is a printable chart. Save it, share it, post it where you do your weekly p
 
 **Luteal phase (days 17–28)**. Progesterone rises steadily through the first part of the phase as the corpus luteum forms, peaks roughly 7 days after ovulation, then drops sharply if pregnancy does not occur. Estrogen has a smaller secondary rise and falls late.
 
+<PhaseGrid
+  columns={[
+    {
+      name: "Menstrual",
+      days: "1–5",
+      headline: "All hormones at floor",
+      items: [
+        { label: "Estrogen", meta: "▁" },
+        { label: "Progesterone", meta: "▁" },
+        { label: "FSH", meta: "▂ rising" },
+      ],
+    },
+    {
+      name: "Follicular",
+      days: "6–13",
+      headline: "Estrogen climbing",
+      items: [
+        { label: "Estrogen", meta: "▆" },
+        { label: "Progesterone", meta: "▁" },
+        { label: "BDNF", meta: "↑" },
+      ],
+    },
+    {
+      name: "Ovulatory",
+      days: "14–16",
+      headline: "Estrogen + LH peak",
+      items: [
+        { label: "Estrogen", meta: "█" },
+        { label: "LH surge", meta: "█" },
+        { label: "Testosterone", meta: "▂" },
+      ],
+    },
+    {
+      name: "Luteal",
+      days: "17–28",
+      headline: "Progesterone dominant",
+      items: [
+        { label: "Progesterone", meta: "█→▁" },
+        { label: "Estrogen", meta: "▄" },
+        { label: "BBT", meta: "↑" },
+      ],
+    },
+  ]}
+/>
+
 ## Energy and mood by phase
 
 **Menstrual phase**. Energy is typically lowest. Some women report increased introspection or strategic thinking. Sleep quality often improves once the period starts after late-luteal disruption.
 
 **Follicular phase**. Energy rises with estrogen. Mood is typically optimistic. Tolerance for ambiguity and openness to new ideas is high. This is often the most productive phase for many women.
 
-**Ovulatory phase**. Energy is high but pulled outward — verbal fluency and social cognition peak. Many women feel more confident and assertive. Body temperature rises slightly at ovulation.
+**Ovulatory phase**. Energy is high but pulled outward; verbal fluency and social cognition peak. Many women feel more confident and assertive. Body temperature rises slightly at ovulation.
 
 **Luteal phase**. Energy is high in early luteal, falling through mid-luteal, and lowest in late luteal. Detail orientation peaks early. Emotional reactivity rises late, especially in women with PMS or PMDD. Body temperature stays elevated until the period starts.
+
+<PhaseGrid
+  columns={[
+    {
+      name: "Menstrual",
+      days: "1–5",
+      headline: "Low energy, introspective",
+      items: [
+        { label: "Energy", meta: "▂" },
+        { label: "Mood", meta: "inward" },
+        { label: "Sleep", meta: "improving" },
+      ],
+    },
+    {
+      name: "Follicular",
+      days: "6–13",
+      headline: "Rising, optimistic",
+      items: [
+        { label: "Energy", meta: "▆" },
+        { label: "Mood", meta: "open" },
+        { label: "Tolerance for ambiguity", meta: "high" },
+      ],
+    },
+    {
+      name: "Ovulatory",
+      days: "14–16",
+      headline: "Peak, outward",
+      items: [
+        { label: "Energy", meta: "█" },
+        { label: "Verbal fluency", meta: "peak" },
+        { label: "Confidence", meta: "high" },
+      ],
+    },
+    {
+      name: "Luteal",
+      days: "17–28",
+      headline: "High → low through phase",
+      items: [
+        { label: "Energy", meta: "▆ → ▂" },
+        { label: "Detail focus", meta: "early peak" },
+        { label: "Reactivity", meta: "late ↑" },
+      ],
+    },
+  ]}
+/>
 
 ## What to schedule in each phase
 
 This is where cycle syncing becomes practical. Different cognitive demands map naturally to different phases.
 
-**Menstrual phase — Reflect**
+<PhaseScheduleCard
+  phase="Menstrual"
+  days="1–5"
+  mode="Reflect"
+  best={[
+    { icon: "insights", label: "Quarterly review and planning" },
+    { icon: "edit_note", label: "Journaling and retrospectives" },
+    { icon: "menu_book", label: "Reading and slow research" },
+    { icon: "person", label: "Low-stakes solo work" },
+    { icon: "self_improvement", label: "Recovery and rest" },
+  ]}
+  avoid={[
+    { icon: "campaign", label: "High-pressure presentations" },
+    { icon: "gavel", label: "Demanding negotiations" },
+    { icon: "warning", label: "Conflict-heavy conversations" },
+    { icon: "fitness_center", label: "Intense physical training" },
+  ]}
+/>
 
-Best for:
-- Quarterly review and planning
-- Journaling and retrospectives
-- Reading and slow research
-- Low-stakes solo work
-- Recovery and rest
+<PhaseScheduleCard
+  phase="Follicular"
+  days="6–13"
+  mode="Build"
+  best={[
+    { icon: "school", label: "Learning new skills" },
+    { icon: "rocket_launch", label: "Starting projects" },
+    { icon: "lightbulb", label: "Brainstorming and ideation" },
+    { icon: "psychology", label: "Complex problem solving" },
+    { icon: "trending_up", label: "Long-term strategic planning" },
+    { icon: "hub", label: "Networking outreach" },
+  ]}
+  avoid={[
+    { icon: "assignment", label: "Pure-administrative drudgery (you will feel restless)" },
+    { icon: "repeat", label: "Repetitive batch tasks (better suited to luteal)" },
+  ]}
+/>
 
-Avoid:
-- High-pressure presentations
-- Demanding negotiations
-- Conflict-heavy conversations
-- Intense physical training
+<PhaseScheduleCard
+  phase="Ovulatory"
+  days="14–16"
+  mode="Connect"
+  best={[
+    { icon: "campaign", label: "Presentations and public speaking" },
+    { icon: "forum", label: "Hard conversations and negotiations" },
+    { icon: "support_agent", label: "Sales calls and pitches" },
+    { icon: "work", label: "Job interviews" },
+    { icon: "groups", label: "Large meetings and panels" },
+    { icon: "videocam", label: "Filming or recording content" },
+  ]}
+  avoid={[
+    { icon: "psychology", label: "Solo deep work requiring hours of focus (you'll be pulled outward)" },
+    { icon: "schedule", label: "Tasks that require slow, methodical attention" },
+  ]}
+/>
 
-**Follicular phase — Build**
-
-Best for:
-- Learning new skills
-- Starting projects
-- Brainstorming and ideation
-- Complex problem solving
-- Long-term strategic planning
-- Networking outreach
-
-Avoid:
-- Pure-administrative drudgery (you will feel restless)
-- Repetitive batch tasks better suited to luteal
-
-**Ovulatory phase — Connect**
-
-Best for:
-- Presentations and public speaking
-- Hard conversations and negotiations
-- Sales calls and pitches
-- Job interviews
-- Large meetings and panels
-- Filming or recording content
-
-Avoid:
-- Solo deep work requiring hours of focus (you will be pulled into social mode)
-- Tasks that require slow, methodical attention
-
-**Luteal phase — Finish**
-
-Best in early-to-mid luteal:
-- Editing and proofreading
-- Organizing and filing
-- Finishing projects in their last 20%
-- Detail-heavy work like financial review
-- Quality assurance
-
-Best in late luteal:
-- Light maintenance work
-- Low-stakes admin
-- Batch tasks (email triage, expense reports)
-- Reduced social demands
-
-Avoid in late luteal:
-- Starting major new projects
-- High-impact decisions
-- Hard conversations (reactivity is high)
+<PhaseScheduleCard
+  phase="Luteal"
+  days="17–28"
+  mode="Finish"
+  best={[
+    { icon: "edit", label: "Editing and proofreading (early)" },
+    { icon: "folder_open", label: "Organizing and filing (early)" },
+    { icon: "checklist", label: "Finishing projects in their last 20% (early)" },
+    { icon: "fact_check", label: "Detail-heavy work like financial review (early)" },
+    { icon: "build", label: "Quality assurance (early)" },
+    { icon: "inventory_2", label: "Light maintenance and batch admin (late)" },
+    { icon: "mail", label: "Email triage and expense reports (late)" },
+  ]}
+  avoid={[
+    { icon: "rocket_launch", label: "Starting major new projects (late)" },
+    { icon: "gavel", label: "High-impact decisions (late)" },
+    { icon: "forum", label: "Hard conversations (late, reactivity is high)" },
+  ]}
+/>
 
 ## Workouts by phase
 
@@ -161,9 +270,54 @@ Avoid in late luteal:
 
 **Follicular**. Best phase for high-intensity training, strength PRs, learning new movement patterns. Capacity is rising.
 
-**Ovulatory**. Peak power output. Best phase for one-rep maxes, sprints, or testing physical capacity. Watch for joint laxity around ovulation — research suggests slightly higher injury risk for some movements.
+**Ovulatory**. Peak power output. Best phase for one-rep maxes, sprints, or testing physical capacity. Watch for joint laxity around ovulation; research suggests slightly higher injury risk for some movements.
 
 **Luteal**. Strength is still relatively high in early luteal but tapers. Endurance work tolerates well. Late luteal: reduce intensity, prioritize recovery, body temperature is elevated so heat tolerance is lower.
+
+<PhaseGrid
+  columns={[
+    {
+      name: "Menstrual",
+      days: "1–5",
+      headline: "Recovery",
+      items: [
+        { label: "Light yoga", meta: "▂" },
+        { label: "Walking", meta: "▂" },
+        { label: "Mobility", meta: "▂" },
+      ],
+    },
+    {
+      name: "Follicular",
+      days: "6–13",
+      headline: "Strength + skill",
+      items: [
+        { label: "HIIT", meta: "▆" },
+        { label: "Strength PRs", meta: "▆" },
+        { label: "New skills", meta: "▆" },
+      ],
+    },
+    {
+      name: "Ovulatory",
+      days: "14–16",
+      headline: "Peak power",
+      items: [
+        { label: "1-rep maxes", meta: "█" },
+        { label: "Sprints", meta: "█" },
+        { label: "Mind joint laxity", meta: "⚠" },
+      ],
+    },
+    {
+      name: "Luteal",
+      days: "17–28",
+      headline: "Endurance → taper",
+      items: [
+        { label: "Steady cardio", meta: "▆" },
+        { label: "Endurance", meta: "▆" },
+        { label: "Late: recovery", meta: "▂" },
+      ],
+    },
+  ]}
+/>
 
 ## Food and supplementation by phase
 
@@ -176,6 +330,51 @@ The strongest dietary claims in popular cycle syncing literature (specific foods
 - **Hydration** matters throughout, especially in luteal when body temperature is elevated.
 
 Beyond these basics, the specific food prescriptions popularized by cycle syncing apps lack strong research backing. Eat well across the cycle.
+
+<PhaseGrid
+  columns={[
+    {
+      name: "Menstrual",
+      days: "1–5",
+      headline: "Iron + warmth",
+      items: [
+        { label: "Iron-rich foods", meta: "★" },
+        { label: "Hydration", meta: "★" },
+        { label: "Warm, cooked meals", meta: "✓" },
+      ],
+    },
+    {
+      name: "Follicular",
+      days: "6–13",
+      headline: "Light + fresh",
+      items: [
+        { label: "Lean proteins", meta: "✓" },
+        { label: "Fermented foods", meta: "✓" },
+        { label: "Sprouted grains", meta: "✓" },
+      ],
+    },
+    {
+      name: "Ovulatory",
+      days: "14–16",
+      headline: "Anti-inflammatory",
+      items: [
+        { label: "Cruciferous veg", meta: "✓" },
+        { label: "Antioxidants", meta: "✓" },
+        { label: "Lighter meals", meta: "✓" },
+      ],
+    },
+    {
+      name: "Luteal",
+      days: "17–28",
+      headline: "Magnesium + density",
+      items: [
+        { label: "Magnesium foods", meta: "★" },
+        { label: "Complex carbs", meta: "✓" },
+        { label: "+200 kcal/day", meta: "↑" },
+      ],
+    },
+  ]}
+/>
 
 ## Limitations of this chart
 
