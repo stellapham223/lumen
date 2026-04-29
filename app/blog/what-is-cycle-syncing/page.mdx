@@ -3,6 +3,7 @@ import {
   BreadcrumbJsonLd,
   FaqJsonLd,
 } from "@/components/JsonLd";
+import { CyclePhasesIllustration } from "@/components/CyclePhasesIllustration";
 
 export const metadata = {
   title: "What is cycle syncing? A grounded explanation",
@@ -88,13 +89,11 @@ The standard four-phase model maps the cycle into segments by hormonal state:
 These phases vary by individual. The lengths above are based on a 28-day cycle; cycles between 21 and 35 days are within the typical range.
 
 <figure className="my-10">
-  <img
-    src="/blog/what-is-cycle-syncing/four-phases.png"
-    alt="The four phases of the menstrual cycle: menstrual, follicular, ovulatory, luteal, with estrogen and progesterone curves"
-    className="w-full hairline"
-  />
+  <div className="hairline bg-[color:var(--color-surface-container-lowest)] p-4 sm:p-6">
+    <CyclePhasesIllustration />
+  </div>
   <figcaption className="mt-3 text-center text-[13px] italic text-[color:var(--color-on-surface-variant)]">
-    Estrogen and progesterone across the four phases of a typical 28-day cycle.
+    Estrogen (solid) and progesterone (dashed) across a typical 28-day cycle.
   </figcaption>
 </figure>
 
@@ -105,13 +104,17 @@ The phrase "cycle syncing" entered popular vocabulary through Alisa Vitti's 2014
 What Vitti and the wellness genre did was assemble those findings into a prescriptive lifestyle system: eat these foods in this phase, do this workout in that phase, schedule meetings in this window. The packaging is newer than the underlying science.
 
 <figure className="my-10">
-  <img
-    src="/blog/what-is-cycle-syncing/womancode-alisa-vitti.jpg"
-    alt="Alisa Vitti and the cover of WomanCode (2014)"
-    className="w-full hairline"
-  />
+  <div className="hairline bg-[color:var(--color-surface-container-lowest)] flex justify-center p-6 sm:p-8">
+    <img
+      src="/blog/what-is-cycle-syncing/womancode-cover.jpg"
+      alt="Cover of WomanCode by Alisa Vitti (HarperOne, 2014)"
+      width="260"
+      height="397"
+      className="block h-auto w-[200px] sm:w-[260px] shadow-md"
+    />
+  </div>
   <figcaption className="mt-3 text-center text-[13px] italic text-[color:var(--color-on-surface-variant)]">
-    Alisa Vitti, author of <em>WomanCode</em> (2014), where the term cycle syncing was popularized.
+    <em>WomanCode</em> by Alisa Vitti (HarperOne, 2014), where the term <em>cycle syncing</em> was popularized. Cover image via <a href="https://openlibrary.org/books/OL26197923M/WomanCode" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:opacity-70">Open Library</a>.
   </figcaption>
 </figure>
 
