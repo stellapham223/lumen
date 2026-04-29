@@ -24,6 +24,18 @@ export function Hero() {
             creative time around the four hormonal phases, so you stop fighting
             your biology.
           </p>
+          <div
+            className="mx-auto mt-2 animate-fade-up md:mx-0"
+            style={{ animationDelay: "250ms" }}
+          >
+            <a
+              href="#check-cycle"
+              className="hairline inline-flex items-center gap-2 bg-[color:var(--color-primary)] px-6 py-3 font-display text-[14px] font-medium uppercase tracking-[0.16em] text-[color:var(--color-on-primary,#fff)] transition-opacity hover:opacity-90"
+            >
+              Check my cycle
+              <MaterialIcon name="arrow_downward" size={18} weight={400} />
+            </a>
+          </div>
         </div>
 
         <div

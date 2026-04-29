@@ -54,7 +54,8 @@ export default function Home() {
       <Hero />
 
       <section
-        className="hairline mx-auto w-full max-w-[600px] bg-[color:var(--color-surface-container-lowest)] p-8 sm:p-12 animate-scale-in"
+        id="check-cycle"
+        className="hairline mx-auto w-full max-w-[600px] scroll-mt-24 bg-[color:var(--color-surface-container-lowest)] p-8 sm:p-12 animate-scale-in"
         style={{ animationDelay: "400ms" }}
       >
         <div className="mb-8 flex flex-col gap-2 text-center">
