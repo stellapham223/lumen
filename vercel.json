@@ -1,6 +1,8 @@
 {
   "crons": [
     { "path": "/api/cron/scrape", "schedule": "0 1 * * *" },
+    { "path": "/api/cron/karma-snapshot", "schedule": "15 1 * * *" },
+    { "path": "/api/cron/mentions", "schedule": "30 1 * * *" },
     { "path": "/api/cron/karma", "schedule": "0 17 * * *" }
   ]
 }

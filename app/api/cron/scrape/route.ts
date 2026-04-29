@@ -32,6 +32,7 @@ export async function GET(request: Request) {
       body: t.body,
       publishedAt: t.publishedAt,
       matchedKeywords: t.matchedKeywords,
+      category: t.category,
     })),
   );
 

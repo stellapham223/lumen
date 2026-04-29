@@ -3,10 +3,9 @@ import Link from "next/link";
 import { listThreads, countThreadsByStatus } from "@/lib/db/queries";
 import { THREAD_STATUSES, type ThreadStatus } from "@/lib/db/schema";
 import { AdminStatusTabs } from "@/components/AdminStatusTabs";
-import { WarmupBanner } from "@/components/WarmupBanner";
 
 export const metadata: Metadata = {
-  title: "Admin · Threads",
+  title: "Admin · Giveback",
   robots: { index: false, follow: false },
 };
 
@@ -28,7 +27,7 @@ function parseStatus(input: string | undefined): ThreadStatus | "all" {
   return "new";
 }
 
-export default async function AdminHomePage({
+export default async function AdminGivebackPage({
   searchParams,
 }: {
   searchParams: Promise<{ status?: string }>;
@@ -37,31 +36,29 @@ export default async function AdminHomePage({
   const status = parseStatus(statusParam);
 
   const [threads, counts] = await Promise.all([
-    listThreads({ category: "lumen", status, limit: 100 }),
-    countThreadsByStatus("lumen"),
+    listThreads({ category: "giveback", status, limit: 100 }),
+    countThreadsByStatus("giveback"),
   ]);
 
   return (
     <main className="flex flex-col gap-6">
-      <WarmupBanner />
-
       <div className="flex flex-col gap-2">
-        <span className="eyebrow text-[color:var(--color-primary)]">Threads</span>
+        <span className="eyebrow text-[color:var(--color-primary)]">Giveback</span>
         <h1 className="font-display text-[28px] font-medium text-[color:var(--color-primary)]">
-          Reddit watchlist
+          Karma-building queue
         </h1>
         <p className="text-[14px] text-[color:var(--color-on-surface-variant)]">
-          Lumen-relevant threads scraped daily at 8am ICT. Move new threads
-          through Suggested → Engaged → Skipped to keep the queue clean.
+          Adjacent-audience threads where you give pure value. <strong>No Lumen
+          link, no brand mention</strong>. This is your 70% of the 70/30 ratio.
         </p>
       </div>
 
-      <AdminStatusTabs basePath="/admin" current={status} counts={counts} />
+      <AdminStatusTabs basePath="/admin/giveback" current={status} counts={counts} />
 
       {threads.length === 0 ? (
         <div className="hairline bg-[color:var(--color-surface-container-lowest)] px-6 py-12 text-center">
           <p className="font-display text-[15px] text-[color:var(--color-on-surface-variant)]">
-            No threads in this view.
+            No giveback threads in this view.
           </p>
         </div>
       ) : (
@@ -84,7 +81,7 @@ export default async function AdminHomePage({
               </div>
               {t.matchedKeywords.length > 0 ? (
                 <p className="text-[12px] text-[color:var(--color-on-surface-variant)]">
-                  Matched: {t.matchedKeywords.join(", ")}
+                  Adjacent: {t.matchedKeywords.join(", ")}
                 </p>
               ) : null}
             </li>

@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { recordEngagement } from "@/lib/db/queries";
+import { recordEngagement, setThreadStatus } from "@/lib/db/queries";
 
 export async function POST(request: Request) {
   let body: unknown;
@@ -22,5 +22,6 @@ export async function POST(request: Request) {
   }
 
   await recordEngagement({ threadId, commentUrl });
+  await setThreadStatus({ id: threadId, status: "engaged" });
   return NextResponse.json({ ok: true });
 }

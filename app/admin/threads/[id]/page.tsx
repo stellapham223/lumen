@@ -6,6 +6,7 @@ import { db, schema } from "@/lib/db/client";
 import { eq } from "drizzle-orm";
 import { buildRedditReplyPrompt } from "@/lib/prompts/redditReply";
 import { AdminThreadActions } from "@/components/AdminThreadActions";
+import { AdminStatusButtons } from "@/components/AdminStatusButtons";
 
 export const metadata: Metadata = {
   title: "Admin · Thread",
@@ -57,6 +58,9 @@ export default async function AdminThreadDetailPage({
         >
           Open on Reddit ↗
         </a>
+        <div className="mt-2">
+          <AdminStatusButtons threadId={thread.id} currentStatus={thread.status} />
+        </div>
       </div>
 
       {thread.body ? (

@@ -16,6 +16,13 @@ function blogList(): string {
 }
 
 export function buildRedditReplyPrompt(thread: CdThread): string {
+  if (thread.category === "giveback") {
+    return buildGivebackPrompt(thread);
+  }
+  return buildLumenPrompt(thread);
+}
+
+function buildLumenPrompt(thread: CdThread): string {
   const week = weekNumber();
   const age = ageHours(thread.publishedAt);
   const utm = `?utm_source=reddit&utm_medium=comment&utm_campaign=seeding_w${week}`;
@@ -51,4 +58,36 @@ GENERATE 3 DIFFERENT REPLY OPTIONS:
 3. Contrarian/spicy version (challenges the premise of the post, often gets upvotes)
 
 Output each reply as plain text I can paste directly into Reddit. Keep each under 1500 characters.`;
+}
+
+function buildGivebackPrompt(thread: CdThread): string {
+  const age = ageHours(thread.publishedAt);
+  const bodyExcerpt = (thread.body ?? "").slice(0, 800);
+
+  return `You are helping me draft a Reddit reply for a karma-building giveback strategy.
+This is a GIVEBACK thread, NOT a promotional one. Hard rules:
+- ZERO product mentions. ZERO brand names. ZERO links.
+- Pure helpful answer based on what works in real life.
+- Earn karma + credibility. Lumen does not exist for the reader of this comment.
+
+REDDIT THREAD CONTEXT:
+- Subreddit: r/${thread.sub}
+- Title: ${thread.title}
+- Body: ${bodyExcerpt || "(no body)"}
+- URL: ${thread.url}
+- Thread age: ~${age} hours
+- Adjacent topic match: ${thread.matchedKeywords.join(", ") || "(none)"}
+
+REPLY STRUCTURE:
+[Direct empathy / acknowledgment of their situation, 1 sentence]
+[Practical answer, 2-4 sentences with concrete steps or frameworks]
+[Optional: caveat or "this worked for me" qualifier so it does not read as advice spam]
+
+GENERATE 3 DIFFERENT REPLY OPTIONS:
+1. Practical answer (most actionable)
+2. Personal experience version ("I tried X and Y happened")
+3. Question-back version (ask 1 clarifying question that helps OP think + invites more replies)
+
+Output each reply as plain text I can paste directly into Reddit. Keep each under 1200 characters.
+NO LINKS. NO BRAND MENTIONS. If you are tempted, suggest a public domain reference (peer-reviewed paper, government health agency) instead.`;
 }

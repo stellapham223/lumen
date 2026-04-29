@@ -1,7 +1,8 @@
-import { matchKeywords } from "./keywords";
+import { categorizeText, type CategorizedMatch } from "./keywords";
 import type { RawThread } from "./rss";
 
-export type FilteredThread = RawThread & { matchedKeywords: string[] };
+export type FilteredThread = RawThread &
+  CategorizedMatch & { matchedKeywords: string[] };
 
 export type FilterOptions = {
   maxAgeHours: number;
@@ -22,8 +23,8 @@ export function filterThreads(
 
   return threads.flatMap((t) => {
     if (t.publishedAt.getTime() < minTime) return [];
-    const matched = matchKeywords(`${t.title} ${t.body}`);
-    if (matched.length === 0) return [];
-    return [{ ...t, matchedKeywords: matched }];
+    const match = categorizeText(`${t.title} ${t.body}`);
+    if (!match) return [];
+    return [{ ...t, ...match, matchedKeywords: match.matched }];
   });
 }

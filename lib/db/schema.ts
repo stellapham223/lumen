@@ -31,12 +31,14 @@ export const cdThreads = pgTable(
     commentCount: integer("comment_count").notNull().default(0),
     publishedAt: timestamp("published_at", { withTimezone: true }).notNull(),
     matchedKeywords: jsonb("matched_keywords").$type<string[]>().notNull().default([]),
+    category: text("category").notNull().default("lumen"),
     scrapedAt: timestamp("scraped_at", { withTimezone: true }).notNull().defaultNow(),
     status: text("status").notNull().default("new"),
   },
   (t) => [
     uniqueIndex("cd_threads_external_unique").on(t.platform, t.externalId),
     index("cd_threads_status_idx").on(t.status, t.publishedAt),
+    index("cd_threads_category_idx").on(t.category, t.status),
   ],
 );
 
@@ -54,7 +56,38 @@ export const cdEngagements = pgTable("cd_engagements", {
   postedAt: timestamp("posted_at", { withTimezone: true }).notNull().defaultNow(),
   lastKarma: integer("last_karma"),
   lastReplies: integer("last_replies"),
+  previousReplies: integer("previous_replies"),
+  needsRevisit: boolean("needs_revisit").notNull().default(false),
   metricsCheckedAt: timestamp("metrics_checked_at", { withTimezone: true }),
+});
+
+export const cdMentions = pgTable(
+  "cd_mentions",
+  {
+    id: serial("id").primaryKey(),
+    source: text("source").notNull(),
+    externalId: text("external_id").notNull(),
+    sub: text("sub"),
+    title: text("title").notNull(),
+    url: text("url").notNull(),
+    body: text("body"),
+    publishedAt: timestamp("published_at", { withTimezone: true }).notNull(),
+    foundAt: timestamp("found_at", { withTimezone: true }).notNull().defaultNow(),
+    status: text("status").notNull().default("new"),
+  },
+  (t) => [
+    uniqueIndex("cd_mentions_external_unique").on(t.source, t.externalId),
+    index("cd_mentions_status_idx").on(t.status, t.publishedAt),
+  ],
+);
+
+export const cdKarmaSnapshots = pgTable("cd_karma_snapshots", {
+  id: serial("id").primaryKey(),
+  capturedAt: timestamp("captured_at", { withTimezone: true }).notNull().defaultNow(),
+  totalKarma: integer("total_karma").notNull(),
+  linkKarma: integer("link_karma").notNull(),
+  commentKarma: integer("comment_karma").notNull(),
+  accountCreatedAt: timestamp("account_created_at", { withTimezone: true }),
 });
 
 export type CdThread = typeof cdThreads.$inferSelect;
@@ -62,3 +95,12 @@ export type CdThreadInsert = typeof cdThreads.$inferInsert;
 export type CdSuggestion = typeof cdSuggestions.$inferSelect;
 export type CdEngagement = typeof cdEngagements.$inferSelect;
 export type CdTopic = typeof cdTopics.$inferSelect;
+export type CdMention = typeof cdMentions.$inferSelect;
+export type CdMentionInsert = typeof cdMentions.$inferInsert;
+export type CdKarmaSnapshot = typeof cdKarmaSnapshots.$inferSelect;
+
+export const THREAD_STATUSES = ["new", "suggested", "engaged", "skipped"] as const;
+export type ThreadStatus = (typeof THREAD_STATUSES)[number];
+
+export const THREAD_CATEGORIES = ["lumen", "giveback"] as const;
+export type ThreadCategory = (typeof THREAD_CATEGORIES)[number];

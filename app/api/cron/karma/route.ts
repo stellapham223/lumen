@@ -20,16 +20,22 @@ export async function GET(request: Request) {
   const engagements = await listEngagements();
   let updated = 0;
   let failed = 0;
+  let flaggedRevisit = 0;
 
   for (const e of engagements) {
     const stats = await fetchCommentStats(e.commentUrl);
     if (stats) {
+      const previousReplies = e.lastReplies ?? 0;
+      const grew = stats.replies > previousReplies;
       await updateEngagementMetrics({
         id: e.id,
         lastKarma: stats.score,
         lastReplies: stats.replies,
+        previousReplies,
+        needsRevisit: grew || e.needsRevisit,
       });
       updated++;
+      if (grew) flaggedRevisit++;
     } else {
       failed++;
     }
@@ -41,6 +47,7 @@ export async function GET(request: Request) {
     total: engagements.length,
     updated,
     failed,
+    flaggedRevisit,
     durationMs: Date.now() - started,
   });
 }
