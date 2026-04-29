@@ -1,4 +1,4 @@
-// Plausible analytics — privacy-friendly, cookieless, GDPR-compliant.
+// Plausible analytics: privacy-friendly, cookieless, GDPR-compliant.
 // Set NEXT_PUBLIC_PLAUSIBLE_DOMAIN in env to enable. No-op locally / when unset.
 
 import Script from "next/script";

@@ -48,16 +48,16 @@ export const phaseProfiles: Record<Phase, PhaseProfile> = {
     name: "Menstrual",
     shortLabel: "Reflect",
     description:
-      "Energy is at its lowest. Your body is asking for rest — and your mind for big-picture thinking, not execution.",
+      "Energy is at its lowest. Your body is asking for rest, and your mind for big-picture thinking, not execution.",
     hormoneState: "Estrogen low, progesterone low",
     cognitiveStrength:
-      "Strategic thinking, intuition, big-picture reflection. Right-brain dominant — good for connecting patterns.",
+      "Strategic thinking, intuition, big-picture reflection. Right-brain dominant; good for connecting patterns.",
     bestFor: ["planning", "creative", "learning"],
     avoidWhenPossible: ["presentations", "hardConvos", "networking"],
     energyTip:
       "Don't fight the dip. Use this phase to review what's working and plan the next cycle. Schedule shallow tasks if anything.",
     scientificBacking:
-      "Estrogen and progesterone both low — neurotransmitter activity (serotonin, dopamine) lower. Body diverts energy to menstruation.",
+      "Estrogen and progesterone both low; neurotransmitter activity (serotonin, dopamine) lower. Body diverts energy to menstruation.",
     color: {
       bg: "bg-rose-50",
       text: "text-rose-900",
@@ -76,7 +76,7 @@ export const phaseProfiles: Record<Phase, PhaseProfile> = {
     bestFor: ["learning", "creative", "deepWork", "planning"],
     avoidWhenPossible: ["admin", "detailWork"],
     energyTip:
-      "Start the project you've been putting off. Take the course. Sketch the new product. Your brain wants new — feed it.",
+      "Start the project you've been putting off. Take the course. Sketch the new product. Your brain wants new; feed it.",
     scientificBacking:
       "Rising estrogen enhances neuroplasticity, BDNF, and dopamine sensitivity. Studies show improved verbal memory and learning capacity.",
     color: {
@@ -97,7 +97,7 @@ export const phaseProfiles: Record<Phase, PhaseProfile> = {
     bestFor: ["presentations", "hardConvos", "meetings", "networking"],
     avoidWhenPossible: ["detailWork", "admin"],
     energyTip:
-      "Schedule the hard conversation now. The pitch. The negotiation. The networking event. Solo deep work feels restless — use this phase for people work.",
+      "Schedule the hard conversation now. The pitch. The negotiation. The networking event. Solo deep work feels restless; use this phase for people work.",
     scientificBacking:
       "Estrogen at cycle peak. Studies (Hampson 2020, Sundström-Poromaa 2014) show enhanced verbal fluency and emotional recognition. Slight testosterone increase boosts confidence.",
     color: {
@@ -118,7 +118,7 @@ export const phaseProfiles: Record<Phase, PhaseProfile> = {
     bestFor: ["detailWork", "admin", "deepWork", "planning"],
     avoidWhenPossible: ["presentations", "hardConvos"],
     energyTip:
-      "Tie up loose ends. Edit the doc. File the receipts. Close the tabs. Late luteal (last 3-4 days) — protect your energy. Avoid emotional conversations.",
+      "Tie up loose ends. Edit the doc. File the receipts. Close the tabs. Late luteal (last 3-4 days): protect your energy. Avoid emotional conversations.",
     scientificBacking:
       "Rising progesterone is calming but also linked to lower verbal fluency and increased fatigue late in phase. Estrogen drop pre-menstrual associated with PMS symptoms in 75% of menstruating women (ACOG).",
     color: {

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     "Your personalized cycle phase, hormone state, and recommendations for what to schedule today.",
   alternates: { canonical: "/plan" },
   // /plan is a personalized client-rendered page that depends on user's localStorage.
-  // No value to indexing — keep crawlers out so the empty/skeleton state doesn't surface.
+  // No value to indexing; keep crawlers out so the empty/skeleton state doesn't surface.
   robots: {
     index: false,
     follow: false,

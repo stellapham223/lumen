@@ -40,6 +40,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
-    // /plan is intentionally excluded — personalized, noindex.
+    // /plan is intentionally excluded: personalized, noindex.
   ];
 }

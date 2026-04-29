@@ -3,9 +3,9 @@
 // When the production domain is purchased (Sprint 4), update Vercel env to point at it.
 
 // Resolution order:
-//   1. NEXT_PUBLIC_SITE_URL — explicit override (use when you buy a real domain)
-//   2. VERCEL_PROJECT_PRODUCTION_URL — Vercel-injected production alias (e.g. lumen-one-plum.vercel.app)
-//   3. VERCEL_URL — current deployment URL (changes per deploy; preview branches included)
+//   1. NEXT_PUBLIC_SITE_URL: explicit override (use when you buy a real domain)
+//   2. VERCEL_PROJECT_PRODUCTION_URL: Vercel-injected production alias (e.g. lumen-one-plum.vercel.app)
+//   3. VERCEL_URL: current deployment URL (changes per deploy; preview branches included)
 //   4. localhost fallback for `bun run dev`
 function resolveBaseUrl(): string {
   const explicit = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
@@ -56,20 +56,20 @@ export function absoluteUrl(path: string = "/"): string {
   return `${BASE_URL}${p}`;
 }
 
-// Blog post manifest — single source for sitemap, /blog index, internal links.
+// Blog post manifest: single source for sitemap, /blog index, internal links.
 export const BLOG_POSTS = [
   {
     slug: "what-is-cycle-syncing",
     title: "What is cycle syncing?",
     description:
-      "A grounded definition, where the term came from, and what the research supports — and what it does not.",
+      "A grounded definition, where the term came from, and what the research supports (and what it does not).",
     publishedAt: "2026-04-28",
   },
   {
     slug: "best-cycle-syncing-app",
     title: "Best cycle syncing app in 2026: an honest comparison",
     description:
-      "Lumen vs Flo vs Clue vs Natural Cycles vs MyFlo vs 28 — strengths, weaknesses, privacy posture.",
+      "Lumen vs Flo vs Clue vs Natural Cycles vs MyFlo vs 28: strengths, weaknesses, privacy posture.",
     publishedAt: "2026-04-28",
   },
   {

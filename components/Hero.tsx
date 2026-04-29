@@ -19,7 +19,7 @@ export function Hero() {
           style={{ animationDelay: "200ms" }}
         >
           A cycle-aware productivity planner. Schedule deep work, meetings, and
-          creative time around the four hormonal phases — so you stop fighting
+          creative time around the four hormonal phases, so you stop fighting
           your biology.
         </p>
       </section>

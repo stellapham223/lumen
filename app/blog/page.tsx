@@ -4,12 +4,12 @@ import { BLOG_POSTS } from "@/lib/site";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Blog — Cycle syncing, productivity, and what the research actually says",
+  title: "Blog: cycle syncing, productivity, and what the research actually says",
   description:
     "Honest, science-grounded posts on cycle syncing, the four phases, and how to plan your week around your biology. No wellness woo, no prescriptions.",
   alternates: { canonical: "/blog" },
   openGraph: {
-    title: "Blog — Lumen",
+    title: "Blog | Lumen",
     description:
       "Honest, science-grounded posts on cycle syncing, the four phases, and how to plan your week around your biology.",
     url: "/blog",
@@ -36,7 +36,7 @@ export default function BlogIndex() {
         </h1>
         <p className="mt-6 font-display text-[20px] leading-[1.4] text-[color:var(--color-on-surface-variant)]">
           Science-grounded posts on the four phases, what the research supports,
-          and how to plan a week around your biology — without the wellness
+          and how to plan a week around your biology, without the wellness
           marketing.
         </p>
       </header>

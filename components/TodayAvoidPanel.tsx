@@ -57,7 +57,7 @@ export function TodayAvoidPanel({ status }: Props) {
               </h4>
               <p className="mt-1 text-[12px] italic text-[color:var(--color-on-surface-variant)]">
                 {tips.reasonsByTask[task] ??
-                  "Lower fit for this phase — defer if you can."}
+                  "Lower fit for this phase: defer if you can."}
               </p>
             </div>
           </div>
@@ -94,9 +94,9 @@ function getAvoidTip(phase: Phase) {
     },
     follicular: {
       intro: "Brain hungry for novelty during",
-      outro: "Follicular punishes repetition — batch admin elsewhere.",
+      outro: "Follicular punishes repetition; batch admin elsewhere.",
       reasonsByTask: {
-        admin: "Repetitive tasks feel painful — wasted bandwidth.",
+        admin: "Repetitive tasks feel painful: wasted bandwidth.",
         detailWork: "Brain wants new, not refining.",
       },
     },
@@ -104,14 +104,14 @@ function getAvoidTip(phase: Phase) {
       intro: "Peak social cognition window during",
       outro: "Don't waste 3 days of peak cognition on solo work.",
       reasonsByTask: {
-        admin: "Wasted peak window — defer admin.",
+        admin: "Wasted peak window; defer admin.",
         detailWork: "Restlessness undermines fine-grained work.",
         deepWork: "Cognitive resources pulled toward social.",
       },
     },
     luteal: {
       intro: "Verbal fluency declining late in",
-      outro: "Late-luteal hormone withdrawal — protect your energy.",
+      outro: "Late-luteal hormone withdrawal: protect your energy.",
       reasonsByTask: {
         presentations: "Verbal recall slower late luteal.",
         hardConvos: "Emotional reactivity high.",

@@ -4,12 +4,12 @@ import { references } from "@/lib/references";
 import { ArticleJsonLd, BreadcrumbJsonLd, FaqJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "The science behind Lumen — methodology + research",
+  title: "The science behind Lumen: methodology and research",
   description:
     "How Lumen turns peer-reviewed research on the menstrual cycle into actionable productivity recommendations. Our four-phase model, recommendation logic, and full source list.",
   alternates: { canonical: "/methodology" },
   openGraph: {
-    title: "The science behind Lumen — methodology + research",
+    title: "The science behind Lumen: methodology and research",
     description:
       "How Lumen turns peer-reviewed research on the menstrual cycle into actionable productivity recommendations.",
     url: "/methodology",
@@ -21,7 +21,7 @@ const methodologyFaqs = [
   {
     question: "How does cycle syncing improve productivity?",
     answer:
-      "Estrogen, progesterone, FSH, and LH fluctuate predictably across the menstrual cycle, and those fluctuations measurably affect verbal fluency, neuroplasticity, mood, and energy. Aligning task type to phase — deep learning during follicular phase, presentations near ovulation, editing during early luteal, reflection during menstruation — works with biology rather than against it.",
+      "Estrogen, progesterone, FSH, and LH fluctuate predictably across the menstrual cycle, and those fluctuations measurably affect verbal fluency, neuroplasticity, mood, and energy. Aligning task type to phase (deep learning during follicular phase, presentations near ovulation, editing during early luteal, reflection during menstruation) works with biology rather than against it.",
   },
   {
     question: "What are the four phases of the menstrual cycle?",
@@ -50,10 +50,10 @@ export default function MethodologyPage() {
     <PageLayout
       eyebrow="Methodology"
       title="The science behind Lumen."
-      intro="Lumen translates peer-reviewed research on hormones and cognition into a simple weekly planner. Here is how it works — and the studies it rests on."
+      intro="Lumen translates peer-reviewed research on hormones and cognition into a simple weekly planner. Here is how it works, and the studies it rests on."
     >
       <ArticleJsonLd
-        headline="The science behind Lumen — methodology and research"
+        headline="The science behind Lumen: methodology and research"
         description="How Lumen turns peer-reviewed research on the menstrual cycle into actionable productivity recommendations."
         path="/methodology"
         datePublished="2026-04-01"
@@ -89,23 +89,23 @@ export default function MethodologyPage() {
         </p>
         <ul className="space-y-3 mt-2">
           <li>
-            <strong>Menstrual — Reflect.</strong> Estrogen and progesterone at
+            <strong>Menstrual, Reflect.</strong> Estrogen and progesterone at
             cycle minimum. Right-brain dominance shifts toward strategic,
             big-picture thinking. Best for retrospectives and planning.
           </li>
           <li>
-            <strong>Follicular — Build.</strong> Rising estrogen drives BDNF and
+            <strong>Follicular, Build.</strong> Rising estrogen drives BDNF and
             neuroplasticity. Best for learning new skills, starting projects,
             and complex problem solving.
           </li>
           <li>
-            <strong>Ovulatory — Connect.</strong> Estrogen at peak, slight
+            <strong>Ovulatory, Connect.</strong> Estrogen at peak, slight
             testosterone bump, LH surge. Verbal fluency and emotional cognition
             measurably peak. Best for presentations, hard conversations, and
             negotiations.
           </li>
           <li>
-            <strong>Luteal — Finish.</strong> Progesterone rises then drops;
+            <strong>Luteal, Finish.</strong> Progesterone rises then drops;
             estrogen drops late. Detail orientation peaks early, fatigue sets in
             late. Best for editing, organizing, and closing tasks.
           </li>
@@ -141,7 +141,7 @@ export default function MethodologyPage() {
         </p>
       </Section>
 
-      <Section title="What we do — and don't — claim">
+      <Section title="What we do (and don't) claim">
         <p>
           <strong>We do claim:</strong> hormonal fluctuations across the cycle
           have measurable, replicated effects on certain cognitive and physical
@@ -182,7 +182,7 @@ export default function MethodologyPage() {
       <Section eyebrow="Research" title="Sources we draw from">
         <p>
           The recommendations in Lumen rest on a small set of repeatedly cited
-          sources — peer-reviewed papers and books grounded in primary research.
+          sources: peer-reviewed papers and books grounded in primary research.
           Click through to read them yourself.
         </p>
         <ul className="mt-4 space-y-4">

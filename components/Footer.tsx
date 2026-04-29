@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="hairline-t bg-[color:var(--color-background)] mt-16">
       <div className="mx-auto flex max-w-[1200px] flex-col items-center gap-4 px-6 py-12 sm:px-12">
-        <Link href="/" aria-label="Lumen — home">
+        <Link href="/" aria-label="Lumen home">
           <Image
             src="/logo-small.png"
             alt="Lumen"

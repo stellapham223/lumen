@@ -8,12 +8,12 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        // /plan is personalized, depends on localStorage — no value to indexing
+        // /plan is personalized, depends on localStorage; no value to indexing
         // and most crawlers will see an empty skeleton state anyway.
         disallow: ["/plan"],
       },
       // Explicitly allow major AI crawlers used by ChatGPT, Claude, Perplexity,
-      // Google AI Overviews, etc. AEO-positive — we want our content cited.
+      // Google AI Overviews, etc. AEO-positive: we want our content cited.
       // (Re-listing here makes the intent explicit even though "*" already covers them.)
       { userAgent: "GPTBot", allow: "/", disallow: ["/plan"] },
       { userAgent: "OAI-SearchBot", allow: "/", disallow: ["/plan"] },

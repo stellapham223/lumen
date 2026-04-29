@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     "Lumen is informational only and not medical advice. Use it as a productivity tool, not a clinical one.",
   alternates: { canonical: "/terms" },
   openGraph: {
-    title: "Terms of use — Lumen",
+    title: "Terms of use | Lumen",
     description:
       "Lumen is informational only and not medical advice. Use it as a productivity tool, not a clinical one.",
     url: "/terms",
@@ -41,9 +41,9 @@ export default function TermsPage() {
       <Section title="Not medical advice">
         <p>
           Nothing on Lumen is intended to diagnose, treat, cure, or prevent any
-          condition. If you experience symptoms that worry you — irregular
+          condition. If you experience symptoms that worry you (irregular
           cycles, severe pain, mood changes that affect your daily life, or
-          anything else — please consult a qualified medical professional.
+          anything else), please consult a qualified medical professional.
         </p>
         <p>
           Decisions about your health should be made with a clinician who knows

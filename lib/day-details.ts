@@ -80,13 +80,13 @@ function describeHormones(h: HormoneLevels, phase: Phase, sub: SubPhase): string
     return `Estrogen ${e}, LH surge active, slight testosterone bump. Peak hormonal cognition window.`;
   }
   if (phase === "menstrual") {
-    return `Estrogen ${e}, progesterone ${p}. Both hormones at cycle minimum — body diverts energy to menstruation.`;
+    return `Estrogen ${e}, progesterone ${p}. Both hormones at cycle minimum; body diverts energy to menstruation.`;
   }
   if (phase === "follicular") {
     return `Estrogen ${e} (rising), progesterone ${p}. FSH bumping in early days; brain in novelty-seeking mode.`;
   }
   if (sub === "late") {
-    return `Estrogen ${e} (dropping), progesterone ${p} (dropping). Pre-menstrual hormone withdrawal — PMS territory if you're prone.`;
+    return `Estrogen ${e} (dropping), progesterone ${p} (dropping). Pre-menstrual hormone withdrawal: PMS territory if you're prone.`;
   }
   return `Estrogen ${e}, progesterone ${p} (rising${sub === "mid" ? " near peak" : ""}). Calming, detail-focused state.`;
 }
@@ -132,12 +132,12 @@ function getBodyNote(phase: Phase, sub: SubPhase): string {
       late: "Period winding down. Energy returning. Can resume light strength training.",
     },
     follicular: {
-      early: "Recovery improving. Body tolerates higher training load. Insulin sensitivity high — carbs handled well.",
+      early: "Recovery improving. Body tolerates higher training load. Insulin sensitivity high; carbs handled well.",
       mid: "Peak training tolerance window. Strength and endurance both supported.",
       late: "Pre-ovulation: peak performance for high-intensity work. Coordination strong.",
     },
     ovulatory: {
-      early: "Body temperature rising slightly post-ovulation. Slight risk of ligament laxity — careful with high-impact.",
+      early: "Body temperature rising slightly post-ovulation. Slight risk of ligament laxity; careful with high-impact.",
       mid: "Energy high but ligament laxity peaks. Power work fine; avoid max-load asymmetric lifts if injury-prone.",
       late: "Energy still high, body returning to balanced state.",
     },
@@ -155,61 +155,61 @@ function getTaskReason(task: TaskType, phase: Phase): string {
     deepWork: {
       menstrual: "Mental fog limits sustained focus; reflective work better.",
       follicular: "Rising estrogen enhances learning and concentration capacity.",
-      ovulatory: "Cognitive resources pulled toward social/verbal — solo focus feels restless.",
+      ovulatory: "Cognitive resources pulled toward social/verbal; solo focus feels restless.",
       luteal: "Progesterone calming; sustained focus on familiar problems works well.",
     },
     meetings: {
       menstrual: "Social energy lowest; reschedule non-critical meetings.",
       follicular: "Verbal fluency climbing; collaboration productive.",
-      ovulatory: "Peak verbal and emotional cognition — schedule the high-stakes meetings.",
+      ovulatory: "Peak verbal and emotional cognition; schedule the high-stakes meetings.",
       luteal: "Patience for back-to-backs reduced; batch shorter meetings.",
     },
     creative: {
-      menstrual: "Right-brain reflective mode — useful for connecting patterns, less for ideation pressure.",
+      menstrual: "Right-brain reflective mode: useful for connecting patterns, less for ideation pressure.",
       follicular: "Novelty-seeking dopamine peak; brainstorming and new directions thrive.",
       ovulatory: "Confidence high but social cognition pulls outward; team creative > solo.",
       luteal: "Detail-creative (editing, refining) better than open ideation.",
     },
     admin: {
       menstrual: "Low-stimulation tasks tolerable; clear inbox during this window.",
-      follicular: "Brain craves new — admin feels punishing.",
+      follicular: "Brain craves new; admin feels punishing.",
       ovulatory: "Wasted peak window; defer admin if possible.",
-      luteal: "Detail-focus peak — perfect for admin, expense reports, organizing.",
+      luteal: "Detail-focus peak: perfect for admin, expense reports, organizing.",
     },
     learning: {
       menstrual: "Memory consolidation suppressed; absorption low.",
-      follicular: "Estrogen-driven neuroplasticity peak — best learning window of cycle (Hampson 2020).",
+      follicular: "Estrogen-driven neuroplasticity peak: best learning window of cycle (Hampson 2020).",
       ovulatory: "Learning OK but social cognition demands attention.",
       luteal: "Reviewing learned material works; new acquisition harder.",
     },
     planning: {
-      menstrual: "Big-picture strategic thinking peak — plan the next cycle.",
+      menstrual: "Big-picture strategic thinking peak: plan the next cycle.",
       follicular: "Tactical planning energetic but may overcommit.",
-      ovulatory: "Planning under social cognition skew — beware optimistic estimates.",
+      ovulatory: "Planning under social cognition skew; beware optimistic estimates.",
       luteal: "Detail planning excellent; risk-aware mindset.",
     },
     presentations: {
-      menstrual: "Verbal recall and energy lowest — high failure risk.",
+      menstrual: "Verbal recall and energy lowest; high failure risk.",
       follicular: "Confidence and fluency climbing; solid choice.",
-      ovulatory: "Peak verbal cognition — schedule here for maximum impact.",
+      ovulatory: "Peak verbal cognition: schedule here for maximum impact.",
       luteal: "Progesterone reduces verbal fluency late phase; avoid late-luteal presentations.",
     },
     hardConvos: {
       menstrual: "Emotional reserves lowest; defer.",
       follicular: "Diplomatic capacity present.",
-      ovulatory: "Emotional recognition and confidence peak — best window for hard conversations.",
+      ovulatory: "Emotional recognition and confidence peak: best window for hard conversations.",
       luteal: "Progesterone + estrogen drop late phase amplifies emotional reactivity; avoid.",
     },
     detailWork: {
-      menstrual: "Possible but not ideal — focus inconsistent.",
+      menstrual: "Possible but not ideal; focus inconsistent.",
       follicular: "Detail-tolerance moderate; brain wants new.",
       ovulatory: "Restlessness undermines fine-grained work.",
-      luteal: "Peak window for editing, proofing, finishing — progesterone supports detail focus.",
+      luteal: "Peak window for editing, proofing, finishing; progesterone supports detail focus.",
     },
     networking: {
       menstrual: "Social battery depleted; defer.",
       follicular: "Confidence rising; small networking productive.",
-      ovulatory: "Peak social cognition + reading cues + warmth — best networking window.",
+      ovulatory: "Peak social cognition + reading cues + warmth: best networking window.",
       luteal: "Energy and patience declining; conserve for must-attend events only.",
     },
   };

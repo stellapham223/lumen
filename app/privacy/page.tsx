@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     "Lumen does not collect, store, or share any of your data. Your cycle information stays in your browser.",
   alternates: { canonical: "/privacy" },
   openGraph: {
-    title: "Privacy — Lumen",
+    title: "Privacy | Lumen",
     description:
       "Lumen does not collect, store, or share any of your data. Your cycle information stays in your browser.",
     url: "/privacy",

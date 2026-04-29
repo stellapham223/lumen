@@ -218,7 +218,7 @@ export function PhaseDeepDive({ phase }: Props) {
                   </span>
                   <span className="text-[14px] text-[color:var(--color-on-surface-variant)]">
                     {" "}
-                    — {r.author}
+                    by {r.author}
                   </span>
                   <p className="text-[12px] italic text-[color:var(--color-on-surface-variant)]/70">
                     {r.note}

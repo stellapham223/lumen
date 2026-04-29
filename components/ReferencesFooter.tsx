@@ -32,7 +32,7 @@ export function ReferencesFooter() {
             Sources & references
           </h3>
           <p className="mt-1 text-[14px] italic text-[color:var(--color-on-surface-variant)]">
-            {references.length} sources — peer-reviewed papers, books, and clinical guidelines.
+            {references.length} sources: peer-reviewed papers, books, and clinical guidelines.
           </p>
         </div>
         <span

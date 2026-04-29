@@ -32,7 +32,7 @@ export interface PhaseEncyclopedia {
 export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
   menstrual: {
     longDescription:
-      "The opening days of your cycle, when both estrogen and progesterone sit at their lowest of the month. Often experienced as 'low energy', the menstrual phase is also when activity in the corpus callosum shifts and your brain trends toward right-brain dominance — strategic, reflective, pattern-connecting work suits this state. This is your built-in retrospective. Don't fight it; use it.",
+      "The opening days of your cycle, when both estrogen and progesterone sit at their lowest of the month. Often experienced as 'low energy', the menstrual phase is also when activity in the corpus callosum shifts and your brain trends toward right-brain dominance: strategic, reflective, pattern-connecting work suits this state. This is your built-in retrospective. Don't fight it; use it.",
     hormoneProfile: [
       { hormone: "Estrogen", level: "Very low (~15% of cycle peak)", note: "Begins climbing slowly by day 3-4" },
       { hormone: "Progesterone", level: "Very low (~5% of peak)", note: "Will stay low until after ovulation" },
@@ -62,7 +62,7 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
     physicalChanges: [
       {
         title: "Iron loss 15-30mg over the cycle",
-        detail: "Heavier days 1-2. If you have anemia or thalassemia trait (low MCV), pay attention — fatigue compounds. Iron-rich food critical here.",
+        detail: "Heavier days 1-2. If you have anemia or thalassemia trait (low MCV), pay attention; fatigue compounds. Iron-rich food critical here.",
       },
       {
         title: "Basal body temperature lowest of cycle",
@@ -70,7 +70,7 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
       },
       {
         title: "Insulin sensitivity peaks",
-        detail: "Body uses carbs efficiently. Don't restrict — this is the worst time to cut calories. Body needs more, not less.",
+        detail: "Body uses carbs efficiently. Don't restrict; this is the worst time to cut calories. Body needs more, not less.",
       },
       {
         title: "Cortisol slightly elevated days 1-2",
@@ -83,7 +83,7 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
       "Light reading, reviewing past notes, journaling",
       "Low-impact movement: walks, mobility, restorative yoga",
       "Iron-rich nutrition: red meat, lentils, spinach paired with vitamin C",
-      "Extra sleep — body needs it; this is investment, not laziness",
+      "Extra sleep (body needs it; this is investment, not laziness)",
     ],
     defer: [
       "High-stakes presentations or pitches",
@@ -95,7 +95,7 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
     ],
     commonMistakes: [
       "Forcing peak-phase productivity expectations onto menstrual self → frustration spiral",
-      "Cutting calories during menstruation — body needs more energy, not less",
+      "Cutting calories during menstruation (body needs more energy, not less)",
       "Skipping iron-rich food → fatigue worsens days 3-5",
       "Dismissing the phase as 'just feeling tired' instead of strategically using it",
       "Scheduling presentations in this phase because the calendar said so",
@@ -108,7 +108,7 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
 
   follicular: {
     longDescription:
-      "Estrogen rising. This is your brain's growth phase: BDNF (brain-derived neurotrophic factor) climbs, dopamine sensitivity increases, and neuroplasticity peaks. You're wired for novelty, learning, and confidence. Tackle the hardest cognitive lifts of the cycle here. The window is short — usually 7-10 days — and biologically optimized for ambitious work.",
+      "Estrogen rising. This is your brain's growth phase: BDNF (brain-derived neurotrophic factor) climbs, dopamine sensitivity increases, and neuroplasticity peaks. You're wired for novelty, learning, and confidence. Tackle the hardest cognitive lifts of the cycle here. The window is short (usually 7-10 days) and biologically optimized for ambitious work.",
     hormoneProfile: [
       { hormone: "Estrogen", level: "Rising (20→90% of peak)", note: "Steepest climb in last 3 days before ovulation" },
       { hormone: "Progesterone", level: "Low", note: "Stays low until ovulation" },
@@ -123,12 +123,12 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
       },
       {
         title: "Verbal memory and learning capacity climb",
-        detail: "New material absorbed faster, retained better. If you have an exam, certification, or skill to learn — schedule deep practice here.",
+        detail: "New material absorbed faster, retained better. If you have an exam, certification, or skill to learn, schedule deep practice here.",
         source: "Sundström-Poromaa 2014",
       },
       {
         title: "Dopamine sensitivity increases",
-        detail: "Novelty feels rewarding. Motivation to start new projects strongest. Risk: overcommitment — see common mistakes.",
+        detail: "Novelty feels rewarding. Motivation to start new projects strongest. Risk: overcommitment (see common mistakes).",
       },
       {
         title: "Confidence and risk tolerance climb",
@@ -146,18 +146,18 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
       },
       {
         title: "Skin and hair often look best",
-        detail: "Estrogen supports collagen, sebum balance. Coincidence? Biology — and visible.",
+        detail: "Estrogen supports collagen, sebum balance. Coincidence? Biology, and visible.",
       },
       {
         title: "Sleep efficiency improves",
-        detail: "Body temperature stable, cortisol regulated. Use this — quality sleep compounds the cognitive gains.",
+        detail: "Body temperature stable, cortisol regulated. Use this; quality sleep compounds the cognitive gains.",
       },
     ],
     leanInto: [
       "Start the project you've been deferring",
       "Take the course, read the technical book, learn the new skill",
       "Pitch new ideas, draft proposals, sketch new directions",
-      "Heaviest training days — strength, intensity, skill acquisition",
+      "Heaviest training days: strength, intensity, skill acquisition",
       "Brainstorming sessions, ideation workshops",
       "Negotiate / decide on bigger commitments (capacity is real)",
     ],
@@ -169,7 +169,7 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
     commonMistakes: [
       "Overcommitting in this phase → luteal-you suffers under the weight",
       "Wasting peak window on admin or low-value meetings",
-      "Not scheduling enough actual deep work — it's the prime window for it",
+      "Not scheduling enough actual deep work (it's the prime window for it)",
       "Underestimating sleep requirements during heavy training",
       "Starting too many things in parallel (dopamine bias)",
     ],
@@ -181,17 +181,17 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
 
   ovulatory: {
     longDescription:
-      "Three days. Estrogen at cycle peak, LH surging, slight testosterone bump. This is your social and verbal cognition window — the time when your brain is biologically primed for high-stakes communication: pitching, presenting, negotiating, networking, hard conversations. The window is short. Calendar around it intentionally.",
+      "Three days. Estrogen at cycle peak, LH surging, slight testosterone bump. This is your social and verbal cognition window: the time when your brain is biologically primed for high-stakes communication (pitching, presenting, negotiating, networking, hard conversations). The window is short. Calendar around it intentionally.",
     hormoneProfile: [
       { hormone: "Estrogen", level: "Peak (~85-90% of cycle max)", note: "Briefly dips at ovulation, returns" },
-      { hormone: "LH", level: "SURGE — peak day", note: "Triggers ovulation 24-36h after surge starts" },
+      { hormone: "LH", level: "SURGE (peak day)", note: "Triggers ovulation 24-36h after surge starts" },
       { hormone: "Testosterone", level: "Slight bump", note: "Adds to confidence and assertiveness" },
       { hormone: "Progesterone", level: "Starts climbing post-ovulation", note: "Will dominate luteal" },
     ],
     cognitiveChanges: [
       {
         title: "Verbal fluency at cycle peak",
-        detail: "Word-finding, persuasion, articulating complex ideas — all peak here. Studies show measurable improvements in verbal IQ tasks during ovulatory phase.",
+        detail: "Word-finding, persuasion, articulating complex ideas all peak here. Studies show measurable improvements in verbal IQ tasks during ovulatory phase.",
         source: "Hampson 2020",
       },
       {
@@ -201,7 +201,7 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
       },
       {
         title: "Confidence + assertiveness peak",
-        detail: "Combination of estrogen + testosterone. Decisions feel decisive. Speak in meetings — your authority lands differently.",
+        detail: "Combination of estrogen + testosterone. Decisions feel decisive. Speak in meetings; your authority lands differently.",
       },
       {
         title: "Solo deep work feels restless",
@@ -223,7 +223,7 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
       },
       {
         title: "Libido often peaks",
-        detail: "Biology. Worth knowing — can affect focus, social energy.",
+        detail: "Biology. Worth knowing; can affect focus, social energy.",
       },
     ],
     leanInto: [
@@ -241,7 +241,7 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
       "Long heads-down writing sessions",
     ],
     commonMistakes: [
-      "Wasting peak social window on solo work — ovulatory is for people, not screens",
+      "Wasting peak social window on solo work (ovulatory is for people, not screens)",
       "Not scheduling the hard conversation here when it could go best",
       "Overestimating max strength training without accounting for ligament laxity risk",
       "Booking back-to-back solo deep work blocks that feel impossible",
@@ -255,7 +255,7 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
 
   luteal: {
     longDescription:
-      "Progesterone takes over. Calmer, slower, more detail-oriented. Early luteal still feels productive — like a controlled descent. Mid-luteal is detail-work nirvana. Late luteal (last 3-4 days) is hormonal withdrawal: estrogen and progesterone both drop, mimicking some symptoms of mild depression in 75% of women. Plan accordingly. This is finishing season, not starting season.",
+      "Progesterone takes over. Calmer, slower, more detail-oriented. Early luteal still feels productive, like a controlled descent. Mid-luteal is detail-work nirvana. Late luteal (last 3-4 days) is hormonal withdrawal: estrogen and progesterone both drop, mimicking some symptoms of mild depression in 75% of women. Plan accordingly. This is finishing season, not starting season.",
     hormoneProfile: [
       { hormone: "Progesterone", level: "Rising → peak (mid) → drop (late)", note: "The dominant hormone of this phase" },
       { hormone: "Estrogen", level: "Secondary peak then decline", note: "Drops sharply in last 3-4 days" },
@@ -265,7 +265,7 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
     cognitiveChanges: [
       {
         title: "Detail orientation peaks",
-        detail: "Progesterone supports sustained focus on familiar, repetitive cognitive work. Editing, proofreading, organizing systems — strong.",
+        detail: "Progesterone supports sustained focus on familiar, repetitive cognitive work. Editing, proofreading, organizing systems all strong.",
       },
       {
         title: "Verbal fluency declines (especially late luteal)",
@@ -274,7 +274,7 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
       },
       {
         title: "Risk-aversion climbs",
-        detail: "Decisions feel more cautious. Useful for stress-testing plans made in follicular optimism. Don't make big new commitments here — review them.",
+        detail: "Decisions feel more cautious. Useful for stress-testing plans made in follicular optimism. Don't make big new commitments here; review them.",
       },
       {
         title: "Late luteal: emotional reactivity rises",
@@ -301,7 +301,7 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
       },
     ],
     leanInto: [
-      "Editing finished work — drafts, code, designs, copy",
+      "Editing finished work: drafts, code, designs, copy",
       "Detail-heavy admin: expense reports, organizing files, cleaning email",
       "Closing out projects, tying loose ends, shipping the thing",
       "Reviewing and refining (vs. starting new)",
@@ -313,10 +313,10 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
       "High-stakes presentations late luteal",
       "Emotional conversations late luteal (reactivity high)",
       "Networking events that drain energy without clear ROI",
-      "Restrictive diets — they backfire in this phase",
+      "Restrictive diets (they backfire in this phase)",
     ],
     commonMistakes: [
-      "Treating mid-luteal appetite as a willpower failure — it's BMR + progesterone",
+      "Treating mid-luteal appetite as a willpower failure (it's BMR + progesterone)",
       "Scheduling presentations late luteal because 'I should be able to'",
       "Cutting calories aggressively → cravings worsen + late-luteal mood crashes harder",
       "Starting new things in luteal optimism → abandoning in menstrual reality",

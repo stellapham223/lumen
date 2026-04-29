@@ -5,7 +5,7 @@ export function Navbar() {
   return (
     <nav className="sticky top-0 z-40 hairline-b bg-[color:var(--color-background)]/85 backdrop-blur-sm">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4 sm:px-12">
-        <Link href="/" className="flex items-center" aria-label="Lumen — home">
+        <Link href="/" className="flex items-center" aria-label="Lumen home">
           <Image
             src="/logo-small.png"
             alt="Lumen"
