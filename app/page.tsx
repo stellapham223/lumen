@@ -33,7 +33,7 @@ export default function Home() {
   }
 
   return (
-    <main className="mx-auto flex max-w-[880px] flex-col gap-24 px-6 pt-20 pb-24 sm:px-8 sm:pt-24 sm:pb-32">
+    <main className="mx-auto flex max-w-[1200px] flex-col gap-24 px-6 pt-20 pb-24 sm:px-12 sm:pt-24 sm:pb-32">
       {hydrated && hasSavedPlan && (
         <div
           className="hairline flex items-center justify-between bg-[color:var(--color-surface-container-low)] px-5 py-3 -mb-16 animate-fade-in"
