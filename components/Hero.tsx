@@ -4,7 +4,7 @@ import { MaterialIcon } from "./MaterialIcon";
 export function Hero() {
   return (
     <>
-      <section className="grid grid-cols-1 md:grid-cols-12 md:items-center md:gap-10">
+      <section className="grid grid-cols-1 md:grid-cols-12 md:items-start md:gap-10">
         <div className="mx-auto flex max-w-[720px] flex-col gap-6 text-center md:col-span-7 md:mx-0 md:max-w-none md:text-left">
           <span className="eyebrow animate-fade-up tracking-[0.2em] text-[color:var(--color-primary)]">
             For ambitious women
