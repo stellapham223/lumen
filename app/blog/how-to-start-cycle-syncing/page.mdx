@@ -3,6 +3,7 @@ import {
   BreadcrumbJsonLd,
   FaqJsonLd,
 } from "@/components/JsonLd";
+import { PhaseGrid } from "@/components/PhaseGrid";
 
 export const metadata = {
   title: "How to start cycle syncing: a beginner action plan",
@@ -20,7 +21,7 @@ export const metadata = {
 
 <ArticleJsonLd
   headline="How to start cycle syncing: a beginner action plan"
-  description="Concrete beginner plan for cycle syncing — track, identify pattern, adjust one area, test for a month."
+  description="Concrete beginner plan for cycle syncing: track, identify pattern, adjust one area, test for a month."
   path="/blog/how-to-start-cycle-syncing"
   datePublished="2026-04-28"
 />
@@ -39,7 +40,7 @@ export const metadata = {
     {
       question: "How do I start cycle syncing as a beginner?",
       answer:
-        "Track one full cycle to learn your personal pattern. Note energy, mood, and focus day by day. Then pick one decision area — work scheduling, workout type, or social commitments — and adjust it for one month based on phase. Test, evaluate, repeat.",
+        "Track one full cycle to learn your personal pattern. Note energy, mood, and focus day by day. Then pick one decision area (work scheduling, workout type, or social commitments) and adjust it for one month based on phase. Test, evaluate, repeat.",
     },
     {
       question: "How long does it take to see results from cycle syncing?",
@@ -61,7 +62,12 @@ export const metadata = {
 
 # How to start cycle syncing
 
-**To start cycle syncing as a beginner: track one full cycle (energy, mood, focus daily) without changing anything. In cycle two, pick one decision area — work scheduling has highest leverage — and adjust based on phase. Evaluate after two cycles. Resist overhauling food, workouts, and social life simultaneously.**
+<aside className="my-8 hairline bg-[color:var(--color-surface-container-lowest)] p-6 sm:p-8">
+  <div className="eyebrow text-[color:var(--color-primary)] mb-3">Quick takeaway</div>
+  <p className="m-0 text-[16px] leading-relaxed text-[color:var(--color-on-surface)]">
+    To start cycle syncing as a beginner: track one full cycle (energy, mood, focus daily) without changing anything. In cycle two, pick one decision area (work scheduling has highest leverage) and adjust based on phase. Evaluate after two cycles. Resist overhauling food, workouts, and social life simultaneously.
+  </p>
+</aside>
 
 Most cycle syncing guides overwhelm new readers with prescriptive food charts, complicated workout splits, and supplement protocols on day one. Skip all of that.
 
@@ -92,15 +98,52 @@ That is it. Resist the urge to add more fields in week one. You can layer in wor
 
 ## What you will see by day 28
 
-If your cycle is hormonally typical, the data will likely show:
+If your cycle is hormonally typical, the data will likely show this pattern. Your specific version will diverge somewhere; that is the point. The goal of cycle 1 is to find your variant, not to confirm the textbook one.
 
-- A low-energy stretch in the first 3–5 days (menstrual)
-- A rising-energy stretch in week 2 (follicular) — focus often peaks here
-- A high-energy social stretch around day 14–16 (ovulatory) — verbal mode
-- Mid-luteal mood and focus dip starting around day 22–24
-- Late luteal irritability or fatigue 2–3 days before next period
-
-Your specific pattern will not match this exactly. That is the point. The goal of cycle 1 is to find your version of the pattern, not to confirm the textbook one.
+<PhaseGrid
+  columns={[
+    {
+      name: "Menstrual",
+      days: "1–5",
+      headline: "Low energy",
+      items: [
+        { label: "Foggy", meta: "▂" },
+        { label: "Sleep deepens" },
+        { label: "Inward mood" },
+      ],
+    },
+    {
+      name: "Follicular",
+      days: "6–13",
+      headline: "Rising energy",
+      items: [
+        { label: "Focus peaks", meta: "▆" },
+        { label: "Optimistic" },
+        { label: "Open to ideas" },
+      ],
+    },
+    {
+      name: "Ovulatory",
+      days: "14–16",
+      headline: "Outward + social",
+      items: [
+        { label: "Verbal mode", meta: "█" },
+        { label: "Confident" },
+        { label: "Wants company" },
+      ],
+    },
+    {
+      name: "Luteal",
+      days: "17–28",
+      headline: "High → low",
+      items: [
+        { label: "Detail focus early", meta: "▆" },
+        { label: "Dip ~day 22–24" },
+        { label: "Irritable late" },
+      ],
+    },
+  ]}
+/>
 
 If cycle 1 shows no pattern at all, that is also informative. You may be on hormonal contraception (which suppresses fluctuation), in perimenopause, or one of the cycle types where the standard model does not apply. In those cases cycle syncing in the traditional form will not help you.
 
@@ -108,22 +151,103 @@ If cycle 1 shows no pattern at all, that is also informative. You may be on horm
 
 Look at your cycle 1 data and pick one of these:
 
-**Option A — Work scheduling.** This is highest leverage for most people who already have control over their calendar. Adjustments:
+**Option A: Work scheduling.** Highest leverage for most people who already control their calendar.
 
-- Schedule deep focus work for follicular days
-- Schedule presentations, hard conversations, sales calls for ovulatory days
-- Schedule editing, finishing, organizing for early-to-mid luteal
-- Schedule retrospectives, planning, low-stakes work for menstrual days
-- Avoid major decisions or hard conversations in the last 3 days before your period
+<PhaseGrid
+  columns={[
+    {
+      name: "Menstrual",
+      days: "1–5",
+      headline: "Reflect",
+      items: [
+        { label: "Retrospectives" },
+        { label: "Planning" },
+        { label: "Low-stakes solo work" },
+      ],
+    },
+    {
+      name: "Follicular",
+      days: "6–13",
+      headline: "Build",
+      items: [
+        { label: "Deep focus work" },
+        { label: "Learning" },
+        { label: "Strategy" },
+      ],
+    },
+    {
+      name: "Ovulatory",
+      days: "14–16",
+      headline: "Connect",
+      items: [
+        { label: "Presentations" },
+        { label: "Hard conversations" },
+        { label: "Sales calls" },
+      ],
+    },
+    {
+      name: "Luteal",
+      days: "17–28",
+      headline: "Finish",
+      items: [
+        { label: "Editing (early)" },
+        { label: "Organizing (early)" },
+        { label: "Last 20% of projects" },
+      ],
+    },
+  ]}
+/>
 
-**Option B — Workout type.** If exercise is part of your week:
+One hard rule on top of the above: avoid major decisions or hard conversations in the last 3 days before your period.
 
-- High-intensity strength training in follicular phase
-- Power output peak in ovulatory phase (good for PRs or testing capacity)
-- Steady-state endurance in luteal phase
-- Light yoga, walks, mobility in menstrual phase
+**Option B: Workout type.** If exercise is part of your week.
 
-**Option C — Social commitments.** If your week is heavy on social load:
+<PhaseGrid
+  columns={[
+    {
+      name: "Menstrual",
+      days: "1–5",
+      headline: "Recovery",
+      items: [
+        { label: "Light yoga" },
+        { label: "Walks" },
+        { label: "Mobility" },
+      ],
+    },
+    {
+      name: "Follicular",
+      days: "6–13",
+      headline: "Strength",
+      items: [
+        { label: "High-intensity training" },
+        { label: "Strength PRs" },
+        { label: "Skill work" },
+      ],
+    },
+    {
+      name: "Ovulatory",
+      days: "14–16",
+      headline: "Peak power",
+      items: [
+        { label: "1-rep maxes" },
+        { label: "Sprints" },
+        { label: "Capacity testing" },
+      ],
+    },
+    {
+      name: "Luteal",
+      days: "17–28",
+      headline: "Endurance",
+      items: [
+        { label: "Steady-state cardio" },
+        { label: "Late: easy + recover" },
+        { label: "Heat tolerance ↓" },
+      ],
+    },
+  ]}
+/>
+
+**Option C: Social commitments.** If your week is heavy on social load:
 
 - Schedule social-heavy weeks in ovulatory + early luteal
 - Protect introvert time in menstrual + late luteal
