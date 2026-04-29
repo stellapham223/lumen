@@ -1,16 +1,7 @@
-// Tiny typed wrapper around Plausible's `window.plausible(eventName, opts)` API.
-// No-op when Plausible isn't loaded (local dev, ad-blocked, env var missing).
+// Tiny typed wrapper around GA4's sendGAEvent.
+// No-op locally / when NEXT_PUBLIC_GA_ID is unset.
 
-type PlausibleOptions = {
-  props?: Record<string, string | number | boolean>;
-  callback?: () => void;
-};
-
-declare global {
-  interface Window {
-    plausible?: (event: string, opts?: PlausibleOptions) => void;
-  }
-}
+import { sendGAEvent } from "@next/third-parties/google";
 
 export type LumenEvent =
   | "calculator_complete"
@@ -23,8 +14,11 @@ export type LumenEvent =
   | "affiliate_click"
   | "outbound_click";
 
-export function track(event: LumenEvent, props?: PlausibleOptions["props"]) {
+export function track(
+  event: LumenEvent,
+  props?: Record<string, string | number | boolean>,
+) {
   if (typeof window === "undefined") return;
-  if (typeof window.plausible !== "function") return;
-  window.plausible(event, props ? { props } : undefined);
+  if (!process.env.NEXT_PUBLIC_GA_ID) return;
+  sendGAEvent("event", event, props ?? {});
 }
