@@ -17,11 +17,15 @@ export function AdminRefreshButton() {
         return;
       }
       const data = (await res.json()) as {
-        scrape: { filteredCount: number; insertedOrUpdated: number };
+        scrape: {
+          lumenCount: number;
+          givebackCount: number;
+          insertedOrUpdated: number;
+        };
         mentions: { inserted: number };
       };
       setSummary(
-        `Scraped ${data.scrape.filteredCount} matching threads (${data.scrape.insertedOrUpdated} new/updated). Mentions: +${data.mentions.inserted}.`,
+        `${data.scrape.lumenCount} lumen + ${data.scrape.givebackCount} giveback threads (${data.scrape.insertedOrUpdated} new/updated). Mentions: +${data.mentions.inserted}.`,
       );
       router.refresh();
     });

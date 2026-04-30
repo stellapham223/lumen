@@ -10,6 +10,8 @@ import { upsertMentions } from "@/lib/db/queries";
 export type ScrapeResult = {
   rawCount: number;
   filteredCount: number;
+  lumenCount: number;
+  givebackCount: number;
   insertedOrUpdated: number;
   durationMs: number;
 };
@@ -18,6 +20,8 @@ export async function runScrape(): Promise<ScrapeResult> {
   const started = Date.now();
   const raw = await fetchAllSubs();
   const filtered = filterThreads(raw);
+  const lumenCount = filtered.filter((t) => t.category === "lumen").length;
+  const givebackCount = filtered.length - lumenCount;
   const inserted = await upsertThreads(
     filtered.map((t) => ({
       platform: "reddit",
@@ -34,6 +38,8 @@ export async function runScrape(): Promise<ScrapeResult> {
   return {
     rawCount: raw.length,
     filteredCount: filtered.length,
+    lumenCount,
+    givebackCount,
     insertedOrUpdated: inserted,
     durationMs: Date.now() - started,
   };
