@@ -21,16 +21,18 @@
 
 ## Subreddit priority list
 
-| Sub | Members | Strictness | Link policy | Status |
-|---|---|---|---|---|
-| r/CycleSyncing | ~5K | Loose | Yes if relevant | [ ] joined |
-| r/WomensHealth | ~50K | Medium | Reference OK, no spam | [ ] joined |
-| r/Periods | ~150K | Medium | Yes | [ ] joined |
-| r/femalefitness | ~50K | Loose | Yes | [ ] joined |
-| r/xxfitness | ~600K | Strict | Comment-first, link rare | [ ] joined |
-| r/PCOS | ~250K | Strict | Only when answers question | [ ] joined |
-| r/Endo | ~80K | Strict | Sensitive audience, careful | [ ] joined |
-| r/getdisciplined | ~2M | Strict mods | Comment-only, NO link | [ ] joined |
+Pre-flight rule: before commenting in any sub for the first time, read its sidebar + automod sticky and log Min age / Min karma below. Never draft a reply for an unvetted sub.
+
+| Sub | Members | Min age (days) | Min karma | Link policy | Vetted? (Y/N + date) |
+|---|---|---|---|---|---|
+| r/CycleSyncing | ~5K | ? | ? | Yes if relevant | N |
+| r/WomensHealth | ~50K | ? | ? | Reference OK, no spam | N |
+| r/Periods | ~150K | ? | ? | Yes | N |
+| r/femalefitness | ~50K | ? | ? | Yes | N |
+| r/xxfitness | ~600K | ? | ? | Comment-first, link rare | N |
+| r/PCOS | ~250K | ? | ? | Only when answers question | N (reply attempt 2026-04-30, automod did not block draft, awaiting submit confirm) |
+| r/Endo | ~80K | ? | ? | Sensitive audience, careful | N |
+| r/getdisciplined | ~2M | 3 | ? | Comment-only, NO link | N (blocked 2026-04-30: account < 3 days; karma threshold unknown) |
 
 **Daily check:** sort by `New` in top 4 subs, find threads matching the 5 blog post topics.
 
@@ -46,6 +48,7 @@
 - [ ] Fill bio (no Lumen link, no business mention; e.g. "writer interested in women's health, productivity, hormones")
 - [ ] Join all 8 subs
 - [ ] Read each sub's rules + sticky posts
+- [ ] **Pre-flight automod check:** for each of the 8 subs, log Min age + Min karma into the priority list table from the sidebar/automod sticky. Mark any sub you cannot yet post in.
 - [ ] Read 10 top posts of the past week in 4 priority subs (r/CycleSyncing, r/WomensHealth, r/Periods, r/femalefitness)
 - [ ] Comment helpfully 5 times across any sub. NO link. NO Lumen mention.
 
@@ -149,7 +152,7 @@ TL;DR: [one-line summary of the answer]
 - [ ] 100+ karma from helpful comments
 - [ ] At least 2 link-drops not removed by mods
 - [ ] At least 1 link-drop with positive upvotes (proves audience match)
-- [ ] Plausible/Cloudflare shows > 0 referral from reddit.com
+- [ ] Microsoft Clarity / Vercel Analytics shows > 0 referral from reddit.com
 
 **If failed:** content does not match audience. Stop seeding, audit blog posts against actual questions being asked.
 
@@ -195,7 +198,7 @@ TL;DR: [one-line summary of the answer]
 
 ### Weekly review checklist
 
-- [ ] Pull last 4 weeks Plausible/CF data: which post got most reddit referral?
+- [ ] Pull last 4 weeks Microsoft Clarity / Vercel Analytics data: which post got most reddit referral?
 - [ ] Pull GSC data: any reddit-driven query starting to rank organically?
 - [ ] Identify top 1 sub by referral → spend 60% of seeding time there
 - [ ] Identify bottom 2 subs by referral → drop unless karma needed for credibility

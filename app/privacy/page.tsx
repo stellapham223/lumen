@@ -59,10 +59,13 @@ export default function PrivacyPage() {
 
       <Section title="Analytics">
         <p>
-          We may use privacy-friendly, cookieless analytics in the future
-          (Plausible or similar) to count visits and understand which pages help
-          people. These tools do not identify individuals or track behavior
-          across sites. We will update this page if we add them.
+          We use Microsoft Clarity to record anonymous session replays and
+          heatmaps so we can see which parts of the calculator are confusing.
+          Clarity sets first-party cookies and may capture mouse movement,
+          clicks, and scrolls, but it masks form input and text content by
+          default. It does not identify you and does not track you across other
+          sites. The cycle inputs you type stay on your device and are never
+          sent to Clarity or to us.
         </p>
       </Section>
 

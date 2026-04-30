@@ -25,7 +25,7 @@ Free SEO-discoverable cycle productivity calculator. **Content business model**:
 ### Activities (6-8h/week)
 - Sprint 1 ✅ MVP shipped
 - **Sprint 1.5: Viability gate** (research-only, ~4h, before Sprint 2 — see detail below)
-- Sprint 2 ✅: localStorage persistence, SEO + AEO foundation (metadata, sitemap, robots, JSON-LD, llms.txt, AI bot allowlist, Plausible)
+- Sprint 2 ✅: localStorage persistence, SEO + AEO foundation (metadata, sitemap, robots, JSON-LD, llms.txt, AI bot allowlist, Microsoft Clarity heatmaps + session replays — free)
 - Sprint 3 Phase 3.0 ✅: Keyword research via Ahrefs free (skipped 160k VND Google Ads deposit). Audience-mismatch insight logged in [docs/keyword_research_2026_04.md](docs/keyword_research_2026_04.md)
 - Sprint 3 Phase 3.1 ✅: 5 MDX SEO test pages (Test E setup) — 2026-04-28. Measure rankings at week 3
 - Sprint 3 Phase 3.1.5: AI Overview optimization on existing 5 posts (~2h, see detail below)
@@ -176,12 +176,12 @@ Loose plan, depends on Phase 1-3 results:
 |---|---|---|
 | Vercel hosting | $0 (free tier) | $0 |
 | Domain (from Sprint 4) | $1 | $12 |
-| Plausible analytics | $9 | $108 |
+| Analytics (Microsoft Clarity + Vercel/GA4 free) | $0 | $0 |
 | Buttondown email | $9 | $108 |
 | Postgres (from Phase 3) | $0-20 | $0-240 |
 | Misc tools | $5 | $60 |
-| **Phase 1 total** | **$24** | **~$288** |
-| **Phase 3 total** | **~$45** | **~$540** |
+| **Phase 1 total** | **$15** | **~$180** |
+| **Phase 3 total** | **~$36** | **~$432** |
 
 ---
 
