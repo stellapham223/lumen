@@ -3,6 +3,7 @@ import { Newsreader, Inter } from "next/font/google";
 import "./globals.css";
 import { PublicNavbar, PublicFooter } from "@/components/PublicChrome";
 import { Analytics } from "@/components/Analytics";
+import { ClarityAnalytics } from "@/components/ClarityAnalytics";
 import { OrganizationJsonLd, WebApplicationJsonLd } from "@/components/JsonLd";
 import { BASE_URL, SITE } from "@/lib/site";
 
@@ -105,6 +106,7 @@ export default function RootLayout({
         {children}
         <PublicFooter />
         <Analytics />
+        <ClarityAnalytics />
       </body>
     </html>
   );
