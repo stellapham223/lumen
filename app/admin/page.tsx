@@ -4,6 +4,7 @@ import { listThreads, countThreadsByStatus } from "@/lib/db/queries";
 import { THREAD_STATUSES, type ThreadStatus } from "@/lib/db/schema";
 import { AdminStatusTabs } from "@/components/AdminStatusTabs";
 import { WarmupBanner } from "@/components/WarmupBanner";
+import { AdminRefreshButton } from "@/components/AdminRefreshButton";
 
 export const metadata: Metadata = {
   title: "Admin · Threads",
@@ -46,13 +47,16 @@ export default async function AdminHomePage({
       <WarmupBanner />
 
       <div className="flex flex-col gap-2">
-        <span className="eyebrow text-[color:var(--color-primary)]">Threads</span>
+        <div className="flex items-baseline justify-between gap-4">
+          <span className="eyebrow text-[color:var(--color-primary)]">Threads</span>
+          <AdminRefreshButton />
+        </div>
         <h1 className="font-display text-[28px] font-medium text-[color:var(--color-primary)]">
           Reddit watchlist
         </h1>
         <p className="text-[14px] text-[color:var(--color-on-surface-variant)]">
-          Lumen-relevant threads scraped daily at 8am ICT. Move new threads
-          through Suggested → Engaged → Skipped to keep the queue clean.
+          Lumen-relevant threads. Daily auto-scrape at 8am ICT. Hit Refresh
+          when you want fresher threads (Reddit posts peak in 1-3 hours).
         </p>
       </div>
 

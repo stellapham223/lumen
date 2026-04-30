@@ -1,0 +1,24 @@
+name: Hourly Reddit scrape
+
+on:
+  schedule:
+    # Every hour, on the hour
+    - cron: "0 * * * *"
+  # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Lumen scrape cron
+        run: |
+          curl --fail-with-body -sS \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            https://lumencal.com/api/cron/scrape
+
+      - name: Trigger Lumen mentions cron
+        run: |
+          curl --fail-with-body -sS \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            https://lumencal.com/api/cron/mentions
