@@ -1,6 +1,7 @@
 import { BASE_URL, BLOG_POSTS } from "@/lib/site";
 import type { CdThread } from "@/lib/db/schema";
 import { REDDIT_STYLE_RULES } from "@/lib/prompts/redditStyleRules";
+import { REDDIT_DETAIL_RULES } from "@/lib/prompts/redditDetailRules";
 import { REDDIT_PERSONA } from "@/lib/prompts/redditPersona";
 
 function weekNumber(date: Date = new Date()): number {
@@ -35,6 +36,8 @@ Tone: helpful first, link only if topically perfect, 70/30 ratio (no-link/with-l
 NEVER pitch Lumen directly. Answer the question first; link as supporting reference.
 
 ${REDDIT_STYLE_RULES}
+
+${REDDIT_DETAIL_RULES}
 
 ${REDDIT_PERSONA}
 
@@ -82,6 +85,8 @@ This is a GIVEBACK thread, NOT a promotional one. Hard rules:
 - Earn karma + credibility. Lumen does not exist for the reader of this comment.
 
 ${REDDIT_STYLE_RULES}
+
+${REDDIT_DETAIL_RULES}
 
 ${REDDIT_PERSONA}
 
