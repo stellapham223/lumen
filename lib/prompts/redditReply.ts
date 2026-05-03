@@ -1,6 +1,7 @@
 import { BASE_URL, BLOG_POSTS } from "@/lib/site";
 import type { CdThread } from "@/lib/db/schema";
 import { REDDIT_STYLE_RULES } from "@/lib/prompts/redditStyleRules";
+import { REDDIT_PERSONA } from "@/lib/prompts/redditPersona";
 
 function weekNumber(date: Date = new Date()): number {
   const start = new Date(date.getFullYear(), 0, 1);
@@ -35,6 +36,8 @@ NEVER pitch Lumen directly. Answer the question first; link as supporting refere
 
 ${REDDIT_STYLE_RULES}
 
+${REDDIT_PERSONA}
+
 REDDIT THREAD CONTEXT:
 - Subreddit: r/${thread.sub}
 - Title: ${thread.title}
@@ -56,9 +59,14 @@ UTM tag format: ${utm}
 (Append to any blog URL, e.g. ${BASE_URL}/blog/<slug>${utm})
 
 GENERATE 3 DIFFERENT REPLY OPTIONS:
-1. No-link version (helpful answer only)
-2. Link version (only if a blog post above is topically perfect for this question)
-3. Contrarian/spicy version (challenges the premise of the post, often gets upvotes)
+1. No-link version (helpful answer only). If the persona ABOVE matches the thread topic, weave one short first-person detail in naturally. If not, stay tactical and impersonal.
+2. Link version (only if a blog post above is topically perfect for this question). Same persona rule.
+3. Contrarian/spicy version (challenges the premise of the post, often gets upvotes). Personal stake makes it land harder, but only if persona fits — otherwise lead with the contrarian angle alone.
+
+PERSONA-FIT CHECK (run before writing each option):
+- Does the thread topic appear in the persona's "topics where first-person anecdotes are allowed" list?
+- If YES → first-person OK, use real persona details, fuzz exact numbers
+- If NO → no fabricated first-person. Either go indirect ("a friend with X..."), pivot to general/tactical voice, or note "(persona doesn't fit — going impersonal)" before the option
 
 Output each reply as plain text I can paste directly into Reddit. Keep each under 1500 characters.`;
 }
@@ -75,6 +83,8 @@ This is a GIVEBACK thread, NOT a promotional one. Hard rules:
 
 ${REDDIT_STYLE_RULES}
 
+${REDDIT_PERSONA}
+
 REDDIT THREAD CONTEXT:
 - Subreddit: r/${thread.sub}
 - Title: ${thread.title}
@@ -89,9 +99,17 @@ REPLY STRUCTURE:
 [Optional: caveat or "this worked for me" qualifier so it does not read as advice spam]
 
 GENERATE 3 DIFFERENT REPLY OPTIONS:
-1. Practical answer (most actionable)
-2. Personal experience version ("I tried X and Y happened")
+1. Practical answer (most actionable, persona-neutral or light first-person if persona fits)
+2. Personal experience version. CRITICAL: only first-person if the thread topic is in the persona's "allowed topics" list. If the thread is OUTSIDE persona scope (e.g. ADHD, PCOS Dx, IUD/Nexplanon, perimenopause, pregnancy, IPS, etc.), do ONE of:
+   (a) Indirect: "a friend with X tried Y", "saw someone in r/X mention", "i don't have it but my sister..."
+   (b) Pivot to a punchy tactical version distinctly different in tone from option 1
+   (c) Output "(persona doesn't fit — going 2-option)" and skip
 3. Question-back version (ask 1 clarifying question that helps OP think + invites more replies)
+
+PERSONA-FIT CHECK (run before option 2):
+- Is the thread topic in the persona's "allowed topics" list?
+- If YES → first-person OK, fuzz exact numbers, stay consistent
+- If NO → no fabricated first-person, pick (a), (b), or (c) above
 
 Output each reply as plain text I can paste directly into Reddit. Keep each under 1200 characters.
 NO LINKS. NO BRAND MENTIONS. If you are tempted, suggest a public domain reference (peer-reviewed paper, government health agency) instead.`;
