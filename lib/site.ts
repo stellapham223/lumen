@@ -93,4 +93,18 @@ export const BLOG_POSTS = [
       "An honest look at what the research backs, what is overstated, and where to land between TikTok hype and full-skeptic dismissal.",
     publishedAt: "2026-04-28",
   },
+  {
+    slug: "does-cycle-syncing-work",
+    title: "Does cycle syncing work? An evidence-graded answer",
+    description:
+      "Cycle syncing is not one practice, it is four. A 2024 meta-analysis killed the case for phase-timed exercise. Here is the evidence grade for each protocol, plus a 2-cycle self-test.",
+    publishedAt: "2026-05-06",
+  },
+  {
+    slug: "how-does-cycle-syncing-work",
+    title: "How does cycle syncing work? The hormone-cognition mechanism",
+    description:
+      "Estrogen and progesterone modulate four neurotransmitter systems (serotonin, GABA, dopamine, BDNF), producing predictable shifts in cognition, mood, and energy. The mechanism, in plain language.",
+    publishedAt: "2026-05-09",
+  },
 ] as const;
