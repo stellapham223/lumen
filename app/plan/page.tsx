@@ -72,7 +72,7 @@ export default function Plan() {
 
   if (!hydrated || !status || !input) {
     return (
-      <main className="mx-auto max-w-[960px] px-6 py-12 sm:px-8 sm:py-16">
+      <main className="mx-auto w-full max-w-[960px] px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="h-32 animate-pulse bg-[color:var(--color-surface-container)]" />
       </main>
     );
@@ -80,9 +80,9 @@ export default function Plan() {
 
   return (
     <>
-      <main className="mx-auto flex max-w-[960px] flex-col gap-8 px-6 py-12 sm:px-8 sm:py-16">
+      <main className="mx-auto flex w-full max-w-[960px] flex-col gap-6 px-4 py-8 sm:gap-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="hairline-b flex flex-col gap-2 pb-4 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-display text-[14px] italic text-[color:var(--color-on-surface-variant)]">
+          <p className="font-display text-[12px] sm:text-[14px] italic text-[color:var(--color-on-surface-variant)]">
             Cycle: {input.cycleLength} days · Period: {input.periodLength} days
             · Saved in your browser
           </p>
@@ -114,7 +114,7 @@ export default function Plan() {
         </div>
 
         <div
-          className="hairline grid grid-cols-1 gap-8 bg-[color:var(--color-surface-container-lowest)] p-6 sm:grid-cols-2 sm:p-10 animate-fade-up"
+          className="hairline grid grid-cols-1 gap-6 bg-[color:var(--color-surface-container-lowest)] p-4 sm:grid-cols-2 sm:gap-8 sm:p-6 lg:p-10 animate-fade-up"
           style={{ animationDelay: "250ms" }}
         >
           <ScheduleTodayPanel status={status} />

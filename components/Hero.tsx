@@ -10,14 +10,14 @@ export function Hero() {
             For ambitious women
           </span>
           <h1
-            className="animate-fade-up font-display text-[44px] leading-[1.05] tracking-[-0.02em] text-[color:var(--color-primary)] sm:text-[64px] md:text-[56px] lg:text-[64px]"
+            className="animate-fade-up font-display text-[34px] leading-[1.08] tracking-[-0.02em] text-[color:var(--color-primary)] sm:text-[48px] sm:leading-[1.05] md:text-[56px] lg:text-[64px]"
             style={{ animationDelay: "100ms" }}
           >
             Your hormones aren&apos;t a bug. They&apos;re a{" "}
             <em className="font-display italic">feature.</em>
           </h1>
           <p
-            className="mx-auto mt-4 max-w-[600px] animate-fade-up font-display text-[22px] leading-[1.3] text-[color:var(--color-on-surface-variant)] md:mx-0 md:text-[20px] lg:text-[22px]"
+            className="mx-auto mt-2 max-w-[600px] animate-fade-up font-display text-[17px] leading-[1.4] text-[color:var(--color-on-surface-variant)] sm:mt-4 sm:text-[20px] sm:leading-[1.3] md:mx-0 lg:text-[22px]"
             style={{ animationDelay: "200ms" }}
           >
             A cycle-aware productivity planner. Schedule deep work, meetings, and
@@ -60,7 +60,7 @@ export function Hero() {
       />
 
       <section
-        className="grid animate-fade-up grid-cols-1 gap-8 md:grid-cols-3"
+        className="grid animate-fade-up grid-cols-1 gap-6 sm:gap-8 md:grid-cols-3"
         style={{ animationDelay: "350ms" }}
       >
         <ValueProp
@@ -105,10 +105,10 @@ function ValueProp({
       <span className="eyebrow text-[color:var(--color-on-surface-variant)]">
         {eyebrow}
       </span>
-      <h3 className="font-display text-[22px] leading-tight font-medium text-[color:var(--color-primary)]">
+      <h3 className="font-display text-[19px] sm:text-[22px] leading-tight font-medium text-[color:var(--color-primary)]">
         {title}
       </h3>
-      <p className="text-[15px] leading-relaxed text-[color:var(--color-on-surface-variant)]">
+      <p className="text-[14px] sm:text-[15px] leading-relaxed text-[color:var(--color-on-surface-variant)]">
         {body}
       </p>
     </div>

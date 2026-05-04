@@ -32,25 +32,25 @@ export function PhaseDeepDive({ phase }: Props) {
   const enc = phaseEncyclopedia[phase];
 
   return (
-    <section className="hairline bg-[color:var(--color-surface-container-lowest)] p-6 sm:p-10">
+    <section className="hairline bg-[color:var(--color-surface-container-lowest)] p-4 sm:p-6 lg:p-10">
       <button
         onClick={() => setOpen(!open)}
-        className="flex w-full items-center justify-between text-left transition-opacity hover:opacity-80"
+        className="flex w-full items-start justify-between gap-4 text-left transition-opacity hover:opacity-80"
         aria-expanded={open}
       >
-        <div>
+        <div className="min-w-0 flex-1">
           <span className="eyebrow text-[color:var(--color-primary)]">
             Encyclopedia
           </span>
-          <h3 className="mt-1 font-display text-[24px] font-medium text-[color:var(--color-primary)]">
+          <h3 className="mt-1 font-display text-[20px] sm:text-[24px] font-medium text-[color:var(--color-primary)]">
             Learn about your {profile.name.toLowerCase()} phase
           </h3>
-          <p className="mt-1 text-[14px] italic text-[color:var(--color-on-surface-variant)]">
-            Hormone profile · brain + body · what to lean into · common mistakes
+          <p className="mt-1 text-[13px] sm:text-[14px] italic text-[color:var(--color-on-surface-variant)]">
+            Hormone profile, brain + body, what to lean into, common mistakes
           </p>
         </div>
         <span
-          className={`text-[color:var(--color-primary)] transition-transform duration-300 ${
+          className={`shrink-0 text-[color:var(--color-primary)] transition-transform duration-300 ${
             open ? "rotate-45" : ""
           }`}
         >
@@ -89,15 +89,15 @@ export function PhaseDeepDive({ phase }: Props) {
             </ul>
           </div>
 
-          <div className="hairline-b">
-            <div className="flex flex-wrap gap-1 -mb-px">
+          <div className="hairline-b -mx-4 sm:mx-0">
+            <div className="flex gap-1 -mb-px overflow-x-auto overscroll-x-contain touch-pan-x px-4 sm:px-0 sm:flex-wrap">
               {tabs.map((tab) => {
                 const isActive = activeTab === tab.id;
                 return (
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
-                    className={`relative flex items-center gap-1.5 px-3 py-2 text-[12px] font-semibold uppercase tracking-[0.12em] transition-colors ${
+                    className={`relative flex shrink-0 items-center gap-1.5 px-3 py-2 min-h-[40px] text-[11px] sm:text-[12px] font-semibold uppercase tracking-[0.1em] sm:tracking-[0.12em] transition-colors ${
                       isActive
                         ? "text-[color:var(--color-primary)]"
                         : "text-[color:var(--color-on-surface-variant)] hover:text-[color:var(--color-primary)]"

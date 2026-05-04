@@ -88,13 +88,13 @@ export function DayDetailModal({
         <button
           aria-label="Close"
           onClick={onClose}
-          className="absolute right-4 top-4 z-20 p-2 text-[color:var(--color-on-surface-variant)] transition-colors hover:text-[color:var(--color-primary)]"
+          className="absolute right-2 top-2 sm:right-4 sm:top-4 z-20 flex h-11 w-11 items-center justify-center text-[color:var(--color-on-surface-variant)] transition-colors hover:text-[color:var(--color-primary)]"
         >
           <MaterialIcon name="close" size={20} weight={300} />
         </button>
 
         <div className="relative z-10 flex-1 overflow-y-auto">
-          <header className="hairline-b space-y-6 p-8 sm:p-10 text-center">
+          <header className="hairline-b space-y-4 sm:space-y-6 p-5 sm:p-8 lg:p-10 pt-12 sm:pt-8 text-center">
             <div className="flex items-center justify-center gap-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-[color:var(--color-on-surface-variant)]">
               <span>{formatDate(day.date).toUpperCase()}</span>
               {isToday && (
@@ -108,34 +108,34 @@ export function DayDetailModal({
             <div className="space-y-2">
               <h1
                 id="day-detail-title"
-                className="font-display text-[32px] sm:text-[40px] leading-tight flex items-center justify-center gap-3 flex-wrap text-[color:var(--color-on-surface)]"
+                className="font-display text-[24px] sm:text-[32px] lg:text-[40px] leading-tight flex items-center justify-center gap-2 sm:gap-3 flex-wrap text-[color:var(--color-on-surface)]"
               >
-                <span className="text-[36px]">{phaseEmoji[day.phase]}</span>
+                <span className="text-[28px] sm:text-[36px]">{phaseEmoji[day.phase]}</span>
                 <span className={`italic ${phaseTextColor[day.phase]}`}>
                   {profile.name}
                 </span>
-                <span className="text-[color:var(--color-outline-variant)] font-light mx-1">
+                <span className="text-[color:var(--color-outline-variant)] font-light mx-1 hidden sm:inline">
                   ·
                 </span>
                 <span>
                   Day {day.dayInPhase} of {day.phaseLength}
                 </span>
               </h1>
-              <p className="font-display text-[14px] italic text-[color:var(--color-on-surface-variant)]">
+              <p className="font-display text-[12px] sm:text-[14px] italic text-[color:var(--color-on-surface-variant)]">
                 Day {day.dayInCycle} of {cycleLength}-day cycle · {profile.shortLabel} mode
               </p>
             </div>
           </header>
 
-          <div className="space-y-12 p-8 sm:p-10">
-            <section className="space-y-6">
+          <div className="space-y-8 sm:space-y-12 p-5 sm:p-8 lg:p-10">
+            <section className="space-y-5 sm:space-y-6">
               <h2 className="eyebrow text-[color:var(--color-on-surface-variant)] hairline-b pb-2">
                 Hormone state
               </h2>
-              <p className="font-display text-[18px] leading-relaxed text-[color:var(--color-on-surface)]">
+              <p className="font-display text-[15px] sm:text-[18px] leading-relaxed text-[color:var(--color-on-surface)]">
                 {details.hormoneSummary}
               </p>
-              <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+              <div className="grid grid-cols-2 gap-2.5 sm:gap-3 sm:grid-cols-4">
                 <HormonePill
                   label="Estrogen"
                   value={details.hormones.estrogen}
@@ -151,7 +151,7 @@ export function DayDetailModal({
               </div>
             </section>
 
-            <section className="hairline-t pt-8 grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <section className="hairline-t pt-6 sm:pt-8 grid grid-cols-1 gap-6 sm:gap-8 sm:grid-cols-2">
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <span className="text-[color:var(--color-primary)]">
@@ -180,7 +180,7 @@ export function DayDetailModal({
               </div>
             </section>
 
-            <section className="hairline-t pt-8 grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <section className="hairline-t pt-6 sm:pt-8 grid grid-cols-1 gap-6 sm:gap-8 sm:grid-cols-2">
               <div className="space-y-4">
                 <h2 className="eyebrow text-[#3d6a4c] border-b border-[#3d6a4c]/20 pb-2">
                   Best to schedule
@@ -259,10 +259,10 @@ export function DayDetailModal({
           </div>
         </div>
 
-        <footer className="hairline-t flex items-center justify-between bg-[color:var(--color-surface-container-lowest)] p-4 sm:px-8 sm:py-5 z-10">
+        <footer className="hairline-t flex items-center justify-between bg-[color:var(--color-surface-container-lowest)] px-3 py-3 sm:px-8 sm:py-5 z-10">
           <button
             onClick={onPrev}
-            className="group flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-[color:var(--color-on-surface-variant)] transition-colors hover:text-[color:var(--color-primary)]"
+            className="group flex min-h-[44px] items-center gap-2 px-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-[color:var(--color-on-surface-variant)] transition-colors hover:text-[color:var(--color-primary)]"
           >
             <span className="transition-transform group-hover:-translate-x-1">
               <MaterialIcon name="arrow_back" size={16} weight={400} />
@@ -274,7 +274,7 @@ export function DayDetailModal({
           </span>
           <button
             onClick={onNext}
-            className="group flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-[color:var(--color-on-surface-variant)] transition-colors hover:text-[color:var(--color-primary)]"
+            className="group flex min-h-[44px] items-center gap-2 px-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-[color:var(--color-on-surface-variant)] transition-colors hover:text-[color:var(--color-primary)]"
           >
             Next
             <span className="transition-transform group-hover:translate-x-1">

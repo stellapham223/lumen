@@ -48,7 +48,7 @@ export function CycleInput({ onSubmit, initialValues }: Props) {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6">
         <div className="flex flex-col gap-2">
           <label
             htmlFor="cycleLength"
@@ -92,7 +92,7 @@ export function CycleInput({ onSubmit, initialValues }: Props) {
 
       <button
         type="submit"
-        className="mt-4 flex items-center justify-center gap-2 rounded bg-[color:var(--color-primary)] px-6 py-4 text-[12px] font-semibold uppercase tracking-[0.16em] text-white transition-all hover:bg-[color:var(--color-primary)]/90 hover:gap-3 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]/30 focus:ring-offset-2 active:scale-[0.99]"
+        className="mt-2 sm:mt-4 flex min-h-[48px] items-center justify-center gap-2 rounded bg-[color:var(--color-primary)] px-6 py-4 text-[12px] font-semibold uppercase tracking-[0.16em] text-white transition-all hover:bg-[color:var(--color-primary)]/90 hover:gap-3 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]/30 focus:ring-offset-2 active:scale-[0.99]"
       >
         See my cycle plan
         <MaterialIcon name="arrow_forward" size={16} weight={400} />

@@ -20,23 +20,23 @@ export function ReferencesFooter() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="hairline bg-[color:var(--color-surface-container-lowest)] p-6 sm:p-10">
+    <section className="hairline bg-[color:var(--color-surface-container-lowest)] p-4 sm:p-6 lg:p-10">
       <button
         onClick={() => setOpen(!open)}
-        className="flex w-full items-center justify-between text-left transition-opacity hover:opacity-80"
+        className="flex w-full items-start justify-between gap-4 text-left transition-opacity hover:opacity-80"
         aria-expanded={open}
       >
-        <div>
+        <div className="min-w-0 flex-1">
           <span className="eyebrow text-[color:var(--color-primary)]">Research</span>
-          <h3 className="mt-1 font-display text-[24px] font-medium text-[color:var(--color-primary)]">
+          <h3 className="mt-1 font-display text-[20px] sm:text-[24px] font-medium text-[color:var(--color-primary)]">
             Sources & references
           </h3>
-          <p className="mt-1 text-[14px] italic text-[color:var(--color-on-surface-variant)]">
+          <p className="mt-1 text-[13px] sm:text-[14px] italic text-[color:var(--color-on-surface-variant)]">
             {references.length} sources: peer-reviewed papers, books, and clinical guidelines.
           </p>
         </div>
         <span
-          className={`text-[color:var(--color-primary)] transition-transform duration-300 ${
+          className={`shrink-0 text-[color:var(--color-primary)] transition-transform duration-300 ${
             open ? "rotate-45" : ""
           }`}
         >

@@ -42,11 +42,23 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: clip;
+}
+
 body {
   background: var(--color-background);
   color: var(--color-on-background);
   font-family: var(--font-body);
   font-feature-settings: "ss01", "cv01";
+}
+
+@layer base {
+  main,
+  main * {
+    min-width: 0;
+  }
 }
 
 ::selection {

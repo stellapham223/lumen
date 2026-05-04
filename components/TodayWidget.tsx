@@ -26,7 +26,7 @@ export function TodayWidget({ status }: Props) {
 
   return (
     <section
-      className={`hairline ${phaseHeroBg[status.phase]} flex flex-col items-start gap-8 p-6 sm:p-12 md:flex-row animate-fade-up`}
+      className={`hairline ${phaseHeroBg[status.phase]} flex flex-col items-stretch gap-6 p-5 sm:gap-8 sm:p-8 lg:flex-row lg:p-12 animate-fade-up`}
     >
       <div className="flex-1 space-y-4">
         <div className="space-y-1">
@@ -34,20 +34,20 @@ export function TodayWidget({ status }: Props) {
             Day {status.dayInCycle} of cycle · {profile.shortLabel} mode
           </span>
           <h1
-            className={`font-display text-[40px] sm:text-[48px] leading-[1.1] tracking-[-0.02em] italic ${phaseTextColor[status.phase]}`}
+            className={`font-display text-[32px] leading-[1.08] tracking-[-0.02em] italic sm:text-[40px] lg:text-[48px] lg:leading-[1.1] ${phaseTextColor[status.phase]}`}
           >
             {profile.name} phase
           </h1>
-          <p className="font-display text-[16px] italic text-[color:var(--color-on-surface-variant)]">
+          <p className="font-display text-[15px] sm:text-[16px] italic text-[color:var(--color-on-surface-variant)]">
             Day {status.dayInPhase} of {status.phaseLength}
           </p>
         </div>
 
-        <p className="max-w-prose text-[18px] leading-relaxed text-[color:var(--color-on-surface-variant)]">
+        <p className="max-w-prose text-[15px] sm:text-[18px] leading-relaxed text-[color:var(--color-on-surface-variant)]">
           {profile.description}
         </p>
 
-        <div className="flex items-center gap-2 pt-2 font-display text-[14px] italic text-[color:var(--color-on-surface-variant)]">
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 pt-2 font-display text-[13px] sm:text-[14px] italic text-[color:var(--color-on-surface-variant)]">
           <span>
             Next phase in {status.daysToNextPhase}{" "}
             {status.daysToNextPhase === 1 ? "day" : "days"}
@@ -57,7 +57,7 @@ export function TodayWidget({ status }: Props) {
         </div>
       </div>
 
-      <div className="hairline flex flex-col gap-3 bg-[color:var(--color-surface-container-lowest)] p-6 md:w-72">
+      <div className="hairline flex flex-col gap-3 bg-[color:var(--color-surface-container-lowest)] p-5 sm:p-6 lg:w-72 lg:shrink-0">
         <div
           className={`flex items-center gap-2 ${phaseTextColor[status.phase]}`}
         >

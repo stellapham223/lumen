@@ -7,22 +7,22 @@ interface Props {
 
 export function PageLayout({ eyebrow, title, intro, children }: Props) {
   return (
-    <main className="mx-auto max-w-[720px] px-6 pt-16 pb-24 sm:px-8 sm:pt-24 sm:pb-32">
-      <header className="mb-12 animate-fade-up">
+    <main className="mx-auto w-full max-w-[720px] px-4 pt-10 pb-20 sm:px-6 sm:pt-16 sm:pb-24 lg:px-8 lg:pt-24 lg:pb-32">
+      <header className="mb-8 animate-fade-up sm:mb-12">
         <span className="eyebrow text-[color:var(--color-primary)] tracking-[0.2em]">
           {eyebrow}
         </span>
-        <h1 className="mt-4 font-display text-[40px] sm:text-[56px] leading-[1.05] tracking-[-0.02em] text-[color:var(--color-primary)]">
+        <h1 className="mt-3 font-display text-[32px] leading-[1.08] tracking-[-0.02em] text-[color:var(--color-primary)] sm:mt-4 sm:text-[44px] sm:leading-[1.05] lg:text-[56px]">
           {title}
         </h1>
         {intro && (
-          <p className="mt-6 font-display text-[20px] leading-[1.4] text-[color:var(--color-on-surface-variant)]">
+          <p className="mt-4 font-display text-[16px] leading-[1.45] text-[color:var(--color-on-surface-variant)] sm:mt-6 sm:text-[20px] sm:leading-[1.4]">
             {intro}
           </p>
         )}
       </header>
 
-      <div className="hairline-b mb-12" />
+      <div className="hairline-b mb-8 sm:mb-12" />
 
       <article
         className="prose-editorial space-y-10 animate-fade-up"
@@ -50,10 +50,10 @@ export function Section({
           {eyebrow}
         </span>
       )}
-      <h2 className="font-display text-[24px] sm:text-[28px] font-medium text-[color:var(--color-primary)]">
+      <h2 className="font-display text-[22px] sm:text-[28px] font-medium text-[color:var(--color-primary)]">
         {title}
       </h2>
-      <div className="space-y-4 text-[16px] leading-relaxed text-[color:var(--color-on-surface)]">
+      <div className="space-y-4 text-[15px] sm:text-[16px] leading-relaxed text-[color:var(--color-on-surface)]">
         {children}
       </div>
     </section>

@@ -33,27 +33,29 @@ export function HormoneChart({ status, cycleLength, periodLength }: Props) {
   const phaseBounds = getPhaseBounds(cycleLength, periodLength);
 
   return (
-    <section className="hairline bg-[color:var(--color-surface-container-lowest)] p-6 sm:p-10">
-      <div className="flex flex-col gap-2 mb-6 sm:flex-row sm:items-end sm:justify-between">
+    <section className="hairline bg-[color:var(--color-surface-container-lowest)] p-4 sm:p-6 lg:p-10">
+      <div className="flex flex-col gap-3 mb-5 sm:mb-6 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <span className="eyebrow text-[color:var(--color-primary)]">Your cycle</span>
-          <h3 className="mt-1 font-display text-[24px] font-medium text-[color:var(--color-primary)]">
+          <h3 className="mt-1 font-display text-[20px] sm:text-[24px] font-medium text-[color:var(--color-primary)]">
             Hormone curve
           </h3>
-          <p className="mt-1 text-[14px] italic text-[color:var(--color-on-surface-variant)]">
+          <p className="mt-1 text-[13px] sm:text-[14px] italic text-[color:var(--color-on-surface-variant)]">
             Day {status.dayInCycle} of {cycleLength}. The dashed line marks today.
           </p>
         </div>
         <Legend />
       </div>
 
-      <div className="-mx-2 overflow-x-auto">
-        <svg
-          viewBox={`0 0 ${totalWidth} ${totalHeight}`}
-          className="w-full min-w-[560px]"
-          role="img"
-          aria-label="Hormone curves across the menstrual cycle"
-        >
+      <div className="relative -mx-2">
+        <div className="overflow-x-auto overscroll-x-contain touch-pan-x">
+          <svg
+            viewBox={`0 0 ${totalWidth} ${totalHeight}`}
+            preserveAspectRatio="xMidYMid meet"
+            className="w-full min-w-[480px]"
+            role="img"
+            aria-label="Hormone curves across the menstrual cycle"
+          >
           {phaseBounds.map((b) => (
             <rect
               key={b.phase}
@@ -160,6 +162,11 @@ export function HormoneChart({ status, cycleLength, periodLength }: Props) {
             Today
           </text>
         </svg>
+        </div>
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-[color:var(--color-surface-container-lowest)] to-transparent sm:hidden"
+        />
       </div>
 
       <p className="mt-4 flex items-center gap-2 text-[12px] italic text-[color:var(--color-on-surface-variant)]/70">
@@ -172,7 +179,7 @@ export function HormoneChart({ status, cycleLength, periodLength }: Props) {
 
 function Legend() {
   return (
-    <div className="flex gap-4 text-[10px] uppercase tracking-[0.12em] text-[color:var(--color-on-surface-variant)]">
+    <div className="flex flex-wrap gap-x-3 gap-y-1.5 text-[10px] uppercase tracking-[0.12em] text-[color:var(--color-on-surface-variant)] sm:gap-4">
       <span className="flex items-center gap-1.5">
         <span className="inline-block h-0.5 w-3 bg-[color:var(--color-primary)]" />
         Estrogen

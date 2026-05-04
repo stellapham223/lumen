@@ -93,29 +93,30 @@ export function TaskRecommendations({ status }: Props) {
   const [expandedTask, setExpandedTask] = useState<TaskType | null>(null);
 
   return (
-    <section className="hairline bg-[color:var(--color-surface-container-lowest)] p-6 sm:p-10">
+    <section className="hairline bg-[color:var(--color-surface-container-lowest)] p-4 sm:p-6 lg:p-10">
       <span className="eyebrow text-[color:var(--color-primary)]">Comparison</span>
-      <h3 className="mt-1 font-display text-[24px] font-medium text-[color:var(--color-primary)]">
+      <h3 className="mt-1 font-display text-[20px] sm:text-[24px] font-medium text-[color:var(--color-primary)]">
         Full cycle matrix
       </h3>
-      <p className="mt-1 text-[14px] italic text-[color:var(--color-on-surface-variant)]">
-        Click any task to see why it scores how it does in each phase.
+      <p className="mt-1 text-[13px] sm:text-[14px] italic text-[color:var(--color-on-surface-variant)]">
+        Tap any task to see why it scores how it does in each phase.
       </p>
 
-      <div className="mt-6 overflow-x-auto">
-        <table className="w-full text-left text-[14px]">
+      <div className="mt-5 sm:mt-6 w-[calc(100%+2rem)] -mx-4 sm:w-full sm:mx-0 overflow-x-auto overscroll-x-contain touch-pan-x">
+        <table className="w-full min-w-[480px] text-left text-[14px]">
           <thead>
             <tr className="hairline-b">
-              <th className="py-3 pr-4 text-[10px] font-semibold uppercase tracking-[0.16em] text-[color:var(--color-on-surface-variant)]">
+              <th className="sticky left-0 z-10 bg-[color:var(--color-surface-container-lowest)] py-2.5 sm:py-3 pl-4 sm:pl-0 pr-3 sm:pr-4 text-[10px] font-semibold uppercase tracking-[0.16em] text-[color:var(--color-on-surface-variant)]">
                 Task
               </th>
               {(["menstrual", "follicular", "ovulatory", "luteal"] as const).map(
                 (p) => (
                   <th
                     key={p}
-                    className="px-3 py-3 text-center text-[10px] font-semibold uppercase tracking-[0.16em] text-[color:var(--color-on-surface-variant)]"
+                    className="px-2 sm:px-3 py-2.5 sm:py-3 text-center text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.12em] sm:tracking-[0.16em] text-[color:var(--color-on-surface-variant)]"
                   >
-                    {phaseProfiles[p].name}
+                    <span className="sm:hidden">{phaseProfiles[p].name.slice(0, 4)}.</span>
+                    <span className="hidden sm:inline">{phaseProfiles[p].name}</span>
                   </th>
                 ),
               )}
@@ -124,6 +125,9 @@ export function TaskRecommendations({ status }: Props) {
           <tbody>
             {tasks.map((task) => {
               const isOpen = expandedTask === task;
+              const rowBg = isOpen
+                ? "bg-[color:var(--color-surface-container-low)]/50"
+                : "bg-[color:var(--color-surface-container-lowest)]";
               return (
                 <Fragment key={task}>
                   <tr
@@ -132,8 +136,8 @@ export function TaskRecommendations({ status }: Props) {
                     }`}
                     onClick={() => setExpandedTask(isOpen ? null : task)}
                   >
-                    <td className="py-3 pr-4">
-                      <span className="flex items-center gap-2.5">
+                    <td className={`sticky left-0 z-10 ${rowBg} py-2.5 sm:py-3 pl-4 sm:pl-0 pr-3 sm:pr-4 min-h-[44px]`}>
+                      <span className="flex items-center gap-2 sm:gap-2.5">
                         <span
                           className={`text-[color:var(--color-primary)] transition-transform duration-200 ${
                             isOpen ? "rotate-90" : ""
@@ -141,10 +145,10 @@ export function TaskRecommendations({ status }: Props) {
                         >
                           <MaterialIcon name="chevron_right" size={16} weight={300} />
                         </span>
-                        <span className="text-[color:var(--color-on-surface-variant)]">
+                        <span className="hidden sm:inline text-[color:var(--color-on-surface-variant)]">
                           <MaterialIcon name={taskMaterialIcon[task]} size={16} weight={300} />
                         </span>
-                        <span className="font-display font-medium text-[color:var(--color-on-surface)]">
+                        <span className="font-display text-[13px] sm:text-[14px] font-medium text-[color:var(--color-on-surface)]">
                           {taskLabels[task]}
                         </span>
                       </span>
@@ -153,7 +157,7 @@ export function TaskRecommendations({ status }: Props) {
                       (p) => (
                         <td
                           key={p}
-                          className={`px-3 py-3 text-center ${
+                          className={`px-2 sm:px-3 py-2.5 sm:py-3 text-center ${
                             status.phase === p
                               ? "bg-[color:var(--color-primary)]/[0.04]"
                               : ""
@@ -166,7 +170,7 @@ export function TaskRecommendations({ status }: Props) {
                   </tr>
                   {isOpen && (
                     <tr className="hairline-b">
-                      <td colSpan={5} className="bg-[color:var(--color-surface-container-low)]/30 p-4">
+                      <td colSpan={5} className="bg-[color:var(--color-surface-container-low)]/30 p-3 sm:p-4">
                         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
                           {(["menstrual", "follicular", "ovulatory", "luteal"] as const).map(
                             (p) => (
