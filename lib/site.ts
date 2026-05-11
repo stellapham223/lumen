@@ -1,10 +1,9 @@
 // Single source of truth for brand + URL constants.
-// Override BASE_URL via NEXT_PUBLIC_SITE_URL env var in production (set in Vercel).
-// When the production domain is purchased (Sprint 4), update Vercel env to point at it.
+// Production domain: lumencal.com (set via NEXT_PUBLIC_SITE_URL in Vercel).
 
 // Resolution order:
-//   1. NEXT_PUBLIC_SITE_URL: explicit override (use when you buy a real domain)
-//   2. VERCEL_PROJECT_PRODUCTION_URL: Vercel-injected production alias (e.g. lumen-one-plum.vercel.app)
+//   1. NEXT_PUBLIC_SITE_URL: explicit override (production = https://lumencal.com)
+//   2. VERCEL_PROJECT_PRODUCTION_URL: Vercel-injected production alias (preview/staging)
 //   3. VERCEL_URL: current deployment URL (changes per deploy; preview branches included)
 //   4. localhost fallback for `bun run dev`
 function resolveBaseUrl(): string {
@@ -106,5 +105,19 @@ export const BLOG_POSTS = [
     description:
       "Estrogen and progesterone modulate four neurotransmitter systems (serotonin, GABA, dopamine, BDNF), producing predictable shifts in cognition, mood, and energy. The mechanism, in plain language.",
     publishedAt: "2026-05-09",
+  },
+  {
+    slug: "cycle-syncing-on-birth-control",
+    title: "Does cycle syncing work on birth control? Method-by-method",
+    description:
+      "Combined pill, mini-pill, hormonal IUD, copper IUD, implant, ring, patch: cycle syncing applies differently to each. A method-by-method verdict with the mechanism behind it.",
+    publishedAt: "2026-05-13",
+  },
+  {
+    slug: "cycle-syncing-beginner-plan",
+    title: "Cycle syncing for beginners: a literal 4-week plan",
+    description:
+      "Spend Week 0 tracking only, then run a 4-week plan that maps each cycle phase to one focus. Concrete daily actions for work, exercise, and sleep. No diet rules in month one.",
+    publishedAt: "2026-05-16",
   },
 ] as const;
