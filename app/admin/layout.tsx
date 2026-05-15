@@ -28,6 +28,7 @@ export default function AdminLayout({
           <NavLink href="/admin/metrics">Metrics</NavLink>
           <NavLink href="/admin/reddit">Reddit</NavLink>
           <NavLink href="/admin/subs">Subs</NavLink>
+          <NavLink href="/admin/indexing">Indexing</NavLink>
           <form action="/api/admin/logout" method="POST">
             <button
               type="submit"

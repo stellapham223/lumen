@@ -110,6 +110,29 @@ export const cdSubs = pgTable(
 export type CdSub = typeof cdSubs.$inferSelect;
 export type CdSubInsert = typeof cdSubs.$inferInsert;
 
+export const cdIndexingLog = pgTable(
+  "cd_indexing_log",
+  {
+    id: serial("id").primaryKey(),
+    url: text("url").notNull(),
+    provider: text("provider").notNull(), // "google" | "indexnow"
+    status: text("status").notNull(), // "ok" | "fail"
+    responseStatus: integer("response_status").notNull().default(0),
+    error: text("error"),
+    submittedAt: timestamp("submitted_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("cd_indexing_log_url_idx").on(t.url, t.provider, t.submittedAt),
+    index("cd_indexing_log_recent_idx").on(t.submittedAt),
+  ],
+);
+
+export type CdIndexingLog = typeof cdIndexingLog.$inferSelect;
+export type CdIndexingLogInsert = typeof cdIndexingLog.$inferInsert;
+
+export const INDEXING_PROVIDERS = ["google", "indexnow"] as const;
+export type IndexingProvider = (typeof INDEXING_PROVIDERS)[number];
+
 export const SUB_STRICTNESS = ["loose", "medium", "strict"] as const;
 export type SubStrictness = (typeof SUB_STRICTNESS)[number];
 

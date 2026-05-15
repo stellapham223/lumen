@@ -41,3 +41,18 @@ export const SESSION_COOKIE = {
   name: COOKIE_NAME,
   maxAge: SESSION_TTL_SECONDS,
 } as const;
+
+// Convenience for API routes. Returns true if the request carries a valid
+// admin session cookie. Use this on endpoints that can spend quota, hit
+// external APIs, or mutate shared state.
+export async function isAdminRequest(request: Request): Promise<boolean> {
+  const cookie = request.headers.get("cookie") ?? "";
+  const match = cookie
+    .split(";")
+    .map((c) => c.trim())
+    .find((c) => c.startsWith(`${COOKIE_NAME}=`));
+  if (!match) return false;
+  const token = decodeURIComponent(match.slice(COOKIE_NAME.length + 1));
+  if (!token) return false;
+  return verifySession(token);
+}

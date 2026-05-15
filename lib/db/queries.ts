@@ -8,6 +8,9 @@ import type {
   CdMentionInsert,
   CdSub,
   CdSubInsert,
+  CdIndexingLog,
+  CdIndexingLogInsert,
+  IndexingProvider,
 } from "./schema";
 
 export async function upsertThreads(rows: CdThreadInsert[]): Promise<number> {
@@ -248,4 +251,47 @@ export async function updateSub(id: number, input: Partial<CdSubInsert>): Promis
 
 export async function deleteSub(id: number): Promise<void> {
   await db.delete(schema.cdSubs).where(eq(schema.cdSubs.id, id));
+}
+
+// --- Indexing log ----------------------------------------------------------
+
+// Returns the set of URLs that were successfully submitted to the given
+// provider within the last `withinDays` days. Used to skip resubmission.
+export async function recentlySubmittedUrls(
+  provider: IndexingProvider,
+  withinDays: number,
+): Promise<Set<string>> {
+  const since = new Date(Date.now() - withinDays * 24 * 60 * 60 * 1000);
+  const rows = await db
+    .select({ url: schema.cdIndexingLog.url })
+    .from(schema.cdIndexingLog)
+    .where(
+      and(
+        eq(schema.cdIndexingLog.provider, provider),
+        eq(schema.cdIndexingLog.status, "ok"),
+        gt(schema.cdIndexingLog.submittedAt, since),
+      ),
+    );
+  return new Set(rows.map((r) => r.url));
+}
+
+export async function insertIndexingLogs(
+  rows: CdIndexingLogInsert[],
+): Promise<number> {
+  if (rows.length === 0) return 0;
+  const inserted = await db
+    .insert(schema.cdIndexingLog)
+    .values(rows)
+    .returning({ id: schema.cdIndexingLog.id });
+  return inserted.length;
+}
+
+export async function listRecentIndexingLogs(
+  limit = 50,
+): Promise<CdIndexingLog[]> {
+  return db
+    .select()
+    .from(schema.cdIndexingLog)
+    .orderBy(desc(schema.cdIndexingLog.submittedAt))
+    .limit(limit);
 }
