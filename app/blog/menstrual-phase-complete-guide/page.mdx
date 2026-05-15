@@ -1,0 +1,315 @@
+import {
+  ArticleJsonLd,
+  BreadcrumbJsonLd,
+  FaqJsonLd,
+} from "@/components/JsonLd";
+import { PhaseScheduleCard } from "@/components/PhaseScheduleCard";
+import { PhaseGrid } from "@/components/PhaseGrid";
+import { CyclePhasesIllustration } from "@/components/CyclePhasesIllustration";
+
+export const metadata = {
+  title: "Menstrual phase: the complete (and grounded) guide",
+  description:
+    "An evidence-graded menstrual phase guide: hormones, why you are tired, what to schedule, what to skip, the workout and food evidence, and where popular cycle syncing claims go too far. Built for knowledge workers who cannot just clear their calendar.",
+  alternates: { canonical: "/blog/menstrual-phase-complete-guide" },
+  openGraph: {
+    title: "Menstrual phase: the complete (and grounded) guide",
+    description:
+      "Evidence-graded menstrual phase guide: hormones, energy, what to schedule, workouts, food, and what to skip.",
+    url: "/blog/menstrual-phase-complete-guide",
+    type: "article",
+  },
+};
+
+<ArticleJsonLd
+  headline="Menstrual phase: the complete (and grounded) guide"
+  description="The menstrual phase explained for cycle-aware planning: hormonal floor, energy and cognition shifts, what to schedule, evidence-graded workout and food advice, and edge cases (birth control, heavy bleeding, perimenopause)."
+  path="/blog/menstrual-phase-complete-guide"
+  datePublished="2026-06-02"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Blog", path: "/blog" },
+    {
+      name: "Menstrual phase complete guide",
+      path: "/blog/menstrual-phase-complete-guide",
+    },
+  ]}
+/>
+<FaqJsonLd
+  faqs={[
+    {
+      question: "How long is the menstrual phase?",
+      answer:
+        "On a standard 28-day cycle the menstrual phase is days 1 to 5. Bleeding lasting 3 to 7 days is within the typical range (ACOG guidance). Longer or shorter cycles scale roughly proportionally; the menstrual phase ends when bleeding stops, after which the follicular phase technically continues.",
+    },
+    {
+      question: "What hormones are dominant during the menstrual phase?",
+      answer:
+        "Both estrogen and progesterone are at their cycle minimum. Follicle-stimulating hormone (FSH) begins to rise in the second half of the phase, signaling the next follicle to develop. Prostaglandins (signaling lipids, not technically hormones) are elevated locally in the uterus and drive the contractions that cause cramps.",
+    },
+    {
+      question: "Why am I so tired during my period?",
+      answer:
+        "Three overlapping reasons. Low estrogen reduces serotonin-supported drive and motivation; sleep quality dips on days 1 and 2 due to prostaglandin disturbance; and active iron loss (10 to 40 mg per cycle) can leave borderline-deficient women fatigued. If fatigue is severe, ask your provider for a ferritin test, not just hemoglobin.",
+    },
+    {
+      question: "What should I eat during my menstrual phase?",
+      answer:
+        "Prioritize heme iron sources (red meat, liver, sardines) at least once a day during bleeding. Plant iron sources (lentils, spinach, fortified grains) work but pair them with vitamin C (citrus, berries, peppers) to roughly double absorption. Separate coffee or tea from iron-rich meals by two hours. Magnesium-rich foods may help cramp severity; the trial evidence is weak.",
+    },
+    {
+      question: "Is it okay to work out during my period?",
+      answer:
+        "Yes. Strength performance does not measurably drop during menstruation (McNulty et al. 2020 meta-analysis of 78 studies). Perceived exertion does rise, so the work feels harder. Keep intensity and reduce volume 10 to 20 percent if your RPE is elevated. Walking, yoga, and mobility work are useful for symptom management.",
+    },
+    {
+      question: "What kind of work is the menstrual phase good for?",
+      answer:
+        "Reflective, integrative, low-stimulus tasks: quarterly planning, OKR drafting, retrospectives, editing your own writing, learning new material, and 1:1s with trusted colleagues. The research on default-mode-network connectivity in low-hormone phases is consistent with this framing, though the effect size is small. Treat the phase as a preference, not a hard rule.",
+    },
+    {
+      question: "What should I avoid scheduling during the menstrual phase?",
+      answer:
+        "When you have a choice, defer net-new sales pitches, high-stakes presentations, large-group networking, and confrontational conversations to weeks 2 or 3. When you do not have a choice, the workarounds are: more sleep the night before, NSAIDs at first cramp, and a written script for the high-stakes part so you rely less on in-the-moment confidence.",
+    },
+    {
+      question: "Is right-brain dominance during the menstrual phase real?",
+      answer:
+        "It is overclaimed. The popular framing comes from one early book and does not reflect modern neuroimaging, which shows small and inconsistent left-right asymmetry shifts. What does replicate is lower whole-brain dynamical complexity in early follicular and menstrual phases, which is consistent with reflective rather than performative cognition. Use this as a soft signal, not a rule.",
+    },
+  ]}
+/>
+
+# Menstrual phase: the complete (and grounded) guide
+
+<aside className="my-8 hairline bg-[color:var(--color-surface-container-lowest)] p-4 sm:p-6 lg:p-8">
+  <div className="eyebrow text-[color:var(--color-primary)] mb-3">Quick takeaway</div>
+  <p className="m-0 text-[15px] sm:text-[16px] leading-relaxed text-[color:var(--color-on-surface)]">
+    <strong>The menstrual phase is days 1 to 5 of a standard 28-day cycle, when estrogen and progesterone are at their cycle minimum and the uterine lining sheds.</strong> Energy is typically low, but research suggests the phase favors reflective and strategic cognition. Best for: planning, retrospectives, deep solo work. Worst for: high-stakes presentations and high-intensity peak training.
+  </p>
+</aside>
+
+Most menstrual phase guides tell you to rest and stop there. That is not actionable advice for someone with a sprint review on day 2. This guide grades the common claims (iron loss: solid; seed cycling: weak; "right-brain dominance": overclaimed), gives a calendar template that survives a real workweek, and points to what to skip.
+
+## What happens hormonally in the menstrual phase
+
+The menstrual phase begins on the first day of full menstrual flow and ends when bleeding stops. On a 28-day cycle that is days 1 to 5; on shorter or longer cycles it scales roughly proportionally.
+
+- **Estrogen** sits at its cycle minimum. Whatever you noticed about late luteal as a chemical mood drop, this is the floor that drop bottoms out on.
+- **Progesterone** is also at its floor. The corpus luteum from the previous cycle has dissolved; the next one has not yet formed.
+- **FSH (follicle-stimulating hormone)** begins to rise late in the phase. This is the signal recruiting follicles for the next cycle. By the time bleeding stops, you are functionally in early follicular.
+- **Prostaglandins** are elevated locally in the uterus. They drive the contractions that shed the endometrium and are responsible for cramps.
+
+The bleed pattern most women see (heavier days 1 to 2, lighter days 3 to 5) tracks the local prostaglandin curve. Cycles between 3 and 7 days of bleeding are within the typical range per ACOG guidance.
+
+<figure className="my-10">
+  <div className="hairline bg-[color:var(--color-surface-container-lowest)] p-4 sm:p-6">
+    <CyclePhasesIllustration />
+  </div>
+  <figcaption className="mt-3 text-center text-[13px] italic text-[color:var(--color-on-surface-variant)]">
+    Estrogen (solid) and progesterone (dashed) across a standard 28-day cycle. Menstrual phase = days 1 to 5, both curves at floor.
+  </figcaption>
+</figure>
+
+## The cognitive shift research actually supports
+
+Here is the honest version. The popular wellness framing says the menstrual phase is a "right-brain", intuitive, creative phase. The peer-reviewed literature is more careful, and quieter.
+
+What does replicate, in studies large enough to take seriously:
+
+- **Emotion-processing changes** dip in the late luteal and partially recover in the menstrual phase. Sundström Poromaa and Gingnell's 2014 review in *Frontiers in Neuroscience* (PMC4241821) is the standard reference; effect sizes are small.
+- **Default-mode-network connectivity** is relatively higher in low-hormone phases (early follicular, late menstrual). The default-mode-network is the brain network active when you are integrating memory, reflecting, and not actively task-focused.
+- **Whole-brain dynamical complexity** is lower in low-hormone phases. Translation: the brain spends more time in stable, integrative states and less time in cognitively flexible states.
+
+**Together these patterns favor reflective, integrative thinking over performative or generative thinking.** The menstrual phase is a reasonable window for synthesizing what happened last quarter, not for pitching what should happen next quarter.
+
+What does not replicate, or is much weaker than wellness publishing implies:
+
+- "Right-brain dominance" as a clean asymmetry. Modern neuroimaging shows small and inconsistent left-right shifts. The popular framing comes from one early book and outruns the data.
+- A specific creativity boost during menstruation. Some studies report it; just as many report no effect. Treat it as a personal hypothesis to test, not a population finding.
+
+If the FloLiving rendering of cycle syncing turned you off, this is part of why. The underlying biology is real; the popular packaging often overstates it. For an evidence-graded breakdown of the broader cycle syncing debate, see [does cycle syncing work](/blog/does-cycle-syncing-work).
+
+## Energy and symptom patterns to expect
+
+Group averages, with the standard caveat that individual variation is enormous.
+
+- **Energy is typically 30 to 40 percent below cycle average** in self-report data. Flo Health's 2022 analysis (PMC9761221) found 89.3 percent of menstruating women report a real energy impact.
+- **Sleep quality dips on days 1 and 2** due to prostaglandin disturbance and the lingering progesterone-withdrawal effect from the late luteal phase.
+- **Common symptoms** (per Cleveland Clinic): cramps, fatigue, headache, mood reactivity, bloating, low-back pain. Most are mild to moderate; some are not.
+- **Productivity impact is real but manageable.** Schoep et al. (2019, BMJ Open) estimated an average of 23 productivity-impaired days per year due to menstrual symptoms across a Dutch sample. The data is not "skip work whenever you menstruate"; it is "expect the impact and plan around it."
+
+If your symptoms exceed this template (severe pain, soaking through pads or tampons hourly, bleed lasting longer than 7 days), that is not menstrual phase planning territory. It is a conversation with a provider. Endometriosis, adenomyosis, and fibroids are not menstrual phase phenomena to manage with calendar adjustments.
+
+## What to schedule (the strategic-planning window)
+
+**The menstrual phase is the week your strategy gets revised; the other three weeks execute it.**
+
+Concretely, this means:
+
+- **Quarterly and annual planning.** OKR drafting, roadmap revision, post-mortems, retrospectives, the synthesis work that requires looking backward before looking forward.
+- **Solo deep work that integrates rather than generates.** Editing your own writing (you catch errors better in this phase than in first-draft mode), revising slide decks, consolidating research notes.
+- **Reading and learning material that does not require performance.** The follicular phase is better for learning that requires fast retention; the menstrual phase is better for the kind of reading that benefits from slower, more reflective absorption.
+- **1:1s with trusted reports or peers.** Low social cost, high information yield.
+- **Calendar housekeeping.** Inbox triage, recurring meeting audits, OKR check-ins that do not require new commitments.
+
+<PhaseScheduleCard
+  phase="Menstrual"
+  days="1–5"
+  mode="Reflect"
+  best={[
+    { icon: "insights", label: "Quarterly planning and OKR drafting" },
+    { icon: "edit_note", label: "Retrospectives and post-mortems" },
+    { icon: "menu_book", label: "Reading and slow research" },
+    { icon: "edit", label: "Editing your own writing" },
+    { icon: "person", label: "1:1s with trusted colleagues" },
+  ]}
+  avoid={[
+    { icon: "campaign", label: "High-stakes presentations" },
+    { icon: "gavel", label: "Sales pitches and negotiations" },
+    { icon: "groups", label: "Large-group networking" },
+    { icon: "fitness_center", label: "Peak training and PR attempts" },
+  ]}
+/>
+
+For a single-page reference of all four phases, see [the cycle syncing chart](/blog/cycle-syncing-chart). For the deeper hormone-to-cognition mechanism, see [how cycle syncing works](/blog/how-does-cycle-syncing-work).
+
+## What to avoid (or push to next week)
+
+Where you have a choice. Where you do not have a choice, skip to the workarounds below.
+
+- **Net-new sales pitches and high-stakes negotiations.** Estrogen-low confidence is a real if modest effect. The ovulatory phase is the natural counterweight.
+- **Public speaking to large audiences.** Verbal fluency dips at the low end of the estrogen curve. Not a hard rule; if you are well-prepared and well-rested, you can absolutely deliver. Just do not pile this on top of everything else.
+- **High-intensity workouts.** Perceived exertion runs 1 to 2 RPE points higher than usual (see workouts section below).
+- **Difficult interpersonal confrontations.** Sleep is worse, irritability is up, recovery from emotional exchanges takes longer.
+- **New networking events with strangers.** High social-cost, high-cognitive-load. The ovulatory phase is much better suited.
+
+**Workarounds if you cannot move it.** More sleep the night before (treat it as non-negotiable). NSAIDs at the first cramp signal, not after pain peaks. A written script for the high-stakes part so you rely less on in-the-moment articulacy. Front-load caffeine in the morning, then taper before the event.
+
+## Workouts: what the evidence actually says
+
+The most-cited paper here is McNulty et al. (2020) in *Sports Medicine*, a systematic review of 78 studies and 1,193 effects on exercise performance across the menstrual cycle. The headline finding: **strength performance does not measurably drop during the menstrual phase.**
+
+What does change:
+
+- **Perceived exertion rises.** The same workload feels harder, even when output is unchanged. This is the practical issue, not raw capacity.
+- **Body temperature is slightly elevated late luteal, then drops back to baseline once bleeding starts.** Recovery between sessions normalizes.
+- **Iron loss can affect endurance** if you are borderline iron-deficient. Ferritin matters more than hemoglobin for trained women; ask for the test if endurance feels surprisingly limited.
+
+Practical takeaways:
+
+- **Keep intensity, reduce volume 10 to 20 percent** if your RPE is elevated. Hitting your usual sets at a higher RPE is fine for one week.
+- **Yoga, walking, and mobility work** are good for symptom management. They are not magic; they are gentle movement and circulation, which helps cramps and mood.
+- **Skip the "balance your hormones" framing.** Workouts during menstruation do not balance any hormone. They are just exercise.
+- **Bleed-through is a logistical issue, not a training issue.** Period underwear, menstrual cups, and tampons with backup all solve it. Do not skip workouts because of it.
+
+If your cycle is still affected by hormonal contraception, the McNulty results do not necessarily apply; combined hormonal contraception flattens the natural cycle that the study population was operating in. See [cycle syncing on birth control](/blog/cycle-syncing-on-birth-control) for the method-by-method breakdown.
+
+## Food: graded claims for the menstrual phase
+
+**Iron loss is real.** A typical cycle loses 10 to 40 mg of iron through menstrual blood (Harvey et al. 2005, PubMed 16197581). Heme iron sources (red meat, liver, sardines) absorb at roughly 25 percent; plant iron sources (lentils, spinach, fortified grains) at 5 to 10 percent. Vitamin C (citrus, berries, peppers) roughly doubles plant iron absorption. Coffee and tea taken with iron-rich meals can block 60 percent of absorption; separate them by two hours.
+
+**Magnesium may help cramp severity.** The trial evidence is weak (small RCTs, low certainty in Cochrane reviews) but the downside is minimal. Magnesium-rich foods (dark chocolate, pumpkin seeds, leafy greens) cover most diets. Magnesium glycinate supplementation is reasonable if your provider recommends it; the chart post discusses [supplementation tradeoffs](/blog/cycle-syncing-chart).
+
+**Seed cycling is weak.** The flax-then-sesame protocol is theoretically plausible at high doses but the typical regimen does not deliver clinical doses. There are no quality trials supporting it. Skip.
+
+**"Warming foods" is cultural, not biochemical.** Bone broth and stews are fine if you like them. They do not affect your hormones beyond providing calories and protein.
+
+**The defensible food template for menstrual phase:**
+
+- One heme-iron meal per day during bleeding (or plant iron plus vitamin C if vegetarian).
+- Adequate caloric intake. Cutting calories during menstruation makes fatigue worse, not better.
+- Hydration. Bloating responds to more water and less sodium, not less water.
+- Caffeine separated from iron-rich meals by two hours.
+
+That is the entire defensible list. Everything beyond it is preference, not biochemistry.
+
+## Self-care without the woo
+
+A short menu of things with actual evidence behind them.
+
+- **Heat works.** Heating pads, warm baths, and hot water bottles have a real analgesic effect on cramps (cited in Mount Sinai's PMS report). The mechanism is increased local blood flow and reduced uterine muscle tension. A standard electric <a href="https://www.amazon.com/s?k=menstrual+heating+pad&tag=lumencal0c-20" target="_blank" rel="sponsored noopener noreferrer" className="underline underline-offset-2 hover:opacity-70">heating pad</a> is the cheapest, most reliable comfort tool.
+- **NSAIDs taken at first cramp signal actually work.** Ibuprofen and naproxen are first-line per ACOG; the trick is taking them when pain starts to build, not after it peaks.
+- **Sleep prioritization, 7.5 to 9 hours, especially day 1 to 2.** This is more important than any supplement.
+- **Mood management: rest is fine, default-skip is not.** The productivity-loss data suggests planning beats avoidance.
+
+What to skip, charitably called the "woo" tier:
+
+- "Luxurious self-care" routines that cost money and accomplish nothing biochemical.
+- Chakra alignment, lunar cycle syncing, cleansing teas, "feminine energy" rituals.
+- Cycle syncing supplement stacks marketed by wellness influencers. The supplement layer of cycle syncing has no quality trial evidence (see [does cycle syncing work](/blog/does-cycle-syncing-work)).
+
+## When the menstrual phase looks different
+
+The standard template above assumes a regular ovulating cycle without hormonal contraception. Several common situations break it.
+
+**Hormonal birth control.** Combined oral contraceptives, the ring, the patch, and (often) hormonal IUDs suppress the natural cycle. The bleed you experience on cyclic combined methods is a withdrawal bleed from synthetic hormones, not a true menstrual period. Cycle syncing in its standard form does not apply. The method-by-method picture is in [cycle syncing on birth control](/blog/cycle-syncing-on-birth-control).
+
+**Heavy menstrual bleeding (>80 mL per cycle, soaking through a pad or tampon hourly).** Not normal. Common causes include fibroids, adenomyosis, polyps, and bleeding disorders. This needs a provider conversation, not a cycle syncing app.
+
+**Pain bad enough to miss work.** Endometriosis affects roughly 10 percent of menstruating women and is consistently under-diagnosed. If NSAIDs and heat are not enough, ask for an endometriosis screen.
+
+**Perimenopause.** Cycles shorten, then lengthen, then become unpredictable. FSH baseline elevates. The menstrual phase often becomes lighter and shorter before disappearing entirely. The standard cycle syncing model does not map onto perimenopausal physiology.
+
+**Postpartum and breastfeeding.** The cycle is suppressed by prolactin during exclusive breastfeeding. When it returns, the first few cycles may be irregular before settling.
+
+In all of the above, the right answer is "track your own pattern" rather than "map onto follicular and luteal labels". The cycle syncing model is a starting hypothesis for a regular cycle, not a universal template.
+
+## How this phase fits the rest of the cycle
+
+A quick recap of what is on either side of the menstrual phase.
+
+<PhaseGrid
+  columns={[
+    {
+      name: "Menstrual",
+      days: "1–5",
+      headline: "Reflect",
+      items: [
+        { label: "Energy", meta: "▂" },
+        { label: "Mode", meta: "integrative" },
+        { label: "Best for", meta: "planning, editing" },
+      ],
+    },
+    {
+      name: "Follicular",
+      days: "6–13",
+      headline: "Build",
+      items: [
+        { label: "Energy", meta: "▆" },
+        { label: "Mode", meta: "generative" },
+        { label: "Best for", meta: "starts, learning" },
+      ],
+    },
+    {
+      name: "Ovulatory",
+      days: "14–16",
+      headline: "Connect",
+      items: [
+        { label: "Energy", meta: "█" },
+        { label: "Mode", meta: "social/verbal" },
+        { label: "Best for", meta: "pitching, presenting" },
+      ],
+    },
+    {
+      name: "Luteal",
+      days: "17–28",
+      headline: "Finish",
+      items: [
+        { label: "Energy", meta: "▆ → ▂" },
+        { label: "Mode", meta: "detail-focused" },
+        { label: "Best for", meta: "editing, closing" },
+      ],
+    },
+  ]}
+/>
+
+For the full single-page reference, see [the cycle syncing chart](/blog/cycle-syncing-chart). For the other phase deep dives, see [follicular phase complete guide](/blog/follicular-phase-complete-guide). For a beginner walkthrough, [how to start cycle syncing](/blog/how-to-start-cycle-syncing) maps the model to a concrete first month.
+
+## The bottom line
+
+The menstrual phase is not a rest interlude in an otherwise productive cycle. It is the strategic-planning week with a real energy constraint. The evidence for the cognitive shift is small but consistent; the evidence for popular menstrual-phase food and supplement protocols is weak. Plan reflective work, defer high-stakes social work where you can, use heat and NSAIDs and sleep on the symptom side, and skip the supplement aisle.
+
+To see which day of your cycle you are on right now and what your current phase suggests, [use Lumen's free planner](/plan). For the underlying methodology and the studies behind the recommendations, see [the methodology page](/methodology).

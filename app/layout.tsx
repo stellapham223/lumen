@@ -4,6 +4,7 @@ import "./globals.css";
 import { PublicNavbar, PublicFooter } from "@/components/PublicChrome";
 import { Analytics } from "@/components/Analytics";
 import { ClarityAnalytics } from "@/components/ClarityAnalytics";
+import { AffiliateClickTracker } from "@/components/AffiliateClickTracker";
 import { OrganizationJsonLd, WebApplicationJsonLd } from "@/components/JsonLd";
 import { BASE_URL, SITE } from "@/lib/site";
 
@@ -107,6 +108,7 @@ export default function RootLayout({
         <PublicFooter />
         <Analytics />
         <ClarityAnalytics />
+        <AffiliateClickTracker />
       </body>
     </html>
   );

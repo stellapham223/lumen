@@ -141,6 +141,20 @@ export const BLOG_POSTS = [
       "An evidence-graded guide to the follicular phase: hormones, symptoms, what to schedule, what to avoid, and how PCOS, perimenopause, and hormonal birth control change the picture.",
     publishedAt: "2026-05-26",
   },
+  {
+    slug: "menstrual-phase-complete-guide",
+    title: "Menstrual phase: the complete (and grounded) guide",
+    description:
+      "An evidence-graded menstrual phase guide: hormones, why you are tired, what to schedule, what to skip, the workout and food evidence, and where popular cycle syncing claims go too far. Built for knowledge workers who cannot just clear their calendar.",
+    publishedAt: "2026-06-02",
+  },
+  {
+    slug: "cycle-syncing-meal-timing",
+    title: "Cycle syncing meal timing for cognitive performance",
+    description:
+      "Skip the food chart. The lever that moves cognitive performance across your cycle is when you eat, not what you eat. An evidence-honest take on meal timing, intermittent fasting, and caffeine across the menstrual cycle.",
+    publishedAt: "2026-06-23",
+  },
 ] as const;
 
 // Glossary manifest: single source for index, sidebar related pills, sitemap.
