@@ -6,7 +6,7 @@ import { BreadcrumbJsonLd, DefinedTermSetJsonLd } from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "Cycle syncing glossary: 152 terms across hormones, phases, and practice",
   description:
-    "A complete glossary of cycle syncing, hormonal, and women's health terms. Hormones, mechanisms, phases, tracking tools, conditions, birth control, and practice. Grouped by topic and funnel.",
+    "A complete glossary of cycle syncing, hormonal, and women's health terms. Hormones, mechanisms, phases, tracking tools, conditions, birth control, and practice, grouped by topic.",
   alternates: { canonical: "/glossary" },
   openGraph: {
     title: "Cycle syncing glossary | Lumen",
@@ -84,14 +84,9 @@ export default function GlossaryIndex() {
                   <li key={t.slug}>
                     <Link
                       href={`/glossary/${t.slug}`}
-                      className="group block"
+                      className="block font-medium text-[14px] sm:text-[15px] text-[color:var(--color-primary)] hover:opacity-70 transition-opacity"
                     >
-                      <span className="font-medium text-[14px] sm:text-[15px] text-[color:var(--color-primary)] group-hover:opacity-70 transition-opacity">
-                        {t.term}
-                      </span>
-                      <span className="block mt-0.5 text-[12px] leading-snug text-[color:var(--color-on-surface-variant)]">
-                        {t.funnel}
-                      </span>
+                      {t.term}
                     </Link>
                   </li>
                 ))}
