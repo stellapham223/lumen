@@ -13,6 +13,7 @@ import { HormoneChart } from "@/components/HormoneChart";
 import { PhaseDeepDive } from "@/components/PhaseDeepDive";
 import { DayDetailModal } from "@/components/DayDetailModal";
 import { ReferencesFooter } from "@/components/ReferencesFooter";
+import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { MaterialIcon } from "@/components/MaterialIcon";
 import {
   calculateCycle,
@@ -123,6 +124,10 @@ export default function Plan() {
 
         <div className="animate-fade-up" style={{ animationDelay: "300ms" }}>
           <TaskRecommendations status={status} />
+        </div>
+
+        <div className="animate-fade-up" style={{ animationDelay: "325ms" }}>
+          <AffiliateDisclosure />
         </div>
 
         <div className="animate-fade-up" style={{ animationDelay: "350ms" }}>

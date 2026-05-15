@@ -16,6 +16,14 @@ export interface RecommendedRead {
   title: string;
   author: string;
   note: string;
+  amazonSearch?: string;
+}
+
+export interface PhaseProduct {
+  name: string;
+  description: string;
+  amazonSearch: string;
+  caveat?: string;
 }
 
 export interface PhaseEncyclopedia {
@@ -27,6 +35,7 @@ export interface PhaseEncyclopedia {
   defer: string[];
   commonMistakes: string[];
   recommendedReading: RecommendedRead[];
+  product?: PhaseProduct;
 }
 
 export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
@@ -101,9 +110,14 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
       "Scheduling presentations in this phase because the calendar said so",
     ],
     recommendedReading: [
-      { title: "ROAR", author: "Stacy Sims, PhD", note: "Chapter on menstrual phase nutrition + training" },
-      { title: "The XX Brain", author: "Lisa Mosconi, PhD", note: "Female brain hormone research" },
+      { title: "ROAR", author: "Stacy Sims, PhD", note: "Chapter on menstrual phase nutrition + training", amazonSearch: "https://www.amazon.com/s?k=ROAR+Stacy+Sims&tag=lumencal0c-20" },
+      { title: "The XX Brain", author: "Lisa Mosconi, PhD", note: "Female brain hormone research", amazonSearch: "https://www.amazon.com/s?k=The+XX+Brain+Lisa+Mosconi&tag=lumencal0c-20" },
     ],
+    product: {
+      name: "Heating pad",
+      description: "For days 1 to 2 cramping. A standard electric heating pad is the cheapest, most reliable comfort tool here.",
+      amazonSearch: "https://www.amazon.com/s?k=electric+heating+pad+menstrual&tag=lumencal0c-20",
+    },
   },
 
   follicular: {
@@ -174,7 +188,7 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
       "Starting too many things in parallel (dopamine bias)",
     ],
     recommendedReading: [
-      { title: "ROAR", author: "Stacy Sims, PhD", note: "Follicular phase training programming" },
+      { title: "ROAR", author: "Stacy Sims, PhD", note: "Follicular phase training programming", amazonSearch: "https://www.amazon.com/s?k=ROAR+Stacy+Sims&tag=lumencal0c-20" },
       { title: "Hormones, brain, and behaviour", author: "Hampson E. (2020)", note: "Peer-reviewed review on cycle cognition" },
     ],
   },
@@ -324,9 +338,15 @@ export const phaseEncyclopedia: Record<Phase, PhaseEncyclopedia> = {
       "Over-caffeinating to counter fatigue → wrecks sleep further",
     ],
     recommendedReading: [
-      { title: "ROAR", author: "Stacy Sims, PhD", note: "Luteal phase nutrition + training adjustments" },
-      { title: "Period Power", author: "Maisie Hill", note: "Late luteal management strategies" },
+      { title: "ROAR", author: "Stacy Sims, PhD", note: "Luteal phase nutrition + training adjustments", amazonSearch: "https://www.amazon.com/s?k=ROAR+Stacy+Sims&tag=lumencal0c-20" },
+      { title: "Period Power", author: "Maisie Hill", note: "Late luteal management strategies", amazonSearch: "https://www.amazon.com/s?k=Period+Power+Maisie+Hill&tag=lumencal0c-20" },
       { title: "ACOG PMS Guidelines", author: "American College of OB-GYN", note: "Clinical PMS criteria" },
     ],
+    product: {
+      name: "Magnesium glycinate",
+      description: "Some evidence supports magnesium for luteal-phase symptoms (cramps, sleep, mood). Glycinate form is typically better tolerated than oxide.",
+      amazonSearch: "https://www.amazon.com/s?k=magnesium+glycinate&tag=lumencal0c-20",
+      caveat: "Talk to your provider before starting a supplement. This is not medical advice.",
+    },
   },
 };

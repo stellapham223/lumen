@@ -213,9 +213,20 @@ export function PhaseDeepDive({ phase }: Props) {
             <ul className="space-y-2">
               {enc.recommendedReading.map((r, i) => (
                 <li key={i}>
-                  <span className="font-display text-[15px] font-medium italic text-[color:var(--color-primary)]">
-                    {r.title}
-                  </span>
+                  {r.amazonSearch ? (
+                    <a
+                      href={r.amazonSearch}
+                      target="_blank"
+                      rel="sponsored noopener noreferrer"
+                      className="font-display text-[15px] font-medium italic text-[color:var(--color-primary)] underline underline-offset-2 hover:opacity-70"
+                    >
+                      {r.title}
+                    </a>
+                  ) : (
+                    <span className="font-display text-[15px] font-medium italic text-[color:var(--color-primary)]">
+                      {r.title}
+                    </span>
+                  )}
                   <span className="text-[14px] text-[color:var(--color-on-surface-variant)]">
                     {" "}
                     by {r.author}
@@ -227,6 +238,33 @@ export function PhaseDeepDive({ phase }: Props) {
               ))}
             </ul>
           </div>
+
+          {enc.product && (
+            <div>
+              <h4 className="eyebrow mb-3 text-[color:var(--color-on-surface-variant)] flex items-center gap-2">
+                <MaterialIcon name="inventory_2" size={14} weight={300} />
+                What people in this phase find helpful
+              </h4>
+              <div className="hairline bg-[color:var(--color-surface-container-lowest)] p-4 sm:p-5">
+                <a
+                  href={enc.product.amazonSearch}
+                  target="_blank"
+                  rel="sponsored noopener noreferrer"
+                  className="font-display text-[15px] font-medium text-[color:var(--color-primary)] underline underline-offset-2 hover:opacity-70"
+                >
+                  {enc.product.name}
+                </a>
+                <p className="mt-1 text-[13px] leading-relaxed text-[color:var(--color-on-surface-variant)]">
+                  {enc.product.description}
+                </p>
+                {enc.product.caveat && (
+                  <p className="mt-2 text-[11px] italic text-[color:var(--color-on-surface-variant)]/70">
+                    {enc.product.caveat}
+                  </p>
+                )}
+              </div>
+            </div>
+          )}
         </div>
       )}
     </section>
