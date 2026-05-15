@@ -14,6 +14,7 @@ import { PhaseDeepDive } from "@/components/PhaseDeepDive";
 import { DayDetailModal } from "@/components/DayDetailModal";
 import { ReferencesFooter } from "@/components/ReferencesFooter";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
+import { PhaseAffiliateShelf } from "@/components/PhaseAffiliateShelf";
 import { MaterialIcon } from "@/components/MaterialIcon";
 import {
   calculateCycle,
@@ -124,6 +125,10 @@ export default function Plan() {
 
         <div className="animate-fade-up" style={{ animationDelay: "300ms" }}>
           <TaskRecommendations status={status} />
+        </div>
+
+        <div className="animate-fade-up" style={{ animationDelay: "315ms" }}>
+          <PhaseAffiliateShelf phase={status.phase} />
         </div>
 
         <div className="animate-fade-up" style={{ animationDelay: "325ms" }}>
