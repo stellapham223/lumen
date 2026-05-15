@@ -1,0 +1,98 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Cycle syncing: definition, origin, and what the research supports",
+  description:
+    "Cycle syncing is the practice of aligning lifestyle (work, exercise, food) with the four phases of the menstrual cycle. A grounded definition with origin, mechanism, and what is evidence-backed versus overclaimed.",
+  alternates: { canonical: "/glossary/cycle-syncing" },
+  openGraph: {
+    title: "Cycle syncing | Lumen glossary",
+    description:
+      "What cycle syncing means, where the term came from, and what the research supports.",
+    url: "/glossary/cycle-syncing",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Cycle syncing"
+  description="The practice of aligning lifestyle (work, exercise, food) with the four phases of the menstrual cycle. Coined by Alisa Vitti (FloLiving) circa 2014."
+  path="/glossary/cycle-syncing"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Cycle syncing", path: "/glossary/cycle-syncing" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Cycle syncing
+
+**Cycle syncing** is the practice of aligning lifestyle choices, such as work tasks, exercise intensity, food, and sleep, with the four hormonal phases of the menstrual cycle. The term was popularized by Alisa Vitti, founder of FloLiving, in her 2013 book *WomanCode* and expanded in her 2020 book *In the FLO*.
+
+The underlying claim is that women's biology operates on an infradian rhythm of roughly 28 days, alongside the more familiar 24-hour circadian rhythm, and that ignoring this longer rhythm is a hidden source of fatigue and suboptimal performance.
+
+## Where the term came from
+
+Vitti coined cycle syncing while running the FloLiving Hormone Center in New York, applying it first to PCOS patients and later extending it to a general framework for "women's productivity". The term entered mainstream wellness vocabulary in the mid-2010s and gained sharp visibility on TikTok around 2022, where short-form videos compressed the four-phase model into food and workout protocols.
+
+The biological framing predates the brand. Researchers have studied cyclic variation in cognition, mood, sleep, and exercise tolerance since the 1970s. Cycle syncing as a practice repackaged those observations into an actionable framework. Whether the framework's prescriptions exceed what the underlying research supports is the source of most criticism.
+
+## The four phases in one paragraph
+
+The menstrual cycle is divided into four phases: menstrual (days 1 to 5, bleeding), follicular (roughly days 6 to 13, rising estrogen and FSH), ovulatory (roughly days 14 to 16, peak estrogen and LH surge), and luteal (roughly days 17 to 28, progesterone dominant). Each phase has a distinct hormone profile, and cycle syncing maps a recommended lifestyle pattern onto each phase: rest in menstrual, build in follicular, connect in ovulatory, finish in luteal.
+
+For a deeper visual reference, see the [four-phase chart](/blog/cycle-syncing-chart).
+
+## What the research actually supports
+
+The evidence base sorts into three tiers.
+
+**Well-supported.** Verbal fluency and certain memory tasks vary measurably across the cycle. Body temperature rises after ovulation. Sleep architecture shifts in late luteal. These are robust findings with multiple replications.
+
+**Mixed.** Effects of cycle phase on exercise performance, strength gains, and training response. A 2024 meta-analysis on phase-timed exercise concluded the practical effect on training outcomes is small. Some users see real differences; population-level effects are modest.
+
+**Weak.** Phase-specific food prescriptions ("eat warming foods in menstrual phase"), seed cycling, and skincare protocols. These are largely mechanistic extrapolations from cell or animal studies, not findings from controlled human trials.
+
+The evidence-graded review at [is cycle syncing legit](/blog/is-cycle-syncing-legit) grades each claim individually.
+
+## How cycle syncing differs from period tracking
+
+A **period tracker** logs what happened: bleeding days, symptoms, mood. A **cycle syncing app** prescribes what to do per phase: schedule deep work in follicular, edit in early luteal, reduce demands in late luteal. Most popular apps started as trackers and added syncing features later, often paywalled. Apps built specifically for cycle syncing (Lumen, MyFlo, Lively) start from the prescription side.
+
+## Lumen's positioning
+
+Lumen treats cycle syncing as a scheduling overlay rather than a wellness protocol. The free [phase calculator](/plan) translates your last period date and cycle length into the four phase ranges, which you can use to time work, recovery, and high-stakes meetings. There are no food prescriptions or supplement recommendations on the product. The framework is graded honestly: where evidence is thin, the wording says so.
+
+## Related reading
+
+- [What is cycle syncing](/blog/what-is-cycle-syncing) covers the full grounded definition.
+- [How does cycle syncing work](/blog/how-does-cycle-syncing-work) explains the hormone-cognition mechanism in detail.
+- [Does cycle syncing work](/blog/does-cycle-syncing-work) grades each protocol with current evidence.
+- [Cycle syncing for beginners](/blog/cycle-syncing-beginner-plan) walks through the first month as a practice.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="cycle-syncing"
+  title="Cycle syncing"
+  toc={[
+    { id: "where-the-term-came-from", label: "Where the term came from" },
+    { id: "the-four-phases-in-one-paragraph", label: "The four phases in one paragraph" },
+    { id: "what-the-research-actually-supports", label: "What the research supports" },
+    { id: "how-cycle-syncing-differs-from-period-tracking", label: "Cycle syncing vs period tracking" },
+    { id: "lumens-positioning", label: "Lumen's positioning" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

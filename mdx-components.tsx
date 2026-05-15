@@ -5,18 +5,18 @@ import type { AnchorHTMLAttributes, ReactNode } from "react";
 // Map markdown elements to Lumen's typographic system so MDX content matches the look of
 // /methodology, /privacy, /terms (display font for headings, color tokens, hairline rules).
 const components: MDXComponents = {
-  h1: ({ children }) => (
-    <h1 className="mt-0 font-display text-[32px] leading-[1.08] tracking-[-0.02em] text-[color:var(--color-primary)] sm:text-[44px] sm:leading-[1.05] lg:text-[56px]">
+  h1: ({ children, id }) => (
+    <h1 id={id} className="mt-0 font-display text-[32px] leading-[1.08] tracking-[-0.02em] text-[color:var(--color-primary)] sm:text-[44px] sm:leading-[1.05] lg:text-[56px]">
       {children}
     </h1>
   ),
-  h2: ({ children }) => (
-    <h2 className="mt-10 font-display text-[22px] sm:text-[28px] sm:mt-12 font-medium text-[color:var(--color-primary)]">
+  h2: ({ children, id }) => (
+    <h2 id={id} className="mt-10 font-display text-[22px] sm:text-[28px] sm:mt-12 font-medium text-[color:var(--color-primary)] scroll-mt-20">
       {children}
     </h2>
   ),
-  h3: ({ children }) => (
-    <h3 className="mt-6 sm:mt-8 font-display text-[17px] sm:text-[20px] font-medium text-[color:var(--color-primary)]">
+  h3: ({ children, id }) => (
+    <h3 id={id} className="mt-6 sm:mt-8 font-display text-[17px] sm:text-[20px] font-medium text-[color:var(--color-primary)] scroll-mt-20">
       {children}
     </h3>
   ),

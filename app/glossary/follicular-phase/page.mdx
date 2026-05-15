@@ -1,0 +1,98 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Follicular phase: definition, hormones, and what it feels like",
+  description:
+    "The follicular phase is the cycle segment from day 1 of menstruation to ovulation, typically 10 to 16 days long, dominated by rising estrogen and FSH. Definition, hormone profile, and how it feels.",
+  alternates: { canonical: "/glossary/follicular-phase" },
+  openGraph: {
+    title: "Follicular phase | Lumen glossary",
+    description:
+      "What the follicular phase is, how long it lasts, the hormone profile, and how it feels.",
+    url: "/glossary/follicular-phase",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Follicular phase"
+  description="The phase of the menstrual cycle from day 1 of menstruation to ovulation. Typically 10 to 16 days long. Characterized by rising FSH and estrogen."
+  path="/glossary/follicular-phase"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Follicular phase", path: "/glossary/follicular-phase" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Follicular phase
+
+The **follicular phase** is the part of the menstrual cycle that runs from day 1 of menstruation to ovulation, typically 10 to 16 days long. It is named for what is happening biologically: ovarian follicles develop in response to follicle-stimulating hormone (FSH), and one becomes dominant, ready to release an egg at ovulation.
+
+## How long the follicular phase lasts
+
+The follicular phase is the most variable part of the menstrual cycle. While the luteal phase stays close to 14 days for most people, the follicular phase carries most of the swing when overall cycle length changes. A cycle that runs 24 days has a roughly 10-day follicular phase; a 35-day cycle has a roughly 21-day follicular phase.
+
+Follicular phase length tends to shorten in perimenopause as ovarian reserve declines, which is why cycles often compress (from 28 days to 24, then 22) before becoming irregular.
+
+## The hormone profile
+
+Three hormones drive the follicular phase:
+
+- **FSH** rises in early follicular days, stimulates follicle development, then declines as estrogen rises.
+- **Estrogen (estradiol)** stays low in the first few days, then climbs sharply from roughly day 6 to day 13 as the dominant follicle matures.
+- **LH** stays low until late follicular, when the estrogen peak triggers an LH surge that ends the phase and starts ovulation.
+
+Progesterone stays low throughout the follicular phase. It is the hormone of the luteal phase, not this one.
+
+## How the follicular phase feels
+
+Research suggests follicular days, especially late follicular, show improvements in verbal fluency, working memory, and tolerance for novel material. Mood tends toward positive affect; energy is generally higher than menstrual or late luteal phases. Sleep architecture often sharpens.
+
+Effect sizes are modest and individual variation is large. The lift is more reliable in the late follicular days (post-period through ovulation) than in the early follicular days (during menstruation), where the population pattern is more mixed.
+
+## Follicular phase in cycle syncing
+
+Cycle syncing maps the follicular phase to a "build" mode: project kickoffs, learning new skills, strategy work, harder workouts. The mechanism is the estrogen-driven amplification of dopamine and BDNF, which support novelty-seeking and motor learning. The recommendation has more evidence support than most cycle syncing prescriptions, though the effect remains modest at the population level.
+
+The [complete follicular phase guide](/blog/follicular-phase-complete-guide) covers the hormonal mechanism, work scheduling, workouts, food, and how the phase changes under PCOS, perimenopause, and hormonal birth control.
+
+## Edge cases
+
+- **PCOS.** Ovulation may be irregular or absent, which means the follicular phase can stretch beyond 16 days or persist without an LH surge. Calendar-based prediction stops working; track ovulation directly with ovulation predictor kits or basal body temperature.
+- **Perimenopause.** The follicular phase often shortens first; cycles compress and become irregular. The hormonal lift in late follicular may feel less pronounced.
+- **Hormonal birth control.** Most hormonal contraceptives suppress the LH surge and natural ovulation, so the follicular phase as defined by hormonal events does not strictly occur.
+
+## Related terms
+
+- [Late follicular phase](/glossary/late-follicular-phase): days 6 to 13, the peak estrogen window
+- [Ovulatory phase](/glossary/ovulatory-phase): the phase that immediately follows
+- [Estrogen](/glossary/estrogen) and [FSH](/glossary/fsh): the dominant hormones
+- [BDNF](/glossary/bdnf): the mechanism behind follicular learning advantages
+
+</article>
+
+<GlossarySidebar
+  currentSlug="follicular-phase"
+  title="Follicular phase"
+  toc={[
+    { id: "how-long-the-follicular-phase-lasts", label: "How long it lasts" },
+    { id: "the-hormone-profile", label: "Hormone profile" },
+    { id: "how-the-follicular-phase-feels", label: "How it feels" },
+    { id: "follicular-phase-in-cycle-syncing", label: "In cycle syncing" },
+    { id: "edge-cases", label: "Edge cases" },
+    { id: "related-terms", label: "Related terms" },
+  ]}
+/>
+
+</div>

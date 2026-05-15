@@ -1,0 +1,122 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "PMS (Premenstrual Syndrome): symptoms, mechanism, and timing",
+  description:
+    "PMS is a cluster of physical and mood symptoms that appear in the 7 to 10 days before a period and resolve when bleeding starts. Definition, symptoms, mechanism, and how it differs from PMDD.",
+  alternates: { canonical: "/glossary/pms" },
+  openGraph: {
+    title: "PMS (Premenstrual Syndrome) | Lumen glossary",
+    description:
+      "What PMS is, the typical symptoms, the underlying mechanism, and how it differs from PMDD.",
+    url: "/glossary/pms",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="PMS (Premenstrual Syndrome)"
+  description="A cluster of physical and mood symptoms appearing in the 7 to 10 days before menstruation and resolving when bleeding starts. Affects roughly 75% of menstruating women to some degree."
+  path="/glossary/pms"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "PMS", path: "/glossary/pms" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# PMS (Premenstrual Syndrome)
+
+**PMS** is a cluster of physical and mood symptoms that appear in the 7 to 10 days before menstruation and resolve when bleeding starts. Roughly 75% of menstruating women experience some PMS symptoms; the severe form, [PMDD](/glossary/pmdd), affects 3 to 8%.
+
+PMS is not a single condition. It is a label for a recurring pattern of symptoms that share two diagnostic features: predictable timing (late luteal phase) and resolution at period onset.
+
+## Typical PMS symptoms
+
+PMS symptoms cluster into three groups:
+
+- **Physical:** [bloating](/glossary/cyclical-bloating), [breast tenderness](/glossary/breast-tenderness), [headaches](/glossary/menstrual-migraine) or migraines, fatigue, sleep disruption, [cravings](/glossary/premenstrual-cravings) (especially carbohydrates), [acne](/glossary/hormonal-acne), constipation or diarrhea.
+- **Mood:** [irritability](/glossary/premenstrual-irritability), [anxiety](/glossary/premenstrual-anxiety), low mood, increased emotional reactivity, social withdrawal.
+- **Cognitive:** [brain fog](/glossary/period-brain), reduced focus, decision fatigue, slower processing.
+
+Severity varies cycle to cycle. Stress, sleep deficit, and inflammatory conditions tend to amplify PMS; consistent sleep and reduced demands in the late luteal phase tend to soften it.
+
+## The mechanism behind PMS
+
+The dominant model attributes PMS to the late-luteal drop in two hormone metabolites:
+
+- **[Allopregnanolone](/glossary/allopregnanolone) withdrawal.** Allopregnanolone is a progesterone metabolite that modulates GABA receptors (the inhibitory, calming neurotransmitter system). When allopregnanolone drops sharply in late luteal, GABA tone drops with it, which contributes to anxiety, irritability, and sleep disruption.
+- **[Serotonin](/glossary/serotonin-cycle) decline.** Estrogen supports serotonin signaling. As estrogen drops in late luteal, serotonin activity drops, which contributes to low mood and carbohydrate cravings (carbs raise serotonin via insulin-mediated tryptophan transport).
+
+The model explains the timing (symptoms peak in days 23 to 28 of a 28-day cycle) and the resolution (period onset reflects the start of new follicular phase, when estrogen begins climbing again).
+
+## How PMS differs from PMDD
+
+PMS and [PMDD](/glossary/pmdd) sit on a spectrum, not in separate categories. The distinction is severity and functional impact.
+
+- **PMS:** symptoms recurring monthly but not severe enough to significantly impair work, relationships, or daily function.
+- **PMDD:** symptoms severe enough to meet clinical diagnostic criteria, with at least one core mood symptom (depression, anxiety, irritability, or affective lability) and significant functional impairment. PMDD requires prospective tracking across two cycles for diagnosis.
+
+PMDD is treated as a clinical condition. PMS in the moderate range typically improves with lifestyle modifications and is the form most cycle syncing content addresses.
+
+## What helps PMS (evidence-graded)
+
+**Well-supported:**
+
+- Aerobic exercise in the luteal phase (modest effect on mood and physical symptoms).
+- [Magnesium](/glossary/magnesium-pms) supplementation (200 to 400mg/day glycinate form).
+- Adequate sleep, especially the week before menstruation.
+- Reduced caffeine after 2pm in late luteal (sleep disruption is a PMS amplifier).
+
+**Moderately supported:**
+
+- [Vitamin B6](/glossary/vitamin-b6-pms) (50 to 100mg/day).
+- [Omega-3 fatty acids](/glossary/omega-3-pms) (1 to 2g combined EPA and DHA daily).
+- [Vitex (chasteberry)](/glossary/vitex) for breast tenderness and irritability.
+
+**Weakly supported:**
+
+- Phase-specific food prescriptions (the most overclaimed corner of cycle syncing).
+- Most supplement blends marketed for PMS.
+
+For PMDD-range severity, SSRIs (continuous or luteal-only dosing) and hormonal interventions like the combined oral contraceptive (specific formulations) have stronger evidence and should be discussed with a provider.
+
+## PMS and cycle syncing
+
+Cycle syncing maps the late luteal phase, when PMS symptoms peak, to a "finish" mode with reduced demands: close out commitments, avoid high-stakes meetings in days 26 to 28, prioritize sleep, scale workouts. The recommendation is not to push through PMS but to plan around it.
+
+The [luteal phase complete guide](/blog/luteal-phase-complete-guide) covers the full late-luteal playbook.
+
+## When to see a provider
+
+- Symptoms severe enough to impair work or relationships.
+- Mood symptoms include suicidal thoughts or self-harm urges.
+- Symptoms do not resolve with menstrual onset.
+- A sudden change in PMS severity in late 30s or 40s (possible [perimenopause](/glossary/perimenopause) onset).
+
+</article>
+
+<GlossarySidebar
+  currentSlug="pms"
+  title="PMS (Premenstrual Syndrome)"
+  toc={[
+    { id: "typical-pms-symptoms", label: "Typical PMS symptoms" },
+    { id: "the-mechanism-behind-pms", label: "The mechanism" },
+    { id: "how-pms-differs-from-pmdd", label: "PMS vs PMDD" },
+    { id: "what-helps-pms-evidence-graded", label: "What helps (evidence-graded)" },
+    { id: "pms-and-cycle-syncing", label: "PMS and cycle syncing" },
+    { id: "when-to-see-a-provider", label: "When to see a provider" },
+  ]}
+/>
+
+</div>

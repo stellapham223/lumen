@@ -90,6 +90,56 @@ export function BreadcrumbJsonLd({
   return <JsonLd data={data} />;
 }
 
+export function DefinedTermJsonLd({
+  term,
+  description,
+  path,
+  inDefinedTermSet,
+}: {
+  term: string;
+  description: string;
+  path: string;
+  inDefinedTermSet?: string;
+}) {
+  const url = absoluteUrl(path);
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    name: term,
+    description,
+    url,
+    inDefinedTermSet: inDefinedTermSet ?? absoluteUrl("/glossary"),
+  };
+  return <JsonLd data={data} />;
+}
+
+export function DefinedTermSetJsonLd({
+  name,
+  description,
+  path,
+  terms,
+}: {
+  name: string;
+  description: string;
+  path: string;
+  terms: ReadonlyArray<{ term: string; slug: string }>;
+}) {
+  const url = absoluteUrl(path);
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    name,
+    description,
+    url,
+    hasDefinedTerm: terms.map((t) => ({
+      "@type": "DefinedTerm",
+      name: t.term,
+      url: absoluteUrl(`/glossary/${t.slug}`),
+    })),
+  };
+  return <JsonLd data={data} />;
+}
+
 export function ArticleJsonLd({
   headline,
   description,
