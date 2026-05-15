@@ -26,6 +26,8 @@ export default function AdminLayout({
           <NavLink href="/admin/revisit">Revisit</NavLink>
           <NavLink href="/admin/mentions">Mentions</NavLink>
           <NavLink href="/admin/metrics">Metrics</NavLink>
+          <NavLink href="/admin/reddit">Reddit</NavLink>
+          <NavLink href="/admin/subs">Subs</NavLink>
           <form action="/api/admin/logout" method="POST">
             <button
               type="submit"

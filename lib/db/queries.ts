@@ -6,6 +6,8 @@ import type {
   ThreadStatus,
   ThreadCategory,
   CdMentionInsert,
+  CdSub,
+  CdSubInsert,
 } from "./schema";
 
 export async function upsertThreads(rows: CdThreadInsert[]): Promise<number> {
@@ -211,4 +213,39 @@ export async function listKarmaSnapshots(limit = 90) {
     .from(schema.cdKarmaSnapshots)
     .orderBy(asc(schema.cdKarmaSnapshots.capturedAt))
     .limit(limit);
+}
+
+export async function listSubs(options: { onlyActive?: boolean } = {}): Promise<CdSub[]> {
+  const query = db.select().from(schema.cdSubs);
+  const rows = options.onlyActive
+    ? await query.where(eq(schema.cdSubs.isActive, true)).orderBy(asc(schema.cdSubs.sortOrder), asc(schema.cdSubs.name))
+    : await query.orderBy(asc(schema.cdSubs.sortOrder), asc(schema.cdSubs.name));
+  return rows;
+}
+
+export async function getSubByName(name: string): Promise<CdSub | undefined> {
+  const rows = await db
+    .select()
+    .from(schema.cdSubs)
+    .where(eq(schema.cdSubs.name, name))
+    .limit(1);
+  return rows[0];
+}
+
+export async function insertSub(input: CdSubInsert): Promise<CdSub> {
+  const [row] = await db.insert(schema.cdSubs).values(input).returning();
+  return row;
+}
+
+export async function updateSub(id: number, input: Partial<CdSubInsert>): Promise<CdSub | undefined> {
+  const [row] = await db
+    .update(schema.cdSubs)
+    .set({ ...input, updatedAt: new Date() })
+    .where(eq(schema.cdSubs.id, id))
+    .returning();
+  return row;
+}
+
+export async function deleteSub(id: number): Promise<void> {
+  await db.delete(schema.cdSubs).where(eq(schema.cdSubs.id, id));
 }

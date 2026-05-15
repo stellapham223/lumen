@@ -1,5 +1,6 @@
 import { XMLParser } from "fast-xml-parser";
 import { rssUrl, SUBS, type SubConfig } from "./subs";
+import { listSubs } from "@/lib/db/queries";
 
 export type RawThread = {
   externalId: string;
@@ -91,7 +92,26 @@ async function fetchSubFeed(sub: SubConfig): Promise<RawThread[]> {
     .filter((t): t is RawThread => t !== null);
 }
 
+async function resolveSubs(): Promise<SubConfig[]> {
+  try {
+    const rows = await listSubs({ onlyActive: true });
+    if (rows.length > 0) {
+      return rows.map((r) => ({
+        name: r.name,
+        members: r.members,
+        strictness: (r.strictness === "loose" || r.strictness === "strict"
+          ? r.strictness
+          : "medium") as SubConfig["strictness"],
+      }));
+    }
+  } catch (err) {
+    console.warn("[reddit/rss] DB subs unavailable, falling back to static SUBS", err);
+  }
+  return [...SUBS];
+}
+
 export async function fetchAllSubs(): Promise<RawThread[]> {
-  const results = await Promise.allSettled(SUBS.map(fetchSubFeed));
+  const subs = await resolveSubs();
+  const results = await Promise.allSettled(subs.map(fetchSubFeed));
   return results.flatMap((r) => (r.status === "fulfilled" ? r.value : []));
 }

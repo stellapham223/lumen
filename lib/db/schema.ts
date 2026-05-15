@@ -90,6 +90,29 @@ export const cdKarmaSnapshots = pgTable("cd_karma_snapshots", {
   accountCreatedAt: timestamp("account_created_at", { withTimezone: true }),
 });
 
+export const cdSubs = pgTable(
+  "cd_subs",
+  {
+    id: serial("id").primaryKey(),
+    name: text("name").notNull().unique(),
+    members: text("members").notNull().default(""),
+    strictness: text("strictness").notNull().default("medium"),
+    promptTemplate: text("prompt_template").notNull().default(""),
+    notes: text("notes").notNull().default(""),
+    isActive: boolean("is_active").notNull().default(true),
+    sortOrder: integer("sort_order").notNull().default(0),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [index("cd_subs_active_idx").on(t.isActive, t.sortOrder)],
+);
+
+export type CdSub = typeof cdSubs.$inferSelect;
+export type CdSubInsert = typeof cdSubs.$inferInsert;
+
+export const SUB_STRICTNESS = ["loose", "medium", "strict"] as const;
+export type SubStrictness = (typeof SUB_STRICTNESS)[number];
+
 export type CdThread = typeof cdThreads.$inferSelect;
 export type CdThreadInsert = typeof cdThreads.$inferInsert;
 export type CdSuggestion = typeof cdSuggestions.$inferSelect;
