@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 
 export default function BlogLayout({
   children,
@@ -23,6 +24,7 @@ export default function BlogLayout({
         </Link>
       </nav>
       <div className="animate-fade-up">{children}</div>
+      <AffiliateDisclosure />
     </main>
   );
 }
