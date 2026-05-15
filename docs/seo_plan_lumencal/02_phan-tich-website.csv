@@ -5,12 +5,12 @@ Content,"- Đã publish 9 blog posts (Test E 5 + newer 4) từ 2026-04-28
 - Tất cả posts productivity-positioned (no diet/workout)
 - Có app calculator + home page + about
 - Topic coverage: cycle syncing 101; phases; legit/work; birth control; beginners
-- Chưa có hub-spoke architecture rõ ràng — phase deep-dives đang được viết (#12-15)
+- Chưa có hub-spoke architecture rõ ràng - phase deep-dives đang được viết (#12-15)
 
 => Topical authority đang build. Cần Tier 2 deep-dives (4 phases) để consolidate.","- Ship 12 posts còn lại theo CONTENT_CALENDAR_2026_05.md (May-June 2026)
 - Build phase deep-dive hub-spoke: cycle-syncing-chart (hub) → 4 phase posts (spokes)
 - Add glossary section (terms như follicular phase; luteal phase; LH surge; basal body temperature)
-- Review content có em dash không — replace all em dash (feedback memory)
+- Review content có em dash không - replace all em dash (feedback memory)
 - Post-publish: monitor GSC sau 2026-05-19 (Test E gate)",
 Lỗi Technical,"- Next.js 15 (statically generated)
 - LCP fast (Vercel edge)
@@ -38,8 +38,8 @@ On-page SEO,"- URLs clean: /blog/{slug}
 - Internal linking: ad-hoc; chưa có cluster strategy","- Audit meta cho 9 posts đã publish (chiều dài; CTR potential)
 - Build internal linking matrix: mỗi spoke link về hub; hub link xuống tất cả spokes
 - Add 'Related posts' section dưới mỗi post
-- Affiliate disclosure component đã có (AffiliateDisclosure.tsx) — verify deploy hết các posts có affiliate",
-E-E-A-T / YMYL,"- Niche women's health — Google YMYL standard cao
+- Affiliate disclosure component đã có (AffiliateDisclosure.tsx) - verify deploy hết các posts có affiliate",
+E-E-A-T / YMYL,"- Niche women's health - Google YMYL standard cao
 - Chưa có medical reviewer
 - About page có nhưng chưa stress credentials
 - Cần citation chuẩn (PubMed; gov sources)","- Add medical disclaimer cho mọi post about health

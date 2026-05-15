@@ -1,6 +1,6 @@
-STT,Term,Funnel,Topic,URL slug,Translation (Vi),Definition (short),Priority,Linked from posts,Status
+﻿STT,Term,Funnel,Topic,URL slug,Translation (Vi),Definition (short),Priority,Linked from posts,Status
 ,,,,,,,,,
-,A. SYMPTOMS & EXPERIENCES (Unaware funnel — entry from search),,,,,,,,
+,A. SYMPTOMS & EXPERIENCES (Unaware funnel - entry from search),,,,,,,,
 1,PMS (Premenstrual Syndrome),Unaware,Symptoms,/glossary/pms,Hội chứng tiền kinh nguyệt,Cluster of physical + mood symptoms in the 7-10 days before period. ~75% prevalence to some degree.,P0,#13 #17,Planned
 2,PMDD (Premenstrual Dysphoric Disorder),Unaware,Symptoms,/glossary/pmdd,Rối loạn khí sắc tiền kinh nguyệt,Severe form of PMS (3-8% prevalence). Clinical diagnosis. Mood disturbance significant enough to impair daily life.,P0,#17,Planned
 3,Period brain (cycle brain fog),Unaware,Symptoms,/glossary/period-brain,Sương mù não kỳ kinh,Subjective cognitive cloudiness during late luteal + early menstrual. Modest measurable effects on working memory.,P1,#7 #17,Planned
@@ -8,37 +8,37 @@ STT,Term,Funnel,Topic,URL slug,Translation (Vi),Definition (short),Priority,Link
 5,Premenstrual cravings,Unaware,Symptoms,/glossary/premenstrual-cravings,Cơn thèm ăn tiền kinh,Increased appetite + cravings (carbs/chocolate) in late luteal. Linked to serotonin + insulin fluctuation.,P2,#13 #20,Planned
 6,Cyclical bloating,Unaware,Symptoms,/glossary/cyclical-bloating,Đầy hơi theo chu kỳ,Fluid retention in late luteal phase from progesterone-driven sodium retention.,P2,#13,Planned
 7,Cyclical mood swings,Unaware,Symptoms,/glossary/cyclical-mood-swings,Thay đổi tâm trạng theo chu kỳ,Recurring mood pattern tied to phase. Predictable timing is diagnostic clue vs clinical mood disorder.,P2,#17,Planned
-8,Hormonal acne,Unaware,Symptoms,/glossary/hormonal-acne,Mụn nội tiết,Acne pattern correlated with cycle (peaks late luteal). Driven by androgen + sebum interaction.,P1,—,Planned
+8,Hormonal acne,Unaware,Symptoms,/glossary/hormonal-acne,Mụn nội tiết,Acne pattern correlated with cycle (peaks late luteal). Driven by androgen + sebum interaction.,P1,-,Planned
 9,Mittelschmerz (ovulation pain),Unaware,Symptoms,/glossary/mittelschmerz,Đau giữa chu kỳ,One-sided pelvic pain at ovulation. Usually harmless and brief (hours to 1 day).,P2,#12 #15,Planned
 10,Cyclical breast tenderness,Unaware,Symptoms,/glossary/breast-tenderness,Đau tức ngực theo chu kỳ,Tender swollen breasts in late luteal. Progesterone-driven; resolves with period onset.,P2,#13,Planned
-11,Dysmenorrhea (period pain),Unaware,Symptoms,/glossary/dysmenorrhea,Đau bụng kinh,Painful periods — primary (intrinsic) or secondary (from condition like endometriosis).,P0,#14,Planned
-12,Menstrual migraine,Unaware,Symptoms,/glossary/menstrual-migraine,Đau nửa đầu chu kỳ,Migraine pattern timed to estrogen drop pre-period. Affects ~20% of women with migraines.,P1,—,Planned
+11,Dysmenorrhea (period pain),Unaware,Symptoms,/glossary/dysmenorrhea,Đau bụng kinh,Painful periods - primary (intrinsic) or secondary (from condition like endometriosis).,P0,#14,Planned
+12,Menstrual migraine,Unaware,Symptoms,/glossary/menstrual-migraine,Đau nửa đầu chu kỳ,Migraine pattern timed to estrogen drop pre-period. Affects ~20% of women with migraines.,P1,-,Planned
 13,Cyclical depression,Unaware,Symptoms,/glossary/cyclical-depression,Trầm cảm theo chu kỳ,Depressive symptoms timed to luteal phase. Distinct from major depressive disorder by timing.,P1,#17,Planned
-14,Premenstrual anxiety,Unaware,Symptoms,/glossary/premenstrual-anxiety,Lo âu tiền kinh,Anxiety spikes in late luteal — linked to allopregnanolone withdrawal + GABA dysregulation.,P1,#17,Planned
-15,Heavy menstrual bleeding (menorrhagia),Unaware,Symptoms,/glossary/menorrhagia,Rong kinh,Periods >7 days OR soaking through pad/tampon every 1-2 hours. Warrants medical evaluation.,P1,—,Planned
-16,Light or absent periods,Unaware,Symptoms,/glossary/hypomenorrhea,Kinh thưa,Periods <3 days OR very light flow. Can indicate hormonal imbalance; under-fueling; thyroid issues.,P2,—,Planned
+14,Premenstrual anxiety,Unaware,Symptoms,/glossary/premenstrual-anxiety,Lo âu tiền kinh,Anxiety spikes in late luteal - linked to allopregnanolone withdrawal + GABA dysregulation.,P1,#17,Planned
+15,Heavy menstrual bleeding (menorrhagia),Unaware,Symptoms,/glossary/menorrhagia,Rong kinh,Periods >7 days OR soaking through pad/tampon every 1-2 hours. Warrants medical evaluation.,P1,-,Planned
+16,Light or absent periods,Unaware,Symptoms,/glossary/hypomenorrhea,Kinh thưa,Periods <3 days OR very light flow. Can indicate hormonal imbalance; under-fueling; thyroid issues.,P2,-,Planned
 17,Mid-cycle spotting,Unaware,Symptoms,/glossary/mid-cycle-spotting,Chảy máu giữa chu kỳ,Light bleeding around ovulation. Usually harmless; persistent or heavy warrants evaluation.,P2,#12 #15,Planned
-18,Period clots,Unaware,Symptoms,/glossary/period-clots,Cục máu đông kinh nguyệt,Coagulated blood passed during heavy flow. Small clots normal; quarter-sized+ warrants evaluation.,P2,—,Planned
+18,Period clots,Unaware,Symptoms,/glossary/period-clots,Cục máu đông kinh nguyệt,Coagulated blood passed during heavy flow. Small clots normal; quarter-sized+ warrants evaluation.,P2,-,Planned
 19,Cyclical insomnia,Unaware,Symptoms,/glossary/cyclical-insomnia,Mất ngủ theo chu kỳ,Sleep disruption in late luteal + ovulatory phases from progesterone + temp shifts.,P1,#13 #17,Planned
 20,Premenstrual irritability,Unaware,Symptoms,/glossary/premenstrual-irritability,Cáu kỉnh tiền kinh,Increased frustration tolerance dropping in late luteal. Serotonin withdrawal model.,P2,#17,Planned
-21,Cyclical IBS flare,Unaware,Symptoms,/glossary/cyclical-ibs,IBS theo chu kỳ,Digestive symptoms (cramping; diarrhea; constipation) worsening pre-period — prostaglandin-mediated.,P2,—,Planned
-22,Catamenial epilepsy,Unaware,Symptoms,/glossary/catamenial-epilepsy,Động kinh theo chu kỳ,Seizure pattern correlated with cycle phases. Affects ~40% of women with epilepsy.,P2,—,Planned
+21,Cyclical IBS flare,Unaware,Symptoms,/glossary/cyclical-ibs,IBS theo chu kỳ,Digestive symptoms (cramping; diarrhea; constipation) worsening pre-period - prostaglandin-mediated.,P2,-,Planned
+22,Catamenial epilepsy,Unaware,Symptoms,/glossary/catamenial-epilepsy,Động kinh theo chu kỳ,Seizure pattern correlated with cycle phases. Affects ~40% of women with epilepsy.,P2,-,Planned
 ,,,,,,,,,
 ,B. CYCLE PHYSIOLOGY BASICS (Problem aware),,,,,,,,
 23,Menstrual cycle,Problem aware,Physiology,/glossary/menstrual-cycle,Chu kỳ kinh nguyệt,Recurring hormonal cycle from day 1 of menstruation to day before next period. Normal: 21-35 days.,P0,#1 #7 #11,Planned
 24,Cycle length,Problem aware,Physiology,/glossary/cycle-length,Độ dài chu kỳ,Days from period start to next period start. ~12% of women have exactly 28-day cycles.,P0,#1 #9 #11,Planned
 25,Cycle phase,Problem aware,Physiology,/glossary/cycle-phase,Pha chu kỳ,One of 4 cycle segments: menstrual; follicular; ovulatory; luteal. Each has distinct hormone profile.,P0,#4 all phase posts,Planned
-26,Ovulation,Problem aware,Physiology,/glossary/ovulation,Rụng trứng,Release of mature egg from ovary — triggered by LH surge ~24-36h prior.,P0,#12 #15 #11,Planned
+26,Ovulation,Problem aware,Physiology,/glossary/ovulation,Rụng trứng,Release of mature egg from ovary - triggered by LH surge ~24-36h prior.,P0,#12 #15 #11,Planned
 27,Menstruation,Problem aware,Physiology,/glossary/menstruation,Hành kinh,Shedding of uterine lining when no implantation. Lasts 3-7 days for most. Day 1 = new cycle.,P0,#14,Planned
 28,Anovulatory cycle,Problem aware,Physiology,/glossary/anovulatory-cycle,Chu kỳ không rụng trứng,Cycle without ovulation. Common in adolescence; perimenopause; PCOS; high stress; hormonal BC.,P1,#8 #12,Planned
 29,Endometrium,Problem aware,Physiology,/glossary/endometrium,Niêm mạc tử cung,Uterine lining that thickens through cycle responding to estrogen + progesterone. Sheds at menstruation.,P2,#14,Planned
 30,Corpus luteum,Problem aware,Physiology,/glossary/corpus-luteum,Hoàng thể,Hormone-producing structure formed from follicle post-ovulation. Produces progesterone during luteal.,P2,#13,Planned
 31,Ovarian follicle,Problem aware,Physiology,/glossary/ovarian-follicle,Nang trứng,Fluid-filled sac in ovary containing developing egg. ~15-20 develop per cycle; one becomes dominant.,P2,#12,Planned
 32,Ovarian reserve,Problem aware,Physiology,/glossary/ovarian-reserve,Trữ lượng buồng trứng,Number of viable eggs remaining. Declines with age; rapid decline starts ~age 35.,P2,#12,Planned
-33,Menarche,Problem aware,Physiology,/glossary/menarche,Tuổi có kinh đầu,First menstrual period. Average age 12 globally; range 8-15 considered normal.,P2,—,Planned
-34,Menopause,Problem aware,Physiology,/glossary/menopause,Mãn kinh,Permanent end of menstruation. Diagnosed retrospectively after 12 months without period. Average age 51.,P1,—,Planned
-35,Postmenopause,Problem aware,Physiology,/glossary/postmenopause,Hậu mãn kinh,Stage after 12 months without period. Cycle syncing no longer applies; rhythms still matter.,P2,—,Planned
-36,Endocrine system (cycle),Problem aware,Physiology,/glossary/endocrine-system,Hệ nội tiết,Hormone-producing glands. Pituitary + ovaries + thyroid + adrenals all interact with cycle.,P2,—,Planned
+33,Menarche,Problem aware,Physiology,/glossary/menarche,Tuổi có kinh đầu,First menstrual period. Average age 12 globally; range 8-15 considered normal.,P2,-,Planned
+34,Menopause,Problem aware,Physiology,/glossary/menopause,Mãn kinh,Permanent end of menstruation. Diagnosed retrospectively after 12 months without period. Average age 51.,P1,-,Planned
+35,Postmenopause,Problem aware,Physiology,/glossary/postmenopause,Hậu mãn kinh,Stage after 12 months without period. Cycle syncing no longer applies; rhythms still matter.,P2,-,Planned
+36,Endocrine system (cycle),Problem aware,Physiology,/glossary/endocrine-system,Hệ nội tiết,Hormone-producing glands. Pituitary + ovaries + thyroid + adrenals all interact with cycle.,P2,-,Planned
 37,HPO axis (Hypothalamic-Pituitary-Ovarian),Problem aware,Physiology,/glossary/hpo-axis,Trục HPO,Feedback loop controlling cycle: hypothalamus releases GnRH → pituitary releases FSH/LH → ovaries produce estrogen/progesterone.,P1,#7,Planned
 38,Follicular wave,Problem aware,Physiology,/glossary/follicular-wave,Sóng nang trứng,Cohort of follicles developing each cycle (~15-20). 1 becomes dominant; rest regress.,P2,#12,Planned
 39,Pre-ovulatory phase,Problem aware,Physiology,/glossary/pre-ovulatory-phase,Pha tiền rụng trứng,Late follicular days (~5 days before ovulation). Peak estrogen window.,P2,#12,Planned
@@ -52,33 +52,33 @@ STT,Term,Funnel,Topic,URL slug,Translation (Vi),Definition (short),Priority,Link
 45,LH (Luteinizing Hormone),Solution aware,Hormones,/glossary/lh,LH (Hormone tạo hoàng thể),Triggers ovulation when surging mid-cycle. Released by pituitary.,P1,#12 #15,Planned
 46,LH surge,Solution aware,Hormones,/glossary/lh-surge,Tăng đột biến LH,Sudden 5-10x rise in LH ~24-36h before ovulation. Detected by OPKs.,P1,#15,Planned
 47,Cortisol (cycle interaction),Solution aware,Hormones,/glossary/cortisol-cycle,Cortisol và chu kỳ,Stress hormone. Chronic elevation suppresses reproductive hormones + causes cycle irregularity.,P2,#7,Planned
-48,Prolactin,Solution aware,Hormones,/glossary/prolactin,Prolactin,Milk production hormone. High levels suppress ovulation (lactational amenorrhea + stress amenorrhea).,P2,—,Planned
-49,Thyroid hormones (cycle),Solution aware,Hormones,/glossary/thyroid-cycle,Hormone tuyến giáp và chu kỳ,T3/T4 levels affect cycle regularity. Hypo or hyperthyroidism commonly cause cycle disruption.,P1,—,Planned
-50,DHEA (dehydroepiandrosterone),Solution aware,Hormones,/glossary/dhea,DHEA,Adrenal androgen precursor. Declines with age. Some research interest in supplementation for ovarian aging.,P2,—,Planned
-51,Androgens (in women),Solution aware,Hormones,/glossary/androgens-women,Androgen ở phụ nữ,Group including testosterone + DHEA. Elevated in PCOS; cause acne + hirsutism + cycle irregularity.,P2,—,Planned
-52,Sex hormone binding globulin (SHBG),Solution aware,Hormones,/glossary/shbg,SHBG (Globulin gắn hormone giới tính),Liver-produced protein that binds sex hormones. High SHBG = low free hormone activity.,P2,—,Planned
-53,Insulin (cycle interaction),Solution aware,Hormones,/glossary/insulin-cycle,Insulin và chu kỳ,Insulin sensitivity varies across cycle — drops in luteal phase. Contributes to PMS cravings.,P2,—,Planned
-54,Estrogen dominance,Solution aware,Hormones,/glossary/estrogen-dominance,Ưu thế estrogen,Relative excess of estrogen vs progesterone. Linked to heavy periods + breast tenderness + fibroids.,P1,—,Planned
-55,Luteal phase defect,Solution aware,Hormones,/glossary/luteal-phase-defect,Khuyết tật pha luteal,Inadequate progesterone production in luteal phase. Associated with short luteal phase + early miscarriage.,P2,—,Planned
-56,Phytoestrogens,Solution aware,Hormones,/glossary/phytoestrogens,Phytoestrogen,Plant compounds (soy isoflavones; flax lignans) with weak estrogenic activity.,P2,—,Planned
-57,Xenoestrogens,Solution aware,Hormones,/glossary/xenoestrogens,Xenoestrogen,Synthetic chemicals (BPA; phthalates; parabens) mimicking estrogen. Endocrine disruptors.,P2,—,Planned
-58,Hormone Replacement Therapy (HRT),Solution aware,Hormones,/glossary/hrt,Liệu pháp thay thế hormone,Estrogen + progestin therapy for perimenopause/menopause symptoms. Different from birth control.,P1,—,Planned
+48,Prolactin,Solution aware,Hormones,/glossary/prolactin,Prolactin,Milk production hormone. High levels suppress ovulation (lactational amenorrhea + stress amenorrhea).,P2,-,Planned
+49,Thyroid hormones (cycle),Solution aware,Hormones,/glossary/thyroid-cycle,Hormone tuyến giáp và chu kỳ,T3/T4 levels affect cycle regularity. Hypo or hyperthyroidism commonly cause cycle disruption.,P1,-,Planned
+50,DHEA (dehydroepiandrosterone),Solution aware,Hormones,/glossary/dhea,DHEA,Adrenal androgen precursor. Declines with age. Some research interest in supplementation for ovarian aging.,P2,-,Planned
+51,Androgens (in women),Solution aware,Hormones,/glossary/androgens-women,Androgen ở phụ nữ,Group including testosterone + DHEA. Elevated in PCOS; cause acne + hirsutism + cycle irregularity.,P2,-,Planned
+52,Sex hormone binding globulin (SHBG),Solution aware,Hormones,/glossary/shbg,SHBG (Globulin gắn hormone giới tính),Liver-produced protein that binds sex hormones. High SHBG = low free hormone activity.,P2,-,Planned
+53,Insulin (cycle interaction),Solution aware,Hormones,/glossary/insulin-cycle,Insulin và chu kỳ,Insulin sensitivity varies across cycle - drops in luteal phase. Contributes to PMS cravings.,P2,-,Planned
+54,Estrogen dominance,Solution aware,Hormones,/glossary/estrogen-dominance,Ưu thế estrogen,Relative excess of estrogen vs progesterone. Linked to heavy periods + breast tenderness + fibroids.,P1,-,Planned
+55,Luteal phase defect,Solution aware,Hormones,/glossary/luteal-phase-defect,Khuyết tật pha luteal,Inadequate progesterone production in luteal phase. Associated with short luteal phase + early miscarriage.,P2,-,Planned
+56,Phytoestrogens,Solution aware,Hormones,/glossary/phytoestrogens,Phytoestrogen,Plant compounds (soy isoflavones; flax lignans) with weak estrogenic activity.,P2,-,Planned
+57,Xenoestrogens,Solution aware,Hormones,/glossary/xenoestrogens,Xenoestrogen,Synthetic chemicals (BPA; phthalates; parabens) mimicking estrogen. Endocrine disruptors.,P2,-,Planned
+58,Hormone Replacement Therapy (HRT),Solution aware,Hormones,/glossary/hrt,Liệu pháp thay thế hormone,Estrogen + progestin therapy for perimenopause/menopause symptoms. Different from birth control.,P1,-,Planned
 ,,,,,,,,,
 ,D. NEUROTRANSMITTERS & MECHANISM (Solution aware),,,,,,,,
 59,BDNF (Brain-Derived Neurotrophic Factor),Solution aware,Mechanism,/glossary/bdnf,BDNF (Yếu tố thần kinh từ não),Protein supporting neuron growth + plasticity. Estrogen upregulates BDNF → follicular learning advantage.,P0,#7 #12,Planned
-60,Dopamine (cycle modulation),Solution aware,Mechanism,/glossary/dopamine-cycle,Dopamine và chu kỳ,Reward + motivation neurotransmitter. Estrogen amplifies dopamine — drives follicular novelty-seeking.,P0,#7 #12,Planned
-61,Serotonin (cycle modulation),Solution aware,Mechanism,/glossary/serotonin-cycle,Serotonin và chu kỳ,Mood + sleep neurotransmitter. Drops in late luteal — underlies PMS mood symptoms.,P0,#7 #13,Planned
+60,Dopamine (cycle modulation),Solution aware,Mechanism,/glossary/dopamine-cycle,Dopamine và chu kỳ,Reward + motivation neurotransmitter. Estrogen amplifies dopamine - drives follicular novelty-seeking.,P0,#7 #12,Planned
+61,Serotonin (cycle modulation),Solution aware,Mechanism,/glossary/serotonin-cycle,Serotonin và chu kỳ,Mood + sleep neurotransmitter. Drops in late luteal - underlies PMS mood symptoms.,P0,#7 #13,Planned
 62,GABA,Solution aware,Mechanism,/glossary/gaba,GABA,Inhibitory neurotransmitter; calming. Boosted by allopregnanolone in luteal phase.,P1,#7 #13,Planned
-63,Allopregnanolone,Solution aware,Mechanism,/glossary/allopregnanolone,Allopregnanolone,Progesterone metabolite modulating GABA. Drops sharply in late luteal — contributes to PMDD.,P1,#7 #13 #17,Planned
+63,Allopregnanolone,Solution aware,Mechanism,/glossary/allopregnanolone,Allopregnanolone,Progesterone metabolite modulating GABA. Drops sharply in late luteal - contributes to PMDD.,P1,#7 #13 #17,Planned
 64,Infradian rhythm,Solution aware,Mechanism,/glossary/infradian-rhythm,Nhịp infradian,Biological rhythm longer than 24h. Menstrual cycle is the primary female infradian rhythm.,P0,#1 #7,Planned
 65,Circadian rhythm (vs infradian),Solution aware,Mechanism,/glossary/circadian-rhythm,Nhịp circadian,~24-hour rhythm. Interacts with infradian; sleep architecture shifts across cycle.,P1,#7,Planned
 66,Hormone-cognition link,Solution aware,Mechanism,/glossary/hormone-cognition,Liên kết hormone-nhận thức,Mechanism by which sex hormones affect cognitive performance (verbal fluency; working memory).,P1,#7,Planned
-67,Neuroplasticity (cycle modulation),Solution aware,Mechanism,/glossary/neuroplasticity-cycle,Tính dẻo thần kinh và chu kỳ,Brain's adaptive capacity — modulated by estrogen + BDNF cycling. Highest in late follicular.,P1,#7,Planned
+67,Neuroplasticity (cycle modulation),Solution aware,Mechanism,/glossary/neuroplasticity-cycle,Tính dẻo thần kinh và chu kỳ,Brain's adaptive capacity - modulated by estrogen + BDNF cycling. Highest in late follicular.,P1,#7,Planned
 68,Sleep architecture (cycle shifts),Solution aware,Mechanism,/glossary/sleep-architecture-cycle,Cấu trúc giấc ngủ và chu kỳ,REM + deep sleep proportions shift with cycle. Progesterone disrupts REM in late luteal.,P1,#9 #13,Planned
-69,Heart rate variability (HRV) and cycle,Solution aware,Mechanism,/glossary/hrv-cycle,HRV và chu kỳ,Autonomic balance marker. Drops in luteal phase as progesterone reduces parasympathetic tone.,P2,—,Planned
+69,Heart rate variability (HRV) and cycle,Solution aware,Mechanism,/glossary/hrv-cycle,HRV và chu kỳ,Autonomic balance marker. Drops in luteal phase as progesterone reduces parasympathetic tone.,P2,-,Planned
 70,Body temperature regulation (cycle),Solution aware,Mechanism,/glossary/body-temperature-cycle,Điều hòa nhiệt độ cơ thể,Basal body temp rises ~0.5°F after ovulation. Used to confirm ovulation retrospectively.,P1,#9,Planned
-71,Inflammation (cycle modulation),Solution aware,Mechanism,/glossary/inflammation-cycle,Viêm và chu kỳ,Inflammatory markers cycle — rise in late luteal + menstrual. Drives PMS + period pain.,P2,—,Planned
-72,Insulin sensitivity (cycle),Solution aware,Mechanism,/glossary/insulin-sensitivity-cycle,Độ nhạy insulin và chu kỳ,Insulin sensitivity highest in follicular; drops in luteal. Affects energy + cravings + training response.,P2,—,Planned
+71,Inflammation (cycle modulation),Solution aware,Mechanism,/glossary/inflammation-cycle,Viêm và chu kỳ,Inflammatory markers cycle - rise in late luteal + menstrual. Drives PMS + period pain.,P2,-,Planned
+72,Insulin sensitivity (cycle),Solution aware,Mechanism,/glossary/insulin-sensitivity-cycle,Độ nhạy insulin và chu kỳ,Insulin sensitivity highest in follicular; drops in luteal. Affects energy + cravings + training response.,P2,-,Planned
 ,,,,,,,,,
 ,E. THE 4 PHASES + SUB-PHASES (Solution aware),,,,,,,,
 73,Follicular phase,Solution aware,Phases,/glossary/follicular-phase,Pha follicular,Day 1 to ovulation (10-16 days). FSH + rising estrogen. Energy + creativity rise in late follicular.,P0,#4 #12 #18,Planned
@@ -89,7 +89,7 @@ STT,Term,Funnel,Topic,URL slug,Translation (Vi),Definition (short),Priority,Link
 78,Early luteal phase,Solution aware,Phases,/glossary/early-luteal-phase,Đầu pha luteal,Days 17-22. Peak detail-orientation. Best for editing; QA; closing tasks.,P1,#13,Planned
 79,Late luteal phase (PMS week),Solution aware,Phases,/glossary/late-luteal-phase,Cuối pha luteal,Days 23-28. Serotonin + allopregnanolone drop. PMS peaks. Reduce demands.,P0,#13 #17,Planned
 80,Menstrual phase,Solution aware,Phases,/glossary/menstrual-phase,Pha menstrual,Days 1-5 (bleeding). All hormones low. Reflection + planning phase.,P0,#4 #14,Planned
-81,Phase transition,Solution aware,Phases,/glossary/phase-transition,Chuyển pha,The 1-2 day window between phases. Symptoms often most noticeable here.,P2,—,Planned
+81,Phase transition,Solution aware,Phases,/glossary/phase-transition,Chuyển pha,The 1-2 day window between phases. Symptoms often most noticeable here.,P2,-,Planned
 82,Cycle map,Solution aware,Phases,/glossary/cycle-map,Bản đồ chu kỳ,Visual representation of 4 phases on a calendar with hormone overlay. Lumen's visual primitive.,P2,#4,Planned
 ,,,,,,,,,
 ,F. CYCLE SYNCING PRACTICE (Solution aware),,,,,,,,
@@ -97,15 +97,15 @@ STT,Term,Funnel,Topic,URL slug,Translation (Vi),Definition (short),Priority,Link
 84,Phase-based scheduling,Solution aware,Practice,/glossary/phase-based-scheduling,Lập kế hoạch theo pha,Scheduling tasks based on predicted phase rather than calendar week. Core Lumen positioning.,P0,#1 #10 #16,Planned
 85,Cycle-aware productivity,Solution aware,Practice,/glossary/cycle-aware-productivity,Năng suất theo chu kỳ,Productivity framework using cycle phase as input for work mode. Distinct from period tracking.,P0,#16 #21,Planned
 86,Phase rotation (work modes),Solution aware,Practice,/glossary/work-mode-rotation,Xoay vòng chế độ làm việc,Mapping 4 work modes (Reflect; Build; Connect; Finish) onto 4 cycle phases.,P1,#10 #18,Planned
-87,Cycle anchor date,Solution aware,Practice,/glossary/cycle-anchor-date,Mốc neo chu kỳ,Day 1 of current period — reference point for predicting all 4 phases.,P1,#10,Planned
+87,Cycle anchor date,Solution aware,Practice,/glossary/cycle-anchor-date,Mốc neo chu kỳ,Day 1 of current period - reference point for predicting all 4 phases.,P1,#10,Planned
 88,Cycle re-anchoring,Solution aware,Practice,/glossary/cycle-reanchoring,Neo lại chu kỳ,Updating phase predictions on day 1 of new period. Necessary because cycles drift.,P1,#10,Planned
-89,Phase-aligned workouts,Solution aware,Practice,/glossary/phase-aligned-workouts,Tập luyện theo pha,Adjusting workout intensity + type by phase. Evidence mixed — 2024 meta-analysis found small effects.,P1,#12 #13,Planned
-90,Phase-aligned nutrition,Solution aware,Practice,/glossary/phase-aligned-nutrition,Dinh dưỡng theo pha,Eating different foods per phase. Most overclaimed corner of cycle syncing — evidence is mostly mechanistic.,P1,#20,Planned
-91,Phase-aligned sleep,Solution aware,Practice,/glossary/phase-aligned-sleep,Giấc ngủ theo pha,Adjusting bedtime + caffeine cutoff by phase. Late luteal needs earlier wind-down.,P2,—,Planned
-92,Phase-aligned skincare,Solution aware,Practice,/glossary/phase-aligned-skincare,Chăm sóc da theo pha,Adjusting skincare by phase. Wellness-coded; minimal evidence.,P2,—,Planned
-93,Seed cycling,Solution aware,Practice,/glossary/seed-cycling,Seed cycling,Eating specific seeds (flax/pumpkin in follicular; sesame/sunflower in luteal). Evidence is anecdotal only.,P1,—,Planned
+89,Phase-aligned workouts,Solution aware,Practice,/glossary/phase-aligned-workouts,Tập luyện theo pha,Adjusting workout intensity + type by phase. Evidence mixed - 2024 meta-analysis found small effects.,P1,#12 #13,Planned
+90,Phase-aligned nutrition,Solution aware,Practice,/glossary/phase-aligned-nutrition,Dinh dưỡng theo pha,Eating different foods per phase. Most overclaimed corner of cycle syncing - evidence is mostly mechanistic.,P1,#20,Planned
+91,Phase-aligned sleep,Solution aware,Practice,/glossary/phase-aligned-sleep,Giấc ngủ theo pha,Adjusting bedtime + caffeine cutoff by phase. Late luteal needs earlier wind-down.,P2,-,Planned
+92,Phase-aligned skincare,Solution aware,Practice,/glossary/phase-aligned-skincare,Chăm sóc da theo pha,Adjusting skincare by phase. Wellness-coded; minimal evidence.,P2,-,Planned
+93,Seed cycling,Solution aware,Practice,/glossary/seed-cycling,Seed cycling,Eating specific seeds (flax/pumpkin in follicular; sesame/sunflower in luteal). Evidence is anecdotal only.,P1,-,Planned
 94,Deep work in follicular,Solution aware,Practice,/glossary/deep-work-follicular,Deep work trong follicular,Scheduling cognitively demanding work in late follicular. Lumen positioning.,P1,#18,Planned
-95,Editing in luteal phase,Solution aware,Practice,/glossary/editing-luteal,Chỉnh sửa trong luteal,Reserving detail-oriented editing for early luteal phase. Higher error detection sensitivity.,P2,—,Planned
+95,Editing in luteal phase,Solution aware,Practice,/glossary/editing-luteal,Chỉnh sửa trong luteal,Reserving detail-oriented editing for early luteal phase. Higher error detection sensitivity.,P2,-,Planned
 ,,,,,,,,,
 ,G. TRACKING & TOOLS (Product aware),,,,,,,,
 96,Cycle tracking,Product aware,Tools,/glossary/cycle-tracking,Theo dõi chu kỳ,Recording cycle data (period; symptoms; basal temp) for prediction.,P0,#5 #11 #19,Planned
@@ -116,29 +116,29 @@ STT,Term,Funnel,Topic,URL slug,Translation (Vi),Definition (short),Priority,Link
 101,Cervical mucus tracking,Product aware,Tools,/glossary/cervical-mucus-tracking,Theo dõi dịch nhầy,Observing cervical mucus texture changes. Egg-white consistency = fertile window.,P1,#9 #12,Planned
 102,Fertility Awareness Method (FAM),Product aware,Tools,/glossary/fam,Phương pháp nhận biết khả năng sinh sản,Birth control method combining BBT + cervical mucus + cycle tracking.,P1,#8 #11,Planned
 103,Sympto-thermal method,Product aware,Tools,/glossary/sympto-thermal-method,Phương pháp nhiệt-triệu chứng,FAM variant combining BBT + cervical mucus + symptoms. Highest-efficacy FAM.,P2,#8,Planned
-104,Standard Days Method,Product aware,Tools,/glossary/standard-days-method,Phương pháp ngày chuẩn,Calendar-based FAM. Avoid intercourse days 8-19. Lower efficacy than sympto-thermal.,P2,—,Planned
-105,Calendar method,Product aware,Tools,/glossary/calendar-method,Phương pháp lịch,Predicting ovulation purely from cycle calendar. Least reliable FAM variant.,P2,—,Planned
-106,Lactational Amenorrhea Method (LAM),Product aware,Tools,/glossary/lam,Phương pháp vô kinh do cho con bú,Using exclusive breastfeeding as birth control (first 6 months). Up to 98% effective if strict criteria met.,P2,—,Planned
+104,Standard Days Method,Product aware,Tools,/glossary/standard-days-method,Phương pháp ngày chuẩn,Calendar-based FAM. Avoid intercourse days 8-19. Lower efficacy than sympto-thermal.,P2,-,Planned
+105,Calendar method,Product aware,Tools,/glossary/calendar-method,Phương pháp lịch,Predicting ovulation purely from cycle calendar. Least reliable FAM variant.,P2,-,Planned
+106,Lactational Amenorrhea Method (LAM),Product aware,Tools,/glossary/lam,Phương pháp vô kinh do cho con bú,Using exclusive breastfeeding as birth control (first 6 months). Up to 98% effective if strict criteria met.,P2,-,Planned
 107,Ovulation Predictor Kit (OPK),Product aware,Tools,/glossary/opk,Que thử rụng trứng,Urine test detecting LH surge. Predicts ovulation 24-36h ahead.,P1,#12 #15,Planned
 108,Cycle tracking wearable,Product aware,Tools,/glossary/cycle-tracking-wearable,Thiết bị đeo theo dõi chu kỳ,Wearable (Oura; Whoop; Apple Watch) tracking BBT + HRV + heart rate to predict phases.,P2,#5 #19,Planned
-109,Continuous fertility monitor,Product aware,Tools,/glossary/continuous-fertility-monitor,Máy theo dõi sinh sản liên tục,Devices (Mira; Inito) measuring hormone metabolites in urine continuously.,P2,—,Planned
+109,Continuous fertility monitor,Product aware,Tools,/glossary/continuous-fertility-monitor,Máy theo dõi sinh sản liên tục,Devices (Mira; Inito) measuring hormone metabolites in urine continuously.,P2,-,Planned
 110,Phase calculator,Product aware,Tools,/glossary/phase-calculator,Máy tính pha chu kỳ,Tool converting last period date + cycle length into 4 phase date ranges. Lumen's core product.,P0,#3 #10,Planned
 111,Cycle data export,Product aware,Tools,/glossary/cycle-data-export,Xuất dữ liệu chu kỳ,Ability to download cycle history. Important for privacy + provider sharing. Varies by app.,P2,#19,Planned
 112,Privacy-first cycle tracking,Product aware,Tools,/glossary/privacy-first-tracking,Theo dõi chu kỳ bảo mật,Tracking with local-only data + no account + no third-party sharing. Increasingly important post-Roe.,P1,#19 #5,Planned
 ,,,,,,,,,
 ,H. EDGE CASES & CONDITIONS (Converting),,,,,,,,
 113,PCOS (Polycystic Ovary Syndrome),Converting,Conditions,/glossary/pcos,PCOS (Hội chứng buồng trứng đa nang),Endocrine disorder affecting 8-13% of women. Irregular ovulation + androgen excess. Disrupts cycle syncing.,P0,#12 #11,Planned
-114,Endometriosis,Converting,Conditions,/glossary/endometriosis,Lạc nội mạc tử cung,Endometrial-like tissue grows outside uterus. Severe period pain + can impact cycle regularity.,P1,—,Planned
-115,Adenomyosis,Converting,Conditions,/glossary/adenomyosis,Lạc nội mạc tử cung trong cơ,Endometrial tissue grows into uterine muscle wall. Heavy painful periods.,P2,—,Planned
-116,Uterine fibroids,Converting,Conditions,/glossary/uterine-fibroids,U xơ tử cung,Non-cancerous growths in uterine wall. Common in 30s-40s. Can cause heavy bleeding.,P2,—,Planned
+114,Endometriosis,Converting,Conditions,/glossary/endometriosis,Lạc nội mạc tử cung,Endometrial-like tissue grows outside uterus. Severe period pain + can impact cycle regularity.,P1,-,Planned
+115,Adenomyosis,Converting,Conditions,/glossary/adenomyosis,Lạc nội mạc tử cung trong cơ,Endometrial tissue grows into uterine muscle wall. Heavy painful periods.,P2,-,Planned
+116,Uterine fibroids,Converting,Conditions,/glossary/uterine-fibroids,U xơ tử cung,Non-cancerous growths in uterine wall. Common in 30s-40s. Can cause heavy bleeding.,P2,-,Planned
 117,Perimenopause,Converting,Conditions,/glossary/perimenopause,Tiền mãn kinh,Hormonal transition before menopause (late 30s to 50s). Follicular phase shortens first.,P0,#12,Planned
-118,Postpartum cycle return,Converting,Conditions,/glossary/postpartum-cycle-return,Chu kỳ trở lại sau sinh,First cycles after childbirth — often anovulatory + irregular. Predictions unreliable 3-6 cycles.,P1,#12,Planned
+118,Postpartum cycle return,Converting,Conditions,/glossary/postpartum-cycle-return,Chu kỳ trở lại sau sinh,First cycles after childbirth - often anovulatory + irregular. Predictions unreliable 3-6 cycles.,P1,#12,Planned
 119,Lactational amenorrhea,Converting,Conditions,/glossary/lactational-amenorrhea,Vô kinh do cho con bú,Ovulation suppression during exclusive breastfeeding. Cycles may not return for months to >1 year.,P2,#12,Planned
-120,Hypothalamic amenorrhea,Converting,Conditions,/glossary/hypothalamic-amenorrhea,Vô kinh do hạ đồi,Cycle loss from under-fueling; over-training; chronic stress. Reversible. Common in athletes.,P1,—,Planned
-121,Premature ovarian insufficiency,Converting,Conditions,/glossary/poi,Suy buồng trứng sớm,Loss of ovarian function before age 40. Affects ~1% of women.,P2,—,Planned
-122,Female athlete triad / RED-S,Converting,Conditions,/glossary/red-s,RED-S (Thiếu năng lượng tương đối ở vận động viên),Cluster: low energy availability + menstrual dysfunction + low bone density. Affects ~30% of female athletes.,P1,—,Planned
-123,Functional hypothalamic amenorrhea,Converting,Conditions,/glossary/fha,Vô kinh chức năng vùng hạ đồi,Reversible cycle loss from stress/under-fueling. Treated by addressing root cause not by adding hormones.,P2,—,Planned
-124,Post-pill amenorrhea,Converting,Conditions,/glossary/post-pill-amenorrhea,Vô kinh sau ngừng thuốc,Delayed cycle return after stopping hormonal birth control. Most resolve within 3 months.,P2,—,Planned
+120,Hypothalamic amenorrhea,Converting,Conditions,/glossary/hypothalamic-amenorrhea,Vô kinh do hạ đồi,Cycle loss from under-fueling; over-training; chronic stress. Reversible. Common in athletes.,P1,-,Planned
+121,Premature ovarian insufficiency,Converting,Conditions,/glossary/poi,Suy buồng trứng sớm,Loss of ovarian function before age 40. Affects ~1% of women.,P2,-,Planned
+122,Female athlete triad / RED-S,Converting,Conditions,/glossary/red-s,RED-S (Thiếu năng lượng tương đối ở vận động viên),Cluster: low energy availability + menstrual dysfunction + low bone density. Affects ~30% of female athletes.,P1,-,Planned
+123,Functional hypothalamic amenorrhea,Converting,Conditions,/glossary/fha,Vô kinh chức năng vùng hạ đồi,Reversible cycle loss from stress/under-fueling. Treated by addressing root cause not by adding hormones.,P2,-,Planned
+124,Post-pill amenorrhea,Converting,Conditions,/glossary/post-pill-amenorrhea,Vô kinh sau ngừng thuốc,Delayed cycle return after stopping hormonal birth control. Most resolve within 3 months.,P2,-,Planned
 ,,,,,,,,,
 ,I. BIRTH CONTROL METHODS (Converting),,,,,,,,
 125,Combined hormonal contraceptive,Converting,Birth control,/glossary/combined-hormonal-contraceptive,Thuốc tránh thai phối hợp,Estrogen + progestin (pill; patch; ring). Suppresses ovulation. Cycle syncing not applicable.,P0,#8,Planned
@@ -146,33 +146,33 @@ STT,Term,Funnel,Topic,URL slug,Translation (Vi),Definition (short),Priority,Link
 127,Hormonal IUD,Converting,Birth control,/glossary/hormonal-iud,IUD nội tiết,Levonorgestrel-releasing IUD (Mirena; Kyleena; Liletta). Often suppresses ovulation.,P1,#8,Planned
 128,Copper IUD,Converting,Birth control,/glossary/copper-iud,IUD đồng,Non-hormonal IUD (Paragard). Does NOT suppress cycle. Cycle syncing applies normally.,P1,#8,Planned
 129,Contraceptive implant (Nexplanon),Converting,Birth control,/glossary/contraceptive-implant,Que cấy tránh thai,Etonogestrel implant. Suppresses ovulation in most users. Cycle syncing not applicable.,P2,#8,Planned
-130,Depo-Provera injection,Converting,Birth control,/glossary/depo-provera,Tiêm tránh thai Depo,Medroxyprogesterone injection every 3 months. Suppresses ovulation. Slow cycle return after stopping.,P2,—,Planned
+130,Depo-Provera injection,Converting,Birth control,/glossary/depo-provera,Tiêm tránh thai Depo,Medroxyprogesterone injection every 3 months. Suppresses ovulation. Slow cycle return after stopping.,P2,-,Planned
 131,Vaginal ring (NuvaRing),Converting,Birth control,/glossary/vaginal-ring,Vòng âm đạo,Combined hormonal ring. Same hormonal effect as combined pill.,P2,#8,Planned
 132,Contraceptive patch,Converting,Birth control,/glossary/contraceptive-patch,Miếng dán tránh thai,Combined hormonal patch. Same hormonal effect as combined pill.,P2,#8,Planned
 133,Withdrawal bleeding,Converting,Birth control,/glossary/withdrawal-bleeding,Chảy máu giả kinh,Scheduled bleed during placebo week of combined pill. Not a true period.,P1,#8,Planned
-134,Emergency contraception (Plan B; Ella),Converting,Birth control,/glossary/emergency-contraception,Tránh thai khẩn cấp,Post-coital contraceptive. Levonorgestrel (Plan B) or ulipristal (Ella). Effective up to 72-120h.,P2,—,Planned
+134,Emergency contraception (Plan B; Ella),Converting,Birth control,/glossary/emergency-contraception,Tránh thai khẩn cấp,Post-coital contraceptive. Levonorgestrel (Plan B) or ulipristal (Ella). Effective up to 72-120h.,P2,-,Planned
 135,Coming off birth control,Converting,Birth control,/glossary/coming-off-birth-control,Ngừng thuốc tránh thai,Transition back to natural cycle. May involve irregular cycles for 3-6 months.,P1,#8,Planned
 ,,,,,,,,,
 ,J. CYCLE SYNCING ON CONSTRAINTS (Converting practice),,,,,,,,
 136,Cycle syncing on birth control,Converting,Practice,/glossary/cycle-syncing-on-birth-control,Cycle syncing khi dùng thuốc tránh thai,Most hormonal methods suppress cycling; non-hormonal preserve it. Method-by-method nuance.,P0,#8,Planned
 137,Cycle syncing for PCOS,Converting,Practice,/glossary/cycle-syncing-pcos,Cycle syncing cho PCOS,Modified approach for irregular cycles: track ovulation directly (OPK; BBT) rather than calendar predict.,P1,#12,Planned
 138,Cycle syncing in perimenopause,Converting,Practice,/glossary/cycle-syncing-perimenopause,Cycle syncing trong tiền mãn kinh,Track shortening cycles + symptoms over months. Calendar predictions become unreliable.,P1,#12,Planned
-139,Cycle syncing for endometriosis,Converting,Practice,/glossary/cycle-syncing-endometriosis,Cycle syncing cho lạc nội mạc tử cung,Severe period pain disrupts standard menstrual phase recommendations. Pain management priority.,P2,—,Planned
-140,Cycle syncing for athletes,Converting,Practice,/glossary/cycle-syncing-athletes,Cycle syncing cho vận động viên,Training periodization aligned to cycle. Stacy Sims framework; evidence mixed but practical.,P1,—,Planned
+139,Cycle syncing for endometriosis,Converting,Practice,/glossary/cycle-syncing-endometriosis,Cycle syncing cho lạc nội mạc tử cung,Severe period pain disrupts standard menstrual phase recommendations. Pain management priority.,P2,-,Planned
+140,Cycle syncing for athletes,Converting,Practice,/glossary/cycle-syncing-athletes,Cycle syncing cho vận động viên,Training periodization aligned to cycle. Stacy Sims framework; evidence mixed but practical.,P1,-,Planned
 ,,,,,,,,,
 ,K. NUTRITION & SUPPLEMENTS (Adjacent),,,,,,,,
 141,Magnesium (for PMS),Solution aware,Nutrition,/glossary/magnesium-pms,Magnesium cho PMS,Mineral with moderate evidence for reducing PMS symptoms. Typical dose 200-400mg/day glycinate form.,P1,#17,Planned
 142,Vitamin B6 (for PMS),Solution aware,Nutrition,/glossary/vitamin-b6-pms,Vitamin B6 cho PMS,Cofactor for serotonin synthesis. Evidence for moderate PMS reduction. Dose: 50-100mg/day.,P2,#17,Planned
 143,Iron (period support),Solution aware,Nutrition,/glossary/iron-period,Sắt và chu kỳ kinh,Lost during menstruation. Heavy bleeders often iron-deficient. Test ferritin before supplementing.,P1,#14,Planned
-144,Omega-3 (for PMS / inflammation),Solution aware,Nutrition,/glossary/omega-3-pms,Omega-3 cho PMS,EPA/DHA reduce inflammatory PMS symptoms. Dose: 1-2g combined EPA/DHA daily.,P2,—,Planned
-145,Vitex (chasteberry),Solution aware,Nutrition,/glossary/vitex,Vitex (cây thiến tử),Herbal extract with moderate evidence for cycle regularity + PMS. Affects prolactin + dopamine.,P2,—,Planned
-146,Inositol (for PCOS),Solution aware,Nutrition,/glossary/inositol-pcos,Inositol cho PCOS,Myo + D-chiro inositol show evidence for improving ovulation + insulin sensitivity in PCOS.,P2,—,Planned
-147,Spearmint tea (for PCOS),Solution aware,Nutrition,/glossary/spearmint-tea,Trà bạc hà cho PCOS,Anti-androgenic effects in small studies. Used for hirsutism in PCOS.,P2,—,Planned
+144,Omega-3 (for PMS / inflammation),Solution aware,Nutrition,/glossary/omega-3-pms,Omega-3 cho PMS,EPA/DHA reduce inflammatory PMS symptoms. Dose: 1-2g combined EPA/DHA daily.,P2,-,Planned
+145,Vitex (chasteberry),Solution aware,Nutrition,/glossary/vitex,Vitex (cây thiến tử),Herbal extract with moderate evidence for cycle regularity + PMS. Affects prolactin + dopamine.,P2,-,Planned
+146,Inositol (for PCOS),Solution aware,Nutrition,/glossary/inositol-pcos,Inositol cho PCOS,Myo + D-chiro inositol show evidence for improving ovulation + insulin sensitivity in PCOS.,P2,-,Planned
+147,Spearmint tea (for PCOS),Solution aware,Nutrition,/glossary/spearmint-tea,Trà bạc hà cho PCOS,Anti-androgenic effects in small studies. Used for hirsutism in PCOS.,P2,-,Planned
 ,,,,,,,,,
 ,L. KEY FIGURES & RESEARCH (Adjacent),,,,,,,,
 148,Alisa Vitti / FloLiving,Solution aware,People,/glossary/alisa-vitti,Alisa Vitti,Cycle syncing popularizer; FloLiving founder; author of "WomanCode" + "In the FLO".,P1,#16,Planned
-149,Stacy Sims,Solution aware,People,/glossary/stacy-sims,Stacy Sims,Female athlete physiology researcher; author of "ROAR". Cycle-aware training research.,P1,—,Planned
-150,Lara Briden,Solution aware,People,/glossary/lara-briden,Lara Briden,Naturopathic doctor; author of "Period Repair Manual". Evidence-based women's health.,P1,—,Planned
+149,Stacy Sims,Solution aware,People,/glossary/stacy-sims,Stacy Sims,Female athlete physiology researcher; author of "ROAR". Cycle-aware training research.,P1,-,Planned
+150,Lara Briden,Solution aware,People,/glossary/lara-briden,Lara Briden,Naturopathic doctor; author of "Period Repair Manual". Evidence-based women's health.,P1,-,Planned
 151,Sundström-Poromaa & Gingnell 2014,Solution aware,Research,/glossary/sundstrom-poromaa-2014,Nghiên cứu Sundström-Poromaa 2014,Influential review of cognitive variation across menstrual cycle. Used to ground evidence claims.,P2,#7,Planned
 152,2024 phase-timed exercise meta-analysis,Solution aware,Research,/glossary/2024-exercise-meta,Nghiên cứu tổng hợp 2024,Meta-analysis finding small effect of phase-timed exercise on training outcomes. Cooled hype.,P2,#6,Planned
 ,,,,,,,,,
@@ -183,7 +183,7 @@ STT,Term,Funnel,Topic,URL slug,Translation (Vi),Definition (short),Priority,Link
 ,P2 (build third wave),66,,,,,,,
 ,,,,,,,,,
 ,Funnel breakdown,,,,,,,,
-,Unaware,22,Symptoms entry — long-tail search capture,,,,,,
+,Unaware,22,Symptoms entry - long-tail search capture,,,,,,
 ,Problem aware,18,Cycle physiology basics,,,,,,
 ,Solution aware,75,Hormones + mechanism + phases + practice + nutrition,,,,,,
 ,Product aware,17,Tracking tools + apps + methods,,,,,,

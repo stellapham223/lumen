@@ -1,51 +1,51 @@
 Tổng Effort Budget,STT,Hạng mục,Chi tiết,VI. Performance & KPI EFFORT KPI TOÀN PROJECT,PIC,Tỉ trọng/tổng KPI (%),Tổng KPI/năm (toàn project),Cách phân bổ,Note
 ,,,,(Solo founder; effort in hours not VND),Stella,100%,480 hours / year,,
-,0,AUDIT & PLANNING,Audit/phân tích website,—,Stella,2%,~10h,Sau khi kế hoạch được approved,DONE — Sprint 3 (keyword research; competitor scan)
-,1,,Kế hoạch Content Branding,—,Stella,3%,~15h,—,DONE — MASTER_CONTENT_RESEARCH_2026_05.md
-,2,,Kế hoạch Offpage,—,Stella,2%,~10h,—,DONE — REDDIT_SEEDING_PLAYBOOK.md + affiliate scope
-,3,,Kế hoạch thực thi,—,Stella,1%,~5h,—,DONE — CONTENT_CALENDAR_2026_05.md
-,4,TỔ CHỨC; KIỂM TRA & ĐÁNH GIÁ (15%),Hoạch định công việc; tối ưu strategy,—,Stella,10%,~48h,Hàng tháng = 4h,Weekly GSC review + monthly strategy update
-,5,,Track + optimize (solo no team),—,Stella,3%,~14h,Hàng tuần = 0.25h,Skip 'quản lý nhân sự' — solo
-,6,,Báo cáo & insight extraction,—,Stella,2%,~10h,Monthly,Update sheet 7 KPI each month
-,7,THỰC THI (75%),Content writing + research,—,Stella,42%,~200h,Per post: 6-10h,~25 posts/year (avg 2/month after launch sprint)
-,8,,SEO optimization + technical,—,Stella,18%,~86h,Distributed,Schema; internal linking; image alt; meta optimization
-,9,,Promotion (Pinterest; Reddit; HARO),—,Stella,12%,~58h,Hàng tuần = 1.1h,Reddit comments + Pinterest pins
-,10,,Calculator + app maintenance,—,Stella,5%,~24h,—,Nếu app cần update
+,0,AUDIT & PLANNING,Audit/phân tích website,-,Stella,2%,~10h,Sau khi kế hoạch được approved,DONE - Sprint 3 (keyword research; competitor scan)
+,1,,Kế hoạch Content Branding,-,Stella,3%,~15h,-,DONE - MASTER_CONTENT_RESEARCH_2026_05.md
+,2,,Kế hoạch Offpage,-,Stella,2%,~10h,-,DONE - REDDIT_SEEDING_PLAYBOOK.md + affiliate scope
+,3,,Kế hoạch thực thi,-,Stella,1%,~5h,-,DONE - CONTENT_CALENDAR_2026_05.md
+,4,TỔ CHỨC; KIỂM TRA & ĐÁNH GIÁ (15%),Hoạch định công việc; tối ưu strategy,-,Stella,10%,~48h,Hàng tháng = 4h,Weekly GSC review + monthly strategy update
+,5,,Track + optimize (solo no team),-,Stella,3%,~14h,Hàng tuần = 0.25h,Skip 'quản lý nhân sự' - solo
+,6,,Báo cáo & insight extraction,-,Stella,2%,~10h,Monthly,Update sheet 7 KPI each month
+,7,THỰC THI (75%),Content writing + research,-,Stella,42%,~200h,Per post: 6-10h,~25 posts/year (avg 2/month after launch sprint)
+,8,,SEO optimization + technical,-,Stella,18%,~86h,Distributed,Schema; internal linking; image alt; meta optimization
+,9,,Promotion (Pinterest; Reddit; HARO),-,Stella,12%,~58h,Hàng tuần = 1.1h,Reddit comments + Pinterest pins
+,10,,Calculator + app maintenance,-,Stella,5%,~24h,-,Nếu app cần update
 ,,,,,,,,,,
 ,Cam kết khi kết thúc project,,,,,,,,,,
 Số tháng,,Cam kết,,Thực hiện,,,,,,,
 12,,Top 10 cho 33 keywords (target),50k pageviews/month,,Tracking GSC monthly,,,,,
 ,,Revenue: $2.1k/month bằng end of Year 1 (target),,,,,,,,
 ,,,,,,,,,,
-,M1 (May 2026),—,—,—,—,—,—,—,Test E gate measurement; ship #6-9,
-,M2 (Jun 2026),—,—,—,—,—,—,—,Ship #10-21 (12 posts); Pinterest setup,
-,M3 (Jul 2026),—,—,—,—,—,—,—,Ramp promotion; HARO start; glossary build,
-,M4 (Aug 2026),—,—,—,—,—,—,—,Optimize underperforming posts (position 11-30 push),
-,M5 (Sep 2026),—,—,—,—,—,—,—,Phase 1 exit check (10k pageviews?); AdSense apply,
-,M6 (Oct 2026),—,—,—,—,—,—,—,Phase 4 decision (diet/workout cluster?),
-,M7 (Nov 2026),—,—,—,—,—,—,—,Amazon deadline check 2026-11-03; affiliate audit,
-,M8 (Dec 2026),—,—,—,—,—,—,—,Year-end audit; Year 2 plan,
-,M9-M12,—,—,—,—,—,—,—,Scale based on Year 1 learnings,
+,M1 (May 2026),-,-,-,-,-,-,-,Test E gate measurement; ship #6-9,
+,M2 (Jun 2026),-,-,-,-,-,-,-,Ship #10-21 (12 posts); Pinterest setup,
+,M3 (Jul 2026),-,-,-,-,-,-,-,Ramp promotion; HARO start; glossary build,
+,M4 (Aug 2026),-,-,-,-,-,-,-,Optimize underperforming posts (position 11-30 push),
+,M5 (Sep 2026),-,-,-,-,-,-,-,Phase 1 exit check (10k pageviews?); AdSense apply,
+,M6 (Oct 2026),-,-,-,-,-,-,-,Phase 4 decision (diet/workout cluster?),
+,M7 (Nov 2026),-,-,-,-,-,-,-,Amazon deadline check 2026-11-03; affiliate audit,
+,M8 (Dec 2026),-,-,-,-,-,-,-,Year-end audit; Year 2 plan,
+,M9-M12,-,-,-,-,-,-,-,Scale based on Year 1 learnings,
 ,,,,,,,,,,
 Performance KPI by metric,,,,,Source,Frequency,Baseline (2026-05),Target M6 (Oct),Target M12 (Apr 2027),
-Indexed pages,—,—,—,—,GSC,Weekly,9,40,70,
-GSC impressions/month,—,—,—,—,GSC,Weekly,~500,300k,900k,
-GSC clicks/month,—,—,—,—,GSC,Weekly,~25,15k,45k,
-GSC CTR,—,—,—,—,GSC,Weekly,5%,5%,5%,
-Avg position,—,—,—,—,GSC,Weekly,80,11,7,
-Top 10 keywords,—,—,—,—,GSC,Weekly,0,20,33,
-Top 30 keywords,—,—,—,—,GSC,Weekly,0,40,60,
-Pageviews/month,—,—,—,—,GA4,Weekly,0,18k,70k,
-Sessions/month,—,—,—,—,GA4,Weekly,0,14k,55k,
-Calculator usage/month,—,—,—,—,GA4 event,Weekly,0,2.5k,10k,
-Email subscribers,—,—,—,—,Substack/CK,Weekly,0,280,3.8k,
-AdSense earnings,—,—,—,—,AdSense,Monthly,$0,$100,$600,
-Amazon affiliate revenue,—,—,—,—,Amazon,Monthly,$0,$80,$500,
-Flo affiliate revenue,—,—,—,—,Flo dashboard,Monthly,$0,$50,$500,
-Natural Cycles revenue,—,—,—,—,NC dashboard,Monthly,$0,$60,$500,
-Total monthly revenue,—,—,—,—,Aggregate,Monthly,$0,$290,$2.1k,
-Pinterest impressions,—,—,—,—,Pinterest analytics,Weekly,0,200k,500k,
-Reddit karma,—,—,—,—,Reddit profile,Weekly,~0,1.2k,4k,
-Referring domains,—,—,—,—,Ahrefs free,Monthly,5,50,220,
-LCP (Core Web Vitals),—,—,—,—,GSC CWV,Monthly,<2.5s,<2.0s,<2.0s,
-Lighthouse Performance,—,—,—,—,Lighthouse,Monthly,90+,95+,95+,
+Indexed pages,-,-,-,-,GSC,Weekly,9,40,70,
+GSC impressions/month,-,-,-,-,GSC,Weekly,~500,300k,900k,
+GSC clicks/month,-,-,-,-,GSC,Weekly,~25,15k,45k,
+GSC CTR,-,-,-,-,GSC,Weekly,5%,5%,5%,
+Avg position,-,-,-,-,GSC,Weekly,80,11,7,
+Top 10 keywords,-,-,-,-,GSC,Weekly,0,20,33,
+Top 30 keywords,-,-,-,-,GSC,Weekly,0,40,60,
+Pageviews/month,-,-,-,-,GA4,Weekly,0,18k,70k,
+Sessions/month,-,-,-,-,GA4,Weekly,0,14k,55k,
+Calculator usage/month,-,-,-,-,GA4 event,Weekly,0,2.5k,10k,
+Email subscribers,-,-,-,-,Substack/CK,Weekly,0,280,3.8k,
+AdSense earnings,-,-,-,-,AdSense,Monthly,$0,$100,$600,
+Amazon affiliate revenue,-,-,-,-,Amazon,Monthly,$0,$80,$500,
+Flo affiliate revenue,-,-,-,-,Flo dashboard,Monthly,$0,$50,$500,
+Natural Cycles revenue,-,-,-,-,NC dashboard,Monthly,$0,$60,$500,
+Total monthly revenue,-,-,-,-,Aggregate,Monthly,$0,$290,$2.1k,
+Pinterest impressions,-,-,-,-,Pinterest analytics,Weekly,0,200k,500k,
+Reddit karma,-,-,-,-,Reddit profile,Weekly,~0,1.2k,4k,
+Referring domains,-,-,-,-,Ahrefs free,Monthly,5,50,220,
+LCP (Core Web Vitals),-,-,-,-,GSC CWV,Monthly,<2.5s,<2.0s,<2.0s,
+Lighthouse Performance,-,-,-,-,Lighthouse,Monthly,90+,95+,95+,
