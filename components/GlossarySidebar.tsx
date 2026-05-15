@@ -11,22 +11,18 @@ type Props = {
 };
 
 function pickRelated(currentSlug: string, count = 8): ReadonlyArray<GlossaryTerm> {
+  // Only surface Published terms as related links; we cannot link to a 404.
+  const pool = GLOSSARY_TERMS.filter(
+    (t) => t.status === "Published" && t.slug !== currentSlug,
+  );
   const current = GLOSSARY_TERMS.find((t) => t.slug === currentSlug);
-  if (!current) return GLOSSARY_TERMS.slice(0, count);
-  const sameTopic = GLOSSARY_TERMS.filter(
-    (t) => t.slug !== currentSlug && t.topic === current.topic,
+  if (!current) return pool.slice(0, count);
+  const sameTopic = pool.filter((t) => t.topic === current.topic);
+  const sameFunnel = pool.filter(
+    (t) => t.topic !== current.topic && t.funnel === current.funnel,
   );
-  const sameFunnel = GLOSSARY_TERMS.filter(
-    (t) =>
-      t.slug !== currentSlug &&
-      t.topic !== current.topic &&
-      t.funnel === current.funnel,
-  );
-  const others = GLOSSARY_TERMS.filter(
-    (t) =>
-      t.slug !== currentSlug &&
-      t.topic !== current.topic &&
-      t.funnel !== current.funnel,
+  const others = pool.filter(
+    (t) => t.topic !== current.topic && t.funnel !== current.funnel,
   );
   return [...sameTopic, ...sameFunnel, ...others].slice(0, count);
 }
@@ -79,7 +75,7 @@ export function GlossarySidebar({ currentSlug, title, toc }: Props) {
           href="/glossary"
           className="mt-4 inline-block text-[12px] font-medium text-[color:var(--color-primary)] hover:opacity-70"
         >
-          See all 152 terms &rarr;
+          See all glossary entries &rarr;
         </Link>
       </section>
 

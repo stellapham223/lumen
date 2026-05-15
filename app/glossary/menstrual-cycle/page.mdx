@@ -1,0 +1,119 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Menstrual cycle: definition, length, and the four phases",
+  description:
+    "The menstrual cycle is the recurring hormonal cycle from day 1 of bleeding to the day before the next period. Normal range 21 to 35 days. Definition, length, and the four phases explained.",
+  alternates: { canonical: "/glossary/menstrual-cycle" },
+  openGraph: {
+    title: "Menstrual cycle | Lumen glossary",
+    description:
+      "Definition, normal length, the four phases, and what counts as a healthy cycle pattern.",
+    url: "/glossary/menstrual-cycle",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Menstrual cycle"
+  description="The recurring hormonal cycle from day 1 of menstruation to the day before the next period. Normal range 21 to 35 days. Divided into four phases: menstrual, follicular, ovulatory, luteal."
+  path="/glossary/menstrual-cycle"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Menstrual cycle", path: "/glossary/menstrual-cycle" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Menstrual cycle
+
+The **menstrual cycle** is the recurring hormonal cycle that runs from day 1 of menstrual bleeding to the day before the next period. It is the primary infradian rhythm in women of reproductive age, with a typical length of 21 to 35 days. The cycle is driven by feedback between the hypothalamus, pituitary, and ovaries (the HPO axis), and it produces the predictable hormonal shifts that cycle syncing tries to work with rather than against.
+
+## How long the menstrual cycle is
+
+The normal range, per the American College of Obstetricians and Gynecologists (ACOG), is 21 to 35 days. The often-cited "28-day cycle" is a population average, not a personal default. A 2019 study of over 600,000 cycles tracked through the Natural Cycles app (Bull et al., *Nature Digital Medicine*) found that only about 12% of women have cycles exactly 28 days long. Most fall in the 24 to 30 day range, with significant cycle-to-cycle variation.
+
+Cycle length is dominated by [follicular phase](/glossary/follicular-phase) variability. The [luteal phase](/glossary/luteal-phase) stays close to 14 days for most people; the follicular phase carries most of the swing when overall cycle length changes. A 24-day cycle has a roughly 10-day follicular phase; a 32-day cycle has a roughly 18-day follicular phase.
+
+## The four phases
+
+The menstrual cycle is divided into four phases, each with a distinct hormone profile.
+
+- **[Menstrual phase](/glossary/menstrual-phase)** (days 1 to 5). Bleeding occurs. All hormones at their lowest. Lower-stim work fits this window; many users find it useful for reflection and planning.
+- **[Follicular phase](/glossary/follicular-phase)** (roughly days 6 to 13). FSH stimulates follicle growth; estrogen rises sharply. Energy and cognition climb. Best window for new project work and harder training.
+- **[Ovulatory phase](/glossary/ovulatory-phase)** (roughly days 14 to 16). LH surges, ovulation occurs. Peak verbal fluency and social ease.
+- **[Luteal phase](/glossary/luteal-phase)** (roughly days 17 to 28). Progesterone dominates. Detail orientation peaks early luteal; symptoms accumulate late luteal.
+
+For a visual reference covering all four phases on a single page, see [the cycle syncing chart](/blog/cycle-syncing-chart).
+
+## What drives the cycle (the HPO axis in brief)
+
+The cycle is controlled by a feedback loop:
+
+1. The **hypothalamus** releases gonadotropin-releasing hormone (GnRH) in pulses.
+2. The **pituitary** responds by releasing follicle-stimulating hormone ([FSH](/glossary/fsh)) and luteinizing hormone ([LH](/glossary/lh)).
+3. The **ovaries** respond by growing follicles and producing [estrogen](/glossary/estrogen). One follicle becomes dominant.
+4. Estrogen peaks late follicular, which triggers an [LH surge](/glossary/lh-surge).
+5. The LH surge triggers [ovulation](/glossary/ovulation), and the ruptured follicle becomes the [corpus luteum](/glossary/corpus-luteum), producing [progesterone](/glossary/progesterone).
+6. If no pregnancy occurs, the corpus luteum dies, progesterone drops, and the uterine lining sheds: a new menstrual cycle begins.
+
+## What counts as a healthy cycle pattern
+
+Per ACOG, a healthy cycle pattern has these properties:
+
+- Length 21 to 35 days, with month-to-month variation under 7 days
+- Bleeding lasts 3 to 7 days
+- Bleeding is not consistently heavy enough to soak through a pad or tampon every 1 to 2 hours
+- Cycles regular enough that you can predict the next period within a week
+
+Variation outside these bounds is not always cause for alarm but warrants attention:
+
+- Consistently shorter than 21 days, or longer than 35 days
+- Heavy bleeding ([menorrhagia](/glossary/menorrhagia))
+- Sudden change in cycle length without obvious cause (stress, travel, illness, contraceptive change)
+- Three or more missed periods without pregnancy
+
+## When the menstrual cycle is absent
+
+Cycle absence (amenorrhea) is a clinical category, not a phase variant. Common causes:
+
+- **Pregnancy.** The most common cause; rule out first.
+- **Hormonal birth control.** Most hormonal methods suppress the natural cycle; what looks like a period is usually [withdrawal bleeding](/glossary/withdrawal-bleeding).
+- **[Lactational amenorrhea](/glossary/lactational-amenorrhea).** Suppression during exclusive breastfeeding.
+- **[Hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea).** Reversible cycle loss from under-fueling, over-training, or chronic stress.
+- **[PCOS](/glossary/pcos).** Often presents with infrequent or absent ovulation.
+- **[Perimenopause](/glossary/perimenopause).** Cycles become irregular before stopping permanently.
+- **[Premature ovarian insufficiency](/glossary/poi).** Loss of ovarian function before age 40.
+
+## The menstrual cycle and cycle syncing
+
+[Cycle syncing](/glossary/cycle-syncing) is the practice of aligning lifestyle with the four phases. The practice presupposes a cycle with natural ovulation; methods that suppress ovulation (most hormonal birth control) remove the underlying biology that cycle syncing maps to. The [method-by-method guide](/blog/cycle-syncing-on-birth-control) covers what still applies on each contraceptive.
+
+For users with a regular cycle, [the phase calculator](/plan) translates cycle data into the four phase ranges for planning.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="menstrual-cycle"
+  title="Menstrual cycle"
+  toc={[
+    { id: "how-long-the-menstrual-cycle-is", label: "How long the cycle is" },
+    { id: "the-four-phases", label: "The four phases" },
+    { id: "what-drives-the-cycle-the-hpo-axis-in-brief", label: "What drives the cycle (HPO axis)" },
+    { id: "what-counts-as-a-healthy-cycle-pattern", label: "Healthy cycle pattern" },
+    { id: "when-the-menstrual-cycle-is-absent", label: "When the cycle is absent" },
+    { id: "the-menstrual-cycle-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

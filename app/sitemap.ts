@@ -1,14 +1,6 @@
 import type { MetadataRoute } from "next";
 import { BASE_URL, BLOG_POSTS, GLOSSARY_TERMS } from "@/lib/site";
 
-// Only emit sitemap entries for glossary terms that have a Published MDX file.
-// Manifest holds all 152 planned terms; sitemap should not list 404s.
-const PUBLISHED_GLOSSARY_SLUGS = new Set<string>([
-  "cycle-syncing",
-  "follicular-phase",
-  "pms",
-]);
-
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   return [
@@ -42,14 +34,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
-    ...GLOSSARY_TERMS.filter((t) => PUBLISHED_GLOSSARY_SLUGS.has(t.slug)).map(
-      (t) => ({
-        url: `${BASE_URL}/glossary/${t.slug}`,
-        lastModified: now,
-        changeFrequency: "monthly" as const,
-        priority: 0.6,
-      }),
-    ),
+    ...GLOSSARY_TERMS.filter((t) => t.status === "Published").map((t) => ({
+      url: `${BASE_URL}/glossary/${t.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
     {
       url: `${BASE_URL}/privacy`,
       lastModified: now,

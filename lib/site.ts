@@ -179,7 +179,7 @@ export type GlossaryTerm = {
 
 export const GLOSSARY_TERMS: ReadonlyArray<GlossaryTerm> = [
   // A. Symptoms (Unaware)
-  { slug: "pms", term: "PMS (Premenstrual Syndrome)", funnel: "Unaware", topic: "Symptoms", shortDef: "Cluster of physical and mood symptoms in the 7 to 10 days before period. Affects roughly 75% of menstruating women to some degree.", status: "Planned" },
+  { slug: "pms", term: "PMS (Premenstrual Syndrome)", funnel: "Unaware", topic: "Symptoms", shortDef: "Cluster of physical and mood symptoms in the 7 to 10 days before period. Affects roughly 75% of menstruating women to some degree.", status: "Published" },
   { slug: "pmdd", term: "PMDD (Premenstrual Dysphoric Disorder)", funnel: "Unaware", topic: "Symptoms", shortDef: "Severe form of PMS affecting 3 to 8% of women. Clinical diagnosis; mood disturbance significant enough to impair daily life.", status: "Planned" },
   { slug: "period-brain", term: "Period brain (cycle brain fog)", funnel: "Unaware", topic: "Symptoms", shortDef: "Subjective cognitive cloudiness during late luteal and early menstrual phases. Modest measurable effects on working memory.", status: "Planned" },
   { slug: "energy-crash", term: "Energy crash (cycle-related fatigue)", funnel: "Unaware", topic: "Symptoms", shortDef: "Predictable drop in energy correlated with phase transitions. Most pronounced in late luteal and early menstrual.", status: "Planned" },
@@ -203,10 +203,10 @@ export const GLOSSARY_TERMS: ReadonlyArray<GlossaryTerm> = [
   { slug: "catamenial-epilepsy", term: "Catamenial epilepsy", funnel: "Unaware", topic: "Symptoms", shortDef: "Seizure pattern correlated with cycle phases. Affects roughly 40% of women with epilepsy.", status: "Planned" },
 
   // B. Cycle Physiology (Problem aware)
-  { slug: "menstrual-cycle", term: "Menstrual cycle", funnel: "Problem aware", topic: "Physiology", shortDef: "Recurring hormonal cycle from day 1 of menstruation to the day before the next period. Normal range 21 to 35 days.", status: "Planned" },
+  { slug: "menstrual-cycle", term: "Menstrual cycle", funnel: "Problem aware", topic: "Physiology", shortDef: "Recurring hormonal cycle from day 1 of menstruation to the day before the next period. Normal range 21 to 35 days.", status: "Published" },
   { slug: "cycle-length", term: "Cycle length", funnel: "Problem aware", topic: "Physiology", shortDef: "Days from one period start to the next. Only about 12% of women have exactly 28-day cycles.", status: "Planned" },
   { slug: "cycle-phase", term: "Cycle phase", funnel: "Problem aware", topic: "Physiology", shortDef: "One of four segments of the menstrual cycle: menstrual, follicular, ovulatory, luteal. Each has a distinct hormone profile.", status: "Planned" },
-  { slug: "ovulation", term: "Ovulation", funnel: "Problem aware", topic: "Physiology", shortDef: "Release of a mature egg from the ovary, triggered by the LH surge roughly 24 to 36 hours prior.", status: "Planned" },
+  { slug: "ovulation", term: "Ovulation", funnel: "Problem aware", topic: "Physiology", shortDef: "Release of a mature egg from the ovary, triggered by the LH surge roughly 24 to 36 hours prior.", status: "Published" },
   { slug: "menstruation", term: "Menstruation", funnel: "Problem aware", topic: "Physiology", shortDef: "Shedding of the uterine lining when implantation does not occur. Lasts 3 to 7 days; marks day 1 of a new cycle.", status: "Planned" },
   { slug: "anovulatory-cycle", term: "Anovulatory cycle", funnel: "Problem aware", topic: "Physiology", shortDef: "Cycle without ovulation. Common in adolescence, perimenopause, PCOS, high stress, and on hormonal birth control.", status: "Planned" },
   { slug: "endometrium", term: "Endometrium", funnel: "Problem aware", topic: "Physiology", shortDef: "Uterine lining that thickens through the cycle in response to estrogen and progesterone. Sheds during menstruation.", status: "Planned" },
@@ -223,8 +223,8 @@ export const GLOSSARY_TERMS: ReadonlyArray<GlossaryTerm> = [
   { slug: "post-ovulatory-phase", term: "Post-ovulatory phase", funnel: "Problem aware", topic: "Physiology", shortDef: "Synonym for luteal phase. Period from ovulation to the next menstruation.", status: "Planned" },
 
   // C. Hormones (Solution aware)
-  { slug: "estrogen", term: "Estrogen (estradiol)", funnel: "Solution aware", topic: "Hormones", shortDef: "Primary female sex hormone (form: estradiol). Peaks in late follicular and ovulatory phases. Supports BDNF, dopamine, and serotonin.", status: "Planned" },
-  { slug: "progesterone", term: "Progesterone", funnel: "Solution aware", topic: "Hormones", shortDef: "Dominant hormone of the luteal phase. Calming, sleep-promoting; raises body temperature roughly 0.5°F after ovulation.", status: "Planned" },
+  { slug: "estrogen", term: "Estrogen (estradiol)", funnel: "Solution aware", topic: "Hormones", shortDef: "Primary female sex hormone (form: estradiol). Peaks in late follicular and ovulatory phases. Supports BDNF, dopamine, and serotonin.", status: "Published" },
+  { slug: "progesterone", term: "Progesterone", funnel: "Solution aware", topic: "Hormones", shortDef: "Dominant hormone of the luteal phase. Calming, sleep-promoting; raises body temperature roughly 0.5°F after ovulation.", status: "Published" },
   { slug: "testosterone-in-women", term: "Testosterone (in women)", funnel: "Solution aware", topic: "Hormones", shortDef: "Present in women at roughly 10% of male levels. Peaks in the ovulatory phase. Affects libido, assertiveness, and muscle synthesis.", status: "Planned" },
   { slug: "fsh", term: "FSH (Follicle Stimulating Hormone)", funnel: "Solution aware", topic: "Hormones", shortDef: "Stimulates follicle growth in the early follicular phase. Released by the pituitary gland.", status: "Planned" },
   { slug: "lh", term: "LH (Luteinizing Hormone)", funnel: "Solution aware", topic: "Hormones", shortDef: "Triggers ovulation when surging mid-cycle. Released by the pituitary gland.", status: "Planned" },
@@ -259,19 +259,19 @@ export const GLOSSARY_TERMS: ReadonlyArray<GlossaryTerm> = [
   { slug: "insulin-sensitivity-cycle", term: "Insulin sensitivity (cycle)", funnel: "Solution aware", topic: "Mechanism", shortDef: "Insulin sensitivity highest in follicular phase; drops in luteal. Affects energy, cravings, and training response.", status: "Planned" },
 
   // E. The 4 Phases (Solution aware)
-  { slug: "follicular-phase", term: "Follicular phase", funnel: "Solution aware", topic: "Phases", shortDef: "Day 1 to ovulation (10 to 16 days). FSH and rising estrogen dominate. Energy and creativity rise in late follicular days.", status: "Planned" },
+  { slug: "follicular-phase", term: "Follicular phase", funnel: "Solution aware", topic: "Phases", shortDef: "Day 1 to ovulation (10 to 16 days). FSH and rising estrogen dominate. Energy and creativity rise in late follicular days.", status: "Published" },
   { slug: "late-follicular-phase", term: "Late follicular phase", funnel: "Solution aware", topic: "Phases", shortDef: "Days 6 to 13 (post-period). Peak estrogen window. Best for learning and strength training.", status: "Planned" },
-  { slug: "ovulatory-phase", term: "Ovulatory phase", funnel: "Solution aware", topic: "Phases", shortDef: "Days 14 to 16. Peak estrogen plus LH surge. Verbal fluency and social ease peak here.", status: "Planned" },
+  { slug: "ovulatory-phase", term: "Ovulatory phase", funnel: "Solution aware", topic: "Phases", shortDef: "Days 14 to 16. Peak estrogen plus LH surge. Verbal fluency and social ease peak here.", status: "Published" },
   { slug: "fertile-window", term: "Fertile window", funnel: "Solution aware", topic: "Phases", shortDef: "Five days before plus the day of ovulation. Sperm survive roughly 5 days in fertile cervical mucus.", status: "Planned" },
-  { slug: "luteal-phase", term: "Luteal phase", funnel: "Solution aware", topic: "Phases", shortDef: "Ovulation to next period (roughly 14 days). Progesterone dominant. Detail orientation and completion focus.", status: "Planned" },
+  { slug: "luteal-phase", term: "Luteal phase", funnel: "Solution aware", topic: "Phases", shortDef: "Ovulation to next period (roughly 14 days). Progesterone dominant. Detail orientation and completion focus.", status: "Published" },
   { slug: "early-luteal-phase", term: "Early luteal phase", funnel: "Solution aware", topic: "Phases", shortDef: "Days 17 to 22. Peak detail-orientation window. Best for editing, QA, and closing tasks.", status: "Planned" },
   { slug: "late-luteal-phase", term: "Late luteal phase (PMS week)", funnel: "Solution aware", topic: "Phases", shortDef: "Days 23 to 28. Serotonin and allopregnanolone drop. PMS symptoms peak. Reduce demands.", status: "Planned" },
-  { slug: "menstrual-phase", term: "Menstrual phase", funnel: "Solution aware", topic: "Phases", shortDef: "Days 1 to 5 (bleeding). All hormones low. Reflection and planning phase.", status: "Planned" },
+  { slug: "menstrual-phase", term: "Menstrual phase", funnel: "Solution aware", topic: "Phases", shortDef: "Days 1 to 5 (bleeding). All hormones low. Reflection and planning phase.", status: "Published" },
   { slug: "phase-transition", term: "Phase transition", funnel: "Solution aware", topic: "Phases", shortDef: "The 1 to 2 day window between phases. Symptoms often most noticeable here.", status: "Planned" },
   { slug: "cycle-map", term: "Cycle map", funnel: "Solution aware", topic: "Phases", shortDef: "Visual representation of the four phases on a calendar with hormone overlay. Lumen's visual primitive.", status: "Planned" },
 
   // F. Practice (Solution aware)
-  { slug: "cycle-syncing", term: "Cycle syncing", funnel: "Solution aware", topic: "Practice", shortDef: "Practice of aligning lifestyle (work, exercise, diet) with the four hormonal phases. Coined by Alisa Vitti (FloLiving).", status: "Planned" },
+  { slug: "cycle-syncing", term: "Cycle syncing", funnel: "Solution aware", topic: "Practice", shortDef: "Practice of aligning lifestyle (work, exercise, diet) with the four hormonal phases. Coined by Alisa Vitti (FloLiving).", status: "Published" },
   { slug: "phase-based-scheduling", term: "Phase-based scheduling", funnel: "Solution aware", topic: "Practice", shortDef: "Scheduling tasks based on predicted cycle phase rather than calendar week. Core Lumen positioning.", status: "Planned" },
   { slug: "cycle-aware-productivity", term: "Cycle-aware productivity", funnel: "Solution aware", topic: "Practice", shortDef: "Productivity framework using cycle phase as input for work mode planning. Distinct from period tracking.", status: "Planned" },
   { slug: "work-mode-rotation", term: "Phase rotation (work modes)", funnel: "Solution aware", topic: "Practice", shortDef: "Mapping four work modes (Reflect, Build, Connect, Finish) onto the four cycle phases.", status: "Planned" },
@@ -305,7 +305,7 @@ export const GLOSSARY_TERMS: ReadonlyArray<GlossaryTerm> = [
   { slug: "privacy-first-tracking", term: "Privacy-first cycle tracking", funnel: "Product aware", topic: "Tools", shortDef: "Tracking with local-only data, no account, and no third-party sharing. Increasingly important post-Roe.", status: "Planned" },
 
   // H. Conditions (Converting)
-  { slug: "pcos", term: "PCOS (Polycystic Ovary Syndrome)", funnel: "Converting", topic: "Conditions", shortDef: "Endocrine disorder affecting 8 to 13% of women. Irregular ovulation plus androgen excess. Disrupts cycle syncing.", status: "Planned" },
+  { slug: "pcos", term: "PCOS (Polycystic Ovary Syndrome)", funnel: "Converting", topic: "Conditions", shortDef: "Endocrine disorder affecting 8 to 13% of women. Irregular ovulation plus androgen excess. Disrupts cycle syncing.", status: "Published" },
   { slug: "endometriosis", term: "Endometriosis", funnel: "Converting", topic: "Conditions", shortDef: "Endometrial-like tissue grows outside the uterus. Causes severe period pain and can affect cycle regularity.", status: "Planned" },
   { slug: "adenomyosis", term: "Adenomyosis", funnel: "Converting", topic: "Conditions", shortDef: "Endometrial tissue grows into the uterine muscle wall. Causes heavy painful periods.", status: "Planned" },
   { slug: "uterine-fibroids", term: "Uterine fibroids", funnel: "Converting", topic: "Conditions", shortDef: "Non-cancerous growths in the uterine wall. Common in 30s and 40s. Can cause heavy bleeding.", status: "Planned" },

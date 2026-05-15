@@ -1,0 +1,145 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "PCOS (Polycystic Ovary Syndrome): symptoms, diagnosis, and cycle syncing impact",
+  description:
+    "PCOS affects 8 to 13% of women and disrupts ovulation, which means the predictable four-phase cycle does not apply. Symptoms, Rotterdam diagnostic criteria, and how to adapt cycle syncing for PCOS.",
+  alternates: { canonical: "/glossary/pcos" },
+  openGraph: {
+    title: "PCOS | Lumen glossary",
+    description:
+      "Symptoms, diagnosis, and the practical implications for cycle tracking and cycle syncing.",
+    url: "/glossary/pcos",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="PCOS (Polycystic Ovary Syndrome)"
+  description="Endocrine disorder affecting 8 to 13% of women of reproductive age. Characterized by irregular or absent ovulation, androgen excess, and polycystic ovarian morphology. Disrupts the predictable four-phase cycle that cycle syncing assumes."
+  path="/glossary/pcos"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "PCOS", path: "/glossary/pcos" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# PCOS (Polycystic Ovary Syndrome)
+
+**PCOS** is the most common endocrine disorder affecting women of reproductive age, with prevalence estimates ranging from 8 to 13% globally. It is characterized by some combination of irregular or absent [ovulation](/glossary/ovulation), elevated [androgens](/glossary/androgens-women) (testosterone and related hormones), and polycystic ovarian morphology on ultrasound. PCOS is a clinical pattern, not a single disease; presentations vary widely between people.
+
+For [cycle syncing](/glossary/cycle-syncing), PCOS is the single most important edge case to address, because the practice assumes a regular ovulatory cycle that many PCOS users do not have.
+
+*This is informational, not medical advice. PCOS diagnosis and treatment require evaluation by a qualified provider.*
+
+## How PCOS is diagnosed
+
+The most widely used framework is the **Rotterdam criteria** (2003): diagnosis requires at least 2 of 3 features.
+
+1. **Oligo-ovulation or anovulation.** Cycles longer than 35 days, fewer than 8 cycles per year, or completely absent periods.
+2. **Clinical or biochemical hyperandrogenism.** Either visible signs (acne, hirsutism, male-pattern hair loss) or elevated androgen levels on blood test.
+3. **Polycystic ovarian morphology on ultrasound.** Typically 12 or more follicles per ovary (2 to 9mm in size), or increased ovarian volume.
+
+The "cysts" in PCOS are misleadingly named. They are not true cysts but immature follicles that did not develop fully. Each ovary may have many of them.
+
+Other conditions can mimic PCOS (thyroid disorders, hyperprolactinemia, late-onset congenital adrenal hyperplasia, Cushing's syndrome). A thorough workup rules these out before confirming PCOS.
+
+## Common symptoms
+
+- **Irregular or absent periods.** Often 35 to 90+ days apart, sometimes with no periods for months.
+- **Difficulty getting pregnant.** Due to irregular ovulation.
+- **Acne.** Particularly along the jawline and chin; often persists past adolescence.
+- **Hirsutism.** Excess hair growth in male-pattern areas (face, chest, back, abdomen).
+- **Male-pattern hair loss.** Thinning at the crown.
+- **Weight gain, particularly central.** Increased visceral fat.
+- **Insulin resistance.** Present in roughly 70% of PCOS cases. Often the upstream driver of androgen excess.
+- **Skin tags and dark patches** (acanthosis nigricans), often in the neck, armpits, or groin.
+
+Not every person with PCOS has every symptom. Lean PCOS exists; severe acne PCOS exists; predominantly metabolic PCOS exists. The label covers a wide phenotypic range.
+
+## The underlying biology
+
+The dominant model centers on a feedback loop between [insulin resistance](/glossary/insulin-cycle), androgens, and ovulation:
+
+1. Insulin resistance raises blood insulin levels.
+2. High insulin stimulates ovarian androgen production.
+3. Elevated androgens disrupt normal follicle maturation.
+4. Follicles stall in early development and accumulate (the "polycystic" appearance on ultrasound).
+5. Without a dominant mature follicle, the [LH surge](/glossary/lh-surge) does not occur normally, and ovulation is delayed or absent.
+6. Without ovulation, the [corpus luteum](/glossary/corpus-luteum) does not form, and [progesterone](/glossary/progesterone) production is absent or low.
+7. Unopposed estrogen exposure thickens the endometrium without the protective effect of cyclic progesterone, contributing to heavy bleeding when periods do occur and to longer-term endometrial cancer risk.
+
+Other phenotypes exist (adrenal PCOS, lean PCOS, post-pill PCOS), but the insulin-androgen loop is the most common pattern.
+
+## Cycle syncing with PCOS
+
+The standard four-phase model assumes predictable ovulation. In PCOS, the [follicular phase](/glossary/follicular-phase) can stretch indefinitely without an LH surge, which means there is no reliable luteal phase, no PMS week, and no calendar-based phase prediction.
+
+Two adaptations work:
+
+**1. Track ovulation directly, not by calendar.**
+
+Use [ovulation predictor kits](/glossary/opk) or [basal body temperature](/glossary/basal-body-temperature) to detect ovulation when it happens. When you confirm ovulation, start counting the [luteal phase](/glossary/luteal-phase) from that day. Some PCOS users ovulate but unpredictably (day 20, day 40, day 60); direct tracking catches it whenever it occurs.
+
+**2. Use the four work modes without strict calendar mapping.**
+
+If ovulation tracking is too high-effort or you do not ovulate consistently, the [phase rotation](/glossary/work-mode-rotation) of work modes (Reflect, Build, Connect, Finish) can still work as a 28-day structural rotation regardless of hormonal events. The biological rationale is weaker, but many users report the structure alone helps.
+
+## Treatment angles
+
+PCOS management depends on goals (regular cycles, fertility, acne, metabolic health). Common interventions:
+
+- **Lifestyle.** Resistance training, walking, sleep, and a diet that supports insulin sensitivity. The evidence here is strongest for managing the metabolic side.
+- **[Inositol supplementation](/glossary/inositol-pcos).** Myo and D-chiro inositol show good evidence for improving ovulation rates and insulin sensitivity. Often the first-line supplement.
+- **Metformin.** Improves insulin sensitivity. Used both for metabolic management and to support ovulation.
+- **Combined hormonal contraceptives.** Suppress androgens by inducing predictable withdrawal bleeding and lowering free testosterone. Useful for acne and cycle regulation; does not address underlying insulin resistance.
+- **Spironolactone.** Anti-androgen used for acne and hirsutism.
+- **Ovulation induction (letrozole, clomiphene).** For users trying to conceive.
+- **[Spearmint tea](/glossary/spearmint-tea).** Small evidence for mild anti-androgenic effect; complementary, not primary.
+
+All of these should be coordinated with a provider.
+
+## PCOS and the menstrual cycle
+
+A few practical implications:
+
+- Periods may be infrequent, but when they occur they can be heavy due to longer estrogen exposure.
+- Anovulatory bleeding is common: bleeding without a true preceding ovulation.
+- Endometrial protection matters; persistent absence of cyclic progesterone is a long-term risk.
+- PMS does not happen in the standard sense (no progesterone withdrawal), but symptoms can occur from hormonal swings.
+
+## Related reading
+
+- [Anovulatory cycle](/glossary/anovulatory-cycle): the cycle pattern PCOS often produces
+- [Androgens](/glossary/androgens-women): elevated in PCOS
+- [Insulin (cycle interaction)](/glossary/insulin-cycle): the metabolic driver
+- [Follicular phase complete guide](/blog/follicular-phase-complete-guide): includes a PCOS section
+- [How does cycle syncing work](/blog/how-does-cycle-syncing-work): the mechanism PCOS disrupts
+
+</article>
+
+<GlossarySidebar
+  currentSlug="pcos"
+  title="PCOS (Polycystic Ovary Syndrome)"
+  toc={[
+    { id: "how-pcos-is-diagnosed", label: "How it's diagnosed" },
+    { id: "common-symptoms", label: "Common symptoms" },
+    { id: "the-underlying-biology", label: "The biology" },
+    { id: "cycle-syncing-with-pcos", label: "Cycle syncing with PCOS" },
+    { id: "treatment-angles", label: "Treatment angles" },
+    { id: "pcos-and-the-menstrual-cycle", label: "Cycle implications" },
+  ]}
+/>
+
+</div>

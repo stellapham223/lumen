@@ -1,0 +1,135 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Progesterone: the luteal phase hormone, sleep, and PMS",
+  description:
+    "Progesterone is the dominant hormone of the luteal phase. Raises body temperature 0.5°F after ovulation, supports sleep, and its late-luteal drop drives PMS. Mechanism and clinical context.",
+  alternates: { canonical: "/glossary/progesterone" },
+  openGraph: {
+    title: "Progesterone | Lumen glossary",
+    description:
+      "Mechanism, role in the luteal phase, sleep architecture, and why the late-luteal drop drives PMS.",
+    url: "/glossary/progesterone",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Progesterone"
+  description="Dominant hormone of the luteal phase. Produced by the corpus luteum after ovulation. Raises basal body temperature roughly 0.5°F. Calming, sleep-promoting; its withdrawal in late luteal contributes to PMS."
+  path="/glossary/progesterone"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Progesterone", path: "/glossary/progesterone" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Progesterone
+
+**Progesterone** is the dominant hormone of the [luteal phase](/glossary/luteal-phase). It is produced by the [corpus luteum](/glossary/corpus-luteum), the structure that forms from the ruptured follicle after [ovulation](/glossary/ovulation). Progesterone has a distinctive set of effects: it raises [basal body temperature](/glossary/basal-body-temperature), supports endometrial preparation for implantation, promotes sleep onset, and via its metabolite [allopregnanolone](/glossary/allopregnanolone), modulates GABA in the brain.
+
+The cyclic rise and fall of progesterone, combined with [estrogen](/glossary/estrogen), explains most of the experiential difference between cycle phases for users who notice phase patterns.
+
+## How progesterone cycles
+
+Unlike estrogen, progesterone is essentially flat through the [follicular phase](/glossary/follicular-phase). The corpus luteum does not exist yet, so there is no significant production. The pattern:
+
+- **Days 1 to 13 (menstrual + follicular):** very low.
+- **Days 14 to 16 (ovulatory):** starts rising as corpus luteum forms.
+- **Days 17 to 22 (early luteal):** peak production. Levels are 10 to 20x higher than follicular baseline.
+- **Days 23 to 28 (late luteal):** sharp drop as corpus luteum dies (unless pregnancy occurs). This drop is the trigger for menstruation.
+
+The drop is what matters for [PMS](/glossary/pms): the brain has spent two weeks adapting to high progesterone, and the sudden withdrawal in late luteal disrupts the systems it was modulating.
+
+## What progesterone does
+
+**Raises body temperature.** Progesterone has a direct thermogenic effect via hypothalamic temperature regulation. Basal body temperature rises by roughly 0.5°F (0.3°C) within 24 to 48 hours of ovulation and stays elevated until menstruation. This shift is the retrospective marker of ovulation used by [fertility awareness methods](/glossary/fam).
+
+**Supports endometrial preparation.** Progesterone transforms the estrogen-primed endometrium into a secretory state that can support implantation if pregnancy occurs.
+
+**Promotes sleep onset.** Progesterone has GABAergic effects (via allopregnanolone) that make it sleep-promoting. Many users sleep more deeply in early luteal phase.
+
+**Disrupts late-luteal sleep.** The high progesterone of mid-luteal is sleep-promoting; the sharp drop in late luteal disrupts sleep architecture. Both ends of the luteal phase have sleep effects, in opposite directions.
+
+**Modulates mood via GABA.** Allopregnanolone (a progesterone metabolite) binds to GABA receptors, the inhibitory neurotransmitter system that regulates anxiety. High progesterone tends to feel calming; the withdrawal in late luteal drives premenstrual anxiety, irritability, and emotional reactivity.
+
+**Suppresses prolactin and milk production.** Progesterone is one reason breast tissue feels denser and more tender in luteal phase.
+
+## Why the late-luteal drop matters
+
+The single most important fact about progesterone in cycle syncing is the late-luteal withdrawal effect. The pattern:
+
+1. Two weeks of high progesterone in early-to-mid luteal phase. GABA tone is up. Sleep is solid. Anxiety baseline is lower.
+2. Corpus luteum starts dying around days 23 to 25.
+3. Progesterone drops sharply. Allopregnanolone drops with it. GABA tone drops.
+4. The brain that adapted to high inhibitory tone now experiences a relative excitatory state. Anxiety, irritability, sleep disruption, mood lability.
+5. Menstruation begins. The cycle restarts.
+
+This is the dominant model for PMS and [PMDD](/glossary/pmdd). It is also why "treating PMS" by supplementing progesterone often does not work: the issue is the rate of change, not the absolute level.
+
+## Progesterone and pregnancy
+
+If pregnancy occurs, the corpus luteum continues producing progesterone for the first 8 to 10 weeks of pregnancy, before the placenta takes over. Adequate progesterone is essential for maintaining early pregnancy; low progesterone is associated with miscarriage risk in the first trimester.
+
+This is the reason post-ovulation pregnancy tests measure hCG, not progesterone directly: hCG signals that the corpus luteum should keep producing progesterone instead of dying.
+
+## Conditions involving progesterone
+
+- **[Luteal phase defect](/glossary/luteal-phase-defect).** Inadequate progesterone production in the luteal phase. Associated with short luteal phase (under 10 days) and early miscarriage. Diagnosis is contested.
+- **PMS and [PMDD](/glossary/pmdd).** Both attributed to abnormal sensitivity to the late-luteal progesterone withdrawal, not to absolute progesterone levels.
+- **[Perimenopause](/glossary/perimenopause).** Progesterone tends to decline before estrogen, leading to relative estrogen dominance and the symptoms that pattern produces.
+- **Anovulatory cycles.** No ovulation means no corpus luteum, which means no progesterone production. The cycle still has follicular hormonal events but no luteal phase in the hormonal sense.
+
+## Synthetic progestins
+
+"Progestin" refers to synthetic compounds that mimic progesterone. They are not chemically identical to natural progesterone, and their effects diverge in important ways:
+
+- **Combined hormonal contraceptives** ([pill](/glossary/combined-hormonal-contraceptive), patch, ring) contain progestin alongside synthetic estrogen.
+- **[Progestin-only pill](/glossary/mini-pill)** (mini-pill) contains progestin alone.
+- **[Hormonal IUD](/glossary/hormonal-iud)** releases levonorgestrel locally in the uterus.
+- **[Contraceptive implant](/glossary/contraceptive-implant)** releases etonogestrel systemically.
+- **[Depo-Provera injection](/glossary/depo-provera)** is medroxyprogesterone, a synthetic progestin.
+
+Synthetic progestins do not produce the same GABAergic, mood, or sleep effects as natural progesterone. Some users feel notably different on progestin-based methods because of this, including mood-related side effects. [The method-by-method guide](/blog/cycle-syncing-on-birth-control) covers each method's cycle implications.
+
+## Progesterone testing
+
+A **mid-luteal progesterone test** (roughly day 21 of a 28-day cycle, or 7 days after suspected ovulation) is the clinical standard for confirming ovulation occurred. A level above 3 ng/mL confirms ovulation; levels above 10 ng/mL indicate adequate corpus luteum function.
+
+For irregular cycles, test 7 days before the next expected period rather than fixed day 21.
+
+## Related reading
+
+- [Estrogen](/glossary/estrogen): the follicular-phase counterpart
+- [Allopregnanolone](/glossary/allopregnanolone): the metabolite that does the GABA work
+- [Luteal phase](/glossary/luteal-phase): where progesterone dominates
+- [Late luteal phase](/glossary/late-luteal-phase): where the drop drives PMS
+
+</article>
+
+<GlossarySidebar
+  currentSlug="progesterone"
+  title="Progesterone"
+  toc={[
+    { id: "how-progesterone-cycles", label: "How it cycles" },
+    { id: "what-progesterone-does", label: "What it does" },
+    { id: "why-the-late-luteal-drop-matters", label: "The late-luteal drop" },
+    { id: "progesterone-and-pregnancy", label: "Pregnancy" },
+    { id: "conditions-involving-progesterone", label: "Conditions" },
+    { id: "synthetic-progestins", label: "Synthetic progestins" },
+    { id: "progesterone-testing", label: "Testing" },
+  ]}
+/>
+
+</div>

@@ -33,6 +33,8 @@ const TOPIC_ORDER: ReadonlyArray<{ topic: GlossaryTopic; description: string }> 
 ];
 
 export default function GlossaryIndex() {
+  const published = GLOSSARY_TERMS.filter((t) => t.status === "Published");
+
   return (
     <>
       <BreadcrumbJsonLd
@@ -45,7 +47,7 @@ export default function GlossaryIndex() {
         name="Lumen cycle syncing glossary"
         description="A complete glossary of cycle syncing, hormonal, and women's health terms."
         path="/glossary"
-        terms={GLOSSARY_TERMS.map((t) => ({ term: t.term, slug: t.slug }))}
+        terms={published.map((t) => ({ term: t.term, slug: t.slug }))}
       />
 
       <header className="mb-10 sm:mb-14">
@@ -56,7 +58,10 @@ export default function GlossaryIndex() {
           Cycle syncing, defined.
         </h1>
         <p className="mt-4 max-w-[680px] font-display text-[16px] leading-[1.45] text-[color:var(--color-on-surface-variant)] sm:mt-6 sm:text-[20px] sm:leading-[1.4]">
-          One hundred and fifty-two terms across hormones, phases, mechanisms, tracking methods, conditions, and practice. Hedged where the evidence is thin. Grouped by topic so you can scan by interest.
+          Hormones, phases, mechanisms, tracking methods, conditions, and practice. Hedged where the evidence is thin. Grouped by topic so you can scan by interest.
+        </p>
+        <p className="mt-3 text-[13px] text-[color:var(--color-on-surface-variant)]">
+          {published.length} entries published. More on the way.
         </p>
       </header>
 
@@ -64,7 +69,7 @@ export default function GlossaryIndex() {
 
       <div className="space-y-12 sm:space-y-16">
         {TOPIC_ORDER.map(({ topic, description }) => {
-          const termsInTopic = GLOSSARY_TERMS.filter((t) => t.topic === topic);
+          const termsInTopic = published.filter((t) => t.topic === topic);
           if (termsInTopic.length === 0) return null;
           return (
             <section key={topic} id={topic.toLowerCase().replace(/\s+/g, "-")}>

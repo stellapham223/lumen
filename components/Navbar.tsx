@@ -23,14 +23,20 @@ export function Navbar() {
             Blog
           </Link>
           <Link
-            href="/methodology"
+            href="/glossary"
             className="rounded px-2 py-2 sm:px-3 font-semibold transition-colors hover:text-[color:var(--color-primary)]"
+          >
+            Glossary
+          </Link>
+          <Link
+            href="/methodology"
+            className="hidden rounded px-2 py-2 font-semibold transition-colors hover:text-[color:var(--color-primary)] sm:px-3 md:inline-block"
           >
             Methodology
           </Link>
           <Link
             href="/privacy"
-            className="hidden rounded px-3 py-2 font-semibold transition-colors hover:text-[color:var(--color-primary)] sm:inline-block"
+            className="hidden rounded px-3 py-2 font-semibold transition-colors hover:text-[color:var(--color-primary)] md:inline-block"
           >
             Privacy
           </Link>

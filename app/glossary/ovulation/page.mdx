@@ -1,0 +1,124 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Ovulation: definition, timing, signs, and how to confirm it",
+  description:
+    "Ovulation is the release of a mature egg from the ovary, triggered by the LH surge roughly 24 to 36 hours prior. Definition, timing, signs you can track, and how to confirm ovulation actually occurred.",
+  alternates: { canonical: "/glossary/ovulation" },
+  openGraph: {
+    title: "Ovulation | Lumen glossary",
+    description:
+      "Definition, timing, signs, and how to confirm ovulation through basal body temperature or LH testing.",
+    url: "/glossary/ovulation",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Ovulation"
+  description="The release of a mature egg from the ovary, triggered by the LH surge roughly 24 to 36 hours prior. Marks the end of the follicular phase and the start of the luteal phase."
+  path="/glossary/ovulation"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Ovulation", path: "/glossary/ovulation" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Ovulation
+
+**Ovulation** is the release of a mature egg from the ovary. It is triggered by the [LH surge](/glossary/lh-surge), a sudden spike in luteinizing hormone roughly 24 to 36 hours before the egg is released. Ovulation marks the end of the [follicular phase](/glossary/follicular-phase) and the start of the [luteal phase](/glossary/luteal-phase). For most people with a 28-day cycle, ovulation occurs around day 14, though the timing varies with overall cycle length.
+
+## When ovulation happens
+
+Ovulation does not occur on day 14 for everyone. The rule that holds across cycle lengths is that ovulation occurs roughly 12 to 16 days before the next period starts (the [luteal phase](/glossary/luteal-phase) is relatively fixed at around 14 days for most people). This means:
+
+- 28-day cycle: ovulation around day 14
+- 24-day cycle: ovulation around day 10
+- 32-day cycle: ovulation around day 18
+- 35-day cycle: ovulation around day 21
+
+Counting forward from day 1 of the last period works for users with regular cycles. For irregular cycles, direct ovulation tracking (LH testing, [basal body temperature](/glossary/basal-body-temperature), or [cervical mucus](/glossary/cervical-mucus-tracking)) is more reliable than calendar prediction.
+
+## What happens hormonally during ovulation
+
+Three hormonal events define ovulation:
+
+1. **The LH surge.** Estrogen rises sharply in late follicular phase. When it crosses a threshold, the hypothalamus switches from negative to positive feedback, triggering a sudden 5 to 10x rise in luteinizing hormone. This is what [ovulation predictor kits](/glossary/opk) detect.
+2. **Follicle rupture.** The dominant follicle ruptures roughly 24 to 36 hours after the LH surge, releasing the egg.
+3. **Corpus luteum formation.** The remaining follicle tissue becomes the [corpus luteum](/glossary/corpus-luteum), which starts producing [progesterone](/glossary/progesterone). Progesterone raises basal body temperature by roughly 0.5°F (0.3°C), which is the retrospective marker of ovulation.
+
+## Signs that ovulation is approaching
+
+A few observable signs cluster in the 24 to 72 hours before ovulation:
+
+- **Cervical mucus changes.** Egg-white consistency (clear, stretchy, slippery) appears in the fertile window.
+- **Mid-cycle libido rise.** Driven by the estrogen and LH peaks.
+- **[Mittelschmerz](/glossary/mittelschmerz).** One-sided pelvic pain at ovulation, usually brief.
+- **Mid-cycle spotting.** Light bleeding around ovulation, harmless if intermittent.
+- **Breast tenderness changes.** Some users notice a shift.
+
+None of these are reliable enough on their own to confirm ovulation occurred. They are predictive (suggesting ovulation is imminent), not confirmatory.
+
+## How to confirm ovulation actually occurred
+
+Confirmation requires a retrospective marker. The two most reliable:
+
+**Basal body temperature shift.** [BBT](/glossary/basal-body-temperature) rises by roughly 0.5°F (0.3°C) after ovulation due to progesterone. A sustained rise across 3 consecutive days confirms ovulation occurred 1 to 2 days before the shift began. Requires consistent morning measurement with a sensitive thermometer.
+
+**Mid-luteal progesterone test.** A blood progesterone level roughly 7 days after suspected ovulation, above a threshold (typically 3 ng/mL or higher), confirms ovulation occurred. This is the clinical gold standard; useful when ovulation is uncertain.
+
+LH testing predicts ovulation but does not confirm it. A surge can occur without follicle rupture (an [LUF syndrome](https://en.wikipedia.org/wiki/Luteinized_unruptured_follicle_syndrome) cycle, more common with age and PCOS).
+
+## The fertile window
+
+The [fertile window](/glossary/fertile-window) opens about 5 days before ovulation and closes the day after. Sperm survive up to 5 days in fertile cervical mucus; the egg survives 12 to 24 hours after release.
+
+This is why ovulation matters whether or not you are trying to conceive. For contraception via the [fertility awareness method](/glossary/fam), the fertile window is the window to avoid intercourse (or use a barrier method). For conception, it is the window to target.
+
+## Anovulatory cycles
+
+An [anovulatory cycle](/glossary/anovulatory-cycle) is a cycle without ovulation. Causes include:
+
+- **Adolescence.** Cycles take 1 to 2 years post-menarche to become consistently ovulatory.
+- **[PCOS](/glossary/pcos).** Often presents with irregular or absent ovulation.
+- **[Perimenopause](/glossary/perimenopause).** Anovulatory cycles become more common as ovarian reserve declines.
+- **Hormonal birth control.** Most methods (combined pill, ring, patch, hormonal IUD with sufficient dose) suppress ovulation.
+- **[Hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea).** Under-fueling, over-training, or chronic stress can suppress the LH surge.
+- **Postpartum and breastfeeding.** Cycle return often includes anovulatory cycles in the first few months.
+
+The practical implication: in anovulatory cycles, there is no luteal phase in the hormonal sense (no progesterone production), and [cycle syncing](/glossary/cycle-syncing) protocols built around the four-phase model do not strictly apply.
+
+## Ovulation and cycle syncing
+
+The [ovulatory phase](/glossary/ovulatory-phase) (the 24 to 72 hours around the LH surge and egg release) is one of the highest-leverage phases for cycle-aware scheduling. Estrogen peaks, [testosterone](/glossary/testosterone-in-women) rises slightly, and verbal fluency hits its monthly peak. Schedule presentations, negotiations, and high-stakes social work in this window when possible.
+
+For users whose cycles are regular enough to predict, [the Lumen calculator](/plan) returns the predicted ovulation date as part of the four-phase output.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="ovulation"
+  title="Ovulation"
+  toc={[
+    { id: "when-ovulation-happens", label: "When ovulation happens" },
+    { id: "what-happens-hormonally-during-ovulation", label: "Hormonal events" },
+    { id: "signs-that-ovulation-is-approaching", label: "Approaching signs" },
+    { id: "how-to-confirm-ovulation-actually-occurred", label: "Confirming ovulation" },
+    { id: "the-fertile-window", label: "Fertile window" },
+    { id: "anovulatory-cycles", label: "Anovulatory cycles" },
+    { id: "ovulation-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>
