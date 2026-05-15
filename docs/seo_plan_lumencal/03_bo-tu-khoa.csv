@@ -1,0 +1,68 @@
+STT,Funnel,TOPIC,Từ khóa,Volume,KD,Intent,URL target,Tháng plan,Năm,Status,Note
+1,Solution aware,Cycle syncing 101,cycle syncing,>1000,Medium,Info,/blog/what-is-cycle-syncing,4,2026,Published,Test E #1 — hub head-of-funnel
+2,Solution aware,Cycle syncing 101,what is cycle syncing,>100,Medium,Info,/blog/what-is-cycle-syncing,4,2026,Published,Test E #1
+3,Solution aware,Cycle syncing 101,menstrual cycle syncing,>100,—,Info,/blog/what-is-cycle-syncing,—,—,Captured by #1,Verify GSC indexing
+4,Solution aware,Cycle syncing 101,what does cycle syncing mean,<100,—,Info,/blog/what-is-cycle-syncing,—,—,Captured by #1,Variant
+5,Solution aware,Cycle syncing 101,whats cycle syncing,<100,—,Info,/blog/what-is-cycle-syncing,—,—,Captured by #1,Variant
+6,Problem aware,Skepticism,is cycle syncing legit,<100,Medium,Info,/blog/is-cycle-syncing-legit,4,2026,Published,Test E #2 — defensive
+7,Problem aware,Skepticism,does cycle syncing work,<100,Medium,Info,/blog/does-cycle-syncing-work,5,2026,Published,
+8,Problem aware,Skepticism,how does cycle syncing work,<100,Medium,Info,/blog/how-does-cycle-syncing-work,5,2026,Published,
+9,Problem aware,Skepticism,how does menstrual cycle syncing work,<100,—,Info,/blog/how-does-cycle-syncing-work,—,—,Captured by #8,Variant
+10,Problem aware,Skepticism,why does cycle syncing happen,<100,—,Info,/blog/how-does-cycle-syncing-work,—,—,Captured by #8,Variant
+11,Solution aware,Getting started,how to start cycle syncing,<100,Easy,Info,/blog/how-to-start-cycle-syncing,4,2026,Published,Test E #3
+12,Solution aware,Getting started,how to do cycle syncing,<100,—,Info,/blog/how-to-start-cycle-syncing,—,—,Captured by #11,Variant
+13,Solution aware,Getting started,how do i start cycle syncing as a beginner,<100,—,Info,/blog/how-to-start-cycle-syncing,—,—,Captured by #11,Variant
+14,Solution aware,Getting started,cycle syncing for beginners,<100,Easy,Info,/blog/cycle-syncing-beginner-plan,5,2026,Published,
+15,Solution aware,Getting started,cycle syncing 4 week plan,<100,—,Info,/blog/cycle-syncing-beginner-plan,5,2026,Published,Secondary KW
+16,Product aware,Tool/Chart,cycle syncing chart,>100,Easy,Visual,/blog/cycle-syncing-chart,4,2026,Published,Test E #4 — phase hub
+17,Product aware,Tool/Chart,cycle syncing schedule,<100,Easy,Commercial,/blog/cycle-syncing-schedule-template,5,2026,Researched,Post #10
+18,Product aware,Apps,cycle syncing app,>100,Easy,Commercial,/blog/best-cycle-syncing-app,4,2026,Published,Test E #5
+19,Product aware,Apps,best cycle syncing app,<100,—,Commercial,/blog/best-cycle-syncing-app,4,2026,Published,Secondary KW
+20,Product aware,Apps,free cycle syncing app,<100,—,Commercial,/blog/free-cycle-syncing-apps-compared,5,2026,Researched,Post #11
+21,Product aware,Apps,cycle tracking app privacy,<100,Medium,Commercial,/blog/cycle-tracking-apps-privacy,6,2026,Researched,Post #19
+22,Problem aware,Edge case,does cycle syncing work on birth control,<100,Medium,Info,/blog/cycle-syncing-on-birth-control,5,2026,Published,YMYL — medical reviewer needed
+23,Solution aware,Phase deep-dive,follicular phase,>1000,Medium,Info,/blog/follicular-phase-complete-guide,5,2026,Researched,Post #12 Tier 2 hub
+24,Solution aware,Phase deep-dive,follicular phase symptoms,—,—,Info,/blog/follicular-phase-complete-guide,—,—,Future seed,Phase 3.2 Ahrefs pull
+25,Solution aware,Phase deep-dive,follicular phase workouts,—,—,Fitness,/blog/follicular-phase-complete-guide,—,—,Future seed,Phase 4
+26,Solution aware,Phase deep-dive,luteal phase,>1000,Medium,Info,/blog/luteal-phase-complete-guide,5,2026,Researched,Post #13 Tier 2 hub
+27,Solution aware,Phase deep-dive,luteal phase symptoms,—,—,Info,/blog/luteal-phase-complete-guide,—,—,Future seed,
+28,Solution aware,Phase deep-dive,late luteal phase,<100,Easy,Info,/blog/late-luteal-phase-survival,6,2026,Researched,Post #17 spoke
+29,Solution aware,Phase deep-dive,menstrual phase,>100,Medium,Info,/blog/menstrual-phase-complete-guide,6,2026,Researched,Post #14 Tier 2
+30,Solution aware,Phase deep-dive,ovulatory phase,>100,Medium,Info,/blog/ovulatory-phase-complete-guide,6,2026,Researched,Post #15 Tier 2
+31,Solution aware,Productivity,follicular phase deep work,<100,Easy,Info,/blog/follicular-phase-deep-work,6,2026,Researched,Post #18 productivity angle
+32,Converting,Cornerstone,cycle syncing for women,<100,Medium,Info,/blog/cycle-syncing-ambitious-women,6,2026,Researched,Post #16 pillar
+33,Converting,Cornerstone,cycle syncing for professionals,<100,—,Info,/blog/cycle-syncing-ambitious-women,6,2026,Researched,Secondary KW
+34,Converting,Cornerstone,cycle syncing for executives,<100,Medium,Info,/blog/cycle-syncing-executives-90-day,6,2026,Researched,Post #21
+35,Solution aware,Diet (Phase 4),cycle syncing meal timing,<100,Easy,Info,/blog/cycle-syncing-meal-timing,6,2026,Researched,Post #20 partial diet coverage
+36,Unaware,Diet (Phase 4),cycle syncing workouts,>1000,Easy,Fitness,—,—,—,Backlog,Phase 4 unlock — biggest untapped volume
+37,Unaware,Diet (Phase 4),cycle syncing food chart,>1000,Easy,Diet,—,—,—,Backlog,Phase 4 unlock
+38,Unaware,Diet (Phase 4),cycle syncing diet,>100,Medium,Diet,—,—,—,Backlog,Phase 4
+39,Unaware,Diet (Phase 4),cycle syncing food,>100,Easy,Diet,—,—,—,Backlog,Phase 4
+40,Unaware,Diet (Phase 4),cycle syncing foods,>100,Medium,Diet,—,—,—,Backlog,Phase 4
+41,Unaware,Diet (Phase 4),cycle syncing exercise,>100,Easy,Fitness,—,—,—,Backlog,Phase 4
+42,Unaware,Diet (Phase 4),cycle syncing food and exercise chart,>100,Paywalled,Visual,—,—,—,Backlog,Phase 4
+43,Unaware,Diet (Phase 4),cycle syncing meal plan,>100,—,Diet,—,—,—,Backlog,Partial via #35
+44,Unaware,Diet (Phase 4),cycle syncing workout plan,>100,—,Fitness,—,—,—,Backlog,Phase 4
+45,Unaware,Diet (Phase 4),cycle syncing nutrition,<100,—,Diet,—,—,—,Backlog,Phase 4
+46,Unaware,Diet (Phase 4),what to eat cycle syncing,<100,—,Diet,—,—,—,Backlog,Phase 4
+47,Unaware,Diet (Phase 4),what to eat during cycle syncing,<100,—,Diet,—,—,—,Backlog,Phase 4
+48,Unaware,Skincare,what is cycle syncing your skin care,<100,—,Skincare,—,—,—,Backlog,Separate cluster
+49,Unaware,Niche product,cycle syncing tea,<100,—,Product,—,—,—,Backlog,Low priority but easy affiliate
+50,Unaware,Future seed,menstrual cycle,—,—,Info,—,—,—,Future seed,Broad seed — programmatic candidate
+51,Unaware,Future seed,ovulation,—,—,Info,—,—,—,Future seed,Broad seed — programmatic candidate
+,,,,,,,,,,,,
+,Summary stats,,,,,,,,,,,
+,Funnel,Số lượng từ khóa,,,,,,,,,,
+,Unaware,16,,,,,,,,,,
+,Problem aware,7,,,,,,,,,,
+,Solution aware,18,,,,,,,,,,
+,Product aware,5,,,,,,,,,,
+,Converting,3,,,,,,,,,,
+,TOTAL,49,,,,,,,,,,
+,,,,,,,,,,,,
+,Status counts,,,,,,,,,,,
+,Published,12 keywords (9 posts),,,,,,,,,,
+,Researched,10 keywords (12 posts pending),,,,,,,,,,
+,Backlog,15 keywords,,,,,,,,,,
+,Variant,8 keywords,,,,,,,,,,
+,Future seed,4 keywords,,,,,,,,,,

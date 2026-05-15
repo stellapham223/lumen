@@ -120,4 +120,25 @@ export const BLOG_POSTS = [
       "Spend Week 0 tracking only, then run a 4-week plan that maps each cycle phase to one focus. Concrete daily actions for work, exercise, and sleep. No diet rules in month one.",
     publishedAt: "2026-05-16",
   },
+  {
+    slug: "cycle-syncing-schedule-template",
+    title: "Cycle syncing schedule template (free, no signup)",
+    description:
+      "A free cycle syncing schedule template you can copy in 5 minutes. Maps the four phases onto a 28-day calendar for work, exercise, and recovery. Built for knowledge workers, not lifestyle prescriptions.",
+    publishedAt: "2026-05-19",
+  },
+  {
+    slug: "free-cycle-syncing-apps-compared",
+    title: "Free cycle syncing apps compared (2026): 6 honest reviews",
+    description:
+      "An honest 2026 comparison of free cycle syncing apps: Lumen, Lively, 28, Clue, Wild.AI, and Euki. Free-tier limits, privacy, account requirements, and which one fits which job.",
+    publishedAt: "2026-05-22",
+  },
+  {
+    slug: "follicular-phase-complete-guide",
+    title: "Follicular phase: the complete guide for ambitious women",
+    description:
+      "An evidence-graded guide to the follicular phase: hormones, symptoms, what to schedule, what to avoid, and how PCOS, perimenopause, and hormonal birth control change the picture.",
+    publishedAt: "2026-05-26",
+  },
 ] as const;

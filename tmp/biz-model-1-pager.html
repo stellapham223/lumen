@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Joy Subscriptions — Business Model 1-Pager · A. C-D Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #06038D;
+  --cerulean: #00BCE1;
+  --cherokee: #FCD299;
+  --bittersweet: #FF6D6A;
+
+  --ink: #14132E;
+  --muted: #6B6A85;
+  --line: #E5E7EB;
+  --bg: #FAFAFA;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--ink);
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px 32px 48px;
+}
+
+/* ============== HEADER ============== */
+.hero {
+  padding-bottom: 24px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+.hero .eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.hero h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+  color: var(--ink);
+}
+.hero .lead {
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 880px;
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+.hero-meta {
+  display: flex;
+  gap: 24px;
+  font-size: 12px;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+.hero-meta strong { color: var(--ink); font-weight: 600; }
+
+/* ============== SIDE-BY-SIDE GRID ============== */
+.section-a {
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* ============== MAP COLUMN ============== */
+.col-map {
+  display: flex;
+  flex-direction: column;
+}
+.col-head {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.col-head strong { color: var(--ink); }
+
+.cdmap-frame {
+  flex: 1;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 36px 44px 52px 56px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cdmap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+.cdmap-inner {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.q {
+  position: relative;
+  border-right: 1px dashed var(--line);
+  border-bottom: 1px dashed var(--line);
+}
+.q:nth-child(2) { border-right: none; }
+.q:nth-child(3) { border-bottom: none; }
+.q:nth-child(4) { border-right: none; border-bottom: none; }
+
+.q-label {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.q-label-uncon { top: 10px; left: 10px; }
+.q-label-asp { top: 10px; right: 10px; color: var(--ink); }
+.q-label-peri { bottom: 10px; left: 10px; }
+.q-label-main { bottom: 10px; right: 10px; }
+
+/* axis labels */
+.axis-y, .axis-x {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.axis-title-y {
+  left: -42px; top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  white-space: nowrap;
+  color: var(--ink);
+  font-size: 11px;
+}
+.axis-title-x {
+  bottom: -34px; left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  color: var(--ink);
+  font-size: 11px;
+}
+.tick {
+  position: absolute;
+  font-size: 9px;
+  color: #B5B5C2;
+  font-weight: 500;
+}
+.tick-x { bottom: -16px; transform: translateX(-50%); }
+.tick-y { left: -18px; transform: translateY(50%); }
+
+/* dots */
+.dot {
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  background: var(--ink);
+  width: 10px;
+  height: 10px;
+}
+.dot.joy {
+  background: var(--cerulean);
+  width: 14px;
+  height: 14px;
+  box-shadow: 0 0 0 4px rgba(0,188,225,0.18);
+  z-index: 6;
+}
+.label {
+  position: absolute;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink);
+  white-space: nowrap;
+  z-index: 3;
+  background: #fff;
+  padding: 2px 4px;
+}
+.label .coord {
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 10px;
+}
+.label.joy {
+  font-weight: 700;
+  color: var(--navy);
+}
+.label-pos-tr { transform: translate(10px, -50%); }
+.label-pos-tl { transform: translate(calc(-100% - 10px), -50%); }
+.label-pos-b { transform: translate(-50%, 12px); }
+.label-pos-t { transform: translate(-50%, calc(-100% - 12px)); }
+
+/* strategic arrow */
+.arrow-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+.target-ring {
+  position: absolute;
+  width: 28px; height: 28px;
+  border: 1.5px dashed var(--cherokee);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+/* ============== TAKEAWAY COLUMN ============== */
+.col-take {
+  display: flex;
+  flex-direction: column;
+}
+.takeaway-frame {
+  flex: 1;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 28px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.takeaway-frame h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+.takeaway-frame .sub {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin-bottom: 22px;
+  line-height: 1.5;
+}
+.takeaway-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.takeaway-list li {
+  padding: 14px 16px;
+  background: var(--bg);
+  border-left: 2px solid var(--cerulean);
+}
+.takeaway-list li:nth-child(2) { border-left-color: var(--cherokee); }
+.takeaway-list li:nth-child(3) { border-left-color: var(--bittersweet); }
+.takeaway-list .num {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.takeaway-list h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+.takeaway-list p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+/* ============== FOOTER ============== */
+.footer {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+@media (max-width: 1080px) {
+  .section-a { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .page { padding: 24px 16px; }
+  .cdmap-frame { padding: 32px 32px 48px 48px; }
+  .label { font-size: 10px; }
+}
+
+/* ============== SECTION B — STRATEGY CANVAS ============== */
+.section-b {
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+.section-b-head { margin-bottom: 20px; }
+.section-b-head .eyebrow {
+  display: block;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.section-b-head h2 {
+  font-size: 24px; font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.section-b-head p {
+  font-size: 13px; color: var(--muted);
+  max-width: 880px;
+  line-height: 1.55;
+}
+
+.section-b-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+.canvas-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.canvas-frame {
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 22px 18px 18px;
+  margin-bottom: 14px;
+}
+.canvas-svg { display: block; width: 100%; height: auto; }
+.canvas-legend {
+  display: flex; flex-wrap: wrap; gap: 14px;
+  padding-top: 12px;
+  margin-top: 4px;
+  border-top: 1px solid var(--line);
+  font-size: 11px;
+  color: var(--muted);
+}
+.canvas-legend-item {
+  display: flex; align-items: center; gap: 6px;
+}
+.canvas-legend-line {
+  width: 22px; height: 2px;
+  background: var(--muted);
+  border-radius: 1px;
+}
+.canvas-legend-line.joy { background: var(--cerulean); height: 3px; }
+.canvas-legend-line.recharge { background: #4A4A60; }
+.canvas-legend-line.appstle { background: #7C7C92; }
+.canvas-legend-line.seal { background: #A8A8B8; }
+.canvas-legend-line.loop { background: var(--navy); }
+.canvas-legend-line.subi { background: #C8C8D2; }
+.canvas-legend-line.kaching { background: #9090A2; }
+.canvas-legend-item.joy { color: var(--navy); font-weight: 600; }
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.sum-card {
+  padding: 12px 14px;
+  background: var(--bg);
+  border-left: 2px solid var(--cerulean);
+}
+.sum-card.gap { border-left-color: var(--bittersweet); }
+.sum-card.blue { border-left-color: var(--cherokee); }
+.sum-card .sum-tag {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.sum-card.leading .sum-tag { color: var(--cerulean); }
+.sum-card.gap .sum-tag { color: var(--bittersweet); }
+.sum-card.blue .sum-tag { color: #B8842C; }
+.sum-card ul {
+  list-style: none;
+  font-size: 12px;
+  color: var(--ink);
+  line-height: 1.5;
+}
+.sum-card ul li {
+  padding: 2px 0;
+}
+.sum-card ul li strong { font-weight: 600; }
+.sum-card p {
+  font-size: 11.5px;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+@media (max-width: 720px) {
+  .summary-cards { grid-template-columns: 1fr; }
+}
+
+/* ============== SECTION C — OPERATION FORMULA ============== */
+.section-c {
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+.section-c-head { margin-bottom: 18px; }
+.section-c-head .eyebrow {
+  display: block;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.section-c-head h2 {
+  font-size: 24px; font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.section-c-head p {
+  font-size: 13px; color: var(--muted);
+  max-width: 880px;
+  line-height: 1.55;
+}
+
+.formula-eq {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.formula-eq .op {
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 15px;
+}
+.formula-eq .op.arrow {
+  color: var(--cerulean);
+  font-size: 18px;
+}
+.formula-eq .term-r { color: var(--navy); font-weight: 600; }
+.formula-eq .term-i { color: var(--cerulean); font-weight: 600; }
+.formula-eq .term-c { color: #B8842C; font-weight: 600; }
+.formula-eq .term-d { color: var(--bittersweet); font-weight: 600; }
+.formula-eq .term-f { color: var(--ink); font-weight: 700; }
+
+.formula-table {
+  display: grid;
+  gap: 8px;
+}
+.formula-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.25fr;
+  gap: 8px;
+  align-items: stretch;
+}
+.formula-head .col-h {
+  padding: 8px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 2px solid var(--line);
+}
+.formula-head .col-h.h-r { color: var(--navy); border-bottom-color: var(--navy); }
+.formula-head .col-h.h-i { color: var(--cerulean); border-bottom-color: var(--cerulean); }
+.formula-head .col-h.h-c { color: #B8842C; border-bottom-color: var(--cherokee); }
+.formula-head .col-h.h-d { color: var(--bittersweet); border-bottom-color: var(--bittersweet); }
+.formula-head .col-h.h-f { color: var(--ink); border-bottom-color: var(--ink); }
+
+.cell {
+  padding: 14px 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.cell.c-r { border-top: 3px solid var(--navy); }
+.cell.c-i { border-top: 3px solid var(--cerulean); }
+.cell.c-c { border-top: 3px solid var(--cherokee); }
+.cell.c-d { border-top: 3px solid var(--bittersweet); }
+.cell.c-f {
+  border-top: 3px solid var(--ink);
+  background: var(--bg);
+}
+.cell-tag {
+  display: none;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.cell strong { font-weight: 600; color: var(--navy); }
+.cell.c-i strong { color: var(--cerulean); }
+.cell.c-c strong { color: #B8842C; }
+.cell.c-d strong { color: var(--bittersweet); }
+.cell.c-f strong { color: var(--ink); }
+.cell .quote {
+  font-style: italic;
+  color: var(--muted);
+}
+
+@media (max-width: 1080px) {
+  .formula-head { display: none; }
+  .formula-row { grid-template-columns: 1fr; gap: 6px; }
+  .cell { padding: 12px 14px; }
+  .cell-tag { display: block; }
+  .formula-table > .formula-row + .formula-row {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--line);
+  }
+}
+
+/* ============== SECTION D — PROFIT FORMULA ============== */
+.section-d {
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+.section-d-head { margin-bottom: 18px; }
+.section-d-head .eyebrow {
+  display: block;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.section-d-head h2 {
+  font-size: 24px; font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.section-d-head p {
+  font-size: 13px; color: var(--muted);
+  max-width: 880px;
+  line-height: 1.55;
+}
+
+.profit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+.pcol {
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 18px 16px;
+}
+.pcol.raise { border-top: 3px solid var(--cerulean); }
+.pcol.maintain { border-top: 3px solid var(--cherokee); }
+.pcol.cut { border-top: 3px solid var(--bittersweet); }
+
+.pcol-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.pcol-icon {
+  width: 26px; height: 26px;
+  border-radius: 4px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 700;
+  color: white;
+}
+.pcol.raise .pcol-icon { background: var(--cerulean); }
+.pcol.maintain .pcol-icon { background: var(--cherokee); color: var(--ink); }
+.pcol.cut .pcol-icon { background: var(--bittersweet); }
+
+.pcol-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.3px;
+}
+.pcol-tag {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-left: auto;
+}
+.pcol ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.pcol ul li {
+  font-size: 12px;
+  line-height: 1.55;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--line);
+}
+.pcol ul li:last-child { border-bottom: none; padding-bottom: 0; }
+.pcol .item-title {
+  display: block;
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 12.5px;
+  margin-bottom: 4px;
+}
+.pcol .item-why {
+  display: block;
+  color: var(--muted);
+  font-size: 11.5px;
+  margin-bottom: 6px;
+}
+.pcol .item-src {
+  display: inline-block;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: var(--muted);
+  background: var(--bg);
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+
+.profit-summary {
+  margin-top: 16px;
+  padding: 14px 18px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--ink);
+  font-size: 13px;
+  color: var(--ink);
+  line-height: 1.6;
+}
+.profit-summary strong { font-weight: 700; }
+.profit-summary code {
+  font-family: inherit;
+  background: #fff;
+  padding: 1px 6px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+@media (max-width: 1080px) {
+  .profit-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="hero">
+    <span class="eyebrow">Joy Subscriptions · Business Model 1-Pager</span>
+    <h1>A. C-D Map</h1>
+    <p class="lead">Joy's positioning vs 6 Shopify subscription competitors, on Centrality (how prototypical the brand is of the category) and Distinctiveness (how uniquely it stands apart). Framework: Dawar &amp; Bagga, HBR 2015. Scores triangulated from live App Store data, marketing websites, and 2026 industry comparison articles.</p>
+    <div class="hero-meta">
+      <span><strong>Owner</strong> Stella Pham (PMM)</span>
+      <span><strong>Updated</strong> 2026-05-06</span>
+      <span><strong>Brands</strong> Joy + Recharge, Appstle, Seal, Loop, Subi, Kaching</span>
+    </div>
+  </header>
+
+  <!-- SIDE-BY-SIDE: MAP + TAKEAWAYS -->
+  <section class="section-a">
+
+    <!-- LEFT: MAP -->
+    <div class="col-map">
+      <div class="col-head"><strong>The Map</strong> · each dot = one brand · hover for score</div>
+      <div class="cdmap-frame">
+        <div class="cdmap">
+
+          <span class="axis-y axis-title-y">Distinctiveness →</span>
+          <span class="axis-x axis-title-x">Centrality →</span>
+
+          <span class="tick tick-x" style="left: 0%;">0</span>
+          <span class="tick tick-x" style="left: 50%;">5</span>
+          <span class="tick tick-x" style="left: 100%;">10</span>
+          <span class="tick tick-y" style="top: 100%;">0</span>
+          <span class="tick tick-y" style="top: 50%;">5</span>
+          <span class="tick tick-y" style="top: 0%;">10</span>
+
+          <div class="cdmap-inner">
+            <div class="q"><span class="q-label q-label-uncon">Unconventional</span></div>
+            <div class="q"><span class="q-label q-label-asp">Aspirational</span></div>
+            <div class="q"><span class="q-label q-label-peri">Peripheral</span></div>
+            <div class="q"><span class="q-label q-label-main">Mainstream</span></div>
+          </div>
+
+          <!--
+            Coords:
+            Joy      (3.0, 8.5) -> 30%, 15%
+            Loop     (5.0, 7.5) -> 50%, 25%
+            Seal     (7.0, 5.0) -> 70%, 50%
+            Recharge (9.0, 4.0) -> 90%, 60%
+            Kaching  (2.0, 3.5) -> 20%, 65%
+            Appstle  (8.0, 3.0) -> 80%, 70%
+            Subi     (2.5, 2.5) -> 25%, 75%
+          -->
+
+          <!-- strategic arrow Joy -> Aspirational target -->
+          <svg class="arrow-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <defs>
+              <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#FCD299"/>
+              </marker>
+            </defs>
+            <path d="M 33 17 Q 55 11, 76 21"
+                  fill="none"
+                  stroke="#FCD299"
+                  stroke-width="0.5"
+                  stroke-dasharray="1.2 1"
+                  marker-end="url(#arrowhead)"/>
+          </svg>
+
+          <!-- target ring (where Joy wants to go) -->
+          <div class="target-ring" style="left: 78%; top: 22%;"></div>
+
+          <!-- dots -->
+          <div class="dot joy" style="left: 30%; top: 15%;" title="Joy (3.0 · 8.5)"></div>
+          <div class="label joy label-pos-b" style="left: 30%; top: 15%;">Joy</div>
+
+          <div class="dot" style="left: 50%; top: 25%;" title="Loop (5.0 · 7.5)"></div>
+          <div class="label label-pos-tr" style="left: 50%; top: 25%;">Loop</div>
+
+          <div class="dot" style="left: 70%; top: 50%;" title="Seal (7.0 · 5.0)"></div>
+          <div class="label label-pos-tr" style="left: 70%; top: 50%;">Seal</div>
+
+          <div class="dot" style="left: 90%; top: 60%;" title="Recharge (9.0 · 4.0)"></div>
+          <div class="label label-pos-tl" style="left: 90%; top: 60%;">Recharge</div>
+
+          <div class="dot" style="left: 20%; top: 65%;" title="Kaching (2.0 · 3.5)"></div>
+          <div class="label label-pos-tr" style="left: 20%; top: 65%;">Kaching</div>
+
+          <div class="dot" style="left: 80%; top: 70%;" title="Appstle (8.0 · 3.0)"></div>
+          <div class="label label-pos-tl" style="left: 80%; top: 70%;">Appstle</div>
+
+          <div class="dot" style="left: 25%; top: 75%;" title="Subi (2.5 · 2.5)"></div>
+          <div class="label label-pos-b" style="left: 25%; top: 75%;">Subi</div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: TAKEAWAYS -->
+    <div class="col-take">
+      <div class="col-head"><strong>Key Takeaways</strong> · what to remember</div>
+      <div class="takeaway-frame">
+        <h2>Three sentences to remember</h2>
+        <p class="sub">If a Joy team member can only remember three things from this map, these are them.</p>
+        <ul class="takeaway-list">
+          <li>
+            <span class="num">01</span>
+            <h4>Joy is Unconventional, not new</h4>
+            <p>High distinctiveness (8.5), modest centrality (3.0). 21 months in market, 408 reviews, 5K+ merchants. The position is real and earned, not aspirational.</p>
+          </li>
+          <li>
+            <span class="num">02</span>
+            <h4>Climb to Aspirational via the X-axis</h4>
+            <p>Don't change the position — amplify it. Review velocity, industry-article share-of-voice, and Recharge-refugee narrative are the three accelerators on Centrality.</p>
+          </li>
+          <li>
+            <span class="num">03</span>
+            <h4>Loop is the closest neighbor — different lane</h4>
+            <p>Both Unconventional, but Loop owns mid-enterprise retention (642 reviews, 57% Plus); Joy owns Boutique-Players guided growth. Don't cross lanes.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============== SECTION B — STRATEGY CANVAS ============== -->
+  <section class="section-b">
+    <div class="section-b-head">
+      <span class="eyebrow">Joy Subscriptions · Business Model 1-Pager</span>
+      <h2>B. Competing &amp; Verifying Factors</h2>
+      <p>Strategy Canvas (Blue Ocean, Kim &amp; Mauborgne 2005) — score each app on the factors that matter, plot value curves, find where Joy <em>leads</em>, <em>lags</em>, and where the <em>blue ocean</em> opens up. <strong>B1</strong> measures the app's inner capability; <strong>B2</strong> measures what merchants actually say in App Store reviews.</p>
+    </div>
+
+    <div class="section-b-grid">
+
+      <!-- ========== B1: COMPETING FACTORS (CAPABILITY) ========== -->
+      <div class="canvas-col">
+        <div class="col-head"><strong>B1. Competing Factors</strong> · App's inner capability (objective scoring)</div>
+        <div class="canvas-frame">
+          <svg class="canvas-svg" viewBox="0 0 1000 400" preserveAspectRatio="xMidYMid meet">
+            <!-- BLUE OCEAN bands: Support + Pricing (high-touch + affordable combo) -->
+            <rect x="10" y="40" width="80" height="280" fill="#00BCE1" opacity="0.10"/>
+            <rect x="210" y="40" width="80" height="280" fill="#00BCE1" opacity="0.10"/>
+            <text x="50" y="32" text-anchor="middle" font-size="9" fill="#06038D" font-weight="700" letter-spacing="1">BLUE OCEAN</text>
+            <text x="250" y="32" text-anchor="middle" font-size="9" fill="#06038D" font-weight="700" letter-spacing="1">BLUE OCEAN</text>
+
+            <!-- gridlines -->
+            <line x1="50" y1="40" x2="950" y2="40" stroke="#EFEFF4" stroke-width="1"/>
+            <line x1="50" y1="180" x2="950" y2="180" stroke="#EFEFF4" stroke-width="1" stroke-dasharray="2 3"/>
+            <line x1="50" y1="320" x2="950" y2="320" stroke="#D5D6DE" stroke-width="1"/>
+
+            <!-- y-axis labels -->
+            <text x="38" y="44" text-anchor="end" font-size="10" fill="#B5B5C2">10</text>
+            <text x="38" y="184" text-anchor="end" font-size="10" fill="#B5B5C2">5</text>
+            <text x="38" y="324" text-anchor="end" font-size="10" fill="#B5B5C2">0</text>
+
+            <!-- x-axis factor labels -->
+            <text x="50" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Support</text>
+            <text x="150" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Features</text>
+            <text x="250" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Pricing</text>
+            <text x="350" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Ease</text>
+            <text x="450" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Content</text>
+            <text x="550" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Comms</text>
+            <text x="650" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Acquisition</text>
+            <text x="750" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Engagement</text>
+            <text x="850" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Retention</text>
+            <text x="950" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Winback</text>
+
+            <!-- vertical guide ticks -->
+            <g stroke="#EFEFF4" stroke-width="1">
+              <line x1="50" y1="40" x2="50" y2="320"/>
+              <line x1="150" y1="40" x2="150" y2="320"/>
+              <line x1="250" y1="40" x2="250" y2="320"/>
+              <line x1="350" y1="40" x2="350" y2="320"/>
+              <line x1="450" y1="40" x2="450" y2="320"/>
+              <line x1="550" y1="40" x2="550" y2="320"/>
+              <line x1="650" y1="40" x2="650" y2="320"/>
+              <line x1="750" y1="40" x2="750" y2="320"/>
+              <line x1="850" y1="40" x2="850" y2="320"/>
+              <line x1="950" y1="40" x2="950" y2="320"/>
+            </g>
+
+            <!-- competitor curves (drawn first, behind Joy) -->
+            <!-- Subi (lightest, behind) -->
+            <polyline points="50,124 150,180 250,180 350,124 450,208 550,180 650,180 750,152 850,180 950,208" fill="none" stroke="#C8C8D2" stroke-width="1.4"/>
+            <!-- Seal -->
+            <polyline points="50,152 150,152 250,68 350,96 450,152 550,180 650,180 750,124 850,152 950,180" fill="none" stroke="#A8A8B8" stroke-width="1.5"/>
+            <!-- Kaching -->
+            <polyline points="50,96 150,152 250,124 350,96 450,180 550,152 650,124 750,124 850,124 950,152" fill="none" stroke="#9090A2" stroke-width="1.5"/>
+            <!-- Appstle -->
+            <polyline points="50,68 150,68 250,96 350,96 450,152 550,180 650,96 750,96 850,96 950,124" fill="none" stroke="#7C7C92" stroke-width="1.6"/>
+            <!-- Recharge -->
+            <polyline points="50,124 150,68 250,264 350,124 450,68 550,124 650,96 750,68 850,68 950,96" fill="none" stroke="#4A4A60" stroke-width="1.8"/>
+            <!-- Loop -->
+            <polyline points="50,68 150,96 250,236 350,96 450,96 550,68 650,68 750,96 850,40 950,40" fill="none" stroke="#06038D" stroke-width="1.8"/>
+
+            <!-- Joy curve (on top, prominent) -->
+            <polyline points="50,68 150,96 250,96 350,96 450,124 550,124 650,124 750,96 850,124 950,180" fill="none" stroke="#00BCE1" stroke-width="3"/>
+
+            <!-- Joy dots (only Joy gets dots for clarity) -->
+            <g fill="#00BCE1">
+              <circle cx="50" cy="68" r="4"/>
+              <circle cx="150" cy="96" r="4"/>
+              <circle cx="250" cy="96" r="4"/>
+              <circle cx="350" cy="96" r="4"/>
+              <circle cx="450" cy="124" r="4"/>
+              <circle cx="550" cy="124" r="4"/>
+              <circle cx="650" cy="124" r="4"/>
+              <circle cx="750" cy="96" r="4"/>
+              <circle cx="850" cy="124" r="4"/>
+              <circle cx="950" cy="180" r="4"/>
+            </g>
+
+            <!-- Joy score labels -->
+            <g font-size="10" fill="#06038D" font-weight="700" text-anchor="middle">
+              <text x="50" y="58">9</text>
+              <text x="150" y="86">8</text>
+              <text x="250" y="86">8</text>
+              <text x="350" y="86">8</text>
+              <text x="450" y="114">7</text>
+              <text x="550" y="114">7</text>
+              <text x="650" y="114">7</text>
+              <text x="750" y="86">8</text>
+              <text x="850" y="114">7</text>
+              <text x="950" y="170">5</text>
+            </g>
+          </svg>
+
+          <div class="canvas-legend">
+            <div class="canvas-legend-item joy"><span class="canvas-legend-line joy"></span>Joy</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line loop"></span>Loop</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line recharge"></span>Recharge</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line appstle"></span>Appstle</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line kaching"></span>Kaching</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line seal"></span>Seal</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line subi"></span>Subi</div>
+          </div>
+        </div>
+
+        <div class="summary-cards">
+          <div class="sum-card leading">
+            <span class="sum-tag">Leading</span>
+            <ul>
+              <li><strong>Support</strong> (9) — tied w/ Loop, Appstle</li>
+              <li><strong>Pricing</strong> (8) — among feature-rich tier</li>
+              <li><strong>Ease of use</strong> (8) — well above Recharge/Subi</li>
+            </ul>
+          </div>
+          <div class="sum-card gap">
+            <span class="sum-tag">Gap</span>
+            <ul>
+              <li><strong>Winback</strong> (5) — Loop is 10, deepest gap</li>
+              <li><strong>Retention</strong> (7) — Loop 10, Recharge 9</li>
+              <li><strong>Content/edu</strong> (7) — Recharge 9</li>
+            </ul>
+          </div>
+          <div class="sum-card blue">
+            <span class="sum-tag">Blue Ocean</span>
+            <ul>
+              <li><strong>Affordable + High-touch</strong> support combo — Loop has touch but $99/mo; Seal/Appstle have price but lighter support.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== B2: VERIFYING FACTORS (VOICE OF CUSTOMER) ========== -->
+      <div class="canvas-col">
+        <div class="col-head"><strong>B2. Verifying Factors</strong> · what merchants actually say in reviews</div>
+        <div class="canvas-frame">
+          <svg class="canvas-svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+            <!-- BLUE OCEAN bands: Personal touch + Value (named-team + value-for-money combo) -->
+            <rect x="110" y="40" width="80" height="280" fill="#00BCE1" opacity="0.10"/>
+            <rect x="610" y="40" width="80" height="280" fill="#00BCE1" opacity="0.10"/>
+            <text x="150" y="32" text-anchor="middle" font-size="9" fill="#06038D" font-weight="700" letter-spacing="1">BLUE OCEAN</text>
+            <text x="650" y="32" text-anchor="middle" font-size="9" fill="#06038D" font-weight="700" letter-spacing="1">BLUE OCEAN</text>
+
+            <!-- gridlines -->
+            <line x1="50" y1="40" x2="750" y2="40" stroke="#EFEFF4" stroke-width="1"/>
+            <line x1="50" y1="180" x2="750" y2="180" stroke="#EFEFF4" stroke-width="1" stroke-dasharray="2 3"/>
+            <line x1="50" y1="320" x2="750" y2="320" stroke="#D5D6DE" stroke-width="1"/>
+
+            <!-- y-axis -->
+            <text x="38" y="44" text-anchor="end" font-size="10" fill="#B5B5C2">10</text>
+            <text x="38" y="184" text-anchor="end" font-size="10" fill="#B5B5C2">5</text>
+            <text x="38" y="324" text-anchor="end" font-size="10" fill="#B5B5C2">0</text>
+
+            <!-- x-axis labels (8 factors) -->
+            <text x="50" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Support speed</text>
+            <text x="150" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Personal touch</text>
+            <text x="250" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Setup ease</text>
+            <text x="350" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Reliability</text>
+            <text x="450" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Migration</text>
+            <text x="550" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Proactive</text>
+            <text x="650" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Value</text>
+            <text x="750" y="345" text-anchor="middle" font-size="10" fill="#6B6A85" font-weight="600">Customization</text>
+
+            <!-- vertical guides -->
+            <g stroke="#EFEFF4" stroke-width="1">
+              <line x1="50" y1="40" x2="50" y2="320"/>
+              <line x1="150" y1="40" x2="150" y2="320"/>
+              <line x1="250" y1="40" x2="250" y2="320"/>
+              <line x1="350" y1="40" x2="350" y2="320"/>
+              <line x1="450" y1="40" x2="450" y2="320"/>
+              <line x1="550" y1="40" x2="550" y2="320"/>
+              <line x1="650" y1="40" x2="650" y2="320"/>
+              <line x1="750" y1="40" x2="750" y2="320"/>
+            </g>
+
+            <!-- competitor curves -->
+            <polyline points="50,96 150,96 250,124 350,180 450,208 550,180 650,124 750,152" fill="none" stroke="#C8C8D2" stroke-width="1.4"/>
+            <polyline points="50,124 150,180 250,96 350,124 450,208 550,208 650,68 750,152" fill="none" stroke="#A8A8B8" stroke-width="1.5"/>
+            <polyline points="50,96 150,124 250,96 350,96 450,180 550,180 650,96 750,124" fill="none" stroke="#9090A2" stroke-width="1.5"/>
+            <polyline points="50,68 150,152 250,68 350,68 450,180 550,180 650,68 750,96" fill="none" stroke="#7C7C92" stroke-width="1.6"/>
+            <polyline points="50,124 150,124 250,152 350,124 450,96 550,152 650,208 750,96" fill="none" stroke="#4A4A60" stroke-width="1.8"/>
+            <polyline points="50,68 150,68 250,124 350,124 450,68 550,68 650,152 750,96" fill="none" stroke="#06038D" stroke-width="1.8"/>
+
+            <!-- Joy curve (on top) -->
+            <polyline points="50,68 150,68 250,124 350,152 450,208 550,124 650,96 750,152" fill="none" stroke="#00BCE1" stroke-width="3"/>
+
+            <!-- Joy dots -->
+            <g fill="#00BCE1">
+              <circle cx="50" cy="68" r="4"/>
+              <circle cx="150" cy="68" r="4"/>
+              <circle cx="250" cy="124" r="4"/>
+              <circle cx="350" cy="152" r="4"/>
+              <circle cx="450" cy="208" r="4"/>
+              <circle cx="550" cy="124" r="4"/>
+              <circle cx="650" cy="96" r="4"/>
+              <circle cx="750" cy="152" r="4"/>
+            </g>
+
+            <!-- Joy score labels -->
+            <g font-size="10" fill="#06038D" font-weight="700" text-anchor="middle">
+              <text x="50" y="58">9</text>
+              <text x="150" y="58">9</text>
+              <text x="250" y="114">7</text>
+              <text x="350" y="142">6</text>
+              <text x="450" y="198">4</text>
+              <text x="550" y="114">7</text>
+              <text x="650" y="86">8</text>
+              <text x="750" y="142">6</text>
+            </g>
+          </svg>
+
+          <div class="canvas-legend">
+            <div class="canvas-legend-item joy"><span class="canvas-legend-line joy"></span>Joy</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line loop"></span>Loop</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line recharge"></span>Recharge</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line appstle"></span>Appstle</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line kaching"></span>Kaching</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line seal"></span>Seal</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line subi"></span>Subi</div>
+          </div>
+        </div>
+
+        <div class="summary-cards">
+          <div class="sum-card leading">
+            <span class="sum-tag">Leading</span>
+            <ul>
+              <li><strong>Support speed</strong> (9) — 60% reviews praise</li>
+              <li><strong>Personal touch</strong> (9) — names: Avery, Philip, Olivia, Daniel, Iris</li>
+              <li><strong>Value for money</strong> (8) — "free unrestricted"</li>
+            </ul>
+          </div>
+          <div class="sum-card gap">
+            <span class="sum-tag">Gap</span>
+            <ul>
+              <li><strong>Migration help</strong> (4) — Loop 9, Recharge 8</li>
+              <li><strong>Reliability mentions</strong> (6) — Appstle 9</li>
+              <li><strong>Customization</strong> (6) — Recharge 8</li>
+            </ul>
+          </div>
+          <div class="sum-card blue">
+            <span class="sum-tag">Blue Ocean</span>
+            <ul>
+              <li><strong>Personal Touch + Value</strong> together — Loop has personal touch but expensive; Appstle has value but less named-team mentions.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== SECTION C — OPERATION FORMULA ============== -->
+  <section class="section-c">
+    <div class="section-c-head">
+      <span class="eyebrow">Joy Subscriptions · Business Model 1-Pager</span>
+      <h2>C. Operation Formula</h2>
+      <p>How Joy turns what it has + what merchants need into how Joy actually runs the business. Each column feeds the next; the rightmost column is the synthesis — Joy's repeatable way of operating.</p>
+    </div>
+
+    <div class="formula-eq">
+      <span class="term-r">Key Resources</span>
+      <span class="op">+</span>
+      <span class="term-i">Customer's Insight</span>
+      <span class="op arrow">⇒</span>
+      <span class="term-c">Values Created</span>
+      <span class="op">+</span>
+      <span class="term-d">Values Delivered</span>
+      <span class="op arrow">⇒</span>
+      <span class="term-f">Operation Formula</span>
+    </div>
+
+    <div class="formula-table">
+
+      <!-- Header row -->
+      <div class="formula-row formula-head">
+        <div class="col-h h-r">Key Resource</div>
+        <div class="col-h h-i">Customer's Insight</div>
+        <div class="col-h h-c">Value Created</div>
+        <div class="col-h h-d">Value Delivered</div>
+        <div class="col-h h-f">Operation Formula</div>
+      </div>
+
+      <!-- Thread 1: Avada Ecosystem -->
+      <div class="formula-row">
+        <div class="cell c-r">
+          <span class="cell-tag">Key Resource</span>
+          <strong>Avada ecosystem</strong> — Joy Loyalty + Joy AOV + Chatty natively integrated with Subscriptions inside one admin.
+        </div>
+        <div class="cell c-i">
+          <span class="cell-tag">Customer's Insight</span>
+          <span class="quote">"I'm juggling 4–5 separate apps for loyalty, upsell, chat, retention. They don't share data. Billing is a mess."</span>
+        </div>
+        <div class="cell c-c">
+          <span class="cell-tag">Value Created</span>
+          <strong>Unified growth stack</strong> — subscription is the wedge; LTV lifts across the same merchant admin without a 5-app integration project.
+        </div>
+        <div class="cell c-d">
+          <span class="cell-tag">Value Delivered</span>
+          One Avada login · shared customer profile across apps · bundled-pricing eligibility · single support team across the suite.
+        </div>
+        <div class="cell c-f">
+          <span class="cell-tag">Operation Formula</span>
+          <strong>Ecosystem flywheel</strong> — every Joy install opens cross-sell to Loyalty/AOV/Chatty; LTV per merchant beats any standalone competitor.
+        </div>
+      </div>
+
+      <!-- Thread 2: Vietnam Team -->
+      <div class="formula-row">
+        <div class="cell c-r">
+          <span class="cell-tag">Key Resource</span>
+          <strong>Vietnam-based team</strong> — engineering &amp; support cost structure unmatchable by US/EU rivals.
+        </div>
+        <div class="cell c-i">
+          <span class="cell-tag">Customer's Insight</span>
+          <span class="quote">"I want a named human in my corner — but Recharge wants $99/mo and Loop wants $99–$499/mo before I see a dollar of ROI."</span>
+        </div>
+        <div class="cell c-c">
+          <span class="cell-tag">Value Created</span>
+          <strong>Companion-level support at SMB pricing</strong> — high-touch service that Loop charges $99/mo for, but at Joy it costs the merchant nothing for 6 months.
+        </div>
+        <div class="cell c-d">
+          <span class="cell-tag">Value Delivered</span>
+          Named partner replies under 2h · 1-on-1 setup call within 24h of install · 7-day follow-up · monthly check-in · 24/7 live chat.
+        </div>
+        <div class="cell c-f">
+          <span class="cell-tag">Operation Formula</span>
+          <strong>Geo-arbitrage of high-touch</strong> — Vietnam labor cost converts into companion-grade service that no US/EU rival can profitably copy at SMB pricing.
+        </div>
+      </div>
+
+      <!-- Thread 3: Full-Stack Subscription Platform -->
+      <div class="formula-row">
+        <div class="cell c-r">
+          <span class="cell-tag">Key Resource</span>
+          <strong>Full-stack subscription engine</strong> — subscribe &amp; save, boxes, bundles, memberships, prepaid, dunning, migration — all production-grade.
+        </div>
+        <div class="cell c-i">
+          <span class="cell-tag">Customer's Insight</span>
+          <span class="quote">"I'm not sure which subscription model fits my products yet. I need to experiment without paying for features I'm not using — and without hitting a tier wall mid-test."</span>
+        </div>
+        <div class="cell c-c">
+          <span class="cell-tag">Value Created</span>
+          <strong>All features unlocked from day 1</strong> — no upsell walls, no feature gating, no premature commitment to one model.
+        </div>
+        <div class="cell c-d">
+          <span class="cell-tag">Value Delivered</span>
+          Free for 6 months / $1M revenue · all subscription types live · widget covers all 5 layouts · migration import from Recharge/Appstle.
+        </div>
+        <div class="cell c-f">
+          <span class="cell-tag">Operation Formula</span>
+          <strong>All-features-day-1</strong> — remove tier friction so merchants discover their own model; the platform absorbs experimentation cost so the merchant doesn't.
+        </div>
+      </div>
+
+      <!-- Thread 4: Avada Brand & Track Record -->
+      <div class="formula-row">
+        <div class="cell c-r">
+          <span class="cell-tag">Key Resource</span>
+          <strong>Avada brand &amp; 21-month track record</strong> — 140+ apps shipped, Built for Shopify badge, 4.9★ / 408+ reviews / 5K+ merchants on Joy alone.
+        </div>
+        <div class="cell c-i">
+          <span class="cell-tag">Customer's Insight</span>
+          <span class="quote">"Installing an unknown subscription app is scary — switching back is painful. I want safe + proven, not 'new and hopeful.'"</span>
+        </div>
+        <div class="cell c-c">
+          <span class="cell-tag">Value Created</span>
+          <strong>Trust at install time</strong> — Joy is not "yet another new app"; merchants see the Avada family they may already use (Loyalty, AOV, Chatty).
+        </div>
+        <div class="cell c-d">
+          <span class="cell-tag">Value Delivered</span>
+          App Store badges visible · review count + rating on listing · admin UI consistent with other Avada apps · Avada brand presence on store search.
+        </div>
+        <div class="cell c-f">
+          <span class="cell-tag">Operation Formula</span>
+          <strong>Trust as compound interest</strong> — every 5★ review and Avada install lowers acquisition cost for the next merchant; brand grows centrality without paid spend.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== SECTION D — PROFIT FORMULA ============== -->
+  <section class="section-d">
+    <div class="section-d-head">
+      <span class="eyebrow">Joy Subscriptions · Business Model 1-Pager</span>
+      <h2>D. Profit Formula</h2>
+      <p>Synthesizing A (positioning), B (canvas), and C (operations) into three actions: what Joy should <em>raise</em>, what Joy should <em>maintain</em>, and what Joy should <em>eliminate or reduce</em> to compound profitability. Each item references the source analysis it came from.</p>
+    </div>
+
+    <div class="profit-grid">
+
+      <!-- RAISE -->
+      <div class="pcol raise">
+        <div class="pcol-head">
+          <div class="pcol-icon">↑</div>
+          <div class="pcol-title">Raise</div>
+          <span class="pcol-tag">Invest more</span>
+        </div>
+        <ul>
+          <li>
+            <span class="item-title">Review velocity</span>
+            <span class="item-why">Push 408 → 1,000+ reviews in 12mo. A's biggest gap (centrality 3.0); B2's "social proof" is the leading signal merchants check.</span>
+            <span class="item-src">A · B2</span>
+          </li>
+          <li>
+            <span class="item-title">Migration tooling for Recharge refugees</span>
+            <span class="item-why">Concierge migration team + automated import. A names Recharge decline (−5,514/90d) as Joy's biggest tailwind; B2 shows migration is Joy's weakest VoC factor (4 vs Loop 9).</span>
+            <span class="item-src">A · B2</span>
+          </li>
+          <li>
+            <span class="item-title">Industry-article share-of-voice</span>
+            <span class="item-why">Get into the default top-7 list everywhere ("best Shopify subscription app" articles). A's Centrality climb depends on appearing in the buyer's consideration set.</span>
+            <span class="item-src">A</span>
+          </li>
+          <li>
+            <span class="item-title">Cross-sell motion to Joy Loyalty / AOV / Chatty</span>
+            <span class="item-why">Productize the ecosystem hand-off. C identifies "ecosystem flywheel" as Joy's highest-leverage CAC reduction — turn it from happy accident into a sales playbook.</span>
+            <span class="item-src">C</span>
+          </li>
+          <li>
+            <span class="item-title">International expansion (SEA / APAC / MENA / LATAM)</span>
+            <span class="item-why">Localize messaging + payment playbooks for non-US markets. A says Joy's centrality in non-US is already above the global average; this is the underserved segment competitors (84–97% US-merchants) ignore.</span>
+            <span class="item-src">A</span>
+          </li>
+          <li>
+            <span class="item-title">Systematize the named-partner playbook</span>
+            <span class="item-why">Turn manual high-touch into a documented onboarding ops layer. C's geo-arbitrage formula only compounds if support quality scales without per-merchant cost growing linearly.</span>
+            <span class="item-src">C</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- MAINTAIN -->
+      <div class="pcol maintain">
+        <div class="pcol-head">
+          <div class="pcol-icon">=</div>
+          <div class="pcol-title">Maintain</div>
+          <span class="pcol-tag">Keep as-is</span>
+        </div>
+        <ul>
+          <li>
+            <span class="item-title">"We only earn when you earn" pricing</span>
+            <span class="item-why">Core wedge defining Joy. A's biggest distinctiveness lever (8.5); B2 confirms "value for money" is a top-3 review theme.</span>
+            <span class="item-src">A · B2</span>
+          </li>
+          <li>
+            <span class="item-title">Free 6 months / $1M revenue gateway</span>
+            <span class="item-why">Removes the primary objection from Boutique Players. C confirms it's the funnel converter that makes the entire formula work.</span>
+            <span class="item-src">C</span>
+          </li>
+          <li>
+            <span class="item-title">All-features-day-1 (no upsell walls)</span>
+            <span class="item-why">C operation formula #3. B2 review theme: merchants explicitly praise "free unrestricted." Don't introduce gating — it would collapse the trust narrative.</span>
+            <span class="item-src">B2 · C</span>
+          </li>
+          <li>
+            <span class="item-title">24/7 live chat quality</span>
+            <span class="item-why">B2 puts Joy at top on support speed (9). Maintain depth even as volume grows — quality is the compound interest engine.</span>
+            <span class="item-src">B2</span>
+          </li>
+          <li>
+            <span class="item-title">Done-for-you setup with named partners</span>
+            <span class="item-why">A's secondary distinctive pillar. B2's personal-touch score (9) is reviewer-confirmed; reviews name Avery, Philip, Olivia, Daniel, Iris.</span>
+            <span class="item-src">A · B2</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ELIMINATE / REDUCE -->
+      <div class="pcol cut">
+        <div class="pcol-head">
+          <div class="pcol-icon">↓</div>
+          <div class="pcol-title">Eliminate / Reduce</div>
+          <span class="pcol-tag">Stop or scale back</span>
+        </div>
+        <ul>
+          <li>
+            <span class="item-title">Reduce: feature-parity arms race vs Appstle</span>
+            <span class="item-why">A places Appstle in Mainstream (low distinctiveness). B1 shows Joy at parity on Features without needing to lead. Don't burn engineering on catalog matching.</span>
+            <span class="item-src">A · B1</span>
+          </li>
+          <li>
+            <span class="item-title">Eliminate: Shopify Plus / Hydrogen targeting</span>
+            <span class="item-why">Leave enterprise to Recharge (87% Plus) and Loop (57% Plus). A places Joy in Boutique Players; C's geo-arbitrage formula doesn't fit enterprise sales motion.</span>
+            <span class="item-src">A · C</span>
+          </li>
+          <li>
+            <span class="item-title">Reduce: advanced retention / gamified winback</span>
+            <span class="item-why">Loop owns this corner (B1 score 10 vs Joy 5). Boutique Players don't have a churn problem yet — chasing Loop dilutes Joy's distinctive position. "Good enough" is the right level.</span>
+            <span class="item-src">A · B1</span>
+          </li>
+          <li>
+            <span class="item-title">Reduce: paid acquisition spend</span>
+            <span class="item-why">C's "trust as compound interest" formula relies on review velocity + Avada cross-sell, not ads. CAC should fall with each cohort, not rise.</span>
+            <span class="item-src">C</span>
+          </li>
+          <li>
+            <span class="item-title">Eliminate: tier complexity / multiple plan toggles</span>
+            <span class="item-why">Boutique Players (per C insight) have "no time for a complex tool." Tier confusion kills the "no value, no charge" message clarity at the moment of decision.</span>
+            <span class="item-src">C</span>
+          </li>
+          <li>
+            <span class="item-title">Reduce: US-only marketing focus</span>
+            <span class="item-why">84–97% of competitors' merchants are US. Joy's structural advantage is the underserved global SMB segment — over-indexing on US wastes the geo-arbitrage moat.</span>
+            <span class="item-src">A</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="profit-summary">
+      <strong>Net effect.</strong> &nbsp; <code>Lower CAC</code> (review velocity + Avada cross-sell, not paid ads) &nbsp;×&nbsp; <code>Higher LTV</code> (ecosystem cross-sell + named-partner retention) &nbsp;×&nbsp; <code>Lower cost-to-serve</code> (Vietnam team + systematized playbook) &nbsp;=&nbsp; <strong>compounding profitability</strong> at SMB scale, without the enterprise sales motion or capex of Recharge/Loop.
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>Joy Subscriptions · Business Model 1-Pager · A + B + C + D of N</div>
+    <div>Frameworks: Dawar &amp; Bagga (HBR 2015), Kim &amp; Mauborgne (Blue Ocean 2005) · Verified 2026-05-06</div>
+  </footer>
+
+</div>
+
+</body>
+</html>

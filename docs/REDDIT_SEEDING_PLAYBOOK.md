@@ -2,7 +2,8 @@
 
 **Goal:** Drive direct traffic + indexable backlinks + Google authority signals via organic Reddit presence.
 **Time budget:** 30 min/day, 5 days/week.
-**Start date:** _____ (fill in)
+**Start date:** 2026-04-30 (account creation, ~1 week before 2026-05-07 confirm)
+**30-day age gate clears:** 2026-05-30 (Phase 2 link drops OK from this date)
 **Account name:** _____ (fill in)
 
 ---
@@ -117,13 +118,15 @@ TL;DR: [one-line summary of the answer]
 
 #### Topic: "Best app for cycle tracking / syncing"
 
-> Depends on what you want it to do. Tracking-only (Flo, Clue) and syncing-execution (28, MyFlo, Lumen) are different problems.
+> Depends on what you want it to do. Period prediction and phase-aware scheduling are different problems most apps don't solve at the same time.
 >
-> If you want pure tracking with the cleanest UI: Clue.
-> If you want symptom logging plus pattern insights: Flo.
-> If you want to actually schedule work/workouts by phase: most tracking apps don't do this well.
+> If you want pure tracking with the cleanest UI: Clue is hard to beat. GDPR-native, Berlin-based, less aggressive on data.
+> If you want fertility awareness with FDA clearance: Natural Cycles.
+> If you want to actually schedule work/workouts by phase: most tracking apps don't do this well. The closest free option I've found is Lumen.
 >
-> I compared the main syncing apps here with what each does best: https://lumencal.com/blog/best-cycle-syncing-app?utm_source=reddit&utm_medium=comment&utm_campaign=seeding_wX
+> Full breakdown of trade-offs across the main options: https://lumencal.com/blog/best-cycle-syncing-app?utm_source=reddit&utm_medium=comment&utm_campaign=seeding_wX
+
+> Note: Flo is intentionally not named in the Reddit script body. The destination blog post does compare Flo, but mentioning Flo by name in Reddit comments triggers Flo's affiliate pre-approval clause for "social media posts." Keep Flo out of comment text until Flo confirms scope.
 
 #### Topic: "Cycle phases chart / what happens when"
 

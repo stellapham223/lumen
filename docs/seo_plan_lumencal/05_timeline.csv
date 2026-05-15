@@ -1,0 +1,58 @@
+,V. TIMELINE,,
+CHI TIẾT CÔNG VIỆC,CÔNG VIỆC,Option 1 (Conservative),Option 2 (Aggressive)
+Kế hoạch; chiến lược và công việc chuẩn bị,,Tháng 4-5/2026 (DONE),Tháng 4-5/2026 (DONE)
+1. Phân tích doanh nghiệp,"- Lumencal positioning: productivity (not diet/fitness)
+- USP: cycle-aware deep work planner
+- Target: ambitious knowledge workers 25-40","DONE — ROADMAP defines positioning","DONE"
+2. Phân tích đối tượng,"- VoC research: App Store + Reddit + Trustpilot
+- Build evidence-based personas (feedback memory: mine real VoC before strategy)","DONE — Sprint 2","DONE"
+3. Lập kế hoạch SEO,"- Keyword research (Ahrefs Free) — docs/keyword_research_2026_04.md
+- Test E selection (5 head-of-funnel pages)","DONE — Sprint 3 Phase 3.0-3.1","DONE"
+4. Lập kế hoạch content,"- Master content research 16 posts: docs/content_research/MASTER_CONTENT_RESEARCH_2026_05.md
+- Calendar 8 weeks: docs/content_research/CONTENT_CALENDAR_2026_05.md","DONE — Sprint 3","DONE"
+5. Lập kế hoạch quảng bá,"- Reddit playbook: docs/REDDIT_SEEDING_PLAYBOOK.md
+- Pinterest pending setup
+- Affiliate strategy: Amazon (done); Flo (scope email pending); Natural Cycles (pending)","DONE — playbooks written","DONE"
+6. Lập kế hoạch liên kết nội bộ,"- Hub-spoke architecture: 04-2 sheet
+- Internal linking matrix: phase hubs + commercial hub","PARTIAL — needs implementation in ship workflow","PARTIAL"
+7. Tracking Event — Cài đặt đo lường,"- GSC + Bing Webmaster (verified)
+- GA4 + Microsoft Clarity (installed lumencal.com)
+- Tracking: scroll depth; CTA click; calculator usage; affiliate click","DONE for free tools (no paid analytics per feedback)","DONE"
+8. Tối ưu giao diện website,"See sheet 2.2","Partial — calculator landing pending","Partial"
+,,,,
+Đẩy nguồn lực,,Tháng 5-10/2026,Tháng 5-7/2026
+1. Tối ưu Onsite,"Implement 17 onsite items from sheet 2.1. Top priority: Schema deployment + Internal linking matrix + Image alt audit.","- 50% từ khóa top 30 by month 6
+- 5k organic traffic/month by month 6","- 50% từ khóa top 20 by month 4
+- 15k organic traffic/month by month 6"
+2. Content,"Ship Posts #10-21 (12 posts left). 2 posts/week (Tue + Fri). Tier 2 deep-dives weeks 4-6. Cornerstone weeks 7-8.","Ship 12 posts over 6 weeks (May 19 - Jun 26)","Ship 12 posts + 5 glossary pages over 6 weeks"
+3. Quảng bá,"- Pinterest: 5-10 pins/post từ May 2026
+- Reddit seeding: starts 2026-05-30 (post age gate)
+- HARO outreach: starts Jul 2026 (after Phase 1 baseline)
+- Guest posts: Q3 2026","- 1 Pinterest pin/post
+- Reddit comments only (no link drops first 30d)","- 5-10 pins/post
+- Reddit link drops sau karma 100+
+- HARO 5 pitches/week"
+4. Tracking Event,"Weekly review: GSC impressions; clicks; avg position; top 30 count","Weekly review by Stella","Daily quick check + weekly deep review"
+,,,,
+Kiểm soát và Audit,,Tháng 7-10/2026,Tháng 7-9/2026
+1. Tracking Event,"- Monthly: full GSC export + analysis
+- Track competitor: SEMrush/Ahrefs free tier check","- 80% từ khóa top 20 by month 10
+- 20k organic traffic/month by month 10","- 80% từ khóa top 10 by month 9
+- 50k organic traffic/month by month 9"
+2. Audit website,"- Technical audit weekly (Lighthouse)
+- Content audit: identify posts under-performing (position 11-30) — optimize for top 10
+- Quarterly Phase 4 decision: open diet/workout cluster?","Quarterly audit","Bi-weekly audit"
+3. Affiliate optimization,"- Track Amazon deadline: 2026-11-03 needs ≥3 sales
+- Apply Flo (after scope email response); Natural Cycles; Oura post-Test E","Monthly affiliate revenue review","Weekly affiliate placement + A/B test"
+4. Email list,"- Setup Substack/ConvertKit after Test E pass
+- Lead magnet: 4-week cycle syncing planner PDF","Launch Q3 2026","Launch Q2 2026 if Test E passes"
+,,,,
+Phase 4 (Optional — Diet/Workout cluster),,Tháng 11/2026 - Q1/2027,Tháng 9-10/2026
+Trigger,"≥1 Test E post top 30 by 2026-05-19 (gate)","Conservative: wait until Phase 1 exit at 10k pageviews","Aggressive: trigger as soon as 3 posts top 20"
+Scope,"16 diet/workout backlog keywords (sheet 3 rows 36-49). Estimated 120 programmatic pages if pursued fully.","20 manual posts","120 programmatic pages with Ahrefs Starter ($29/mo)"
+,,,
+Key Gates (Critical dates),,,
+2026-05-19,"Test E measurement — ≥1 top 30 → unlock Tier 2",—,—
+2026-05-30,"Reddit age gate clears — start link drops",—,—
+2026-06-26,"All 21 posts shipped (per CONTENT_CALENDAR)",—,—
+2026-11-03,"Amazon Associates deadline — need ≥3 sales",—,—

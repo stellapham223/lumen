@@ -194,7 +194,7 @@ Each adds complexity that distracts from north-star (organic SEO traffic). Priva
 | ID | Requirement | Acceptance |
 |---|---|---|
 | F-4.1 | Final brand name + visual identity (logo, color, voice) | Approved by Phương |
-| F-4.2 | Custom domain purchase + 301 from `*.vercel.app` | All old URLs redirect, no 404s |
+| F-4.2 ✅ | Custom domain (lumencal.com) live with Vercel-managed cert | DONE 2026 — env points at lumencal.com |
 | F-4.3 | Email capture (lead magnet PDF) | Signup form on every page, <2s deliverable |
 | F-4.4 | Email service integration (Buttondown $9/mo recommended) | Welcome email sent, list synced |
 | F-4.5 | LinkedIn + Twitter launch posts | Organic posts from Phương's accounts |
@@ -259,7 +259,7 @@ Each adds complexity that distracts from north-star (organic SEO traffic). Priva
 - **Styling**: Tailwind CSS 4
 - **Runtime**: Bun
 - **Hosting**: Vercel (free tier sufficient until ~100k pageviews/month)
-- **Domain**: `*.vercel.app` initially → custom domain Sprint 4
+- **Domain**: lumencal.com (live)
 - **Analytics**: Plausible ($9/mo) or Umami self-hosted (free)
 - **Email**: Buttondown ($9/mo, simple Markdown-based)
 - **Ads**: Ezoic → AdSense after qualification

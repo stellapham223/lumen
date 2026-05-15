@@ -1,0 +1,27 @@
+STT,Term,Funnel,URL slug (planned),Translation (Vi),Definition (short),Linked from posts,Status
+1,Cycle syncing,Solution aware,/glossary/cycle-syncing,Đồng bộ chu kỳ,Practice of aligning lifestyle (work; diet; exercise) with the 4 phases of menstrual cycle.,#1 #2 #3 #4 #5 #16,Planned
+2,Follicular phase,Solution aware,/glossary/follicular-phase,Pha follicular,Day 1-13 of cycle. Rising estrogen. High energy + creative phase.,#12 #18 #20,Planned
+3,Ovulatory phase,Solution aware,/glossary/ovulatory-phase,Pha ovulatory,Day 14-16. Peak estrogen + LH surge. Communication peak.,#15,Planned
+4,Luteal phase,Solution aware,/glossary/luteal-phase,Pha luteal,Day 17-28. Progesterone dominant. Detail-oriented phase.,#13 #17 #20,Planned
+5,Menstrual phase,Solution aware,/glossary/menstrual-phase,Pha menstrual,Day 1-5 (overlap with follicular). Hormones low. Reflective phase.,#14,Planned
+6,Infradian rhythm,Problem aware,/glossary/infradian-rhythm,Nhịp infradian,Biological rhythm longer than 24h. Menstrual cycle is the primary female infradian rhythm.,#1 #7,Planned
+7,Hormone-cognition link,Problem aware,/glossary/hormone-cognition,Liên kết hormone-nhận thức,Estrogen affects verbal fluency; progesterone affects detail processing.,#7,Planned
+8,Basal body temperature,Solution aware,/glossary/basal-body-temperature,Nhiệt độ cơ thể cơ bản,Lowest body temp during rest. Rises ~0.5°F after ovulation due to progesterone.,#9 #15,Planned
+9,LH surge,Solution aware,/glossary/lh-surge,Tăng đột biến LH,Luteinizing hormone surge triggers ovulation 24-36h later.,#15,Planned
+10,FAM (Fertility Awareness Method),Problem aware,/glossary/fam,Phương pháp nhận biết khả năng sinh sản,Birth control method based on tracking BBT + cervical mucus.,#8,Planned
+11,Cycle tracking,Product aware,/glossary/cycle-tracking,Theo dõi chu kỳ,Recording cycle data (length; symptoms; basal temp) for prediction.,#5 #11 #19,Planned
+12,Anovulatory cycle,Problem aware,/glossary/anovulatory-cycle,Chu kỳ không rụng trứng,Cycle without ovulation. Common on hormonal birth control.,#8,Planned
+13,PMS (Premenstrual Syndrome),Solution aware,/glossary/pms,Hội chứng tiền kinh nguyệt,Symptoms in late luteal phase: mood; bloating; cravings.,#17,Planned
+14,PMDD,Problem aware,/glossary/pmdd,Rối loạn khí sắc tiền kinh nguyệt,Severe form of PMS — clinical diagnosis. Affects ~3-8% of women.,#17,Planned
+15,Estrogen,Solution aware,/glossary/estrogen,Estrogen,Primary female sex hormone. Peaks late follicular + ovulatory phase.,#7 #12,Planned
+16,Progesterone,Solution aware,/glossary/progesterone,Progesterone,Dominant hormone in luteal phase. Calming; sleep-promoting.,#7 #13,Planned
+17,FSH,Solution aware,/glossary/fsh,FSH (Follicle Stimulating Hormone),Triggers follicle growth in early follicular phase.,#12,Planned
+18,Cervical mucus,Solution aware,/glossary/cervical-mucus,Dịch nhầy cổ tử cung,Changes texture throughout cycle. Egg-white consistency = fertile window.,#9,Planned
+19,Combined oral contraceptive,Problem aware,/glossary/combined-oral-contraceptive,Thuốc tránh thai phối hợp,Pill with estrogen + progestin. Suppresses ovulation. Cycle syncing not applicable.,#8,Planned
+20,Cycle length,Solution aware,/glossary/cycle-length,Độ dài chu kỳ,Day 1 of period to day before next period. Average 28d (range 21-35d normal).,#1 #9,Planned
+,,,,,,,
+,Summary,,,,,,
+,Total glossary terms,20,,,,,
+,Status,All planned (none built),,,,,
+,Priority,"Build top 5 first (cycle syncing; 4 phases) — drive most internal link value",,,,,
+,Format,"Each glossary page: 200-400 words. Definition + when it matters + related posts. Schema: DefinedTerm",,,,,

@@ -171,7 +171,11 @@ A: It is overclaimed. The popular framing comes from one early book (FloLiving) 
 
 ## 9. Affiliate placements
 
-None primary. Optional: a single inline reference to a heating pad or magnesium glycinate with Amazon Associates link in the "self-care without woo" section, only after Amazon approval. Maximum 1 link, with full disclosure block at top if any link is included.
+Amazon Associates approved (`lumencal0c-20`). Optional, max 1 link:
+- Heating pad in "self-care without woo" section. Search URL: `https://www.amazon.com/s?k=menstrual+heating+pad&tag=lumencal0c-20`. Use `rel="sponsored noopener noreferrer"`.
+- OR magnesium glycinate (single brand, contextualized as "if your provider recommends supplementation"). Search URL: `https://www.amazon.com/s?k=magnesium+glycinate&tag=lumencal0c-20`.
+
+Pick ONE, not both. Global `<AffiliateDisclosure>` in blog layout covers disclosure requirement.
 
 ## 10. Pinterest pin angles (5)
 

@@ -179,11 +179,12 @@ A: Shortening of the follicular phase is one of the earlier signs of perimenopau
 
 | Where | Product | Program | Note |
 |-------|---------|---------|------|
-| Workouts callout | Oura Ring | Impact | track training response across phases; relevant, low pressure |
-| PCOS callout | Mira Fertility Monitor | Mira affiliate (apply) | only if relevant; 1 link max in this section |
-| Closing | None | n/a | Hub posts should not feel salesy; max 1-2 affiliate links |
+| Reading list | *In the FLO* by Alisa Vitti | Amazon Associates (`lumencal0c-20`) | Book context for follicular-phase deep work. Search URL until ASIN confirmed: `https://www.amazon.com/s?k=In+the+FLO+Alisa+Vitti&tag=lumencal0c-20`. `rel="sponsored noopener noreferrer"`. |
+| Workouts callout | Oura Ring | Impact (pending) | Track training response across phases; relevant, low pressure |
+| PCOS callout | Mira Fertility Monitor | Mira affiliate (apply) | Only if relevant; 1 link max in this section |
+| Closing | None | n/a | Hub posts should not feel salesy; max 2 affiliate links total |
 
-(Hard cap: 2 affiliate links. Disclosure at top.)
+(Hard cap: 2 affiliate links. Global `<AffiliateDisclosure>` in blog layout covers Amazon requirement; Oura/Mira need program-specific disclosure if added.)
 
 ## 10. Pinterest pin angles (5)
 

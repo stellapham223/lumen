@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lumen, Business Model 1-Pager · A. C-D Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #420093;
+  --leading: #3d6a4c;
+  --transition: #a66d24;
+  --gap: #8a3c42;
+
+  --ink: #1b1c1c;
+  --muted: #4a4453;
+  --line: #ccc3d6;
+  --bg: #f6f3f2;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--ink);
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px 32px 48px;
+}
+
+/* ============== HEADER ============== */
+.hero {
+  padding-bottom: 24px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+.hero .eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.hero h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+  color: var(--ink);
+}
+.hero .lead {
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 880px;
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+.hero-meta {
+  display: flex;
+  gap: 24px;
+  font-size: 12px;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+.hero-meta strong { color: var(--ink); font-weight: 600; }
+
+/* ============== SIDE-BY-SIDE GRID ============== */
+.section-a {
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* ============== MAP COLUMN ============== */
+.col-map {
+  display: flex;
+  flex-direction: column;
+}
+.col-head {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.col-head strong { color: var(--ink); }
+
+.cdmap-frame {
+  flex: 1;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 36px 44px 52px 56px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cdmap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+.cdmap-inner {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.q {
+  position: relative;
+  border-right: 1px dashed var(--line);
+  border-bottom: 1px dashed var(--line);
+}
+.q:nth-child(2) { border-right: none; }
+.q:nth-child(3) { border-bottom: none; }
+.q:nth-child(4) { border-right: none; border-bottom: none; }
+
+.q-label {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.q-label-uncon { top: 10px; left: 10px; }
+.q-label-asp { top: 10px; right: 10px; color: var(--ink); }
+.q-label-peri { bottom: 10px; left: 10px; }
+.q-label-main { bottom: 10px; right: 10px; }
+
+.axis-y, .axis-x {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.axis-title-y {
+  left: -42px; top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  white-space: nowrap;
+  color: var(--ink);
+  font-size: 11px;
+}
+.axis-title-x {
+  bottom: -34px; left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  color: var(--ink);
+  font-size: 11px;
+}
+.tick {
+  position: absolute;
+  font-size: 9px;
+  color: #B5B5C2;
+  font-weight: 500;
+}
+.tick-x { bottom: -16px; transform: translateX(-50%); }
+.tick-y { left: -18px; transform: translateY(50%); }
+
+.dot {
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  background: var(--ink);
+  width: 10px;
+  height: 10px;
+}
+.dot.lumen {
+  background: var(--primary);
+  width: 14px;
+  height: 14px;
+  box-shadow: 0 0 0 4px rgba(66, 0, 147, 0.18);
+  z-index: 6;
+}
+.label {
+  position: absolute;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink);
+  white-space: nowrap;
+  z-index: 3;
+  background: #fff;
+  padding: 2px 4px;
+}
+.label.lumen {
+  font-weight: 700;
+  color: var(--primary);
+}
+.label-pos-tr { transform: translate(10px, -50%); }
+.label-pos-tl { transform: translate(calc(-100% - 10px), -50%); }
+.label-pos-b { transform: translate(-50%, 12px); }
+.label-pos-t { transform: translate(-50%, calc(-100% - 12px)); }
+
+.arrow-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+.target-ring {
+  position: absolute;
+  width: 28px; height: 28px;
+  border: 1.5px dashed var(--transition);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+/* ============== TAKEAWAY COLUMN ============== */
+.col-take {
+  display: flex;
+  flex-direction: column;
+}
+.takeaway-frame {
+  flex: 1;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 28px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.takeaway-frame h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+.takeaway-frame .sub {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin-bottom: 22px;
+  line-height: 1.5;
+}
+.takeaway-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.takeaway-list li {
+  padding: 14px 16px;
+  background: var(--bg);
+  border-left: 2px solid var(--leading);
+}
+.takeaway-list li:nth-child(2) { border-left-color: var(--transition); }
+.takeaway-list li:nth-child(3) { border-left-color: var(--gap); }
+.takeaway-list .num {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.takeaway-list h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+.takeaway-list p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+/* ============== FOOTER ============== */
+.footer {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+@media (max-width: 1080px) {
+  .section-a { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .page { padding: 24px 16px; }
+  .cdmap-frame { padding: 32px 32px 48px 48px; }
+  .label { font-size: 10px; }
+}
+
+/* ============== SECTION B ============== */
+.section-b {
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+.section-b-head { margin-bottom: 20px; }
+.section-b-head .eyebrow {
+  display: block;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.section-b-head h2 {
+  font-size: 24px; font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.section-b-head p {
+  font-size: 13px; color: var(--muted);
+  max-width: 880px;
+  line-height: 1.55;
+}
+
+.section-b-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+.canvas-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.canvas-frame {
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 22px 18px 18px;
+  margin-bottom: 14px;
+}
+.canvas-svg { display: block; width: 100%; height: auto; }
+.canvas-legend {
+  display: flex; flex-wrap: wrap; gap: 14px;
+  padding-top: 12px;
+  margin-top: 4px;
+  border-top: 1px solid var(--line);
+  font-size: 11px;
+  color: var(--muted);
+}
+.canvas-legend-item {
+  display: flex; align-items: center; gap: 6px;
+}
+.canvas-legend-line {
+  width: 22px; height: 2px;
+  background: var(--muted);
+  border-radius: 1px;
+}
+.canvas-legend-line.lumen { background: var(--leading); height: 3px; }
+.canvas-legend-line.flo { background: #4A4A60; }
+.canvas-legend-line.clue { background: #7C7C92; }
+.canvas-legend-line.phase { background: var(--primary); }
+.canvas-legend-line.wildai { background: #9090A2; }
+.canvas-legend-line.naturalcycles { background: #A8A8B8; }
+.canvas-legend-item.lumen { color: var(--primary); font-weight: 600; }
+
+.canvas-note {
+  font-size: 11px;
+  font-style: italic;
+  color: var(--muted);
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.sum-card {
+  padding: 12px 14px;
+  background: var(--bg);
+  border-left: 2px solid var(--leading);
+}
+.sum-card.gap { border-left-color: var(--gap); }
+.sum-card.blue { border-left-color: var(--transition); }
+.sum-card .sum-tag {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.sum-card.leading .sum-tag { color: var(--leading); }
+.sum-card.gap .sum-tag { color: var(--gap); }
+.sum-card.blue .sum-tag { color: var(--transition); }
+.sum-card ul {
+  list-style: none;
+  font-size: 12px;
+  color: var(--ink);
+  line-height: 1.5;
+}
+.sum-card ul li {
+  padding: 2px 0;
+}
+.sum-card ul li strong { font-weight: 600; }
+.sum-card p {
+  font-size: 11.5px;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+@media (max-width: 720px) {
+  .summary-cards { grid-template-columns: 1fr; }
+}
+
+/* ============== SECTION C ============== */
+.section-c {
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+.section-c-head { margin-bottom: 18px; }
+.section-c-head .eyebrow {
+  display: block;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.section-c-head h2 {
+  font-size: 24px; font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.section-c-head p {
+  font-size: 13px; color: var(--muted);
+  max-width: 880px;
+  line-height: 1.55;
+}
+
+.formula-eq {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.formula-eq .op {
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 15px;
+}
+.formula-eq .op.arrow {
+  color: var(--leading);
+  font-size: 18px;
+}
+.formula-eq .term-r { color: var(--primary); font-weight: 600; }
+.formula-eq .term-i { color: var(--leading); font-weight: 600; }
+.formula-eq .term-c { color: var(--transition); font-weight: 600; }
+.formula-eq .term-d { color: var(--gap); font-weight: 600; }
+.formula-eq .term-f { color: var(--ink); font-weight: 700; }
+
+.formula-table {
+  display: grid;
+  gap: 8px;
+}
+.formula-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.25fr;
+  gap: 8px;
+  align-items: stretch;
+}
+.formula-head .col-h {
+  padding: 8px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 2px solid var(--line);
+}
+.formula-head .col-h.h-r { color: var(--primary); border-bottom-color: var(--primary); }
+.formula-head .col-h.h-i { color: var(--leading); border-bottom-color: var(--leading); }
+.formula-head .col-h.h-c { color: var(--transition); border-bottom-color: var(--transition); }
+.formula-head .col-h.h-d { color: var(--gap); border-bottom-color: var(--gap); }
+.formula-head .col-h.h-f { color: var(--ink); border-bottom-color: var(--ink); }
+
+.cell {
+  padding: 14px 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.cell.c-r { border-top: 3px solid var(--primary); }
+.cell.c-i { border-top: 3px solid var(--leading); }
+.cell.c-c { border-top: 3px solid var(--transition); }
+.cell.c-d { border-top: 3px solid var(--gap); }
+.cell.c-f {
+  border-top: 3px solid var(--ink);
+  background: var(--bg);
+}
+.cell-tag {
+  display: none;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.cell strong { font-weight: 600; color: var(--primary); }
+.cell.c-i strong { color: var(--leading); }
+.cell.c-c strong { color: var(--transition); }
+.cell.c-d strong { color: var(--gap); }
+.cell.c-f strong { color: var(--ink); }
+.cell .quote {
+  font-style: italic;
+  color: var(--muted);
+}
+
+@media (max-width: 1080px) {
+  .formula-head { display: none; }
+  .formula-row { grid-template-columns: 1fr; gap: 6px; }
+  .cell { padding: 12px 14px; }
+  .cell-tag { display: block; }
+  .formula-table > .formula-row + .formula-row {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--line);
+  }
+}
+
+/* ============== SECTION D ============== */
+.section-d {
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+.section-d-head { margin-bottom: 18px; }
+.section-d-head .eyebrow {
+  display: block;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.section-d-head h2 {
+  font-size: 24px; font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.section-d-head p {
+  font-size: 13px; color: var(--muted);
+  max-width: 880px;
+  line-height: 1.55;
+}
+
+.profit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+.pcol {
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 18px 16px;
+}
+.pcol.raise { border-top: 3px solid var(--leading); }
+.pcol.maintain { border-top: 3px solid var(--transition); }
+.pcol.cut { border-top: 3px solid var(--gap); }
+
+.pcol-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.pcol-icon {
+  width: 26px; height: 26px;
+  border-radius: 4px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 700;
+  color: white;
+}
+.pcol.raise .pcol-icon { background: var(--leading); }
+.pcol.maintain .pcol-icon { background: var(--transition); color: white; }
+.pcol.cut .pcol-icon { background: var(--gap); }
+
+.pcol-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.3px;
+}
+.pcol-tag {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-left: auto;
+}
+.pcol ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.pcol ul li {
+  font-size: 12px;
+  line-height: 1.55;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--line);
+}
+.pcol ul li:last-child { border-bottom: none; padding-bottom: 0; }
+.pcol .item-title {
+  display: block;
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 12.5px;
+  margin-bottom: 4px;
+}
+.pcol .item-why {
+  display: block;
+  color: var(--muted);
+  font-size: 11.5px;
+  margin-bottom: 6px;
+}
+.pcol .item-src {
+  display: inline-block;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: var(--muted);
+  background: var(--bg);
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+
+.profit-summary {
+  margin-top: 16px;
+  padding: 14px 18px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--ink);
+  font-size: 13px;
+  color: var(--ink);
+  line-height: 1.6;
+}
+.profit-summary strong { font-weight: 700; }
+.profit-summary code {
+  font-family: inherit;
+  background: #fff;
+  padding: 1px 6px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+@media (max-width: 1080px) {
+  .profit-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="hero">
+    <span class="eyebrow">Lumen · Business Model 1-Pager</span>
+    <h1>A. C-D Map</h1>
+    <p class="lead">Lumen's positioning vs 7 cycle-tracking and cycle-syncing competitors, on Centrality (how prototypical the brand is in the category) and Distinctiveness (how uniquely it stands apart). Framework: Dawar &amp; Bagga, HBR 2015. Scores triangulated from App Store data, Mozilla Privacy Not Included ratings, 2025 review-wave coverage, and industry comparison articles.</p>
+    <div class="hero-meta">
+      <span><strong>Owner</strong> Phương (Lumen founder)</span>
+      <span><strong>Updated</strong> 2026-05-11</span>
+      <span><strong>Brands</strong> Lumen + Flo, Clue, Phase, Wild.AI, Natural Cycles, In Flow Planner, Apple Health</span>
+    </div>
+  </header>
+
+  <!-- SIDE-BY-SIDE: MAP + TAKEAWAYS -->
+  <section class="section-a">
+
+    <!-- LEFT: MAP -->
+    <div class="col-map">
+      <div class="col-head"><strong>The Map</strong> · each dot = one brand · larger dot = Lumen</div>
+      <div class="cdmap-frame">
+        <div class="cdmap">
+
+          <span class="axis-y axis-title-y">Distinctiveness →</span>
+          <span class="axis-x axis-title-x">Centrality →</span>
+
+          <span class="tick tick-x" style="left: 0%;">0</span>
+          <span class="tick tick-x" style="left: 50%;">5</span>
+          <span class="tick tick-x" style="left: 100%;">10</span>
+          <span class="tick tick-y" style="top: 100%;">0</span>
+          <span class="tick tick-y" style="top: 50%;">5</span>
+          <span class="tick tick-y" style="top: 0%;">10</span>
+
+          <div class="cdmap-inner">
+            <div class="q"><span class="q-label q-label-uncon">Unconventional</span></div>
+            <div class="q"><span class="q-label q-label-asp">Aspirational</span></div>
+            <div class="q"><span class="q-label q-label-peri">Peripheral</span></div>
+            <div class="q"><span class="q-label q-label-main">Mainstream</span></div>
+          </div>
+
+          <!--
+            Coords (Distinctiveness, Centrality) on 0-10:
+            Lumen          (8.0, 2.0) -> 20%, 20%
+            Phase          (7.5, 4.5) -> 45%, 25%
+            Wild.AI        (7.0, 3.5) -> 35%, 30%
+            In Flow        (6.5, 2.0) -> 20%, 35%
+            Natural Cycles (6.0, 6.5) -> 65%, 40%
+            Apple Health   (3.0, 7.0) -> 70%, 70%
+            Clue           (4.0, 8.0) -> 80%, 60%
+            Flo            (2.5, 9.5) -> 95%, 75%
+
+            Target ring at (8.0, 6.5) -> 65%, 20% (Aspirational quadrant)
+          -->
+
+          <svg class="arrow-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <defs>
+              <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#a66d24"/>
+              </marker>
+            </defs>
+            <path d="M 22 20 Q 42 12, 63 20"
+                  fill="none"
+                  stroke="#a66d24"
+                  stroke-width="0.5"
+                  stroke-dasharray="1.2 1"
+                  marker-end="url(#arrowhead)"/>
+          </svg>
+
+          <div class="target-ring" style="left: 65%; top: 20%;"></div>
+
+          <div class="dot lumen" style="left: 20%; top: 20%;" title="Lumen (8.0 · 2.0)"></div>
+          <div class="label lumen label-pos-b" style="left: 20%; top: 20%;">Lumen</div>
+
+          <div class="dot" style="left: 45%; top: 25%;" title="Phase (7.5 · 4.5)"></div>
+          <div class="label label-pos-tr" style="left: 45%; top: 25%;">Phase</div>
+
+          <div class="dot" style="left: 35%; top: 30%;" title="Wild.AI (7.0 · 3.5)"></div>
+          <div class="label label-pos-b" style="left: 35%; top: 30%;">Wild.AI</div>
+
+          <div class="dot" style="left: 20%; top: 35%;" title="In Flow Planner (6.5 · 2.0)"></div>
+          <div class="label label-pos-tr" style="left: 20%; top: 35%;">In Flow</div>
+
+          <div class="dot" style="left: 65%; top: 40%;" title="Natural Cycles (6.0 · 6.5)"></div>
+          <div class="label label-pos-tr" style="left: 65%; top: 40%;">Natural Cycles</div>
+
+          <div class="dot" style="left: 80%; top: 60%;" title="Clue (4.0 · 8.0)"></div>
+          <div class="label label-pos-tl" style="left: 80%; top: 60%;">Clue</div>
+
+          <div class="dot" style="left: 70%; top: 70%;" title="Apple Health (3.0 · 7.0)"></div>
+          <div class="label label-pos-tl" style="left: 70%; top: 70%;">Apple Health</div>
+
+          <div class="dot" style="left: 95%; top: 75%;" title="Flo (2.5 · 9.5)"></div>
+          <div class="label label-pos-tl" style="left: 95%; top: 75%;">Flo</div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: TAKEAWAYS -->
+    <div class="col-take">
+      <div class="col-head"><strong>Key Takeaways</strong> · three sentences to remember</div>
+      <div class="takeaway-frame">
+        <h2>Three sentences to remember</h2>
+        <p class="sub">If a future Lumen collaborator can only remember three things from this map, these are them.</p>
+        <ul class="takeaway-list">
+          <li>
+            <span class="num">01</span>
+            <h4>Lumen is Unconventional by design, not by accident</h4>
+            <p>High distinctiveness (8.0), near-zero centrality (2.0). Free + web + productivity-first is a structural choice subscription incumbents cannot copy without cannibalizing their MRR.</p>
+          </li>
+          <li>
+            <span class="num">02</span>
+            <h4>Climb to Aspirational via the X-axis</h4>
+            <p>Do not change the position, amplify it. SEO authority (120 programmatic pages), email list, and Reddit credibility are the three accelerators on Centrality.</p>
+          </li>
+          <li>
+            <span class="num">03</span>
+            <h4>Phase is the closest neighbor in a different lane</h4>
+            <p>Both Unconventional, but Phase owns paid-app subscribers in fitness-adjacent productivity (5★ review base of 5 raters, all early adopters). Lumen owns free SEO discovery for skeptical knowledge workers. Do not cross lanes.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============== SECTION B ============== -->
+  <section class="section-b">
+    <div class="section-b-head">
+      <span class="eyebrow">Lumen · Business Model 1-Pager</span>
+      <h2>B. Competing &amp; Verifying Factors</h2>
+      <p>Strategy Canvas (Blue Ocean, Kim &amp; Mauborgne 2005), score each app on the factors that matter, plot value curves, find where Lumen <em>leads</em>, <em>lags</em>, and where the <em>blue ocean</em> opens up. <strong>B1</strong> measures the app's inner capability. <strong>B2</strong> measures what users actually say in reviews and threads, drawn from the Voice-of-Customer evidence file at <code>docs/research/VOC_CYCLE_TRACKING_2026_05.md</code>.</p>
+    </div>
+
+    <div class="section-b-grid">
+
+      <!-- ========== B1: COMPETING FACTORS ========== -->
+      <div class="canvas-col">
+        <div class="col-head"><strong>B1. Competing Factors</strong> · App's inner capability (objective scoring)</div>
+        <div class="canvas-frame">
+          <svg class="canvas-svg" viewBox="0 0 1000 400" preserveAspectRatio="xMidYMid meet">
+            <!-- BLUE OCEAN bands: Price (50) + Web (250) + Privacy (450) -->
+            <rect x="10" y="40" width="80" height="280" fill="#3d6a4c" opacity="0.10"/>
+            <rect x="210" y="40" width="80" height="280" fill="#3d6a4c" opacity="0.10"/>
+            <rect x="410" y="40" width="80" height="280" fill="#3d6a4c" opacity="0.10"/>
+            <text x="50" y="32" text-anchor="middle" font-size="9" fill="#420093" font-weight="700" letter-spacing="1">BLUE OCEAN</text>
+            <text x="250" y="32" text-anchor="middle" font-size="9" fill="#420093" font-weight="700" letter-spacing="1">BLUE OCEAN</text>
+            <text x="450" y="32" text-anchor="middle" font-size="9" fill="#420093" font-weight="700" letter-spacing="1">BLUE OCEAN</text>
+
+            <!-- gridlines -->
+            <line x1="50" y1="40" x2="950" y2="40" stroke="#EFEFF4" stroke-width="1"/>
+            <line x1="50" y1="180" x2="950" y2="180" stroke="#EFEFF4" stroke-width="1" stroke-dasharray="2 3"/>
+            <line x1="50" y1="320" x2="950" y2="320" stroke="#D5D6DE" stroke-width="1"/>
+
+            <text x="38" y="44" text-anchor="end" font-size="10" fill="#B5B5C2">10</text>
+            <text x="38" y="184" text-anchor="end" font-size="10" fill="#B5B5C2">5</text>
+            <text x="38" y="324" text-anchor="end" font-size="10" fill="#B5B5C2">0</text>
+
+            <text x="50" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">Price (free)</text>
+            <text x="150" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">SEO</text>
+            <text x="250" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">Web</text>
+            <text x="350" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">Productivity</text>
+            <text x="450" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">Privacy</text>
+            <text x="550" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">Science depth</text>
+            <text x="650" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">Mobile polish</text>
+            <text x="750" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">AI</text>
+            <text x="850" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">Community</text>
+            <text x="950" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">Clinical</text>
+
+            <g stroke="#EFEFF4" stroke-width="1">
+              <line x1="50" y1="40" x2="50" y2="320"/>
+              <line x1="150" y1="40" x2="150" y2="320"/>
+              <line x1="250" y1="40" x2="250" y2="320"/>
+              <line x1="350" y1="40" x2="350" y2="320"/>
+              <line x1="450" y1="40" x2="450" y2="320"/>
+              <line x1="550" y1="40" x2="550" y2="320"/>
+              <line x1="650" y1="40" x2="650" y2="320"/>
+              <line x1="750" y1="40" x2="750" y2="320"/>
+              <line x1="850" y1="40" x2="850" y2="320"/>
+              <line x1="950" y1="40" x2="950" y2="320"/>
+            </g>
+
+            <!-- Natural Cycles (lightest, behind): 2,3,1,1,3,9,8,7,6,10 -->
+            <polyline points="50,264 150,236 250,292 350,292 450,236 550,68 650,96 750,124 850,152 950,40" fill="none" stroke="#A8A8B8" stroke-width="1.4"/>
+            <!-- Wild.AI: 3,1,1,6,2,7,8,9,6,6 -->
+            <polyline points="50,236 150,292 250,292 350,152 450,264 550,124 650,96 750,68 850,152 950,152" fill="none" stroke="#9090A2" stroke-width="1.5"/>
+            <!-- Clue: 5,4,1,2,4,8,8,5,7,8 -->
+            <polyline points="50,180 150,208 250,292 350,264 450,208 550,96 650,96 750,180 850,124 950,96" fill="none" stroke="#7C7C92" stroke-width="1.6"/>
+            <!-- Flo: 4,3,1,2,2,5,9,8,8,7 -->
+            <polyline points="50,208 150,236 250,292 350,264 450,264 550,180 650,68 750,96 850,96 950,124" fill="none" stroke="#4A4A60" stroke-width="1.8"/>
+            <!-- Phase: 3,1,1,8,3,7,8,6,5,5 -->
+            <polyline points="50,236 150,292 250,292 350,96 450,236 550,124 650,96 750,152 850,180 950,180" fill="none" stroke="#420093" stroke-width="1.8"/>
+
+            <!-- Lumen (on top, prominent): 10,7,10,9,10,6,2,3,1,3 -->
+            <polyline points="50,40 150,124 250,40 350,68 450,40 550,152 650,264 750,236 850,292 950,236" fill="none" stroke="#3d6a4c" stroke-width="3"/>
+
+            <g fill="#3d6a4c">
+              <circle cx="50" cy="40" r="4"/>
+              <circle cx="150" cy="124" r="4"/>
+              <circle cx="250" cy="40" r="4"/>
+              <circle cx="350" cy="68" r="4"/>
+              <circle cx="450" cy="40" r="4"/>
+              <circle cx="550" cy="152" r="4"/>
+              <circle cx="650" cy="264" r="4"/>
+              <circle cx="750" cy="236" r="4"/>
+              <circle cx="850" cy="292" r="4"/>
+              <circle cx="950" cy="236" r="4"/>
+            </g>
+
+            <g font-size="10" fill="#420093" font-weight="700" text-anchor="middle">
+              <text x="50" y="30">10</text>
+              <text x="150" y="114">7</text>
+              <text x="250" y="30">10</text>
+              <text x="350" y="58">9</text>
+              <text x="450" y="30">10</text>
+              <text x="550" y="142">6</text>
+              <text x="650" y="254">2</text>
+              <text x="750" y="226">3</text>
+              <text x="850" y="282">1</text>
+              <text x="950" y="226">3</text>
+            </g>
+          </svg>
+
+          <div class="canvas-legend">
+            <div class="canvas-legend-item lumen"><span class="canvas-legend-line lumen"></span>Lumen</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line phase"></span>Phase</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line flo"></span>Flo</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line clue"></span>Clue</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line wildai"></span>Wild.AI</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line naturalcycles"></span>Natural Cycles</div>
+          </div>
+        </div>
+
+        <div class="summary-cards">
+          <div class="sum-card leading">
+            <span class="sum-tag">Leading</span>
+            <ul>
+              <li><strong>Price</strong> (10), only free entrant</li>
+              <li><strong>Web, no install</strong> (10), category-unique</li>
+              <li><strong>Privacy</strong> (10), client-side, no signup</li>
+              <li><strong>Productivity framing</strong> (9), tied w/ Phase</li>
+            </ul>
+          </div>
+          <div class="sum-card gap">
+            <span class="sum-tag">Gap (by choice)</span>
+            <ul>
+              <li><strong>Mobile polish</strong> (2), no native app</li>
+              <li><strong>AI</strong> (3), no personalization engine</li>
+              <li><strong>Community</strong> (1), pre-launch</li>
+              <li><strong>Clinical credentials</strong> (3)</li>
+            </ul>
+          </div>
+          <div class="sum-card blue">
+            <span class="sum-tag">Blue Ocean</span>
+            <ul>
+              <li><strong>Price + Web + Privacy together</strong>, no competitor scores ≥4 on more than one of these. Incumbents cannot match without breaking their own revenue model or rebuilding their architecture.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== B2: VERIFYING FACTORS (VoC) ========== -->
+      <div class="canvas-col">
+        <div class="col-head"><strong>B2. Verifying Factors</strong> · what users actually say in reviews and threads</div>
+        <div class="canvas-frame">
+          <svg class="canvas-svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+            <!-- BLUE OCEAN bands: Privacy (50), Paywall (150), App fatigue (550), Productivity (650) -->
+            <rect x="10" y="40" width="80" height="280" fill="#3d6a4c" opacity="0.10"/>
+            <rect x="110" y="40" width="80" height="280" fill="#3d6a4c" opacity="0.10"/>
+            <rect x="510" y="40" width="80" height="280" fill="#3d6a4c" opacity="0.10"/>
+            <rect x="610" y="40" width="80" height="280" fill="#3d6a4c" opacity="0.10"/>
+            <text x="50" y="32" text-anchor="middle" font-size="9" fill="#420093" font-weight="700" letter-spacing="1">BLUE OCEAN</text>
+            <text x="150" y="32" text-anchor="middle" font-size="9" fill="#420093" font-weight="700" letter-spacing="1">BLUE OCEAN</text>
+            <text x="550" y="32" text-anchor="middle" font-size="9" fill="#420093" font-weight="700" letter-spacing="1">BLUE OCEAN</text>
+            <text x="650" y="32" text-anchor="middle" font-size="9" fill="#420093" font-weight="700" letter-spacing="1">BLUE OCEAN</text>
+
+            <line x1="50" y1="40" x2="750" y2="40" stroke="#EFEFF4" stroke-width="1"/>
+            <line x1="50" y1="180" x2="750" y2="180" stroke="#EFEFF4" stroke-width="1" stroke-dasharray="2 3"/>
+            <line x1="50" y1="320" x2="750" y2="320" stroke="#D5D6DE" stroke-width="1"/>
+
+            <text x="38" y="44" text-anchor="end" font-size="10" fill="#B5B5C2">10</text>
+            <text x="38" y="184" text-anchor="end" font-size="10" fill="#B5B5C2">5</text>
+            <text x="38" y="324" text-anchor="end" font-size="10" fill="#B5B5C2">0</text>
+
+            <text x="50" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">Privacy trust</text>
+            <text x="150" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">No paywall</text>
+            <text x="250" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">Clean UX</text>
+            <text x="350" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">Accuracy</text>
+            <text x="450" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">Less woo</text>
+            <text x="550" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">Low friction</text>
+            <text x="650" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">Productivity</text>
+            <text x="750" y="345" text-anchor="middle" font-size="10" fill="#4a4453" font-weight="600">Support</text>
+
+            <g stroke="#EFEFF4" stroke-width="1">
+              <line x1="50" y1="40" x2="50" y2="320"/>
+              <line x1="150" y1="40" x2="150" y2="320"/>
+              <line x1="250" y1="40" x2="250" y2="320"/>
+              <line x1="350" y1="40" x2="350" y2="320"/>
+              <line x1="450" y1="40" x2="450" y2="320"/>
+              <line x1="550" y1="40" x2="550" y2="320"/>
+              <line x1="650" y1="40" x2="650" y2="320"/>
+              <line x1="750" y1="40" x2="750" y2="320"/>
+            </g>
+
+            <!-- Natural Cycles: 4,2,6,7,8,3,1,7 -->
+            <polyline points="50,208 150,264 250,152 350,124 450,96 550,236 650,292 750,124" fill="none" stroke="#A8A8B8" stroke-width="1.4"/>
+            <!-- Wild.AI: 5,3,6,6,7,3,7,5 -->
+            <polyline points="50,180 150,236 250,152 350,152 450,124 550,236 650,124 750,180" fill="none" stroke="#9090A2" stroke-width="1.5"/>
+            <!-- Clue: 6,3,3,6,7,3,2,6 -->
+            <polyline points="50,152 150,236 250,236 350,152 450,124 550,236 650,264 750,152" fill="none" stroke="#7C7C92" stroke-width="1.6"/>
+            <!-- Flo: 2,3,3,4,5,2,1,6 -->
+            <polyline points="50,264 150,236 250,236 350,208 450,180 550,264 650,292 750,152" fill="none" stroke="#4A4A60" stroke-width="1.8"/>
+            <!-- Phase: 5,4,7,5,6,3,9,4 -->
+            <polyline points="50,180 150,208 250,124 350,180 450,152 550,236 650,68 750,208" fill="none" stroke="#420093" stroke-width="1.8"/>
+
+            <!-- Lumen (anticipated): 10,10,9,6,9,10,9,5 -->
+            <polyline points="50,40 150,40 250,68 350,152 450,68 550,40 650,68 750,180" fill="none" stroke="#3d6a4c" stroke-width="3" stroke-dasharray="6 3"/>
+
+            <g fill="#3d6a4c">
+              <circle cx="50" cy="40" r="4"/>
+              <circle cx="150" cy="40" r="4"/>
+              <circle cx="250" cy="68" r="4"/>
+              <circle cx="350" cy="152" r="4"/>
+              <circle cx="450" cy="68" r="4"/>
+              <circle cx="550" cy="40" r="4"/>
+              <circle cx="650" cy="68" r="4"/>
+              <circle cx="750" cy="180" r="4"/>
+            </g>
+
+            <g font-size="10" fill="#420093" font-weight="700" text-anchor="middle">
+              <text x="50" y="30">10</text>
+              <text x="150" y="30">10</text>
+              <text x="250" y="58">9</text>
+              <text x="350" y="142">6</text>
+              <text x="450" y="58">9</text>
+              <text x="550" y="30">10</text>
+              <text x="650" y="58">9</text>
+              <text x="750" y="170">5</text>
+            </g>
+          </svg>
+
+          <div class="canvas-legend">
+            <div class="canvas-legend-item lumen"><span class="canvas-legend-line lumen"></span>Lumen (anticipated)</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line phase"></span>Phase</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line flo"></span>Flo</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line clue"></span>Clue</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line wildai"></span>Wild.AI</div>
+            <div class="canvas-legend-item"><span class="canvas-legend-line naturalcycles"></span>Natural Cycles</div>
+          </div>
+          <p class="canvas-note">Lumen's curve is dashed: scores reflect product design intent (Voice-of-Customer pending). To be rebaselined at 100+ user reviews. Competitor scores triangulated from App Store, Trustpilot, Mozilla Privacy Not Included, FTC and class-action filings, and Reddit/Quora threads in <code>docs/research/VOC_CYCLE_TRACKING_2026_05.md</code>.</p>
+        </div>
+
+        <div class="summary-cards">
+          <div class="sum-card leading">
+            <span class="sum-tag">Leading</span>
+            <ul>
+              <li><strong>Privacy trust</strong> (10), client-side, post-Roe credible answer</li>
+              <li><strong>No paywall</strong> (10), every paid app escalated paywalls in 2025</li>
+              <li><strong>Low friction</strong> (10), no signup, no install</li>
+              <li><strong>Productivity framing</strong> (9), tied w/ Phase (paid)</li>
+            </ul>
+          </div>
+          <div class="sum-card gap">
+            <span class="sum-tag">Honest gap</span>
+            <ul>
+              <li><strong>Accuracy</strong> (6 vs Natural Cycles 7), unproven, compounds with evidence-graded content</li>
+              <li><strong>Support / community</strong> (5 vs Natural Cycles 7), single founder, no scale yet</li>
+            </ul>
+          </div>
+          <div class="sum-card blue">
+            <span class="sum-tag">Blue Ocean</span>
+            <ul>
+              <li><strong>Privacy + No paywall + Low friction + Productivity</strong> combined. No competitor scores ≥6 on more than two of these simultaneously. The compound positioning is the moat.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== SECTION C ============== -->
+  <section class="section-c">
+    <div class="section-c-head">
+      <span class="eyebrow">Lumen · Business Model 1-Pager</span>
+      <h2>C. Operation Formula</h2>
+      <p>How Lumen turns what it has + what users need into how the business actually runs. Each column feeds the next, the rightmost column is the synthesis, Lumen's repeatable way of operating.</p>
+    </div>
+
+    <div class="formula-eq">
+      <span class="term-r">Key Resources</span>
+      <span class="op">+</span>
+      <span class="term-i">Customer's Insight</span>
+      <span class="op arrow">⇒</span>
+      <span class="term-c">Values Created</span>
+      <span class="op">+</span>
+      <span class="term-d">Values Delivered</span>
+      <span class="op arrow">⇒</span>
+      <span class="term-f">Operation Formula</span>
+    </div>
+
+    <div class="formula-table">
+
+      <div class="formula-row formula-head">
+        <div class="col-h h-r">Key Resource</div>
+        <div class="col-h h-i">Customer's Insight</div>
+        <div class="col-h h-c">Value Created</div>
+        <div class="col-h h-d">Value Delivered</div>
+        <div class="col-h h-f">Operation Formula</div>
+      </div>
+
+      <!-- Thread 1: INTJ founder rigor -->
+      <div class="formula-row">
+        <div class="cell c-r">
+          <span class="cell-tag">Key Resource</span>
+          <strong>INTJ founder rigor × 12h/week cap</strong>, Phương's CPO/PMM training applied to a deliberately tight time budget.
+        </div>
+        <div class="cell c-i">
+          <span class="cell-tag">Customer's Insight</span>
+          <span class="quote">"Cycle-syncing content is full of pastel vibes-based advice. Skeptical women bounce on the first 'goddess energy' line. Tom's Guide, TIME, and the 2024 meta-analysis all say the evidence isn't there for exercise syncing."</span>
+        </div>
+        <div class="cell c-c">
+          <span class="cell-tag">Value Created</span>
+          <strong>Evidence-graded editorial</strong>, the only voice in the category that publicly rates its own claims as strong, mixed, or null.
+        </div>
+        <div class="cell c-d">
+          <span class="cell-tag">Value Delivered</span>
+          Each post cites peer-reviewed sources, declares evidence quality, separates the four cycle-syncing protocols (workout, diet, work, sleep) instead of treating them as one.
+        </div>
+        <div class="cell c-f">
+          <span class="cell-tag">Operation Formula</span>
+          <strong>Trust as compound interest</strong>, every post that grades a claim "null" strengthens the skeptical buyer's trust faster than competitors who can't afford to grade themselves down.
+        </div>
+      </div>
+
+      <!-- Thread 2: SEO surface area -->
+      <div class="formula-row">
+        <div class="cell c-r">
+          <span class="cell-tag">Key Resource</span>
+          <strong>SEO surface area + programmatic content engine</strong>, 120 pages planned across 5 tiers (calculators, phase deep-dives, day-of-cycle, phase × task matrix, cornerstone articles). 9 posts live, 16 in pipeline.
+        </div>
+        <div class="cell c-i">
+          <span class="cell-tag">Customer's Insight</span>
+          <span class="quote">"I want to search 'what to do during my luteal phase' and get a real answer, not download yet another app."</span>
+        </div>
+        <div class="cell c-c">
+          <span class="cell-tag">Value Created</span>
+          <strong>Long-tail SEO authority</strong> that paid apps structurally can't capture (App Store walled gardens don't index).
+        </div>
+        <div class="cell c-d">
+          <span class="cell-tag">Value Delivered</span>
+          Free indexable pages with structured data (JSON-LD), sitemap submitted to GSC + Bing, AI bot allowlist, llms.txt, designed for both Google ranking and LLM citation.
+        </div>
+        <div class="cell c-f">
+          <span class="cell-tag">Operation Formula</span>
+          <strong>SEO compounding</strong>, each new page raises domain authority and interlinks the next. A 24-month head-start incumbents cannot replicate in 6 months even if they tried, because subscription apps can't go free without breaking MRR.
+        </div>
+      </div>
+
+      <!-- Thread 3: Free + web + client-side -->
+      <div class="formula-row">
+        <div class="cell c-r">
+          <span class="cell-tag">Key Resource</span>
+          <strong>Free + web + client-side architecture</strong>, static Next.js on Vercel + localStorage-only persistence. No backend, no DB, no login.
+        </div>
+        <div class="cell c-i">
+          <span class="cell-tag">Customer's Insight</span>
+          <span class="quote">"I'm not handing my menstrual data to another app after Flo's FTC settlement and the Meta verdict. I also don't want one more icon on my home screen." (ACM CHI 2024 documents this deletion wave.)</span>
+        </div>
+        <div class="cell c-c">
+          <span class="cell-tag">Value Created</span>
+          <strong>Privacy-by-design</strong> (data never leaves the device) + zero-friction first use (under 30 seconds from search to insight).
+        </div>
+        <div class="cell c-d">
+          <span class="cell-tag">Value Delivered</span>
+          $15/mo total cost (Vercel free tier + Buttondown $9 + domain $1 + misc $5). Break-even projected at month 4–6 once Ezoic ads + affiliate are live.
+        </div>
+        <div class="cell c-f">
+          <span class="cell-tag">Operation Formula</span>
+          <strong>Cost-arbitrage of the free tier</strong>, free product with $15/mo cost base and ads + affiliate revenue floor. The unit economics work at SMB scale that subscription incumbents cannot profitably defend.
+        </div>
+      </div>
+
+      <!-- Thread 4: Email list -->
+      <div class="formula-row">
+        <div class="cell c-r">
+          <span class="cell-tag">Key Resource</span>
+          <strong>Email list as owned channel</strong>, Buttondown ($9/mo) + planned lead magnet (monthly cycle-aligned planner PDF).
+        </div>
+        <div class="cell c-i">
+          <span class="cell-tag">Customer's Insight</span>
+          <span class="quote">"Algorithms shift. I want to hear from sources I subscribed to, not whatever Google promotes today."</span>
+        </div>
+        <div class="cell c-c">
+          <span class="cell-tag">Value Created</span>
+          <strong>Distribution that survives the next Google update</strong> + higher affiliate conversion than on-page ads.
+        </div>
+        <div class="cell c-d">
+          <span class="cell-tag">Value Delivered</span>
+          Monthly digest cadence, 500-subscriber Phase 1 target, 5k Year 1 target. Newsletter sponsorship floor unlocks at 2k+ subscribers.
+        </div>
+        <div class="cell c-f">
+          <span class="cell-tag">Operation Formula</span>
+          <strong>Owned-channel insurance</strong>, diversifies off Google dependency and converts SEO traffic into a compounding distribution asset that ages well.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== SECTION D ============== -->
+  <section class="section-d">
+    <div class="section-d-head">
+      <span class="eyebrow">Lumen · Business Model 1-Pager</span>
+      <h2>D. Profit Formula</h2>
+      <p>Synthesizing A (positioning), B (canvas), and C (operations) into three actions: what Lumen should <em>raise</em>, what to <em>maintain</em>, and what to <em>eliminate or reduce</em> to compound profitability. Each item references the source analysis it came from.</p>
+    </div>
+
+    <div class="profit-grid">
+
+      <!-- RAISE -->
+      <div class="pcol raise">
+        <div class="pcol-head">
+          <div class="pcol-icon">↑</div>
+          <div class="pcol-title">Raise</div>
+          <span class="pcol-tag">Invest more</span>
+        </div>
+        <ul>
+          <li>
+            <span class="item-title">SEO content velocity</span>
+            <span class="item-why">Push 9 posts → 25 posts by end of June. A's centrality climb depends on indexable surface area. B1 confirms SEO (7) is Lumen's only category-leading discoverability channel.</span>
+            <span class="item-src">A · B1</span>
+          </li>
+          <li>
+            <span class="item-title">Reddit seeding (Phase 2 gate at Week 12)</span>
+            <span class="item-why">90-day playbook in flight, account passes age gate 2026-05-30. Kill criterion: under 50 visits/month at Week 12 = stop. B2's "app fatigue" theme suggests Reddit's discussion format converts better than App Store discovery.</span>
+            <span class="item-src">B2 · C</span>
+          </li>
+          <li>
+            <span class="item-title">Email capture (Buttondown + lead magnet)</span>
+            <span class="item-why">Currently 0 subscribers. C's owned-channel formula does not compound without it. Phase 1 target: 500 subscribers by Month 6.</span>
+            <span class="item-src">C</span>
+          </li>
+          <li>
+            <span class="item-title">Affiliate program activation</span>
+            <span class="item-why">Flo, Natural Cycles, Oura applications due 2026-05-13. Without these, the affiliate revenue floor doesn't exist. Amazon Associates tag lumencal0c-20 already live; deadline ≥3 sales by 2026-11-03 to keep account.</span>
+            <span class="item-src">B2 · C</span>
+          </li>
+          <li>
+            <span class="item-title">Evidence-graded editorial bar</span>
+            <span class="item-why">Make "Does cycle syncing work?" style posts the editorial default, not the exception. B2 leading factor: Lumen's woo-skepticism score (9) is its second-highest VoC asset. Don't soften for traffic.</span>
+            <span class="item-src">B2 · C</span>
+          </li>
+          <li>
+            <span class="item-title">AI Overview optimization for all new posts</span>
+            <span class="item-why">Already applied to 5 posts (Test E). LLM citation is 2026's compounding SEO. B1's SEO factor (7) was Lumen's only above-5 capability score on a non-Blue-Ocean axis.</span>
+            <span class="item-src">A · C</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- MAINTAIN -->
+      <div class="pcol maintain">
+        <div class="pcol-head">
+          <div class="pcol-icon">=</div>
+          <div class="pcol-title">Maintain</div>
+          <span class="pcol-tag">Keep as-is</span>
+        </div>
+        <ul>
+          <li>
+            <span class="item-title">Free pricing, no signup</span>
+            <span class="item-why">A's biggest distinctiveness lever (D=8.0). Subscription would kill SEO discoverability and the counter-positioning advantage in one move. B1 + B2 both score "no paywall" 10.</span>
+            <span class="item-src">A · B1 · B2</span>
+          </li>
+          <li>
+            <span class="item-title">Productivity framing, not health-first</span>
+            <span class="item-why">Keeps Lumen out of YMYL classification and away from medical disclaimer hell. B1 productivity score 9 (tied w/ Phase). B2 also 9, where Flo, Clue, Natural Cycles all score 1–2.</span>
+            <span class="item-src">A · B1 · B2</span>
+          </li>
+          <li>
+            <span class="item-title">Client-side-only architecture</span>
+            <span class="item-why">Privacy is positioning, not a feature. B2 privacy score 10. The day this changes, the moat dies and the post-Roe credibility argument collapses.</span>
+            <span class="item-src">B1 · B2 · C</span>
+          </li>
+          <li>
+            <span class="item-title">Evidence-graded editorial voice</span>
+            <span class="item-why">What separates Lumen from TikTok-vibes content. C's "trust as compound interest" formula depends on it. B2 score for less-woo: 9.</span>
+            <span class="item-src">B2 · C</span>
+          </li>
+          <li>
+            <span class="item-title">12h/week hard cap on founder time</span>
+            <span class="item-why">Burnout kill switch: HR rest >105 or sleep <7h for 3 days = pause. Game BU is Priority #1 absolute. C is only profitable if Phương's bandwidth is preserved.</span>
+            <span class="item-src">C</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ELIMINATE / REDUCE -->
+      <div class="pcol cut">
+        <div class="pcol-head">
+          <div class="pcol-icon">↓</div>
+          <div class="pcol-title">Eliminate / Reduce</div>
+          <span class="pcol-tag">Stop or scale back</span>
+        </div>
+        <ul>
+          <li>
+            <span class="item-title">Eliminate: subscription / paywall monetization</span>
+            <span class="item-why">Kills SEO and counter-positioning in one move. Every paid competitor's 2025 paywall escalation (Clue Plus, Flo Premium, Natural Cycles 2× price hike) gave away the customer-trust ground Lumen now occupies.</span>
+            <span class="item-src">A · B1 · B2</span>
+          </li>
+          <li>
+            <span class="item-title">Eliminate: native mobile app development</span>
+            <span class="item-why">Defeats the "no install" wedge. Native app would absorb 50%+ of founder time and break the $15/mo cost structure. B2 low-friction score (10) would collapse.</span>
+            <span class="item-src">B1 · B2 · C</span>
+          </li>
+          <li>
+            <span class="item-title">Reduce: head-term SEO vs Flo/Clue</span>
+            <span class="item-why">Defer to Year 2 after authority compounds. Long-tail first (B1 SEO 7 vs Flo 3, Clue 4): Lumen's surface area beats theirs on intent-specific queries, not "period tracker" head term.</span>
+            <span class="item-src">A</span>
+          </li>
+          <li>
+            <span class="item-title">Reduce: clinical / FDA credentialing chase</span>
+            <span class="item-why">Leave that to Natural Cycles (B1 clinical score 10, B2 lawsuit on the same axis). Productivity framing avoids the regulatory cost and the lawsuit risk.</span>
+            <span class="item-src">A · B1</span>
+          </li>
+          <li>
+            <span class="item-title">Reduce: paid acquisition spend</span>
+            <span class="item-why">C's "trust as compound interest" formula relies on SEO + Reddit + email, not ads. CAC should fall with each content cohort, not rise.</span>
+            <span class="item-src">C</span>
+          </li>
+          <li>
+            <span class="item-title">Eliminate: Flo affiliate name-drops in Reddit comments</span>
+            <span class="item-why">Flo affiliate has pre-approval clause + trademark SEO restriction. Link to the on-site comparison post instead. (Project memory rule.)</span>
+            <span class="item-src">B2</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="profit-summary">
+      <strong>Net effect.</strong> &nbsp; <code>Lower CAC</code> (SEO + Reddit + email, not paid ads) &nbsp;×&nbsp; <code>Higher revenue per visitor</code> (display ads + Flo / Natural Cycles / Oura affiliate) &nbsp;×&nbsp; <code>Lower cost-to-serve</code> ($15/mo, zero backend) &nbsp;=&nbsp; <strong>compounding profitability at the underserved free tier of cycle-syncing</strong>, the segment subscription incumbents cannot defend without cannibalizing themselves.
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>Lumen · Business Model 1-Pager · A + B + C + D · evidence base in <code>docs/research/VOC_CYCLE_TRACKING_2026_05.md</code></div>
+    <div>Frameworks: Dawar &amp; Bagga (HBR 2015), Kim &amp; Mauborgne (Blue Ocean 2005) · Verified 2026-05-11</div>
+  </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+STT,Funnel,TOPIC,TỪ KHÓA CHÍNH Blog,Livesite Link Blog,Tháng,Năm,Translation (Vi),Length (chars title),Status,Brief path
+1,Solution aware,Cycle syncing 101,what is cycle syncing,https://lumencal.com/blog/what-is-cycle-syncing,4,2026,Cycle syncing là gì,49,Published,
+2,Problem aware,Skepticism,is cycle syncing legit,https://lumencal.com/blog/is-cycle-syncing-legit,4,2026,Cycle syncing có hợp pháp/thật không,55,Published,
+3,Solution aware,Getting started,how to start cycle syncing,https://lumencal.com/blog/how-to-start-cycle-syncing,4,2026,Cách bắt đầu cycle syncing,56,Published,
+4,Product aware,Tool/Chart,cycle syncing chart,https://lumencal.com/blog/cycle-syncing-chart,4,2026,Bảng cycle syncing,79,Published,Hub for phase deep-dives
+5,Product aware,Apps,best cycle syncing app,https://lumencal.com/blog/best-cycle-syncing-app,4,2026,App cycle syncing tốt nhất 2026,55,Published,
+6,Problem aware,Skepticism,does cycle syncing work,https://lumencal.com/blog/does-cycle-syncing-work,5,2026,Cycle syncing có hiệu quả không,52,Published,docs/content_research/posts/06-does-cycle-syncing-work.md
+7,Problem aware,Skepticism,how does cycle syncing work,https://lumencal.com/blog/how-does-cycle-syncing-work,5,2026,Cycle syncing hoạt động thế nào,67,Published,docs/content_research/posts/07-how-does-cycle-syncing-work.md
+8,Problem aware,Edge case,does cycle syncing work on birth control,https://lumencal.com/blog/cycle-syncing-on-birth-control,5,2026,Cycle syncing có work khi đang dùng thuốc tránh thai,68,Published,docs/content_research/posts/08-cycle-syncing-on-birth-control.md
+9,Solution aware,Getting started,cycle syncing for beginners,https://lumencal.com/blog/cycle-syncing-beginner-plan,5,2026,Cycle syncing cho người mới: 4-week plan,56,Published,docs/content_research/posts/09-cycle-syncing-beginner-plan.md
+10,Product aware,Tool/Template,cycle syncing schedule,https://lumencal.com/blog/cycle-syncing-schedule-template,5,2026,Template lịch cycle syncing,30,Researched,docs/content_research/posts/10-cycle-syncing-schedule-template.md
+11,Product aware,Apps,free cycle syncing app,https://lumencal.com/blog/free-cycle-syncing-apps-compared,5,2026,So sánh các app cycle syncing miễn phí,49,Researched,docs/content_research/posts/11-free-cycle-syncing-apps-compared.md
+12,Solution aware,Phase deep-dive,follicular phase,https://lumencal.com/blog/follicular-phase-complete-guide,5,2026,Hướng dẫn đầy đủ về follicular phase,40,Researched,docs/content_research/posts/12-follicular-phase-complete-guide.md
+13,Solution aware,Phase deep-dive,luteal phase,https://lumencal.com/blog/luteal-phase-complete-guide,5,2026,Hướng dẫn đầy đủ về luteal phase,36,Researched,docs/content_research/posts/13-luteal-phase-complete-guide.md
+14,Solution aware,Phase deep-dive,menstrual phase,https://lumencal.com/blog/menstrual-phase-complete-guide,6,2026,Hướng dẫn đầy đủ về menstrual phase,39,Researched,docs/content_research/posts/14-menstrual-phase-complete-guide.md
+15,Solution aware,Phase deep-dive,ovulatory phase,https://lumencal.com/blog/ovulatory-phase-complete-guide,6,2026,Hướng dẫn đầy đủ về ovulatory phase,39,Researched,docs/content_research/posts/15-ovulatory-phase-complete-guide.md
+16,Converting,Cornerstone,cycle syncing for women,https://lumencal.com/blog/cycle-syncing-ambitious-women,6,2026,Cycle syncing cho phụ nữ tham vọng,38,Researched,docs/content_research/posts/16-cycle-syncing-ambitious-women.md
+17,Solution aware,Symptom guide,late luteal phase,https://lumencal.com/blog/late-luteal-phase-survival,6,2026,Sống sót qua late luteal phase,42,Researched,docs/content_research/posts/17-late-luteal-phase-survival.md
+18,Solution aware,Productivity,follicular phase deep work,https://lumencal.com/blog/follicular-phase-deep-work,6,2026,Deep work trong follicular phase,32,Researched,docs/content_research/posts/18-follicular-phase-deep-work.md
+19,Product aware,Apps privacy,cycle tracking app privacy,https://lumencal.com/blog/cycle-tracking-apps-privacy,6,2026,Privacy của các app cycle tracking,40,Researched,docs/content_research/posts/19-cycle-tracking-apps-privacy.md
+20,Solution aware,Diet timing,cycle syncing meal timing,https://lumencal.com/blog/cycle-syncing-meal-timing,6,2026,Thời điểm ăn theo cycle syncing,33,Researched,docs/content_research/posts/20-cycle-syncing-meal-timing.md
+21,Converting,Cornerstone,cycle syncing for executives,https://lumencal.com/blog/cycle-syncing-executives-90-day,6,2026,Cycle syncing cho executives — 90-day plan,55,Researched,docs/content_research/posts/21-cycle-syncing-executives-90-day.md
+,,,,,,,,,,
+,Summary stats,,,,,,,,,
+,Funnel,Số lượng bài viết,,,,,,,,
+,Unaware,0,,,,,,,,
+,Problem aware,4,,,,,,,,
+,Solution aware,11,,,,,,,,
+,Product aware,4,,,,,,,,
+,Converting,2,,,,,,,,
+,TOTAL,21,,,,,,,,
+,,,,,,,,,,
+,Bài/tuần,2 (Tue + Fri),,,,,,,,
+,Bài/tháng,~8,,,,,,,,
+,Effort/post avg,7h,,,,,,,,
+,Total effort,107h (16 posts May-Jun) vs ROADMAP budget 6-12h/week,,,,,,,,

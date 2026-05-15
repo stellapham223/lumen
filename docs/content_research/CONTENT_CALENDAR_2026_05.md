@@ -106,18 +106,19 @@ Companion: [MASTER_CONTENT_RESEARCH_2026_05.md](MASTER_CONTENT_RESEARCH_2026_05.
 
 **Theme:** Tier 2 deep-dives begin (assumes Test E PASS)
 
-If Test E FAILED at Week 3 gate, swap posts #12-13 with shorter informational (#17 + #18) and defer Tier 2 until Sprint 4 domain ships.
+If Test E FAILED at Week 3 gate, swap posts #12-13 with shorter informational (#17 + #18) and debug content/keyword competition before committing more Tier 2 effort. (Domain authority is no longer a candidate cause: lumencal.com is live.)
 
 | Day | Task | Hours |
 |-----|------|-------|
 | Mon 05-25 | Read post #12 brief (Tier 2, longer prep) | 2h |
 | Tue 05-26 | Write + ship post #12 (follicular-phase-complete-guide) | 5h |
-| Wed 05-27 | Reddit + first Phase 2 link drop (test) | 1.5h |
+| Wed 05-27 | Reddit no-link comments only (account age gate clears 2026-05-30) | 1h |
 | Thu 05-28 | Read post #13 brief, outline | 2h |
 | Fri 05-29 | Write + ship post #13 (luteal-phase-complete-guide) | 5h |
-| Sat-Sun | OFF or Pinterest batch (10 pins from 12-13) | 1.5h optional |
+| Sat 05-30 | **First Phase 2 Reddit link drop (age gate clears today)** + Pinterest batch | 2h |
+| Sun | OFF | --- |
 
-**Week 4 total: ~15.5h** (over budget; this is the heaviest week. If unsustainable, push #13 to Sun or Tue of Week 5)
+**Week 4 total: ~16h** (over budget; this is the heaviest week. If unsustainable, push #13 to Sun or Tue of Week 5)
 
 ---
 
@@ -223,10 +224,9 @@ This is **above ROADMAP 6-12h budget.** Mitigation options if it becomes unsusta
 | Dep | Required by | Owner |
 |-----|-------------|-------|
 | Test E gate measure | 2026-05-19 (Week 3 Tue) | Phương |
-| GSC verified for vercel.app subdomain | 2026-05-14 (Week 2 Wed) | Phương |
+| GSC verified for lumencal.com | 2026-05-14 (Week 2 Wed) | Phương |
 | Affiliate programs applied | 2026-05-09 (Week 1 Fri) | Phương |
 | Pinterest business account | 2026-05-22 (Week 3 Fri) | Phương |
-| Domain decision (if Test E FAIL) | 2026-05-22 | Per ROADMAP Sprint 4 |
 
 ### Soft dependencies (slip OK with note)
 - Reddit Phase 1 → Phase 2 transition (probably Week 3 if karma trajectory holds)

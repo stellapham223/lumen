@@ -1,0 +1,47 @@
+STT,II.2 TỐI ƯU WEBSITE (TỐI ƯU GIAO DIỆN) Loại trang,Tình trạng,Đề xuất
+1,Thanh menu,"Hiện có: Home / Blog / Calculator (verify từ layout.tsx)","- Add category 'Phases' chứa: Follicular / Luteal / Menstrual / Ovulatory deep-dives
+- Add 'Resources' chứa: Glossary; Beginner guide; Chart
+- Add 'About' với credentials + medical disclaimer link
+- Mobile: hamburger menu với clear hierarchy"
+2,Trang chủ,"Productivity-positioned. Calculator embed visible.","- Add Hero section: 1 sentence positioning + email signup (sau Test E pass)
+- Section 'Featured posts': 4 hub posts (what-is; chart; beginner-plan; ambitious-women)
+- Section social proof (sau khi có): testimonials; GSC traffic milestone
+- CTA chính: Try the calculator (free)"
+3,Case Studies / Testimonials,"Chưa có","- Sau khi có 100 active users: collect testimonials
+- Section 'In the wild' cho mỗi phase guide: real user routines
+- Optional: case study format (1 user's 90-day journey)"
+4,Footer,"Có AffiliateDisclosure component. Cần audit còn lại.","- Add: Privacy Policy; Terms; Affiliate Disclosure full page; About; Contact
+- Trust badges: GSC verified; medical disclaimer
+- Social icons (when active): Pinterest; Instagram
+- Newsletter signup (sau khi có ConvertKit/Substack)"
+5,Sản phẩm (Calculator landing),"Calculator có nhưng landing page chưa optimize","- Tạo /calculator landing page riêng (không chỉ embed home)
+- Title: 'Free cycle syncing calculator — 4-phase planner'
+- Sections: How it works; What you get; Privacy promise; FAQ
+- Target keyword: 'cycle syncing calculator' (Easy KD)"
+6,Nút CTA,"Chỉ có 'Try calculator' trong blog","- Sticky sidebar CTA cho blog: 'Calculate your cycle phases — free'
+- Mid-content CTA: 'See your phase right now' với calculator embed
+- End-of-post: 'Get the 4-week plan' (link đến #9 beginner-plan)
+- Affiliate CTA box (cho posts có affiliate): clear disclosure + benefit framing"
+7,Bài viết (Blog post layout),"Có nhưng cần optimize","- Add Table of Contents (sticky sidebar trên desktop; expandable trên mobile)
+- Add reading time estimate
+- Add 'Last updated' date (E-E-A-T signal)
+- Author byline: 'Written by Stella Pham' với link to About
+- Related posts section dưới mỗi post (3 spokes nếu là hub; 1 hub + 2 spokes nếu là spoke)
+- Share buttons: Pinterest (priority); Twitter; copy link"
+8,Trang Blog index,"Cần audit","- Cards layout: title + excerpt + reading time + category tag
+- Filter by phase (Follicular / Luteal / Menstrual / Ovulatory / Cross-phase)
+- Sort by: Latest / Most popular (after GSC data)
+- Pagination hoặc load-more (10 posts/page)"
+9,Newsletter,"Chưa có","- Setup Substack hoặc ConvertKit (free tier) sau Test E pass
+- CTA: 'Phase-of-the-week digest' (1 email/week)
+- Lead magnet: 'Free 4-week cycle syncing planner PDF'"
+10,Mobile UX,"Tailwind responsive setup","- Test mỗi blog post trên iPhone SE width (375px)
+- Touch targets ≥48px
+- Verify CTA buttons không bị cut khỏi viewport
+- Calculator UX trên mobile: thumb-friendly"
+11,Accessibility,"Cần audit","- Color contrast WCAG AA
+- Alt text cho mọi image (xem 2.1 item 17)
+- Keyboard navigation cho calculator
+- Screen reader: semantic HTML (header; nav; main; article; footer)"
+12,Dark mode (optional),"Chưa có","- Nice-to-have; không priority
+- Nếu add: respect prefers-color-scheme; toggle persist trong localStorage"

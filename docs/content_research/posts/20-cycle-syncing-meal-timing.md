@@ -149,11 +149,14 @@ A: Iron is the one specific food consideration with strong evidence in menstrual
 
 ## 9. Affiliate placements
 
-Tread carefully on YMYL. Permitted:
-- Amazon Associates link to a magnesium glycinate brand (one disclosed link, contextualized as "if your provider recommends supplementation"), in the magnesium-for-PMS line. Maximum one supplement link.
-- Amazon Associates link to one cycle nutrition book (e.g., "In the Flo" by Vitti or "Period Repair Manual" by Briden), with explicit caveat about evidence quality.
+Amazon Associates approved (`lumencal0c-20`). Tread carefully on YMYL. Permitted:
+- **Magnesium glycinate** (one disclosed link, contextualized as "if your provider recommends supplementation"), in the magnesium-for-PMS line. Max ONE supplement link. URL: `https://www.amazon.com/s?k=magnesium+glycinate&tag=lumencal0c-20`. `rel="sponsored noopener noreferrer"`.
+- **One cycle nutrition book** with explicit caveat about evidence quality. Options:
+  - *In the FLO* by Vitti: `https://www.amazon.com/s?k=In+the+FLO+Alisa+Vitti&tag=lumencal0c-20`
+  - *Period Repair Manual* by Briden: `https://www.amazon.com/s?k=Period+Repair+Manual+Briden&tag=lumencal0c-20`
 - No supplement protocol recommendations. No "cycle syncing supplement stack" content.
-Maximum: 2 affiliate links. Disclosure block at top.
+
+Maximum: 2 affiliate links. Global `<AffiliateDisclosure>` in blog layout covers disclosure requirement.
 
 ## 10. Pinterest pin angles (5)
 

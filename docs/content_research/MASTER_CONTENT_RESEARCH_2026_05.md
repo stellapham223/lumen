@@ -25,7 +25,7 @@ Test E (5 pages shipped 2026-04-28) measures at week 3 (2026-05-19). Between now
 
 ### Hard gate at 2026-05-19 (Test E result)
 - **PASS (≥1 page top 30):** Continue with Tier 2 deep-dives as planned (Posts #12-15)
-- **FAIL (no page top 30):** Pause Tier 2 plan, debug. Likely causes: vercel.app subdomain authority cap (need Sprint 4 domain), keyword competition higher than estimated, content not optimized for AI Overview. See contingency in §10.
+- **FAIL (no page top 30):** Pause Tier 2 plan, debug. Likely causes: keyword competition higher than estimated, content not optimized for AI Overview, cold-domain age (lumencal.com is fresh, 5 weeks may be more realistic than 3). See contingency in §10.
 
 ---
 
@@ -210,15 +210,15 @@ Test E result check (week 3 after 2026-04-28)
 │   └── NO → debug before scaling
 │       ├── Check 1: are pages indexed in GSC? (likely yes)
 │       ├── Check 2: any impressions for target keyword? (if zero → keyword too competitive)
-│       ├── Check 3: vercel.app subdomain in URL? (subdomain caps authority, accelerate Sprint 4 domain)
+│       ├── Check 3: domain age — lumencal.com is fresh, 3 weeks may be early
 │       │
 │       ├── If keyword too competitive → swap target to lower-KD long-tail variants
-│       ├── If subdomain issue → ship Sprint 4 (domain) BEFORE more content
-│       └── If neither → wait 2 more weeks (5 weeks is more realistic for cold domain)
+│       ├── If indexed + zero impressions on competitive keywords → wait 2 more weeks
+│       └── If indexed + zero impressions on long-tail too → content quality issue, audit per BLOG_AUDIT_PLAYBOOK
 ```
 
 ### Contingency: if FAIL at week 3
-- Pause Posts #12-15 (Tier 2 deep-dives) until domain ships
+- Pause Posts #12-15 (Tier 2 deep-dives) for 2 weeks pending re-check
 - Continue Posts #10-11 (commercial intent + lower-volume long-tail)
 - Front-load Posts #6-9 informational expansion (boosts cluster)
 - Re-check Test E at week 5 (2026-06-02). If still no signal, kill or pivot per ROADMAP §Kill criteria.

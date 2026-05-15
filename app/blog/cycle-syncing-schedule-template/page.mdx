@@ -1,0 +1,273 @@
+import {
+  ArticleJsonLd,
+  BreadcrumbJsonLd,
+  FaqJsonLd,
+} from "@/components/JsonLd";
+import { PhaseScheduleCard } from "@/components/PhaseScheduleCard";
+
+export const metadata = {
+  title: "Cycle syncing schedule template (free, no signup)",
+  description:
+    "A free cycle syncing schedule template you can copy in 5 minutes. Maps the four phases onto a 28-day calendar for work, exercise, and recovery. Built for knowledge workers, not lifestyle prescriptions.",
+  alternates: { canonical: "/blog/cycle-syncing-schedule-template" },
+  openGraph: {
+    title: "Cycle syncing schedule template (free, no signup)",
+    description:
+      "A free cycle syncing schedule template you can copy in 5 minutes. Maps the four phases onto a 28-day calendar for work, exercise, and recovery.",
+    url: "/blog/cycle-syncing-schedule-template",
+    type: "article",
+  },
+};
+
+<ArticleJsonLd
+  headline="Cycle syncing schedule template (free, no signup)"
+  description="A free cycle syncing schedule template that maps the four phases (menstrual, follicular, ovulatory, luteal) onto a 28-day calendar. Copy the structure in 5 minutes. Built for knowledge workers."
+  path="/blog/cycle-syncing-schedule-template"
+  datePublished="2026-05-19"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Blog", path: "/blog" },
+    {
+      name: "Cycle syncing schedule template",
+      path: "/blog/cycle-syncing-schedule-template",
+    },
+  ]}
+/>
+<FaqJsonLd
+  faqs={[
+    {
+      question: "What is a cycle syncing schedule template?",
+      answer:
+        "A one-page layout that maps the four menstrual cycle phases (menstrual, follicular, ovulatory, luteal) onto a 28-day calendar so you can match work mode to hormones: reflect during menstrual, build during follicular, present during ovulatory, finish during luteal. The simplest version is a four-row block anchored to your last period date, refreshed once per cycle.",
+    },
+    {
+      question: "Is the Lumen cycle syncing template really free?",
+      answer:
+        "Yes. The template structure is laid out inline on this page so you can copy it into Notion, Google Calendar, paper, or any tool you already use. Lumen runs on local-only data and does not collect email or require an account. Downloadable PDF, Notion duplication link, and ICS calendar import are being prepared and will replace the inline template when ready.",
+    },
+    {
+      question: "How often should I refresh my cycle syncing schedule?",
+      answer:
+        "Re-anchor it once per cycle, on the first day of your period. Cycles drift by a few days month to month, and a calendar that ran on stale dates is worse than no calendar. Re-running the Lumen calculator on day 1 takes under a minute.",
+    },
+    {
+      question: "Will this template work if my cycle is irregular?",
+      answer:
+        "It works if your cycle stays inside the 21 to 35 day range and varies by less than 5 days month to month. For wider variation (PCOS, perimenopause, postpartum, breastfeeding), use the template as a rough rotation of work modes rather than fixed dates, and recalculate weekly using the Lumen calculator.",
+    },
+    {
+      question: "Can I use this template if I am on hormonal birth control?",
+      answer:
+        "The combined pill, patch, ring, and hormonal IUD suppress most natural cycling, so the four-phase model does not strictly apply. The template can still work as a 28-day rotation of work modes (reflect, build, connect, finish) without the biological rationale. Many users report the structure alone helps, separate from any hormonal claim.",
+    },
+    {
+      question: "What is the difference between a cycle syncing planner and a period tracker?",
+      answer:
+        "A period tracker logs what happened (bleeding days, symptoms). A cycle syncing planner schedules what to do (which work tasks, which workouts) based on the predicted phase. The two complement each other: track to learn your pattern, then plan against it.",
+    },
+  ]}
+/>
+
+# Cycle syncing schedule template (free, no signup)
+
+<aside className="my-8 hairline bg-[color:var(--color-surface-container-lowest)] p-6 sm:p-8">
+  <div className="eyebrow text-[color:var(--color-primary)] mb-3">Quick takeaway</div>
+  <p className="m-0 text-[16px] leading-relaxed text-[color:var(--color-on-surface)]">
+    <strong>A cycle syncing schedule maps the four phases (menstrual, follicular, ovulatory, luteal) onto a 28-day calendar so you can match work mode to hormones: reflect during menstrual, build during follicular, present during ovulatory, finish during luteal.</strong> The simplest format is a one-page template anchored to your last period date and refreshed monthly.
+  </p>
+</aside>
+
+Most cycle syncing planners on the internet are pretty PDFs designed for someone with flexible Tuesdays, not for someone with a 9am standup and a Wednesday board meeting. This page gives you the template structure as plain text you can paste into Notion, Google Calendar, a paper notebook, or whatever tool you already use. The framing is scheduling work and recovery, not lifestyle prescription, so it sits next to your existing planning system rather than replacing it.
+
+*Last reviewed: 2026-05-19.*
+
+## What a cycle syncing schedule actually is
+
+A cycle syncing schedule is a planning overlay, not a wellness routine. You take the four hormonal phases of a typical cycle and assign each one a work mode plus a set of tasks that suit the underlying physiology. The schedule does not tell you what to eat or which supplements to take. It tells you when to schedule a presentation versus when to edit a document.
+
+Research suggests aligning task type to hormonal phase improves perceived effort and mood, though [the evidence is graded](/blog/is-cycle-syncing-legit) and effect sizes are modest. The template is a low-risk planning heuristic that costs nothing to try for one cycle.
+
+If you are new to the underlying model, [the four phases in detail](/blog/cycle-syncing-chart) covers what is happening hormonally in each phase. This post is the execution layer.
+
+## The Lumen template: structure you can copy in five minutes
+
+The template has four phase blocks. Each block contains: phase name, day range, work mode in one word, and a short list of tasks that fit. You copy this structure once and re-anchor the date range each cycle.
+
+Here is the structure in plain text. Paste it into your tool of choice.
+
+```
+PHASE: Menstrual
+DAYS: 1 to 5 (count day 1 as first day of full flow)
+MODE: Reflect
+BEST FOR:
+  - Monthly retrospectives and planning
+  - Deep solo work and journaling
+  - Walks and gentle mobility
+  - Earlier wind-down
+AVOID:
+  - High-stakes presentations
+  - Strength PRs and HIIT
+  - First-impressions meetings
+
+PHASE: Follicular
+DAYS: 6 to 13
+MODE: Build
+BEST FOR:
+  - Project kickoffs and new initiatives
+  - Learning new skills
+  - Strategy and hard problems
+  - Strength training, new exercise patterns
+AVOID:
+  - Pure admin that wastes the window
+  - Detail-only days
+
+PHASE: Ovulatory
+DAYS: 14 to 16
+MODE: Connect
+BEST FOR:
+  - Presentations and pitches
+  - Networking and sales calls
+  - Performance reviews and tough conversations
+  - Higher-intensity workouts
+AVOID:
+  - Long solo deep work
+  - First read of dense material
+
+PHASE: Luteal
+DAYS: 17 to 28
+MODE: Finish
+BEST FOR (early luteal, days 17 to 22):
+  - Editing and closing tasks
+  - Detail and error-checking
+  - Steady-state execution
+BEST FOR (late luteal, days 23 to 28):
+  - Lower-intensity movement
+  - Strict wind-down rituals
+  - Reduced commitments
+AVOID:
+  - High-stakes meetings days 26 to 28
+  - Caffeine after 2pm (late luteal)
+  - PR attempts and HIIT (late luteal)
+```
+
+Downloadable PDF, a Notion duplication link, and an ICS calendar import are in the queue and will replace this inline structure when ready. The structure above is the same content the downloads will hold, so anything you build now stays useful.
+
+## How to fill it in (five minutes, once per cycle)
+
+1. Open [the Lumen calculator](/plan), enter your last period start date and your average cycle length, and let it generate your four phase date ranges.
+2. Copy those four date ranges into the phase block dates above. Your cycle length may not be 28 days; cycle length naturally ranges 21 to 35 days. Adjust accordingly.
+3. Pre-block any non-negotiables already on your calendar (presentations, deadlines, recurring meetings). Check whether each one falls in a phase that suits it.
+4. Leave 30 percent buffer per week. Cycles drift, illness happens, and overcommitting to a rigid plan is the fastest way to abandon it after one month.
+5. Re-anchor on the first day of your next period. Calendars do not re-anchor automatically. This is the only recurring maintenance the template needs.
+
+If your cycle length varies by more than 5 days month to month, re-run the calculator weekly rather than monthly. Most users do not need this.
+
+## What goes in each phase block
+
+The plain-text template above gives the structure. This section explains why each phase gets the tasks it does, so you can adapt the lists when something does not match your tracked experience.
+
+<PhaseScheduleCard
+  phase="Menstrual"
+  days="1–5"
+  mode="Reflect"
+  best={[
+    { icon: "history_edu", label: "Monthly retrospectives" },
+    { icon: "edit_note", label: "Deep solo work and journaling" },
+    { icon: "self_improvement", label: "Walks and gentle mobility" },
+    { icon: "bedtime", label: "Earlier wind-down" },
+  ]}
+  avoid={[
+    { icon: "campaign", label: "High-stakes presentations" },
+    { icon: "fitness_center", label: "PRs and HIIT" },
+    { icon: "groups", label: "First-impressions meetings" },
+  ]}
+/>
+
+Menstrual days run lower across most metrics: sleep is lighter, energy is reduced for many users, and core body temperature drops. This makes the week well-suited to introspective work that does not need peak performance. Retrospectives and planning land here because they reward the slowed-down processing rather than fighting it.
+
+<PhaseScheduleCard
+  phase="Follicular"
+  days="6–13"
+  mode="Build"
+  best={[
+    { icon: "rocket_launch", label: "Project kickoffs" },
+    { icon: "lightbulb", label: "Learning new skills" },
+    { icon: "flag", label: "Strategy and hard problems" },
+    { icon: "fitness_center", label: "Strength and new movements" },
+  ]}
+  avoid={[
+    { icon: "schedule", label: "Pure admin that wastes the window" },
+    { icon: "checklist", label: "Detail-only days" },
+  ]}
+/>
+
+Follicular days are often the strongest for novel work. Rising estrogen modulates dopamine and supports motor learning, which makes this a reasonable window for both intellectual learning and adding a new exercise pattern. The risk is wasting the window on admin tasks that any phase could handle.
+
+<PhaseScheduleCard
+  phase="Ovulatory"
+  days="14–16"
+  mode="Connect"
+  best={[
+    { icon: "campaign", label: "Presentations and pitches" },
+    { icon: "handshake", label: "Networking and sales calls" },
+    { icon: "record_voice_over", label: "Performance reviews and tough talks" },
+    { icon: "directions_run", label: "Higher-intensity workouts" },
+  ]}
+  avoid={[
+    { icon: "edit_note", label: "Long solo deep work" },
+    { icon: "auto_stories", label: "First read of dense material" },
+  ]}
+/>
+
+Ovulatory days are short (three days for most users) and high-value. Verbal fluency around ovulation is one of the most-replicated cycle-cognition findings (Sundström-Poromaa and Gingnell, 2014), though the effect size is moderate. If you have any choice over when to schedule a high-stakes conversation, mid-cycle is usually the right call.
+
+<PhaseScheduleCard
+  phase="Luteal"
+  days="17–28"
+  mode="Finish"
+  best={[
+    { icon: "task_alt", label: "Editing and closing tasks (early)" },
+    { icon: "fact_check", label: "Detail and error-checking (early)" },
+    { icon: "self_improvement", label: "Lower-intensity movement (late)" },
+    { icon: "bedtime", label: "Strict wind-down rituals (late)" },
+  ]}
+  avoid={[
+    { icon: "campaign", label: "High-stakes meetings days 26-28" },
+    { icon: "no_drinks", label: "Caffeine after 2pm (late)" },
+    { icon: "fitness_center", label: "PR attempts (late)" },
+  ]}
+/>
+
+Luteal is the longest phase and the one most worth splitting. Early luteal (days 17 to 22) often peaks for detail-oriented work: editing, error-checking, organizing, closing tickets. Late luteal (days 23 to 28) tends to drop across sleep, energy, and mood reactivity. Treat early luteal as your closing window and late luteal as the phase that needs the most buffer. [Late luteal survival](/blog/cycle-syncing-on-birth-control) has the detail on what to expect if symptoms get heavy.
+
+## Adapting the template if your cycle is irregular
+
+Normal cycle length spans 21 to 35 days, per ACOG. The template works inside that range with month-to-month variation under 5 days.
+
+Wider variation is common. PCOS, perimenopause, postpartum, and breastfeeding all shift cycle timing, sometimes by weeks. If any of those apply to you, use the template as a rough rotation of work modes (reflect, build, connect, finish) rather than fixed calendar dates, and recalculate weekly using your tracked symptoms rather than a predicted date.
+
+On combined hormonal birth control there is no natural cycle to anchor to, so phase scheduling does not strictly apply. Some users still find the 28-day rotation of work modes useful as a structural rhythm, separate from any hormonal claim. The [method-by-method guide](/blog/cycle-syncing-on-birth-control) has the full breakdown for each contraceptive method.
+
+## Cycle syncing planner alternatives (when this template is not the right fit)
+
+The template above is the simplest and most flexible option for most users. A few alternatives exist for cases where you want something else.
+
+| Option | Cost | Format | Best for |
+| --- | --- | --- | --- |
+| This template | Free, no signup | Plain text + Lumen calculator | Most users; works with any planning tool |
+| Camille Styles PDF | Free with email | Printable | Users who want a designed printable and accept a soft email gate |
+| Notion paid templates (Sarah Emad, others) | $9 to $15 | Notion database | Users already in Notion who want a polished setup |
+| Etsy printables | $5 to $25 | Printable | Users who want visual variety; quality varies |
+| 28 app, Lively app | Subscription | Mobile app | Users who want daily phase prompts inside a single app |
+
+If you want daily check-ins inside a single app rather than a static template, the [full app comparison](/blog/best-cycle-syncing-app) has the head-to-head review.
+
+If you are new to the practice and not sure whether to invest time in a planner at all, [the four-week beginner plan](/blog/cycle-syncing-beginner-plan) walks through one full cycle without committing to a template format.
+
+## Closing: the simplest workflow
+
+You do not need to download anything to start. Open [the Lumen calculator](/plan), get your four phase date ranges, paste the phase block structure above into your tool of choice, and re-anchor the dates on the first day of your next period. That is the entire workflow.
+
+The downloadable formats (PDF, Notion duplication link, ICS calendar import) are being prepared and will replace the inline template when ready. If you want to be the first to use them, the simplest signal is to bookmark this page and check back. There is no signup, no email collection, and no account to create at any point.

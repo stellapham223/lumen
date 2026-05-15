@@ -1,0 +1,48 @@
+,II. PHÂN TÍCH WEBSITE,,
+YẾU TỐ PHÂN TÍCH,TÌNH TRẠNG WEBSITE,ĐỀ XUẤT,
+Content,"- Đã publish 9 blog posts (Test E 5 + newer 4) từ 2026-04-28
+- Domain mới (lumencal.com live từ Sprint 4)
+- Tất cả posts productivity-positioned (no diet/workout)
+- Có app calculator + home page + about
+- Topic coverage: cycle syncing 101; phases; legit/work; birth control; beginners
+- Chưa có hub-spoke architecture rõ ràng — phase deep-dives đang được viết (#12-15)
+
+=> Topical authority đang build. Cần Tier 2 deep-dives (4 phases) để consolidate.","- Ship 12 posts còn lại theo CONTENT_CALENDAR_2026_05.md (May-June 2026)
+- Build phase deep-dive hub-spoke: cycle-syncing-chart (hub) → 4 phase posts (spokes)
+- Add glossary section (terms như follicular phase; luteal phase; LH surge; basal body temperature)
+- Review content có em dash không — replace all em dash (feedback memory)
+- Post-publish: monitor GSC sau 2026-05-19 (Test E gate)",
+Lỗi Technical,"- Next.js 15 (statically generated)
+- LCP fast (Vercel edge)
+- GSC + Bing Webmaster đã verify; sitemap submitted
+- GA4 + Microsoft Clarity installed
+- Cần audit: structured data; Open Graph; breadcrumb schema","- Audit schema deployment: Article + FAQPage + Organization + WebSite
+- Check Open Graph tags trên tất cả blog posts
+- Verify Breadcrumb schema (nếu chưa có thì add)
+- Monthly Lighthouse audit
+- Submit sitemap update mỗi khi ship batch posts mới",
+Quảng bá,"- Backlink: ~10 backlink (self + minimal)
+- Reddit account tạo 2026-04-30; age gate clears 2026-05-30 (chưa drop link được)
+- Pinterest: chưa setup
+- Email list: chưa có
+- Affiliate: Amazon Associates approved (tag lumencal0c-20); Flo pending; Natural Cycles pending
+=> Distribution channels chưa active. Toàn bộ traffic phụ thuộc organic search.","- Phase 1 (May-Jun 2026): Pinterest setup + 5-10 pins/post
+- Phase 2 (Jun 2026+): Reddit seeding theo REDDIT_SEEDING_PLAYBOOK.md
+- Phase 3 (Jul 2026+): HARO outreach + guest posts trên productivity blogs
+- Email list: Add Substack hoặc ConvertKit (free tier) sau khi Test E pass
+- Backlink: target 50 backlinks Q3 2026 (HARO + guest posts + Reddit)
+- Affiliate complete: follow up Flo email; apply Natural Cycles; apply Oura post-Test E",
+On-page SEO,"- URLs clean: /blog/{slug}
+- Meta titles + descriptions có nhưng chưa audit hết
+- H1/H2 hierarchy: OK cho 9 posts đã ship
+- Internal linking: ad-hoc; chưa có cluster strategy","- Audit meta cho 9 posts đã publish (chiều dài; CTR potential)
+- Build internal linking matrix: mỗi spoke link về hub; hub link xuống tất cả spokes
+- Add 'Related posts' section dưới mỗi post
+- Affiliate disclosure component đã có (AffiliateDisclosure.tsx) — verify deploy hết các posts có affiliate",
+E-E-A-T / YMYL,"- Niche women's health — Google YMYL standard cao
+- Chưa có medical reviewer
+- About page có nhưng chưa stress credentials
+- Cần citation chuẩn (PubMed; gov sources)","- Add medical disclaimer cho mọi post about health
+- About page: thêm credentials / sources references
+- Mỗi post YMYL (birth control; phase guides): cite ít nhất 3 PubMed/NIH sources
+- Consider 'Reviewed by [MD]' line (sau khi có budget hire reviewer)",

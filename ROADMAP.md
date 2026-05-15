@@ -1,6 +1,6 @@
 # Lumen Roadmap (Path C — Hybrid Evolution)
 
-> Product name: **Lumen** (chosen 2026-04-28). Folder still named `cycle-flow` (working name); domain decided later per Sprint 4.
+> Product name: **Lumen** (chosen 2026-04-28). Domain: **lumencal.com** (live). Folder still named `cycle-flow` (working name).
 > Working doc. Right-sized for current scope (content business now → product later).
 > Heavy strategy docs archived in `docs/reference/` — reference only, not working plans.
 
@@ -28,9 +28,9 @@ Free SEO-discoverable cycle productivity calculator. **Content business model**:
 - Sprint 2 ✅: localStorage persistence, SEO + AEO foundation (metadata, sitemap, robots, JSON-LD, llms.txt, AI bot allowlist, Microsoft Clarity heatmaps + session replays — free)
 - Sprint 3 Phase 3.0 ✅: Keyword research via Ahrefs free (skipped 160k VND Google Ads deposit). Audience-mismatch insight logged in [docs/keyword_research_2026_04.md](docs/keyword_research_2026_04.md)
 - Sprint 3 Phase 3.1 ✅: 5 MDX SEO test pages (Test E setup) — 2026-04-28. Measure rankings at week 3
-- Sprint 3 Phase 3.1.5: AI Overview optimization on existing 5 posts (~2h, see detail below)
+- Sprint 3 Phase 3.1.5 ✅: AI Overview optimization on existing 5 posts (shipped via blog audit pass — Quick takeaway aside pattern, see [BLOG_AUDIT_PLAYBOOK.md §1](docs/BLOG_AUDIT_PLAYBOOK.md))
 - Sprint 3 Phase 3.2: Tiered programmatic content (~55-60h spread 4-6 months — see detail). Gated on Test E PASS
-- Sprint 4: Domain + minimal brand identity (functional, science-aesthetic) + email capture (Buttondown $9/mo)
+- Sprint 4 ✅ (partial): Domain (lumencal.com) live. Remaining: minimal brand identity refinement + email capture (Buttondown $9/mo)
 - Sprint 5: Apply Ezoic (5k pageviews threshold), Reddit value-first launch, **tier-2 backlink outreach only** (femtech blogs, productivity micro-publications). Tier-1 publications (Healthline, NYT class) defer to Phase 4
 
 ### Sprint 1.5 detail — pre-investment viability gate
@@ -68,8 +68,8 @@ Tests D-F run as natural by-products of Sprint 2-3:
 
 Full research synthesis (calculator/tool SEO patterns from OmniCalculator, Calculator.net, Wise, Zapier) in [docs/SEO_PLAYBOOK_FROM_CALCULATOR_TOOLS.md](docs/SEO_PLAYBOOK_FROM_CALCULATOR_TOOLS.md).
 
-**Phase 3.1.5 — AI Overview quick win** (~2h, can run during Test E measurement period)
-Add 40-60 word direct answer paragraph under H1 of each existing blog post. AI Overviews appear on 58% of 2026 queries; bolded answer paragraph is what Google extracts.
+**Phase 3.1.5 — AI Overview quick win ✅** (shipped via blog audit pass)
+Quick takeaway aside under each H1 with 45-57 word bold direct answer. Implements the AI Overview extraction pattern (bolded answer paragraph). All 5 Test E posts and posts #6-7 follow the pattern. New posts in CONTENT_CALENDAR_2026_05 must use the same opener — see [BLOG_AUDIT_PLAYBOOK.md §1](docs/BLOG_AUDIT_PLAYBOOK.md).
 
 **Phase 3.2 — Tiered scaling, gated on Test E PASS** (~55-60h, 4-6 months)
 - **Tier 1** (~12h): 5 calculator-intent pages — `/calculator/[cycle-phase|luteal-phase|follicular-phase|ovulation|period-prediction]`. Direct compete with Calculator.net + WebMD on tool intent.
@@ -175,7 +175,7 @@ Loose plan, depends on Phase 1-3 results:
 | Cost | Monthly | Annual |
 |---|---|---|
 | Vercel hosting | $0 (free tier) | $0 |
-| Domain (from Sprint 4) | $1 | $12 |
+| Domain (lumencal.com) | $1 | $12 |
 | Analytics (Microsoft Clarity + Vercel/GA4 free) | $0 | $0 |
 | Buttondown email | $9 | $108 |
 | Postgres (from Phase 3) | $0-20 | $0-240 |
@@ -227,11 +227,11 @@ Loose plan, depends on Phase 1-3 results:
 **Sprint 3 Phase 3.0 ✅** (2026-04-28) — Keyword research via Ahrefs free. [Audience-mismatch insight](docs/keyword_research_2026_04.md).
 **Sprint 3 Phase 3.1 ✅** (2026-04-28) — 5 MDX SEO test pages shipped. Test E measurement window: 2026-05-19 (3 weeks).
 
-**Phase 3.1.5 (~2h, can ship now)**: AI Overview optimization on existing 5 posts. Add 40-60 word direct answer paragraph under each H1.
+**Phase 3.1.5 ✅** (shipped via blog audit pass): AI Overview optimization on existing 5 posts — Quick takeaway aside with 45-57 word bold direct answer under each H1. Pattern documented in [BLOG_AUDIT_PLAYBOOK.md §1](docs/BLOG_AUDIT_PLAYBOOK.md).
 
 **Concurrent (3-week Test E window)**:
 1. Manual incognito ranking check weekly (5 keywords × ~5min/week)
 2. Apply Flo + Natural Cycles + Oura affiliate programs (Sprint 1.5 follow-up, ~30min total)
-3. Optional: setup Search Console for vercel.app subdomain to measure Test E precisely (or skip until Sprint 4 domain bought)
+3. ✅ GSC + Bing Webmaster verified for lumencal.com, sitemap submitted
 
 **At week 3 (2026-05-19)**: measure Test E. ≥1 page in top 30 → Phase 3.2 GO. Else debug or kill.

@@ -48,7 +48,7 @@ Sprint 3 Phase 3.1 (Test E) targets option 2+3. Option 1 is a Phase 4 conversati
 
 **Selection logic**:
 - 3 pages with volume >100 (realistic ranking targets)
-- 2 pages with volume <100 + Easy KD (rank fast even on vercel.app subdomain)
+- 2 pages with volume <100 + Easy KD (rank fast even on a fresh domain)
 - All align with productivity positioning — no workout/meal content needed
 - #2 and #3 are tool-flavored — strong link path to Lumen calculator → conversion driver
 - #5 doubles as defensive brand content (handles skepticism queries that would otherwise go to Tom's Guide debunk article)
