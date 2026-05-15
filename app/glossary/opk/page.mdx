@@ -1,0 +1,111 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Ovulation Predictor Kit (OPK): how it works and when it does not",
+  description:
+    "An OPK is a urine test that detects the LH surge, predicting ovulation 24 to 36 hours ahead. Strip vs digital, when to start testing, and why a positive does not always mean ovulation will occur.",
+  alternates: { canonical: "/glossary/opk" },
+  openGraph: {
+    title: "Ovulation Predictor Kit (OPK) | Lumen glossary",
+    description:
+      "How OPKs detect the LH surge, the strip vs digital tradeoff, and the limits.",
+    url: "/glossary/opk",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Ovulation Predictor Kit (OPK)"
+  description="A urine test that detects the luteinizing hormone (LH) surge preceding ovulation. A positive OPK predicts ovulation will occur in roughly 24 to 36 hours. Available as test strips, midstream tests, and digital devices."
+  path="/glossary/opk"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Ovulation Predictor Kit (OPK)", path: "/glossary/opk" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Ovulation Predictor Kit (OPK)
+
+An **Ovulation Predictor Kit (OPK)** is a urine-based test that detects the [LH surge](/glossary/lh-surge), the sharp rise in luteinizing hormone that triggers [ovulation](/glossary/ovulation). A positive OPK predicts ovulation will occur in roughly 24 to 36 hours. It is the most accessible way to identify the [fertile window](/glossary/fertile-window) in advance, used widely for conception and as a component of some [fertility awareness](/glossary/fam) protocols.
+
+## How it works
+
+OPKs use the same lateral flow technology as pregnancy tests, with an antibody calibrated for LH instead of hCG. Two lines appear on a test strip: a control line (always visible) and a test line. The test is positive when the test line is **as dark as or darker than** the control line. A test line lighter than the control means baseline LH; not yet positive.
+
+LH is produced continuously at low levels and surges sharply just before ovulation. The surge typically lasts 24 to 48 hours; the OPK catches it during that window.
+
+## Strip vs digital
+
+**Test strips.** $0.30 to $1.50 per test. The line-comparison method requires interpretation, faint lines, gradually darkening lines, "almost positive" results are common in the few days before the true surge. Some users find this useful (catches the surge climbing) and others find it stressful.
+
+**Midstream tests.** Same chemistry as strips, with a plastic handle for direct urine collection. Easier to use, slightly more expensive per test.
+
+**Digital tests.** Translate the line comparison into a clear "yes / no" or "smiley / no smiley". Eliminates ambiguity. $3 to $5 per test. Some digital tests also display the test line darkening pattern over days (Clearblue Advanced shows high / peak / low).
+
+**Quantitative monitors.** Mira, Inito, Proov, [continuous fertility monitors](/glossary/continuous-fertility-monitor) measure actual LH (and sometimes estrogen, progesterone) metabolite concentrations rather than a threshold positive/negative. More precise, much higher cost.
+
+## When to start testing
+
+The standard protocol:
+
+1. Calculate the predicted ovulation date from your cycle history (typically cycle length minus 14, so day 14 in a 28-day cycle, day 11 in a 25-day cycle, day 17 in a 31-day cycle)
+2. Start testing **5 days before** the predicted ovulation date
+3. Test daily, ideally between 10am and 8pm (LH is detectable in urine roughly 4 hours after the surge starts in blood; first-morning urine often misses the start)
+4. Continue until a positive, then ovulation expected in 24 to 36 hours
+
+For users with longer or irregular cycles, start earlier and test daily. Some users need 2 to 3 cycles to find their typical surge timing.
+
+## What an OPK cannot do
+
+- **Predict in advance.** Only catches the surge once it starts, not before.
+- **Confirm ovulation actually occurred.** A surge can happen without follicle rupture (luteinized unruptured follicle syndrome, more common with age and [PCOS](/glossary/pcos)). For confirmation, use [BBT](/glossary/basal-body-temperature) or a mid-luteal progesterone blood test.
+- **Work reliably with PCOS.** PCOS users often have elevated baseline LH, producing chronic faint-positive results that never resolve into a clear surge. Quantitative monitors are more useful here.
+- **Work in [perimenopause](/glossary/perimenopause).** Elevated baseline FSH and irregular LH patterns make OPK interpretation harder.
+- **Work with hormonal contraception.** Hormonal birth control suppresses LH; OPKs are not informative.
+
+## OPK and conception
+
+For conception, the standard practice is to time intercourse on the day of the positive OPK and the following day. Some recent evidence suggests fertility is similar across the days from 2 days before through the day of ovulation, so the day-before-positive is also a strong day.
+
+Daily or every-other-day intercourse from the start of the [cervical mucus](/glossary/cervical-mucus-tracking) egg-white stage through 1 day after the positive OPK covers the full fertile window with low planning effort.
+
+## OPK and contraception
+
+OPKs alone are not adequate contraception. They detect the surge in real time but do not predict it more than 24 to 36 hours ahead, sperm survival up to 5 days means intercourse before the surge can still result in pregnancy.
+
+In the [sympto-thermal method](/glossary/sympto-thermal-method) and symptohormonal protocols, OPK is used as a confirmatory signal alongside cervical mucus and BBT. The Marquette Method incorporates Clearblue Fertility Monitor data into a full FAM protocol with comparable efficacy to sympto-thermal.
+
+## OPK and cycle syncing
+
+For [cycle syncing](/glossary/cycle-syncing), the value of OPK is anchoring the [ovulatory phase](/glossary/ovulatory-phase) precisely. A positive OPK identifies the 24 to 36 hour window for peak estrogen and slightly elevated testosterone, the highest-performance window for presentations, negotiations, and demanding social work.
+
+For most users with regular cycles, calendar prediction via the [Lumen phase calculator](/plan) is accurate enough for scheduling. OPKs become useful when cycles are irregular or when you want to confirm the predicted ovulation actually occurred this cycle.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="opk"
+  title="Ovulation Predictor Kit (OPK)"
+  toc={[
+    { id: "how-it-works", label: "How it works" },
+    { id: "strip-vs-digital", label: "Strip vs digital" },
+    { id: "when-to-start-testing", label: "When to start" },
+    { id: "what-an-opk-cannot-do", label: "What it cannot do" },
+    { id: "opk-and-conception", label: "OPK and conception" },
+    { id: "opk-and-contraception", label: "OPK and contraception" },
+    { id: "opk-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

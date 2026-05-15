@@ -1,0 +1,136 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Privacy-first cycle tracking: what it means and which apps qualify",
+  description:
+    "Privacy-first cycle tracking means local-only data, no account required, no third-party sharing, and meaningful export. Why it matters post-Roe, the criteria that count, and which apps actually meet them.",
+  alternates: { canonical: "/glossary/privacy-first-tracking" },
+  openGraph: {
+    title: "Privacy-first cycle tracking | Lumen glossary",
+    description:
+      "What privacy-first actually means, the criteria, and how apps compare.",
+    url: "/glossary/privacy-first-tracking",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Privacy-first cycle tracking"
+  description="An approach to cycle tracking that prioritizes local-only data storage, no account required, no third-party data sharing, and full data export. Became substantially more relevant after the 2022 Dobbs decision changed the legal landscape around reproductive data in the United States."
+  path="/glossary/privacy-first-tracking"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Privacy-first cycle tracking", path: "/glossary/privacy-first-tracking" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Privacy-first cycle tracking
+
+**Privacy-first cycle tracking** is a tracking approach that prioritizes user data sovereignty over feature richness. The minimum bar: local-only or end-to-end encrypted data, no account required, no third-party data sharing, and a meaningful export option. The concept became substantially more relevant after the 2022 Dobbs decision changed the legal landscape around reproductive data in the United States.
+
+This is a category of [cycle tracking](/glossary/cycle-tracking) apps, not a separate method. The biology and the math are the same; the difference is data handling.
+
+## Why this became urgent
+
+Before 2022, cycle tracking apps were already accumulating sensitive data: pregnancy attempts, miscarriages, fertility treatments, sexual activity. The privacy debate was largely about targeted advertising and data brokers.
+
+After the 2022 Dobbs decision in the US, the picture changed. State laws began criminalizing some reproductive choices, and prosecutors started seeking digital evidence including cycle tracking data. Several high-profile cases highlighted that:
+
+- Subpoenas can compel app companies to hand over user data
+- Some companies have responded; others have resisted
+- Data stored on company servers is reachable in ways that data stored only on the user's device is not
+
+Users outside the US are not immune. Other jurisdictions have evolving reproductive law, and data privacy varies widely.
+
+## The criteria that actually matter
+
+Marketing copy uses "privacy" loosely. The criteria that move the needle:
+
+**1. Where is the data stored.**
+- **On-device only.** Strongest. Even a subpoena cannot reach data the company does not have. Examples: Apple Health (default), Drip, Euki.
+- **End-to-end encrypted in the cloud.** Strong. Even the company cannot read your data. Examples: a small subset of apps; check the technical privacy policy, not the marketing copy.
+- **Server-stored, encrypted at rest.** Weak. The company can decrypt and is reachable by legal process. Most cloud-based apps.
+
+**2. Account requirement.**
+- **No account required.** Cannot be tied to an identity. Strongest. Examples: Apple Health (with phone-level auth), Drip, Euki.
+- **Email account required.** Tied to an identity. Weaker.
+
+**3. Third-party data sharing.**
+- **None.** Clear in privacy policy. Strongest.
+- **Analytics only (anonymized).** Acceptable to most users.
+- **Advertising, data brokers, partnerships.** Weakest.
+
+**4. Data export and deletion.**
+- **Full export in standard formats, full deletion on request.** Standard expectation.
+- **No export, or partial deletion only.** Red flag.
+
+**5. Jurisdiction of the company.**
+- **EU-based.** Subject to GDPR; stronger user protections.
+- **US-based.** Subject to US legal process.
+- **Other.** Varies; check.
+
+## Which apps meet these criteria
+
+Privacy postures change, so verify before committing. As of 2025 to 2026:
+
+**Strong privacy posture.** Drip (Berlin-based, open source, on-device), Euki (US, on-device, no account), Apple Health cycle tracking (on-device, no account, hardware-encrypted), Read Your Body (privacy-forward but more complex).
+
+**Mixed or improving.** Clue (Berlin-based, GDPR coverage, but cloud-stored), Natural Cycles (cloud-stored, but FDA-cleared and privacy-conscious).
+
+**Less privacy-forward.** Several large period trackers have historically shared data with advertisers or analytics providers. Read the current privacy policy before signing up.
+
+## What "privacy" claims to be skeptical of
+
+These claims sound reassuring but often do not deliver:
+
+- **"We do not sell your data."** Different from "we do not share your data". Selling and sharing are not the same.
+- **"Your data is encrypted."** Encryption at rest is standard. End-to-end encryption is different.
+- **"HIPAA-compliant."** HIPAA does not cover most cycle tracking apps. The label is often marketing.
+- **"We take privacy seriously."** Means nothing. Look for technical specifics.
+
+Look for: what data is collected, where it is stored, who can access it, how to delete it, and what happens with subpoenas.
+
+## Tradeoffs of privacy-first apps
+
+Privacy-first apps tend to have:
+
+- Less polished UI than mainstream apps
+- Fewer features (no AI predictions, less educational content, no community features)
+- Smaller teams and slower update cycles
+- Sometimes weaker phase prediction algorithms
+
+The tradeoff is real. For users who do not face material legal risk, the convenience of mainstream apps may outweigh the privacy concern. For users in jurisdictions with restrictive reproductive law, the tradeoff is worth making.
+
+## Lumen's posture
+
+The [Lumen phase calculator](/plan) is account-free and runs the math client-side. There is no logged cycle history to subpoena because none is stored. As Lumen adds account-based features in future versions, the design principle is data minimization, store only what is needed for the feature, and provide [export](/glossary/cycle-data-export) and full deletion as baselines.
+
+For users who want a richer logging experience right now, pair the Lumen calculator with one of the privacy-forward apps above. See [best cycle syncing app](/blog/best-cycle-syncing-app) for comparisons that include privacy posture.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="privacy-first-tracking"
+  title="Privacy-first cycle tracking"
+  toc={[
+    { id: "why-this-became-urgent", label: "Why it matters now" },
+    { id: "the-criteria-that-actually-matter", label: "Criteria that matter" },
+    { id: "which-apps-meet-these-criteria", label: "Which apps qualify" },
+    { id: "what-privacy-claims-to-be-skeptical-of", label: "Skeptical claims" },
+    { id: "tradeoffs-of-privacy-first-apps", label: "Tradeoffs" },
+    { id: "lumens-posture", label: "Lumen's posture" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,108 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Anovulatory cycle: a cycle without ovulation, explained",
+  description:
+    "An anovulatory cycle is a menstrual cycle that occurs without ovulation. Common in adolescence, perimenopause, PCOS, and during high stress. Definition, causes, and what it means for cycle syncing.",
+  alternates: { canonical: "/glossary/anovulatory-cycle" },
+  openGraph: {
+    title: "Anovulatory cycle | Lumen glossary",
+    description:
+      "Definition, common causes, how to identify one, and why cycle syncing does not strictly apply.",
+    url: "/glossary/anovulatory-cycle",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Anovulatory cycle"
+  description="A menstrual cycle that occurs without ovulation. Common in adolescence, perimenopause, PCOS, and during high stress."
+  path="/glossary/anovulatory-cycle"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Anovulatory cycle", path: "/glossary/anovulatory-cycle" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Anovulatory cycle
+
+An **anovulatory cycle** is a menstrual cycle in which [ovulation](/glossary/ovulation) does not occur. The follicular phase may stretch out without a clear [LH surge](/glossary/lh-surge), or a follicle may develop without rupturing. Bleeding can still happen, but it is triggered by an estrogen drop rather than progesterone withdrawal from a [corpus luteum](/glossary/corpus-luteum).
+
+Anovulatory cycles are more common than most people realize. Studies suggest healthy adults under 40 may have 1 to 2 anovulatory cycles per year even with otherwise regular periods.
+
+## Why anovulatory cycles happen
+
+The mechanism varies, but the common thread is disruption of the [HPO axis](/glossary/hpo-axis) feedback loop that drives ovulation. The most frequent causes:
+
+- **Adolescence.** It takes 1 to 2 years post-[menarche](/glossary/menarche) for cycles to become reliably ovulatory.
+- **[PCOS](/glossary/pcos).** Often presents with irregular or chronically absent ovulation.
+- **[Perimenopause](/glossary/perimenopause).** Anovulatory cycles become more common as [ovarian reserve](/glossary/ovarian-reserve) declines.
+- **High stress, sleep loss, or acute illness.** Can suppress the LH surge in any individual cycle.
+- **Under-fueling or over-training.** Can cause [hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea) or [RED-S](/glossary/red-s).
+- **Thyroid disorders.** Both hyper and hypothyroidism can disrupt ovulation ([thyroid cycle interactions](/glossary/thyroid-cycle)).
+- **[Hyperprolactinemia](/glossary/prolactin).** Elevated prolactin suppresses GnRH.
+- **Hormonal birth control.** Most combined methods deliberately suppress ovulation.
+- **Postpartum and breastfeeding.** Cycle return often includes anovulatory cycles in the first few months.
+
+## How to identify one
+
+Anovulatory cycles often look normal on a calendar, so identifying them requires direct ovulation evidence:
+
+- **[BBT](/glossary/basal-body-temperature) tracking.** No sustained temperature rise in the second half of the cycle.
+- **[LH testing](/glossary/opk).** No clear surge across the expected ovulation window.
+- **Mid-luteal progesterone test.** Blood progesterone under 3 ng/mL roughly 7 days after suspected ovulation indicates no ovulation.
+- **Cycle pattern clues.** Cycles consistently under 21 days or over 35 days, or wide month-to-month swings.
+
+A single anovulatory cycle is usually not concerning. A pattern of them (three or more in a row, or chronic irregularity) warrants a clinician conversation.
+
+## What still happens hormonally
+
+In an anovulatory cycle, the [follicular phase](/glossary/follicular-phase) hormone profile (rising estrogen) often still occurs. What is missing is the post-ovulation [progesterone](/glossary/progesterone) surge from the corpus luteum. This has practical consequences:
+
+- The [endometrium](/glossary/endometrium) may keep thickening under unopposed estrogen
+- No progesterone-driven [BBT](/glossary/basal-body-temperature) rise
+- Bleeding (if it occurs) is breakthrough bleeding from an estrogen drop, not true [menstruation](/glossary/menstruation)
+- PMS symptoms may be milder or absent (PMS is driven largely by progesterone metabolites)
+
+Chronically unopposed estrogen (over many anovulatory cycles in a row) raises the risk of endometrial hyperplasia, which is why chronically anovulatory conditions like untreated [PCOS](/glossary/pcos) are flagged for monitoring.
+
+## Anovulatory cycles and fertility
+
+If conception is the goal, anovulatory cycles are the primary barrier. Tracking [BBT](/glossary/basal-body-temperature), [LH](/glossary/opk), and [cervical mucus](/glossary/cervical-mucus-tracking) gives the most reliable picture. If multiple cycles in a row show no ovulation evidence, a fertility workup is the next step.
+
+## Anovulatory cycles and cycle syncing
+
+The four-phase [cycle syncing](/glossary/cycle-syncing) model assumes a natural ovulatory cycle. In an anovulatory cycle:
+
+- The hormonal [luteal phase](/glossary/luteal-phase) does not occur
+- The post-ovulation pattern (progesterone-driven detail focus, then late-luteal PMS) is absent
+- Calendar-based phase prediction becomes unreliable
+
+For users with chronic anovulation (PCOS, perimenopause, recovery from hypothalamic amenorrhea), the [PCOS cycle syncing guide](/glossary/cycle-syncing-pcos) and [perimenopause cycle syncing guide](/glossary/cycle-syncing-perimenopause) cover adapted protocols.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="anovulatory-cycle"
+  title="Anovulatory cycle"
+  toc={[
+    { id: "why-anovulatory-cycles-happen", label: "Why they happen" },
+    { id: "how-to-identify-one", label: "How to identify one" },
+    { id: "what-still-happens-hormonally", label: "Hormonal profile" },
+    { id: "anovulatory-cycles-and-fertility", label: "Fertility implications" },
+    { id: "anovulatory-cycles-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

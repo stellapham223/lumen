@@ -1,0 +1,122 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Cycle re-anchoring: updating phase predictions each new cycle",
+  description:
+    "Cycle re-anchoring is the practice of updating phase predictions on day 1 of each new period. Cycles drift, so static predictions stop being useful. Definition, why it matters, and how to make it a habit.",
+  alternates: { canonical: "/glossary/cycle-reanchoring" },
+  openGraph: {
+    title: "Cycle re-anchoring | Lumen glossary",
+    description:
+      "Updating phase predictions on day 1 of each new period. Necessary because cycles drift.",
+    url: "/glossary/cycle-reanchoring",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Cycle re-anchoring"
+  description="The practice of updating cycle phase predictions on day 1 of each new menstrual period. Necessary because cycles drift; a fixed prediction stops being accurate after a cycle or two."
+  path="/glossary/cycle-reanchoring"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Cycle re-anchoring", path: "/glossary/cycle-reanchoring" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Cycle re-anchoring
+
+**Cycle re-anchoring** is the practice of updating your cycle phase predictions on day 1 of each new period. Lumen's positioning is that re-anchoring is the most-skipped step in cycle-aware productivity and the reason most people quit; the underlying rationale is that cycles drift, and a phase prediction that worked last month will be 1 to 3 days off this month if you do not refresh the anchor.
+
+Without re-anchoring, the calendar overlay becomes a fixed schedule that no longer matches the body. The most common failure mode: setting a deep-work week in what you think is follicular, but it is actually early luteal because the previous cycle ran short. The work feels harder than expected, the user concludes phase-based scheduling does not work, and the practice gets abandoned.
+
+## Why cycles drift
+
+Three sources of cycle-to-cycle variation:
+
+- **Normal physiological variation.** Even healthy regular cycles vary by 1 to 5 days. The [follicular phase](/glossary/follicular-phase) carries most of the swing; the [luteal phase](/glossary/luteal-phase) stays close to 14 days.
+- **Stress, sleep, and travel.** Acute stress can delay [ovulation](/glossary/ovulation), which extends the follicular phase. Cross-timezone travel can shift it by 2 to 4 days.
+- **Life stages.** [Perimenopause](/glossary/perimenopause) compresses cycles; [postpartum cycle return](/glossary/postpartum-cycle-return) and [post-pill amenorrhea](/glossary/post-pill-amenorrhea) produce irregular early cycles.
+
+The system was never designed to be stable across years. It was designed to support reproduction, which means it adapts to current conditions every cycle.
+
+## What re-anchoring looks like
+
+The practice is small but non-negotiable:
+
+1. **Notice day 1.** Full flow, not spotting (see [cycle anchor date](/glossary/cycle-anchor-date)).
+2. **Open the phase calculator.** [Lumen's free tool](/plan) takes the new anchor as input.
+3. **Update the anchor.** The new anchor replaces the old; predictions recompute.
+4. **Re-check the average cycle length.** If you tracked this cycle, the average can update too. Most calculators allow this.
+
+Total time: under a minute. Frequency: once per cycle.
+
+## What changes when you re-anchor
+
+Three downstream effects:
+
+- **Phase ranges shift.** If your cycle ran 2 days shorter than expected, the new phase ranges land 2 days earlier than the prediction.
+- **Calendar entries should update.** Any pre-scheduled work blocks tied to phase need to move with the new prediction.
+- **Average cycle length refines.** Over 3 to 4 cycles, the average converges on your true cycle length. The first cycle's average is a guess; the third cycle's is grounded.
+
+## How to make re-anchoring a habit
+
+Three habit anchors that work for most users:
+
+- **Tie it to a recurring check-in.** Sunday planning ritual, weekly review, or whatever you already do.
+- **Use a calendar reminder.** A standing recurring task ("update Lumen anchor on day 1") removes the need to remember.
+- **Re-anchor before you re-plan.** If you are about to schedule next week's work, refresh the anchor first. The new ranges may move the work.
+
+The failure mode is forgetting and scheduling against stale ranges. The fix is making the anchor update the first step of weekly planning.
+
+## When re-anchoring is not enough
+
+Re-anchoring corrects for normal drift. It does not rescue every case:
+
+- **Highly irregular cycles** ([PCOS](/glossary/pcos), [perimenopause](/glossary/perimenopause), [hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea)). Calendar prediction breaks down. Direct ovulation tracking with [BBT](/glossary/basal-body-temperature) or [OPK](/glossary/opk) is required.
+- **Anovulatory cycles** ([anovulatory cycle](/glossary/anovulatory-cycle)). A bleed without ovulation is not a true cycle. The next anchor may also be off.
+- **Hormonal birth control.** Withdrawal bleeds during placebo weeks are not a true cycle anchor in the hormonal sense. See [cycle syncing on birth control](/blog/cycle-syncing-on-birth-control).
+
+In these cases, the value of phase-based scheduling drops, and the recovery guardrails (sleep, late luteal symptom management) carry more of the weight than active scheduling.
+
+## Lumen's positioning
+
+The [Lumen phase calculator](/plan) is built around re-anchoring. The home screen prompts for the anchor date directly; updating it takes one tap. Predictions recompute the moment the anchor changes. No login is required; the data stays in your browser (see [privacy-first tracking](/glossary/privacy-first-tracking)).
+
+The product treats re-anchoring as the most-important monthly action a user can take. Most other tracking is optional. Re-anchoring is not.
+
+## Related reading
+
+- [Cycle anchor date](/glossary/cycle-anchor-date): the input that needs updating
+- [Cycle tracking](/glossary/cycle-tracking): the recording layer
+- [Phase calculator](/glossary/phase-calculator): the tool that uses the anchor
+- [Phase-based scheduling](/glossary/phase-based-scheduling): why anchor accuracy matters
+
+</article>
+
+<GlossarySidebar
+  currentSlug="cycle-reanchoring"
+  title="Cycle re-anchoring"
+  toc={[
+    { id: "why-cycles-drift", label: "Why cycles drift" },
+    { id: "what-re-anchoring-looks-like", label: "The practice" },
+    { id: "what-changes-when-you-re-anchor", label: "What changes" },
+    { id: "how-to-make-re-anchoring-a-habit", label: "Habit anchors" },
+    { id: "when-re-anchoring-is-not-enough", label: "Where it breaks" },
+    { id: "lumens-positioning", label: "Lumen's positioning" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,129 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Cycle tracking wearables: Oura, Whoop, Apple Watch, and what they actually measure",
+  description:
+    "Cycle tracking wearables (Oura, Whoop, Apple Watch, Garmin) infer cycle phases from skin temperature, HRV, and resting heart rate. How they work, accuracy, and the privacy + cost tradeoffs.",
+  alternates: { canonical: "/glossary/cycle-tracking-wearable" },
+  openGraph: {
+    title: "Cycle tracking wearable | Lumen glossary",
+    description:
+      "How Oura, Whoop, Apple Watch, and Garmin detect cycle phases, plus accuracy and tradeoffs.",
+    url: "/glossary/cycle-tracking-wearable",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Cycle tracking wearable"
+  description="A wearable device (ring, watch, strap) that infers menstrual cycle phases from continuously measured biomarkers such as skin temperature, heart rate variability (HRV), and resting heart rate. Examples include Oura Ring, Whoop, Apple Watch, Garmin, and Fitbit."
+  path="/glossary/cycle-tracking-wearable"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Cycle tracking wearable", path: "/glossary/cycle-tracking-wearable" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Cycle tracking wearable
+
+A **cycle tracking wearable** is a device, typically a ring, watch, strap, or chest sensor, that infers [menstrual cycle](/glossary/menstrual-cycle) phases from biomarkers measured continuously during sleep and waking hours. The main signals are skin temperature, [HRV](/glossary/hrv-cycle), resting heart rate, and respiration rate. The dominant devices in 2026 are Oura Ring, Whoop strap, Apple Watch, Garmin, Fitbit, and Tempdrop.
+
+These devices bypass the morning [BBT thermometer](/glossary/bbt-thermometer) ritual and produce phase predictions automatically. The tradeoff is cost, accuracy variability, and privacy.
+
+## What wearables measure for cycle tracking
+
+**Skin temperature during sleep.** The signal closest to [basal body temperature](/glossary/basal-body-temperature). Continuous sampling during sleep identifies the lowest nighttime point, which approximates BBT. Oura and Apple Watch both lean heavily on this.
+
+**Heart rate variability (HRV).** Drops 5 to 10ms in the [luteal phase](/glossary/luteal-phase) as progesterone activates the sympathetic nervous system. Visible in Whoop and Oura.
+
+**Resting heart rate (RHR).** Rises 2 to 5 bpm in the luteal phase. Whoop uses this prominently.
+
+**Respiration rate.** Rises slightly in the luteal phase. Modest signal, but adds to the inference.
+
+**Sleep architecture.** REM sleep decreases in late luteal; deep sleep shifts earlier. Less commonly used for phase detection directly.
+
+## The major devices, briefly
+
+**Oura Ring (Gen 3 and Gen 4).** Best skin temperature accuracy in independent comparisons. Predicts period start within a few days for most users. Subscription required ($6/month). Strong cycle visualization.
+
+**Apple Watch (Series 8+).** Has temperature sensor; predicts ovulation retrospectively. Native integration with Apple Health. Free if you already have the watch.
+
+**Whoop.** HRV-led; not initially designed for cycle tracking but now includes phase predictions. Subscription model ($30/month including hardware).
+
+**Garmin and Fitbit.** Both offer cycle tracking but primarily manual logging plus heart rate; less reliant on temperature than Oura or Apple Watch.
+
+**Tempdrop.** Upper-arm sensor specifically designed for [BBT](/glossary/basal-body-temperature) capture. Validated for [FAM](/glossary/fam) use. Higher accuracy but cycle-tracking-only purpose.
+
+## How accurate are they
+
+Independent studies (2023 to 2025) on skin temperature wearables consistently show:
+
+- **Period prediction.** Accurate within 2 days for over 80% of users after 2 to 3 cycles of training.
+- **Ovulation prediction.** Less reliable than [OPK](/glossary/opk) for conception timing; better than calendar-only for [cycle syncing](/glossary/cycle-syncing) purposes.
+- **Anovulatory cycle detection.** Improving but inconsistent across devices.
+- **Irregular cycle handling.** Works less well; algorithms typically need 3+ cycles to stabilize.
+
+Wearables are better than calendar-only prediction and roughly comparable to consistent morning BBT charting, with much less friction. They are less precise than [continuous fertility monitors](/glossary/continuous-fertility-monitor) like Mira or Inito.
+
+## Where wearables fail
+
+- **Consistent wear required.** Skipping nights breaks the model.
+- **Fever and illness.** Raises skin temperature, can be misread as the luteal shift.
+- **Alcohol, late nights, jet lag.** Confounders for the temperature signal.
+- **[PCOS](/glossary/pcos) and [perimenopause](/glossary/perimenopause).** Algorithms designed for regular cycles often fail on irregular cycles.
+- **First 1 to 2 cycles after starting.** Algorithm needs baseline training.
+
+## Privacy considerations
+
+Wearables generate granular health data and typically sync to a cloud account. The privacy posture varies:
+
+- **Apple Watch.** Apple Health data stays on-device; encrypted; not used for ads.
+- **Oura.** Subject to Oura's privacy policy; data resides on Oura servers.
+- **Whoop, Garmin, Fitbit.** Cloud-stored. Fitbit was acquired by Google in 2021, which changed its data context.
+
+For users prioritizing privacy, the strongest option remains local-only [period trackers](/glossary/period-tracker) without wearable integration. See [privacy-first tracking](/glossary/privacy-first-tracking) for the criteria that matter most.
+
+## When a wearable is worth it
+
+A wearable is a reasonable upgrade if:
+
+- You already own one for sleep or fitness tracking
+- The morning BBT thermometer ritual does not fit your life (shift work, parenting, irregular wake times)
+- You want phase predictions automatically rather than manually
+- You can tolerate algorithm-dependent accuracy
+
+It is overkill if:
+
+- You only want to plan around your next period (a free [period tracker](/glossary/period-tracker) is enough)
+- You need contraceptive-grade certainty (use [sympto-thermal](/glossary/sympto-thermal-method) or a long-acting reversible method instead)
+- Privacy is your top concern
+
+For cycle syncing specifically, the free [Lumen phase calculator](/plan) works from your last period date alone, no wearable needed. A wearable pays off when you want continuous, automatic phase awareness without daily logging. See [best cycle syncing app](/blog/best-cycle-syncing-app) for app and device pairings.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="cycle-tracking-wearable"
+  title="Cycle tracking wearable"
+  toc={[
+    { id: "what-wearables-measure-for-cycle-tracking", label: "What they measure" },
+    { id: "the-major-devices-briefly", label: "The major devices" },
+    { id: "how-accurate-are-they", label: "Accuracy" },
+    { id: "where-wearables-fail", label: "Where they fail" },
+    { id: "privacy-considerations", label: "Privacy" },
+    { id: "when-a-wearable-is-worth-it", label: "When it is worth it" },
+  ]}
+/>
+
+</div>

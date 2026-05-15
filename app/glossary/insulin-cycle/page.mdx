@@ -1,0 +1,137 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Insulin and the menstrual cycle: luteal phase sensitivity drop and PMS cravings",
+  description:
+    "Insulin sensitivity varies across the menstrual cycle, dropping in the luteal phase. This contributes to premenstrual cravings, weight fluctuation, and worsens PCOS symptoms.",
+  alternates: { canonical: "/glossary/insulin-cycle" },
+  openGraph: {
+    title: "Insulin (cycle interaction) | Lumen glossary",
+    description:
+      "How insulin sensitivity shifts across the cycle and why luteal phase cravings make sense.",
+    url: "/glossary/insulin-cycle",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Insulin (cycle interaction)"
+  description="Insulin sensitivity varies across the menstrual cycle. Sensitivity is highest in the follicular phase and drops in the luteal phase, contributing to premenstrual cravings, water retention, and worsened PCOS symptoms."
+  path="/glossary/insulin-cycle"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Insulin (cycle interaction)", path: "/glossary/insulin-cycle" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Insulin (cycle interaction)
+
+**Insulin** is the pancreatic hormone that regulates blood glucose and broader metabolism. It does not "cycle" the way [estrogen](/glossary/estrogen) and [progesterone](/glossary/progesterone) do, but **insulin sensitivity** (how strongly cells respond to a given amount of insulin) shifts measurably across the [menstrual cycle](/glossary/menstrual-cycle). The pattern partly explains [premenstrual cravings](/glossary/premenstrual-cravings), the cyclic weight fluctuation many women notice, and why [PCOS](/glossary/pcos) symptoms often worsen in the luteal phase.
+
+## How insulin sensitivity shifts across the cycle
+
+The pattern is consistent across studies, though the effect size is modest:
+
+- **[Follicular phase](/glossary/follicular-phase) (days 1 to 13).** Insulin sensitivity is at its highest. Carbohydrate tolerance is best. Stable blood sugar response.
+- **Around [ovulation](/glossary/ovulation) (days 13 to 15).** Sensitivity starts to decline as progesterone rises.
+- **[Luteal phase](/glossary/luteal-phase) (days 15 to 28).** Sensitivity drops by roughly 10 to 30% depending on the study and individual. Same carb intake produces a larger glucose spike.
+- **[Late luteal phase](/glossary/late-luteal-phase) (days 23 to 28).** Sensitivity is at its lowest. Cravings peak. Premenstrual hunger feels different in kind, not just degree.
+
+The mechanism is primarily progesterone's effect on insulin signaling at the muscle and adipose tissue level. Estrogen has the opposite effect (insulin-sensitizing), which is why the late follicular phase tends to feel metabolically "smooth."
+
+## Why luteal cravings make sense
+
+The combination of three factors converging in late luteal explains the premenstrual carb craving pattern:
+
+1. **Reduced insulin sensitivity** means a given meal produces a larger glucose spike and steeper crash, triggering rebound hunger.
+2. **Higher basal metabolic rate** in luteal phase (roughly 5 to 10% higher) increases absolute calorie needs.
+3. **Serotonin shifts** late luteal increase carbohydrate preference specifically, because carbohydrate intake transiently boosts tryptophan availability for serotonin synthesis.
+
+The result: cravings for sweet and starchy foods are not just willpower failures. They are a measurable hormonal pattern.
+
+## Insulin and PCOS
+
+The cycle interaction is most clinically important in [PCOS](/glossary/pcos), where insulin resistance is a core feature for the majority of patients:
+
+- **Baseline insulin resistance** is already present in 60 to 80% of PCOS cases.
+- **Luteal phase reduction in sensitivity** stacks on top of this, producing more pronounced symptoms.
+- **High insulin lowers [SHBG](/glossary/shbg)**, increasing free [androgens](/glossary/androgens-women) and worsening acne, hair changes, and mood symptoms.
+- **High insulin directly stimulates ovarian testosterone production**, completing the loop.
+
+This is why [cycle syncing nutrition for PCOS](/glossary/cycle-syncing-pcos) emphasizes consistent blood sugar management more aggressively than the standard cycle syncing template, and why [inositol](/glossary/inositol-pcos) is one of the few supplements with reasonable PCOS evidence.
+
+## Insulin and PMS
+
+The insulin link to general [PMS](/glossary/pms) is less established than the PCOS link, but a few mechanisms are plausible:
+
+- **Glucose volatility** from reduced luteal sensitivity may amplify mood lability.
+- **Reactive hypoglycemia** after high-carb meals can produce shakiness, irritability, anxiety, and brain fog overlapping with PMS symptoms.
+- **Carb crashes** in late luteal feel worse than the same crashes in follicular because baseline mood and energy are already lower.
+
+The practical implication: managing blood sugar (consistent protein, fiber, avoiding long fasted windows in late luteal) often reduces PMS severity even when no insulin diagnosis exists.
+
+## What does not work as well
+
+Some popular cycle-and-blood-sugar claims to be skeptical of:
+
+- **"Eat more carbs in luteal phase to support progesterone."** Carbohydrate intake does not directly support progesterone production. The serotonin link explains cravings but does not justify large carb increases as a strategy.
+- **Continuous glucose monitors as a "must" for cycle syncing.** Useful in PCOS or pre-diabetes but probably overkill for healthy non-diabetic women without metabolic symptoms.
+- **"Cycle-specific" fasting protocols.** The evidence that fasting timing should change by cycle phase is weak. The reasonable claim is that long fasted windows tolerate worse in late luteal for most women, not that there is a precise phase-specific protocol.
+
+## Practical implications for cycle syncing
+
+The reasonable, evidence-aligned takeaways:
+
+- **Front-load harder training in follicular phase.** Insulin sensitivity is highest, glucose handling is best, and recovery is faster.
+- **Prioritize protein and fiber in luteal phase** to blunt glucose spikes and stabilize mood.
+- **Eat regular meals in late luteal,** especially breakfast. Long morning fasts that work fine in follicular often produce hunger spikes and mood drops in late luteal.
+- **Get [phase-aligned nutrition](/glossary/phase-aligned-nutrition) right** if you have PCOS or pre-diabetes. The luteal-phase effect compounds existing metabolic issues.
+- **Track patterns** for one or two cycles before assuming the population pattern applies to you.
+
+## Testing
+
+The cycle interaction is not directly testable in routine labs. What you can test:
+
+- **Fasting insulin and glucose** for baseline insulin resistance. Calculate HOMA-IR (insulin × glucose / 405). Values over 2.0 suggest insulin resistance.
+- **HbA1c** for average glucose over the past three months.
+- **2-hour oral glucose tolerance test** in PCOS workup or when fasting values are equivocal.
+- **Continuous glucose monitoring** for two to four weeks if you want to see your own cycle pattern. Compare same meals in follicular versus late luteal.
+
+If you want to measure the cycle effect on yourself directly, eat the same standardized meal at the same time on day 7 (follicular) and day 24 (late luteal) and compare CGM curves.
+
+## Related reading
+
+- [Premenstrual cravings](/glossary/premenstrual-cravings): the most experiential consequence
+- [Insulin sensitivity (cycle)](/glossary/insulin-sensitivity-cycle): the mechanism in more detail
+- [SHBG](/glossary/shbg): the insulin-to-androgens link
+- [PCOS](/glossary/pcos): the condition where this matters most
+- [Cycle syncing for PCOS](/glossary/cycle-syncing-pcos): adapted strategy
+
+</article>
+
+<GlossarySidebar
+  currentSlug="insulin-cycle"
+  title="Insulin (cycle interaction)"
+  toc={[
+    { id: "how-insulin-sensitivity-shifts-across-the-cycle", label: "Cycle pattern" },
+    { id: "why-luteal-cravings-make-sense", label: "Luteal cravings" },
+    { id: "insulin-and-pcos", label: "PCOS" },
+    { id: "insulin-and-pms", label: "PMS" },
+    { id: "what-does-not-work-as-well", label: "Caveats" },
+    { id: "practical-implications-for-cycle-syncing", label: "Practical takeaways" },
+    { id: "testing", label: "Testing" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,107 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Stacy Sims: female athlete physiology researcher and author of ROAR",
+  description:
+    "Dr. Stacy Sims is a researcher and educator focused on female athlete physiology. Author of ROAR and Next Level. Known for the slogan 'women are not small men' and cycle-aware training research.",
+  alternates: { canonical: "/glossary/stacy-sims" },
+  openGraph: {
+    title: "Stacy Sims | Lumen glossary",
+    description:
+      "Who Stacy Sims is, her research contributions to female athlete physiology, and where her practical claims are stronger or weaker.",
+    url: "/glossary/stacy-sims",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Stacy Sims"
+  description="Researcher and author specializing in female athlete physiology. PhD in environmental exercise physiology and nutrition. Author of ROAR (2016) and Next Level (2022). Catchphrase: women are not small men."
+  path="/glossary/stacy-sims"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Stacy Sims", path: "/glossary/stacy-sims" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Stacy Sims
+
+**Dr. Stacy Sims** is a researcher, educator, and author who has spent her career studying female athlete physiology, particularly hormonal influences on training, recovery, and nutrition. She holds a PhD in environmental exercise physiology and nutrition science from the University of Otago, and has held research positions at Stanford and other institutions. She is best known for popularizing the slogan **"women are not small men"** and for translating exercise science specifically for menstruating women, perimenopausal women, and women in [menopause](/glossary/menopause).
+
+Sims is the most credentialed of the major cycle-aware fitness voices, which makes her work a useful counterweight to less rigorous content in the space.
+
+## Background and contribution
+
+Sims trained in exercise physiology and nutrition with a focus on hydration and thermoregulation. Her research has expanded over time to cover menstrual cycle effects on training response, recovery, and nutrition, and more recently the [perimenopause](/glossary/perimenopause) transition. She has consulted with elite athletes, national sports teams, and the military, and her translation of research into practical recommendations is more concrete than most academic researchers attempt.
+
+Her central contribution: she challenged the long-standing practice of applying male-derived training and nutrition science to women without adjustment. The default in exercise science, into the 2010s, was male physiology; women were treated as a confounded version of the same model. Sims argued, with evidence, that women's hormonal context (cycle phase, hormonal contraception use, perimenopausal hormone changes) changes how the body responds to training, fueling, and recovery, and that those differences should drive recommendations.
+
+## Books
+
+- **ROAR** (2016). The primary text. Translates female-specific exercise and nutrition science into practical guidance for athletes and active women. Wide-ranging, covering everything from fueling and training periodization to gut health and sleep.
+- **Next Level** (2022). Specifically on perimenopause and beyond. Addresses the hormonal transition and how training and nutrition should adapt.
+
+Both books are practical-oriented and aimed at active women. They are denser and more evidence-cited than typical wellness books in the space.
+
+## A fair assessment of her stance
+
+Sims occupies a unique position: she is more credentialed and research-fluent than wellness popularizers, but she translates research into practical advice with confidence that sometimes exceeds the underlying evidence base.
+
+**Where she is broadly defensible:**
+
+- The "women are not small men" framing. Cycle phase, hormonal contraception, and the menopausal transition all affect physiology in ways that warrant adjusted recommendations.
+- Recovery and protein recommendations. Her advice on higher post-exercise protein for women (relative to outdated standards) has held up well.
+- The case for not under-fueling around training. [RED-S](/glossary/red-s) is a real and underdiagnosed problem, and Sims has been a clear voice on it.
+- Perimenopausal training adaptations (heavier resistance training, jump training, protein) align with the better-quality evidence in that area.
+
+**Where her practical claims exceed the evidence:**
+
+- **Phase-specific training prescriptions.** Sims has recommended heavier loading in follicular phase and reduced intensity in late luteal. The underlying research is mixed; a [2024 meta-analysis on phase-timed exercise](/glossary/2024-exercise-meta) found small effects on training outcomes, not the large effects sometimes implied.
+- **Confident hormonal contraceptive claims.** Some of her advice on the effects of hormonal contraceptives on training response goes beyond what the trial evidence supports.
+- **Tone.** Like Vitti, her prescriptions are confident in tone; this reads as expertise to many readers but can mask the uncertainty in the underlying literature.
+
+The honest summary: Sims is closer to the research than most popularizers but still translates farther than the evidence sometimes goes. Her work is a major step up from less-credentialed sources, while not being a substitute for reading the primary literature.
+
+## How Lumen treats her work
+
+Lumen draws on Sims's framework, particularly:
+
+- Cycle-aware training as a useful organizing principle.
+- The importance of not under-fueling.
+- The perimenopause-specific training adaptations.
+
+Where Sims's specific phase prescriptions exceed evidence, Lumen presents them as suggestions to try and personalize rather than as confirmed protocols. The [phase-aligned workouts](/glossary/phase-aligned-workouts) entry covers what is and is not well-supported.
+
+## Related reading
+
+- [Alisa Vitti](/glossary/alisa-vitti): the comparable popularizer with a different evidence stance
+- [Lara Briden](/glossary/lara-briden): a clinician with a similar evidence-based ethos
+- [2024 exercise meta-analysis](/glossary/2024-exercise-meta): a key paper that contextualizes phase-timed training claims
+- [Phase-aligned workouts](/glossary/phase-aligned-workouts): the practical area Sims focuses on
+
+</article>
+
+<GlossarySidebar
+  currentSlug="stacy-sims"
+  title="Stacy Sims"
+  toc={[
+    { id: "background-and-contribution", label: "Background and contribution" },
+    { id: "books", label: "Books" },
+    { id: "a-fair-assessment-of-her-stance", label: "A fair assessment" },
+    { id: "how-lumen-treats-her-work", label: "How Lumen treats her work" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

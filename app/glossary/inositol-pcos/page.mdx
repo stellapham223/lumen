@@ -1,0 +1,119 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Inositol for PCOS: myo + D-chiro evidence, dosing, and ratios",
+  description:
+    "Inositol (myo-inositol and D-chiro-inositol) has growing evidence for improving ovulation and insulin sensitivity in PCOS. Typical dosing is 4g myo + 100mg D-chiro daily (40:1 ratio).",
+  alternates: { canonical: "/glossary/inositol-pcos" },
+  openGraph: {
+    title: "Inositol for PCOS | Lumen glossary",
+    description:
+      "Inositol for PCOS: what the research supports, why the 40:1 myo to D-chiro ratio matters, and dosing.",
+    url: "/glossary/inositol-pcos",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Inositol (for PCOS)"
+  description="Sugar alcohol family that includes myo-inositol and D-chiro-inositol. Both are second messengers in insulin signaling. Evidence supports improving ovulation rates and insulin sensitivity in PCOS."
+  path="/glossary/inositol-pcos"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Inositol for PCOS", path: "/glossary/inositol-pcos" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Inositol (for PCOS)
+
+**Inositol** refers to a family of sugar alcohols (cyclitols) that act as second messengers in insulin signaling. The two forms that matter clinically are **myo-inositol (MI)** and **D-chiro-inositol (DCI)**. Both are present naturally in the body, in foods, and in supplements. Inositol has emerged over the past 15 years as one of the better-evidenced supplements for [PCOS](/glossary/pcos), particularly for the metabolic phenotype.
+
+*Consult a provider before starting supplements, especially if pregnant, breastfeeding, or on medications. PCOS management benefits from clinical oversight.*
+
+## What the evidence says
+
+The evidence base for inositol in PCOS is moderate to growing-strong:
+
+- **Improved ovulation rates.** Multiple randomized trials show myo-inositol increases [ovulation](/glossary/ovulation) frequency in PCOS users, particularly the insulin-resistant phenotype.
+- **Improved insulin sensitivity.** Reductions in fasting insulin and HOMA-IR are consistent across trials.
+- **Reduced androgens.** Modest reductions in total and free testosterone.
+- **Better menstrual regularity.** Trials show shorter cycle length variability and more frequent cycles.
+- **Egg quality in IVF.** Several trials in ART settings show improved oocyte and embryo quality with myo-inositol pretreatment.
+- **Gestational diabetes prevention.** Some evidence for reducing GDM risk in high-risk groups.
+
+A 2018 Cochrane review described inositol as a promising treatment for PCOS, with caveats about heterogeneity in trials. The 2023 international PCOS guidelines list inositol as a complementary option with growing evidence.
+
+The honest position: inositol is one of the better-supported PCOS supplements but is not a substitute for the lifestyle and medical interventions (resistance training, metformin where indicated, ovulation induction where appropriate).
+
+## Why it might work
+
+Both forms act as second messengers in insulin signaling, but in different tissues:
+
+- **Myo-inositol** is the dominant form in most tissues and is converted to D-chiro-inositol locally as needed. In PCOS, conversion from MI to DCI appears altered, especially in ovarian tissue, where MI levels can be relatively deficient.
+- **D-chiro-inositol** is involved in glycogen storage and insulin signaling. Excess DCI in ovarian tissue may actually worsen oocyte quality, which is why the ratio between forms matters.
+
+By restoring an appropriate physiological balance, inositol supplementation may improve ovarian insulin signaling and follicle maturation.
+
+## Dosing
+
+The standard regimen with the most trial support: **4g myo-inositol + 100mg D-chiro-inositol daily (40:1 ratio)**, split into two doses.
+
+A few things to know:
+
+1. **The 40:1 ratio matters.** It approximates the physiological ratio in plasma. Products at 1:1 or DCI-dominant ratios have less trial support and may not work as well, particularly for ovarian effects.
+2. **Powder form** dissolves well in water and is the standard delivery for the high gram-dose. Capsule forms exist but require many capsules.
+3. **Continuous daily dosing.** Effects build over 3 to 6 months. Trials typically run 3 to 12 months before assessing primary outcomes.
+4. **Myo-inositol-only products** (without DCI) also have evidence, particularly for ovulation. The 40:1 combination is the most-supported formulation but is not the only effective one.
+
+## Common side effects and cautions
+
+Inositol is among the better-tolerated supplements for PCOS:
+
+- **GI upset** at higher doses (nausea, loose stools).
+- **Headache** rarely.
+- **Hypoglycemia** is theoretical but rare; relevant for users on diabetes medications.
+
+Cautions:
+
+- **Medication interactions.** Discuss with a provider if on metformin, insulin, or other diabetes medications, given the overlapping mechanism.
+- **Pregnancy.** Inositol has been used safely in pregnancy in some trials (GDM prevention), but discuss with a provider before continuing during pregnancy.
+- **Lithium.** Theoretical interaction; consult a psychiatrist if relevant.
+
+## Where it fits
+
+Inositol is a reasonable first-line supplement for PCOS, especially for users with insulin resistance, irregular cycles, or fertility goals. It is often paired with lifestyle interventions and, where indicated, metformin or ovulation induction.
+
+It is not a substitute for clinical management of PCOS. Persistent absent ovulation, severe androgen excess, or fertility concerns warrant specialist care.
+
+## Related reading
+
+- [PCOS](/glossary/pcos): the condition this supplement targets
+- [Cycle syncing with PCOS](/blog/cycle-syncing-on-birth-control): adapting the framework
+- [Spearmint tea](/glossary/spearmint-tea): another commonly used PCOS botanical
+
+</article>
+
+<GlossarySidebar
+  currentSlug="inositol-pcos"
+  title="Inositol (for PCOS)"
+  toc={[
+    { id: "what-the-evidence-says", label: "What the evidence says" },
+    { id: "why-it-might-work", label: "Why it might work" },
+    { id: "dosing", label: "Dosing" },
+    { id: "common-side-effects-and-cautions", label: "Side effects and cautions" },
+    { id: "where-it-fits", label: "Where it fits" },
+  ]}
+/>
+
+</div>

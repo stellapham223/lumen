@@ -1,0 +1,131 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Cycle syncing for PCOS: a modified approach for irregular cycles",
+  description:
+    "PCOS produces irregular or absent ovulation, which breaks calendar-based cycle syncing. Use direct ovulation tracking and adapt the four-phase model with realistic timelines.",
+  alternates: { canonical: "/glossary/cycle-syncing-pcos" },
+  openGraph: {
+    title: "Cycle syncing for PCOS | Lumen glossary",
+    description:
+      "How to adapt cycle syncing for irregular cycles by tracking ovulation directly rather than predicting by date.",
+    url: "/glossary/cycle-syncing-pcos",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Cycle syncing for PCOS"
+  description="The adaptation of cycle syncing for users with PCOS, whose cycles are often irregular, anovulatory, or absent. Calendar prediction fails; direct ovulation tracking and structural work-mode rotation are the two viable approaches."
+  path="/glossary/cycle-syncing-pcos"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Cycle syncing for PCOS", path: "/glossary/cycle-syncing-pcos" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Cycle syncing for PCOS
+
+[Cycle syncing](/glossary/cycle-syncing) maps lifestyle prescriptions onto the four phases of a regular ovulatory menstrual cycle. [PCOS](/glossary/pcos) (polycystic ovary syndrome) often disrupts that regularity: cycles can run 35 to 90 days or longer, ovulation can be absent for months, and the [luteal phase](/glossary/luteal-phase) only exists when ovulation actually occurs. Standard calendar-based cycle syncing breaks down quickly for many PCOS users, but two adaptations work.
+
+*This is informational, not medical advice. PCOS diagnosis and treatment require evaluation by a qualified provider. See the [PCOS glossary entry](/glossary/pcos) for the underlying condition.*
+
+## Why the standard model breaks
+
+The four-phase model assumes:
+
+1. Ovulation will happen around mid-cycle.
+2. Cycle length will stay relatively stable.
+3. The bleeding pattern marks reliable phase boundaries.
+
+PCOS users often have none of these. The [follicular phase](/glossary/follicular-phase) can stretch indefinitely because the brain keeps trying to mature a dominant follicle that never reaches the threshold for an [LH surge](/glossary/lh-surge). Without ovulation, there is no [corpus luteum](/glossary/corpus-luteum), no progesterone rise, and no true luteal phase. Bleeding that occurs in [anovulatory cycles](/glossary/anovulatory-cycle) is endometrial sloughing from prolonged unopposed estrogen, not a real menstrual phase.
+
+Calendar prediction tools (period trackers that project the next ovulation 14 days before the predicted next period) are unreliable in this context. They will tell you you are in "ovulation week" when you may not ovulate at all in that cycle.
+
+## Approach 1: track ovulation directly
+
+The most rigorous adaptation is to abandon calendar prediction and detect ovulation when it happens.
+
+**Tools:**
+
+- **[Ovulation predictor kits (OPKs)](/glossary/opk).** Detect the LH surge directly. Note: PCOS users often have chronically elevated LH, which can produce false-positive OPK readings. Reserve OPK use for windows when ovulation is plausible, and pair with another marker.
+- **[Basal body temperature (BBT)](/glossary/basal-body-temperature).** Confirms ovulation retrospectively via the post-ovulatory temperature shift. Requires daily morning measurement with a [BBT thermometer](/glossary/bbt-thermometer).
+- **[Cervical mucus tracking](/glossary/cervical-mucus-tracking).** Watches for the fertile-window mucus pattern before ovulation.
+- **Continuous monitors.** Wearables like Tempdrop, Oura, and Apple Watch can track temperature trends and infer ovulation.
+
+**Practical workflow:**
+
+1. Use mucus and OPKs to identify a probable fertile window.
+2. Confirm ovulation with BBT shift.
+3. Start counting the luteal phase from confirmed ovulation, not from a calendar guess.
+4. Repeat each cycle; do not assume ovulation will repeat at the same time.
+
+This approach captures real phase information when ovulation does occur. It also identifies anovulatory cycles, which is useful clinical data in itself.
+
+## Approach 2: use the four work modes as a 28-day rotation
+
+If direct ovulation tracking is too high-effort or you do not ovulate consistently enough for it to be useful, the [work-mode rotation](/glossary/work-mode-rotation) (Reflect, Build, Connect, Finish) can still run on a 28-day structural cycle regardless of hormonal events.
+
+The biological rationale weakens significantly in this approach. The work modes become a scheduling structure rather than a hormone-aligned prescription. Many users report the structure alone provides value, but the prescription is no longer specifically supported by your hormonal state.
+
+This is a reasonable fit for users with severe PCOS, those on hormonal contraception, or those who simply want a rotation framework without high-effort tracking.
+
+## What changes in each phase under PCOS
+
+Even when ovulation does happen, PCOS shifts the typical phase experience:
+
+- **[Menstrual phase](/glossary/menstrual-phase).** Periods may be infrequent but heavy when they arrive, due to extended endometrial buildup. Iron stores may be low; the [follicular phase](/glossary/follicular-phase) lift can feel muted from chronic anemia.
+- **[Follicular phase](/glossary/follicular-phase).** Often extended, sometimes indefinitely. The clean estrogen-driven lift many users report may arrive late, weakly, or not at all.
+- **[Ovulatory phase](/glossary/ovulatory-phase).** Variable. Some PCOS users ovulate cleanly some months; others rarely. The "[fertile window](/glossary/fertile-window) week" is not predictable by calendar.
+- **[Luteal phase](/glossary/luteal-phase).** Exists only after confirmed ovulation. [PMS](/glossary/pms) symptoms when they occur tend to be tied to confirmed luteal phases, not to calendar-predicted ones.
+
+## Supporting the cycle itself
+
+For users who want to support cycle regularity alongside syncing, common evidence-supported angles include:
+
+- **[Inositol](/glossary/inositol-pcos)** for ovulation and insulin sensitivity.
+- **Resistance training and walking** for insulin sensitivity.
+- **Sleep and stress management** to support [HPO axis](/glossary/hpo-axis) function.
+- **Targeted nutrition** that supports stable insulin response.
+- **[Spearmint tea](/glossary/spearmint-tea)** for mild anti-androgenic effect.
+
+These are condition-management tools, not cycle syncing prescriptions. They run independently of phase.
+
+## When cycle syncing is not the priority
+
+If you have not had a period in 90 days or longer, the priority is medical evaluation, not optimizing a sync schedule. Chronic anovulation carries endometrial cancer risk over time. Persistent absent cycles deserve a workup that addresses underlying mechanism, not a tracking app.
+
+## Related reading
+
+- [PCOS](/glossary/pcos): the underlying condition entry
+- [Anovulatory cycle](/glossary/anovulatory-cycle): the pattern this entry adapts to
+- [Inositol for PCOS](/glossary/inositol-pcos): the first-line supplement
+- [Cycle syncing](/glossary/cycle-syncing): the underlying practice
+
+</article>
+
+<GlossarySidebar
+  currentSlug="cycle-syncing-pcos"
+  title="Cycle syncing for PCOS"
+  toc={[
+    { id: "why-the-standard-model-breaks", label: "Why the standard model breaks" },
+    { id: "approach-1-track-ovulation-directly", label: "Approach 1: track ovulation" },
+    { id: "approach-2-use-the-four-work-modes-as-a-28-day-rotation", label: "Approach 2: 28-day rotation" },
+    { id: "what-changes-in-each-phase-under-pcos", label: "What changes in each phase" },
+    { id: "supporting-the-cycle-itself", label: "Supporting the cycle itself" },
+    { id: "when-cycle-syncing-is-not-the-priority", label: "When syncing isn't the priority" },
+  ]}
+/>
+
+</div>

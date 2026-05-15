@@ -1,0 +1,123 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "BBT thermometer: why precision matters and what to buy",
+  description:
+    "A BBT thermometer measures basal body temperature with 0.01°F precision, which is needed to detect the 0.5°F rise after ovulation. Why a regular thermometer does not work, types available, and what to look for.",
+  alternates: { canonical: "/glossary/bbt-thermometer" },
+  openGraph: {
+    title: "BBT thermometer | Lumen glossary",
+    description:
+      "Precision needed for basal body temperature charting, plus types and tradeoffs.",
+    url: "/glossary/bbt-thermometer",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="BBT thermometer"
+  description="A specialized thermometer with 0.01°F (0.01°C) precision designed for measuring basal body temperature. The added precision is needed because the post-ovulation BBT rise is roughly 0.5°F, which a standard fever thermometer cannot reliably resolve."
+  path="/glossary/bbt-thermometer"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "BBT thermometer", path: "/glossary/bbt-thermometer" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# BBT thermometer
+
+A **BBT thermometer** is a specialized digital thermometer designed for measuring [basal body temperature](/glossary/basal-body-temperature) with 0.01°F (or 0.01°C) precision. That added precision is the reason it exists: the post-ovulation BBT rise is roughly 0.5°F, and a standard fever thermometer (0.1°F precision) is not sensitive enough to resolve the pattern reliably.
+
+If you are charting BBT for the [fertility awareness method](/glossary/fam) or to confirm [ovulation](/glossary/ovulation), the thermometer is the single piece of hardware that matters.
+
+## Why precision matters
+
+Body temperature fluctuates by 0.1 to 0.2°F overnight from causes that have nothing to do with the cycle: sleep position, ambient temperature, hydration, time of waking. A standard fever thermometer rounds to the nearest 0.1°F, so the cycle signal can disappear inside the rounding error.
+
+A BBT thermometer reports two decimal places (e.g. 97.42°F). With that resolution, the 0.5°F luteal rise stands clearly above the daily noise, even for users with smaller-than-average rises.
+
+## Types of BBT thermometer
+
+**Basic digital BBT thermometers.** Oral or vaginal, 0.01°F precision, memory of the last reading. Under $20. Examples: iProvèn BBT-113Ai, Easy@Home digital BBT. Reliable and widely available.
+
+**Bluetooth BBT thermometers.** Sync readings to a companion app (Femometer, Tempdrop's older model, Easy@Home Premom). Reduces manual entry friction. $30 to $60.
+
+**Continuous wearables (worn during sleep).** Tempdrop is the dominant example: an upper-arm sensor that records skin temperature throughout the night and identifies the true basal point automatically. Useful for shift workers and parents with broken sleep. $150 to $200.
+
+**Smart ring and watch wearables.** [Oura, Apple Watch, Whoop, Garmin](/glossary/cycle-tracking-wearable) all measure skin temperature during sleep. Not strictly BBT thermometers in the classical sense, but they generate phase predictions from the temperature pattern. Higher cost; broader feature set.
+
+## What to look for
+
+- **0.01°F (or 0.01°C) precision.** Non-negotiable.
+- **Memory of the last reading.** Useful if you fall back asleep and want to log later.
+- **Clear, large display.** You will read it in low light first thing in the morning.
+- **Long beep delay or quiet mode.** A loud beep at 5am wakes a sleeping partner.
+- **Backlight.** Convenient in dark bedrooms.
+
+Bluetooth and app sync are nice-to-have, not need-to-have. Manual entry into your tracker takes 5 seconds.
+
+## Oral vs vaginal
+
+Both work. Vaginal measurement is slightly more stable for some users because it is less affected by mouth breathing or recent talking. Oral is faster and more comfortable for most. Whichever you choose, stick with it for the whole cycle, the absolute number is less important than the pattern, and switching introduces noise.
+
+## How to use it correctly
+
+The thermometer is only useful if you measure consistently. See [basal body temperature](/glossary/basal-body-temperature) for the full protocol. The short version:
+
+- Measure immediately on waking, before any activity
+- Same time window each day (within an hour)
+- At least 3 consecutive hours of sleep prior
+- Same location (oral or vaginal, not switching)
+- Log every day, including weekends
+
+A thermometer used 5 days a week with random gaps gives much less signal than the cheapest accurate thermometer used every day.
+
+## Replacement and battery
+
+Most digital BBT thermometers last 2 to 5 years before the battery weakens or the sensor drifts. If you notice readings becoming erratic or inconsistent, replace it. Calibrating against a second thermometer for a few days flags drift.
+
+## Wearables as an alternative
+
+Continuous-wear devices ([Tempdrop, Oura, Apple Watch](/glossary/cycle-tracking-wearable)) bypass the morning measurement entirely. They are useful when:
+
+- You wake up at irregular times (shift work, parenting)
+- You sleep less than 3 consecutive hours
+- You cannot tolerate the morning ritual
+
+Tradeoffs: higher cost, accuracy depends on consistent wear, skin temperature is a slightly different signal than core BBT (though sufficient for phase detection in most users).
+
+For most users starting BBT charting, a $15 to $20 digital BBT thermometer is the right entry point. Upgrade to a wearable only if the morning measurement does not fit your life.
+
+## BBT thermometer and cycle syncing
+
+The thermometer is the input device for confirming the [ovulation](/glossary/ovulation) date that anchors your cycle syncing windows. The [Lumen phase calculator](/plan) accepts your last period date and average cycle length without BBT, but charting one to two cycles of BBT in parallel sharpens your prediction substantially. See [free cycle syncing apps compared](/blog/free-cycle-syncing-apps-compared) for app pairings.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="bbt-thermometer"
+  title="BBT thermometer"
+  toc={[
+    { id: "why-precision-matters", label: "Why precision matters" },
+    { id: "types-of-bbt-thermometer", label: "Types available" },
+    { id: "what-to-look-for", label: "What to look for" },
+    { id: "oral-vs-vaginal", label: "Oral vs vaginal" },
+    { id: "how-to-use-it-correctly", label: "How to use it" },
+    { id: "replacement-and-battery", label: "Replacement" },
+    { id: "wearables-as-an-alternative", label: "Wearable alternatives" },
+    { id: "bbt-thermometer-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

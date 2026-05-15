@@ -1,0 +1,119 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "LH surge: the ovulation trigger and how to detect it",
+  description:
+    "The LH surge is a sudden 5 to 10x rise in luteinizing hormone roughly 24 to 36 hours before ovulation. How to detect it with OPKs, and how it fits into cycle tracking.",
+  alternates: { canonical: "/glossary/lh-surge" },
+  openGraph: {
+    title: "LH surge | Lumen glossary",
+    description:
+      "How the LH surge triggers ovulation, how to detect it, and how to time around it.",
+    url: "/glossary/lh-surge",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="LH surge"
+  description="The sudden 5 to 10x rise in luteinizing hormone that occurs roughly 24 to 36 hours before ovulation. Triggered by sustained high estrogen via positive feedback. Detected in urine by ovulation predictor kits."
+  path="/glossary/lh-surge"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "LH surge", path: "/glossary/lh-surge" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# LH surge
+
+The **LH surge** is the most decisive single hormonal event of the [menstrual cycle](/glossary/menstrual-cycle). It is a sudden 5 to 10x rise in [LH](/glossary/lh), produced by the pituitary in response to sustained high [estrogen](/glossary/estrogen), that triggers [ovulation](/glossary/ovulation) roughly 24 to 36 hours later.
+
+The surge is the moment the system flips from "building up an egg" (follicular work) to "releasing the egg" (ovulatory work). Detecting it accurately is the basis of timed conception, [fertility awareness methods](/glossary/fam), and most modern [cycle tracking](/glossary/cycle-tracking).
+
+## What triggers the surge
+
+The mechanism is a positive feedback loop, the only one in the female endocrine system:
+
+1. The dominant [ovarian follicle](/glossary/ovarian-follicle) grows through late follicular phase, producing rising amounts of estradiol.
+2. Estradiol crosses a threshold (roughly 200 pg/mL) and stays above it for at least 48 hours.
+3. The hypothalamus and pituitary respond by amplifying GnRH and LH release instead of suppressing it.
+4. LH rises sharply within 24 hours: the surge.
+5. The surge acts on the dominant follicle, triggering the final maturation steps and rupture.
+6. The egg is released roughly 24 to 36 hours after the surge starts.
+
+This is why the [late follicular phase](/glossary/late-follicular-phase) is the time the system is "loaded": estrogen is climbing, the surge is about to fire, and the body is primed for the brief fertile window.
+
+## Timing details
+
+The clinically useful timing facts:
+
+- **Surge duration:** typically 24 to 48 hours from start to peak to fall. The detection window for OPKs is narrow.
+- **Surge to ovulation:** 24 to 36 hours from the start of the surge. Some sources cite 36 to 40 hours from peak.
+- **Fertile window:** the day before and day of ovulation are highest fertility. Sperm survive 3 to 5 days, so intercourse 1 to 2 days before the surge also produces pregnancy.
+- **Urine lag:** LH appears in urine 6 to 12 hours after it rises in blood. A positive OPK in the afternoon often reflects a surge that started that morning.
+
+For conception, the practical rule is: when you see your first positive OPK, the next 24 to 48 hours are the highest-yield window for intercourse.
+
+## How OPKs detect the surge
+
+[OPKs](/glossary/opk) (ovulation predictor kits) are immunoassays that detect LH in urine. They report positive when LH crosses a threshold (typically 20 to 40 mIU/mL depending on brand).
+
+The practical tips:
+
+- **Test twice daily.** Morning and afternoon. Once-daily testing misses about 15% of surges because the surge can be brief.
+- **Start testing 4 to 5 days before expected ovulation.** For a 28-day cycle, that means around day 10.
+- **First-morning urine is not ideal.** Mid-morning to afternoon urine catches the surge better because LH rises during the day and is diluted by overnight fluid intake.
+- **Limit fluids 2 hours before testing.** Dilution can produce false negatives.
+- **Hold pee for 3 to 4 hours.** Concentrated urine reads more accurately.
+
+Digital OPKs (with smiley face displays) take the line-reading guesswork out. Strip-based tests are cheaper but require interpreting test-line darkness versus control-line darkness.
+
+## Why OPKs fail
+
+OPKs can be misleading in several scenarios:
+
+- **[PCOS](/glossary/pcos).** Baseline LH runs high. False positives are common. OPKs are unreliable for PCOS users.
+- **[Perimenopause](/glossary/perimenopause).** Erratic LH spikes that do not lead to ovulation can produce positive OPKs in cycles that turn out anovulatory.
+- **Short surges.** Some users have very brief surges (under 12 hours) that twice-daily testing still misses.
+- **Recent pregnancy or hCG injection.** hCG cross-reacts with LH on most OPKs and produces false positives.
+
+A positive OPK confirms a surge occurred. It does not confirm that ovulation actually happened. Confirming ovulation requires a [basal body temperature](/glossary/basal-body-temperature) rise the following days, or a mid-luteal [progesterone](/glossary/progesterone) test.
+
+## LH surge and cycle syncing
+
+For [cycle syncing](/glossary/cycle-syncing), the LH surge marks the transition from follicular to [ovulatory phase](/glossary/ovulatory-phase). It is the single best signal that the high-estrogen window is closing and the body is about to shift toward [luteal phase](/glossary/luteal-phase) physiology. Many cycle apps use OPK data, when entered, to refine phase predictions for the current cycle rather than just averaging past cycle lengths.
+
+## Related reading
+
+- [LH](/glossary/lh): the underlying hormone
+- [OPK](/glossary/opk): the detection device
+- [Ovulation](/glossary/ovulation): what the surge triggers
+- [Fertile window](/glossary/fertile-window): when conception is possible
+- [Cycle tracking](/glossary/cycle-tracking): how the surge fits in
+
+</article>
+
+<GlossarySidebar
+  currentSlug="lh-surge"
+  title="LH surge"
+  toc={[
+    { id: "what-triggers-the-surge", label: "What triggers it" },
+    { id: "timing-details", label: "Timing details" },
+    { id: "how-opks-detect-the-surge", label: "OPK detection" },
+    { id: "why-opks-fail", label: "Why OPKs fail" },
+    { id: "lh-surge-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

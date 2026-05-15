@@ -1,0 +1,107 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Endometrium: the uterine lining and how it cycles",
+  description:
+    "The endometrium is the uterine lining that thickens through the cycle and sheds during menstruation. Definition, layers, hormonal regulation, and clinical relevance.",
+  alternates: { canonical: "/glossary/endometrium" },
+  openGraph: {
+    title: "Endometrium | Lumen glossary",
+    description:
+      "Definition, structure, how the lining changes across the cycle, and clinical conditions that affect it.",
+    url: "/glossary/endometrium",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Endometrium"
+  description="The uterine lining that thickens through the menstrual cycle and sheds during menstruation."
+  path="/glossary/endometrium"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Endometrium", path: "/glossary/endometrium" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Endometrium
+
+The **endometrium** is the inner mucosal lining of the uterus. It thickens through the [menstrual cycle](/glossary/menstrual-cycle) in response to ovarian hormones, prepares for possible implantation after [ovulation](/glossary/ovulation), and sheds during [menstruation](/glossary/menstruation) if pregnancy does not occur.
+
+## Structure
+
+The endometrium has two layers:
+
+- **Functional layer (stratum functionalis).** The outer layer that thickens and sheds each cycle.
+- **Basal layer (stratum basalis).** The deeper layer that stays intact and regenerates the functional layer after each period.
+
+Thickness changes dramatically through the cycle, from roughly 2 to 4 mm just after menstruation to 12 to 16 mm in the mid-to-late luteal phase. Ultrasound thickness measurements are sometimes used clinically as a marker of cycle stage or to investigate fertility and bleeding disorders.
+
+## How the endometrium changes through the cycle
+
+The endometrium goes through three phases that map onto the broader [cycle phases](/glossary/cycle-phase):
+
+**Menstrual phase (days 1 to 5).** The functional layer sheds in response to the [progesterone](/glossary/progesterone) drop that follows [corpus luteum](/glossary/corpus-luteum) breakdown. Bleeding occurs as endometrial tissue, blood, and cervical mucus exit through the cervix.
+
+**Proliferative phase (roughly days 6 to 14).** Aligned with the [follicular phase](/glossary/follicular-phase). Under rising [estrogen](/glossary/estrogen), the basal layer regenerates the functional layer. The lining thickens, blood vessels and glands proliferate.
+
+**Secretory phase (roughly days 15 to 28).** Aligned with the [luteal phase](/glossary/luteal-phase). After ovulation, progesterone from the corpus luteum transforms the proliferative endometrium into a glandular, receptive lining. Glands secrete glycogen and other nutrients in case implantation occurs.
+
+## What happens if implantation occurs
+
+If a fertilized egg implants (around 6 to 10 days post-ovulation), the embryo signals back to the corpus luteum via hCG, which keeps producing progesterone. The endometrium continues thickening and supports early pregnancy. If no implantation occurs, the corpus luteum dies after roughly 12 to 14 days, progesterone drops, and the functional layer sheds.
+
+This is the mechanism that makes the [luteal phase](/glossary/luteal-phase) roughly fixed at 14 days for most people: the corpus luteum has a built-in lifespan.
+
+## Clinical conditions affecting the endometrium
+
+Several common conditions involve endometrial tissue or function:
+
+- **[Endometriosis](/glossary/endometriosis).** Endometrial-like tissue grows outside the uterus, causing pain, especially around menstruation.
+- **[Adenomyosis](/glossary/adenomyosis).** Endometrial tissue grows into the uterine muscle wall, causing heavy and painful periods.
+- **[Uterine fibroids](/glossary/uterine-fibroids).** Benign muscle tumors that can distort the endometrium and cause heavy bleeding.
+- **Endometrial hyperplasia.** Over-thickening of the lining, often from chronically unopposed estrogen (untreated [PCOS](/glossary/pcos), some perimenopause patterns). Raises endometrial cancer risk if untreated.
+- **Asherman syndrome.** Scar tissue forms in the uterus, often after surgery, which can prevent normal endometrial buildup.
+- **Thin endometrium.** Lining stays under 7 mm in the mid-to-late cycle; can affect fertility.
+
+## The endometrium on hormonal birth control
+
+Hormonal contraceptives change the endometrium in predictable ways:
+
+- **Combined methods (pill, ring, patch).** Synthetic estrogen and progestin keep the lining thin. The placebo-week bleed is [withdrawal bleeding](/glossary/withdrawal-bleeding) from the hormone drop, not true menstruation.
+- **[Hormonal IUD](/glossary/hormonal-iud).** Local progestin thins the lining dramatically; many users stop bleeding entirely.
+- **[Mini-pill](/glossary/mini-pill) and [implant](/glossary/contraceptive-implant).** Progestin-only methods often produce irregular spotting and a thinner lining.
+
+The thinner lining is part of why most hormonal methods produce lighter, often shorter bleeds.
+
+## The endometrium and cycle syncing
+
+The endometrium is the downstream tissue that responds to the hormonal cycle, not the driver of it. [Cycle syncing](/glossary/cycle-syncing) protocols target the upstream hormones ([estrogen](/glossary/estrogen), [progesterone](/glossary/progesterone)). The endometrium becomes most relevant for cycle planning when it produces symptoms: heavy or painful bleeding can shift what you can plan for in the menstrual phase, and conditions like endometriosis or adenomyosis sometimes require a more personalized phase model.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="endometrium"
+  title="Endometrium"
+  toc={[
+    { id: "structure", label: "Structure" },
+    { id: "how-the-endometrium-changes-through-the-cycle", label: "Cycle changes" },
+    { id: "what-happens-if-implantation-occurs", label: "If implantation occurs" },
+    { id: "clinical-conditions-affecting-the-endometrium", label: "Clinical conditions" },
+    { id: "the-endometrium-on-hormonal-birth-control", label: "On birth control" },
+    { id: "the-endometrium-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

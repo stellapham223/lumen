@@ -1,0 +1,122 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Phase calculator: turning last period date into four phase windows",
+  description:
+    "A phase calculator converts last period date and cycle length into the four cycle phase ranges (menstrual, follicular, ovulatory, luteal). How the math works, accuracy, and how it integrates with scheduling.",
+  alternates: { canonical: "/glossary/phase-calculator" },
+  openGraph: {
+    title: "Phase calculator | Lumen glossary",
+    description:
+      "How a phase calculator converts a period date into four phase windows for cycle syncing.",
+    url: "/glossary/phase-calculator",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Phase calculator"
+  description="A tool that converts last period start date and average cycle length into four cycle phase ranges (menstrual, follicular, ovulatory, luteal). Used as the input for phase-based scheduling and cycle syncing decisions. Lumen's core free product."
+  path="/glossary/phase-calculator"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Phase calculator", path: "/glossary/phase-calculator" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Phase calculator
+
+A **phase calculator** is a tool that converts two inputs, the start date of your last period and your average cycle length, into the four [cycle phase](/glossary/cycle-phase) ranges used in [cycle syncing](/glossary/cycle-syncing): [menstrual](/glossary/menstrual-phase), [follicular](/glossary/follicular-phase), [ovulatory](/glossary/ovulatory-phase), and [luteal](/glossary/luteal-phase). It is the simplest and lowest-friction way to know which phase you are in today and to plan ahead.
+
+The Lumen phase calculator is the free entry point for the product.
+
+## How the math works
+
+The calculation is built on two reasonably stable facts:
+
+1. **The luteal phase is roughly fixed.** For most users, the luteal phase lasts 12 to 14 days (most calculators use 14). Variations in cycle length come almost entirely from the follicular phase.
+2. **Ovulation occurs roughly 14 days before the next period.** This is the most stable phase marker available without measurement.
+
+From there, for a user with a 28-day cycle and last period start on day 1:
+
+- **Menstrual phase.** Days 1 to 5 (bleeding).
+- **Follicular phase.** Days 6 to 13.
+- **Ovulatory phase.** Days 14 to 16 (around ovulation).
+- **Luteal phase.** Days 17 to 28.
+
+For a 32-day cycle, ovulation shifts to roughly day 18, and the follicular phase stretches from day 6 to day 17. The luteal phase still ends around day 32.
+
+## Why it works
+
+For users with regular cycles (24 to 35 days, low variability), calendar-based phase prediction is accurate within 2 to 3 days for the [ovulatory phase](/glossary/ovulatory-phase) and within 1 to 2 days for the next period. That precision is sufficient for cycle syncing's scheduling use cases, planning workouts, anticipating PMS, scheduling demanding meetings.
+
+It is **not** sufficient for contraception (use [sympto-thermal](/glossary/sympto-thermal-method) or a long-acting method) or for fertility timing in cycles longer than 5 to 6 months without success (add [OPK](/glossary/opk) or a [continuous fertility monitor](/glossary/continuous-fertility-monitor)).
+
+## What you need to use it
+
+Two inputs only:
+
+- **Last period start date.** First day of your most recent period.
+- **Average cycle length.** Number of days from one period start to the next. If you do not know, use 28 (the population median) and refine after 2 to 3 logged cycles.
+
+That is it. No account, no email, no signup required for the free Lumen [phase calculator](/plan). The output is the four phase ranges for the current and next cycle.
+
+## Where calendar prediction breaks down
+
+Calendar-based phase calculators are less reliable when:
+
+- **Cycle length varies by more than 7 days month to month.** Common in [PCOS](/glossary/pcos), [perimenopause](/glossary/perimenopause), post-pill recovery, and postpartum. [Symptom logging](/glossary/symptom-logging) and biomarker tracking become more useful here.
+- **[Anovulatory cycles](/glossary/anovulatory-cycle).** Calendar predicts ovulation that did not happen; the resulting luteal phase prescriptions are off.
+- **Acute stress or illness.** Can delay ovulation by days or weeks; calendar will not catch this in real time.
+- **Recent travel across time zones.** Can shift the cycle.
+
+For these cases, layering [BBT](/glossary/basal-body-temperature), [cervical mucus](/glossary/cervical-mucus-tracking), or wearable temperature data on top of the calendar predictions catches the shifts.
+
+## Phase calculator vs full cycle syncing app
+
+A phase calculator returns phase windows. A full cycle syncing app adds:
+
+- Phase-specific workout recommendations
+- Phase-specific food and supplement suggestions
+- Symptom logging with pattern detection
+- Calendar integration or reminders
+- Educational content per phase
+
+For users new to cycle syncing, the calculator alone is enough to test whether the practice is useful. Add an app only if the calculator output is too sparse for your needs. See [period tracker](/glossary/period-tracker) for the broader tool category and [best cycle syncing app](/blog/best-cycle-syncing-app) for comparisons.
+
+## Why Lumen leads with a free calculator
+
+The phase calculator is the single highest-leverage piece of cycle syncing. Most of the value, knowing which phase you are in and what to expect this week, comes from the calculator alone. Lumen keeps it free, no account, no email collection, so the entry point matches the actual user need. Apps that paywall the calculator output behind a $10/month subscription are mispriced for what the math actually does.
+
+## Try it
+
+The Lumen phase calculator is at [/plan](/plan). Enter your last period date and average cycle length; the four phase windows appear. Use them with the [cycle syncing schedule template](/blog/cycle-syncing-schedule-template) to time work, exercise, and recovery.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="phase-calculator"
+  title="Phase calculator"
+  toc={[
+    { id: "how-the-math-works", label: "How the math works" },
+    { id: "why-it-works", label: "Why it works" },
+    { id: "what-you-need-to-use-it", label: "What you need" },
+    { id: "where-calendar-prediction-breaks-down", label: "Where it breaks down" },
+    { id: "phase-calculator-vs-full-cycle-syncing-app", label: "vs full syncing app" },
+    { id: "why-lumen-leads-with-a-free-calculator", label: "Lumen's positioning" },
+    { id: "try-it", label: "Try it" },
+  ]}
+/>
+
+</div>

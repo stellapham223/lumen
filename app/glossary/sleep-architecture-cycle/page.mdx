@@ -1,0 +1,136 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Sleep architecture across the menstrual cycle: REM, deep sleep, and luteal shifts",
+  description:
+    "Sleep architecture shifts measurably across the menstrual cycle. Progesterone suppresses REM in late luteal, and the late-luteal hormone drop disrupts sleep onset and continuity.",
+  alternates: { canonical: "/glossary/sleep-architecture-cycle" },
+  openGraph: {
+    title: "Sleep architecture (cycle shifts) | Lumen glossary",
+    description:
+      "How REM, deep sleep, and total sleep change across the cycle, and why late luteal sleep is the hardest week.",
+    url: "/glossary/sleep-architecture-cycle",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Sleep architecture (cycle shifts)"
+  description="REM and deep sleep proportions shift measurably across the menstrual cycle. Progesterone suppresses REM in late luteal; the late-luteal hormone drop disrupts sleep continuity."
+  path="/glossary/sleep-architecture-cycle"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Sleep architecture (cycle shifts)", path: "/glossary/sleep-architecture-cycle" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Sleep architecture (cycle shifts)
+
+**Sleep architecture** is the pattern of sleep stages across a night: light sleep, deep slow-wave sleep, and REM (rapid eye movement) sleep, organized in roughly 90-minute cycles. Across the [menstrual cycle](/glossary/menstrual-cycle), sleep architecture shifts measurably. The two main drivers are [progesterone](/glossary/progesterone) and [body temperature](/glossary/body-temperature-cycle), with [allopregnanolone](/glossary/allopregnanolone) doing additional GABAergic work. The shifts are one of the more robustly documented pieces of the hormone-sleep relationship.
+
+The headline pattern: late luteal sleep is shorter, lighter, and more fragmented than late follicular sleep, even when bedtime is held constant.
+
+## The four sleep stages
+
+A typical night cycles through four stages, repeating roughly four to six times:
+
+- **N1.** Light transition sleep, a few minutes per cycle.
+- **N2.** Deeper light sleep with sleep spindles and K-complexes. Roughly half of total sleep time.
+- **N3 (deep, slow-wave sleep).** Restorative sleep with high-amplitude slow waves. Concentrated in the first half of the night.
+- **REM.** Dreaming sleep with rapid eye movements, muscle atonia, and high cortical activity. Concentrated in the second half of the night.
+
+REM is critical for emotional processing and memory consolidation; deep sleep supports physical recovery and declarative memory. Cycle-related shifts touch both.
+
+## How progesterone shapes sleep
+
+Progesterone has two competing effects on sleep:
+
+- **Sleep onset facilitation.** Via allopregnanolone's GABA-A modulation, high progesterone in early-to-mid luteal supports falling asleep faster and deeper.
+- **REM suppression.** Progesterone tends to reduce REM proportion. Sleep is calmer but with less dreaming sleep.
+
+The net result depends on which phase of luteal you are in. Mid-luteal sleep is often subjectively good (faster sleep onset, deep early-night sleep) even though REM is somewhat suppressed. Late luteal is where it falls apart.
+
+## The cyclic pattern across the cycle
+
+Across a typical 28-day cycle:
+
+- **Menstrual (days 1 to 5):** sleep can be disrupted by cramps and discomfort, but the hormonal baseline is low and uncomplicated.
+- **Follicular (days 6 to 13):** sleep architecture is relatively stable. Often the easiest sleep week for many users.
+- **Ovulatory (days 14 to 16):** minor disruption from the LH surge in some users.
+- **Early luteal (days 17 to 22):** high progesterone supports sleep onset; REM modestly suppressed; body temperature elevated.
+- **Late luteal (days 23 to 28):** hormones dropping sharply. Sleep onset harder. Sleep more fragmented. Body temperature still elevated but starting to fall.
+- **Premenstrual days:** the hardest sleep window for many users. Anxiety, body temperature dysregulation, and GABA withdrawal converge.
+
+This pattern is documented in polysomnography studies and matches what most cycle-tracking apps with sleep data show.
+
+## Why late luteal is the hardest sleep week
+
+Several mechanisms converge in late luteal:
+
+- **Allopregnanolone withdrawal.** GABA tone drops. Sleep onset suffers.
+- **Body temperature.** Still elevated by progesterone, which interferes with the temperature drop needed for sleep onset.
+- **[Serotonin](/glossary/serotonin-cycle) decline.** Less serotonin means less melatonin precursor and lower sleep-promoting tone.
+- **Cortisol amplitude shifts.** The [cortisol cycle](/glossary/cortisol-cycle) interacts with phase, often increasing late-luteal arousal.
+- **Premenstrual anxiety.** Independent contributor via mental arousal.
+- **Physical discomfort.** Bloating, cramps, breast tenderness disrupt comfort.
+
+The result is the [cyclical insomnia](/glossary/cyclical-insomnia) pattern many users describe: difficulty falling asleep, waking in the night, lighter overall sleep, in the few days before menstruation.
+
+## Temperature and sleep onset
+
+Sleep onset depends on a roughly 1°F core body temperature drop. Progesterone's thermogenic effect blunts this drop in the luteal phase. The practical implication: a cooler bedroom helps in luteal phase, where it might feel only marginal in follicular. The room temperature for good sleep is not the same across the cycle.
+
+This also explains why women often report being "warmer in luteal" or kicking blankets off mid-night during the post-ovulatory weeks.
+
+## Practical recommendations
+
+Evidence-supported levers, particularly for late luteal:
+
+- **Cooler bedroom.** Aim for 65 to 68°F (18 to 20°C). Cooler than you would normally choose in follicular.
+- **Earlier wind-down.** Build buffer for slower sleep onset.
+- **Consistent sleep timing.** The circadian basics matter more, not less, when the infradian is making sleep harder.
+- **Avoid alcohol.** Disrupts sleep architecture and compounds late-luteal fragmentation.
+- **Magnesium.** Modest evidence for sleep support; see [magnesium PMS](/glossary/magnesium-pms).
+- **Manage anxiety upstream.** Address late-luteal anxiety with stress-reduction or therapy if it is the dominant cause of insomnia.
+
+For severe cyclical sleep disruption, particularly with mood symptoms, the [PMDD](/glossary/pmdd) workup applies: clinical conversation, possibly SSRI consideration.
+
+## Birth control and sleep architecture
+
+Combined hormonal contraceptives that suppress ovulation also suppress the cyclic progesterone signal, which flattens much of the cycle-related sleep variation. Some users notice this as "more even sleep across the month". Others notice no change. Synthetic progestins do not have the same allopregnanolone-mediated sleep effects as natural progesterone.
+
+## Related reading
+
+- [Progesterone](/glossary/progesterone): the primary cycle driver of sleep changes
+- [Allopregnanolone](/glossary/allopregnanolone): the GABA mechanism for sleep onset
+- [Cyclical insomnia](/glossary/cyclical-insomnia): the late-luteal pattern named
+- [Body temperature regulation (cycle)](/glossary/body-temperature-cycle): the thermal piece
+
+</article>
+
+<GlossarySidebar
+  currentSlug="sleep-architecture-cycle"
+  title="Sleep architecture (cycle shifts)"
+  toc={[
+    { id: "the-four-sleep-stages", label: "Four sleep stages" },
+    { id: "how-progesterone-shapes-sleep", label: "Progesterone effects" },
+    { id: "the-cyclic-pattern-across-the-cycle", label: "Cyclic pattern" },
+    { id: "why-late-luteal-is-the-hardest-sleep-week", label: "Late-luteal mechanism" },
+    { id: "temperature-and-sleep-onset", label: "Temperature and sleep onset" },
+    { id: "practical-recommendations", label: "Practical recommendations" },
+    { id: "birth-control-and-sleep-architecture", label: "Birth control" },
+  ]}
+/>
+
+</div>

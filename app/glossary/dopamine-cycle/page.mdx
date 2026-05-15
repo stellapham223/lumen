@@ -1,0 +1,109 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Dopamine across the menstrual cycle: estrogen, motivation, and novelty",
+  description:
+    "Dopamine is the brain's reward and motivation neurotransmitter. Estrogen amplifies dopamine signaling, driving the novelty-seeking and motivation pattern of the late follicular phase.",
+  alternates: { canonical: "/glossary/dopamine-cycle" },
+  openGraph: {
+    title: "Dopamine (cycle modulation) | Lumen glossary",
+    description:
+      "How estrogen modulates dopamine across the menstrual cycle and what that means for motivation and behavior.",
+    url: "/glossary/dopamine-cycle",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Dopamine (cycle modulation)"
+  description="Dopamine is the brain's reward and motivation neurotransmitter. Estrogen amplifies dopamine signaling, driving the novelty-seeking and motivation pattern of the late follicular phase."
+  path="/glossary/dopamine-cycle"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Dopamine (cycle modulation)", path: "/glossary/dopamine-cycle" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Dopamine (cycle modulation)
+
+**Dopamine** is the neurotransmitter most associated with reward, motivation, and goal-directed action. It is not the "pleasure chemical" of pop neuroscience; it is closer to the chemistry of wanting, pursuing, and approaching. Across the [menstrual cycle](/glossary/menstrual-cycle), [estrogen](/glossary/estrogen) amplifies dopamine signaling in the prefrontal cortex and striatum. That estrogen-dopamine link is one of the cleanest reasons why energy, drive, and novelty-seeking tend to feel higher in the late [follicular phase](/glossary/follicular-phase) and around [ovulation](/glossary/ovulation).
+
+## How dopamine works
+
+Dopamine is produced in midbrain regions (the ventral tegmental area and substantia nigra) and projects to four major pathways:
+
+- **Mesolimbic.** Reward learning and motivation. The pathway most relevant to "feeling driven".
+- **Mesocortical.** Prefrontal cortex; supports working memory, planning, and goal pursuit.
+- **Nigrostriatal.** Voluntary movement control. Damaged in Parkinson's disease.
+- **Tuberoinfundibular.** Inhibits [prolactin](/glossary/prolactin) release from the pituitary.
+
+The first two pathways are the ones most relevant for cycle-related shifts in motivation and cognition.
+
+## How estrogen modulates dopamine
+
+Estradiol affects dopamine at multiple points: it increases dopamine synthesis, slows reuptake, and upregulates dopamine receptor density (particularly D1 and D2 in the striatum). The net effect of rising estrogen is a brain that responds more strongly to the same reward cue and pursues goals more readily.
+
+The cyclic pattern, roughly:
+
+- **Early follicular (days 1 to 5):** estrogen low, dopamine tone baseline.
+- **Mid-to-late follicular (days 6 to 13):** estrogen rising, dopamine signaling amplified.
+- **Ovulatory (days 14 to 16):** estrogen peaks, dopamine near peak. Highest novelty-seeking and approach motivation.
+- **Early luteal (days 17 to 22):** modest secondary estrogen rise, but [progesterone](/glossary/progesterone) starts dampening reward sensitivity.
+- **Late luteal (days 23 to 28):** estrogen drops sharply, dopamine signaling falls. Lower motivation, lower stress tolerance.
+
+The late-follicular and ovulatory windows are when many users notice they suddenly feel "on", more social, more willing to take risks, and more drawn to new ideas or projects.
+
+## Practical patterns linked to dopamine cycling
+
+The dopamine-estrogen story explains several observations:
+
+- **Novelty-seeking peaks pre-ovulation.** Behavioral studies show modest increases in approach to novel stimuli, sociability, and openness to new experiences in the late follicular window.
+- **Risk tolerance increases.** Some research suggests women take slightly more risk on financial and social tasks near ovulation. Effect sizes are small, but directionally consistent.
+- **Late-luteal motivation slump.** The post-ovulatory dopamine drop is one proposed contributor to the "I cannot get started on anything" feeling many users describe in the days before menstruation.
+- **Addiction vulnerability shifts.** Some addiction research shows craving and relapse risk varies across the cycle, partly mediated by estrogen-dopamine effects.
+
+Cycle syncing maps these patterns onto scheduling: do the pitching, networking, new-project-launching work in late follicular and ovulatory; protect routine and low-stakes work for luteal. The [hormone-cognition link](/glossary/hormone-cognition) summarizes the full mechanism.
+
+## Dopamine, PMS, and cravings
+
+The late-luteal dopamine drop is part of the proposed mechanism for [premenstrual cravings](/glossary/premenstrual-cravings). Highly palatable foods (sugar, chocolate, refined carbs) trigger dopamine release, and a brain in a low-dopamine state seeks out stronger reward signals to compensate. This is also part of the proposed mechanism for late-luteal mood symptoms in [PMS](/glossary/pms) and [PMDD](/glossary/pmdd), though [serotonin](/glossary/serotonin-cycle) and [allopregnanolone](/glossary/allopregnanolone) likely matter more for the mood piece.
+
+## What this is not
+
+Cycle phase does not change personality, intelligence, or who you fundamentally are. The shifts are modest and operate on top of much larger individual differences. Some users have noticeable dopamine-driven energy shifts across the cycle; others notice almost nothing. Both are normal.
+
+Birth control that suppresses ovulation (combined hormonal methods) flattens the estrogen curve, which would in theory flatten the dopamine cycling pattern too. Research is mixed on whether users on combined methods report different motivation patterns than users with natural cycles.
+
+## Related reading
+
+- [Estrogen](/glossary/estrogen): the upstream hormone amplifying dopamine
+- [Serotonin (cycle modulation)](/glossary/serotonin-cycle): the mood-side counterpart
+- [Hormone-cognition link](/glossary/hormone-cognition): the integrated mechanism
+- [Follicular phase complete guide](/blog/follicular-phase-complete-guide): how to use the motivation window
+
+</article>
+
+<GlossarySidebar
+  currentSlug="dopamine-cycle"
+  title="Dopamine (cycle modulation)"
+  toc={[
+    { id: "how-dopamine-works", label: "How dopamine works" },
+    { id: "how-estrogen-modulates-dopamine", label: "Estrogen modulation" },
+    { id: "practical-patterns-linked-to-dopamine-cycling", label: "Practical patterns" },
+    { id: "dopamine-pms-and-cravings", label: "PMS and cravings" },
+    { id: "what-this-is-not", label: "What this is not" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,135 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Prolactin: milk hormone, ovulation suppression, and amenorrhea",
+  description:
+    "Prolactin drives milk production and suppresses ovulation. Elevated levels from breastfeeding, stress, or pituitary tumors can stop periods. How it interacts with the cycle.",
+  alternates: { canonical: "/glossary/prolactin" },
+  openGraph: {
+    title: "Prolactin | Lumen glossary",
+    description:
+      "How prolactin suppresses ovulation and causes amenorrhea in lactation, stress, and hyperprolactinemia.",
+    url: "/glossary/prolactin",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Prolactin"
+  description="Pituitary hormone that drives milk production. Elevated levels suppress GnRH and prevent ovulation. Causes lactational amenorrhea, stress-related cycle disruption, and amenorrhea in hyperprolactinemia."
+  path="/glossary/prolactin"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Prolactin", path: "/glossary/prolactin" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Prolactin
+
+**Prolactin** is a pituitary hormone whose main job is milk production. In non-pregnant, non-lactating women, prolactin sits at a low baseline. When it rises, for any reason, it suppresses [GnRH](/glossary/hpo-axis) and prevents [ovulation](/glossary/ovulation). This is the mechanism behind [lactational amenorrhea](/glossary/lactational-amenorrhea), and it also explains why prolactin-elevating stress, medications, or pituitary tumors can stop periods.
+
+*This is informational, not medical advice. Talk to your provider if your periods have stopped, you have unexplained breast discharge, or your symptoms suggest a possible prolactin elevation.*
+
+## What prolactin does
+
+The functional roles:
+
+- **Drives milk production.** Prolactin acts on mammary tissue to produce milk after pregnancy. Estrogen and progesterone during pregnancy prime the breast; prolactin produces the milk after birth.
+- **Suppresses ovulation.** High prolactin inhibits hypothalamic GnRH, which reduces [FSH](/glossary/fsh) and [LH](/glossary/lh), which stops follicular development. This is biology's built-in spacing mechanism between pregnancies.
+- **Has minor immune and metabolic effects.** Less relevant for cycle syncing.
+
+## Normal prolactin and the cycle
+
+In a typical cycle, prolactin does not vary dramatically. Some studies show a small rise around ovulation and during the [luteal phase](/glossary/luteal-phase), but the variation is modest. Prolactin does not have a strong cyclic pattern compared to [estrogen](/glossary/estrogen), [progesterone](/glossary/progesterone), or [LH](/glossary/lh).
+
+What does affect prolactin in non-pregnant women:
+
+- **Sleep.** Prolactin rises during sleep, peaking in the early morning hours.
+- **Stress.** Acute and chronic stress can elevate prolactin.
+- **Exercise.** Intense exercise transiently raises prolactin.
+- **Nipple stimulation.** Even outside lactation, can transiently elevate prolactin.
+- **Meals.** Some elevation after eating, especially high-protein meals.
+
+These are reasons a single prolactin test can be misleading. Fasting morning samples, drawn at least an hour after waking, are most reliable.
+
+## Lactational amenorrhea
+
+In exclusive breastfeeding, frequent nipple stimulation keeps prolactin elevated. The elevated prolactin suppresses ovulation, and many women have no periods for months postpartum. This is **[lactational amenorrhea](/glossary/lactational-amenorrhea)**, the basis for [LAM](/glossary/lam) as a contraceptive method.
+
+The conditions for LAM-as-contraception (over 98% effective when all are met):
+
+- Baby is under 6 months old.
+- Exclusively breastfeeding (no formula, minimal solids).
+- Feeding on demand, including night feeds.
+- Periods have not returned.
+
+If any condition fails, prolactin suppression drops and ovulation can resume, often before the first postpartum period.
+
+## Hyperprolactinemia
+
+Hyperprolactinemia means chronically elevated prolactin in non-pregnant, non-lactating women. Causes include:
+
+- **Prolactinoma.** A benign pituitary tumor that secretes prolactin. Most common pathological cause. Diagnosed by MRI.
+- **Medications.** Antipsychotics, some antidepressants, metoclopramide, opioids, and oral contraceptives can all elevate prolactin.
+- **Hypothyroidism.** Low [thyroid](/glossary/thyroid-cycle) hormone can raise TRH, which stimulates prolactin release.
+- **Chronic stress.** [Cortisol](/glossary/cortisol-cycle) elevation pathways can co-elevate prolactin.
+- **Chest wall stimulation.** Repeated nipple stimulation outside breastfeeding can elevate prolactin.
+- **Idiopathic.** Sometimes no cause is found.
+
+Symptoms include irregular or absent periods, galactorrhea (breast discharge unrelated to lactation), reduced libido, and infertility. In severe prolactinoma, headaches and vision changes can occur from tumor mass effect.
+
+Treatment depends on cause. Dopamine agonists (cabergoline, bromocriptine) lower prolactin and restore cycles in most prolactinoma cases. Medication-induced hyperprolactinemia may require switching the offending drug.
+
+## Prolactin and stress amenorrhea
+
+Stress-related cycle disruption involves multiple pathways: [cortisol](/glossary/cortisol-cycle), GnRH suppression, and sometimes prolactin elevation. In some women with [hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea), prolactin is mildly elevated and contributes to the ovulation suppression. The fix is the same as for HPA-driven amenorrhea: reduce stress, eat enough, sleep more, train less if relevant.
+
+## Prolactin and PMS
+
+There is older speculation that elevated prolactin contributes to [PMS](/glossary/pms), specifically breast tenderness. Current evidence is mixed. Most PMS is better explained by the late-luteal progesterone and estrogen drop than by prolactin. [Vitex](/glossary/vitex) is sometimes used to lower prolactin, though its main proposed mechanism is dopaminergic.
+
+## Prolactin testing
+
+Standard testing:
+
+- **Fasting morning prolactin.** Drawn at least 1 hour after waking. Avoid breast exam, exercise, or nipple stimulation that morning.
+- **Repeat if elevated.** A single elevated reading is often non-diagnostic; repeat on a separate day.
+- **Macroprolactin screening.** Some prolactin in the blood is "macroprolactin," a larger inactive form. Macroprolactinemia mimics hyperprolactinemia on labs but does not produce symptoms.
+- **MRI pituitary** if prolactin is over 100 ng/mL or symptoms suggest a mass effect.
+
+## Related reading
+
+- [Lactational amenorrhea](/glossary/lactational-amenorrhea): the postpartum pattern
+- [Hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea): the stress pattern
+- [HPO axis](/glossary/hpo-axis): the reproductive axis prolactin suppresses
+- [Postpartum cycle return](/glossary/postpartum-cycle-return): when cycling resumes
+- [Vitex](/glossary/vitex): the herb often used to lower prolactin
+
+</article>
+
+<GlossarySidebar
+  currentSlug="prolactin"
+  title="Prolactin"
+  toc={[
+    { id: "what-prolactin-does", label: "What it does" },
+    { id: "normal-prolactin-and-the-cycle", label: "Cycle pattern" },
+    { id: "lactational-amenorrhea", label: "Lactational amenorrhea" },
+    { id: "hyperprolactinemia", label: "Hyperprolactinemia" },
+    { id: "prolactin-and-stress-amenorrhea", label: "Stress amenorrhea" },
+    { id: "prolactin-and-pms", label: "Prolactin and PMS" },
+    { id: "prolactin-testing", label: "Testing" },
+  ]}
+/>
+
+</div>

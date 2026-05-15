@@ -1,0 +1,145 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "SHBG (sex hormone binding globulin): why free hormone matters more than total",
+  description:
+    "SHBG is a liver-produced protein that binds testosterone and estrogen, controlling the free (active) fraction. Low SHBG drives free androgen excess; high SHBG reduces active hormone.",
+  alternates: { canonical: "/glossary/shbg" },
+  openGraph: {
+    title: "SHBG (sex hormone binding globulin) | Lumen glossary",
+    description:
+      "What SHBG does, what shifts it, and why it matters for interpreting hormone labs.",
+    url: "/glossary/shbg",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="SHBG (sex hormone binding globulin)"
+  description="Liver-produced protein that binds testosterone and estrogen in the bloodstream. Only the unbound (free) fraction is biologically active. Low SHBG increases free hormone activity; high SHBG decreases it. Shifts with insulin, thyroid, estrogen, and liver status."
+  path="/glossary/shbg"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "SHBG", path: "/glossary/shbg" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# SHBG (sex hormone binding globulin)
+
+**SHBG** is a protein produced by the liver that binds sex hormones in the bloodstream, primarily [testosterone](/glossary/testosterone-in-women) and [estradiol](/glossary/estrogen). Bound hormone is biologically inactive; only the small unbound (free) fraction can enter cells and bind hormone receptors. SHBG is one of the most important and most ignored variables on a standard hormone panel.
+
+## What SHBG does
+
+SHBG acts as a hormone reservoir and transport system:
+
+- **Binds testosterone and estradiol** with high affinity. Roughly 65 to 75% of total testosterone in women is SHBG-bound.
+- **Releases hormone slowly.** Bound hormone unbinds as free hormone is used by tissues, maintaining a steady free hormone supply.
+- **Modulates net hormonal activity.** Two women with identical total testosterone can have very different symptoms depending on SHBG.
+
+The total-hormone reading on a standard lab panel includes both bound and free fractions. The free fraction is what biology actually responds to.
+
+## Why SHBG matters for cycle syncing
+
+In practice, SHBG explains a lot of the variation in why women with apparently "normal" hormones experience strong symptoms (or apparently abnormal hormones experience few symptoms):
+
+- A woman with [PCOS](/glossary/pcos) and insulin resistance often has normal total testosterone but very low SHBG, producing high free testosterone and the full picture of [androgen excess](/glossary/androgens-women).
+- A woman on combined hormonal contraceptives has high SHBG (driven by synthetic estrogen), low free testosterone, and sometimes presents with low libido and mood changes.
+- A perimenopausal woman with rising SHBG can have functional androgen deficiency even though total levels look normal.
+
+## What raises SHBG
+
+Several factors push SHBG up, decreasing free hormone activity:
+
+- **Estrogen exposure.** Endogenous estrogen, oral [HRT](/glossary/hrt), and especially oral [combined hormonal contraceptives](/glossary/combined-hormonal-contraceptive). The first-pass liver effect of oral estrogen is the main driver.
+- **Hyperthyroidism.** Thyroid hormone increases SHBG production.
+- **Pregnancy.** SHBG rises significantly.
+- **Anorexia and very low body weight.**
+- **Cirrhosis or significant liver disease.**
+- **Certain anti-seizure medications** (phenytoin, carbamazepine).
+
+## What lowers SHBG
+
+The mirror pattern, pushing SHBG down and increasing free hormone activity:
+
+- **Insulin resistance and hyperinsulinemia.** The most common driver in reproductive-age women. Insulin directly suppresses liver SHBG production. This is a major mechanism in PCOS.
+- **Obesity** (overlapping with insulin resistance).
+- **Hypothyroidism.**
+- **Androgen excess** (negative feedback to SHBG production).
+- **Glucocorticoids and Cushing's syndrome.**
+- **Growth hormone and IGF-1.**
+- **Non-alcoholic fatty liver disease.**
+
+## SHBG, insulin, and PCOS
+
+The insulin-SHBG-androgen loop is central to PCOS pathophysiology:
+
+1. Insulin resistance raises insulin levels.
+2. High insulin suppresses liver SHBG production.
+3. Low SHBG means more free testosterone is available to tissues.
+4. High insulin also directly stimulates ovarian theca cells to produce more testosterone.
+5. Higher testosterone worsens insulin resistance.
+
+This is why insulin-sensitizing interventions (metformin, [inositol](/glossary/inositol-pcos), strength training, dietary changes) often produce broad PCOS symptom improvement: they raise SHBG, lower free testosterone, and restore cycles indirectly rather than acting on the ovary directly.
+
+## SHBG and hormonal contraceptives
+
+Oral combined hormonal contraceptives raise SHBG by 2 to 4x in most users. The clinical implications:
+
+- **Free testosterone drops sharply.** This explains the acne-clearing effect for many users and the low libido side effect for others.
+- **The SHBG elevation can persist** for months after stopping the pill, longer than the explicit hormones themselves. This contributes to [post-pill amenorrhea](/glossary/post-pill-amenorrhea) and post-pill mood and libido issues.
+- **Hormonal IUDs and progestin-only methods** raise SHBG less because they do not deliver synthetic estrogen at the same dose.
+
+This is part of why [cycle syncing on birth control](/blog/cycle-syncing-on-birth-control) does not work the same way: the entire SHBG-mediated hormonal landscape is different.
+
+## Testing
+
+SHBG is a simple blood test, can be drawn any day of the cycle. Standard reference ranges in adult women run roughly 18 to 144 nmol/L, with substantial inter-lab variation.
+
+Useful interpretations:
+
+- **SHBG below 30 nmol/L** in a woman with cycle irregularity strongly suggests insulin resistance and warrants testing fasting insulin and glucose.
+- **SHBG above 100 nmol/L** in a woman with low libido or fatigue suggests low free hormone activity. Check what is raising SHBG (oral estrogen, thyroid status).
+- **Trending SHBG** over months is more useful than a single point, especially for tracking response to interventions like inositol or metformin.
+
+## Free testosterone calculation
+
+The most informative testosterone reading is **calculated free testosterone**, which uses total testosterone, SHBG, and albumin in a formula. Direct free testosterone immunoassays are less reliable. Most major labs (Quest, LabCorp) offer the calculated value.
+
+If your provider orders total testosterone without SHBG, request SHBG be added. The two readings together are far more informative than total alone.
+
+## Related reading
+
+- [Androgens (in women)](/glossary/androgens-women): the hormones SHBG binds most relevantly
+- [Testosterone in women](/glossary/testosterone-in-women): where free versus total matters most
+- [Insulin (cycle interaction)](/glossary/insulin-cycle): the insulin-SHBG link
+- [PCOS](/glossary/pcos): the clinical picture where SHBG matters most
+
+</article>
+
+<GlossarySidebar
+  currentSlug="shbg"
+  title="SHBG (sex hormone binding globulin)"
+  toc={[
+    { id: "what-shbg-does", label: "What it does" },
+    { id: "why-shbg-matters-for-cycle-syncing", label: "Why it matters" },
+    { id: "what-raises-shbg", label: "What raises it" },
+    { id: "what-lowers-shbg", label: "What lowers it" },
+    { id: "shbg-insulin-and-pcos", label: "Insulin and PCOS" },
+    { id: "shbg-and-hormonal-contraceptives", label: "Contraceptives" },
+    { id: "testing", label: "Testing" },
+    { id: "free-testosterone-calculation", label: "Free testosterone calc" },
+  ]}
+/>
+
+</div>

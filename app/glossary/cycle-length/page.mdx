@@ -1,0 +1,104 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Cycle length: definition, normal range, and what varies it",
+  description:
+    "Cycle length is the number of days from day 1 of one period to day 1 of the next. Normal range 21 to 35 days. Only about 12% of women have exactly 28-day cycles.",
+  alternates: { canonical: "/glossary/cycle-length" },
+  openGraph: {
+    title: "Cycle length | Lumen glossary",
+    description:
+      "Definition, normal range, what makes cycle length vary, and when changes warrant attention.",
+    url: "/glossary/cycle-length",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Cycle length"
+  description="The number of days from day 1 of one menstrual period to day 1 of the next. Normal range 21 to 35 days."
+  path="/glossary/cycle-length"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Cycle length", path: "/glossary/cycle-length" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Cycle length
+
+**Cycle length** is the number of days from day 1 of one menstrual period (the first day of bleeding) to day 1 of the next period. It is the most basic descriptor of a [menstrual cycle](/glossary/menstrual-cycle) and the input most planning tools (including phase calculators) rely on.
+
+## What counts as a normal cycle length
+
+The American College of Obstetricians and Gynecologists (ACOG) defines the normal range as 21 to 35 days. The often-cited 28-day cycle is a population reference, not a personal default. A 2019 analysis of over 600,000 cycles tracked through the Natural Cycles app found that only about 12% of women have cycles exactly 28 days long. Most cluster between 24 and 30 days, with meaningful month-to-month variation.
+
+Anything consistently under 21 days or longer than 35 days is worth flagging with a clinician. The same goes for a sudden change of over 7 days from your typical baseline without a clear cause.
+
+## What drives variation in cycle length
+
+The [luteal phase](/glossary/luteal-phase) stays close to 14 days for most people. That means the [follicular phase](/glossary/follicular-phase) carries almost all of the swing when overall cycle length changes:
+
+- A 24-day cycle: roughly 10-day follicular phase, 14-day luteal phase
+- A 28-day cycle: roughly 14-day follicular phase, 14-day luteal phase
+- A 32-day cycle: roughly 18-day follicular phase, 14-day luteal phase
+
+This is why [ovulation](/glossary/ovulation) timing varies cycle-to-cycle even when the luteal phase stays stable. Anything that delays the [LH surge](/glossary/lh-surge) (stress, travel, illness, under-fueling) extends the follicular phase and lengthens the overall cycle.
+
+## Common factors that change cycle length
+
+- **Stress and sleep loss.** Acute stress can delay ovulation, lengthening the cycle.
+- **Travel and time-zone shifts.** Often delay or skip ovulation.
+- **Illness or fever.** Inflammation can push ovulation back.
+- **Heavy training or under-fueling.** Can shorten cycles, lengthen them, or stop them ([hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea), [RED-S](/glossary/red-s)).
+- **Perimenopause.** Cycles often shorten first, then become irregular.
+- **PCOS.** Cycles often run long or become unpredictable due to irregular ovulation.
+- **Coming off hormonal birth control.** Cycles may take several months to settle.
+
+## Tracking your typical cycle length
+
+The most useful number is your personal range over the last 6 to 12 cycles, not a single average. Most [period trackers](/glossary/period-tracker) display this range automatically. If your cycles fall between, say, 26 and 30 days, that is your baseline. A 33-day cycle is a meaningful deviation; a 27-day one is not.
+
+For cycle syncing planning, the [phase calculator](/plan) uses your average cycle length and last period start date to estimate phase windows. For irregular cycles, direct [ovulation](/glossary/ovulation) tracking through [BBT](/glossary/basal-body-temperature) or [LH testing](/glossary/opk) is more reliable than calendar prediction.
+
+## When cycle length changes warrant attention
+
+Per ACOG, these patterns warrant a clinician conversation:
+
+- Consistently under 21 days or over 35 days
+- Month-to-month variation of over 7 days from your baseline
+- Three or more missed periods without pregnancy
+- Sudden cycle length change without obvious cause
+
+Underlying causes range from benign (stress, travel) to ones that need workup ([PCOS](/glossary/pcos), [thyroid issues](/glossary/thyroid-cycle), [perimenopause](/glossary/perimenopause), [endometriosis](/glossary/endometriosis)).
+
+## Cycle length and cycle syncing
+
+[Cycle syncing](/glossary/cycle-syncing) treats cycle length as the scaling factor for phase windows. A 32-day cycle has a longer follicular phase than a 24-day cycle; planning around fixed calendar days does not work. The [cycle syncing chart](/blog/cycle-syncing-chart) covers how to adjust the phase model to your personal cycle length.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="cycle-length"
+  title="Cycle length"
+  toc={[
+    { id: "what-counts-as-a-normal-cycle-length", label: "Normal range" },
+    { id: "what-drives-variation-in-cycle-length", label: "What drives variation" },
+    { id: "common-factors-that-change-cycle-length", label: "Common factors" },
+    { id: "tracking-your-typical-cycle-length", label: "Tracking your baseline" },
+    { id: "when-cycle-length-changes-warrant-attention", label: "When to flag changes" },
+    { id: "cycle-length-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,127 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Allopregnanolone: the progesterone metabolite behind PMDD",
+  description:
+    "Allopregnanolone is a metabolite of progesterone that modulates GABA-A receptors. Its sharp drop in late luteal is the leading proposed mechanism for PMDD and premenstrual anxiety.",
+  alternates: { canonical: "/glossary/allopregnanolone" },
+  openGraph: {
+    title: "Allopregnanolone | Lumen glossary",
+    description:
+      "The progesterone metabolite that modulates GABA. Its withdrawal in late luteal underlies PMDD.",
+    url: "/glossary/allopregnanolone",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Allopregnanolone"
+  description="Neuroactive steroid metabolite of progesterone. Potent positive allosteric modulator of GABA-A receptors. Sharp drop in late luteal is the leading proposed mechanism for PMDD."
+  path="/glossary/allopregnanolone"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Allopregnanolone", path: "/glossary/allopregnanolone" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Allopregnanolone
+
+**Allopregnanolone** (sometimes written ALLO or 3α,5α-tetrahydroprogesterone) is a neuroactive steroid made from [progesterone](/glossary/progesterone) by enzymes in the liver, adrenal glands, and brain. It is the molecule that does most of the GABAergic work usually attributed to progesterone itself. Allopregnanolone is one of the most potent positive allosteric modulators of [GABA-A](/glossary/gaba) receptors known, which means it amplifies the calming effect of GABA at the receptor.
+
+When the [menstrual cycle](/glossary/menstrual-cycle) is described as having a "neurosteroid mood signature", allopregnanolone is the molecule doing most of the talking.
+
+## How allopregnanolone is made
+
+Allopregnanolone is synthesized in two steps from progesterone:
+
+1. **5α-reductase** converts progesterone to 5α-dihydroprogesterone.
+2. **3α-hydroxysteroid dehydrogenase** converts that to allopregnanolone.
+
+The same 5α-reductase enzyme also converts testosterone to dihydrotestosterone (DHT), which is the target of finasteride (used for hair loss). 5α-reductase inhibitors can lower allopregnanolone production, which is one reason some users on finasteride report mood changes.
+
+Allopregnanolone is made both in the periphery (where it crosses the blood-brain barrier) and locally in the brain.
+
+## How allopregnanolone modulates GABA
+
+GABA-A receptors are pentameric channels that open in response to GABA binding. Allopregnanolone binds at a separate site on the receptor (the neurosteroid site) and increases the receptor's response to the same amount of GABA. The behavioral effects of high allopregnanolone resemble those of benzodiazepines or alcohol, which work on adjacent sites of the same receptor:
+
+- **Anxiolysis.** Anxiety reduction.
+- **Sedation.** Sleepiness, slower thinking at high levels.
+- **Anticonvulsant effects.** Reduced seizure threshold-related activity.
+- **Mood stabilization.** Calmer baseline.
+
+This is why mid-luteal phase often feels calming for users without PMS sensitivity: progesterone is high, allopregnanolone is high, GABA tone is up.
+
+## The cyclic pattern
+
+Allopregnanolone roughly tracks progesterone across the cycle:
+
+- **Follicular (days 1 to 13):** very low. Brain operates at GABA-A baseline.
+- **Ovulatory (days 14 to 16):** starts rising.
+- **Mid-luteal (days 17 to 22):** peak. GABA tone elevated.
+- **Late luteal (days 23 to 28):** sharp drop as the corpus luteum dies and progesterone production falls. GABA tone drops with it.
+
+The drop is the part that matters clinically.
+
+## The withdrawal model of PMDD
+
+[PMDD](/glossary/pmdd) (premenstrual dysphoric disorder) is the severe end of the premenstrual mood spectrum. The leading neurobiological model is that PMDD users do not have abnormally low absolute allopregnanolone levels; they have an abnormal response to the rate of change. The proposed mechanism:
+
+1. **Mid-luteal:** allopregnanolone rises. Brain GABA-A receptors adapt downward to maintain stable inhibition.
+2. **Late luteal:** allopregnanolone drops sharply.
+3. **Down-regulated receptors** are now exposed to less inhibition than the brain has come to expect. The result is a relative hyperexcitable state.
+4. **Symptoms emerge:** anxiety, irritability, mood swings, sensory hypersensitivity, sleep disruption.
+
+This withdrawal model parallels what happens with benzodiazepine taper or alcohol withdrawal, on a smaller scale and a monthly cycle.
+
+## Why this matters for treatment
+
+The allopregnanolone model has clinical implications:
+
+- **SSRIs work fast for PMDD** (days, not weeks) partly because they may increase allopregnanolone synthesis in addition to their serotonin effects.
+- **Brexanolone** (an IV formulation of allopregnanolone) is FDA-approved for postpartum depression, which involves a massive postpartum drop in allopregnanolone.
+- **Zuranolone** is an oral neurosteroid in the same family, approved for postpartum depression and under investigation for major depression.
+- **GnRH agonists** (which suppress ovulation and remove the cyclic progesterone signal) reliably treat severe PMDD when other approaches fail.
+
+The clinical pattern supports the withdrawal model: targeting the GABA-A neurosteroid axis works.
+
+## Practical implications
+
+For users with mild-to-moderate PMS, the takeaway is not "raise allopregnanolone". It is "expect a relative hyperexcitable state in the few days before menstruation and plan accordingly": more sleep buffer, fewer high-stakes commitments, slower pace.
+
+For users with severe PMDD, the takeaway is that the mechanism is real, the treatments are real, and a clinical conversation about SSRIs (with luteal-phase dosing as one option) is warranted.
+
+## Related reading
+
+- [Progesterone](/glossary/progesterone): the parent hormone
+- [GABA](/glossary/gaba): the receptor system allopregnanolone modulates
+- [PMDD](/glossary/pmdd): the severe-end clinical picture
+- [Premenstrual anxiety](/glossary/premenstrual-anxiety): the symptom most directly linked to the withdrawal
+
+</article>
+
+<GlossarySidebar
+  currentSlug="allopregnanolone"
+  title="Allopregnanolone"
+  toc={[
+    { id: "how-allopregnanolone-is-made", label: "How it is made" },
+    { id: "how-allopregnanolone-modulates-gaba", label: "GABA modulation" },
+    { id: "the-cyclic-pattern", label: "Cyclic pattern" },
+    { id: "the-withdrawal-model-of-pmdd", label: "Withdrawal model of PMDD" },
+    { id: "why-this-matters-for-treatment", label: "Treatment" },
+    { id: "practical-implications", label: "Practical implications" },
+  ]}
+/>
+
+</div>

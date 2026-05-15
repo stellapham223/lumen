@@ -1,0 +1,129 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Lactational amenorrhea: ovulation suppression during breastfeeding",
+  description:
+    "Lactational amenorrhea is the suppression of ovulation during exclusive breastfeeding. Cycles may stay absent for months to over a year. Biology, contraceptive implications, and what cycle syncing looks like.",
+  alternates: { canonical: "/glossary/lactational-amenorrhea" },
+  openGraph: {
+    title: "Lactational amenorrhea | Lumen glossary",
+    description:
+      "Why exclusive breastfeeding suppresses cycles, when fertility returns, and contraceptive implications.",
+    url: "/glossary/lactational-amenorrhea",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Lactational amenorrhea"
+  description="The natural suppression of ovulation and menstruation during exclusive, on-demand breastfeeding, driven by elevated prolactin. Can last months to over a year postpartum."
+  path="/glossary/lactational-amenorrhea"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Lactational amenorrhea", path: "/glossary/lactational-amenorrhea" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Lactational amenorrhea
+
+**Lactational amenorrhea** is the absence of menstrual periods during exclusive, on-demand breastfeeding. It is a natural physiologic state, not a disorder. Elevated prolactin from frequent nursing suppresses the [HPO axis](/glossary/hpo-axis), which blocks ovulation and the cyclic hormone pattern that produces menstruation. For some parents, lactational amenorrhea lasts a few months; for others, it can persist over a year.
+
+*This is informational, not medical advice. If cycles do not return after weaning, or if breastfeeding feels physically harder than expected, evaluation by a qualified provider is appropriate.*
+
+## What drives the suppression
+
+Three feeding patterns matter:
+
+- **Frequency.** Frequent suckling (roughly every 4 hours during the day and every 6 hours at night) keeps prolactin elevated.
+- **Exclusivity.** Adding formula, solids, or extended sleep stretches lowers prolactin enough that cycles can return.
+- **Direct breastfeeding versus pumping.** Direct feeding tends to produce a stronger prolactin response than pumping for the same volume.
+
+When prolactin stays high, [FSH](/glossary/fsh) and [LH](/glossary/lh) signaling is blunted, follicles do not mature, and [estrogen](/glossary/estrogen) stays low. The result is no [ovulation](/glossary/ovulation) and no [menstruation](/glossary/menstruation).
+
+## Typical timeline
+
+There is wide variation, but rough benchmarks:
+
+- **Exclusive, on-demand breastfeeding:** cycles often stay suspended for 6 months or longer; many parents do not see a period until weaning begins.
+- **Mixed feeding:** cycles can return at any time as nursing intensity drops.
+- **Night weaning:** often the trigger for cycle return, since the long night stretch is when prolactin previously peaked.
+- **Full weaning:** cycles typically return within 1 to 3 months after stopping.
+
+The first cycle after lactational amenorrhea is often [anovulatory](/glossary/anovulatory-cycle), but ovulation can also precede the first period. This matters for contraception planning.
+
+## Lactational amenorrhea as contraception
+
+The [Lactational Amenorrhea Method (LAM)](/glossary/lam) is a recognized contraceptive option when three conditions are all met:
+
+1. Periods have not returned.
+2. The infant is under 6 months old.
+3. Breastfeeding is exclusive and on-demand, day and night.
+
+Under those conditions, contraceptive failure rates are around 2% with typical use. Outside those conditions, fertility return is unpredictable and another method is needed.
+
+## Cycle syncing during lactational amenorrhea
+
+The four-phase cycle does not exist during true lactational amenorrhea. There is no [follicular phase](/glossary/follicular-phase), no [ovulation](/glossary/ovulation), and no [luteal phase](/glossary/luteal-phase). Calendar-based cycle syncing simply does not apply.
+
+Practical adaptations:
+
+- **Use sleep and feeding cycles as the primary rhythm.** Infant sleep windows drive what is feasible far more than hormonal phase.
+- **Watch for the first signs of fertility return.** Cervical mucus changes, libido shifts, or breast tenderness can precede the first period.
+- **Don't force a phase prescription.** The hormonal mechanism cycle syncing relies on is not running yet.
+- **Track once cycles return.** When the first periods come back, treat them as the start of [postpartum cycle return](/glossary/postpartum-cycle-return) and plan in 3-month windows.
+
+## When lactational amenorrhea overlaps with concern
+
+Most cases are physiologic. Reasons to seek evaluation:
+
+- **Severe vaginal dryness or painful intercourse** beyond expected lactation-related estrogen suppression.
+- **Significant bone or joint pain,** especially with low body weight (may signal lactation-related bone density loss combined with [hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea)).
+- **Postpartum mood symptoms** that are not resolving.
+- **Cycles that do not return** within 6 months after fully weaning (rule out thyroid disorders, hyperprolactinemia from other causes, Sheehan syndrome, [FHA](/glossary/fha), or [post-pill amenorrhea](/glossary/post-pill-amenorrhea) if hormonal contraception was used postpartum).
+- **Heavy bleeding** when cycles do return.
+
+All of these should be coordinated with a provider.
+
+## Lactational amenorrhea and the menstrual cycle
+
+A few practical implications:
+
+- It is normal, expected, and not a sign of "lost" fertility.
+- Fertility returns before the first period, so contraception requires planning if pregnancy is to be avoided.
+- Vaginal dryness during lactation is hormonal, not a sign of low desire; topical lubricants or vaginal estrogen can help.
+- The transition back to cycling can be uncomfortable: returning [PMS](/glossary/pms), heavier flow, and mood swings are common.
+
+## Related reading
+
+- [Postpartum cycle return](/glossary/postpartum-cycle-return): the broader timeline after birth
+- [LAM (Lactational Amenorrhea Method)](/glossary/lam): the contraceptive protocol
+- [Hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea): differential diagnosis when cycles don't resume
+- [Prolactin](/glossary/prolactin): the dominant hormone
+
+</article>
+
+<GlossarySidebar
+  currentSlug="lactational-amenorrhea"
+  title="Lactational amenorrhea"
+  toc={[
+    { id: "what-drives-the-suppression", label: "What drives the suppression" },
+    { id: "typical-timeline", label: "Typical timeline" },
+    { id: "lactational-amenorrhea-as-contraception", label: "As contraception (LAM)" },
+    { id: "cycle-syncing-during-lactational-amenorrhea", label: "Cycle syncing during lactation" },
+    { id: "when-lactational-amenorrhea-overlaps-with-concern", label: "When to seek evaluation" },
+    { id: "lactational-amenorrhea-and-the-menstrual-cycle", label: "Cycle implications" },
+  ]}
+/>
+
+</div>

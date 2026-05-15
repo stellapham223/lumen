@@ -1,0 +1,131 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Iron and your period: deficiency, ferritin testing, and replacement",
+  description:
+    "Menstruating women are the highest-risk group for iron deficiency. Heavy bleeders are particularly vulnerable. Why ferritin matters more than hemoglobin, dosing, and absorption tips.",
+  alternates: { canonical: "/glossary/iron-period" },
+  openGraph: {
+    title: "Iron (period support) | Lumen glossary",
+    description:
+      "Why menstruating women are iron-deficient at high rates, what to test, and how to replace effectively.",
+    url: "/glossary/iron-period",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Iron (period support)"
+  description="Essential mineral lost in menstrual bleeding. Menstruating women, especially heavy bleeders, are at high risk for iron deficiency, which presents with fatigue, brain fog, cold intolerance, and hair loss."
+  path="/glossary/iron-period"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Iron and your period", path: "/glossary/iron-period" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Iron (period support)
+
+**Iron** is an essential mineral required for hemoglobin (oxygen transport), myoglobin (muscle oxygen storage), and many enzymes including those involved in [dopamine](/glossary/dopamine-cycle) and serotonin synthesis. Menstruating women lose iron with each period; women with heavy menstrual bleeding ([menorrhagia](/glossary/menorrhagia)) lose substantially more, and are the highest-risk group for iron deficiency in the general population.
+
+Unlike most supplements covered here, this one is more about identifying deficiency than improving normal physiology. Iron supplementation matters when you are low, and creates problems if you are not.
+
+*Consult a provider before starting supplements, especially if pregnant, breastfeeding, or on medications. Iron should be tested before supplementing.*
+
+## Why menstruating women are high risk
+
+A typical period sheds 30 to 80mL of blood, equivalent to roughly 15 to 40mg of iron lost per cycle. Over a year, that is enough that intake must consistently exceed loss to maintain stores. Iron-rich diets (red meat, dark leafy greens, legumes) cover this for many users but not all.
+
+Risk factors for deficiency:
+
+- **Heavy bleeders.** Cycles with more than 80mL loss can erode stores faster than intake replaces them.
+- **Vegetarians and vegans.** Plant iron (non-heme) is less bioavailable than heme iron from animal sources.
+- **Frequent blood donors.**
+- **Endurance athletes.** Foot-strike hemolysis and exercise-induced hepcidin elevation reduce iron status.
+- **Pregnancy and postpartum.**
+- **GI issues affecting absorption** (celiac, IBD, PPI use).
+
+## What deficiency feels like
+
+Iron deficiency presents on a spectrum:
+
+- **Low ferritin without anemia:** fatigue, [period brain](/glossary/period-brain), reduced exercise tolerance, hair shedding, cold intolerance, restless legs, brittle nails, pica (craving ice or non-food items).
+- **Iron-deficiency anemia:** the above plus pallor, breathlessness, palpitations, more severe fatigue.
+
+A common pitfall: hemoglobin can be normal while ferritin (iron stores) is very low. Many users feel terrible at ferritin levels considered "normal" by labs but functionally suboptimal.
+
+## What to test
+
+**Ferritin** is the most useful single test for iron status. It reflects stored iron and drops well before hemoglobin does.
+
+Functional reference ranges for menstruating women:
+
+- **Below 15 to 30 ng/mL:** clearly low; symptoms likely.
+- **30 to 50 ng/mL:** suboptimal for many users; symptoms common.
+- **50 to 100 ng/mL:** generally adequate.
+- **Above 100 ng/mL:** ample stores; supplementation usually unnecessary.
+
+Standard lab "normal" ranges often start as low as 10 to 15 ng/mL, which is well below the level where many people feel well. A complete panel (CBC, ferritin, transferrin saturation, sometimes serum iron and TIBC) gives the best picture.
+
+Ferritin is also an inflammatory marker. Acute inflammation can artificially raise it. If ferritin looks higher than expected with deficiency symptoms, check CRP.
+
+## How to replace
+
+Replacement is straightforward and slow.
+
+**Forms:**
+
+- **Ferrous sulfate, ferrous gluconate, ferrous fumarate:** classic options. Effective but often poorly tolerated (constipation, nausea, dark stools).
+- **Iron bisglycinate (ferrous bisglycinate):** better tolerated, comparable absorption at typical doses.
+- **Heme iron polypeptide:** well tolerated; lower elemental iron per dose.
+
+**Dose:** typically 30 to 100mg of elemental iron daily, depending on severity and tolerance. Higher doses do not always absorb better and increase side effects.
+
+**Timing:** every-other-day dosing absorbs better than daily dosing (hepcidin response). Taking iron with vitamin C (200mg+) improves absorption. Avoid coffee, tea, calcium, and dairy within 2 hours of dosing.
+
+**How long:** rechecking ferritin every 3 months is reasonable. Replacing depleted stores typically takes 3 to 6 months, sometimes longer if loss continues.
+
+## Cautions
+
+- **Do not supplement without testing.** Iron overload (hemochromatosis) affects about 1 in 200 people of European descent and is worsened by unnecessary supplementation.
+- **Constipation** is the most common side effect.
+- **Stool darkening** is expected, not concerning.
+- **Take separately from thyroid medication, calcium supplements, and certain antibiotics.**
+
+## Where it fits
+
+Iron is not a "cycle syncing" supplement in the prescription sense. It is a deficiency-driven intervention that resolves symptoms when they are due to low stores. Heavy bleeders should get baseline labs before chasing energy or mood issues through other supplements.
+
+## Related reading
+
+- [Menorrhagia](/glossary/menorrhagia): the heavy bleeding condition that drives iron loss
+- [Period brain](/glossary/period-brain): partly mediated by iron status
+- [Menstrual phase](/glossary/menstrual-phase): the bleeding window
+
+</article>
+
+<GlossarySidebar
+  currentSlug="iron-period"
+  title="Iron (period support)"
+  toc={[
+    { id: "why-menstruating-women-are-high-risk", label: "Why high risk" },
+    { id: "what-deficiency-feels-like", label: "What deficiency feels like" },
+    { id: "what-to-test", label: "What to test" },
+    { id: "how-to-replace", label: "How to replace" },
+    { id: "cautions", label: "Cautions" },
+    { id: "where-it-fits", label: "Where it fits" },
+  ]}
+/>
+
+</div>

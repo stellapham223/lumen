@@ -1,0 +1,115 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Contraceptive implant (Nexplanon): mechanism, cycle effects, and cycle syncing",
+  description:
+    "Nexplanon is a small etonogestrel implant placed in the upper arm. It suppresses ovulation in most users for up to 3 years. What it means for cycle syncing, side effects, and fit.",
+  alternates: { canonical: "/glossary/contraceptive-implant" },
+  openGraph: {
+    title: "Contraceptive implant (Nexplanon) | Lumen glossary",
+    description:
+      "How Nexplanon works, why ovulation is reliably suppressed, and the cycle syncing implications.",
+    url: "/glossary/contraceptive-implant",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Contraceptive implant"
+  description="Small subdermal rod placed in the upper arm that releases etonogestrel for up to 3 years. Brand name Nexplanon. Suppresses ovulation in most users."
+  path="/glossary/contraceptive-implant"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Contraceptive implant", path: "/glossary/contraceptive-implant" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Contraceptive implant (Nexplanon)
+
+The **contraceptive implant**, sold as Nexplanon in the US (Implanon in some other countries), is a small flexible rod about 4cm long placed under the skin of the inner upper arm. It releases the progestin etonogestrel steadily for up to 3 years. Insertion and removal are done in a clinic visit under local anesthesia.
+
+Efficacy is the highest of any reversible contraceptive, above 99.9% in both typical and perfect use, because compliance is removed from the equation entirely.
+
+*This is informational, not medical advice. Implant placement and choice should be discussed with a qualified provider.*
+
+## How it works
+
+Etonogestrel works through three mechanisms, with ovulation suppression as the dominant effect:
+
+1. **[Ovulation](/glossary/ovulation) suppression.** The implant produces sustained progestin levels high enough to suppress the [LH surge](/glossary/lh-surge) in the large majority of cycles, much more reliably than the [mini-pill](/glossary/mini-pill).
+2. **Cervical mucus thickening.** Blocks sperm penetration.
+3. **Endometrial thinning.** Reduces implantation receptivity.
+
+Suppression is robust in years 1 and 2 and may weaken slightly in year 3. After removal, fertility typically returns within a few weeks.
+
+## Cycle implications
+
+For [cycle syncing](/glossary/cycle-syncing), the implant is similar to other progestin-dominant suppression methods. Most users do not ovulate, which means no true [follicular phase](/glossary/follicular-phase) or [luteal phase](/glossary/luteal-phase) and no natural [progesterone](/glossary/progesterone) cycle.
+
+The bleeding pattern on the implant is unpredictable and is the main quality-of-life issue users report:
+
+- Roughly 1 in 5 users has irregular spotting throughout each month.
+- Roughly 1 in 5 stops bleeding entirely.
+- The rest have a mix of light periods, infrequent bleeds, or occasional heavy days.
+
+The bleeding pattern in the first 3 months is a poor predictor of the long-term pattern. Many users who have problematic bleeding early settle into lighter or absent bleeding by month 6.
+
+## Common side effects
+
+- **Irregular bleeding** (the most common reason for discontinuation).
+- **Headaches.**
+- **Acne**, especially in users sensitive to androgenic effects of etonogestrel.
+- **Mood changes** in a subset of users.
+- **Weight gain** is reported by some users; the population-level effect is small.
+- **Breast tenderness.**
+- **Ovarian cysts** (functional, usually resolving on their own).
+
+Rare but serious: deep implant migration (very rare with Nexplanon, which is radiopaque and easier to locate than older Implanon), insertion-site infection, scarring.
+
+## When to consider
+
+- Want highly effective long-acting reversible contraception without daily compliance.
+- Estrogen is contraindicated.
+- Tolerate or prefer irregular or absent bleeding.
+- Want a method that is easier to start and stop than an IUD (no pelvic insertion).
+
+## When NOT to consider
+
+- Strongly prefer predictable monthly bleeds.
+- History of certain breast cancers.
+- Severe liver disease.
+- Unexplained vaginal bleeding before workup.
+- Strong preference for keeping the natural cycle (consider the [copper IUD](/glossary/copper-iud) or fertility awareness).
+
+## Related reading
+
+- [Hormonal IUD](/glossary/hormonal-iud): comparable long-acting progestin method
+- [Cycle syncing on birth control](/blog/cycle-syncing-on-birth-control): adapting the framework
+
+</article>
+
+<GlossarySidebar
+  currentSlug="contraceptive-implant"
+  title="Contraceptive implant (Nexplanon)"
+  toc={[
+    { id: "how-it-works", label: "How it works" },
+    { id: "cycle-implications", label: "Cycle implications" },
+    { id: "common-side-effects", label: "Common side effects" },
+    { id: "when-to-consider", label: "When to consider" },
+    { id: "when-not-to-consider", label: "When NOT to consider" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

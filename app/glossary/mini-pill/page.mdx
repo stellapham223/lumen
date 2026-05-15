@@ -1,0 +1,118 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Progestin-only pill (mini-pill): mechanism, cycle effects, and cycle syncing",
+  description:
+    "The mini-pill contains progestin without estrogen. Ovulation suppression varies by formulation. What this means for cycle syncing, side effects, and when it is preferred over the combined pill.",
+  alternates: { canonical: "/glossary/mini-pill" },
+  openGraph: {
+    title: "Progestin-only pill (mini-pill) | Lumen glossary",
+    description:
+      "How the mini-pill works, why ovulation suppression is variable, and what that means for cycle syncing.",
+    url: "/glossary/mini-pill",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Progestin-only pill (mini-pill)"
+  description="Oral contraceptive containing a progestin without estrogen. Mechanism centers on cervical mucus thickening and partial ovulation suppression. Variable cycle effects."
+  path="/glossary/mini-pill"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Mini-pill", path: "/glossary/mini-pill" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Progestin-only pill (mini-pill)
+
+The **progestin-only pill (POP)**, often called the mini-pill, contains a synthetic progestin without estrogen. Common formulations include norethindrone (the classic mini-pill) and drospirenone (Slynd, the newer option). It is taken every day with no placebo week.
+
+The mini-pill is most often prescribed for users who cannot take estrogen, including those who are breastfeeding, over 35 and smoking, or have a history of clots or migraine with aura.
+
+*This is informational, not medical advice. Contraceptive choice should be discussed with a qualified provider.*
+
+## How it works
+
+The mini-pill works through three overlapping effects, with the balance depending on the formulation:
+
+1. **Cervical mucus thickening.** This is the dominant effect for the classic norethindrone mini-pill. It reduces sperm penetration.
+2. **Partial ovulation suppression.** Norethindrone suppresses [ovulation](/glossary/ovulation) in roughly 40 to 60% of cycles. Drospirenone suppresses it in roughly 97% of cycles, much closer to the [combined pill](/glossary/combined-hormonal-contraceptive).
+3. **Endometrial thinning.** Reduces implantation receptivity.
+
+The strict 3-hour dosing window of the norethindrone mini-pill exists because its cervical-mucus effect wears off quickly. Drospirenone has a 24-hour window with a 4-hour grace period.
+
+## Cycle implications
+
+The mini-pill's cycle effects are formulation-dependent and individual-dependent.
+
+- **On drospirenone:** the cycle is suppressed similarly to the combined pill. Ovulation rarely happens, so [cycle syncing](/glossary/cycle-syncing) by phase does not meaningfully apply.
+- **On norethindrone:** ovulation happens in roughly half of cycles. Some users still have a recognizable [follicular](/glossary/follicular-phase) and [luteal phase](/glossary/luteal-phase) pattern; others do not.
+
+Bleeding patterns on the mini-pill are notoriously unpredictable:
+
+- Some users have regular monthly bleeds.
+- Some have irregular spotting throughout the month.
+- Some stop bleeding entirely (amenorrhea), which is medically safe but disconcerting.
+
+For users who do still ovulate on the mini-pill, ovulation tracking (via [BBT](/glossary/basal-body-temperature) or [OPK](/glossary/opk)) is the only reliable way to know when phases are happening.
+
+## Common side effects
+
+- **Irregular bleeding or spotting**, especially in the first three months.
+- **Breast tenderness** and mood changes.
+- **Acne or oilier skin** with norethindrone (mild androgenic activity); drospirenone tends to be neutral or anti-androgenic.
+- **Headaches.**
+- **Ovarian cysts** (functional, usually resolving on their own).
+
+The mini-pill avoids the estrogen-related risks of CHCs (blood clots, stroke), which is the main reason it gets prescribed.
+
+## When to consider
+
+- Breastfeeding (estrogen reduces milk supply, progestin alone does not).
+- History of clots, stroke, or migraine with aura.
+- Smoker over 35.
+- High blood pressure or other CHC contraindications.
+- Preference for a daily pill without an estrogen load.
+
+## When NOT to consider
+
+- Difficulty taking a pill at the same time daily (the 3-hour norethindrone window is unforgiving).
+- History of certain breast cancers.
+- Liver disease.
+- Severe unexplained vaginal bleeding before workup.
+
+For users who want progestin-only contraception without the daily-pill compliance burden, the [hormonal IUD](/glossary/hormonal-iud) or [contraceptive implant](/glossary/contraceptive-implant) are common alternatives.
+
+## Related reading
+
+- [Combined hormonal contraceptive](/glossary/combined-hormonal-contraceptive): the estrogen-containing alternative
+- [Cycle syncing on birth control](/blog/cycle-syncing-on-birth-control): how to adapt the framework
+
+</article>
+
+<GlossarySidebar
+  currentSlug="mini-pill"
+  title="Progestin-only pill (mini-pill)"
+  toc={[
+    { id: "how-it-works", label: "How it works" },
+    { id: "cycle-implications", label: "Cycle implications" },
+    { id: "common-side-effects", label: "Common side effects" },
+    { id: "when-to-consider", label: "When to consider" },
+    { id: "when-not-to-consider", label: "When NOT to consider" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,114 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Contraceptive patch (Xulane, Twirla): mechanism, cycle effects, and cycle syncing",
+  description:
+    "The contraceptive patch is a transdermal combined hormonal contraceptive worn weekly. Same mechanism and cycle implications as the combined pill. Side effects, fit, and cautions.",
+  alternates: { canonical: "/glossary/contraceptive-patch" },
+  openGraph: {
+    title: "Contraceptive patch | Lumen glossary",
+    description:
+      "How the contraceptive patch works, the cycle implications, and how it compares to the pill.",
+    url: "/glossary/contraceptive-patch",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Contraceptive patch"
+  description="Transdermal patch releasing ethinyl estradiol and a progestin. Combined hormonal contraceptive worn for one week at a time, with one patch-free week per cycle."
+  path="/glossary/contraceptive-patch"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Contraceptive patch", path: "/glossary/contraceptive-patch" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Contraceptive patch
+
+The **contraceptive patch** is a small adhesive patch that releases synthetic estrogen and a progestin through the skin. Brands in the US include Xulane (norelgestromin and ethinyl estradiol) and Twirla (levonorgestrel and ethinyl estradiol). The standard schedule is one patch per week for 3 weeks, then 1 patch-free week during which [withdrawal bleeding](/glossary/withdrawal-bleeding) occurs.
+
+The patch is a [combined hormonal contraceptive](/glossary/combined-hormonal-contraceptive). Mechanism, efficacy, and cycle implications mirror the combined pill, with weekly dosing instead of daily.
+
+*This is informational, not medical advice. Contraceptive choice should be discussed with a qualified provider.*
+
+## How it works
+
+The patch releases steady levels of estrogen and progestin absorbed through the skin into the bloodstream. The contraceptive effects are the standard CHC triple:
+
+1. **[Ovulation](/glossary/ovulation) suppression** via HPO axis suppression and blunted [LH surge](/glossary/lh-surge).
+2. **Cervical mucus thickening.**
+3. **Endometrial thinning.**
+
+Typical-use efficacy is around 91%, perfect-use above 99%.
+
+A note on body weight: efficacy of the original Xulane patch drops in users above 198 lbs (90kg). Twirla has weight restrictions for use above similar thresholds. For users at or above these weights, providers often recommend a different method.
+
+## Cycle implications
+
+Like other [combined hormonal contraceptives](/glossary/combined-hormonal-contraceptive), the patch suppresses the natural cycle. No follicular surge, no LH surge, no ovulation, no corpus luteum, no natural [progesterone](/glossary/progesterone) rise. The bleed during the patch-free week is withdrawal bleeding.
+
+[Cycle syncing](/glossary/cycle-syncing) by hormonal phase does not apply. The 28-day structural rotation can still be used as a productivity scaffold.
+
+## Common side effects
+
+The side effect profile mirrors the combined pill, with the addition of skin-related effects:
+
+- **Skin irritation** at the patch site.
+- **Breakthrough bleeding** in the first 1 to 3 cycles.
+- **Breast tenderness.**
+- **Headaches**, including new or worsened migraines.
+- **Nausea.**
+- **Mood changes** in a subset of users.
+
+One nuance worth knowing: the original Xulane patch delivers a higher cumulative estrogen exposure than a typical low-dose oral pill, which has been linked to a modestly higher blood clot risk than oral CHCs. Twirla was designed with a lower estrogen dose.
+
+## When to consider
+
+- Want a combined hormonal method without daily compliance.
+- Difficulty with daily pills but prefer not to use a long-acting method.
+- Comfortable with weekly patch changes and adherent skin contact.
+
+## When NOT to consider
+
+- Migraine with aura.
+- History of clots, stroke, heart attack.
+- Smoker over 35.
+- Uncontrolled high blood pressure.
+- Body weight above the labeled threshold for the specific patch.
+- Active estrogen-sensitive cancer.
+- Skin conditions that prevent patch adherence.
+
+## Related reading
+
+- [Combined hormonal contraceptive](/glossary/combined-hormonal-contraceptive): the umbrella category
+- [Vaginal ring](/glossary/vaginal-ring): the transvaginal CHC alternative
+- [Cycle syncing on birth control](/blog/cycle-syncing-on-birth-control): the full method-by-method guide
+
+</article>
+
+<GlossarySidebar
+  currentSlug="contraceptive-patch"
+  title="Contraceptive patch"
+  toc={[
+    { id: "how-it-works", label: "How it works" },
+    { id: "cycle-implications", label: "Cycle implications" },
+    { id: "common-side-effects", label: "Common side effects" },
+    { id: "when-to-consider", label: "When to consider" },
+    { id: "when-not-to-consider", label: "When NOT to consider" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

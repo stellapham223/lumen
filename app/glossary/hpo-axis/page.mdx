@@ -1,0 +1,119 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "HPO axis: the hypothalamic-pituitary-ovarian feedback loop",
+  description:
+    "The HPO axis is the feedback loop controlling the menstrual cycle: hypothalamus releases GnRH, pituitary releases FSH and LH, ovaries release estrogen and progesterone.",
+  alternates: { canonical: "/glossary/hpo-axis" },
+  openGraph: {
+    title: "HPO axis | Lumen glossary",
+    description:
+      "How the hypothalamus, pituitary, and ovaries communicate through feedback to drive the menstrual cycle.",
+    url: "/glossary/hpo-axis",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="HPO axis (Hypothalamic-Pituitary-Ovarian)"
+  description="The feedback loop controlling the menstrual cycle: hypothalamus releases GnRH, pituitary releases FSH and LH, ovaries release estrogen and progesterone."
+  path="/glossary/hpo-axis"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "HPO axis", path: "/glossary/hpo-axis" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# HPO axis (Hypothalamic-Pituitary-Ovarian)
+
+The **HPO axis** is the three-organ feedback loop that drives the [menstrual cycle](/glossary/menstrual-cycle): the hypothalamus, the pituitary gland, and the ovaries. The axis is the engine behind every hormonal shift across the cycle, and understanding it is the difference between memorizing the four phases and seeing why they happen.
+
+## How the axis works
+
+The HPO axis runs in a layered cascade:
+
+1. **Hypothalamus.** Located at the base of the brain, it releases gonadotropin-releasing hormone (GnRH) in pulses. The pulse pattern matters: slow pulses favor FSH; fast pulses favor LH.
+2. **Pituitary.** The anterior pituitary responds to GnRH by releasing two gonadotropins: [follicle-stimulating hormone (FSH)](/glossary/fsh) and [luteinizing hormone (LH)](/glossary/lh).
+3. **Ovaries.** FSH and LH act on the ovaries: FSH stimulates [follicle](/glossary/ovarian-follicle) growth and [estrogen](/glossary/estrogen) production; LH triggers ovulation and supports [corpus luteum](/glossary/corpus-luteum) [progesterone](/glossary/progesterone) production.
+4. **Feedback.** Estrogen and progesterone feed back to the hypothalamus and pituitary, modulating GnRH, FSH, and LH output.
+
+## The two feedback modes
+
+The HPO axis uses two feedback modes that switch across the cycle:
+
+**Negative feedback (most of the cycle).** Rising estrogen and progesterone suppress GnRH, FSH, and LH. This is the steady-state mode. It is what keeps hormones in range during the early follicular and luteal phases.
+
+**Positive feedback (late follicular).** When estrogen rises above a threshold for roughly 36 hours, the hypothalamus switches to positive feedback: high estrogen now stimulates rather than suppresses LH release. This produces the [LH surge](/glossary/lh-surge) that triggers ovulation.
+
+This positive-feedback switch is biologically unusual; most endocrine systems run on negative feedback only. The switch is critical for ovulation to occur.
+
+## What disrupts the HPO axis
+
+The HPO axis is sensitive to many inputs, which is why cycle disruption is so common:
+
+- **Stress.** Chronic cortisol elevation suppresses GnRH pulsatility, delaying ovulation or stopping cycles ([hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea)).
+- **Under-fueling.** Inadequate energy availability signals the hypothalamus to suppress GnRH ([RED-S](/glossary/red-s)).
+- **Over-training.** Often combined with under-fueling; produces hypothalamic amenorrhea.
+- **Sleep loss and shift work.** Can blunt the LH surge.
+- **[Thyroid](/glossary/thyroid-cycle) disorders.** Disrupt the axis indirectly through TSH and prolactin pathways.
+- **Elevated [prolactin](/glossary/prolactin).** Suppresses GnRH directly.
+- **[PCOS](/glossary/pcos).** Often involves altered GnRH pulse patterns favoring LH over FSH, contributing to anovulation.
+- **Aging.** As [ovarian reserve](/glossary/ovarian-reserve) declines, the feedback loop becomes less reliable, producing the irregular cycles of [perimenopause](/glossary/perimenopause).
+- **Hormonal birth control.** Most methods deliberately suppress the HPO axis by maintaining steady synthetic hormone levels that prevent the LH surge.
+
+## The cycle as an HPO output
+
+Each cycle is essentially one revolution of the HPO loop:
+
+- **Early follicular.** Low estrogen and progesterone release the brake on FSH; follicles begin to grow.
+- **Mid follicular.** Dominant follicle emerges; estrogen rises.
+- **Late follicular.** Estrogen crosses the threshold for positive feedback; LH surge occurs.
+- **Ovulation.** LH surge triggers follicle rupture.
+- **Luteal.** Corpus luteum produces progesterone, which (combined with estrogen) strongly suppresses FSH and LH via negative feedback.
+- **Late luteal.** Corpus luteum breaks down, hormones drop, the brake on FSH releases, the next cycle begins.
+
+This is why cycle phases happen in sequence rather than independently: each phase sets up the next through the feedback loop.
+
+## HPO axis and clinical conditions
+
+Many cycle disorders are HPO axis disorders:
+
+- **[Hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea).** Hypothalamic suppression of GnRH.
+- **[PCOS](/glossary/pcos).** Altered GnRH pulsatility and feedback sensitivity.
+- **[Premature ovarian insufficiency (POI)](/glossary/poi).** Ovarian end of the axis fails; FSH rises.
+- **Hypopituitarism.** Pituitary failure; FSH and LH drop.
+- **Hyperprolactinemia.** Prolactin suppresses GnRH; cycles become irregular.
+
+Clinical workup for cycle disorders almost always assesses multiple points along the axis (FSH, LH, estradiol, prolactin, TSH).
+
+## HPO axis and cycle syncing
+
+The HPO axis is the mechanism that makes [cycle syncing](/glossary/cycle-syncing) make sense at all. Without a functioning HPO axis, there is no rhythmic hormone pattern to sync to. This is why cycle syncing models break down in scenarios where the axis is suppressed (hormonal birth control, hypothalamic amenorrhea, postmenopause) or irregular (PCOS, perimenopause). The four-phase model assumes an ovulatory cycle, and an ovulatory cycle requires a functional HPO loop.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="hpo-axis"
+  title="HPO axis"
+  toc={[
+    { id: "how-the-axis-works", label: "How the axis works" },
+    { id: "the-two-feedback-modes", label: "Two feedback modes" },
+    { id: "what-disrupts-the-hpo-axis", label: "Common disruptors" },
+    { id: "the-cycle-as-an-hpo-output", label: "Cycle as HPO output" },
+    { id: "hpo-axis-and-clinical-conditions", label: "Clinical conditions" },
+    { id: "hpo-axis-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

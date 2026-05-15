@@ -1,0 +1,121 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Fertility Awareness Method (FAM): variants, efficacy, and honest tradeoffs",
+  description:
+    "FAM is a family of birth control methods using BBT, cervical mucus, and cycle tracking to identify the fertile window. Variants, efficacy ranges (perfect vs typical use), and when it is a reasonable choice.",
+  alternates: { canonical: "/glossary/fam" },
+  openGraph: {
+    title: "Fertility Awareness Method (FAM) | Lumen glossary",
+    description:
+      "Variants, efficacy, and the practical tradeoffs of FAM as contraception.",
+    url: "/glossary/fam",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Fertility Awareness Method (FAM)"
+  description="A family of natural birth control methods that identify the fertile window from physiological signals (basal body temperature, cervical mucus, cycle length, LH) and either avoid intercourse or use a barrier method during that window. Variants range from calendar-only to multi-signal protocols."
+  path="/glossary/fam"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Fertility Awareness Method (FAM)", path: "/glossary/fam" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Fertility Awareness Method (FAM)
+
+**Fertility Awareness Method (FAM)** refers to a family of birth control methods that identify the [fertile window](/glossary/fertile-window) from physiological signals, [basal body temperature](/glossary/basal-body-temperature), [cervical mucus](/glossary/cervical-mucus-tracking), cycle length, and LH, and either avoid intercourse or use a barrier method during that window. It is the most studied non-hormonal, non-device family of contraceptive methods.
+
+*This is informational, not medical advice. Effective contraception requires consistent use; talk to a provider before relying on any FAM method.*
+
+## The main variants
+
+FAM is not one method. Efficacy and complexity vary substantially across variants.
+
+**[Sympto-thermal method](/glossary/sympto-thermal-method).** Combines BBT, cervical mucus, and cycle history. The most studied and the highest-efficacy FAM. Perfect-use failure rates around 0.4% in some studies; typical-use failure 2 to 5%.
+
+**Symptohormonal method.** Adds [LH testing](/glossary/opk) or app-based hormone tracking (Natural Cycles uses BBT plus algorithm). Some studies show efficacy similar to or slightly better than sympto-thermal.
+
+**Billings Ovulation Method.** Cervical mucus alone. Perfect-use efficacy comparable to sympto-thermal in trials; typical-use efficacy lower.
+
+**[Standard Days Method](/glossary/standard-days-method).** Calendar only. Avoid intercourse on days 8 to 19. Requires cycle length 26 to 32 days. Typical-use failure roughly 12%.
+
+**[Calendar method (Rhythm Method)](/glossary/calendar-method).** Calendar only, less restrictive than Standard Days. Lowest efficacy of the FAM variants. Typical-use failure 15 to 24%.
+
+**[Lactational Amenorrhea Method (LAM)](/glossary/lam).** A short-term FAM relying on exclusive breastfeeding to suppress ovulation. Valid for the first 6 months postpartum under strict criteria.
+
+## How efficacy is reported
+
+Two numbers always matter together:
+
+- **Perfect use** is the failure rate among users who follow the method exactly as prescribed every cycle. It is the ceiling of what the method can achieve.
+- **Typical use** is the failure rate among real-world users, who sometimes have a glass of wine, sometimes get sick and miscount, sometimes are sleep-deprived and miss a measurement. It is the floor of what to expect in practice.
+
+The gap between perfect and typical use is wider for FAM than for [hormonal IUDs](/glossary/hormonal-iud) or [implants](/glossary/contraceptive-implant) because FAM requires daily, accurate user input, while a long-acting contraceptive does not.
+
+## What FAM requires
+
+- **Daily measurement.** BBT each morning, mucus observations 2 to 3 times daily.
+- **Consistent timing.** BBT within a 1-hour morning window, mucus on consistent observation routine.
+- **Education.** A 6 to 8 week training period with a certified instructor sharply improves outcomes.
+- **Partner cooperation.** Abstinence or barrier use during the fertile window is a shared decision.
+- **Regular cycles.** Cycles outside 24 to 35 days, or highly variable, make FAM less reliable.
+- **Stable life context.** Shift work, frequent travel across time zones, recent childbirth, and illness all reduce reliability.
+
+## When FAM is a reasonable choice
+
+FAM is a reasonable choice when:
+
+- Hormonal contraception is medically contraindicated or poorly tolerated
+- The user prefers a non-hormonal, non-device method
+- The user is motivated and disciplined enough to maintain daily practice
+- The user has access to certified instruction (in person or via a structured app)
+- The relationship supports the abstinence or barrier-use pattern during fertile days
+- The user can tolerate a slightly higher failure rate than IUDs or implants in exchange for the benefits
+
+It is a less appropriate choice when:
+
+- Pregnancy must be avoided at all costs (use a long-acting reversible contraceptive)
+- The user has irregular cycles ([PCOS](/glossary/pcos), [perimenopause](/glossary/perimenopause), recent postpartum, post-pill)
+- The user works shift schedules or travels frequently
+- The user wants a method requiring no daily attention
+
+## FAM and cycle syncing
+
+The signals used in FAM (BBT, mucus, LH) are the same signals that sharpen [cycle syncing](/glossary/cycle-syncing) phase prediction. Users practicing FAM already have the data needed for cycle-aware scheduling, the same information that identifies the fertile window also pins ovulation and the transition from [follicular phase](/glossary/follicular-phase) to [luteal phase](/glossary/luteal-phase).
+
+Users who want phase-based scheduling without FAM-level contraceptive discipline can use the [Lumen phase calculator](/plan), which works from last period date and average cycle length alone.
+
+## Apps that support FAM
+
+Natural Cycles (FDA-cleared as a contraceptive), Daysy, Read Your Body, and the Marquette Method app are common entry points. App-only FAM without instructor support has higher typical-use failure than instructor-trained FAM, factor in education cost. See [free cycle syncing apps compared](/blog/free-cycle-syncing-apps-compared) for app comparisons.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="fam"
+  title="Fertility Awareness Method (FAM)"
+  toc={[
+    { id: "the-main-variants", label: "Main variants" },
+    { id: "how-efficacy-is-reported", label: "Efficacy reporting" },
+    { id: "what-fam-requires", label: "What FAM requires" },
+    { id: "when-fam-is-a-reasonable-choice", label: "When FAM fits" },
+    { id: "fam-and-cycle-syncing", label: "FAM and cycle syncing" },
+    { id: "apps-that-support-fam", label: "Apps that support FAM" },
+  ]}
+/>
+
+</div>

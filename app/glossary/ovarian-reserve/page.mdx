@@ -1,0 +1,129 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Ovarian reserve: the supply of viable eggs and how it declines",
+  description:
+    "Ovarian reserve is the number of viable eggs remaining in the ovaries. Declines with age; rapid decline starts around age 35. Definition, how it's measured, and what it means.",
+  alternates: { canonical: "/glossary/ovarian-reserve" },
+  openGraph: {
+    title: "Ovarian reserve | Lumen glossary",
+    description:
+      "Definition, age-related decline patterns, how AMH and antral follicle count are measured, and clinical relevance.",
+    url: "/glossary/ovarian-reserve",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Ovarian reserve"
+  description="The number of viable eggs remaining in the ovaries. Declines with age; rapid decline starts around age 35."
+  path="/glossary/ovarian-reserve"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Ovarian reserve", path: "/glossary/ovarian-reserve" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Ovarian reserve
+
+**Ovarian reserve** is the number (and quality) of viable eggs remaining in the ovaries. It is set at birth, declines steadily through life, and accelerates downward in the late 30s. Ovarian reserve is the primary biological constraint on female fertility timing, and it underlies why [perimenopause](/glossary/perimenopause) and [menopause](/glossary/menopause) happen.
+
+## The basic numbers
+
+A few baseline figures worth knowing:
+
+- At birth: roughly 1 to 2 million primordial follicles
+- At puberty / [menarche](/glossary/menarche): roughly 300,000 to 400,000
+- At age 30: roughly 100,000 to 150,000
+- At age 40: roughly 25,000
+- At menopause: under 1,000
+
+Out of the original supply, only roughly 400 to 500 follicles ever reach [ovulation](/glossary/ovulation) over a lifetime. The rest are lost to atresia (follicular degeneration), the bulk of which happens silently in the background.
+
+## How decline accelerates with age
+
+The decline is not linear. Two common reference points:
+
+- **Around age 35**, follicle loss accelerates noticeably. This is when fertility starts to fall more steeply.
+- **Around age 37 to 38**, the rate of loss roughly doubles. This is the basis for the medical concept of "advanced maternal age."
+
+Egg quality (chromosomal integrity) also drops with age, which is a separate concern from reserve quantity. Both contribute to declining natural fertility through the 30s and 40s.
+
+## How ovarian reserve is measured
+
+Two clinical tests are the standard:
+
+**Anti-Müllerian hormone (AMH).** A blood test that measures hormone produced by small [antral follicles](/glossary/ovarian-follicle). AMH correlates with the size of the pool of recruitable follicles.
+
+- AMH over 3.0 ng/mL: high reserve (or PCOS pattern)
+- AMH 1.0 to 3.0 ng/mL: average for reproductive age
+- AMH under 1.0 ng/mL: lower reserve
+- AMH under 0.5 ng/mL: significantly diminished
+
+**Antral follicle count (AFC).** A transvaginal ultrasound counting antral follicles (2 to 9 mm) in both ovaries at the start of a cycle. Numbers and AMH usually correlate.
+
+Day-3 FSH testing was the older standard but is less reliable than AMH for routine reserve assessment.
+
+## What low ovarian reserve does and does not mean
+
+Low AMH does not equal infertility. It signals that:
+
+- The window for natural conception is likely shorter than average for age
+- Response to ovarian stimulation (IVF) may be lower
+- Time to menopause may be shorter
+
+It does not predict whether any individual cycle will be ovulatory or fertile. Many women with low AMH conceive naturally; many with high AMH face infertility for other reasons (tubal, uterine, partner factors). AMH is a planning input, not a diagnostic.
+
+## When ovarian reserve is tested
+
+Common reasons for testing:
+
+- Fertility planning (assessing time horizons, freezing eggs)
+- Workup for [infertility](/glossary/poi) or recurrent miscarriage
+- Suspected [PCOS](/glossary/pcos) (high AMH is one PCOS criterion)
+- Suspected [premature ovarian insufficiency](/glossary/poi)
+- Before chemotherapy or radiation (which can damage reserve)
+- Family history of early menopause
+
+## Conditions affecting ovarian reserve
+
+- **Age.** The primary factor; cannot be modified.
+- **[Premature ovarian insufficiency (POI)](/glossary/poi).** Reserve loss before age 40.
+- **Genetics.** Family history of early menopause.
+- **Chemotherapy and radiation.** Can permanently reduce reserve.
+- **Ovarian surgery.** Removing cysts or endometriomas can reduce reserve.
+- **Severe [endometriosis](/glossary/endometriosis).** Ovarian endometriomas associated with lower reserve.
+- **Smoking.** Linked to earlier menopause by 1 to 2 years on average.
+
+## Ovarian reserve and cycle syncing
+
+Ovarian reserve influences the cycle pattern that cycle syncing maps to. As reserve declines into [perimenopause](/glossary/perimenopause), follicular phases shorten, cycles compress, anovulatory cycles become more common, and hormone surges flatten. The four-phase model becomes less reliable. The [perimenopause cycle syncing guide](/glossary/cycle-syncing-perimenopause) covers adapted protocols. Women with [POI](/glossary/poi) effectively transition early into a postmenopausal pattern where the cycle syncing model does not apply.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="ovarian-reserve"
+  title="Ovarian reserve"
+  toc={[
+    { id: "the-basic-numbers", label: "The basic numbers" },
+    { id: "how-decline-accelerates-with-age", label: "Age decline pattern" },
+    { id: "how-ovarian-reserve-is-measured", label: "How it's measured" },
+    { id: "what-low-ovarian-reserve-does-and-does-not-mean", label: "What low reserve means" },
+    { id: "when-ovarian-reserve-is-tested", label: "When it's tested" },
+    { id: "conditions-affecting-ovarian-reserve", label: "Conditions affecting reserve" },
+    { id: "ovarian-reserve-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,129 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Symptom logging: what to record daily, what to ignore, and how long until patterns emerge",
+  description:
+    "Symptom logging is the daily practice of recording subjective signals (mood, energy, sleep, cramps, cravings) so cycle patterns become visible. What to track, what to skip, and how to keep daily friction under 60 seconds.",
+  alternates: { canonical: "/glossary/symptom-logging" },
+  openGraph: {
+    title: "Symptom logging | Lumen glossary",
+    description:
+      "What to record, what to skip, and how long until patterns appear.",
+    url: "/glossary/symptom-logging",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Symptom logging"
+  description="The practice of recording subjective cycle-related symptoms daily (mood, energy, sleep, cramps, cravings, libido) to detect patterns across cycles and inform clinical or scheduling decisions."
+  path="/glossary/symptom-logging"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Symptom logging", path: "/glossary/symptom-logging" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Symptom logging
+
+**Symptom logging** is the daily practice of recording subjective cycle-related symptoms, mood, energy, sleep quality, [cramps](/glossary/dysmenorrhea), cravings, libido, [acne](/glossary/hormonal-acne), [bloating](/glossary/cyclical-bloating), so that patterns across the [menstrual cycle](/glossary/menstrual-cycle) become visible. It is the layer of [cycle tracking](/glossary/cycle-tracking) most people abandon first, because it is the highest-friction.
+
+Done well, it pays off in 2 to 3 cycles. Done badly, it becomes 30 daily fields that nobody fills in.
+
+## What is worth logging
+
+Start small. The shortlist for almost everyone:
+
+- **Period flow.** Light, medium, heavy, spotting. Day-level granularity is enough.
+- **Mood.** A single 1 to 5 scale or 3 to 5 mood tags work. Skip free-text.
+- **Energy.** Same: 1 to 5 scale.
+- **Sleep quality.** 1 to 5 or just "good / okay / bad".
+- **One symptom that matters to you.** Headache, cramps, anxiety, libido, acne, pick one.
+
+That is five fields. Under 30 seconds a day. After 2 cycles, you have enough to spot the dominant pattern; after 4 cycles, you can usually identify 2 to 3 patterns reliably.
+
+## What to skip until patterns are visible
+
+Most apps offer 30+ trackable fields. Logging all of them is the fastest path to abandonment. Skip these unless you have a specific reason:
+
+- Granular emotion taxonomies (angry vs irritated vs frustrated)
+- Bowel movements, unless you specifically suspect [cyclical IBS](/glossary/cyclical-ibs)
+- Hair, skin, nail texture
+- Detailed food intake
+- Workout type and duration (use a separate fitness app for this)
+- Cervical position
+- Symptoms you do not actually have right now
+
+Add fields only when an existing pattern raises a question the current data cannot answer.
+
+## What to record once, not daily
+
+Some things are stable enough to record once and update only on change:
+
+- Current contraception
+- Recent illness or hospitalization
+- New supplements or medications
+- Major life stress (move, breakup, family event)
+
+These become context when reviewing patterns: "energy crashed day 22 in three of four cycles, but the one cycle without it was the week I switched to a new supplement". That kind of insight requires the context to be there.
+
+## How to make logging stick
+
+The two predictors of long-term logging are friction and feedback:
+
+- **Friction.** Under 60 seconds per day. If the app makes you scroll through 10 categories, you will quit. Pick an app with a quick-log shortcut.
+- **Feedback.** You need to see the data once a cycle. An app that buries the chart is an app you will not check. Charts visible on the home screen or as a weekly summary email work better.
+
+A daily phone reminder linked to a specific anchor (after brushing teeth in the morning, before bed) makes the habit stick faster than willpower.
+
+## How long until patterns emerge
+
+- **1 cycle.** Establishes baseline, mostly noise.
+- **2 cycles.** Coarse patterns (cramps in menstrual phase, energy lift in follicular).
+- **3 to 4 cycles.** Reliable patterns specific to you (anxiety spike day 23, libido peak day 14).
+- **6+ cycles.** Subtle patterns and confirmation that cycle-related issues are not driven by other factors (sleep, stress, season).
+
+If a pattern is not visible by cycle 4, it probably is not strong enough to plan around.
+
+## When logged data becomes useful
+
+Three settings where the log earns its keep:
+
+**Cycle syncing decisions.** Logging confirms which phases actually correlate with productivity dips for you, not just the textbook claim. You may find your late follicular phase is the rough one, not late luteal. [Phase-based scheduling](/glossary/phase-based-scheduling) is much sharper with personal data.
+
+**Clinical conversations.** A 6-month log of irregular cycles, severe PMS, or migraines is more useful in a gynecology appointment than verbal recall. Most apps support [cycle data export](/glossary/cycle-data-export).
+
+**Catching shifts.** A pattern that suddenly changes (cycle lengthening, new symptom emerging) flags something to investigate, [perimenopause](/glossary/perimenopause), thyroid changes, a new medication side effect.
+
+## Lumen and symptom logging
+
+The Lumen [phase calculator](/plan) does not require symptom logging to work; it produces phase windows from last period date and average cycle length alone. Logging adds personalization later. See [cycle syncing schedule template](/blog/cycle-syncing-schedule-template) for a starter weekly format that integrates a few logged signals.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="symptom-logging"
+  title="Symptom logging"
+  toc={[
+    { id: "what-is-worth-logging", label: "What to log" },
+    { id: "what-to-skip-until-patterns-are-visible", label: "What to skip" },
+    { id: "what-to-record-once-not-daily", label: "Context fields" },
+    { id: "how-to-make-logging-stick", label: "Making it stick" },
+    { id: "how-long-until-patterns-emerge", label: "Time to patterns" },
+    { id: "when-logged-data-becomes-useful", label: "Where it pays off" },
+    { id: "lumen-and-symptom-logging", label: "Lumen and logging" },
+  ]}
+/>
+
+</div>

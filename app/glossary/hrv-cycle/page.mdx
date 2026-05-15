@@ -1,0 +1,126 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Heart rate variability (HRV) across the menstrual cycle",
+  description:
+    "HRV is the variation in time between heartbeats and a marker of autonomic balance. It drops in luteal phase as progesterone reduces parasympathetic tone, providing a useful phase signal on wearables.",
+  alternates: { canonical: "/glossary/hrv-cycle" },
+  openGraph: {
+    title: "Heart rate variability and cycle | Lumen glossary",
+    description:
+      "How HRV shifts across the menstrual cycle and what wearable HRV data can tell you about your phase.",
+    url: "/glossary/hrv-cycle",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Heart rate variability (HRV) and cycle"
+  description="HRV is the variation in time between heartbeats, a marker of autonomic nervous system balance. It drops in the luteal phase as progesterone reduces parasympathetic tone."
+  path="/glossary/hrv-cycle"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "HRV and cycle", path: "/glossary/hrv-cycle" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Heart rate variability (HRV) and cycle
+
+**Heart rate variability** (HRV) is the variation in time between consecutive heartbeats, measured in milliseconds. It is one of the most useful non-invasive markers of autonomic nervous system balance: high HRV reflects strong parasympathetic ("rest and digest") tone, low HRV reflects sympathetic dominance ("fight or flight") or chronic stress. Across the [menstrual cycle](/glossary/menstrual-cycle), HRV shifts in a predictable pattern, with the lowest values typically appearing in the late [luteal phase](/glossary/luteal-phase).
+
+Because wearables (Whoop, Garmin, Oura, Apple Watch) now report HRV reliably, cycle-related HRV variation has become one of the most accessible biological phase signals.
+
+## How HRV works
+
+The heart does not beat like a metronome. The time between beats (the RR interval) varies on a millisecond scale, modulated continuously by the vagus nerve and the sympathetic nervous system. Higher variability means the autonomic system is responsive and well-regulated. Lower variability means the system is locked into a more rigid state, often from stress, illness, poor sleep, or hormonal influences.
+
+The most common HRV metric on consumer wearables is RMSSD (root mean square of successive differences), which reflects mainly vagal (parasympathetic) tone.
+
+Typical RMSSD values vary widely between individuals. A given user might run a baseline of 40 to 60 ms, with deviations of 5 to 15 ms reflecting meaningful changes in autonomic state.
+
+## How HRV cycles with hormones
+
+The hormonal drivers of HRV variation across the cycle:
+
+- **[Estrogen](/glossary/estrogen).** Tends to support parasympathetic tone and vasodilation. Higher estrogen correlates with higher HRV at the population level.
+- **[Progesterone](/glossary/progesterone).** Tends to reduce parasympathetic tone and increase resting heart rate. Higher progesterone correlates with lower HRV.
+
+The cyclic pattern across a typical 28-day cycle:
+
+- **Early follicular (days 1 to 5):** HRV near baseline, hormones low.
+- **Mid-to-late follicular (days 6 to 13):** rising estrogen, HRV trending upward. Often the highest HRV week.
+- **Ovulatory (days 14 to 16):** HRV near peak.
+- **Early luteal (days 17 to 22):** progesterone rising, HRV declining. Resting heart rate may rise 2 to 5 BPM.
+- **Late luteal (days 23 to 28):** HRV at its monthly low, particularly the few days before menstruation.
+- **Menstruation:** HRV often recovers as hormones drop and bleeding begins.
+
+The pattern is consistent enough that some wearables (Oura, Whoop) use HRV plus skin temperature to infer cycle phase.
+
+## What the HRV cycle does not mean
+
+A few common misreadings:
+
+- **Lower luteal HRV does not mean luteal phase is "bad" or unhealthy.** It reflects normal hormonal effects on autonomic balance, not pathology.
+- **Cycle-related HRV changes do not override life factors.** A poor night of sleep or a stressful day produces larger HRV changes than cycle phase. The phase effect is a baseline shift, not a controlling factor.
+- **Higher HRV in follicular does not mean you can ignore recovery.** Training stress accumulates regardless of phase.
+
+The honest summary: HRV reflects a real hormonal shift; the phase effect is a small but visible signal layered on top of larger day-to-day variation.
+
+## Practical use for cycle tracking
+
+If you have a wearable with reliable HRV, the cycle signal can be a useful confirmation tool:
+
+- **Look at the week-over-week trend, not single days.** Daily HRV is noisy.
+- **Note the late-follicular peak and late-luteal trough.** These are the most reliable signals.
+- **Cross-reference with [body temperature](/glossary/body-temperature-cycle).** The post-ovulatory temperature rise plus the HRV drop is a strong combined signal.
+- **Watch for missing patterns.** If you do not see clear HRV cycling, that is information too. It might reflect anovulatory cycles, very flat hormonal cycling, or sensor noise overwhelming the signal.
+
+This is a useful supplement to symptom-based [cycle tracking](/glossary/cycle-tracking), not a replacement.
+
+## Training implications
+
+The HRV pattern aligns with the broader observation that the body's recovery capacity tends to dip in late luteal. The practical translation, consistent with [phase-aligned workouts](/glossary/phase-aligned-workouts):
+
+- **Higher HRV days (mid-to-late follicular, ovulatory):** the body tolerates higher training loads. Hard sessions usually feel better than they did last week.
+- **Lower HRV days (late luteal):** recovery is slower. Plan more moderate sessions or extra recovery time.
+
+This is not a hard rule. Some users train hard all month with no issue. HRV is a signal to weigh alongside subjective recovery, sleep quality, and life stress.
+
+## Birth control and HRV cycling
+
+Combined hormonal contraceptives flatten the natural estrogen and progesterone cycling, which generally flattens the HRV cycling pattern as well. Users on combined methods often see a much smaller monthly HRV variation. Progestin-only methods (mini-pill, hormonal IUD, implant) have variable effects depending on whether they suppress ovulation.
+
+## Related reading
+
+- [Body temperature regulation (cycle)](/glossary/body-temperature-cycle): the other key wearable signal
+- [Cortisol cycle](/glossary/cortisol-cycle): the stress-hormone interaction with autonomic balance
+- [Cycle tracking wearable](/glossary/cycle-tracking-wearable): wearable options for cycle data
+- [Phase-aligned workouts](/glossary/phase-aligned-workouts): how to use the HRV signal for training
+
+</article>
+
+<GlossarySidebar
+  currentSlug="hrv-cycle"
+  title="HRV and cycle"
+  toc={[
+    { id: "how-hrv-works", label: "How HRV works" },
+    { id: "how-hrv-cycles-with-hormones", label: "Hormonal cycling" },
+    { id: "what-the-hrv-cycle-does-not-mean", label: "What it does not mean" },
+    { id: "practical-use-for-cycle-tracking", label: "Tracking use" },
+    { id: "training-implications", label: "Training implications" },
+    { id: "birth-control-and-hrv-cycling", label: "Birth control" },
+  ]}
+/>
+
+</div>

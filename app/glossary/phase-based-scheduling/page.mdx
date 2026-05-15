@@ -1,0 +1,115 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Phase-based scheduling: definition, mechanics, and honest limits",
+  description:
+    "Phase-based scheduling means planning work, recovery, and meetings against predicted cycle phases instead of the calendar week. The core Lumen positioning, the underlying rationale, and what evidence supports it.",
+  alternates: { canonical: "/glossary/phase-based-scheduling" },
+  openGraph: {
+    title: "Phase-based scheduling | Lumen glossary",
+    description:
+      "Scheduling tasks by predicted cycle phase rather than the calendar week. Definition, rationale, and limits.",
+    url: "/glossary/phase-based-scheduling",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Phase-based scheduling"
+  description="The practice of planning tasks, workouts, and meetings against predicted menstrual cycle phases rather than the calendar week. Core Lumen positioning."
+  path="/glossary/phase-based-scheduling"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Phase-based scheduling", path: "/glossary/phase-based-scheduling" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Phase-based scheduling
+
+**Phase-based scheduling** is the practice of planning work, recovery, and high-stakes events against your predicted menstrual cycle phase rather than the seven-day calendar week. Lumen's positioning is that the cycle is a usable scheduling input for knowledge workers; the underlying rationale is that hormone-driven shifts in cognition, mood, and sleep are real and measurable, even when their practical effect size is modest.
+
+The intent is not to schedule every hour against a phase. It is to bias the placement of a few high-leverage tasks (deep work, editing, key presentations, hard workouts) toward the phase where the underlying biology is friendliest, and to keep the calendar honest about the late luteal week.
+
+## Why a week is the wrong unit
+
+The seven-day week is an arbitrary cultural artifact. The body runs on two biological rhythms: a roughly 24-hour [circadian rhythm](/glossary/circadian-rhythm) and a roughly 28-day [infradian rhythm](/glossary/infradian-rhythm) tied to the [menstrual cycle](/glossary/menstrual-cycle). Knowledge workers already schedule against the circadian rhythm (morning deep work, afternoon meetings, evening wind-down). Phase-based scheduling extends the same logic to the longer rhythm.
+
+The practical implication: a Tuesday in your late follicular week is biologically different from a Tuesday in your late luteal week. Treating them the same is a planning miss.
+
+## How phase-based scheduling works
+
+Phase-based scheduling has three moving parts:
+
+1. **Anchor.** Record day 1 of your last period. This becomes the [cycle anchor date](/glossary/cycle-anchor-date) for predicting the next four phases.
+2. **Predict.** A [phase calculator](/glossary/phase-calculator), such as the free one at [Lumen](/plan), maps anchor plus average cycle length into four phase ranges.
+3. **Schedule.** Place tasks against phases using a [work-mode rotation](/glossary/work-mode-rotation): build in follicular, connect in ovulatory, finish in early luteal, recover in late luteal.
+
+Re-anchor each cycle on day 1 of the new period (see [cycle re-anchoring](/glossary/cycle-reanchoring)). Cycles drift; static predictions stop being useful after a month or two.
+
+## What the evidence supports
+
+The case for phase-based scheduling sits on three layers of evidence with different strengths.
+
+**Well-supported.** Verbal fluency, working memory, and some attention measures vary measurably across the cycle. Sleep architecture changes in late luteal. Body temperature rises after ovulation. These are robust findings, replicated across decades.
+
+**Mixed.** Phase-timed exercise effects on strength and endurance. A 2024 meta-analysis on phase-aligned training found small population-level effects on outcomes, individual variation was large.
+
+**Weak.** Phase-specific food prescriptions, [seed cycling](/glossary/seed-cycling), [phase-aligned skincare](/glossary/phase-aligned-skincare). These are mostly mechanistic extrapolations.
+
+Phase-based scheduling leans on the well-supported layer (cognition and sleep) and treats the rest as optional add-ons. The [is cycle syncing legit](/blog/is-cycle-syncing-legit) review grades each layer separately.
+
+## Where phase-based scheduling helps most
+
+Three contexts where the practice tends to pay off:
+
+- **Solo deep work.** [Deep work in follicular](/glossary/deep-work-follicular) and [editing in luteal](/glossary/editing-luteal) are the highest-leverage placements for most knowledge workers.
+- **Recovery planning.** Knowing that late luteal sleep architecture is fragile lets you set caffeine cutoffs and earlier wind-down before symptoms hit, not after.
+- **High-stakes timing.** When you can choose, place key presentations or negotiations in late follicular or ovulatory, where verbal fluency tends to be sharpest.
+
+## Where it does not help
+
+Phase-based scheduling is a bias layer, not a hard constraint. It does not work well for:
+
+- **Team-coupled work.** If your sprint cadence is set by a team of 12, you cannot move the kickoff. Use the bias only on tasks you control.
+- **Acute deadlines.** A launch on day 26 is a launch on day 26. The schedule cannot bend.
+- **Irregular cycles.** [PCOS](/glossary/pcos), perimenopause, and post-pill recovery break calendar-based prediction. Track ovulation directly with [BBT](/glossary/basal-body-temperature) or [OPK](/glossary/opk) before relying on phase-based scheduling.
+
+## Lumen's positioning
+
+Lumen treats phase-based scheduling as a calendar overlay. The free [phase calculator](/plan) produces phase ranges; the [cycle syncing schedule template](/blog/cycle-syncing-schedule-template) gives a starter mapping of tasks to phases. There are no food prescriptions, supplement recommendations, or wellness protocols on the product. The framing is honest: the practice is useful, the evidence is uneven, and the practitioner stays in charge of judgment.
+
+## Related reading
+
+- [Cycle-aware productivity](/glossary/cycle-aware-productivity): the broader framework
+- [Work-mode rotation](/glossary/work-mode-rotation): the four-mode mapping
+- [Cycle syncing schedule template](/blog/cycle-syncing-schedule-template): a starter plan
+- [How does cycle syncing work](/blog/how-does-cycle-syncing-work): the hormone-cognition mechanism
+
+</article>
+
+<GlossarySidebar
+  currentSlug="phase-based-scheduling"
+  title="Phase-based scheduling"
+  toc={[
+    { id: "why-a-week-is-the-wrong-unit", label: "Why a week is wrong" },
+    { id: "how-phase-based-scheduling-works", label: "How it works" },
+    { id: "what-the-evidence-supports", label: "What evidence supports" },
+    { id: "where-phase-based-scheduling-helps-most", label: "Where it helps" },
+    { id: "where-it-does-not-help", label: "Where it does not help" },
+    { id: "lumens-positioning", label: "Lumen's positioning" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

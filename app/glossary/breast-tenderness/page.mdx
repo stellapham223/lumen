@@ -1,0 +1,145 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Cyclical breast tenderness: timing, mechanism, and what helps",
+  description:
+    "Cyclical breast tenderness is the swelling and soreness common in the late luteal phase, driven by progesterone. Pattern, mechanism, and evidence-based relief.",
+  alternates: { canonical: "/glossary/breast-tenderness" },
+  openGraph: {
+    title: "Cyclical breast tenderness | Lumen glossary",
+    description:
+      "Definition, the hormonal mechanism, and what actually helps reduce cyclical breast soreness.",
+    url: "/glossary/breast-tenderness",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Cyclical breast tenderness"
+  description="Tender, swollen, or heavy-feeling breasts in the late luteal phase, driven primarily by progesterone and resolving with menstrual onset."
+  path="/glossary/breast-tenderness"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Breast tenderness", path: "/glossary/breast-tenderness" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Cyclical breast tenderness
+
+**Cyclical breast tenderness** (also called mastalgia) is the soreness, swelling, or heavy feeling in the breasts that tracks the late [luteal phase](/glossary/luteal-phase), peaks in the few days before menstruation, and resolves within the first 1 to 3 days of bleeding. It is one of the most common [PMS](/glossary/pms) symptoms.
+
+*This is informational, not medical advice. Talk to your provider if breast pain is non-cyclical, severe, persistent, or accompanied by a lump or skin changes.*
+
+## What it feels like
+
+The cyclical pattern:
+
+- Bilateral (both breasts), though one may feel worse than the other
+- Diffuse soreness rather than a focal painful spot
+- A heavy, full, or swollen sensation
+- Tenderness to touch, including under clothing
+- Sometimes mild visible swelling
+- Resolution within 1 to 3 days of menstrual onset
+
+The cyclical pattern is the diagnostic clue. Non-cyclical breast pain (constant across the whole cycle, or localized to one specific spot) warrants different evaluation.
+
+## When in the cycle
+
+Most people experience cyclical breast tenderness starting in mid to late luteal phase (roughly days 19 to 28 of a 28-day cycle), with peak intensity in the last 3 to 5 days before menstruation. Symptoms typically resolve within the first day or two of bleeding.
+
+A smaller subset of people experience milder breast tenderness around [ovulation](/glossary/ovulation), tied to the [estrogen](/glossary/estrogen) peak.
+
+## The mechanism
+
+[Progesterone](/glossary/progesterone) is the primary driver:
+
+- Progesterone stimulates milk duct epithelial cells, contributing to swelling
+- [Estrogen](/glossary/estrogen) and progesterone together increase fluid retention in breast tissue
+- [Prolactin](/glossary/prolactin) can also amplify cyclical breast symptoms
+- The combination peaks in late luteal, then both progesterone and estrogen drop, fluid resolves, tenderness lifts
+
+People with fibrocystic breast changes (a normal variation with denser, lumpier breast tissue) often experience more pronounced cyclical tenderness because the responsive tissue is more abundant.
+
+[Caffeine sensitivity](/glossary/cortisol-cycle), high salt intake, and dehydration can amplify symptoms in some people.
+
+## What the research supports
+
+- Cyclical breast tenderness affects roughly 50 to 70% of menstruating women.
+- It is benign and not associated with increased breast cancer risk.
+- [Vitex (chasteberry)](/glossary/vitex) has modest evidence for reducing cyclical breast tenderness, likely via prolactin modulation.
+- Reducing caffeine has mixed evidence; some people benefit, others see no change.
+- [Vitamin E](/glossary/vitamin-b6-pms) and evening primrose oil have weak evidence.
+- Well-fitted, supportive bras during the symptom window reduce discomfort.
+
+## What helps
+
+**Practical adjustments:**
+
+- Wear a well-fitted, supportive bra (sports bras can help) in the symptom window.
+- Reduce caffeine and alcohol in late luteal if you notice a personal connection.
+- Reduce sodium intake in late luteal to reduce fluid retention.
+- Maintain hydration. Less water increases retention, not decreases it.
+
+**Modestly supported supplementation:**
+
+- [Vitex](/glossary/vitex) (chasteberry) 20 to 40mg daily.
+- [Magnesium](/glossary/magnesium-pms) 200 to 400mg.
+- [Omega-3](/glossary/omega-3-pms) 1 to 2g combined EPA and DHA.
+
+**Prescription options (talk to a provider):**
+
+- Topical NSAIDs for localized severe symptoms.
+- Tamoxifen or danazol for severe refractory mastalgia, used short-term.
+- Combined oral contraceptives can reduce or worsen breast tenderness; effect is individual.
+
+**Weakly supported:**
+
+- Phase-specific food prescriptions.
+- Most over-the-counter "hormone balancing" supplement blends.
+
+## Cyclical breast tenderness and cycle syncing
+
+The cycle syncing application: anticipate the symptom window and adjust accordingly. Schedule high-intensity workouts that involve bouncing (running, jumping) outside the late luteal days where possible, or wear an extra-supportive sports bra. The [phase-aligned workouts](/glossary/phase-aligned-workouts) approach naturally handles this by reducing luteal-phase intensity.
+
+The [luteal phase complete guide](/blog/luteal-phase-complete-guide) covers practical late-luteal adjustments.
+
+## When to talk to a provider
+
+- A new, focal lump or area of thickening (palpable, distinct from diffuse tenderness).
+- Skin changes: dimpling, redness, warmth, peau d'orange texture.
+- Nipple discharge that is bloody, spontaneous, or one-sided.
+- Inverted nipple that is new (not lifelong).
+- Breast pain that does not resolve with menstrual onset.
+- Severe pain that disrupts sleep or daily function.
+- Sudden change in breast pain pattern, especially after 40.
+
+Routine breast self-awareness (not formal self-exams, which are no longer recommended as a screening tool) and following age-appropriate screening guidelines are the foundation. Cyclical tenderness is normal; new fixed changes are not.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="breast-tenderness"
+  title="Cyclical breast tenderness"
+  toc={[
+    { id: "what-it-feels-like", label: "What it feels like" },
+    { id: "when-in-the-cycle", label: "When in the cycle" },
+    { id: "the-mechanism", label: "The mechanism" },
+    { id: "what-the-research-supports", label: "What research supports" },
+    { id: "what-helps", label: "What helps" },
+    { id: "cyclical-breast-tenderness-and-cycle-syncing", label: "And cycle syncing" },
+    { id: "when-to-talk-to-a-provider", label: "When to see a provider" },
+  ]}
+/>
+
+</div>

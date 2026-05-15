@@ -1,0 +1,107 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Ovarian follicle: the fluid-filled sac that holds a developing egg",
+  description:
+    "An ovarian follicle is a fluid-filled sac in the ovary containing a developing egg. One becomes dominant per cycle and ruptures at ovulation.",
+  alternates: { canonical: "/glossary/ovarian-follicle" },
+  openGraph: {
+    title: "Ovarian follicle | Lumen glossary",
+    description:
+      "Definition, follicle development stages, why one becomes dominant, and clinical relevance.",
+    url: "/glossary/ovarian-follicle",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Ovarian follicle"
+  description="A fluid-filled sac in the ovary containing a developing egg. One becomes dominant per cycle and ruptures at ovulation."
+  path="/glossary/ovarian-follicle"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Ovarian follicle", path: "/glossary/ovarian-follicle" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Ovarian follicle
+
+An **ovarian follicle** is a fluid-filled sac in the ovary that contains a developing egg (oocyte) surrounded by supporting cells. Each [menstrual cycle](/glossary/menstrual-cycle), a cohort of follicles begins maturing under [FSH](/glossary/fsh) stimulation; typically one becomes dominant and releases its egg at [ovulation](/glossary/ovulation).
+
+## Follicle stages
+
+A follicle goes through several stages from dormancy to ovulation:
+
+- **Primordial follicle.** A dormant egg surrounded by a thin layer of cells. Most of a woman's [ovarian reserve](/glossary/ovarian-reserve) sits at this stage.
+- **Primary follicle.** Activated; surrounding cells multiply.
+- **Secondary follicle.** Begins producing estrogen; develops a fluid-filled cavity (antrum).
+- **Antral follicle.** Visible on ultrasound; size 2 to 9 mm. The pool that current-cycle hormones can recruit from.
+- **Dominant follicle.** Reaches roughly 18 to 25 mm at ovulation. Produces the bulk of the cycle's estrogen.
+- **Graafian follicle.** The fully mature follicle, just before rupture.
+
+The full process from primordial to ovulation takes roughly 6 months. Only the last 2 to 3 weeks (antral to ovulation) are responsive to the current cycle's hormones.
+
+## How one follicle becomes dominant
+
+Each cycle starts a [follicular wave](/glossary/follicular-wave) of 15 to 20 antral follicles competing for FSH stimulation. As estrogen rises from these follicles, FSH declines via negative feedback. Only the follicle most sensitive to FSH (with the most FSH receptors) can keep growing as FSH falls. That follicle becomes dominant; the rest regress (atresia).
+
+This is why most cycles produce only one egg: the system is set up so that one follicle wins the competition. Fraternal twins (about 1 in 80 births naturally) result from two follicles reaching dominance simultaneously, which becomes more common with age and certain fertility treatments.
+
+## What follicles produce
+
+Granulosa and theca cells in the follicle produce:
+
+- **[Estrogen (estradiol)](/glossary/estrogen).** The dominant follicle is the main estrogen source in the follicular phase. Estrogen levels track follicle size roughly linearly.
+- **Inhibin B.** Suppresses FSH, helping select the dominant follicle.
+- **Anti-Müllerian hormone (AMH).** Produced by small antral follicles. Clinical AMH testing estimates ovarian reserve.
+
+After ovulation, the ruptured follicle transforms into the [corpus luteum](/glossary/corpus-luteum), which switches to producing primarily progesterone.
+
+## Antral follicle count and fertility
+
+An antral follicle count (AFC) is an ultrasound measurement of the small antral follicles visible at the start of a cycle. It correlates with ovarian reserve:
+
+- AFC over 12: high reserve (or PCOS pattern)
+- AFC 7 to 11: average for women in their 30s
+- AFC under 6: lower reserve
+
+Combined with AMH testing and age, AFC is a standard input for fertility planning and IVF protocol selection.
+
+## Clinical conditions involving follicles
+
+- **[PCOS](/glossary/pcos).** Polycystic ovaries show many small antral follicles (often over 20 per ovary) that fail to mature to dominance. The "cysts" of PCOS are actually arrested follicles.
+- **Follicular cysts.** A follicle grows but does not rupture, persisting as a fluid-filled cyst. Usually resolves over 1 to 3 cycles.
+- **Luteinized unruptured follicle (LUF).** The LH surge occurs but the follicle does not rupture. The follicle still luteinizes, so progesterone rises and BBT shifts as if ovulation occurred, but no egg is released. More common with age and in some PCOS variants.
+- **Diminished ovarian reserve.** Low antral follicle count and AMH; common in [perimenopause](/glossary/perimenopause), [premature ovarian insufficiency](/glossary/poi), or after chemotherapy.
+
+## Follicles and cycle syncing
+
+For cycle syncing, what matters is the estrogen output of the dominant follicle: the rising estrogen of the [late follicular phase](/glossary/late-follicular-phase) is what drives the cognitive lift many women notice in the post-period, pre-ovulation window. When ovulation does not occur (as in [anovulatory cycles](/glossary/anovulatory-cycle)), the dominant follicle does not form or rupture, the estrogen peak may not happen, and the follicular-phase pattern can feel flatter.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="ovarian-follicle"
+  title="Ovarian follicle"
+  toc={[
+    { id: "follicle-stages", label: "Follicle stages" },
+    { id: "how-one-follicle-becomes-dominant", label: "Becoming dominant" },
+    { id: "what-follicles-produce", label: "What follicles produce" },
+    { id: "antral-follicle-count-and-fertility", label: "Antral follicle count" },
+    { id: "clinical-conditions-involving-follicles", label: "Clinical conditions" },
+    { id: "follicles-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

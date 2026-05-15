@@ -1,0 +1,132 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Cyclical mood swings: pattern, mechanism, and how to tell from a mood disorder",
+  description:
+    "Cyclical mood swings are recurring shifts in mood tied to cycle phase. The predictable timing is the diagnostic clue versus a clinical mood disorder. Mechanism and what helps.",
+  alternates: { canonical: "/glossary/cyclical-mood-swings" },
+  openGraph: {
+    title: "Cyclical mood swings | Lumen glossary",
+    description:
+      "Definition, mechanism, distinguishing features from clinical mood disorders, and practical strategies.",
+    url: "/glossary/cyclical-mood-swings",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Cyclical mood swings"
+  description="Recurring mood shifts that track cycle phase, with the predictable timing as the diagnostic feature distinguishing them from a clinical mood disorder."
+  path="/glossary/cyclical-mood-swings"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Cyclical mood swings", path: "/glossary/cyclical-mood-swings" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Cyclical mood swings
+
+**Cyclical mood swings** are recurring shifts in mood that track specific phases of the menstrual cycle, with the predictable timing being the diagnostic feature that distinguishes them from a clinical mood disorder. They are one of the core [PMS](/glossary/pms) symptoms.
+
+*This is informational, not medical advice. Talk to your provider if mood symptoms persist across all cycle phases, include suicidal thoughts, or significantly impair your daily life ([PMDD](/glossary/pmdd) range).*
+
+## What it feels like
+
+The classic cyclical pattern:
+
+- Generally stable mood in late [follicular](/glossary/follicular-phase) and [ovulatory](/glossary/ovulatory-phase) phases
+- Subtle shift in late luteal: more emotional reactivity, lower frustration tolerance, increased sensitivity to criticism or rejection
+- Peak instability in the last 3 to 5 days before menstruation
+- Resolution within 1 to 3 days of bleeding starting
+- Return to baseline by mid-follicular
+
+Mood swings here means rapid affective shifts within a day or short period, not just "low mood". Crying easily, sudden irritability, feeling overwhelmed, and emotional flooding are typical descriptions.
+
+## How to tell cyclical mood swings from a mood disorder
+
+The distinguishing feature is timing, tracked prospectively (in real time across at least two cycles), not retrospectively.
+
+- **Cyclical pattern:** symptoms confined to late luteal, resolve with menstruation, baseline mood between cycles.
+- **Mood disorder with cyclical worsening:** symptoms present across all cycle phases but intensify premenstrually. This is a common confusion and often misdiagnosed as PMS or PMDD.
+- **[PMDD](/glossary/pmdd):** severe cyclical mood disturbance meeting clinical criteria, with significant functional impairment. PMDD is a clinical diagnosis requiring prospective tracking and at least one core mood symptom (depression, anxiety, irritability, or affective lability).
+
+The reason this matters: treatment paths differ. Cyclical mood swings often respond to lifestyle and targeted late-luteal adjustments. PMDD often needs SSRIs (continuous or luteal-only). A mood disorder with cyclical worsening needs treatment of the underlying disorder.
+
+## The mechanism
+
+The dominant model attributes cyclical mood swings to two metabolite shifts:
+
+- **[Allopregnanolone](/glossary/allopregnanolone) withdrawal.** Allopregnanolone is a [progesterone](/glossary/progesterone) metabolite that modulates GABA receptors. The sharp late-luteal drop reduces GABA tone, contributing to anxiety and irritability. Some people have a paradoxical response (more anxiety from allopregnanolone presence), which complicates the picture.
+- **[Serotonin](/glossary/serotonin-cycle) decline.** [Estrogen](/glossary/estrogen) supports serotonin signaling. The late-luteal estrogen drop reduces serotonin activity, contributing to low mood, [cravings](/glossary/premenstrual-cravings), and emotional reactivity.
+
+[Sleep disruption](/glossary/cyclical-insomnia) in late luteal compounds both pathways and is a strong predictor of mood symptom severity.
+
+## What the research supports
+
+- Recurring premenstrual mood symptoms affect roughly 75% of menstruating women to some degree.
+- [Aerobic exercise](/glossary/phase-aligned-workouts) has modest, replicated evidence for reducing cyclical mood severity.
+- SSRIs work for PMDD with effects often visible within the first treated cycle.
+- Tracking across two cycles is essential. Many people misattribute mood symptoms to cycle when the actual pattern is non-cyclical.
+
+## What helps
+
+**Practical adjustments:**
+
+- [Track symptoms](/glossary/symptom-logging) for at least two cycles to confirm the pattern.
+- Protect sleep in the late luteal week.
+- Reduce decision count and high-stakes commitments in days 25 to 28 (of a 28-day cycle).
+- Communicate the pattern to close family or partners. Predictability reduces the relational impact.
+- Move difficult conversations to follicular days where possible.
+
+**Modestly supported supplementation:**
+
+- [Magnesium](/glossary/magnesium-pms) 200 to 400mg glycinate.
+- [Vitamin B6](/glossary/vitamin-b6-pms) 50 to 100mg.
+- [Omega-3](/glossary/omega-3-pms) 1 to 2g combined EPA and DHA.
+
+**For PMDD range:**
+
+- SSRIs are the strongest evidence-based intervention. Talk to your provider.
+- Certain combined oral contraceptives have FDA approval for PMDD.
+
+## Cyclical mood swings and cycle syncing
+
+[Phase-based scheduling](/glossary/phase-based-scheduling) treats the late-luteal mood window as a known variable to plan around: lighter load, more recovery, fewer high-stakes meetings. The goal is not pushing through but designing the week to absorb the dip. Cycle syncing is supplementary to (not a replacement for) clinical treatment when symptoms reach PMDD range.
+
+The [luteal phase complete guide](/blog/luteal-phase-complete-guide) covers practical late-luteal adjustments.
+
+## When to talk to a provider
+
+- Mood symptoms severe enough to disrupt work, relationships, or daily function.
+- Suicidal thoughts or self-harm urges at any cycle phase.
+- Mood symptoms that do not resolve with menstrual onset.
+- A sudden worsening of cyclical mood symptoms in your late 30s or 40s ([perimenopause](/glossary/perimenopause) overlay).
+
+</article>
+
+<GlossarySidebar
+  currentSlug="cyclical-mood-swings"
+  title="Cyclical mood swings"
+  toc={[
+    { id: "what-it-feels-like", label: "What it feels like" },
+    { id: "how-to-tell-cyclical-mood-swings-from-a-mood-disorder", label: "Cyclical vs mood disorder" },
+    { id: "the-mechanism", label: "The mechanism" },
+    { id: "what-the-research-supports", label: "What research supports" },
+    { id: "what-helps", label: "What helps" },
+    { id: "cyclical-mood-swings-and-cycle-syncing", label: "And cycle syncing" },
+    { id: "when-to-talk-to-a-provider", label: "When to see a provider" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,109 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Copper IUD (Paragard): non-hormonal contraception that preserves the cycle",
+  description:
+    "The copper IUD is the only widely available non-hormonal reversible contraceptive. Ovulation and the natural cycle are preserved. What that means for cycle syncing, side effects, and fit.",
+  alternates: { canonical: "/glossary/copper-iud" },
+  openGraph: {
+    title: "Copper IUD (Paragard) | Lumen glossary",
+    description:
+      "How the copper IUD works, why the natural cycle is preserved, and what it means for cycle syncing.",
+    url: "/glossary/copper-iud",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Copper IUD"
+  description="Non-hormonal intrauterine device wrapped in copper wire. Brand name Paragard in the US. Does not suppress ovulation or alter the natural menstrual cycle. Effective for up to 12 years."
+  path="/glossary/copper-iud"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Copper IUD", path: "/glossary/copper-iud" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Copper IUD
+
+The **copper IUD** is a T-shaped intrauterine device wrapped in copper wire. The only brand currently available in the US is Paragard, approved for up to 12 years of use. It is the only widely available reversible contraceptive that contains no hormones. Efficacy is above 99% in both typical and perfect use.
+
+The copper IUD is the method that matters most for users who want highly effective contraception while keeping the natural cycle and the practice of [cycle syncing](/glossary/cycle-syncing) intact.
+
+*This is informational, not medical advice. IUD insertion and choice should be discussed with a qualified provider.*
+
+## How it works
+
+Copper ions released into the uterine cavity are toxic to sperm and eggs and trigger a local inflammatory response in the endometrium. The combined effect prevents fertilization and, secondarily, implantation. No hormones are involved.
+
+Importantly, the copper IUD does **not** suppress [ovulation](/glossary/ovulation), does not affect [estrogen](/glossary/estrogen) or [progesterone](/glossary/progesterone), and does not disrupt the [HPO axis](/glossary/hpo-axis). The cycle continues exactly as it would without contraception.
+
+## Cycle implications
+
+The copper IUD is unique among contraceptives in that [cycle syncing](/glossary/cycle-syncing) applies fully. You have a true [follicular phase](/glossary/follicular-phase), [ovulatory phase](/glossary/ovulatory-phase), and [luteal phase](/glossary/luteal-phase). [PMS](/glossary/pms) symptoms continue. Phase-based scheduling, [BBT](/glossary/basal-body-temperature) tracking, and [cervical mucus tracking](/glossary/cervical-mucus-tracking) all work.
+
+The only cycle change most users notice is heavier or longer periods, especially in the first 3 to 6 months.
+
+## Common side effects
+
+- **Heavier periods.** The most common reason users discontinue. Bleeding tends to be 20 to 50% heavier for the first 6 to 12 months. This often improves but does not return to baseline for many users.
+- **More cramping.** Particularly in the first 3 months and during periods thereafter.
+- **Spotting between periods**, especially early on.
+- **Insertion pain** can be significant; ask providers about pain management.
+
+The copper IUD has no hormonal side effects: no mood changes from contraception, no libido suppression, no breast tenderness, no clot risk.
+
+Rare but serious risks: device expulsion (most common in the first 3 months), uterine perforation at insertion (rare), and pelvic infection in the first 20 days.
+
+## When to consider
+
+- Want highly effective long-acting contraception without hormones.
+- Tolerate or prefer the natural cycle and want phase-based information ([fertility awareness](/glossary/fam), cycle syncing).
+- Have contraindications to hormonal methods (history of clots, migraine with aura, certain cancers).
+- Heavy periods are not already a problem at baseline.
+
+## When NOT to consider
+
+- Already-heavy or painful periods you want to reduce (consider the [hormonal IUD](/glossary/hormonal-iud) instead).
+- Active pelvic infection or untreated cervical infection.
+- Distorted uterine cavity that prevents proper placement.
+- Copper allergy (Wilson's disease).
+- Unexplained uterine bleeding before workup.
+
+## How to cycle sync on a copper IUD
+
+Treat it like an unmedicated cycle: log your last period date, calculate phase ranges, track ovulation with [BBT](/glossary/basal-body-temperature) or [OPK](/glossary/opk), and adjust scheduling as you would otherwise. The [phase calculator](/plan) works without any adjustment.
+
+## Related reading
+
+- [Hormonal IUD](/glossary/hormonal-iud): the hormonal alternative
+- [Cycle syncing on birth control](/blog/cycle-syncing-on-birth-control): the full method-by-method guide
+
+</article>
+
+<GlossarySidebar
+  currentSlug="copper-iud"
+  title="Copper IUD"
+  toc={[
+    { id: "how-it-works", label: "How it works" },
+    { id: "cycle-implications", label: "Cycle implications" },
+    { id: "common-side-effects", label: "Common side effects" },
+    { id: "when-to-consider", label: "When to consider" },
+    { id: "when-not-to-consider", label: "When NOT to consider" },
+    { id: "how-to-cycle-sync-on-a-copper-iud", label: "Cycle syncing on copper" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

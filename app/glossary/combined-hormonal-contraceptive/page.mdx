@@ -1,0 +1,119 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Combined hormonal contraceptive: mechanism, cycle effects, and cycle syncing",
+  description:
+    "Combined hormonal contraceptives (the pill, patch, ring) contain synthetic estrogen plus progestin and suppress ovulation. What this means for cycle syncing, side effects, and when to consider switching.",
+  alternates: { canonical: "/glossary/combined-hormonal-contraceptive" },
+  openGraph: {
+    title: "Combined hormonal contraceptive | Lumen glossary",
+    description:
+      "How the pill, patch, and ring work, why they remove the natural cycle, and what that means for cycle syncing.",
+    url: "/glossary/combined-hormonal-contraceptive",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Combined hormonal contraceptive"
+  description="Contraceptive containing synthetic estrogen plus a progestin. Delivered as a pill, patch, or vaginal ring. Suppresses ovulation, so the natural cycle and its phases do not occur."
+  path="/glossary/combined-hormonal-contraceptive"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Combined hormonal contraceptive", path: "/glossary/combined-hormonal-contraceptive" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Combined hormonal contraceptive
+
+A **combined hormonal contraceptive (CHC)** is any contraceptive that delivers both a synthetic estrogen (usually ethinyl estradiol) and a synthetic progestin. The three common forms are the combined oral pill, the [contraceptive patch](/glossary/contraceptive-patch), and the [vaginal ring](/glossary/vaginal-ring). All three use the same hormonal mechanism, only the delivery route differs.
+
+CHCs are among the most effective reversible contraceptives, with typical-use efficacy around 91% and perfect-use efficacy above 99%. They are also the form of birth control most relevant to cycle syncing, because they remove the natural cycle entirely.
+
+*This is informational, not medical advice. Contraceptive choice should be discussed with a qualified provider.*
+
+## How it works
+
+CHCs suppress the [HPO axis](/glossary/hpo-axis). The steady delivery of synthetic estrogen and progestin keeps [FSH](/glossary/fsh) and [LH](/glossary/lh) low, which prevents follicle maturation and blocks the [LH surge](/glossary/lh-surge). Without an LH surge, [ovulation](/glossary/ovulation) does not happen.
+
+Three contraceptive effects stack:
+
+1. Ovulation is suppressed (the primary mechanism).
+2. Cervical mucus thickens, reducing sperm penetration.
+3. The endometrium becomes thin and less receptive to implantation.
+
+The bleed that occurs during the placebo week (or ring-free week) is not menstruation. It is [withdrawal bleeding](/glossary/withdrawal-bleeding) triggered by the abrupt removal of synthetic hormones. There is no true follicular or [luteal phase](/glossary/luteal-phase) on a CHC.
+
+## Cycle implications
+
+Because ovulation is suppressed, the four-phase cycle that [cycle syncing](/glossary/cycle-syncing) describes does not exist. You do not have a follicular surge of estrogen, an LH peak, a corpus luteum, or a natural [progesterone](/glossary/progesterone) rise. Instead you have steady-state synthetic hormone levels for three weeks, then a withdrawal week.
+
+Practical implications:
+
+- Phase-based scheduling that depends on hormonal events does not apply.
+- Symptom patterns (energy, mood, libido, sleep) tend to be flatter overall, with some users reporting reduced premenstrual symptoms and others reporting flatter affect or reduced libido.
+- The 28-day calendar rotation can still be used as a structural template (Reflect, Build, Connect, Finish), but the biological rationale is gone.
+
+The [cycle syncing on birth control](/blog/cycle-syncing-on-birth-control) guide walks through each method in detail.
+
+## Common side effects
+
+CHCs are generally well tolerated but have a well-documented side effect profile:
+
+- **Breakthrough bleeding** in the first three cycles.
+- **Breast tenderness**, often estrogen-driven.
+- **Nausea**, especially in the first month.
+- **Mood changes.** A subset of users report low mood, anxiety, or flattened affect. Evidence is mixed at population level but consistent in clinical practice.
+- **Reduced libido.** Synthetic estrogen raises [SHBG](/glossary/shbg), which lowers free testosterone.
+- **Headaches**, including new or worsened migraines.
+- **Slight increase in blood clot risk**, particularly in users who smoke, are over 35, have migraine with aura, or have a clotting disorder.
+
+## When to consider
+
+CHCs are a reasonable choice for users who want highly effective reversible contraception, predictable scheduled bleeds, and symptom-flattening effects on conditions like [PMS](/glossary/pms), heavy bleeding, [endometriosis](/glossary/endometriosis) pain, or [PCOS](/glossary/pcos)-related acne and irregular cycles.
+
+## When NOT to consider
+
+CHCs are usually avoided in users with:
+
+- Migraine with aura (raised stroke risk).
+- History of blood clots, stroke, or heart attack.
+- Smokers over 35.
+- Uncontrolled high blood pressure.
+- Active estrogen-sensitive cancer.
+- Liver disease.
+
+Progestin-only methods like the [mini-pill](/glossary/mini-pill) or the [hormonal IUD](/glossary/hormonal-iud) are often offered when estrogen is contraindicated.
+
+## Related reading
+
+- [Coming off birth control](/glossary/coming-off-birth-control): what happens when you stop
+- [Cycle syncing on birth control](/blog/cycle-syncing-on-birth-control): adapting the framework
+
+</article>
+
+<GlossarySidebar
+  currentSlug="combined-hormonal-contraceptive"
+  title="Combined hormonal contraceptive"
+  toc={[
+    { id: "how-it-works", label: "How it works" },
+    { id: "cycle-implications", label: "Cycle implications" },
+    { id: "common-side-effects", label: "Common side effects" },
+    { id: "when-to-consider", label: "When to consider" },
+    { id: "when-not-to-consider", label: "When NOT to consider" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,126 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Phase-aligned sleep: adjusting bedtime and caffeine by cycle phase",
+  description:
+    "Phase-aligned sleep means adjusting bedtime, caffeine cutoff, and sleep environment by cycle phase. Late luteal sleep is measurably worse. Definition, evidence, and a practical playbook.",
+  alternates: { canonical: "/glossary/phase-aligned-sleep" },
+  openGraph: {
+    title: "Phase-aligned sleep | Lumen glossary",
+    description:
+      "Adjusting bedtime and caffeine cutoff by cycle phase. Late luteal needs earlier wind-down.",
+    url: "/glossary/phase-aligned-sleep",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Phase-aligned sleep"
+  description="The practice of adjusting bedtime, caffeine cutoff, and sleep environment based on menstrual cycle phase. Late luteal sleep architecture is measurably degraded and benefits from earlier wind-down."
+  path="/glossary/phase-aligned-sleep"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Phase-aligned sleep", path: "/glossary/phase-aligned-sleep" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Phase-aligned sleep
+
+**Phase-aligned sleep** is the practice of adjusting bedtime, caffeine cutoff, and sleep environment based on [menstrual cycle](/glossary/menstrual-cycle) phase. Lumen's positioning is that this is the most evidence-backed corner of cycle syncing; the underlying rationale is that sleep architecture demonstrably shifts across the cycle, with [late luteal](/glossary/late-luteal-phase) showing reduced slow-wave sleep, more fragmentation, and higher core body temperature. Unlike phase-aligned nutrition or skincare, the sleep recommendations rest on measurable polysomnographic differences.
+
+The practical version is simple: in late luteal, wind down earlier and cut caffeine earlier. In follicular and ovulatory, normal sleep timing usually works. Most users see a real difference within one or two cycles of consistent application.
+
+## What the research shows
+
+Several robust findings on cycle and sleep:
+
+- **Body temperature rises** by 0.3 to 0.5 degrees C in luteal phase. Higher core temperature interferes with sleep onset. See [body temperature cycle](/glossary/body-temperature-cycle).
+- **Slow-wave sleep decreases** in late luteal compared to follicular phase.
+- **Sleep fragmentation increases** in late luteal, even when total sleep time is preserved.
+- **Subjective sleep quality drops** in late luteal, more pronounced in people with [PMS](/glossary/pms) or [PMDD](/glossary/pmdd).
+- **Progesterone is sleep-promoting** via GABA modulation (see [allopregnanolone](/glossary/allopregnanolone)), which is why early luteal often produces deeper sleep before the late-luteal drop disrupts it.
+
+See [sleep architecture cycle](/glossary/sleep-architecture-cycle) for the underlying mechanism. The honest framing: these are real population-level effects, with individual variation. Some users sleep through their cycle without noticing; others are sharply affected in late luteal.
+
+## The phase-by-phase pattern
+
+The default pattern most users experience:
+
+- **Menstrual phase (days 1 to 5):** Sleep often improves as luteal hormonal drop completes. Quality usually recovers within 1 to 3 days.
+- **Follicular phase (days 6 to 13):** Sleep is usually good. Default bedtime and caffeine cutoff work fine.
+- **Ovulatory phase (days 14 to 16):** Small body temperature shift begins. Most users do not notice.
+- **Early luteal phase (days 17 to 22):** [Progesterone](/glossary/progesterone) peaks; many users report their deepest sleep here. Surprising to first-time observers.
+- **Late luteal phase (days 23 to 28):** Sleep architecture degrades. Fragmentation, early waking, and reduced slow-wave sleep are common.
+
+The early-luteal "deep sleep window" is one of the most useful observations the practice surfaces. Bank good sleep here.
+
+## What to adjust
+
+A practical phase-aligned sleep playbook:
+
+**Late luteal (days 23 to 28):**
+
+- **Caffeine cutoff at noon, not 2pm.** Caffeine half-life is roughly 5 hours; the late-luteal sensitivity means even 2pm caffeine can disrupt sleep onset.
+- **Bedtime 30 to 60 minutes earlier.** Compensates for fragmentation by extending total sleep opportunity.
+- **Cooler room.** A 1 to 2 degree drop in bedroom temperature offsets the cycle-driven core temperature rise. Aim for 65 to 68 degrees F.
+- **Reduce alcohol.** Sleep quality on alcohol is worse in late luteal than at baseline.
+- **Lighter dinner.** Late-luteal bloating + heavy dinner is a common sleep disruptor.
+
+**Follicular and ovulatory:**
+
+- Default sleep hygiene. No special adjustments needed.
+
+**Menstrual:**
+
+- If [dysmenorrhea](/glossary/dysmenorrhea) disrupts sleep, the standard approach is NSAIDs at first sign of cramps, a heating pad, and avoiding back-sleeping. See [menstrual phase complete guide](/blog/menstrual-phase-complete-guide).
+
+## Hormonal birth control changes the picture
+
+Most hormonal contraceptives suppress natural cycling, which flattens the late-luteal sleep drop. Some users on combined hormonal contraceptives report consistent sleep across the month; others report worse sleep overall, especially on progestin-only methods. The phase-aligned sleep pattern is most useful for people not on hormonal contraception.
+
+## Limits and honest hedging
+
+Two honest limits:
+
+- **Sleep dominates phase.** A bad sleep schedule across all phases beats a perfect phase-aligned schedule with shifting bedtimes. Get the baseline right first.
+- **Individual variation is large.** Track your own subjective sleep quality across one or two cycles before committing to the playbook. Some users see big differences; others see almost none.
+
+## Lumen's positioning
+
+The [Lumen phase calculator](/plan) flags the late luteal window for sleep priority. The product does not prescribe specific bedtimes; it surfaces the phase context so you can adjust based on your own pattern. The [cycle syncing schedule template](/blog/cycle-syncing-schedule-template) provides a starter playbook for caffeine and bedtime adjustments.
+
+## Related reading
+
+- [Sleep architecture cycle](/glossary/sleep-architecture-cycle): the underlying mechanism
+- [Cyclical insomnia](/glossary/cyclical-insomnia): when the disruption is clinical
+- [Late luteal phase](/glossary/late-luteal-phase): the high-disruption window
+- [Body temperature cycle](/glossary/body-temperature-cycle): the thermoregulatory layer
+
+</article>
+
+<GlossarySidebar
+  currentSlug="phase-aligned-sleep"
+  title="Phase-aligned sleep"
+  toc={[
+    { id: "what-the-research-shows", label: "What research shows" },
+    { id: "the-phase-by-phase-pattern", label: "Phase-by-phase pattern" },
+    { id: "what-to-adjust", label: "What to adjust" },
+    { id: "hormonal-birth-control-changes-the-picture", label: "Birth control" },
+    { id: "limits-and-honest-hedging", label: "Limits" },
+    { id: "lumens-positioning", label: "Lumen's positioning" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

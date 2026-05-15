@@ -1,0 +1,118 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Spearmint tea for PCOS and hirsutism: evidence, dosing, and limits",
+  description:
+    "Spearmint tea has small-trial evidence for mild anti-androgenic effects, including reducing testosterone and easing hirsutism in PCOS. Typical dose is 2 cups daily. Limits and what it does NOT do.",
+  alternates: { canonical: "/glossary/spearmint-tea" },
+  openGraph: {
+    title: "Spearmint tea for PCOS | Lumen glossary",
+    description:
+      "What the small trials show about spearmint tea for hirsutism and androgens in PCOS, dosing, and limits.",
+    url: "/glossary/spearmint-tea",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Spearmint tea (for PCOS)"
+  description="Tea brewed from Mentha spicata leaves. Small-trial evidence for mild anti-androgenic effects, used as a complementary intervention for hirsutism and androgen excess in PCOS."
+  path="/glossary/spearmint-tea"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Spearmint tea", path: "/glossary/spearmint-tea" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Spearmint tea (for PCOS)
+
+**Spearmint tea** is an herbal infusion made from the leaves of Mentha spicata. It has a long history of folk use for menstrual complaints and is now studied for its mild anti-androgenic effects in [PCOS](/glossary/pcos), particularly for [hirsutism](/glossary/androgens-women) (unwanted hair growth in male-pattern areas).
+
+The trial evidence is small but reasonably consistent. Spearmint is a complementary intervention with a modest signal, not a primary treatment.
+
+*Consult a provider before starting supplements, especially if pregnant, breastfeeding, or on medications.*
+
+## What the evidence says
+
+Two small randomized trials (Akdogan 2007 and Grant 2010) are the most commonly cited evidence:
+
+- **Akdogan 2007 (Turkey, 21 women with hirsutism).** Two cups of spearmint tea daily for 5 days lowered free testosterone and raised [LH](/glossary/lh) and [FSH](/glossary/fsh) compared to baseline.
+- **Grant 2010 (UK, 42 women with PCOS-associated hirsutism).** Two cups of spearmint tea daily for 30 days significantly reduced free and total testosterone and improved subjective hirsutism, though objective hirsutism scores did not improve significantly in 30 days.
+
+Other small studies and animal work suggest mild anti-androgenic and possibly anti-inflammatory effects. A 2024 narrative review concluded the data is suggestive but limited by small trial sizes and short durations.
+
+What the evidence does **not** support:
+
+- Spearmint as a primary treatment for PCOS metabolic features (insulin resistance, weight, ovulation). [Inositol](/glossary/inositol-pcos) and lifestyle interventions are the more relevant levers there.
+- Spearmint as a quick fix for hirsutism. Hair follicle cycles take months; visible reduction in unwanted hair takes time even with effective treatments.
+- Spearmint as a replacement for spironolactone, OCPs, or laser hair removal for users who need effective hirsutism management.
+
+## Why it might work
+
+The proposed mechanism is mild inhibition of testosterone biosynthesis or activity, possibly through:
+
+- Direct effect on androgen-producing tissues.
+- Altered androgen metabolism or clearance.
+- Modulation of HPO axis signaling (the LH/FSH changes in Akdogan are consistent with this).
+
+The compounds involved are not fully characterized; spearmint contains many bioactive constituents (carvone, limonene, rosmarinic acid, flavonoids).
+
+## Dosing
+
+The studied dose: **two cups of brewed spearmint tea per day**, with each cup made from 1 to 2 teaspoons of dried spearmint or one tea bag, steeped for 5 to 10 minutes.
+
+Practical notes:
+
+1. **Loose leaf or tea bag** both work. Quality matters more than form; look for unblended pure spearmint, not "spearmint flavored" tea.
+2. **Continuous daily intake.** Effects build over months. Trials of 30 days showed hormonal changes but limited visible hirsutism change in that timeframe.
+3. **Standardized extracts** are also available but have less direct trial support than the brewed tea preparation.
+
+## Common side effects and cautions
+
+Spearmint tea is generally well tolerated:
+
+- **Heartburn or reflux** in users prone to it (mint relaxes the lower esophageal sphincter).
+- **Drug interactions** are mostly theoretical; mild interactions with certain medications metabolized by CYP enzymes are possible.
+- **Pregnancy.** Avoid medicinal-quantity spearmint tea in pregnancy due to limited safety data and the anti-androgenic effect. Occasional culinary use is fine.
+- **Estrogen-sensitive conditions.** Discuss with a provider; the literature is mixed.
+
+Peppermint tea is a different species (Mentha piperita) and does not have the same trial evidence. Use spearmint specifically.
+
+## Where it fits
+
+Spearmint is a reasonable add-on for users with PCOS and hirsutism who are looking for a low-risk complementary intervention while pursuing the primary management (lifestyle, [inositol](/glossary/inositol-pcos), and where appropriate, medical treatments like OCPs or spironolactone).
+
+The realistic expectation: modest. Spearmint may slightly lower androgens, may modestly support hirsutism over months, and adds a small daily ritual that some users value. It is not a transformative intervention.
+
+## Related reading
+
+- [PCOS](/glossary/pcos): the condition this is most studied for
+- [Inositol for PCOS](/glossary/inositol-pcos): the higher-evidence supplement option
+- [Androgens in women](/glossary/androgens-women): the hormonal axis spearmint targets
+
+</article>
+
+<GlossarySidebar
+  currentSlug="spearmint-tea"
+  title="Spearmint tea (for PCOS)"
+  toc={[
+    { id: "what-the-evidence-says", label: "What the evidence says" },
+    { id: "why-it-might-work", label: "Why it might work" },
+    { id: "dosing", label: "Dosing" },
+    { id: "common-side-effects-and-cautions", label: "Side effects and cautions" },
+    { id: "where-it-fits", label: "Where it fits" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,124 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Sympto-thermal method: the highest-efficacy FAM variant",
+  description:
+    "Sympto-thermal combines basal body temperature, cervical mucus, and cycle history to identify the fertile window. The most studied FAM variant with the strongest efficacy data. How it works, study results, and tradeoffs.",
+  alternates: { canonical: "/glossary/sympto-thermal-method" },
+  openGraph: {
+    title: "Sympto-thermal method | Lumen glossary",
+    description:
+      "How the sympto-thermal method works, what efficacy it achieves, and what it requires.",
+    url: "/glossary/sympto-thermal-method",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Sympto-thermal method"
+  description="A variant of the Fertility Awareness Method that combines basal body temperature, cervical mucus observations, and cycle history to identify the fertile window. The most studied FAM variant, with perfect-use failure rates as low as 0.4% in some studies and typical-use failure 2 to 5%."
+  path="/glossary/sympto-thermal-method"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Sympto-thermal method", path: "/glossary/sympto-thermal-method" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Sympto-thermal method
+
+The **sympto-thermal method** is the variant of [Fertility Awareness Method (FAM)](/glossary/fam) that combines three signals, [basal body temperature](/glossary/basal-body-temperature), [cervical mucus](/glossary/cervical-mucus-tracking) observations, and cycle history, to identify the [fertile window](/glossary/fertile-window). It is the most studied FAM variant and has the strongest efficacy data in the FAM family.
+
+*This is informational, not medical advice. Effective contraception requires consistent use; talk to a provider before relying on any FAM method.*
+
+## How the three signals combine
+
+The method uses each signal for what it is best at:
+
+**Cervical mucus** opens the fertile window. The first day of stretchy, slippery, egg-white mucus signals that estrogen has risen and the window has begun. Intercourse is avoided (or a barrier is used) from this day forward.
+
+**BBT** closes the fertile window. Three consecutive days at the elevated luteal-phase temperature confirm that [ovulation](/glossary/ovulation) has already occurred. The window closes on the evening of the third high temperature.
+
+**Cycle history** sets an early-cycle rule. Most protocols add a "no intercourse before day 6" or "no intercourse on a dry day after a fertile day" rule to handle the rare cycles where ovulation occurs very early.
+
+Together, the three signals produce a fertile window that typically lasts 8 to 10 days per cycle. The remaining days are infertile under the method's rules and intercourse is permitted.
+
+## Efficacy data
+
+The 2007 European Sensiplan study followed 900 women across roughly 17,500 cycles. Results:
+
+- **Perfect-use failure rate.** 0.4% per year (Sensiplan protocol followed exactly).
+- **Typical-use failure rate.** 1.8% per year in that cohort, though broader population studies show 2 to 5% typical-use failure.
+
+For context: the typical-use failure rate of the combined pill is roughly 7%, the male condom is roughly 13%, and the [hormonal IUD](/glossary/hormonal-iud) is under 0.5%. Sympto-thermal is in the range of well-used hormonal methods when practiced correctly, but the gap between perfect and typical use is substantial.
+
+## What sympto-thermal requires
+
+The daily practice is meaningful work:
+
+- **BBT measurement** every morning at consistent time, with a [BBT thermometer](/glossary/bbt-thermometer) at 0.01°F precision
+- **Cervical mucus observation** 2 to 3 times daily across the cycle
+- **Charting** the data daily (paper or app)
+- **Interpretation** of the chart against the method's rules at the end of each day
+- **Communication with partner** about which days are fertile
+
+Most protocols recommend 2 to 3 cycles of training with a certified instructor before relying on the method for contraception. Self-taught users without instruction have substantially higher typical-use failure rates.
+
+## When sympto-thermal works well
+
+It works well for users who:
+
+- Have regular cycles (24 to 35 days, low variability)
+- Wake at consistent times most days
+- Get at least 3 to 4 hours of consolidated sleep
+- Can be disciplined about daily measurements
+- Have a cooperative partner who accepts the abstinence or barrier window
+- Have access to a certified instructor or a high-quality structured app
+
+## When it does not work well
+
+It does not work well for users who:
+
+- Have irregular or unpredictable cycles ([PCOS](/glossary/pcos), [perimenopause](/glossary/perimenopause), post-pill recovery, postpartum)
+- Work night shifts or rotating shifts
+- Travel across time zones frequently
+- Are in their first 3 to 6 cycles after starting (training period)
+- Cannot tolerate a 1 to 5% typical-use failure rate
+
+## Apps that support sympto-thermal
+
+Read Your Body, Kindara, and the Sensiplan app are common pure sympto-thermal options. Natural Cycles is algorithm-driven and BBT-only (technically a different category), but operates in a similar spirit. The Marquette Method adds quantitative LH and estrogen testing for higher precision.
+
+See [free cycle syncing apps compared](/blog/free-cycle-syncing-apps-compared) for tracker comparisons, including FAM-capable apps.
+
+## Sympto-thermal and cycle syncing
+
+The data collected for sympto-thermal is also the highest-quality input for [cycle syncing](/glossary/cycle-syncing). Confirmed ovulation timing pins the [phase transition](/glossary/phase-transition) precisely, which sharpens scheduling. Users who already practice sympto-thermal can layer cycle syncing onto the data they are already collecting; users who only want cycle syncing without contraceptive precision can stick with calendar-based prediction via the [Lumen phase calculator](/plan).
+
+</article>
+
+<GlossarySidebar
+  currentSlug="sympto-thermal-method"
+  title="Sympto-thermal method"
+  toc={[
+    { id: "how-the-three-signals-combine", label: "How signals combine" },
+    { id: "efficacy-data", label: "Efficacy data" },
+    { id: "what-sympto-thermal-requires", label: "What it requires" },
+    { id: "when-sympto-thermal-works-well", label: "When it works well" },
+    { id: "when-it-does-not-work-well", label: "When it does not" },
+    { id: "apps-that-support-sympto-thermal", label: "Apps" },
+    { id: "sympto-thermal-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

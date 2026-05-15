@@ -1,0 +1,120 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Postmenopause: the years after menstruation permanently ends",
+  description:
+    "Postmenopause is the stage of life beginning 12 months after the final menstrual period. Cycle syncing no longer applies. Definition, hormone profile, and health considerations.",
+  alternates: { canonical: "/glossary/postmenopause" },
+  openGraph: {
+    title: "Postmenopause | Lumen glossary",
+    description:
+      "Definition, hormone profile, common symptoms in early postmenopause, and long-term health considerations.",
+    url: "/glossary/postmenopause",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Postmenopause"
+  description="Stage of life beginning 12 months after the final menstrual period. Cycle syncing no longer applies."
+  path="/glossary/postmenopause"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Postmenopause", path: "/glossary/postmenopause" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Postmenopause
+
+**Postmenopause** is the stage of life that begins 12 months after the final menstrual period and continues indefinitely. It follows [perimenopause](/glossary/perimenopause) (the transitional years) and the single point of [menopause](/glossary/menopause). In postmenopause, ovarian hormone production is permanently low and the [menstrual cycle](/glossary/menstrual-cycle) no longer occurs.
+
+## When postmenopause starts
+
+By definition, postmenopause begins 12 consecutive months after the final menstrual period. Because that's a retrospective diagnosis, you only know in hindsight when postmenopause began. In the US, the average age at menopause is 51, so most women enter postmenopause in their early 50s. With increasing life expectancy, women now typically live a third or more of their adult lives in postmenopause.
+
+## Hormone profile
+
+The postmenopausal hormone pattern is stable and very different from premenopausal:
+
+- **[Estrogen](/glossary/estrogen).** Permanently low (typically estradiol under 10 to 20 pg/mL). The primary source shifts from the ovaries to peripheral conversion in fat tissue.
+- **[Progesterone](/glossary/progesterone).** Near zero, since no [corpus luteum](/glossary/corpus-luteum) forms without ovulation.
+- **[FSH](/glossary/fsh) and [LH](/glossary/lh).** Persistently elevated, since they're no longer suppressed by ovarian hormones.
+- **[Testosterone](/glossary/testosterone-in-women).** Lower than premenopausal but does not drop as dramatically as estrogen.
+- **[SHBG](/glossary/shbg).** Often shifts; can change free testosterone availability.
+
+This hormone profile does not vary cyclically. There are no follicular and luteal phases; there is no [phase transition](/glossary/phase-transition) to track.
+
+## Common early-postmenopause symptoms
+
+Many menopausal symptoms peak in early postmenopause (the first 1 to 5 years) before slowly easing:
+
+- **Hot flashes and night sweats.** Often last several years; about 10% of women have them for 10 or more years.
+- **Sleep disruption.** Often persists; sometimes improves with addressed night sweats.
+- **Genitourinary syndrome of menopause (GSM).** Vaginal dryness, painful sex, urinary symptoms. Tends to worsen over time without treatment.
+- **Mood and cognitive complaints.** Usually transient; most resolve in early postmenopause.
+- **Joint aches and stiffness.** Commonly under-discussed but frequently reported.
+
+Symptoms vary widely. Roughly 25% of women have minimal symptoms in early postmenopause; another 25% have severe symptoms significantly affecting quality of life.
+
+## Long-term health changes
+
+The estrogen drop has long-term effects on multiple body systems:
+
+- **Bone density.** Loss accelerates in the first 5 years post-menopause; risk of [osteoporosis](https://en.wikipedia.org/wiki/Osteoporosis) rises. Strength training and adequate protein, calcium, and vitamin D matter more than ever.
+- **Cardiovascular risk.** Previously low rates of heart disease climb to match (then exceed) male rates. Cholesterol patterns often shift unfavorably.
+- **Body composition.** Tendency toward central fat gain and muscle loss. Resistance training pushes back meaningfully.
+- **Cognitive trajectory.** Most cognitive symptoms of perimenopause resolve; long-term cognitive aging is influenced by cardiovascular and metabolic health.
+- **Skin.** Collagen loss accelerates; skin thins.
+
+The early postmenopausal years are a high-leverage window for preventive intervention (lifestyle, HRT if appropriate, bone density screening).
+
+## Treatment considerations
+
+The main interventions for postmenopausal symptoms and health:
+
+- **[Hormone replacement therapy (HRT)](/glossary/hrt).** Most effective for hot flashes, night sweats, and genitourinary symptoms. Generally considered lower risk when started within 10 years of menopause or before age 60.
+- **Vaginal estrogen.** Local treatment for genitourinary syndrome; minimal systemic absorption.
+- **Strength training.** Single highest-leverage intervention for bone, body composition, and metabolic health.
+- **Bone density screening (DEXA scan).** Recommended around age 65, earlier with risk factors.
+- **Cardiovascular workup.** Cholesterol, blood pressure, fasting glucose; postmenopausal years are when cardiovascular risk shifts most.
+
+## Postmenopause and cycle syncing
+
+The four-phase [cycle syncing](/glossary/cycle-syncing) model does not apply postmenopausally. There is no cycle. Phase-based scheduling, [phase-aligned workouts](/glossary/phase-aligned-workouts), and [phase-aligned nutrition](/glossary/phase-aligned-nutrition) all stop being relevant.
+
+What replaces cycle syncing in postmenopause is generally:
+
+- A steadier weekly training pattern, with strength training prioritized
+- Consistent sleep routines (no luteal-week dips to plan around)
+- Energy expenditure based on circadian and weekly patterns, not infradian ones
+- Healthspan-focused habits: protein intake, bone-loading activity, cardiovascular fitness, cognitive engagement
+
+This is a simpler optimization in some ways, freed from cycle variability. The [circadian rhythm](/glossary/circadian-rhythm) becomes the main biological rhythm to design around.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="postmenopause"
+  title="Postmenopause"
+  toc={[
+    { id: "when-postmenopause-starts", label: "When it starts" },
+    { id: "hormone-profile", label: "Hormone profile" },
+    { id: "common-early-postmenopause-symptoms", label: "Early symptoms" },
+    { id: "long-term-health-changes", label: "Long-term changes" },
+    { id: "treatment-considerations", label: "Treatment considerations" },
+    { id: "postmenopause-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,126 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Fertile window: the 6 days when conception is possible",
+  description:
+    "The fertile window is the 5 days before plus the day of ovulation. Sperm survive up to 5 days in fertile cervical mucus; the egg survives 12 to 24 hours.",
+  alternates: { canonical: "/glossary/fertile-window" },
+  openGraph: {
+    title: "Fertile window | Lumen glossary",
+    description:
+      "Definition, why it spans 6 days, how to predict and confirm it, and what it means for conception and contraception.",
+    url: "/glossary/fertile-window",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Fertile window"
+  description="The 5 days before plus the day of ovulation. Sperm survive up to 5 days in fertile cervical mucus; the egg survives 12 to 24 hours after release."
+  path="/glossary/fertile-window"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Fertile window", path: "/glossary/fertile-window" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Fertile window
+
+The **fertile window** is the span of days in a [menstrual cycle](/glossary/menstrual-cycle) during which intercourse can result in conception. It spans 6 days: the 5 days leading up to [ovulation](/glossary/ovulation), plus the day of ovulation itself. Outside of these 6 days, pregnancy is very unlikely in a single cycle.
+
+## Why it's 6 days
+
+The window length comes from two biological facts:
+
+- **Sperm survive up to 5 days** in fertile cervical mucus (the clear, stretchy, egg-white mucus produced under high estrogen near ovulation). In hostile cervical mucus, sperm survive only hours.
+- **The egg survives 12 to 24 hours** after release from the [ovarian follicle](/glossary/ovarian-follicle). If not fertilized within that window, it degrades.
+
+The combined window is from 5 days before ovulation through 1 day after, with conception probability peaking on the 2 to 3 days just before ovulation.
+
+## When the fertile window occurs
+
+The fertile window's timing depends on when ovulation occurs, which scales with [cycle length](/glossary/cycle-length):
+
+- 28-day cycle: ovulation around day 14; fertile window roughly days 9 to 14
+- 24-day cycle: ovulation around day 10; fertile window roughly days 5 to 10
+- 32-day cycle: ovulation around day 18; fertile window roughly days 13 to 18
+- 35-day cycle: ovulation around day 21; fertile window roughly days 16 to 21
+
+For users with regular cycles, calendar-based prediction works reasonably well. For irregular cycles or those wanting precision, direct ovulation tracking is more reliable.
+
+## How to predict the fertile window
+
+Several methods can predict or confirm the fertile window:
+
+- **Calendar method.** Estimates based on cycle length history. Lower accuracy, especially with irregular cycles. Margin of error 3 to 5 days. See [calendar method](/glossary/calendar-method).
+- **[Cervical mucus tracking](/glossary/cervical-mucus-tracking).** Egg-white consistency mucus signals the fertile window has opened. Reasonably reliable, requires daily observation.
+- **[Basal body temperature (BBT)](/glossary/basal-body-temperature).** Confirms ovulation retrospectively (temperature rises after ovulation). Useful for confirming the window has closed, not predicting it.
+- **[Ovulation predictor kits (OPKs)](/glossary/opk).** Detect the [LH surge](/glossary/lh-surge) roughly 24 to 36 hours before ovulation. Reliable for predicting the most fertile 1 to 2 days.
+- **[Sympto-thermal method](/glossary/sympto-thermal-method).** Combines mucus, BBT, and other signs. The most accurate of the natural methods.
+- **[Continuous fertility monitors](/glossary/continuous-fertility-monitor).** Wearables and devices that combine multiple signals.
+
+For trying to conceive, timing intercourse every 1 to 2 days during the window is the most reliable approach.
+
+## Fertile window and contraception
+
+For [fertility awareness method (FAM)](/glossary/fam) contraception, the fertile window is the window to either avoid intercourse or use a barrier method. The Pearl Index (efficacy) varies dramatically by method and adherence:
+
+- Perfect-use sympto-thermal: roughly 0.4% failure rate
+- Typical-use sympto-thermal: roughly 2% failure rate
+- Calendar-only methods: 5 to 12% failure rates
+- Standard Days Method: roughly 5% perfect use, 12% typical
+
+The accuracy depends heavily on cycle regularity and tracking consistency. Irregular cycles, perimenopause, postpartum, and the first months off hormonal birth control all reduce reliability.
+
+## Why the window is symmetric, not just pre-ovulatory
+
+The 5-day pre-ovulatory window is driven by sperm survival in fertile cervical mucus. Many users assume conception is most likely on ovulation day itself, but the 2 to 3 days immediately before ovulation actually show the highest pregnancy rates per intercourse. This is because:
+
+- The dominant follicle is producing high estrogen, optimizing cervical mucus
+- Sperm have time to reach the fallopian tube before the egg is released
+- The egg is fertilized within hours of release in those tube-positioned sperm
+
+The day after ovulation is only briefly fertile and conception rates fall sharply.
+
+## Fertile window outside the typical cycle
+
+The window does not apply cleanly in several scenarios:
+
+- **[Anovulatory cycles](/glossary/anovulatory-cycle).** No ovulation, no fertile window.
+- **[PCOS](/glossary/pcos).** Irregular ovulation makes window prediction unreliable.
+- **[Perimenopause](/glossary/perimenopause).** Cycles increasingly unpredictable.
+- **Hormonal birth control.** Most methods suppress ovulation; there is no real fertile window.
+- **Breastfeeding.** [Lactational amenorrhea](/glossary/lactational-amenorrhea) suppresses ovulation, but breakthrough ovulation is possible.
+
+## Fertile window and cycle syncing
+
+The fertile window overlaps with the [late follicular](/glossary/late-follicular-phase) and [ovulatory phases](/glossary/ovulatory-phase), the peak estrogen days. Many cycle syncing protocols recommend this window for higher-stakes social and cognitive work. Whether or not conception is a goal, the fertile window typically corresponds with peak energy and verbal fluency.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="fertile-window"
+  title="Fertile window"
+  toc={[
+    { id: "why-its-6-days", label: "Why 6 days" },
+    { id: "when-the-fertile-window-occurs", label: "When it occurs" },
+    { id: "how-to-predict-the-fertile-window", label: "How to predict it" },
+    { id: "fertile-window-and-contraception", label: "Contraception use" },
+    { id: "why-the-window-is-symmetric-not-just-pre-ovulatory", label: "Window asymmetry" },
+    { id: "fertile-window-outside-the-typical-cycle", label: "Outside typical cycle" },
+    { id: "fertile-window-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,124 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "LH (Luteinizing Hormone): the trigger for ovulation",
+  description:
+    "LH is the pituitary hormone whose mid-cycle surge triggers ovulation. Its role in the HPO axis, how it differs from FSH, and how OPKs detect the surge.",
+  alternates: { canonical: "/glossary/lh" },
+  openGraph: {
+    title: "LH (Luteinizing Hormone) | Lumen glossary",
+    description:
+      "How LH triggers ovulation, how it cycles, and how OPKs detect the mid-cycle surge.",
+    url: "/glossary/lh",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="LH (Luteinizing Hormone)"
+  description="Pituitary hormone that triggers ovulation when it surges mid-cycle. Acts on ovarian theca cells to drive androgen production and on the dominant follicle to release the egg. Detected by ovulation predictor kits."
+  path="/glossary/lh"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "LH", path: "/glossary/lh" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# LH (Luteinizing Hormone)
+
+**LH** is the second gonadotropin in the [HPO axis](/glossary/hpo-axis). Its defining feature is the **[LH surge](/glossary/lh-surge)**, a sudden 5 to 10x rise in LH that triggers [ovulation](/glossary/ovulation) roughly 24 to 36 hours later. Before the surge, LH plays a quieter supporting role alongside [FSH](/glossary/fsh): stimulating ovarian theca cells to produce androgens that get converted to [estrogen](/glossary/estrogen).
+
+## How LH cycles
+
+LH has the most dramatic single-day spike of any cycle hormone:
+
+- **Days 1 to 12 (menstrual + follicular).** Low baseline. Slow rise mid-follicular.
+- **Days 13 to 14 (late follicular).** LH surge. Levels jump 5 to 10x within roughly 24 hours.
+- **Day 14 to 15 (ovulation).** LH peaks, then drops sharply.
+- **Luteal phase.** Low baseline again. Suppressed by progesterone.
+
+The surge itself is brief. Total duration from start to peak to fall is about 48 hours. The OPK detection window is narrow, which is why daily testing matters when timing matters.
+
+## What triggers the LH surge
+
+The trigger is a feedback flip. Through most of the cycle, [estrogen](/glossary/estrogen) suppresses LH (negative feedback). But when estradiol crosses a threshold (around 200 pg/mL) and stays there for at least 48 hours, the feedback flips to positive: high estrogen now amplifies LH release instead of suppressing it.
+
+This positive feedback loop is the trigger that produces the surge. The dominant follicle has been pumping out estrogen for days; when it crosses the threshold, the pituitary responds with the LH spike that releases the egg.
+
+This is the only positive feedback loop in the female reproductive endocrine system. Everything else is negative feedback.
+
+## What LH does
+
+Functional roles:
+
+- **Stimulates theca cells.** In the follicle, theca cells produce androgens under LH stimulation. These androgens get converted to estrogen by granulosa cells under FSH stimulation.
+- **Triggers ovulation.** The surge causes the dominant follicle to rupture and release the egg.
+- **Forms the corpus luteum.** After ovulation, LH drives the ruptured follicle to transform into the [corpus luteum](/glossary/corpus-luteum), which produces progesterone.
+- **Maintains the corpus luteum (briefly).** LH supports corpus luteum function in early luteal phase before levels drop.
+
+## LH and ovulation predictor kits
+
+[OPKs](/glossary/opk) detect the LH surge in urine. The mechanics:
+
+- LH appears in urine 6 to 12 hours after it rises in blood.
+- A positive OPK indicates the surge has started.
+- Ovulation typically follows 12 to 36 hours after the first positive OPK.
+- The fertile window for that cycle is closing: maximum fertility is the day before and day of ovulation.
+
+Test twice daily (morning and afternoon) for highest catch rate. Once-daily testing misses about 15% of surges.
+
+OPKs measure LH but say nothing about whether ovulation actually occurred. A positive LH test followed by no progesterone rise indicates [LUF syndrome](/glossary/anovulatory-cycle) or other ovulation failure.
+
+## LH in PCOS
+
+[PCOS](/glossary/pcos) features chronically elevated LH alongside relatively low FSH, producing an LH-to-FSH ratio above 2:1. The high baseline LH drives excess androgen production from theca cells, contributing to the [androgen excess](/glossary/androgens-women) pattern. This is part of why standard OPKs are unreliable in PCOS: the baseline is already high enough to trigger false positives.
+
+## LH in perimenopause
+
+Like FSH, LH rises in [perimenopause](/glossary/perimenopause) as the ovaries become less responsive. Postmenopausal LH stays elevated for the same reason FSH does: no follicular estrogen feedback to suppress it.
+
+## LH and hormonal contraception
+
+Combined hormonal contraceptives suppress LH (and FSH), which is how they prevent ovulation. There is no LH surge on the pill, so OPKs are not informative.
+
+## Synthetic LH and trigger shots
+
+In IVF, **trigger shots** of hCG (which acts on LH receptors) or recombinant LH are used to mimic the natural LH surge and trigger final egg maturation before retrieval. The 36-hour window between trigger and retrieval is the same timing as the natural surge-to-ovulation interval.
+
+## Related reading
+
+- [LH surge](/glossary/lh-surge): the surge in detail
+- [FSH](/glossary/fsh): the partner gonadotropin
+- [Ovulation](/glossary/ovulation): what LH triggers
+- [HPO axis](/glossary/hpo-axis): the regulatory loop
+- [OPK](/glossary/opk): how to detect the surge
+
+</article>
+
+<GlossarySidebar
+  currentSlug="lh"
+  title="LH (Luteinizing Hormone)"
+  toc={[
+    { id: "how-lh-cycles", label: "How it cycles" },
+    { id: "what-triggers-the-lh-surge", label: "What triggers the surge" },
+    { id: "what-lh-does", label: "What it does" },
+    { id: "lh-and-ovulation-predictor-kits", label: "LH and OPKs" },
+    { id: "lh-in-pcos", label: "In PCOS" },
+    { id: "lh-in-perimenopause", label: "In perimenopause" },
+    { id: "lh-and-hormonal-contraception", label: "On contraception" },
+    { id: "synthetic-lh-and-trigger-shots", label: "Trigger shots" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,112 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Vaginal ring (NuvaRing, Annovera): mechanism, cycle effects, and cycle syncing",
+  description:
+    "The vaginal ring is a flexible ring inserted for 3 weeks per cycle that releases ethinyl estradiol and a progestin. Same hormonal effect as the combined pill with monthly dosing.",
+  alternates: { canonical: "/glossary/vaginal-ring" },
+  openGraph: {
+    title: "Vaginal ring | Lumen glossary",
+    description:
+      "How the contraceptive ring works, the cycle implications, and how it compares to the combined pill.",
+    url: "/glossary/vaginal-ring",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Vaginal ring"
+  description="Flexible vaginal ring releasing ethinyl estradiol and a progestin. Combined hormonal contraceptive with the same mechanism as the combined pill, delivered transvaginally."
+  path="/glossary/vaginal-ring"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Vaginal ring", path: "/glossary/vaginal-ring" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Vaginal ring (NuvaRing, Annovera)
+
+The **vaginal ring** is a flexible silicone or EVA copolymer ring about 5cm in diameter that is inserted into the vagina and releases synthetic estrogen and a progestin transvaginally. The two products in the US are NuvaRing (etonogestrel and ethinyl estradiol, used 3 weeks on and 1 week off, replaced monthly) and Annovera (segesterone acetate and ethinyl estradiol, reusable for 13 cycles).
+
+The ring is a [combined hormonal contraceptive](/glossary/combined-hormonal-contraceptive). Mechanism, efficacy, and cycle implications are essentially the same as the combined pill, with the difference being the delivery route.
+
+*This is informational, not medical advice. Contraceptive choice should be discussed with a qualified provider.*
+
+## How it works
+
+The ring releases steady levels of estrogen and progestin that are absorbed through the vaginal mucosa into the bloodstream. The contraceptive effect is identical to the combined pill:
+
+1. **[Ovulation](/glossary/ovulation) suppression** by HPO axis suppression and blunted [LH surge](/glossary/lh-surge).
+2. **Cervical mucus thickening.**
+3. **Endometrial thinning.**
+
+Typical-use efficacy is around 91%, perfect-use above 99%. Typical use slightly outperforms the pill on average, because the ring is harder to forget than a daily pill.
+
+## Cycle implications
+
+The ring suppresses the natural cycle. No follicular surge, no [LH surge](/glossary/lh-surge), no [ovulation](/glossary/ovulation), no corpus luteum, no natural [progesterone](/glossary/progesterone) rise. The bleed during the ring-free week is [withdrawal bleeding](/glossary/withdrawal-bleeding), not menstruation.
+
+[Cycle syncing](/glossary/cycle-syncing) by hormonal phase does not apply, the same as with the combined pill. The 28-day structural rotation can still be used as a productivity framework.
+
+## Common side effects
+
+The side effect profile mirrors the combined pill, with some differences attributable to the delivery route:
+
+- **Breakthrough bleeding** in the first 1 to 3 cycles.
+- **Vaginal discharge or irritation** (specific to the route).
+- **Headaches**, including new or worsened migraines.
+- **Breast tenderness.**
+- **Nausea** (often less than the pill because the hormone load skips first-pass hepatic metabolism).
+- **Mood changes** in a subset of users.
+- **Slight increase in blood clot risk**, same considerations as oral combined contraceptives.
+
+Some users prefer the ring to the pill because nausea is reduced and dosing is monthly, not daily. Some users dislike the ring because of vaginal sensation, discharge, or partner awareness during sex (the ring can stay in during sex but is sometimes felt).
+
+## When to consider
+
+- Reasons to choose a combined hormonal method (cycle predictability, [PMS](/glossary/pms) reduction, acne, contraception).
+- Difficulty with daily pill compliance, but uncomfortable with longer-acting methods.
+- Nausea on the combined pill.
+
+## When NOT to consider
+
+- Migraine with aura.
+- History of clots, stroke, heart attack.
+- Smoker over 35.
+- Uncontrolled high blood pressure.
+- Active estrogen-sensitive cancer.
+- Conditions like uterine prolapse or chronic vaginitis where ring retention or comfort is an issue.
+
+## Related reading
+
+- [Combined hormonal contraceptive](/glossary/combined-hormonal-contraceptive): the umbrella category
+- [Contraceptive patch](/glossary/contraceptive-patch): the transdermal CHC alternative
+- [Cycle syncing on birth control](/blog/cycle-syncing-on-birth-control): the full framework adaptation
+
+</article>
+
+<GlossarySidebar
+  currentSlug="vaginal-ring"
+  title="Vaginal ring (NuvaRing)"
+  toc={[
+    { id: "how-it-works", label: "How it works" },
+    { id: "cycle-implications", label: "Cycle implications" },
+    { id: "common-side-effects", label: "Common side effects" },
+    { id: "when-to-consider", label: "When to consider" },
+    { id: "when-not-to-consider", label: "When NOT to consider" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

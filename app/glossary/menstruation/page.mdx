@@ -1,0 +1,108 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Menstruation: what it is, what's normal, and when to flag it",
+  description:
+    "Menstruation is the shedding of the uterine lining when implantation does not occur. Lasts 3 to 7 days. Definition, what's normal, and when to talk to a clinician.",
+  alternates: { canonical: "/glossary/menstruation" },
+  openGraph: {
+    title: "Menstruation | Lumen glossary",
+    description:
+      "Definition, what counts as normal flow, and when bleeding patterns warrant attention.",
+    url: "/glossary/menstruation",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Menstruation"
+  description="The shedding of the uterine lining when implantation does not occur. Typically lasts 3 to 7 days."
+  path="/glossary/menstruation"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Menstruation", path: "/glossary/menstruation" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Menstruation
+
+**Menstruation** is the cyclical shedding of the [uterine lining (endometrium)](/glossary/endometrium) when implantation of a fertilized egg does not occur. It typically lasts 3 to 7 days and marks day 1 of the next [menstrual cycle](/glossary/menstrual-cycle). The bleeding consists of endometrial tissue, blood, and cervical mucus.
+
+## Why menstruation happens
+
+Through the cycle, the endometrium thickens in preparation for possible implantation. After [ovulation](/glossary/ovulation), the [corpus luteum](/glossary/corpus-luteum) produces [progesterone](/glossary/progesterone), which maintains the lining. If pregnancy does not occur, the corpus luteum breaks down, progesterone drops sharply, and the lining sheds. That shedding is menstruation, and it triggers the start of a new cycle.
+
+This is why menstruation is a consequence of an ovulatory cycle, not just a hormonal event in isolation. In [anovulatory cycles](/glossary/anovulatory-cycle), bleeding can still happen, but it is technically breakthrough bleeding rather than true menstruation.
+
+## What counts as normal
+
+Per ACOG, normal menstrual bleeding has these properties:
+
+- Duration: 3 to 7 days
+- Volume: roughly 30 to 80 mL total (about 2 to 5 tablespoons across the whole period)
+- Not consistently soaking through a pad or tampon every 1 to 2 hours
+- No need to double up on protection overnight as a routine
+- Cycle-to-cycle pattern that is recognizable
+
+The first day or two is usually heaviest, with bleeding tapering through the remaining days. Some [clots](/glossary/period-clots) are normal, especially on heavy days, as long as they stay smaller than a quarter.
+
+## Bleeding patterns worth flagging
+
+These patterns warrant a clinician conversation:
+
+- **[Menorrhagia](/glossary/menorrhagia).** Heavy bleeding (soaking through products every hour for several hours, large clots over a quarter in size, periods lasting over 7 days).
+- **[Hypomenorrhea](/glossary/hypomenorrhea).** Unusually light periods, especially if a sudden change.
+- **[Mid-cycle spotting](/glossary/mid-cycle-spotting).** Light bleeding between periods if frequent or heavy.
+- **Three or more missed periods** without pregnancy.
+- **Severe pain** that disrupts daily activity ([dysmenorrhea](/glossary/dysmenorrhea), possible [endometriosis](/glossary/endometriosis) or [adenomyosis](/glossary/adenomyosis)).
+
+## Menstruation vs withdrawal bleeding
+
+Many people on hormonal birth control still bleed monthly, but this is not true menstruation. The pill-week bleed is [withdrawal bleeding](/glossary/withdrawal-bleeding), triggered by the drop in synthetic hormones during the placebo week. The endometrium does not build up the same way it does in a natural cycle, which is why withdrawal bleeds are typically lighter and shorter.
+
+This distinction matters for cycle syncing: most hormonal contraceptives suppress [ovulation](/glossary/ovulation), so the four-phase model does not strictly apply even though monthly bleeding still occurs.
+
+## How menstruation feels
+
+Symptoms vary widely. Common ones:
+
+- Cramping ([dysmenorrhea](/glossary/dysmenorrhea)) from prostaglandin-driven uterine contractions
+- Lower back pain
+- Fatigue and lower energy
+- Headaches, occasionally [menstrual migraine](/glossary/menstrual-migraine) tied to the estrogen drop
+- Mood shifts, often a return to baseline after PMS in the late luteal phase
+- Looser stools or [cyclical IBS](/glossary/cyclical-ibs) flares from prostaglandin effects on the gut
+
+Many women find the late menstrual days (day 3 to 5) bring a noticeable energy lift as estrogen starts to climb again. This is the bridge into the [follicular phase](/glossary/follicular-phase).
+
+## Menstruation and cycle syncing
+
+The [menstrual phase](/glossary/menstrual-phase) is the rest-and-reflect window in most cycle syncing models. Energy is lowest in the first 1 to 2 days; light movement, gentler workouts, and lower-stim work fit this period. The [complete menstrual phase guide](/blog/menstrual-phase-complete-guide) covers what holds up under evidence and what to ignore in popular menstrual-phase advice.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="menstruation"
+  title="Menstruation"
+  toc={[
+    { id: "why-menstruation-happens", label: "Why it happens" },
+    { id: "what-counts-as-normal", label: "What's normal" },
+    { id: "bleeding-patterns-worth-flagging", label: "When to flag bleeding" },
+    { id: "menstruation-vs-withdrawal-bleeding", label: "Vs withdrawal bleeding" },
+    { id: "how-menstruation-feels", label: "How it feels" },
+    { id: "menstruation-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

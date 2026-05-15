@@ -1,0 +1,112 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Phase transition: the 1-2 day window between cycle phases",
+  description:
+    "A phase transition is the 1 to 2 day window between cycle phases. Symptoms are often most noticeable here because hormones change rapidly.",
+  alternates: { canonical: "/glossary/phase-transition" },
+  openGraph: {
+    title: "Phase transition | Lumen glossary",
+    description:
+      "Definition, the four main transitions in a cycle, and why symptoms often cluster at these boundaries.",
+    url: "/glossary/phase-transition",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Phase transition"
+  description="The 1 to 2 day window between adjacent cycle phases. Symptoms are often most noticeable here due to rapid hormone change."
+  path="/glossary/phase-transition"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Phase transition", path: "/glossary/phase-transition" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Phase transition
+
+A **phase transition** is the 1 to 2 day window between adjacent [cycle phases](/glossary/cycle-phase). Hormones do not flip on and off at fixed days; they shift through these transition windows, and symptoms often cluster here because the rate of change is the steepest. Recognizing transitions makes cycle awareness more useful than just labeling each day with a phase.
+
+## The four main transitions
+
+A typical 28-day cycle has four main transitions, one between each phase:
+
+**1. Menstrual to follicular (around day 4 to 6).** Bleeding tapers, [estrogen](/glossary/estrogen) starts to climb. Many women feel a noticeable "lift" here: energy returns, mood improves, skin clears. This is one of the most reliably positive transitions.
+
+**2. Follicular to ovulatory (around day 13 to 15).** Estrogen peaks and drops sharply; the [LH surge](/glossary/lh-surge) occurs; [ovulation](/glossary/ovulation) happens. The signs can include [mittelschmerz](/glossary/mittelschmerz), libido peak, cervical mucus changes, possible mid-cycle spotting. Some women feel sharper energy here; others feel a brief slump as estrogen drops post-ovulation.
+
+**3. Ovulatory to luteal (around day 16 to 18).** [Progesterone](/glossary/progesterone) climbs from the new [corpus luteum](/glossary/corpus-luteum). Energy shifts from expansive (peak follicular) to grounded (early luteal). [Basal body temperature](/glossary/basal-body-temperature) rises 0.5°F (0.3°C). Some women feel the slowing immediately; others notice it over a few days.
+
+**4. Luteal to menstrual (around day 26 to 1).** Progesterone and estrogen drop sharply; the corpus luteum dies; bleeding begins. The PMS window is the days leading into this transition. Symptoms peak in the final 24 to 48 hours; many women experience the worst mood, sleep, and physical symptoms here, often easing within hours of bleeding starting.
+
+## Why transitions are symptom-heavy
+
+The pattern shows up across multiple research literatures: the rate of hormonal change matters more than absolute levels. Sharp shifts in [progesterone](/glossary/progesterone) and [estrogen](/glossary/estrogen) drive most of:
+
+- [Menstrual migraine](/glossary/menstrual-migraine): triggered by the estrogen drop at the luteal-to-menstrual and ovulatory transitions.
+- [PMDD](/glossary/pmdd): driven by sensitivity to the luteal-to-menstrual hormone withdrawal.
+- [Cyclical insomnia](/glossary/cyclical-insomnia): worst at transitions, especially luteal-to-menstrual.
+- [Allopregnanolone](/glossary/allopregnanolone) withdrawal: GABA-A receptor changes during the luteal-to-menstrual transition contribute to anxiety and irritability.
+
+Steady high or low hormone levels are usually better tolerated than rapid change.
+
+## Individual variation
+
+The same transition can feel quite different across people and across cycles:
+
+- **Follicular onset.** Some women feel an obvious lift in days 4 to 5; others not until day 7 to 9.
+- **Ovulation.** Some women feel ovulation distinctly (mittelschmerz, energy peak, libido); others never notice it.
+- **Luteal onset.** The post-ovulation slowdown can feel sudden (a "switch") or gradual.
+- **PMS onset.** Some women have a 1-day late luteal symptom flare; others have a 7-day decline.
+
+Tracking your personal transition pattern across 3 to 6 cycles is more useful than memorizing standard calendar templates. Most [period trackers](/glossary/period-tracker) make this trivial once you log symptoms consistently.
+
+## Planning around transitions
+
+For [cycle syncing](/glossary/cycle-syncing), transitions are often the most useful days to plan deliberately around:
+
+- **Menstrual-to-follicular transition.** Use the energy return for restarting projects you slowed during PMS. Many women find day 4 to 5 the natural relaunch day.
+- **Follicular-to-ovulatory transition.** Schedule presentations, pitches, important conversations in this window when possible.
+- **Ovulatory-to-luteal transition.** Mark the shift from "build / open" mode to "execute / close" mode in your work plan.
+- **Luteal-to-menstrual transition.** This is the hardest one. Reduce variable demands, prioritize sleep, and plan for symptom management.
+
+## Transition awareness vs phase rigidity
+
+The four-phase model is a useful simplification, but real cycles don't have hard boundaries. Treating each phase as a fixed block with abrupt edges can produce frustration when day-by-day experience does not match the calendar.
+
+A more useful framing: track the transitions you can actually feel (often two or three of the four), build a personal map of when they happen for you, and use that map for planning rather than treating phase boundaries as rigid. The [cycle map](/glossary/cycle-map) is the standard visual for laying this out.
+
+## Edge cases
+
+- **Hormonal birth control.** Most methods flatten hormone fluctuation, so transitions are minimal or absent except during the placebo-week withdrawal. The four-phase model does not apply cleanly.
+- **[Anovulatory cycles](/glossary/anovulatory-cycle).** Without ovulation, the ovulatory and luteal transitions don't occur in the hormonal sense.
+- **[Perimenopause](/glossary/perimenopause).** Transitions become less predictable; some cycles still show the full pattern, others don't.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="phase-transition"
+  title="Phase transition"
+  toc={[
+    { id: "the-four-main-transitions", label: "The four transitions" },
+    { id: "why-transitions-are-symptom-heavy", label: "Why symptoms cluster" },
+    { id: "individual-variation", label: "Individual variation" },
+    { id: "planning-around-transitions", label: "Planning around them" },
+    { id: "transition-awareness-vs-phase-rigidity", label: "Awareness vs rigidity" },
+    { id: "edge-cases", label: "Edge cases" },
+  ]}
+/>
+
+</div>

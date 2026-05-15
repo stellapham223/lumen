@@ -1,0 +1,122 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Omega-3 for PMS and period pain: evidence, dosing, and quality",
+  description:
+    "Omega-3 fatty acids (EPA + DHA) have moderate evidence for reducing inflammatory PMS symptoms and period pain. Effective dose 1 to 2g daily combined. What to look for in a product.",
+  alternates: { canonical: "/glossary/omega-3-pms" },
+  openGraph: {
+    title: "Omega-3 for PMS | Lumen glossary",
+    description:
+      "What the research says on fish oil for PMS, dosing, and how to choose a quality product.",
+    url: "/glossary/omega-3-pms",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Omega-3 (for PMS, inflammation)"
+  description="Long-chain marine fatty acids EPA and DHA. Moderate evidence for reducing PMS mood symptoms and dysmenorrhea. Effective dose 1 to 2g combined daily."
+  path="/glossary/omega-3-pms"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Omega-3 for PMS", path: "/glossary/omega-3-pms" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Omega-3 (for PMS, inflammation)
+
+**Omega-3 fatty acids** are essential fats with strong anti-inflammatory and neurotransmitter effects. The two forms that matter for [PMS](/glossary/pms) and period symptoms are **EPA (eicosapentaenoic acid)** and **DHA (docosahexaenoic acid)**, both found in fatty fish and fish oil. The short-chain plant omega-3 (ALA, from flaxseed) converts to EPA/DHA inefficiently in most people, so plant sources are less reliable.
+
+*Consult a provider before starting supplements, especially if pregnant, breastfeeding, or on medications.*
+
+## What the evidence says
+
+The evidence base for omega-3 in PMS and [dysmenorrhea](/glossary/dysmenorrhea) is moderate and growing:
+
+- **PMS symptoms.** Several randomized trials report reductions in mood symptoms (low mood, irritability) and physical symptoms (headache, breast tenderness, bloating) at 1 to 2g daily EPA/DHA combined.
+- **Dysmenorrhea (period pain).** A 2020 meta-analysis found omega-3 reduces menstrual pain compared to placebo, with effect sizes in the small to moderate range. Mechanism is reduced prostaglandin production.
+- **Depression (broader).** A 2019 meta-analysis of EPA-dominant supplementation found small to moderate effect for major depression, particularly when EPA was at least 60% of the EPA+DHA dose.
+- **Cycle-linked mood.** Less specific trial evidence but reasonable extrapolation from the depression and PMS work.
+
+The effect is real but moderate. Omega-3 is not a knockout intervention; it is a foundational anti-inflammatory supplement that supports the system.
+
+## Why it might work
+
+Two main mechanisms:
+
+1. **Reduced prostaglandin production.** Prostaglandins drive uterine cramping in [menstruation](/glossary/menstruation), and inflammatory eicosanoids contribute to several PMS symptoms. Higher omega-3 intake shifts the substrate balance toward less inflammatory eicosanoids.
+2. **Membrane and neurotransmitter effects.** DHA is structurally important in neural membranes. EPA has anti-inflammatory effects on the brain that may underlie its mood benefits.
+
+Omega-3 also plays a role in [BDNF](/glossary/bdnf) signaling and overall neuroinflammation regulation.
+
+## Dosing
+
+Typical effective range for PMS and dysmenorrhea: **1 to 2g combined EPA + DHA daily**.
+
+A few things to know:
+
+1. **Check the EPA + DHA total, not just total fish oil.** A 1000mg fish oil capsule might contain only 300mg of EPA + DHA. You need to read the label.
+2. **EPA-dominant formulas** appear slightly more effective for mood. Look for at least 60% EPA in the combined dose for mood-focused use.
+3. **Continuous daily dosing** is the standard. Effects build over weeks; do not expect immediate results.
+4. **Take with food** that contains some fat, for absorption.
+
+## Quality and product selection
+
+The supplement market is uneven on omega-3 quality. Look for:
+
+- **Third-party tested** for purity (heavy metals, PCBs).
+- **Lot-specific oxidation testing** (TOTOX value below 10 is the typical clean threshold).
+- **Triglyceride or re-esterified triglyceride form** rather than ethyl esters for slightly better absorption.
+- **Fresh, with a recent manufacturing date.** Rancid fish oil tastes and smells bad, and may worsen rather than help.
+
+Algae-based omega-3 is a workable vegan option for DHA; high-EPA algae products are also now available.
+
+## Common side effects and cautions
+
+- **Fishy burps, especially with cheaper products.** Storing in the freezer or choosing enteric-coated capsules helps.
+- **Mild GI upset.**
+- **Increased bleeding risk** at high doses, particularly relevant for users on blood thinners or with bleeding disorders. Typical 1 to 2g doses are not usually a problem; doses above 3g warrant clinical context.
+- **Allergy.** Avoid if allergic to fish or shellfish; use algae-based instead.
+- **Fish-source mercury concerns** are minimized in third-party tested supplements, which screen for heavy metals.
+
+## Where it fits
+
+Omega-3 is a strong third option after sleep, exercise, and the higher-evidence supplements ([magnesium](/glossary/magnesium-pms), [vitamin B6](/glossary/vitamin-b6-pms)). It pairs particularly well for users whose PMS includes inflammatory symptoms (cramps, headaches, breast tenderness) and for users with cycle-linked mood symptoms.
+
+It is also one of the few supplements with broader health benefits (cardiovascular, neurocognitive) beyond the cycle context, which makes the cost-benefit favorable.
+
+## Related reading
+
+- [Magnesium for PMS](/glossary/magnesium-pms): the most-supported single nutrient for PMS
+- [Vitamin B6 for PMS](/glossary/vitamin-b6-pms): often paired with omega-3
+- [Dysmenorrhea](/glossary/dysmenorrhea): the period pain that omega-3 has trial evidence against
+- [Inflammation cycle](/glossary/inflammation-cycle): the underlying axis
+
+</article>
+
+<GlossarySidebar
+  currentSlug="omega-3-pms"
+  title="Omega-3 (for PMS)"
+  toc={[
+    { id: "what-the-evidence-says", label: "What the evidence says" },
+    { id: "why-it-might-work", label: "Why it might work" },
+    { id: "dosing", label: "Dosing" },
+    { id: "quality-and-product-selection", label: "Quality and product selection" },
+    { id: "common-side-effects-and-cautions", label: "Side effects and cautions" },
+    { id: "where-it-fits", label: "Where it fits" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,129 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Testosterone in women: levels, peak, libido, and the ovulatory bump",
+  description:
+    "Women produce testosterone at roughly 10% of male levels. It peaks around ovulation, affects libido, assertiveness, and muscle. How it cycles and why it matters for cycle syncing.",
+  alternates: { canonical: "/glossary/testosterone-in-women" },
+  openGraph: {
+    title: "Testosterone (in women) | Lumen glossary",
+    description:
+      "How testosterone cycles in women, what it does, and why it matters around ovulation.",
+    url: "/glossary/testosterone-in-women",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Testosterone (in women)"
+  description="Androgen present in women at roughly 10% of male levels. Produced by the ovaries and adrenal glands. Peaks around ovulation. Affects libido, assertiveness, muscle protein synthesis, and bone density."
+  path="/glossary/testosterone-in-women"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Testosterone (in women)", path: "/glossary/testosterone-in-women" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Testosterone (in women)
+
+**Testosterone** is usually framed as the male sex hormone, but women produce it too, at roughly 10% of male levels. It is one of several [androgens](/glossary/androgens-women) in the female body, made by the ovaries and adrenal glands. It affects libido, assertiveness, muscle protein synthesis, bone density, and energy. It also cycles, with a modest peak around [ovulation](/glossary/ovulation) that lines up with the libido bump many women report mid-cycle.
+
+*This is informational, not medical advice. Talk to your provider if you have symptoms of androgen excess (cystic acne, hair loss, unwanted hair growth) or androgen deficiency (persistent low libido, fatigue, loss of muscle).*
+
+## How testosterone cycles in women
+
+The cyclic pattern is real but smaller in amplitude than [estrogen](/glossary/estrogen) or [progesterone](/glossary/progesterone). The rough shape:
+
+- **Early follicular:** baseline. Low.
+- **Late follicular:** gradual rise, driven partly by [LH](/glossary/lh) stimulating ovarian theca cells.
+- **Ovulatory (days 13 to 15):** small peak. Coincides with the libido bump linked to fertile-window biology.
+- **Luteal phase:** returns to near baseline.
+
+The peak is modest, often 20% to 30% above baseline. It is not a dramatic swing like estrogen, but it is consistent enough to show up in pooled cycle data.
+
+## What testosterone does in women
+
+The relevant effects in normal physiological ranges:
+
+- **Libido.** Testosterone is the dominant driver of sexual desire in women, more than estrogen. The mid-cycle libido bump is partly testosterone, partly estrogen, partly LH.
+- **Assertiveness and risk tolerance.** Research links higher testosterone to more direct communication style and willingness to negotiate. The effect is modest at population level.
+- **Muscle protein synthesis.** Supports strength gains and recovery. One reason the late follicular and ovulatory phases are often recommended for harder training in [cycle syncing](/glossary/cycle-syncing).
+- **Bone density.** Contributes alongside estrogen. The post-menopausal drop in both is a major driver of osteoporosis risk.
+- **Mood and energy.** Low testosterone is associated with persistent low energy and flat mood in some women, though the evidence base here is weaker than for libido.
+
+## Testosterone vs DHEA vs androgens
+
+The androgen system in women has several players:
+
+- **Testosterone.** The active androgen. Most measured in clinical labs.
+- **[DHEA](/glossary/dhea).** Adrenal precursor that the body converts to testosterone and other steroids.
+- **Androstenedione.** Another precursor, made by both ovary and adrenal.
+- **DHT.** A more potent metabolite of testosterone, relevant for hair follicles and skin.
+
+When clinicians talk about "[androgens in women](/glossary/androgens-women)," they mean the whole family. [SHBG](/glossary/shbg) binds testosterone in circulation; only the free fraction is bioactive.
+
+## Conditions involving testosterone
+
+The clinically relevant patterns:
+
+- **[PCOS](/glossary/pcos).** Elevated androgens are a core diagnostic feature. Drives acne, hirsutism, and cycle irregularity. [Insulin](/glossary/insulin-cycle) resistance amplifies androgen production.
+- **Adrenal disorders.** Late-onset congenital adrenal hyperplasia can elevate androgens.
+- **Androgen-secreting tumors.** Rare but important to rule out for rapid-onset virilization.
+- **Low testosterone.** Less commonly diagnosed in women but linked to persistent low libido, especially after oophorectomy or with chronic [combined hormonal contraceptive](/glossary/combined-hormonal-contraceptive) use (which raises SHBG and lowers free testosterone).
+
+## Testosterone and cycle syncing
+
+The practical translation for cycle syncing:
+
+- **Late follicular and ovulatory phases** are when testosterone (and estrogen) are highest. This is the recommended window for strength training, social risk-taking, negotiation, and pitch meetings.
+- **Luteal phase** has lower testosterone alongside high progesterone. Strength can still be built, but the perceived effort tends to be higher.
+- **Menstrual phase** has the lowest hormonal profile across the board.
+
+The individual variation is large. The effect sizes at population level are modest. Test for yourself before locking in a rigid schedule.
+
+## Testing testosterone in women
+
+If symptoms suggest excess or deficiency, useful labs include:
+
+- **Total testosterone.** The standard measurement. Reference ranges vary by lab.
+- **Free testosterone.** The bioactive fraction. Better correlated with symptoms than total.
+- **SHBG.** Determines how much testosterone is bound versus free.
+- **DHEA-S.** Indicates adrenal contribution to the androgen pool.
+
+Timing matters less than for estrogen and progesterone, since the cyclic variation is smaller. Morning collection is preferred because levels are highest then.
+
+## Related reading
+
+- [Androgens in women](/glossary/androgens-women): the full family
+- [DHEA](/glossary/dhea): the adrenal precursor
+- [SHBG](/glossary/shbg): why "total" and "free" testosterone differ
+- [PCOS](/glossary/pcos): the condition with elevated androgens
+- [Follicular phase complete guide](/blog/follicular-phase-complete-guide): training in the high-testosterone window
+
+</article>
+
+<GlossarySidebar
+  currentSlug="testosterone-in-women"
+  title="Testosterone (in women)"
+  toc={[
+    { id: "how-testosterone-cycles-in-women", label: "How it cycles" },
+    { id: "what-testosterone-does-in-women", label: "What it does" },
+    { id: "testosterone-vs-dhea-vs-androgens", label: "vs DHEA and androgens" },
+    { id: "conditions-involving-testosterone", label: "Conditions" },
+    { id: "testosterone-and-cycle-syncing", label: "Cycle syncing context" },
+    { id: "testing-testosterone-in-women", label: "Testing" },
+  ]}
+/>
+
+</div>

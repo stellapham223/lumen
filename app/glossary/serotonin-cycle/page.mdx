@@ -1,0 +1,118 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Serotonin across the menstrual cycle: late-luteal drop and PMS mood",
+  description:
+    "Serotonin is the mood and sleep neurotransmitter. Levels drop in late luteal as estrogen withdraws, which is a leading mechanism for premenstrual mood symptoms and PMDD.",
+  alternates: { canonical: "/glossary/serotonin-cycle" },
+  openGraph: {
+    title: "Serotonin (cycle modulation) | Lumen glossary",
+    description:
+      "How serotonin cycles with estrogen, why it drops in late luteal, and what that means for PMS and PMDD.",
+    url: "/glossary/serotonin-cycle",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Serotonin (cycle modulation)"
+  description="Mood and sleep neurotransmitter. Estrogen supports serotonin synthesis and receptor sensitivity. Levels drop in late luteal, underlying many PMS and PMDD mood symptoms."
+  path="/glossary/serotonin-cycle"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Serotonin (cycle modulation)", path: "/glossary/serotonin-cycle" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Serotonin (cycle modulation)
+
+**Serotonin** is the neurotransmitter most associated with mood stability, sleep regulation, and appetite control. Roughly 90 percent of the body's serotonin is in the gut, but the small fraction in the brain does most of the work people associate with the chemical: mood floor, emotional reactivity, satiety, sleep onset. Across the [menstrual cycle](/glossary/menstrual-cycle), [estrogen](/glossary/estrogen) supports serotonin synthesis and receptor sensitivity. The sharp estrogen drop in late luteal pulls serotonin down with it, which is one of the leading proposed mechanisms for the mood symptoms of [PMS](/glossary/pms) and [PMDD](/glossary/pmdd).
+
+## How serotonin works
+
+Serotonin (5-HT, 5-hydroxytryptamine) is synthesized from the amino acid tryptophan. In the brain, it is produced mainly in the raphe nuclei and projects broadly. Functionally, it supports:
+
+- **Mood floor.** Higher serotonin tone is associated with emotional resilience and a higher tolerance for frustration.
+- **Sleep regulation.** Serotonin is a precursor to melatonin, the sleep-onset hormone.
+- **Appetite and satiety.** Serotonin signaling suppresses appetite, particularly for carbohydrates.
+- **Emotional reactivity.** Low serotonin tone is associated with stronger negative responses to ambiguous or stressful cues.
+
+Most antidepressants (SSRIs, SNRIs) work by increasing serotonin availability at the synapse.
+
+## How estrogen modulates serotonin
+
+Estradiol affects the serotonin system at multiple levels. It increases the activity of tryptophan hydroxylase (the enzyme that makes serotonin), upregulates serotonin receptor expression, and slows reuptake. The result: rising estrogen tends to raise the brain's serotonin tone; falling estrogen lowers it.
+
+The cyclic pattern, roughly:
+
+- **Early follicular (days 1 to 5):** estrogen low, serotonin baseline.
+- **Mid-to-late follicular (days 6 to 13):** estrogen rising, serotonin tone climbing.
+- **Ovulatory (days 14 to 16):** estrogen peaks, serotonin tone near peak.
+- **Early luteal (days 17 to 22):** secondary estrogen rise, serotonin moderately elevated; [progesterone](/glossary/progesterone) effects also start to matter.
+- **Late luteal (days 23 to 28):** estrogen drops sharply, serotonin tone falls. Mood symptoms emerge.
+
+The drop is the part that matters clinically. Two weeks of relatively higher serotonin tone, then a withdrawal in the days before menstruation. The brain that adapted to the higher level experiences the new lower level as a deficit.
+
+## Why this matters for PMS and PMDD
+
+PMDD, in particular, responds well to SSRIs. The standard prescription approach is luteal-only dosing: take the SSRI from roughly day 14 to the start of menstruation, then stop. This works on a timescale (days, not weeks) that argues against a slow neuroplastic effect and supports the model that PMDD involves an acute serotonin-system response to the estrogen drop.
+
+Not everyone with [premenstrual irritability](/glossary/premenstrual-irritability) or [cyclical depression](/glossary/cyclical-depression) has full PMDD. The serotonin-withdrawal mechanism likely operates on a spectrum: some users feel a mild dip, others experience severe disruption. Genetic variation in serotonin receptor and transporter genes likely explains part of the individual difference.
+
+## Practical levers
+
+The reliable ways to support serotonin tone, in rough order of evidence:
+
+- **Aerobic exercise.** Acute mood lift; chronic effects on baseline serotonin tone.
+- **Sunlight exposure.** Morning bright light supports serotonin synthesis.
+- **Sleep.** Sleep loss reduces serotonin function. The late-luteal sleep disruption can compound the mood drop.
+- **Tryptophan-containing foods.** Protein, dairy, eggs, seeds. Effect on brain serotonin from diet alone is modest.
+- **SSRIs.** Most direct intervention. Luteal-phase dosing is a validated approach for PMDD.
+- **CBT and behavioral approaches.** Evidence for PMS-specific CBT.
+
+[Vitamin B6](/glossary/vitamin-b6-pms) is a cofactor in serotonin synthesis and has some evidence for PMS symptom reduction at moderate doses.
+
+## Serotonin and sleep onset
+
+Because serotonin is the precursor to melatonin, the late-luteal serotonin drop also affects sleep onset, contributing to [cyclical insomnia](/glossary/cyclical-insomnia). This compounds the [sleep architecture](/glossary/sleep-architecture-cycle) shifts already happening from progesterone withdrawal.
+
+## What this is not
+
+Serotonin is not "the happiness molecule". The serotonin-mood model is real but partial. Dopamine, GABA, allopregnanolone, BDNF, cortisol, and inflammation all matter for mood, and cycle effects play out across all of them. The [hormone-cognition link](/glossary/hormone-cognition) integrates these into a fuller picture.
+
+The mechanism does not mean every premenstrual mood shift requires medical treatment. Most users experience modest changes that resolve with menstruation. Severe, life-disrupting symptoms (the PMDD threshold) warrant a clinical conversation.
+
+## Related reading
+
+- [Estrogen](/glossary/estrogen): the upstream hormone that supports serotonin tone
+- [Allopregnanolone](/glossary/allopregnanolone): the GABA-side mechanism for PMS mood
+- [PMDD](/glossary/pmdd): when the drop is severe enough to disable
+- [Late luteal phase](/glossary/late-luteal-phase): when the drop happens
+
+</article>
+
+<GlossarySidebar
+  currentSlug="serotonin-cycle"
+  title="Serotonin (cycle modulation)"
+  toc={[
+    { id: "how-serotonin-works", label: "How serotonin works" },
+    { id: "how-estrogen-modulates-serotonin", label: "Estrogen modulation" },
+    { id: "why-this-matters-for-pms-and-pmdd", label: "PMS and PMDD" },
+    { id: "practical-levers", label: "Practical levers" },
+    { id: "serotonin-and-sleep-onset", label: "Sleep onset" },
+    { id: "what-this-is-not", label: "What this is not" },
+  ]}
+/>
+
+</div>

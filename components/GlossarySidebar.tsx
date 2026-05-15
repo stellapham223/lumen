@@ -32,7 +32,7 @@ export function GlossarySidebar({ currentSlug, title, toc }: Props) {
   const path = `/glossary/${currentSlug}`;
 
   return (
-    <aside className="lg:sticky lg:top-8 lg:self-start lg:max-h-[calc(100vh-4rem)] lg:overflow-y-auto">
+    <aside className="lg:sticky lg:top-20 lg:self-start lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto">
       {toc.length > 0 ? (
         <section className="mb-8">
           <p className="eyebrow text-[color:var(--color-on-surface-variant)] mb-3">

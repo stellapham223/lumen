@@ -1,0 +1,120 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Calendar method (Rhythm Method): the least reliable FAM variant",
+  description:
+    "Calendar method predicts the fertile window from cycle history alone. Originally called the Rhythm Method. Typical-use failure 15 to 24%. Why it is the lowest-efficacy FAM variant and when not to rely on it.",
+  alternates: { canonical: "/glossary/calendar-method" },
+  openGraph: {
+    title: "Calendar method | Lumen glossary",
+    description:
+      "Why calendar-only FAM has the lowest efficacy and when it can still serve.",
+    url: "/glossary/calendar-method",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Calendar method"
+  description="The original calendar-only Fertility Awareness Method, also called the Rhythm Method, that predicts the fertile window from cycle length history alone. Typical-use failure rate 15 to 24% per year, the lowest-efficacy FAM variant."
+  path="/glossary/calendar-method"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Calendar method", path: "/glossary/calendar-method" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Calendar method
+
+The **calendar method** is the original calendar-only [Fertility Awareness Method (FAM)](/glossary/fam) variant, also known as the **Rhythm Method**. Users predict the [fertile window](/glossary/fertile-window) from cycle length history alone, no [basal body temperature](/glossary/basal-body-temperature), no [cervical mucus](/glossary/cervical-mucus-tracking), no [LH testing](/glossary/opk). It is the lowest-efficacy FAM variant in current use.
+
+*This is informational, not medical advice. Effective contraception requires consistent use; talk to a provider before relying on any FAM method.*
+
+## How the calculation works
+
+The classical Knaus-Ogino rules, dating to the 1930s:
+
+1. Track cycle lengths for at least 6 (ideally 12) cycles
+2. Find the **shortest** cycle and subtract 18 = first fertile day
+3. Find the **longest** cycle and subtract 11 = last fertile day
+4. Avoid intercourse (or use a barrier) on every cycle day between those two dates
+
+For a user with cycles ranging 26 to 30 days, that gives a fertile window of day 8 (26-18) to day 19 (30-11), 12 days of avoidance per cycle.
+
+## Why the efficacy is low
+
+The calendar method has well-documented weaknesses:
+
+- **It cannot detect a cycle that is unusually short or long for that user.** A user with normally 28-day cycles whose cycle suddenly shifts to 24 or 32 days will have a misplaced fertile window.
+- **It cannot detect [anovulatory cycles](/glossary/anovulatory-cycle).** Without ovulation, the fertile window does not exist, but the method still excludes the calendar days as if it did.
+- **Stress, illness, travel, and life events** shift ovulation forward or backward, the method does not adapt in real time.
+- **Sperm survival of up to 5 days** means even a small miscalculation can result in pregnancy.
+
+Studies report typical-use failure rates of 15 to 24% per year. Perfect use is rarely studied separately because the method's structure does not benefit much from "perfect" calendar adherence, the problem is the model, not the user behavior.
+
+## When the calendar method is still used
+
+Despite its low efficacy, the calendar method remains in use because:
+
+- It requires no equipment, no training, no daily measurements
+- It costs nothing
+- It is the only method available in some global health contexts
+- Some couples use it as a rough planning tool combined with backup barrier methods
+
+In high-resource contexts, it is rarely a first-line recommendation. Users seeking a non-hormonal natural method are typically directed to [Standard Days](/glossary/standard-days-method) or [sympto-thermal method](/glossary/sympto-thermal-method) instead.
+
+## Calendar method vs Standard Days
+
+Both rely on the calendar alone, but they differ:
+
+- **Calendar method** calculates a personalized window from each user's cycle history. More tailored, but vulnerable to month-to-month variability.
+- **[Standard Days Method](/glossary/standard-days-method)** uses fixed days 8 to 19 for all users with consistent 26 to 32 day cycles. Less tailored, but more robust to small variability.
+
+Head-to-head studies favor Standard Days for users in its eligibility window. Calendar method has a broader applicability range (it can be applied to any cycle pattern) but pays for that flexibility with lower efficacy.
+
+## When not to rely on it
+
+The calendar method is a poor fit when:
+
+- Pregnancy must be avoided strongly. Use a long-acting reversible contraceptive instead.
+- Cycles are irregular or variable. [PCOS](/glossary/pcos), [perimenopause](/glossary/perimenopause), post-pill recovery, postpartum, all break the assumption that past cycles predict future ones.
+- The user wants to relax during the fertile window without a backup. The calendar's wide error margin makes this risky.
+
+## Calendar prediction in cycle syncing apps
+
+Most period tracker apps and [cycle syncing](/glossary/cycle-syncing) apps use a refined version of the calendar method to predict the next [ovulation](/glossary/ovulation) date for non-contraceptive purposes (scheduling, planning, awareness). For cycle syncing's planning lift, calendar-based prediction is usually accurate enough, off by a couple of days at worst.
+
+For contraception, calendar prediction alone is not sufficient. The [Lumen phase calculator](/plan) uses calendar logic and frames its output explicitly for scheduling, not for contraception decisions.
+
+## When calendar prediction is acceptable
+
+If the goal is general cycle awareness, planning workouts, anticipating PMS, scheduling demanding work, calendar prediction with a tracker like the Lumen calculator or any period app works fine. The cost of being a day or two off is low. See [cycle syncing schedule template](/blog/cycle-syncing-schedule-template) for a planning structure that tolerates this margin.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="calendar-method"
+  title="Calendar method"
+  toc={[
+    { id: "how-the-calculation-works", label: "How the calculation works" },
+    { id: "why-the-efficacy-is-low", label: "Why efficacy is low" },
+    { id: "when-the-calendar-method-is-still-used", label: "When it is still used" },
+    { id: "calendar-method-vs-standard-days", label: "vs Standard Days" },
+    { id: "when-not-to-rely-on-it", label: "When not to rely on it" },
+    { id: "calendar-prediction-in-cycle-syncing-apps", label: "Use in cycle syncing apps" },
+    { id: "when-calendar-prediction-is-acceptable", label: "When it is acceptable" },
+  ]}
+/>
+
+</div>

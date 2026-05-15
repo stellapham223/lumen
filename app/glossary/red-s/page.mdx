@@ -1,0 +1,135 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Female athlete triad / RED-S: low energy availability and cycle loss",
+  description:
+    "RED-S (Relative Energy Deficiency in Sport) is a syndrome of low energy availability, menstrual dysfunction, and low bone density. The successor to the female athlete triad with broader system impact.",
+  alternates: { canonical: "/glossary/red-s" },
+  openGraph: {
+    title: "RED-S | Lumen glossary",
+    description:
+      "Definition, diagnostic features, and the practical implications for athletes and active women.",
+    url: "/glossary/red-s",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Female athlete triad / RED-S"
+  description="Relative Energy Deficiency in Sport (RED-S) is a syndrome of low energy availability, menstrual dysfunction, and impaired bone density. The IOC's broader successor to the female athlete triad."
+  path="/glossary/red-s"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "RED-S", path: "/glossary/red-s" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Female athlete triad / RED-S
+
+**The female athlete triad** is the classic clinical cluster of low energy availability, menstrual dysfunction, and low bone mineral density, recognized since the early 1990s. The International Olympic Committee broadened the framework in 2014 to **Relative Energy Deficiency in Sport (RED-S)**, which captures the same core problem but extends impact to cardiovascular, metabolic, immune, gastrointestinal, hematologic, and psychological systems, and applies to athletes of any sex. The triad sits inside RED-S as the female reproductive presentation.
+
+*This is informational, not medical advice. RED-S evaluation often requires coordinated care across sports medicine, endocrinology, nutrition, and mental health.*
+
+## The core mechanism
+
+The dominant variable is **energy availability**: dietary energy minus exercise energy expenditure, normalized to fat-free mass. When energy availability drops below a critical threshold (commonly cited at roughly 30 kcal/kg fat-free mass/day), the body downregulates "non-essential" systems to preserve survival functions.
+
+Reproduction is one of the first systems suppressed. The hypothalamus reduces gonadotropin pulse frequency, [FSH](/glossary/fsh) and [LH](/glossary/lh) signaling weakens, ovulation becomes erratic, and periods can stop entirely. This is [hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea) in athletic context.
+
+Bone is also affected. Low [estrogen](/glossary/estrogen) plus inadequate intake produces a negative bone remodeling balance, raising risk for stress fractures and long-term low bone density.
+
+## Diagnostic features
+
+There is no single diagnostic test. Clinicians look for:
+
+- **Low energy availability,** assessed by intake records, training load, body composition trajectory, and clinical signs.
+- **Menstrual dysfunction.** Cycles longer than 35 days, [anovulatory cycles](/glossary/anovulatory-cycle), or full amenorrhea.
+- **Bone health changes.** Stress fractures, low bone mineral density on DXA scan.
+- **Systemic markers** in RED-S: low resting heart rate, low thyroid hormones, low cortisol or disrupted cortisol rhythm, impaired immune function, gastrointestinal symptoms, depression, anxiety.
+
+The IOC's clinical assessment tool (CAT2) stratifies RED-S severity to guide return-to-training decisions.
+
+## Common symptoms
+
+- **Cycle changes** (long cycles, missed periods, full amenorrhea).
+- **Recurrent stress fractures or shin pain.**
+- **Persistent fatigue** despite adequate sleep.
+- **Performance plateau or decline** despite consistent training.
+- **Cold intolerance.**
+- **Hair changes, brittle nails.**
+- **Low libido.**
+- **Mood symptoms,** including anxiety, low mood, and food preoccupation.
+- **Frequent illness** from immune suppression.
+- **Gastrointestinal symptoms.**
+
+A user can present with several of these without meeting full triad criteria; RED-S is a spectrum, not a binary diagnosis.
+
+## Cycle syncing with RED-S
+
+The four-phase model assumes regular ovulatory cycles. In RED-S, the cycle is often suppressed entirely or fragmented.
+
+Practical adaptations:
+
+- **Cycle syncing is not the priority.** Recovery of energy availability is. Doing harder workouts in the supposed "[follicular phase](/glossary/follicular-phase)" is the opposite of what RED-S needs.
+- **Treat increased intake as training.** Recovery from RED-S requires sustained positive energy balance; this is not optional.
+- **Reduce training volume.** Many cases require substantial reduction, sometimes a temporary stop on the highest-impact modalities.
+- **Track recovery markers.** Body weight trend, resting heart rate, [HRV](/glossary/hrv-cycle), sleep, libido, and cycle return are the relevant data.
+- **The [cycle syncing for athletes](/glossary/cycle-syncing-athletes) guide** covers periodization once cycles return.
+
+## Treatment angles
+
+RED-S recovery typically involves:
+
+- **Increased energy intake.** Often by several hundred kcal/day above prior baseline.
+- **Reduced training load.** Volume reduction first, intensity reduction second.
+- **Nutrition counseling,** sometimes with a sports dietitian.
+- **Psychological care,** particularly when restrictive eating is involved.
+- **Bone health support.** Calcium, vitamin D, and load management to support remodeling.
+- **Medical monitoring** of thyroid, lipids, and other systemic markers.
+- **MHT or low-dose contraceptives** are sometimes considered for bone protection, but the first-line target is restored endogenous cycling, not pharmaceutical bleeding.
+
+All of these should be coordinated with a provider familiar with sports medicine and eating disorder recovery.
+
+## RED-S and the menstrual cycle
+
+A few practical implications:
+
+- Cycle loss in athletes is not "normal" or "the price of being fit." It is a warning signal.
+- Returned cycles are a sign of restored energy balance, which protects long-term bone and cardiovascular health.
+- Pill-induced withdrawal bleeds are not the same as recovered endogenous cycles and do not fully protect bone.
+- Recovery timelines often run 6 to 18 months for cycles and longer for bone density.
+
+## Related reading
+
+- [Hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea): the reproductive mechanism inside RED-S
+- [Functional hypothalamic amenorrhea (FHA)](/glossary/fha): the same condition, functional framing
+- [Cycle syncing for athletes](/glossary/cycle-syncing-athletes): periodization once cycles return
+- [Stacy Sims](/glossary/stacy-sims): a major researcher and advocate in this area
+
+</article>
+
+<GlossarySidebar
+  currentSlug="red-s"
+  title="Female athlete triad / RED-S"
+  toc={[
+    { id: "the-core-mechanism", label: "The core mechanism" },
+    { id: "diagnostic-features", label: "Diagnostic features" },
+    { id: "common-symptoms", label: "Common symptoms" },
+    { id: "cycle-syncing-with-red-s", label: "Cycle syncing with RED-S" },
+    { id: "treatment-angles", label: "Treatment angles" },
+    { id: "red-s-and-the-menstrual-cycle", label: "Cycle implications" },
+  ]}
+/>
+
+</div>

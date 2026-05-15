@@ -1,0 +1,104 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Cycle phase: the four segments of the menstrual cycle explained",
+  description:
+    "A cycle phase is one of the four segments of the menstrual cycle: menstrual, follicular, ovulatory, luteal. Each has a distinct hormone profile and pattern of energy and cognition.",
+  alternates: { canonical: "/glossary/cycle-phase" },
+  openGraph: {
+    title: "Cycle phase | Lumen glossary",
+    description:
+      "The four cycle phases, their hormone profiles, and how they map to cycle syncing.",
+    url: "/glossary/cycle-phase",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Cycle phase"
+  description="One of the four segments of the menstrual cycle: menstrual, follicular, ovulatory, luteal. Each has a distinct hormone profile."
+  path="/glossary/cycle-phase"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Cycle phase", path: "/glossary/cycle-phase" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Cycle phase
+
+A **cycle phase** is one of the four segments of the [menstrual cycle](/glossary/menstrual-cycle): menstrual, follicular, ovulatory, and luteal. Each phase has a distinct hormone profile, and these profiles are what [cycle syncing](/glossary/cycle-syncing) protocols try to map daily activity onto.
+
+## The four phases at a glance
+
+The four-phase model is a useful simplification of a continuous hormonal cycle:
+
+- **[Menstrual phase](/glossary/menstrual-phase)** (days 1 to 5). Bleeding occurs. All hormones at their lowest.
+- **[Follicular phase](/glossary/follicular-phase)** (roughly days 6 to 13). Estrogen rises. FSH stimulates follicle development.
+- **[Ovulatory phase](/glossary/ovulatory-phase)** (roughly days 14 to 16). LH surges, ovulation occurs.
+- **[Luteal phase](/glossary/luteal-phase)** (roughly days 17 to 28). Progesterone dominates. Estrogen makes a second smaller rise then falls.
+
+These day ranges assume a 28-day cycle. Real cycle lengths vary; only the [luteal phase](/glossary/luteal-phase) stays roughly fixed at 14 days. The [follicular phase](/glossary/follicular-phase) carries most of the variation when overall [cycle length](/glossary/cycle-length) changes.
+
+## Hormone profile by phase
+
+Each phase is defined by which hormones dominate:
+
+- **Menstrual:** [estrogen](/glossary/estrogen) and [progesterone](/glossary/progesterone) at floor levels. Some women note a brief energy rebound late in this phase.
+- **Follicular:** estrogen climbs sharply, especially in the [late follicular](/glossary/late-follicular-phase) days. [FSH](/glossary/fsh) drives follicle development. [BDNF](/glossary/bdnf) and dopamine sensitivity rise.
+- **Ovulatory:** estrogen peaks, then drops. [LH](/glossary/lh) surges. [Testosterone](/glossary/testosterone-in-women) rises slightly.
+- **Luteal:** progesterone dominates. Estrogen makes a second smaller rise then drops with progesterone in the late luteal days, which produces PMS symptoms.
+
+The hormone-to-phase mapping is the mechanism researchers point to when explaining why energy, mood, sleep, and cognition shift across the cycle.
+
+## Phases are continuous, not discrete
+
+Hormones do not flip on day 6 and off on day 14. The boundaries are fuzzy. The most noticeable shifts happen at [phase transitions](/glossary/phase-transition), the 1 to 2 day windows where hormones change rapidly. Many women notice symptoms most around these transitions: the post-period energy lift, the ovulation week clarity, the early-luteal slowdown, the PMS week downshift.
+
+## Why the four-phase model gets used
+
+A simpler two-phase model (follicular and luteal, divided by ovulation) is the one most clinicians and researchers use. The four-phase model adds the menstrual and ovulatory windows as separate segments, because they have noticeably different experience even though hormonally they overlap with the broader follicular and luteal phases.
+
+For cycle syncing, the four-phase model is more useful for planning because the menstrual and ovulatory windows have distinct activity recommendations. For clinical conversations about cycle disorders, the two-phase model is more standard.
+
+## When cycle phases do not apply
+
+The four-phase model assumes a natural ovulatory cycle. It does not apply in several common cases:
+
+- **Most hormonal birth control.** Combined pills, ring, patch, and most hormonal IUDs suppress ovulation. There is no real luteal phase.
+- **[Anovulatory cycles](/glossary/anovulatory-cycle).** Cycles without ovulation, common in adolescence, [PCOS](/glossary/pcos), [perimenopause](/glossary/perimenopause), and under high stress.
+- **[Postmenopause](/glossary/postmenopause).** No cycle, no phases.
+- **[Lactational amenorrhea](/glossary/lactational-amenorrhea).** During exclusive breastfeeding.
+
+The [method-by-method guide for birth control](/blog/cycle-syncing-on-birth-control) covers what still applies on each contraceptive.
+
+## Cycle phase and planning
+
+[Cycle syncing](/glossary/cycle-syncing) is the practice of aligning work, training, and habits to the current cycle phase. The [cycle syncing chart](/blog/cycle-syncing-chart) lays out the typical activity-to-phase mapping. The [phase calculator](/plan) translates your last period date and average cycle length into your current phase.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="cycle-phase"
+  title="Cycle phase"
+  toc={[
+    { id: "the-four-phases-at-a-glance", label: "The four phases" },
+    { id: "hormone-profile-by-phase", label: "Hormone profile by phase" },
+    { id: "phases-are-continuous-not-discrete", label: "Continuous not discrete" },
+    { id: "why-the-four-phase-model-gets-used", label: "Why four phases" },
+    { id: "when-cycle-phases-do-not-apply", label: "When phases do not apply" },
+    { id: "cycle-phase-and-planning", label: "Planning context" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,130 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Continuous fertility monitor: Mira, Inito, Proov, and what they actually do",
+  description:
+    "Continuous fertility monitors (Mira, Inito, Proov, Clearblue Advanced) measure urine hormone metabolites quantitatively. Compared to OPK strips, BBT, and wearables: more precise, much higher cost.",
+  alternates: { canonical: "/glossary/continuous-fertility-monitor" },
+  openGraph: {
+    title: "Continuous fertility monitor | Lumen glossary",
+    description:
+      "Mira, Inito, Proov, Clearblue Advanced compared. Precision, cost, and use cases.",
+    url: "/glossary/continuous-fertility-monitor",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Continuous fertility monitor"
+  description="A device that measures hormone metabolites (LH, estrogen, progesterone) in urine quantitatively across the cycle, producing a numerical curve rather than a binary positive/negative result. Examples: Mira, Inito, Proov, Clearblue Fertility Monitor."
+  path="/glossary/continuous-fertility-monitor"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Continuous fertility monitor", path: "/glossary/continuous-fertility-monitor" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Continuous fertility monitor
+
+A **continuous fertility monitor** is a device that measures hormone metabolites in urine quantitatively across the cycle, producing a numerical curve rather than the binary positive/negative output of a standard [OPK](/glossary/opk) strip. The category includes Mira, Inito, Proov, and the Clearblue Fertility Monitor. These devices are the highest-precision at-home tool for tracking [ovulation](/glossary/ovulation) and confirming [luteal phase](/glossary/luteal-phase) function.
+
+## What they measure
+
+Different devices measure different hormone metabolites:
+
+- **LH.** Identifies the [LH surge](/glossary/lh-surge) and predicts ovulation. All continuous monitors measure this.
+- **Estrogen metabolite (E3G).** Tracks rising estrogen across the [follicular phase](/glossary/follicular-phase), extends the fertile window forecast back several days. Mira, Inito, Clearblue Advanced.
+- **Progesterone metabolite (PdG).** Confirms ovulation occurred and tracks luteal phase health. Proov specializes in this; Inito includes it.
+- **FSH.** Some monitors include FSH for ovarian reserve context or perimenopause tracking.
+
+The shift from binary to quantitative is the major change. Instead of "positive / negative", users see hormone curves with actual numbers, far more informative for irregular cycles and luteal phase questions.
+
+## The major devices
+
+**Mira.** Measures LH, E3G, optionally PdG and FSH. Bluetooth analyzer plus disposable wands. Roughly $200 to $300 for the analyzer, $2 to $3 per wand. Strong app visualization.
+
+**Inito.** Measures LH, E3G, PdG, and FSH on a single strip. Phone-based reader (slot smartphone into device). Roughly $130 for the reader, $1.50 to $2.50 per strip. Strong feature/cost ratio.
+
+**Proov.** Specializes in PdG (progesterone metabolite) for luteal phase confirmation. Less useful for the predictive (LH) side; very useful for confirming ovulation actually happened and that progesterone is adequate. Roughly $1 per strip.
+
+**Clearblue Fertility Monitor (CFM).** Measures LH and E3G. Older device; daily testing for the first half of cycle. The Marquette Method protocol is built around this monitor.
+
+## Use cases where they shine
+
+**Irregular cycles.** [PCOS](/glossary/pcos), [perimenopause](/glossary/perimenopause), post-pill, postpartum, cycles where calendar prediction and OPK strips fail. Continuous monitors catch the surge whenever it happens and confirm whether ovulation completed.
+
+**Conception support.** Users trying to conceive who have not succeeded over 6+ cycles often benefit from confirming ovulation actually occurs and that PdG is adequate in the luteal phase.
+
+**[Luteal phase defect](/glossary/luteal-phase-defect) detection.** A short luteal phase or low PdG flags a treatable issue. Proov is the most direct tool here.
+
+**Symptohormonal FAM.** The Marquette Method uses CFM data within a structured FAM protocol with efficacy comparable to [sympto-thermal](/glossary/sympto-thermal-method).
+
+**Confirming cycle syncing predictions.** For users with regular cycles who want certainty that the predicted ovulation is actually happening, the data confirms or corrects the calendar.
+
+## Cost reality
+
+Continuous monitors are the most expensive at-home tracking option:
+
+- Setup: $130 to $300 for the reader/analyzer
+- Per-cycle cost: $30 to $80 for strips/wands depending on how many days you test
+- Annual cost: roughly $300 to $1,000 with the device included
+
+For comparison, OPK strips cost roughly $20 to $50 per year for typical use, and a [BBT thermometer](/glossary/bbt-thermometer) is a one-time $15 to $20 cost. Wearables ([Oura, Whoop](/glossary/cycle-tracking-wearable)) sit in the middle on annual cost.
+
+## When the cost is worth it
+
+The cost is justified when:
+
+- You have a specific clinical question (irregular ovulation, suspected LPD, perimenopause assessment)
+- You are working with a fertility specialist who values the data
+- You have tried OPK strips, BBT, and wearables and need more precision
+- You are practicing the Marquette Method for contraception
+
+The cost is overkill for users who:
+
+- Have regular cycles and want general awareness
+- Only want to plan around their next period
+- Are primarily interested in cycle syncing for scheduling
+
+For most cycle syncing users, the free [Lumen phase calculator](/plan) or a free [period tracker](/glossary/period-tracker) is sufficient.
+
+## Privacy considerations
+
+Continuous monitors generate granular hormone data tied to user accounts. Mira, Inito, and Proov all store data in the cloud. Read each device's privacy policy before purchasing, especially in jurisdictions where reproductive choices are legally restricted. See [privacy-first tracking](/glossary/privacy-first-tracking) for evaluation criteria.
+
+## How they compare to OPK and BBT
+
+- **OPK strips** detect the LH surge in real time (yes/no).
+- **BBT** confirms ovulation occurred (retrospectively).
+- **Continuous monitors** track the LH surge in real time as a curve, often also confirm ovulation via PdG, and forecast the fertile window earlier via E3G.
+
+The added information is real. Whether it changes your decisions enough to justify the cost is the user's call.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="continuous-fertility-monitor"
+  title="Continuous fertility monitor"
+  toc={[
+    { id: "what-they-measure", label: "What they measure" },
+    { id: "the-major-devices", label: "Major devices" },
+    { id: "use-cases-where-they-shine", label: "Where they shine" },
+    { id: "cost-reality", label: "Cost reality" },
+    { id: "when-the-cost-is-worth-it", label: "When cost is worth it" },
+    { id: "privacy-considerations", label: "Privacy" },
+    { id: "how-they-compare-to-opk-and-bbt", label: "vs OPK and BBT" },
+  ]}
+/>
+
+</div>

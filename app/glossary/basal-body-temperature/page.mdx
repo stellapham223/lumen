@@ -1,0 +1,117 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Basal body temperature (BBT): what it is, how to chart it, and what it confirms",
+  description:
+    "Basal body temperature is the lowest body temperature at rest. It rises roughly 0.5°F after ovulation due to progesterone. Definition, how to measure, what the data confirms, and what it cannot do.",
+  alternates: { canonical: "/glossary/basal-body-temperature" },
+  openGraph: {
+    title: "Basal body temperature (BBT) | Lumen glossary",
+    description:
+      "What BBT is, how to chart it, and what the rise after ovulation actually proves.",
+    url: "/glossary/basal-body-temperature",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Basal body temperature (BBT)"
+  description="The lowest body temperature reached at rest, typically measured on waking before any activity. Rises by roughly 0.5°F (0.3°C) after ovulation due to progesterone produced by the corpus luteum, and serves as a retrospective confirmation that ovulation occurred."
+  path="/glossary/basal-body-temperature"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Basal body temperature (BBT)", path: "/glossary/basal-body-temperature" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Basal body temperature (BBT)
+
+**Basal body temperature** is the lowest body temperature reached at rest, measured on waking, before getting out of bed, talking, or drinking water. It is roughly 97.0 to 97.7°F (36.1 to 36.5°C) in the [follicular phase](/glossary/follicular-phase) and rises to roughly 97.7 to 98.5°F (36.5 to 36.9°C) in the [luteal phase](/glossary/luteal-phase) after [ovulation](/glossary/ovulation).
+
+That 0.5°F shift, sustained across 3 consecutive days, is the most accessible retrospective confirmation that ovulation occurred. It is the workhorse signal in the [fertility awareness method](/glossary/fam) and the [sympto-thermal method](/glossary/sympto-thermal-method).
+
+*This is informational, not medical advice. Effective contraception requires consistent use; talk to a provider before relying on any FAM method.*
+
+## Why BBT rises after ovulation
+
+After ovulation, the [corpus luteum](/glossary/corpus-luteum) (the remnant of the ovulated follicle) starts producing [progesterone](/glossary/progesterone). Progesterone is thermogenic: it raises the body's set point by roughly 0.3°C / 0.5°F. The rise typically happens within 1 to 2 days of ovulation and persists for the rest of the luteal phase. When the corpus luteum regresses at the end of the cycle, progesterone drops, BBT falls, and the period starts within 1 to 2 days.
+
+This makes BBT a confirmation tool, not a prediction tool. By the time the temperature rises, ovulation has already happened.
+
+## How to measure BBT correctly
+
+The rules matter because the signal is small (under 1°F) and easily lost in noise.
+
+1. **Use a [BBT thermometer](/glossary/bbt-thermometer)** with 0.01°F (or 0.01°C) precision. A regular fever thermometer is not sensitive enough.
+2. **Measure first thing on waking**, before sitting up, talking, drinking, or going to the bathroom.
+3. **Measure at roughly the same time each day** (within an hour). Temperature rises through the morning.
+4. **Aim for at least 3 hours of consecutive sleep** before measurement. Disrupted sleep raises BBT.
+5. **Record every day**, including weekends. Gaps make the pattern harder to read.
+6. **Note confounders.** Alcohol the night before, illness, late nights, travel across time zones, electric blankets, all raise BBT and can mask the pattern.
+
+Wearables ([Oura, Whoop, Apple Watch](/glossary/cycle-tracking-wearable)) measure skin temperature continuously during sleep and infer cycle phases, lower friction but slightly different signal and accuracy.
+
+## Reading the chart
+
+A typical BBT chart shows:
+
+- **Follicular baseline.** Temperatures cluster in a narrow range, often 97.0 to 97.5°F.
+- **Ovulation dip (optional).** Some users see a brief dip 1 day before the rise; many do not.
+- **Sustained rise.** Temperature jumps 0.4 to 0.6°F and stays elevated.
+- **Luteal plateau.** Temperatures cluster at the higher range until the period.
+- **Pre-period drop.** Temperature falls in the 1 to 2 days before bleeding starts.
+
+Three consecutive days at the higher baseline after the rise confirms ovulation occurred. A flat chart with no rise across a full cycle suggests an [anovulatory cycle](/glossary/anovulatory-cycle).
+
+## What BBT can and cannot do
+
+**BBT can:**
+
+- Confirm ovulation occurred (retrospectively, 1 to 2 days late)
+- Detect anovulatory cycles
+- Estimate the length of your typical luteal phase, useful for catching [luteal phase defect](/glossary/luteal-phase-defect)
+- Verify the timing of perceived PMS or [PMDD](/glossary/pmdd) symptoms against actual hormonal phases
+
+**BBT cannot:**
+
+- Predict ovulation in advance (use [OPK](/glossary/opk) or cervical mucus for prediction)
+- Replace [LH testing](/glossary/lh-surge) for timing intercourse for conception
+- Work reliably on shift workers, new parents, or anyone with chronically broken sleep
+
+## BBT and cycle syncing
+
+For [cycle syncing](/glossary/cycle-syncing), BBT is most useful as confirmation that the calendar-predicted ovulation actually happened. If your phase calculator says "ovulation day 14" but BBT shows no rise until day 22, your luteal phase prescriptions are 8 days off until you correct.
+
+For users with irregular cycles ([PCOS](/glossary/pcos), [perimenopause](/glossary/perimenopause)), BBT is one of the few ways to know whether a given cycle ovulated at all. See [cycle syncing with PCOS](/glossary/cycle-syncing-pcos) for adaptations.
+
+## BBT and contraception
+
+BBT alone is not effective contraception. Combined with [cervical mucus](/glossary/cervical-mucus-tracking) and cycle history ([sympto-thermal method](/glossary/sympto-thermal-method)), with consistent daily practice and education, typical-use efficacy improves substantially, though it remains lower than long-acting reversible contraceptives like [hormonal IUDs](/glossary/hormonal-iud) or [copper IUDs](/glossary/copper-iud).
+
+</article>
+
+<GlossarySidebar
+  currentSlug="basal-body-temperature"
+  title="Basal body temperature (BBT)"
+  toc={[
+    { id: "why-bbt-rises-after-ovulation", label: "Why it rises" },
+    { id: "how-to-measure-bbt-correctly", label: "How to measure" },
+    { id: "reading-the-chart", label: "Reading the chart" },
+    { id: "what-bbt-can-and-cannot-do", label: "What it can and cannot do" },
+    { id: "bbt-and-cycle-syncing", label: "BBT and cycle syncing" },
+    { id: "bbt-and-contraception", label: "BBT and contraception" },
+  ]}
+/>
+
+</div>

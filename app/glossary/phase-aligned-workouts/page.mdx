@@ -1,0 +1,128 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Phase-aligned workouts: what the 2024 meta-analysis actually found",
+  description:
+    "Phase-aligned workouts means adjusting exercise intensity and type by cycle phase. The 2024 meta-analysis found small effects on training outcomes. Definition, evidence, and how to use it without overclaiming.",
+  alternates: { canonical: "/glossary/phase-aligned-workouts" },
+  openGraph: {
+    title: "Phase-aligned workouts | Lumen glossary",
+    description:
+      "Adjusting workout intensity and type by cycle phase. Evidence is mixed; the 2024 meta-analysis found small effects.",
+    url: "/glossary/phase-aligned-workouts",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Phase-aligned workouts"
+  description="The practice of adjusting workout intensity and type based on menstrual cycle phase. Evidence is mixed; the 2024 meta-analysis found small effects on training outcomes."
+  path="/glossary/phase-aligned-workouts"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Phase-aligned workouts", path: "/glossary/phase-aligned-workouts" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Phase-aligned workouts
+
+**Phase-aligned workouts** is the practice of adjusting exercise intensity and modality based on [menstrual cycle](/glossary/menstrual-cycle) phase: heavier strength training in late follicular and ovulatory, steady-state work in early luteal, lighter recovery-focused movement in late luteal and menstrual. Lumen's positioning is that this is a low-cost optimization with small population-level benefits, not a transformative protocol; the underlying rationale comes from cyclic variation in strength, recovery, and inflammation markers, balanced against meta-analytic evidence that the practical effect on training outcomes is modest.
+
+The honest framing matters because the loudest claims (track your cycle and unlock 30% more strength) are not what the research shows.
+
+## What the 2024 meta-analysis actually found
+
+The most-cited recent evidence is the [2024 exercise meta-analysis](/glossary/2024-exercise-meta), which pooled studies on phase-timed training across strength, endurance, and power outcomes. The headline findings:
+
+- Effects on strength gains and endurance outcomes were **small at the population level**.
+- Some individuals respond more strongly than the average. Individual variation is large.
+- The quality of underlying studies was uneven, with small sample sizes the norm.
+- Phase-aligned programming was not worse than non-phase-aligned programming for general fitness.
+
+The honest read: phase-aligned workouts are not a free lunch and not a placebo. They are a small optimization on top of consistent training. Stacy Sims and other authors have argued the effect is larger in elite athletes; the meta-analytic evidence does not strongly support that distinction in untrained populations.
+
+## The default mapping
+
+The conventional phase-to-workout mapping:
+
+- **Menstrual phase (days 1 to 5):** Lower-intensity movement. Walking, yoga, mobility work. Skip if you do not feel up to it.
+- **Late follicular phase (days 6 to 13):** Strength training, harder intervals, learning new skills. The [estrogen](/glossary/estrogen) rise tilts toward improved motor learning and recovery.
+- **Ovulatory phase (days 14 to 16):** Peak strength window for many. Heavier lifts, max efforts.
+- **Early luteal phase (days 17 to 22):** Steady-state cardio, moderate strength. [Progesterone](/glossary/progesterone) raises body temperature, which limits high-heat output.
+- **Late luteal phase (days 23 to 28):** Reduce intensity. Walks, mobility, light cardio. The thermoregulatory and PMS load is highest here.
+
+This is a starting point, not a prescription. If your personal pattern differs after two or three cycles of observation, adjust.
+
+## What is well-supported
+
+Three findings carry weight:
+
+- **Body temperature rises** by 0.3 to 0.5 degrees C in early luteal, which reduces high-intensity tolerance in heat.
+- **Recovery markers** (HRV, perceived exertion) shift across the cycle. See [HRV cycle](/glossary/hrv-cycle).
+- **Late luteal symptom load** (bloating, breast tenderness, mood) reduces exercise enjoyment and adherence, even when capacity is preserved.
+
+These are reasons to adjust intensity, not reasons to expect transformation.
+
+## What is overclaimed
+
+A few common claims that do not survive scrutiny:
+
+- **"You will lose strength gains by training through your period."** No good evidence supports this. Train if you feel up to it.
+- **"Avoid lifting heavy in luteal phase."** Most well-trained athletes maintain strength in early luteal. The recommendation makes sense for late luteal symptom management, not as a general rule.
+- **"Phase-aligned training is the difference between average and elite results."** The meta-analytic evidence does not support this for non-elite populations.
+
+The honest framing: phase-aligned workouts are a small optimization, useful for managing symptom load and inflammation, not a hidden lever for performance.
+
+## Who phase-aligned workouts help most
+
+Three contexts where the practice tends to pay off:
+
+- **PMS-prone exercisers.** Reducing intensity in late luteal improves adherence by managing symptoms, not by improving capacity.
+- **Recreational lifters with flexible programming.** When you can choose when to peak intensity, late follicular and ovulatory are reasonable picks.
+- **Endurance athletes managing heat tolerance.** Hot-weather training adjustments make sense in the high-progesterone window.
+
+It helps less for people on fixed team training schedules, people with irregular cycles, or people on hormonal contraception that suppresses ovulation.
+
+## Limits and honest hedging
+
+Three honest limits:
+
+- **Effect sizes are modest.** Consistent training matters more than phase timing.
+- **Individual variation is large.** Track your own response over two or three cycles before committing.
+- **Phase predictions need to be accurate.** A drifting [cycle anchor date](/glossary/cycle-anchor-date) means you are programming against the wrong phase. See [cycle re-anchoring](/glossary/cycle-reanchoring).
+
+## Related reading
+
+- [2024 exercise meta-analysis](/glossary/2024-exercise-meta): the evidence summary
+- [Stacy Sims](/glossary/stacy-sims): the leading proponent
+- [Cycle syncing for athletes](/glossary/cycle-syncing-athletes): the athlete-specific version
+- [Does cycle syncing work](/blog/does-cycle-syncing-work): the evidence-graded overview
+
+</article>
+
+<GlossarySidebar
+  currentSlug="phase-aligned-workouts"
+  title="Phase-aligned workouts"
+  toc={[
+    { id: "what-the-2024-meta-analysis-actually-found", label: "2024 meta-analysis" },
+    { id: "the-default-mapping", label: "The default mapping" },
+    { id: "what-is-well-supported", label: "What is supported" },
+    { id: "what-is-overclaimed", label: "What is overclaimed" },
+    { id: "who-phase-aligned-workouts-help-most", label: "Who it helps" },
+    { id: "limits-and-honest-hedging", label: "Limits" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

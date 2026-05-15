@@ -1,0 +1,122 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Emergency contraception (Plan B, Ella, copper IUD): options, timing, and effectiveness",
+  description:
+    "Emergency contraception prevents pregnancy after unprotected sex. Three main options: levonorgestrel (Plan B), ulipristal (Ella), and the copper IUD. Timing windows, efficacy, and side effects.",
+  alternates: { canonical: "/glossary/emergency-contraception" },
+  openGraph: {
+    title: "Emergency contraception | Lumen glossary",
+    description:
+      "Plan B, Ella, and the copper IUD as emergency contraception. Timing windows, mechanism, and limitations.",
+    url: "/glossary/emergency-contraception",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Emergency contraception"
+  description="Methods used to prevent pregnancy after unprotected sex or contraceptive failure. Includes levonorgestrel (Plan B), ulipristal acetate (Ella), and the copper IUD as the most effective option."
+  path="/glossary/emergency-contraception"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Emergency contraception", path: "/glossary/emergency-contraception" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Emergency contraception
+
+**Emergency contraception (EC)** refers to methods that can prevent pregnancy after unprotected sex, contraceptive failure (broken condom, missed pills), or sexual assault. There are three options available in the US, with substantially different mechanisms and effectiveness windows.
+
+EC is not an abortion method. It prevents or delays [ovulation](/glossary/ovulation), or in the case of the copper IUD, prevents fertilization or implantation. None of these methods disrupt an established pregnancy.
+
+*This is informational, not medical advice. EC use, particularly the copper IUD option, should involve a qualified provider when feasible.*
+
+## The three options
+
+**1. Levonorgestrel (Plan B One-Step, Take Action, generic options).**
+
+A single 1.5mg dose of levonorgestrel. Available over the counter without age restriction in the US.
+
+- **Window:** effective up to 72 hours (3 days) after unprotected sex, most effective in the first 12 to 24 hours.
+- **Efficacy:** reduces pregnancy risk by roughly 75 to 89% in the labeled window.
+- **Mechanism:** delays or inhibits [ovulation](/glossary/ovulation). Does not work if the [LH surge](/glossary/lh-surge) has already started.
+- **Limitations:** efficacy drops sharply with body weight above 165 lbs (75kg) and is largely ineffective above 175 to 195 lbs (80 to 88kg) per several analyses. Providers may recommend Ella or a copper IUD in this case.
+
+**2. Ulipristal acetate (Ella).**
+
+A single 30mg dose. Prescription only in the US (no age restriction).
+
+- **Window:** effective up to 120 hours (5 days).
+- **Efficacy:** more effective than levonorgestrel across the entire window, particularly between days 3 and 5.
+- **Mechanism:** selective progesterone receptor modulator. Delays ovulation even when the [LH surge](/glossary/lh-surge) has begun, which is what gives it more reach in the cycle than Plan B.
+- **Limitations:** less efficacy at higher body weights than at lower weights, but the drop-off is less dramatic than with levonorgestrel. Avoid restarting hormonal contraception for 5 days after Ella (the two can interfere with each other).
+
+**3. Copper IUD ([copper IUD](/glossary/copper-iud), Paragard).**
+
+Placement of the copper IUD within 5 days of unprotected sex.
+
+- **Window:** effective up to 120 hours (5 days).
+- **Efficacy:** the most effective option, above 99%. Effectiveness is not affected by body weight.
+- **Mechanism:** local toxicity to sperm and eggs; alters the endometrium to prevent implantation.
+- **Bonus:** continues as ongoing contraception for up to 12 years.
+- **Limitations:** requires a clinic appointment and insertion, which can be a barrier for time-sensitive use. Has the side effects of ongoing copper IUD use (heavier periods, cramping).
+
+## How it affects the current cycle
+
+EC commonly disrupts the timing of the next period:
+
+- **Levonorgestrel:** next period often arrives a few days earlier or later than expected.
+- **Ulipristal:** next period often arrives later than expected.
+- **Copper IUD:** the cycle continues normally, since the IUD is non-hormonal, though the next period may be heavier as is typical with copper IUD use.
+
+If the next period is more than 1 week late or substantially different from normal, take a pregnancy test.
+
+## Common side effects
+
+- **Nausea** (mild to moderate; rarely vomiting).
+- **Headache.**
+- **Breast tenderness.**
+- **Cycle disruption** for one cycle.
+- **Cramping**, particularly with the copper IUD.
+
+EC is safe for repeated use, although it is not designed as ongoing contraception. Frequent use suggests the need for a more reliable ongoing method.
+
+## What EC is NOT
+
+- It is not an abortion. If implantation has already occurred, EC will not end the pregnancy.
+- It is not as effective as ongoing contraception used correctly.
+- It does not protect against pregnancy from sex that happens after the dose is taken.
+
+## Related reading
+
+- [Combined hormonal contraceptive](/glossary/combined-hormonal-contraceptive): the most common ongoing method that may need EC backup
+- [Copper IUD](/glossary/copper-iud): can serve as both EC and ongoing contraception
+- [Fertile window](/glossary/fertile-window): when conception is possible
+
+</article>
+
+<GlossarySidebar
+  currentSlug="emergency-contraception"
+  title="Emergency contraception"
+  toc={[
+    { id: "the-three-options", label: "The three options" },
+    { id: "how-it-affects-the-current-cycle", label: "Cycle impact" },
+    { id: "common-side-effects", label: "Common side effects" },
+    { id: "what-ec-is-not", label: "What EC is NOT" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,118 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "GABA: the brain's calming neurotransmitter and luteal-phase modulation",
+  description:
+    "GABA is the brain's main inhibitory neurotransmitter. Allopregnanolone (a progesterone metabolite) boosts GABA tone in the luteal phase, and the late-luteal drop disrupts anxiety and sleep.",
+  alternates: { canonical: "/glossary/gaba" },
+  openGraph: {
+    title: "GABA | Lumen glossary",
+    description:
+      "How GABA tone shifts across the cycle via allopregnanolone, and why the late-luteal drop drives PMS anxiety.",
+    url: "/glossary/gaba",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="GABA"
+  description="Gamma-aminobutyric acid, the brain's main inhibitory neurotransmitter. Boosted by allopregnanolone in the luteal phase; the late-luteal drop contributes to premenstrual anxiety and irritability."
+  path="/glossary/gaba"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "GABA", path: "/glossary/gaba" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# GABA
+
+**GABA** (gamma-aminobutyric acid) is the brain's main inhibitory neurotransmitter. Where [dopamine](/glossary/dopamine-cycle) and [serotonin](/glossary/serotonin-cycle) push activity in particular directions, GABA does the opposite job: it dampens neuronal firing, lowers arousal, and acts as the chemistry of calm. Across the [menstrual cycle](/glossary/menstrual-cycle), GABA tone shifts dramatically because of [allopregnanolone](/glossary/allopregnanolone), a metabolite of [progesterone](/glossary/progesterone) that binds directly to GABA-A receptors and amplifies their effect.
+
+The cyclic GABA story is one of the cleanest mechanistic explanations for why anxiety, irritability, and sleep disturbance cluster in the late luteal phase.
+
+## How GABA works
+
+GABA is synthesized from glutamate (the brain's main excitatory neurotransmitter) and acts on two main receptor types:
+
+- **GABA-A receptors.** Fast inhibition. The target of benzodiazepines, alcohol, and several anesthetics. Also the target of allopregnanolone.
+- **GABA-B receptors.** Slower inhibition. The target of baclofen and some other drugs.
+
+When GABA binds to a GABA-A receptor, the receptor opens a chloride channel that hyperpolarizes the neuron, making it less likely to fire. The practical experience of strong GABA-A activity is sedation, anxiolysis (anxiety reduction), and muscle relaxation.
+
+## How allopregnanolone changes GABA tone
+
+Progesterone itself does not bind directly to GABA-A receptors with strong affinity. The active player is allopregnanolone, which the liver and brain make from progesterone. Allopregnanolone is one of the most potent positive allosteric modulators of GABA-A known, meaning it makes the same amount of GABA produce a stronger calming effect.
+
+Through the cycle, allopregnanolone roughly tracks progesterone:
+
+- **Follicular (days 1 to 13):** low progesterone, low allopregnanolone, baseline GABA tone.
+- **Ovulatory (days 14 to 16):** allopregnanolone starts rising.
+- **Mid-luteal (days 17 to 22):** peak allopregnanolone, GABA tone elevated. Many users feel calmer, sleep more deeply, tolerate stress better.
+- **Late luteal (days 23 to 28):** progesterone and allopregnanolone drop sharply. GABA tone drops. The brain that adapted to high inhibition experiences a relative excitatory state.
+
+The late-luteal withdrawal is the part that matters for [PMS](/glossary/pms) and [PMDD](/glossary/pmdd).
+
+## Why the late-luteal GABA drop matters
+
+The brain spends roughly two weeks with elevated GABA-A tone during the luteal phase. Neurons adapt: receptor sensitivity adjusts downward to maintain balance. When allopregnanolone falls in late luteal, the down-regulated receptors are suddenly exposed to lower stimulation than they have come to expect. The result is a relative excitatory state.
+
+The phenomenology is consistent across users with PMS sensitivity:
+
+- **Anxiety and irritability** spike.
+- **Sleep onset and depth** suffer.
+- **Stress tolerance** drops.
+- **Sensory sensitivity** rises (lights, sounds, textures feel like more).
+
+This is the dominant model for [premenstrual anxiety](/glossary/premenstrual-anxiety) and a major piece of the PMDD picture. It parallels the [serotonin](/glossary/serotonin-cycle) withdrawal story but operates on the inhibitory side rather than the mood-floor side.
+
+## Why supplementing progesterone often fails for PMS
+
+A common intuition is "if the drop is the problem, just keep progesterone high". In practice this rarely works. The brain adapts to whatever level it is exposed to. Holding progesterone artificially elevated through the luteal phase still produces a withdrawal when the supplementation stops, and during the elevated phase users sometimes experience the opposite problem (excessive sedation, mood blunting).
+
+The rate of change appears to matter more than the absolute level. This is part of why approaches that target the GABA system more directly (SSRIs that affect allopregnanolone production, the GABA-A modulator brexanolone for postpartum depression) have shown success.
+
+## Practical levers for GABA tone
+
+The reliable ways to support GABA tone, in rough order of evidence:
+
+- **Aerobic exercise.** Increases GABA release.
+- **Slow breathing and parasympathetic-activating practices.** Vagal tone supports GABA function.
+- **Magnesium.** Modest evidence for [magnesium in PMS](/glossary/magnesium-pms); may support GABA-A function.
+- **Sleep.** Sleep loss reduces GABA function and compounds late-luteal symptoms.
+- **Alcohol.** Acts on GABA-A, which is why it feels calming. Not recommended as a strategy because of rebound effects and impact on sleep architecture.
+
+For severe PMDD, pharmacological options that target the GABA or serotonin systems are the evidence-based path.
+
+## Related reading
+
+- [Allopregnanolone](/glossary/allopregnanolone): the metabolite doing the GABA work
+- [Progesterone](/glossary/progesterone): the upstream hormone
+- [PMDD](/glossary/pmdd): when the drop is severe enough to disable
+- [Late luteal phase](/glossary/late-luteal-phase): when the withdrawal happens
+
+</article>
+
+<GlossarySidebar
+  currentSlug="gaba"
+  title="GABA"
+  toc={[
+    { id: "how-gaba-works", label: "How GABA works" },
+    { id: "how-allopregnanolone-changes-gaba-tone", label: "Allopregnanolone modulation" },
+    { id: "why-the-late-luteal-gaba-drop-matters", label: "Late-luteal drop" },
+    { id: "why-supplementing-progesterone-often-fails-for-pms", label: "Why progesterone supplements fail" },
+    { id: "practical-levers-for-gaba-tone", label: "Practical levers" },
+  ]}
+/>
+
+</div>

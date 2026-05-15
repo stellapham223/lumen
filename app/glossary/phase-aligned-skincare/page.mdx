@@ -1,0 +1,130 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Phase-aligned skincare: wellness-coded, minimally evidence-based",
+  description:
+    "Phase-aligned skincare is the practice of changing your skincare routine by cycle phase. Wellness-coded with minimal evidence. Definition, what is plausible, what is not, and what to do instead.",
+  alternates: { canonical: "/glossary/phase-aligned-skincare" },
+  openGraph: {
+    title: "Phase-aligned skincare | Lumen glossary",
+    description:
+      "Adjusting skincare by cycle phase. Wellness-coded, minimal evidence.",
+    url: "/glossary/phase-aligned-skincare",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Phase-aligned skincare"
+  description="The practice of adjusting skincare products and routines based on menstrual cycle phase. Wellness-coded with minimal direct evidence. Most claims are mechanistic extrapolation."
+  path="/glossary/phase-aligned-skincare"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Phase-aligned skincare", path: "/glossary/phase-aligned-skincare" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Phase-aligned skincare
+
+**Phase-aligned skincare** is the practice of adjusting skincare products and routines based on [menstrual cycle](/glossary/menstrual-cycle) phase: lighter products in follicular, oil control in luteal, soothing actives during menstrual. Lumen's positioning is that this is one of the least evidence-supported corners of cycle syncing; the underlying rationale: skin physiology does shift across the cycle (sebum production rises in luteal, [hormonal acne](/glossary/hormonal-acne) tends to flare in late luteal), but the prescribed product rotations are mostly marketing rather than dermatology.
+
+The honest framing: skin does change across the cycle, the basic patterns are real, and managing late-luteal breakouts is reasonable. Daily product rotation by phase, "use vitamin C in follicular, retinol in luteal" type protocols, is not what dermatologists recommend.
+
+## What the research supports
+
+A few skin-cycle observations have research backing:
+
+- **Sebum production rises in luteal phase.** Driven by [androgens](/glossary/androgens-women) and progesterone. Skin tends toward oilier and more breakout-prone in late luteal.
+- **[Hormonal acne](/glossary/hormonal-acne) flares in late luteal.** The pattern is well-documented and is the basis for hormonal acne treatment (combined oral contraceptives, spironolactone, isotretinoin).
+- **Skin barrier function shifts modestly across the cycle.** Trans-epidermal water loss varies, though the practical implication is small.
+- **Skin sensitivity may increase in late luteal.** Anecdotally consistent; controlled evidence is mixed.
+
+The honest version: skin is oilier and more breakout-prone in late luteal. That is most of what is well-supported.
+
+## What is being claimed
+
+Popular phase-aligned skincare protocols look like this:
+
+- **Menstrual phase:** Hydrating, soothing products. Skip strong actives.
+- **Follicular phase:** "Glow" products, vitamin C, exfoliating acids.
+- **Ovulatory phase:** Minimal products; skin looks its best naturally.
+- **Luteal phase:** Oil control, salicylic acid, retinoids.
+
+The pattern is intuitive (use oil-control in your oilier phase) but the daily rotation does not match how skincare works in practice.
+
+## Why daily phase-rotation is not how skincare works
+
+Three problems with phase-aligned skincare protocols:
+
+- **Retinoids take 8 to 12 weeks** to produce skin remodeling. Using retinoid only in luteal phase means you are off-cycle for half the month, which sharply reduces efficacy.
+- **Vitamin C, exfoliating acids, and most active ingredients** work through consistent daily use, not cyclic rotation.
+- **The skin barrier prefers stability.** Rotating products by phase tends to produce irritation, not improvement.
+
+Dermatologists generally recommend a consistent core routine plus targeted adjustments for breakouts, not phase-rotation as a default.
+
+## What to actually do
+
+A pragmatic alternative to phase-aligned skincare:
+
+- **Build a consistent daily routine.** Cleanser, moisturizer, sunscreen in the morning. Cleanser, actives, moisturizer at night. Use the same routine every day.
+- **Add spot treatment for late-luteal breakouts.** Benzoyl peroxide, salicylic acid, or adapalene on active lesions. Not the whole face.
+- **Manage hormonal acne directly if it is severe.** Combined oral contraceptives, spironolactone, or dermatologist-prescribed treatment outperform skincare adjustments.
+- **Lower expectations for skin in late luteal.** This is the worst-looking-skin week for most. Accept it; do not over-treat.
+- **Sunscreen daily, regardless of phase.** Sun exposure is the dominant driver of skin aging. No phase rotation changes that.
+
+## Where phase awareness still helps
+
+The skin-phase observation is useful for two things:
+
+- **Predicting breakouts.** Knowing late luteal is the high-risk window lets you have spot treatments ready and not panic when skin flares.
+- **Not blaming products.** A retinoid that "stopped working" in late luteal probably did not stop working; the cycle changed underneath it.
+
+Awareness of the pattern is useful. Daily product rotation by phase is not.
+
+## Limits and honest hedging
+
+Three honest limits:
+
+- **The evidence base is thin.** Most claims are mechanistic, not from controlled trials of phase-rotated skincare.
+- **Individual skin varies enormously.** Hormonal acne is a genuine pattern for some; for others, breakouts do not correlate with phase at all.
+- **Phase-aligned skincare is the most wellness-marketing corner of cycle syncing.** Treat product recommendations from cycle syncing influencers with extra skepticism.
+
+## Lumen's positioning
+
+Lumen does not prescribe skincare. The product is a scheduling and recovery overlay, not a beauty protocol. Where skin matters (hormonal acne pattern recognition, expectation-setting for late luteal), the [hormonal acne](/glossary/hormonal-acne) glossary entry covers the evidence-backed approach.
+
+## Related reading
+
+- [Hormonal acne](/glossary/hormonal-acne): the underlying pattern
+- [Late luteal phase](/glossary/late-luteal-phase): the breakout window
+- [Androgens in women](/glossary/androgens-women): the hormone driver
+- [Does cycle syncing work](/blog/does-cycle-syncing-work): the evidence overview
+
+</article>
+
+<GlossarySidebar
+  currentSlug="phase-aligned-skincare"
+  title="Phase-aligned skincare"
+  toc={[
+    { id: "what-the-research-supports", label: "What research supports" },
+    { id: "what-is-being-claimed", label: "What is claimed" },
+    { id: "why-daily-phase-rotation-is-not-how-skincare-works", label: "Why daily rotation fails" },
+    { id: "what-to-actually-do", label: "What to actually do" },
+    { id: "where-phase-awareness-still-helps", label: "Where awareness helps" },
+    { id: "limits-and-honest-hedging", label: "Limits" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

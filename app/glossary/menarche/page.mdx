@@ -1,0 +1,116 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Menarche: first menstrual period, age range, and what's normal",
+  description:
+    "Menarche is the first menstrual period. Average age is 12; range 8 to 15 is considered normal. Definition, what to expect in early cycles, and when to flag delays.",
+  alternates: { canonical: "/glossary/menarche" },
+  openGraph: {
+    title: "Menarche | Lumen glossary",
+    description:
+      "Definition, normal age range, what early cycles look like, and when to flag concerns.",
+    url: "/glossary/menarche",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Menarche"
+  description="First menstrual period. Average age 12; range 8 to 15 is considered normal."
+  path="/glossary/menarche"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Menarche", path: "/glossary/menarche" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Menarche
+
+**Menarche** is the first [menstrual period](/glossary/menstruation), the event that marks the start of reproductive life. The average age in the United States is roughly 12, with a normal range of 8 to 15 years old. Menarche typically occurs roughly 2 to 3 years after the first signs of puberty (breast development, the growth spurt, pubic hair).
+
+## What drives menarche
+
+Menarche is the visible result of the [HPO axis](/glossary/hpo-axis) coming online. Through childhood, the hypothalamus is relatively quiet; puberty starts when it begins releasing gonadotropin-releasing hormone (GnRH) in pulses. This drives the pituitary to release [FSH](/glossary/fsh) and [LH](/glossary/lh), which in turn drive ovarian estrogen production. Rising estrogen produces breast development and uterine [endometrium](/glossary/endometrium) buildup. The first period occurs when the lining is thick enough to shed.
+
+The trigger for the hypothalamus turning on is not fully understood. Body fat reaches a threshold (leptin signaling is one piece), but genetics, nutrition, stress, and environmental factors all matter. The average age of menarche has shifted earlier over the past century, likely driven by better nutrition and possibly environmental endocrine disruptors.
+
+## What early cycles look like
+
+The first 1 to 2 years post-menarche are typically irregular. Many early cycles are [anovulatory](/glossary/anovulatory-cycle), which means:
+
+- Cycles can range from 21 to 45 days or longer
+- Bleeding patterns may vary widely month to month
+- Some cycles may be skipped entirely
+- PMS symptoms are typically milder in anovulatory cycles
+
+By 2 to 3 years after menarche, most adolescents settle into a more reliable cycle pattern. By age 18 to 20, cycle patterns usually look like adult cycles.
+
+## When to flag a delayed menarche
+
+Per ACOG, evaluation is warranted when:
+
+- No menstrual period by age 15
+- No breast development by age 13
+- No period by 3 years after breast development begins
+
+Common causes of delayed menarche:
+
+- **Constitutional delay.** A normal variant; periods just start later, often runs in families.
+- **Low body fat or under-fueling.** Including athletes and those with eating disorders, can produce [hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea) before the first period.
+- **Turner syndrome.** Chromosomal condition affecting ovarian development.
+- **Müllerian agenesis.** Congenital absence or malformation of the uterus.
+- **[PCOS](/glossary/pcos).** Sometimes presents with delayed or irregular menarche.
+- **[Thyroid disorders](/glossary/thyroid-cycle).** Both hyper and hypothyroidism can delay periods.
+- **Hyperprolactinemia.** Elevated [prolactin](/glossary/prolactin) can suppress puberty.
+
+## When to flag an early menarche
+
+Periods before age 8 (precocious puberty) warrant evaluation. Causes can include endocrine disorders, brain tumors, or rarely a normal early variant. Earlier menarche is also associated with slightly higher long-term risks for certain conditions (breast cancer, cardiovascular disease), though the absolute increases are small.
+
+## What's normal in adolescent periods
+
+Common patterns in the first few years post-menarche:
+
+- **Cycle length variation.** 21 to 45 days is typical.
+- **Variable flow.** Light some months, heavier others.
+- **Cramping ([dysmenorrhea](/glossary/dysmenorrhea)).** Can start with the first ovulatory cycles.
+- **PMS-like symptoms.** Tend to develop as cycles become ovulatory.
+
+Patterns to flag:
+
+- Periods consistently over 7 days
+- Bleeding heavy enough to cause anemia or interfere with school / activity
+- Cycles consistently over 90 days apart after age 16
+- Severe pain disrupting daily life
+
+## Menarche and cycle syncing
+
+Adolescent cycles are too variable and frequently anovulatory for the four-phase [cycle syncing](/glossary/cycle-syncing) model to apply reliably in the first 1 to 3 years post-menarche. As cycles become regularly ovulatory (usually by age 18 to 20), the standard cycle syncing model becomes more applicable. The earlier reproductive years are mostly about building awareness of personal patterns and learning to track cycles rather than applying detailed phase-based protocols.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="menarche"
+  title="Menarche"
+  toc={[
+    { id: "what-drives-menarche", label: "What drives menarche" },
+    { id: "what-early-cycles-look-like", label: "Early cycles" },
+    { id: "when-to-flag-a-delayed-menarche", label: "Delayed menarche" },
+    { id: "when-to-flag-an-early-menarche", label: "Early menarche" },
+    { id: "whats-normal-in-adolescent-periods", label: "Normal patterns" },
+    { id: "menarche-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

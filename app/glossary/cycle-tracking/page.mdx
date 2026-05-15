@@ -1,0 +1,115 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Cycle tracking: what to record, methods, and what the data is actually for",
+  description:
+    "Cycle tracking is the practice of recording period dates, symptoms, and biomarkers to predict phases and detect patterns. Methods, what each one captures, and how to use the data without over-collecting.",
+  alternates: { canonical: "/glossary/cycle-tracking" },
+  openGraph: {
+    title: "Cycle tracking | Lumen glossary",
+    description:
+      "What to record, the four main methods, and what the data is actually for.",
+    url: "/glossary/cycle-tracking",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Cycle tracking"
+  description="Recording cycle data (period dates, symptoms, basal body temperature, cervical mucus, hormone metabolites) to predict cycle phases and detect patterns over time."
+  path="/glossary/cycle-tracking"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Cycle tracking", path: "/glossary/cycle-tracking" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Cycle tracking
+
+**Cycle tracking** is the practice of recording menstrual cycle data over time, period start and end dates, symptoms, mood, basal body temperature, cervical mucus, LH levels, and other biomarkers, to predict the next phase, detect patterns, and inform clinical conversations. It is the input layer for [cycle syncing](/glossary/cycle-syncing) and for any fertility-related decision-making.
+
+Tracking ranges from a simple two-tap calendar entry to continuous wearable data with hormone testing. The right depth depends on what you want the data to answer.
+
+## What you can track
+
+Most tracking falls into four categories:
+
+- **Calendar data.** First day of period, last day of period, cycle length. Minimum viable input for a [phase calculator](/glossary/phase-calculator).
+- **Subjective symptoms.** Cramps, mood, energy, sleep, libido, cravings, skin changes. Captured through [symptom logging](/glossary/symptom-logging).
+- **Physiological biomarkers.** [Basal body temperature](/glossary/basal-body-temperature), [cervical mucus](/glossary/cervical-mucus-tracking), [HRV cycle](/glossary/hrv-cycle), resting heart rate, sleep architecture.
+- **Hormone measurements.** LH ([OPK](/glossary/opk) strips), estrogen metabolites, progesterone metabolites ([continuous fertility monitors](/glossary/continuous-fertility-monitor)).
+
+You do not need all four. Most users get useful insight from calendar plus one of the others.
+
+## The main tracking methods
+
+**1. Period tracker app.** Logs period dates and symptoms. Predicts the next period and rough ovulation window from a calendar model. Good for cycle awareness, not for contraception. See [period tracker](/glossary/period-tracker).
+
+**2. Basal body temperature charting.** Take temperature first thing in the morning, before getting out of bed, with a [BBT thermometer](/glossary/bbt-thermometer). A sustained 0.5°F rise confirms ovulation occurred 1 to 2 days earlier. Used in [FAM](/glossary/fam).
+
+**3. Cervical mucus observation.** Note daily changes from dry to creamy to egg-white. Egg-white mucus signals the [fertile window](/glossary/fertile-window).
+
+**4. LH testing.** Strips ([OPK](/glossary/opk)) or quantitative monitors detect the LH surge that triggers ovulation. Predicts ovulation 24 to 36 hours ahead.
+
+**5. Wearables.** [Oura, Whoop, Apple Watch](/glossary/cycle-tracking-wearable) track skin temperature, HRV, and resting heart rate, then infer cycle phases. Lower friction; accuracy varies.
+
+**6. Continuous hormone monitors.** [Mira, Inito](/glossary/continuous-fertility-monitor) measure estrogen and LH (sometimes progesterone) metabolites in urine. Most precise; highest cost.
+
+## What the data is actually for
+
+Tracking has three useful outputs.
+
+**Phase prediction.** Knowing when your next period and ovulation will occur lets you plan around them, schedule meetings, time workouts, prepare for PMS. This works well for users with regular cycles (24 to 35 days) and predicts within a few days.
+
+**Pattern detection.** After 3 to 6 cycles, patterns surface. Migraines clustering in late luteal. Energy crashes day 22. Mood lift on day 7. These patterns are the foundation of [phase-based scheduling](/glossary/phase-based-scheduling).
+
+**Clinical conversations.** A 6-month log of irregular cycles, heavy bleeding, or severe PMS is more useful in a gynecology appointment than verbal recall. Apps that support [cycle data export](/glossary/cycle-data-export) make this trivial.
+
+## How long before tracking pays off
+
+Calendar prediction is reasonably accurate after 2 to 3 logged cycles. Pattern detection across symptoms typically needs 3 to 6 cycles. Hormonal signatures from wearables stabilize after 1 to 2 full cycles of consistent wear.
+
+If you have an irregular cycle ([PCOS](/glossary/pcos), [perimenopause](/glossary/perimenopause), post-pill, postpartum), calendar prediction will not work and biomarker tracking is more useful from the start.
+
+## The over-collection trap
+
+A common mistake is logging 30 variables daily for a month, then abandoning the app. Tracking is sustainable when the daily logging cost is low (under 60 seconds) and the data answers a specific question. Start with period dates plus 2 to 3 symptoms that bother you most. Add more only if a pattern is unclear without it.
+
+## Privacy considerations
+
+Cycle data is sensitive. In jurisdictions where reproductive choices are legally restricted, data exported to third-party servers can become a legal liability. See [privacy-first tracking](/glossary/privacy-first-tracking) for how to evaluate apps on this dimension.
+
+## Tracking and cycle syncing
+
+Cycle syncing requires knowing where you are in your cycle. Tracking is the input. The free [Lumen phase calculator](/plan) accepts the minimum viable input (last period date plus average cycle length) and returns your four phase ranges, no account required.
+
+For a comparison of tracking apps by privacy, accuracy, and cost, see [best cycle syncing app](/blog/best-cycle-syncing-app) and [free cycle syncing apps compared](/blog/free-cycle-syncing-apps-compared).
+
+</article>
+
+<GlossarySidebar
+  currentSlug="cycle-tracking"
+  title="Cycle tracking"
+  toc={[
+    { id: "what-you-can-track", label: "What you can track" },
+    { id: "the-main-tracking-methods", label: "Main methods" },
+    { id: "what-the-data-is-actually-for", label: "What the data is for" },
+    { id: "how-long-before-tracking-pays-off", label: "Time to insight" },
+    { id: "the-over-collection-trap", label: "Over-collection trap" },
+    { id: "privacy-considerations", label: "Privacy considerations" },
+    { id: "tracking-and-cycle-syncing", label: "Tracking and cycle syncing" },
+  ]}
+/>
+
+</div>

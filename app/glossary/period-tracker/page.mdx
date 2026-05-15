@@ -1,0 +1,121 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Period tracker vs cycle syncing app: what is actually different",
+  description:
+    "A period tracker logs period dates and symptoms. A cycle syncing app prescribes actions per phase. The distinction matters for users choosing tools, and most popular apps started on one side and added the other later.",
+  alternates: { canonical: "/glossary/period-tracker" },
+  openGraph: {
+    title: "Period tracker (vs cycle syncing app) | Lumen glossary",
+    description:
+      "Period trackers log; cycle syncing apps prescribe. The difference in practice.",
+    url: "/glossary/period-tracker",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Period tracker"
+  description="An app or tool that logs period dates and cycle symptoms, predicts the next period, and stores a longitudinal record. Distinct from a cycle syncing app, which prescribes phase-specific actions (workouts, food, schedule)."
+  path="/glossary/period-tracker"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Period tracker", path: "/glossary/period-tracker" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Period tracker (vs cycle syncing app)
+
+A **period tracker** is an app or paper log used to record period dates and cycle-related symptoms over time. It produces a prediction for the next period and stores a longitudinal record of what happened. A **cycle syncing app** does this plus prescribes actions for each [cycle phase](/glossary/cycle-phase): schedule deep work in follicular, train heavy in late follicular, edit in early luteal, reduce demands in late luteal.
+
+The distinction matters because the two tool categories solve different problems, and most users do not know which one they actually want.
+
+## What a period tracker does
+
+At minimum, a period tracker:
+
+- Logs start and end dates of each period
+- Logs symptoms ([cramps](/glossary/dysmenorrhea), mood, sleep, cravings, [acne](/glossary/hormonal-acne), etc.) on chosen days
+- Predicts the next period using a calendar model (typically a rolling average of your last 3 to 6 cycles)
+- Estimates the ovulation date and fertile window from the same calendar model
+- Shows a history view (calendar, list, or chart)
+
+Some trackers also accept [basal body temperature](/glossary/basal-body-temperature), [cervical mucus](/glossary/cervical-mucus-tracking), and LH test results to refine ovulation timing. Examples in this category: Clue, Flo (basic tier), Apple Health cycle tracking, Natural Cycles.
+
+## What a cycle syncing app does
+
+A cycle syncing app:
+
+- Calculates which [phase](/glossary/cycle-phase) you are in today
+- Generates phase-specific recommendations (workout type, food focus, work mode, sleep timing)
+- Sometimes provides phase-aware reminders or planning tools
+- May overlay phase information onto a calendar or task manager
+
+Some apps cover both categories. Flo, MyFlo, Lively, and Lumen all sit at different points along the tracker-to-syncing spectrum.
+
+## How the prediction differs
+
+A pure tracker predicts the **next period**. A cycle syncing app predicts your **current and upcoming phase windows**.
+
+The math is similar for users with regular cycles. Both start from the last period date and average cycle length, then project forward. The difference is the output framing: a tracker says "your next period is May 30"; a syncing app says "you are in early luteal until May 24, then late luteal until May 30".
+
+For irregular cycles ([PCOS](/glossary/pcos), [perimenopause](/glossary/perimenopause), post-pill recovery), calendar-based prediction in both tools breaks down. Direct biomarker tracking (BBT, LH, mucus) is more reliable than calendar in those cases.
+
+## When a tracker is enough
+
+You probably do not need a cycle syncing app if:
+
+- You only want to predict your next period
+- You are tracking for fertility planning or to discuss with a provider
+- You do not plan to change your behavior based on phase
+- You are early in your tracking journey and still gathering baseline data
+
+In those cases, a simple tracker (Clue, Apple Health, Natural Cycles) is the right tool. Free, low-friction, no decisions to make.
+
+## When syncing features add value
+
+A cycle syncing app pays off when:
+
+- You have 3+ cycles of tracking data and see consistent symptoms
+- You want a structural change in your weekly planning (workouts, work tasks, social calendar)
+- You are working with a known pattern: PMS week productivity crash, ovulation week energy spike, etc.
+- You want recommendations alongside the data, not just data
+
+The cost is higher friction and the risk that prescriptions outpace your actual evidence. The free Lumen [phase calculator](/plan) gives you the syncing-style output (four phase windows with rough actions) without an account or subscription.
+
+## Privacy considerations
+
+Period trackers and cycle syncing apps store sensitive health data. Apps that sell or share this data with third parties create real risk in jurisdictions where reproductive choices are legally restricted. See [privacy-first tracking](/glossary/privacy-first-tracking) for the criteria that actually matter.
+
+## Choosing between them
+
+Read [best cycle syncing app](/blog/best-cycle-syncing-app) for a comparison across categories: tracker-only, syncing-only, hybrid, and privacy-first. Read [free cycle syncing apps compared](/blog/free-cycle-syncing-apps-compared) for what is achievable on the free tiers. Read [cycle syncing schedule template](/blog/cycle-syncing-schedule-template) for the lift you can do without any app.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="period-tracker"
+  title="Period tracker (vs cycle syncing app)"
+  toc={[
+    { id: "what-a-period-tracker-does", label: "What a tracker does" },
+    { id: "what-a-cycle-syncing-app-does", label: "What a syncing app does" },
+    { id: "how-the-prediction-differs", label: "Prediction differences" },
+    { id: "when-a-tracker-is-enough", label: "When a tracker is enough" },
+    { id: "when-syncing-features-add-value", label: "When syncing adds value" },
+    { id: "privacy-considerations", label: "Privacy" },
+    { id: "choosing-between-them", label: "Choosing between them" },
+  ]}
+/>
+
+</div>

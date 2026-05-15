@@ -1,0 +1,140 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Body temperature regulation across the menstrual cycle",
+  description:
+    "Basal body temperature rises roughly 0.5°F after ovulation, driven by progesterone's thermogenic effect on the hypothalamus. Used to confirm ovulation retrospectively and a reliable cycle signal.",
+  alternates: { canonical: "/glossary/body-temperature-cycle" },
+  openGraph: {
+    title: "Body temperature regulation (cycle) | Lumen glossary",
+    description:
+      "How progesterone shifts the body temperature curve across the menstrual cycle and how to use it.",
+    url: "/glossary/body-temperature-cycle",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Body temperature regulation (cycle)"
+  description="Basal body temperature rises roughly 0.5°F (0.3°C) after ovulation, driven by progesterone's thermogenic effect. Used to confirm ovulation retrospectively."
+  path="/glossary/body-temperature-cycle"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Body temperature regulation (cycle)", path: "/glossary/body-temperature-cycle" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Body temperature regulation (cycle)
+
+**Body temperature** is one of the most reliable biological signals of [menstrual cycle](/glossary/menstrual-cycle) phase. [Progesterone](/glossary/progesterone) has a direct thermogenic effect on the hypothalamus, raising basal body temperature (BBT) by roughly 0.5°F (0.3°C) within 24 to 48 hours of [ovulation](/glossary/ovulation). The elevated temperature stays for the duration of the [luteal phase](/glossary/luteal-phase) and drops back to follicular baseline just before or at the start of menstruation.
+
+This biphasic pattern is the basis for [basal body temperature](/glossary/basal-body-temperature) charting in [fertility awareness methods](/glossary/fam) and is one of the cleanest signals modern wearables can pick up.
+
+## The basics of body temperature regulation
+
+Core body temperature is controlled by the preoptic area of the hypothalamus, which acts as the body's thermostat. The thermostat normally targets roughly 98.6°F (37°C), with about a 1°F daily circadian variation (lowest in early morning, highest in late afternoon). [Estrogen](/glossary/estrogen) tends to lower the thermostat setpoint; progesterone raises it.
+
+The cyclic pattern is the result of which hormone is dominant in each phase.
+
+## The cyclic temperature pattern
+
+Across a typical 28-day cycle:
+
+- **Menstrual and follicular (days 1 to 13):** estrogen dominant, progesterone near zero. BBT runs at the lower setpoint, typically 97.0 to 97.7°F (36.1 to 36.5°C) on first-morning measurement.
+- **Ovulation (around day 14):** estrogen peaks, then dips. Progesterone starts rising as the corpus luteum forms.
+- **Early luteal (days 15 to 17):** BBT rises 0.4 to 0.6°F within 24 to 48 hours of ovulation. This shift confirms ovulation retrospectively.
+- **Mid-to-late luteal (days 18 to 26):** BBT stays elevated, typically 97.7 to 98.4°F (36.5 to 36.9°C).
+- **Late luteal (days 27 to 28):** progesterone drops, BBT starts falling.
+- **Menstruation:** BBT returns to follicular baseline.
+
+The temperature shift is small in absolute terms (about half a degree Fahrenheit) but reliable enough to be useful for ovulation confirmation when measured first-morning with a sensitive thermometer.
+
+## Why progesterone raises temperature
+
+Progesterone interacts directly with hypothalamic temperature regulation. The thermogenic effect is independent of metabolic rate change; it shifts the thermostat setpoint. The brain regulates the body to a slightly higher target temperature, which manifests as:
+
+- Higher resting metabolic temperature.
+- Slight increase in resting heart rate (2 to 5 BPM).
+- Feeling warmer, particularly at night.
+- Slower temperature drop at bedtime, which interferes with sleep onset (see [sleep architecture](/glossary/sleep-architecture-cycle)).
+
+The effect persists for as long as progesterone is elevated. If pregnancy occurs, the corpus luteum continues producing progesterone, and BBT stays elevated past the expected period date. A sustained BBT over 18 days post-ovulation is a strong (though not definitive) early pregnancy signal.
+
+## Confirming ovulation retrospectively
+
+BBT charting confirms ovulation after the fact, not in real time. The protocol:
+
+1. Measure BBT every morning before getting out of bed, with a thermometer accurate to 0.1°F.
+2. Track values on a chart or in an app.
+3. Look for a sustained rise of 0.4°F or more above the previous six days' average.
+4. Ovulation is presumed to have occurred 1 to 2 days before the rise.
+
+The third high day after the shift confirms ovulation, by which point the fertile window has closed. BBT cannot predict ovulation in real time. To do that, [cervical mucus tracking](/glossary/cervical-mucus-tracking), [OPKs](/glossary/opk), or rolling cycle data are more useful.
+
+## Continuous temperature wearables
+
+Modern wearables (Oura, Apple Watch with cycle tracking, Tempdrop, several others) measure continuous skin or body temperature overnight. These devices smooth the noise of single-point first-morning measurements and can detect the post-ovulatory shift reliably for many users.
+
+The advantages:
+
+- **Less compliance burden.** No daily thermometer routine.
+- **More data points.** Algorithms detect the shift more reliably.
+- **Integration with HRV and resting heart rate.** Compound signals make phase detection cleaner.
+
+The limits: wearables measure skin temperature, not core body temperature directly. Algorithms vary in quality. Sleep position, room temperature, and illness can all introduce noise.
+
+The [continuous fertility monitor](/glossary/continuous-fertility-monitor) entry covers the major devices in detail.
+
+## What can mask or alter the pattern
+
+The temperature signal can be obscured by:
+
+- **Illness.** Fevers disrupt the baseline.
+- **Alcohol the prior evening.** Skews first-morning readings.
+- **Disrupted sleep.** Inconsistent wake times affect measurement timing.
+- **Anovulatory cycles.** No ovulation, no progesterone, no temperature rise. The chart stays flat.
+- **[Luteal phase defect](/glossary/luteal-phase-defect).** Lower progesterone produces a smaller or shorter temperature elevation.
+- **Hormonal birth control.** Combined methods suppress ovulation; the natural temperature shift does not occur. Progestin-only methods may or may not, depending on whether ovulation is suppressed.
+- **[Perimenopause](/glossary/perimenopause).** Erratic ovulation produces erratic temperature patterns.
+
+A flat or chaotic chart is information, not a failure of the method.
+
+## Practical takeaway
+
+BBT is one of the few self-tracked signals that maps directly to a hormonal event (the post-ovulatory progesterone rise). If you want a low-tech, free, evidence-based way to know whether you ovulated, daily BBT measurement is the answer. For cycle phase tracking generally, continuous-temperature wearables or symptom-based methods are usually less effort.
+
+## Related reading
+
+- [Progesterone](/glossary/progesterone): the upstream hormone driving the rise
+- [Basal body temperature](/glossary/basal-body-temperature): the measurement protocol
+- [Fertility awareness methods](/glossary/fam): how BBT fits into contraception or conception
+- [Sympto-thermal method](/glossary/sympto-thermal-method): combining BBT with cervical mucus
+
+</article>
+
+<GlossarySidebar
+  currentSlug="body-temperature-cycle"
+  title="Body temperature regulation (cycle)"
+  toc={[
+    { id: "the-basics-of-body-temperature-regulation", label: "The basics" },
+    { id: "the-cyclic-temperature-pattern", label: "Cyclic pattern" },
+    { id: "why-progesterone-raises-temperature", label: "Progesterone mechanism" },
+    { id: "confirming-ovulation-retrospectively", label: "Confirming ovulation" },
+    { id: "continuous-temperature-wearables", label: "Wearables" },
+    { id: "what-can-mask-or-alter-the-pattern", label: "What can mask the pattern" },
+    { id: "practical-takeaway", label: "Practical takeaway" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,121 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Premenstrual cravings: why they happen and what to do about them",
+  description:
+    "Premenstrual cravings are the increased appetite and specific food cravings (often carbohydrate or chocolate) in the late luteal phase. Mechanism, timing, and what helps.",
+  alternates: { canonical: "/glossary/premenstrual-cravings" },
+  openGraph: {
+    title: "Premenstrual cravings | Lumen glossary",
+    description:
+      "Definition, the hormonal mechanism, and practical strategies for working with cyclical cravings.",
+    url: "/glossary/premenstrual-cravings",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Premenstrual cravings"
+  description="Increased appetite and specific food cravings in the late luteal phase, linked to serotonin decline and insulin sensitivity shifts."
+  path="/glossary/premenstrual-cravings"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Premenstrual cravings", path: "/glossary/premenstrual-cravings" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Premenstrual cravings
+
+**Premenstrual cravings** are the increased appetite and specific food cravings, often for carbohydrates, chocolate, or salt, that show up in the late [luteal phase](/glossary/luteal-phase). They are one of the most common [PMS](/glossary/pms) symptoms and have a clear biological basis rather than being a willpower issue.
+
+*This is informational, not medical advice. Talk to your provider if cravings feel out of control, drive binge-eating patterns, or co-occur with mood symptoms severe enough to consider [PMDD](/glossary/pmdd).*
+
+## What it feels like
+
+The pattern is recognizable:
+
+- A noticeable jump in hunger, often unrelated to actual energy needs
+- Specific pull toward chocolate, baked goods, bread, pasta, or salty snacks
+- Less satisfaction from regular meals, more "second helping" pressure
+- An emotional component, food as comfort, not just fuel
+- Resolution within a day or two of bleeding starting
+
+The window typically runs the 7 to 10 days before menstruation, with peak intensity in the last 3 to 4 days. Resting metabolic rate also rises slightly in this window (roughly 5 to 10%), so a real increase in appetite is appropriate, not entirely a craving illusion.
+
+## The mechanism
+
+Three overlapping pathways drive premenstrual cravings:
+
+- **[Serotonin](/glossary/serotonin-cycle) decline.** [Estrogen](/glossary/estrogen) supports serotonin signaling, and the late-luteal estrogen drop reduces serotonin activity. Carbohydrates raise serotonin indirectly (insulin clears competing amino acids from the blood, allowing more tryptophan into the brain). The body is doing rough chemistry, reaching for carbs to lift mood.
+- **[Insulin sensitivity](/glossary/insulin-sensitivity-cycle) shifts.** Insulin sensitivity drops modestly in the luteal phase, meaning blood sugar swings can be larger, which triggers craving responses.
+- **Resting metabolic rate increase.** Basal metabolism rises in luteal, so real caloric need is slightly higher.
+
+The chocolate-specific pull may also reflect magnesium need: cocoa is high in magnesium, and [magnesium](/glossary/magnesium-pms) supports both mood and muscle relaxation.
+
+## What the research supports
+
+The cycle effect on appetite is one of the better-replicated findings in cycle research. Caloric intake rises modestly (typically 100 to 300 calories per day) in late luteal in controlled studies. The preference shift toward sweet and starchy foods is also reliable.
+
+What is less supported: the popular claim that phase-specific food prescriptions ("warming foods in menstrual, raw foods in follicular") meaningfully shift symptoms. The evidence for those protocols is thin.
+
+## What helps
+
+**Practical adjustments:**
+
+- Eat at regular intervals through the luteal week. Skipping meals amplifies cravings sharply.
+- Build meals around protein and fiber, which extend satiety and steady blood sugar.
+- Allow some craved food without restriction. Hard restriction tends to drive larger binges later.
+- Pair craved foods with protein (chocolate with nuts, bread with cheese) to slow blood sugar spikes.
+- Increase magnesium-rich foods (dark chocolate, leafy greens, pumpkin seeds) or supplement.
+
+**Supplementation with modest support:**
+
+- [Magnesium](/glossary/magnesium-pms) 200 to 400mg glycinate form, taken in late luteal.
+- [Vitamin B6](/glossary/vitamin-b6-pms) 50 to 100mg.
+- [Omega-3](/glossary/omega-3-pms), modest effect on mood and craving severity.
+
+**Not well supported:**
+
+- Strict elimination diets for "PMS food triggers".
+- Phase-specific meal plans marketed as cycle syncing.
+
+## Premenstrual cravings and cycle syncing
+
+The grounded cycle syncing approach: anticipate the appetite rise in late luteal and plan for it. Have higher-quality versions of craved foods available (dark chocolate, whole-grain bread, salted nuts) so the path of least resistance is not ultra-processed. Increase protein at breakfast across the luteal week. Avoid scheduling restrictive eating windows or new diet starts in late luteal; the friction is much higher.
+
+The [cycle syncing meal timing guide](/blog/cycle-syncing-chart) covers practical phase-by-phase nutrition.
+
+## When to talk to a provider
+
+- Cravings driving binge-eating patterns with shame, secrecy, or compensatory behaviors (possible eating disorder pattern, which can intensify cyclically but is not a cycle problem).
+- Cravings paired with severe mood symptoms ([PMDD](/glossary/pmdd) screening).
+- Cravings driving substantial weight gain across multiple cycles.
+- Cravings combined with thirst, frequent urination, or other blood sugar concern signs.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="premenstrual-cravings"
+  title="Premenstrual cravings"
+  toc={[
+    { id: "what-it-feels-like", label: "What it feels like" },
+    { id: "the-mechanism", label: "The mechanism" },
+    { id: "what-the-research-supports", label: "What research supports" },
+    { id: "what-helps", label: "What helps" },
+    { id: "premenstrual-cravings-and-cycle-syncing", label: "And cycle syncing" },
+    { id: "when-to-talk-to-a-provider", label: "When to see a provider" },
+  ]}
+/>
+
+</div>

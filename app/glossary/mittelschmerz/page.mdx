@@ -1,0 +1,130 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Mittelschmerz (ovulation pain): timing, mechanism, and when to worry",
+  description:
+    "Mittelschmerz is one-sided pelvic pain at ovulation, usually harmless and brief. Timing, mechanism, distinguishing features, and the red flags that warrant evaluation.",
+  alternates: { canonical: "/glossary/mittelschmerz" },
+  openGraph: {
+    title: "Mittelschmerz (ovulation pain) | Lumen glossary",
+    description:
+      "What ovulation pain feels like, why it happens, and when it warrants medical attention.",
+    url: "/glossary/mittelschmerz",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Mittelschmerz (ovulation pain)"
+  description="One-sided pelvic pain occurring at ovulation, usually brief and harmless. From the German for 'middle pain'."
+  path="/glossary/mittelschmerz"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Mittelschmerz", path: "/glossary/mittelschmerz" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Mittelschmerz (ovulation pain)
+
+**Mittelschmerz** (German for "middle pain") is one-sided pelvic pain occurring around [ovulation](/glossary/ovulation), typically mid-cycle. It is usually harmless and brief, affecting roughly 20% of menstruating women in any given cycle and 40% at some point.
+
+*This is informational, not medical advice. Talk to your provider if ovulation pain is severe, prolonged, or paired with fever, heavy bleeding, or fainting.*
+
+## What it feels like
+
+The classic mittelschmerz pattern:
+
+- Sharp, cramping, or dull pain on one side of the lower abdomen
+- Side alternates between cycles or stays on one side (variable)
+- Lasts from a few minutes to roughly 24 to 48 hours
+- Mild to moderate intensity for most people
+- Sometimes paired with light [mid-cycle spotting](/glossary/mid-cycle-spotting) or increased clear stretchy [cervical mucus](/glossary/cervical-mucus-tracking)
+
+The timing (mid-cycle, around day 14 of a 28-day cycle) and the one-sided quality are the diagnostic clues. Bilateral pain or pain at other cycle points needs a different explanation.
+
+## The mechanism
+
+Several proposed mechanisms, no single agreed cause:
+
+- **Follicular stretch.** As the dominant [ovarian follicle](/glossary/ovarian-follicle) matures (reaching roughly 18 to 25mm before ovulation), it stretches the ovarian capsule, which has pain-sensitive innervation.
+- **Follicular rupture.** Ovulation itself involves a small amount of fluid and sometimes blood release into the pelvic cavity, which can irritate the peritoneum.
+- **Fallopian tube contractions.** Smooth muscle contractions facilitating egg transport may contribute to cramping.
+- **[Prostaglandin](/glossary/inflammation-cycle) release** at the follicular rupture site.
+
+Pain on one side typically reflects which ovary released the egg that cycle.
+
+## Distinguishing mittelschmerz from other pelvic pain
+
+The timing pattern is the most important clue. Other possibilities to keep in mind:
+
+- **[Dysmenorrhea](/glossary/dysmenorrhea):** menstrual pain, occurs with bleeding, not mid-cycle.
+- **[Endometriosis](/glossary/endometriosis):** pelvic pain that can occur at multiple points in the cycle and tends to be more severe and persistent.
+- **Ovarian cyst:** persistent pelvic pain, often one-sided, may not resolve with cycle progression.
+- **Appendicitis:** right-sided pain with fever, nausea, and progressive worsening (mittelschmerz does not progress; it resolves).
+- **Ectopic pregnancy:** one-sided pain with missed period and positive pregnancy test, a medical emergency.
+
+Mittelschmerz is mid-cycle, brief, mild to moderate, and resolves on its own.
+
+## What the research supports
+
+- Mittelschmerz is benign in the vast majority of cases.
+- It is a useful but not perfectly reliable signal of ovulation. About 50% of people who experience it have it consistently across cycles; others have it only sometimes.
+- Combined with [cervical mucus tracking](/glossary/cervical-mucus-tracking) and [basal body temperature](/glossary/basal-body-temperature), it can help confirm ovulation timing.
+- Cycle tracking apps that use mittelschmerz as the sole ovulation signal are unreliable. Use it as supporting evidence, not primary.
+
+## What helps
+
+For mild to moderate ovulation pain:
+
+- Heat (heating pad, warm bath) reduces cramping
+- NSAIDs (ibuprofen, naproxen) work well because the pain is partly prostaglandin-driven
+- Gentle movement, walking, or stretching
+- Hydration
+
+Most cases resolve within hours. If pain persists beyond 48 hours, that is not mittelschmerz and warrants evaluation.
+
+## Mittelschmerz and cycle syncing
+
+For people who get reliable mittelschmerz, it can serve as a confirmatory signal of ovulation, helpful for both fertility awareness and [phase-based scheduling](/glossary/phase-based-scheduling). The day you feel ovulation pain is roughly your [ovulatory phase](/glossary/ovulatory-phase) midpoint. The day before is the high point of the [fertile window](/glossary/fertile-window).
+
+For people trying to conceive, mittelschmerz signals the fertile window is closing; the most fertile days are typically the 2 to 3 days before, not the day of ovulation pain itself.
+
+## When to talk to a provider
+
+- Pain severe enough to disrupt work or daily function.
+- Pain lasting more than 48 hours.
+- Pain paired with fever, chills, or vomiting.
+- Pain paired with heavy bleeding or fainting.
+- New-onset ovulation pain after years without it.
+- Pain plus the possibility of pregnancy (positive test or missed period).
+
+The "right-sided" mittelschmerz worth taking seriously is severe pain with fever or progressive worsening, which can be appendicitis. When in doubt, call a provider.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="mittelschmerz"
+  title="Mittelschmerz (ovulation pain)"
+  toc={[
+    { id: "what-it-feels-like", label: "What it feels like" },
+    { id: "the-mechanism", label: "The mechanism" },
+    { id: "distinguishing-mittelschmerz-from-other-pelvic-pain", label: "Distinguishing features" },
+    { id: "what-the-research-supports", label: "What research supports" },
+    { id: "what-helps", label: "What helps" },
+    { id: "mittelschmerz-and-cycle-syncing", label: "And cycle syncing" },
+    { id: "when-to-talk-to-a-provider", label: "When to see a provider" },
+  ]}
+/>
+
+</div>

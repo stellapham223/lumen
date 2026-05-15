@@ -1,0 +1,122 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Phase-aligned nutrition: where the evidence is thinnest in cycle syncing",
+  description:
+    "Phase-aligned nutrition means eating different foods per cycle phase. This is the most overclaimed corner of cycle syncing. Evidence is mostly mechanistic. Definition, what is plausible, what is not.",
+  alternates: { canonical: "/glossary/phase-aligned-nutrition" },
+  openGraph: {
+    title: "Phase-aligned nutrition | Lumen glossary",
+    description:
+      "Eating different foods per cycle phase. The most overclaimed corner of cycle syncing. Evidence is mostly mechanistic.",
+    url: "/glossary/phase-aligned-nutrition",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Phase-aligned nutrition"
+  description="The practice of eating different foods per menstrual cycle phase. Evidence is mostly mechanistic, not from controlled human trials. The most overclaimed corner of cycle syncing."
+  path="/glossary/phase-aligned-nutrition"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Phase-aligned nutrition", path: "/glossary/phase-aligned-nutrition" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Phase-aligned nutrition
+
+**Phase-aligned nutrition** is the practice of eating different foods in each phase of the [menstrual cycle](/glossary/menstrual-cycle): warming foods in menstrual, lighter foods in follicular, raw foods in ovulatory, denser carbohydrates in luteal. Lumen's positioning is that this is the most overclaimed corner of cycle syncing; the underlying rationale is that cycle-driven shifts in [insulin sensitivity](/glossary/insulin-sensitivity-cycle), body temperature, and inflammation are real but small, and the food prescriptions built on top of them are mostly mechanistic extrapolation rather than tested protocol.
+
+The honest framing: the basic patterns (eat enough iron during your period, manage caffeine in late luteal, watch crash-prone snacks in PMS week) make sense. The detailed phase-by-phase food lists in popular books are not what the research supports.
+
+## What is being claimed
+
+The popular framing maps foods onto phases:
+
+- **Menstrual phase:** warming foods, iron-rich foods, bone broth.
+- **Follicular phase:** lighter foods, fermented foods, sprouts, lean protein.
+- **Ovulatory phase:** raw fruits and vegetables, antioxidant-rich foods.
+- **Luteal phase:** complex carbohydrates, root vegetables, magnesium-rich foods.
+
+The prescriptions usually come from Alisa Vitti's *WomanCode* and downstream wellness content. Most variations are similar.
+
+## What the evidence supports
+
+Three claims have reasonable backing:
+
+- **Iron intake matters during the menstrual phase.** Heavy bleeders ([menorrhagia](/glossary/menorrhagia)) are at real risk of [iron deficiency](/glossary/iron-period). Iron-rich food or supplementation in the menstrual phase has a defensible rationale.
+- **Insulin sensitivity drops in luteal phase.** Some studies show modestly reduced insulin sensitivity in luteal. The practical implication: blood sugar crashes may feel worse, and complex carbs may be preferable to refined sugars. See [insulin sensitivity cycle](/glossary/insulin-sensitivity-cycle).
+- **Energy needs may rise slightly in luteal.** Basal metabolic rate increases by roughly 2 to 11% in luteal. Modest. Not a license to overeat.
+- **Some PMS symptoms respond to specific nutrients.** [Magnesium](/glossary/magnesium-pms), [vitamin B6](/glossary/vitamin-b6-pms), and [omega-3](/glossary/omega-3-pms) have small but real effects on PMS symptoms in controlled trials.
+
+Together these support a modest case: eat normally, prioritize iron during your period, lean on whole foods and protein in luteal, supplement specific nutrients if PMS is a problem.
+
+## What is mostly mechanistic
+
+The full phase-by-phase food prescriptions go far beyond what the evidence supports. The typical chain:
+
+1. Cell or animal study shows compound X interacts with hormone Y.
+2. Hormone Y varies across the menstrual cycle.
+3. Therefore, eat foods containing X in phases when hormone Y is high or low.
+
+This is not how nutrition science works. The leap from "compound X has an effect in cells" to "you should eat this food on day 15" skips every step of dose, bioavailability, food matrix, and human trial that would actually validate the recommendation.
+
+The evidence for "raw foods at ovulation" or "warming foods in menstrual" is essentially zero. These are cultural and intuitive recommendations dressed in biological language.
+
+## What about phytoestrogens and seed cycling
+
+[Phytoestrogens](/glossary/phytoestrogens) (compounds in flax, soy, sesame) have weak estrogen-like effects. [Seed cycling](/glossary/seed-cycling), the practice of eating specific seeds in each half of the cycle, builds on this. The evidence is anecdotal at best; there are no controlled trials showing seed cycling improves symptoms or hormone balance. Treat as harmless if you enjoy it; do not treat as therapeutic.
+
+## What to actually do
+
+A pragmatic version of phase-aligned nutrition:
+
+- **Iron during your period.** Especially if flow is heavy. Red meat, beans, fortified cereals, supplementation if levels are low.
+- **Protein in luteal phase.** Helps with satiety against late luteal cravings.
+- **Stable blood sugar in late luteal.** Avoid long gaps between meals; prefer complex carbs over refined.
+- **Magnesium-rich foods (or supplementation) for PMS.** Pumpkin seeds, dark leafy greens, dark chocolate.
+- **Less caffeine in late luteal.** Especially after 2pm. Sleep is already disrupted.
+- **Reduce alcohol in late luteal.** PMS symptoms and sleep both worsen with alcohol.
+
+None of this requires daily phase-specific food lists. It requires good general eating with a few cycle-aware tweaks.
+
+## Lumen's positioning
+
+Lumen does not prescribe foods by phase. The product is a scheduling and recovery overlay, not a meal plan. Where nutrition matters (iron during heavy periods, magnesium for PMS, caffeine cutoffs in late luteal), the [late luteal phase](/glossary/late-luteal-phase) and [menstrual phase](/glossary/menstrual-phase) glossary entries link to the relevant evidence-backed nutrients.
+
+## Related reading
+
+- [Cycle syncing meal timing](/blog/cycle-syncing-meal-timing): the practical version
+- [Magnesium for PMS](/glossary/magnesium-pms): a well-supported nutrient
+- [Insulin sensitivity cycle](/glossary/insulin-sensitivity-cycle): the underlying mechanism
+- [Does cycle syncing work](/blog/does-cycle-syncing-work): the evidence overview
+
+</article>
+
+<GlossarySidebar
+  currentSlug="phase-aligned-nutrition"
+  title="Phase-aligned nutrition"
+  toc={[
+    { id: "what-is-being-claimed", label: "What is claimed" },
+    { id: "what-the-evidence-supports", label: "What evidence supports" },
+    { id: "what-is-mostly-mechanistic", label: "Mostly mechanistic" },
+    { id: "what-about-phytoestrogens-and-seed-cycling", label: "Phytoestrogens" },
+    { id: "what-to-actually-do", label: "What to actually do" },
+    { id: "lumens-positioning", label: "Lumen's positioning" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

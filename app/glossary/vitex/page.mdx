@@ -1,0 +1,125 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Vitex (chasteberry): evidence for PMS, breast tenderness, and cycle regularity",
+  description:
+    "Vitex (Vitex agnus-castus) is a botanical with moderate evidence for PMS, particularly breast tenderness and irritability, plus some support for cycle regularity. Mechanism, dosing, and cautions.",
+  alternates: { canonical: "/glossary/vitex" },
+  openGraph: {
+    title: "Vitex (chasteberry) | Lumen glossary",
+    description:
+      "What the evidence says about vitex for PMS and cycle regularity, dosing, and what NOT to use it for.",
+    url: "/glossary/vitex",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Vitex (chasteberry)"
+  description="Vitex agnus-castus, a Mediterranean shrub used medicinally. Affects prolactin and dopamine signaling. Moderate evidence for PMS, particularly breast tenderness, and for some cycle irregularity."
+  path="/glossary/vitex"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Vitex", path: "/glossary/vitex" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Vitex (chasteberry)
+
+**Vitex** (Vitex agnus-castus, also called chasteberry or chaste tree) is a Mediterranean shrub whose dried berries have been used medicinally for centuries. In modern phytotherapy it is one of the most-studied botanicals for women's reproductive health, with the strongest evidence in [PMS](/glossary/pms) (especially breast tenderness) and some evidence for cycle regularity and [luteal phase defect](/glossary/luteal-phase-defect).
+
+*Consult a provider before starting supplements, especially if pregnant, breastfeeding, or on medications.*
+
+## What the evidence says
+
+The evidence base for vitex is moderate, with notable variability in trial design and extract used:
+
+- **PMS overall.** Multiple randomized trials show vitex reduces PMS symptoms compared to placebo, with effect sizes in the moderate range. The 2017 systematic review in Planta Medica concluded vitex is effective for PMS.
+- **Breast tenderness ([mastalgia](/glossary/breast-tenderness)).** The most consistent finding. Several trials show clear reductions in cyclical breast pain.
+- **Irritability and mood symptoms.** Moderate evidence for improvement in late-luteal mood symptoms.
+- **Cycle regularity.** Some evidence for shortening abnormally long cycles and supporting [luteal phase](/glossary/luteal-phase) length, particularly in users with [luteal phase defect](/glossary/luteal-phase-defect).
+- **Fertility.** Limited evidence; some trials show modest improvement in conception rates in users with luteal phase issues, but this is not robustly established.
+- **[PMDD](/glossary/pmdd).** Not adequately studied as monotherapy. PMDD typically requires more aggressive intervention than a botanical.
+
+Vitex is not a substitute for clinical care in serious cycle disorders. It is a botanical with real signal but not knockout effects.
+
+## Why it might work
+
+Vitex's mechanism centers on the pituitary and dopaminergic system:
+
+- **Lowers prolactin.** Vitex appears to act as a dopamine agonist at the pituitary, mildly suppressing [prolactin](/glossary/prolactin) release. Elevated prolactin is associated with breast tenderness, irregular cycles, and luteal phase defect.
+- **Indirect progesterone support.** By lowering prolactin and potentially supporting the [luteal phase](/glossary/luteal-phase), vitex may help [progesterone](/glossary/progesterone) production indirectly, though it does not contain hormones itself.
+- **Possible mu-opioid receptor binding.** May contribute to its mood and pain effects.
+
+It is not phytoestrogenic and does not act on estrogen receptors directly.
+
+## Dosing
+
+Typical effective range in trials: **20 to 40mg of standardized extract daily**, often given as 4mg of a 10:1 concentrated extract or similar. Some products use higher doses of less concentrated extracts.
+
+A few things to know:
+
+1. **Standardized extracts work best.** Look for products that specify the extract ratio (e.g., 10:1) and active compound content (casticin or agnuside).
+2. **Continuous daily dosing**, taken in the morning. Effects typically build over 2 to 3 cycles.
+3. **Give it time.** Vitex is not a same-day intervention. Trials typically run 3 cycles before assessing effect.
+4. **Stop and reassess** if no improvement after 3 to 4 cycles.
+
+## Common side effects and cautions
+
+Vitex is generally well tolerated. Reported side effects:
+
+- **GI upset.**
+- **Headache.**
+- **Skin reactions** (rare).
+- **Cycle disruption** in some users, particularly initially.
+
+Important interactions and cautions:
+
+- **Hormonal contraceptives.** Theoretical interaction; some sources caution against combining with [combined hormonal contraceptives](/glossary/combined-hormonal-contraceptive). Practical evidence is limited but the pharmacologic logic suggests it may interfere.
+- **Dopamine agonists or antagonists.** Vitex's dopaminergic effect can interact with medications targeting these pathways (antipsychotics, Parkinson's medications, etc.). Discuss with a provider.
+- **Pregnancy and breastfeeding.** Avoid. Vitex lowers prolactin, which is needed for lactation, and its effects in pregnancy are not well established.
+- **Estrogen-sensitive cancers.** Discuss with a provider.
+- **High prolactin from pituitary causes.** Vitex is not a substitute for medical workup of significantly elevated prolactin (which can indicate a pituitary adenoma).
+
+## Where it fits
+
+Vitex is a reasonable trial for users with:
+
+- Cyclical breast tenderness as a prominent PMS symptom.
+- Moderate PMS with mood and physical symptoms.
+- Mildly long cycles or suspected luteal phase issues, after a workup excludes other causes.
+
+It is not a substitute for evaluation of [PCOS](/glossary/pcos), [hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea), [perimenopause](/glossary/perimenopause), or any clinically significant cycle irregularity.
+
+## Related reading
+
+- [Breast tenderness](/glossary/breast-tenderness): the symptom vitex is best for
+- [Prolactin](/glossary/prolactin): the hormone vitex modulates
+- [PMS](/glossary/pms): the broader symptom complex
+
+</article>
+
+<GlossarySidebar
+  currentSlug="vitex"
+  title="Vitex (chasteberry)"
+  toc={[
+    { id: "what-the-evidence-says", label: "What the evidence says" },
+    { id: "why-it-might-work", label: "Why it might work" },
+    { id: "dosing", label: "Dosing" },
+    { id: "common-side-effects-and-cautions", label: "Side effects and cautions" },
+    { id: "where-it-fits", label: "Where it fits" },
+  ]}
+/>
+
+</div>

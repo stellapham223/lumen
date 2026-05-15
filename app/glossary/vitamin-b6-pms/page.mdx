@@ -1,0 +1,122 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Vitamin B6 for PMS: evidence, dosing, and toxicity caution",
+  description:
+    "Vitamin B6 (pyridoxine) is a cofactor for serotonin synthesis with moderate evidence for PMS mood and physical symptoms. Effective dose 50 to 100mg daily. High doses risk peripheral neuropathy.",
+  alternates: { canonical: "/glossary/vitamin-b6-pms" },
+  openGraph: {
+    title: "Vitamin B6 for PMS | Lumen glossary",
+    description:
+      "What B6 does for PMS, the trial evidence, dosing range, and the neuropathy risk at high doses.",
+    url: "/glossary/vitamin-b6-pms",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Vitamin B6 (for PMS)"
+  description="Pyridoxine, a cofactor for serotonin and dopamine synthesis. Moderate evidence for PMS mood and physical symptom reduction at 50 to 100mg daily."
+  path="/glossary/vitamin-b6-pms"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Vitamin B6 for PMS", path: "/glossary/vitamin-b6-pms" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Vitamin B6 (for PMS)
+
+**Vitamin B6** (pyridoxine, and its active form pyridoxal-5-phosphate, P5P) is a water-soluble vitamin that serves as a cofactor in over 100 enzymatic reactions, including the synthesis of [serotonin](/glossary/serotonin-cycle), [dopamine](/glossary/dopamine-cycle), and [GABA](/glossary/gaba). B6 has been studied for [PMS](/glossary/pms) for decades and has accumulated moderate evidence for symptom reduction.
+
+*Consult a provider before starting supplements, especially if pregnant, breastfeeding, or on medications.*
+
+## What the evidence says
+
+A 1999 BMJ systematic review and several subsequent trials and meta-analyses found:
+
+- **Moderate evidence** for B6 reducing overall PMS symptom severity, with effect sizes comparable to magnesium.
+- **Mood symptoms** (irritability, low mood, anxiety) show the most consistent improvement.
+- **Physical symptoms** (breast tenderness, bloating, cyclical headaches) show modest improvement in some trials.
+- **PMDD response** is less well-studied; B6 is not a substitute for SSRIs in clinical [PMDD](/glossary/pmdd).
+
+The evidence is not bulletproof. Many B6 trials are old, small, or methodologically imperfect. But the moderate effect across multiple studies is enough that B6 appears on most PMS clinical reference lists.
+
+## Why it might work
+
+B6 is a cofactor in serotonin synthesis (tryptophan to 5-HTP to serotonin) and dopamine synthesis. The dominant model for PMS includes a late-luteal drop in serotonin signaling as [estrogen](/glossary/estrogen) declines. Adequate B6 may support neurotransmitter resilience through that drop.
+
+B6 is also involved in:
+
+- Glycogen breakdown (energy in luteal phase, when fatigue is common).
+- Hemoglobin synthesis (relevant for [iron](/glossary/iron-period) and energy in menstruating women).
+- Estrogen metabolism in the liver.
+
+## Dosing
+
+Typical effective range in PMS trials: **50 to 100mg of pyridoxine daily**, sometimes ramped to 200mg in older studies (not recommended at that level today due to neuropathy concerns).
+
+A few things to know:
+
+1. **Start at 50mg.** Move to 100mg only if 50mg is well tolerated and not sufficient.
+2. **Stay below 200mg daily.** Long-term doses above this level carry a real risk of peripheral neuropathy (numbness, tingling, balance problems).
+3. **P5P form** is the active form and is often better tolerated than plain pyridoxine, though evidence for clinical superiority in PMS trials is limited.
+4. **Continuous daily dosing** is the standard. Some users only dose in the luteal phase, with less direct trial support.
+
+## Common side effects and cautions
+
+The biggest issue with B6 is the **dose-dependent risk of peripheral neuropathy**, more so than with most water-soluble vitamins. Most reported cases involve sustained doses above 200mg daily, often for years, but rare cases at lower doses exist.
+
+Symptoms of B6-induced neuropathy:
+
+- Tingling or numbness in hands or feet.
+- Burning sensations.
+- Balance problems.
+- Reduced sensation.
+
+If these appear, stop B6 and consult a provider. The neuropathy is usually reversible at lower doses but recovery can take months.
+
+Other cautions:
+
+- **Drug interactions.** B6 can interfere with levodopa (Parkinson's medication) and some seizure medications.
+- **Pregnancy:** B6 is used for nausea in pregnancy at 25 to 75mg daily, considered safe within those limits.
+- **Photosensitivity** in rare cases at high doses.
+
+## Where it fits
+
+B6 is a reasonable second supplement to consider after or alongside [magnesium](/glossary/magnesium-pms) for moderate PMS. Many PMS-specific multivitamins include both. It is not a substitute for clinical evaluation of [PMDD](/glossary/pmdd) or severe PMS.
+
+The 100mg ceiling is the rule of thumb to remember. If you find yourself wanting more, that is a signal to consider clinical evaluation, not to keep raising the dose.
+
+## Related reading
+
+- [Magnesium for PMS](/glossary/magnesium-pms): often paired with B6
+- [Omega-3 for PMS](/glossary/omega-3-pms): another moderately supported option
+- [PMS](/glossary/pms): the symptom complex this addresses
+
+</article>
+
+<GlossarySidebar
+  currentSlug="vitamin-b6-pms"
+  title="Vitamin B6 (for PMS)"
+  toc={[
+    { id: "what-the-evidence-says", label: "What the evidence says" },
+    { id: "why-it-might-work", label: "Why it might work" },
+    { id: "dosing", label: "Dosing" },
+    { id: "common-side-effects-and-cautions", label: "Side effects and cautions" },
+    { id: "where-it-fits", label: "Where it fits" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

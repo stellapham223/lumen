@@ -1,0 +1,144 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Catamenial epilepsy: seizures that cluster with the menstrual cycle",
+  description:
+    "Catamenial epilepsy is the seizure pattern timed to specific cycle phases, affecting roughly 40% of women with epilepsy. Patterns, mechanism, and treatment approaches.",
+  alternates: { canonical: "/glossary/catamenial-epilepsy" },
+  openGraph: {
+    title: "Catamenial epilepsy | Lumen glossary",
+    description:
+      "Definition, the three seizure-clustering patterns, the hormonal mechanism, and management options.",
+    url: "/glossary/catamenial-epilepsy",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Catamenial epilepsy"
+  description="Seizure pattern timed to specific menstrual cycle phases, affecting roughly 40% of women with epilepsy. Three clinical patterns are recognized, all driven by hormone effects on neuronal excitability."
+  path="/glossary/catamenial-epilepsy"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Catamenial epilepsy", path: "/glossary/catamenial-epilepsy" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Catamenial epilepsy
+
+**Catamenial epilepsy** is the seizure pattern correlated with specific phases of the menstrual cycle. It affects roughly 40% of women with epilepsy and is driven by cyclical hormone effects on neuronal excitability. The term comes from Greek "katamenios" meaning monthly.
+
+*This is informational, not medical advice. Epilepsy management requires specialist care. Talk to a neurologist or epileptologist for diagnosis and treatment, not to a general cycle syncing source.*
+
+## The three patterns
+
+Catamenial epilepsy is typically diagnosed when seizures cluster at least twofold higher in specific cycle windows compared to baseline. Three patterns are recognized:
+
+- **C1 (perimenstrual):** seizure increase from 3 days before menstruation through the first 3 days of bleeding. The most common pattern.
+- **C2 (periovulatory):** seizure increase around ovulation, typically days 10 to 13 of a 28-day cycle.
+- **C3 (luteal):** seizure increase throughout the entire luteal phase, particularly in [anovulatory cycles](/glossary/anovulatory-cycle) where the progesterone surge does not occur normally.
+
+Patterns may overlap. A person can have both C1 and C2 patterns.
+
+## The mechanism
+
+The dominant model is the balance between [estrogen](/glossary/estrogen) (pro-excitatory) and [progesterone](/glossary/progesterone) and its metabolite [allopregnanolone](/glossary/allopregnanolone) (anti-excitatory).
+
+- **Estrogen** enhances glutamate (excitatory) signaling and can lower seizure threshold.
+- **Progesterone and allopregnanolone** enhance GABA (inhibitory) signaling and raise seizure threshold.
+- The ratio of estrogen to progesterone, more than absolute levels, predicts seizure risk.
+
+The patterns map onto this:
+
+- **C1 (perimenstrual):** sharp drop in both estrogen and progesterone. Allopregnanolone withdrawal removes the GABA-enhancing protection.
+- **C2 (periovulatory):** peak estrogen with relatively low progesterone. High excitatory tone.
+- **C3 (luteal):** in anovulatory cycles, low progesterone fails to provide its usual anti-excitatory effect across the whole luteal phase.
+
+## What the research supports
+
+- The pattern is well documented in approximately 40% of women with focal epilepsy and a smaller proportion with generalized epilepsy.
+- Prospective seizure diary tracking is needed to confirm the pattern (typically 3 months minimum).
+- Progesterone supplementation (specifically natural progesterone, not synthetic progestins) in luteal phase has supportive evidence for C3 pattern.
+- Some antiseizure medications may have altered pharmacokinetics across the cycle.
+- Combined hormonal contraceptives can interact with several antiseizure medications, reducing efficacy of one or the other.
+
+## Treatment approaches
+
+Treatment for catamenial epilepsy is specialist-led. Common approaches include:
+
+**Conventional antiseizure medication adjustment:**
+
+- Optimize baseline antiseizure medication
+- Increase doses around expected catamenial peak (under specialist guidance only)
+- Add a second medication during high-risk windows
+
+**Hormonal interventions:**
+
+- Natural progesterone supplementation in luteal phase (for C3 pattern especially)
+- Combined hormonal contraceptives in some cases (with attention to drug interactions)
+- GnRH agonists for severe refractory cases
+
+**Other:**
+
+- Acetazolamide (mild diuretic) around expected seizure window has some evidence
+- Sleep optimization (sleep deprivation is a major seizure trigger and overlaps with cyclical sleep disruption)
+- Stress management
+
+## Drug interactions to know
+
+This is critical and not always communicated well:
+
+- Several enzyme-inducing antiseizure medications (carbamazepine, phenytoin, phenobarbital, primidone, oxcarbazepine, topiramate at higher doses) reduce hormonal contraceptive efficacy. A standard combined oral contraceptive can fail at usual doses.
+- Combined hormonal contraceptives can reduce lamotrigine levels significantly.
+- Newer antiseizure medications (levetiracetam, lacosamide) generally do not have these interactions.
+
+Anyone with epilepsy on hormonal contraception, or considering it, needs explicit drug interaction review with their neurologist or epileptologist.
+
+## Catamenial epilepsy and cycle syncing
+
+Cycle syncing as a general concept does not address epilepsy. Catamenial epilepsy management is medical, not lifestyle. That said, the practical [phase-based scheduling](/glossary/phase-based-scheduling) principles can have safety relevance:
+
+- Anticipate seizure-cluster windows
+- Avoid sleep deprivation in those windows (sleep deficit is a known trigger)
+- Communicate the pattern to family or caregivers
+- Avoid driving or other safety-critical activities if seizures are not well controlled in known cluster windows (specifics depend on state or country regulations)
+
+Seizure tracking apps and standard [cycle tracking](/glossary/cycle-tracking) tools can support pattern identification.
+
+## When to talk to a provider
+
+- A neurologist or epileptologist should manage epilepsy diagnosis and treatment.
+- Suspected cyclical seizure pattern: request prospective tracking and discussion of catamenial management.
+- Any seizure pattern change: review with neurologist.
+- Considering hormonal contraception with epilepsy: review interactions explicitly.
+- Pregnancy planning with epilepsy: pre-conception specialist consultation is essential, as some antiseizure medications have teratogenic risk and folate requirements may be higher.
+- Worsening seizure control during [perimenopause](/glossary/perimenopause): hormonal shifts can change seizure patterns.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="catamenial-epilepsy"
+  title="Catamenial epilepsy"
+  toc={[
+    { id: "the-three-patterns", label: "The three patterns" },
+    { id: "the-mechanism", label: "The mechanism" },
+    { id: "what-the-research-supports", label: "What research supports" },
+    { id: "treatment-approaches", label: "Treatment approaches" },
+    { id: "drug-interactions-to-know", label: "Drug interactions" },
+    { id: "catamenial-epilepsy-and-cycle-syncing", label: "And cycle syncing" },
+    { id: "when-to-talk-to-a-provider", label: "When to see a provider" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,133 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Standard Days Method: avoid intercourse days 8-19, with honest efficacy",
+  description:
+    "Standard Days is a calendar-only FAM. Avoid unprotected intercourse on days 8 to 19. Requires cycle length 26 to 32 days. Typical-use failure roughly 12%. When it fits and when it does not.",
+  alternates: { canonical: "/glossary/standard-days-method" },
+  openGraph: {
+    title: "Standard Days Method | Lumen glossary",
+    description:
+      "A calendar-only FAM with honest efficacy and clear eligibility criteria.",
+    url: "/glossary/standard-days-method",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Standard Days Method"
+  description="A calendar-based variant of the Fertility Awareness Method developed at Georgetown University. Users avoid unprotected intercourse on cycle days 8 to 19. Requires cycle length consistently between 26 and 32 days. Typical-use failure rate roughly 12%."
+  path="/glossary/standard-days-method"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Standard Days Method", path: "/glossary/standard-days-method" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Standard Days Method
+
+The **Standard Days Method** is a calendar-only variant of the [Fertility Awareness Method (FAM)](/glossary/fam) developed at the Institute for Reproductive Health at Georgetown University in the early 2000s. Users avoid unprotected intercourse on cycle days 8 to 19, the 12-day window that covers the [fertile window](/glossary/fertile-window) plus a safety buffer for nearly all cycles between 26 and 32 days. The remaining days are considered infertile under the method's rules.
+
+*This is informational, not medical advice. Effective contraception requires consistent use; talk to a provider before relying on any FAM method.*
+
+## How it works
+
+The rules are intentionally simple:
+
+1. Cycle length must be consistently between 26 and 32 days
+2. Day 1 is the first day of the period
+3. Days 1 to 7 and days 20 to cycle end are considered infertile
+4. Days 8 to 19 are the avoidance window: no unprotected intercourse, either abstain or use a barrier
+
+The simplicity is the design goal. Standard Days was created for global health contexts where literacy levels vary and access to thermometers, ovulation strips, or instructors is limited. CycleBeads (a string of color-coded beads) and the iCycleBeads app were created to make the method usable without daily counting.
+
+## Efficacy data
+
+Original Georgetown studies in 2002 to 2006 across multiple countries reported:
+
+- **Perfect-use failure rate.** Roughly 5% per year (no unprotected intercourse on any day 8 to 19 across all cycles).
+- **Typical-use failure rate.** Roughly 12% per year (real-world adherence).
+
+For context, this is similar to typical-use failure of the male condom and substantially higher than [sympto-thermal method](/glossary/sympto-thermal-method) (2 to 5%) or [hormonal IUDs](/glossary/hormonal-iud) (under 0.5%). The method trades efficacy for simplicity.
+
+## Eligibility criteria
+
+Standard Days is suitable only when:
+
+- **Cycle length is 26 to 32 days.** Cycles shorter than 26 days or longer than 32 days too often fall outside the method's safety margin.
+- **Cycles are consistent.** A user whose cycles vary widely (24 days one month, 34 the next) is not a candidate, even if both fall in range.
+- **The user can track cycle days accurately.** A simple calendar, CycleBeads, or app suffices.
+- **The user accepts the avoidance window** of 12 days each cycle.
+
+If 2 or more cycles within a year fall outside 26 to 32 days, the method is considered unreliable and a different approach is recommended.
+
+## What Standard Days does not include
+
+The method intentionally omits:
+
+- [Basal body temperature](/glossary/basal-body-temperature) measurement
+- [Cervical mucus](/glossary/cervical-mucus-tracking) observation
+- [LH testing](/glossary/opk)
+- Any biological signal beyond the calendar
+
+This is by design. Adding signals would increase efficacy but also increase complexity. For users willing to add signals, [sympto-thermal](/glossary/sympto-thermal-method) is the higher-efficacy upgrade.
+
+## Standard Days vs Calendar Method
+
+Both are calendar-only, but they differ:
+
+- **[Calendar method](/glossary/calendar-method) (Rhythm method)** calculates a personalized fertile window from each user's cycle history. More tailored but less reliable for users with even modest variability.
+- **Standard Days** uses fixed days 8 to 19 for everyone eligible. Less tailored but more robust to month-to-month variation within the 26 to 32 day range.
+
+Standard Days has slightly better efficacy than Calendar Method in head-to-head studies.
+
+## When Standard Days is a reasonable choice
+
+It can work for users who:
+
+- Have consistent 26 to 32 day cycles
+- Want a non-hormonal, non-device method
+- Want minimum daily effort
+- Have a cooperative partner for the 12-day avoidance window
+- Have access to a backup method (condoms) for the fertile window
+- Can tolerate a 12% typical-use failure rate
+
+It is not a fit for users who:
+
+- Have irregular or out-of-range cycles
+- Want efficacy closer to hormonal methods
+- Cannot tolerate the avoidance window
+- Are postpartum, perimenopausal, or recently off hormonal contraception (cycle stability is uncertain)
+
+## Standard Days and cycle syncing
+
+Standard Days provides almost no benefit to [cycle syncing](/glossary/cycle-syncing) beyond what calendar tracking already gives, no confirmed ovulation date, no biomarker anchor, no phase precision. Users who want both contraception and cycle syncing precision are better served by [sympto-thermal](/glossary/sympto-thermal-method) or a [continuous fertility monitor](/glossary/continuous-fertility-monitor) paired with the [Lumen phase calculator](/plan).
+
+</article>
+
+<GlossarySidebar
+  currentSlug="standard-days-method"
+  title="Standard Days Method"
+  toc={[
+    { id: "how-it-works", label: "How it works" },
+    { id: "efficacy-data", label: "Efficacy data" },
+    { id: "eligibility-criteria", label: "Eligibility" },
+    { id: "what-standard-days-does-not-include", label: "What it excludes" },
+    { id: "standard-days-vs-calendar-method", label: "vs Calendar Method" },
+    { id: "when-standard-days-is-a-reasonable-choice", label: "When it fits" },
+    { id: "standard-days-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

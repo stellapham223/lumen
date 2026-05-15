@@ -1,0 +1,114 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Hormonal IUD (Mirena, Kyleena, Liletta, Skyla): mechanism and cycle effects",
+  description:
+    "The hormonal IUD releases levonorgestrel locally in the uterus. Ovulation suppression varies by dose and user. What this means for cycle syncing, common side effects, and when it is a good fit.",
+  alternates: { canonical: "/glossary/hormonal-iud" },
+  openGraph: {
+    title: "Hormonal IUD | Lumen glossary",
+    description:
+      "How levonorgestrel IUDs work, why ovulation suppression is partial, and what that means for cycle syncing.",
+    url: "/glossary/hormonal-iud",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Hormonal IUD"
+  description="Intrauterine device that releases levonorgestrel locally. Brands include Mirena, Kyleena, Liletta, and Skyla. Highly effective; ovulation suppression varies by dose and individual."
+  path="/glossary/hormonal-iud"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Hormonal IUD", path: "/glossary/hormonal-iud" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Hormonal IUD
+
+The **hormonal IUD** is a small T-shaped device placed inside the uterus that releases the progestin levonorgestrel locally. Available brands in the US include Mirena (52mg, up to 8 years), Liletta (52mg, up to 8 years), Kyleena (19.5mg, up to 5 years), and Skyla (13.5mg, up to 3 years). Higher-dose devices last longer and have stronger systemic effects; lower-dose devices have lighter bleeding effects.
+
+Efficacy is among the highest of any reversible contraceptive, above 99% in both typical and perfect use, because compliance is not user-dependent after insertion.
+
+*This is informational, not medical advice. IUD insertion and choice should be discussed with a qualified provider.*
+
+## How it works
+
+Three mechanisms stack:
+
+1. **Cervical mucus thickening.** The dominant local effect, blocking sperm.
+2. **Endometrial thinning.** The lining becomes thin and unsupportive of implantation, which is also why periods become lighter or stop.
+3. **Partial [ovulation](/glossary/ovulation) suppression.** Levonorgestrel reaches the bloodstream in small amounts. Suppression rates vary by dose: roughly 50% of cycles for Skyla and Kyleena (lower dose), and a higher proportion of early cycles for Mirena, declining over the 5-year mark.
+
+Because suppression is partial and decreases over time, many hormonal-IUD users still ovulate, especially after the first 12 to 18 months.
+
+## Cycle implications
+
+This is the most important nuance for cycle syncing. The hormonal IUD does not necessarily flatten the [menstrual cycle](/glossary/menstrual-cycle) the way the combined pill does. If you ovulate, you still have a [follicular phase](/glossary/follicular-phase) and [luteal phase](/glossary/luteal-phase) hormonally, even if bleeding is light or absent.
+
+What this means in practice:
+
+- Bleeding pattern is a poor proxy for phase. Many users go months without bleeding while still cycling normally.
+- Direct ovulation tracking ([BBT](/glossary/basal-body-temperature) or [OPK](/glossary/opk)) is the only reliable way to confirm phase timing.
+- [Cycle syncing](/glossary/cycle-syncing) can partially apply if you confirm ovulation. If you do not ovulate (more likely on Mirena early on or with hormonal sensitivity), the four-phase model does not.
+
+## Common side effects
+
+- **Irregular bleeding** in the first 3 to 6 months, often improving substantially.
+- **Lighter or absent periods** after the first year.
+- **Cramping** during and immediately after insertion (often significant; ask providers about pain management options).
+- **Ovarian cysts** (functional, usually resolving on their own).
+- **Mood changes** in a subset of users. Systemic effects are smaller than oral progestins but not zero.
+- **Acne or oilier skin** in some users.
+- **Headaches.**
+
+Rare but serious risks: device expulsion (most common in the first 3 months, especially after recent childbirth), uterine perforation at insertion (rare), and pelvic infection in the first 20 days.
+
+## When to consider
+
+- Want long-acting reversible contraception without daily compliance.
+- Heavy bleeding ([menorrhagia](/glossary/menorrhagia)) is a problem; the hormonal IUD substantially reduces bleeding for most users.
+- [Endometriosis](/glossary/endometriosis) or [adenomyosis](/glossary/adenomyosis) symptom management.
+- Estrogen is contraindicated.
+
+## When NOT to consider
+
+- Active pelvic infection or untreated cervical infection.
+- Distorted uterine cavity (severe fibroids, anatomic abnormalities) that prevents proper placement.
+- Unexplained uterine bleeding before workup.
+- History of certain pelvic cancers.
+
+The [copper IUD](/glossary/copper-iud) is a non-hormonal alternative for users who want a long-acting method without progestin.
+
+## Related reading
+
+- [Copper IUD](/glossary/copper-iud): the non-hormonal alternative
+- [Cycle syncing on birth control](/blog/cycle-syncing-on-birth-control): adapting the framework
+
+</article>
+
+<GlossarySidebar
+  currentSlug="hormonal-iud"
+  title="Hormonal IUD"
+  toc={[
+    { id: "how-it-works", label: "How it works" },
+    { id: "cycle-implications", label: "Cycle implications" },
+    { id: "common-side-effects", label: "Common side effects" },
+    { id: "when-to-consider", label: "When to consider" },
+    { id: "when-not-to-consider", label: "When NOT to consider" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

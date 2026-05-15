@@ -1,0 +1,132 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Hormonal acne: cycle pattern, mechanism, and what helps",
+  description:
+    "Hormonal acne is the cyclical acne pattern that flares in late luteal phase, driven by androgen-sebum interaction. Mechanism, timing, and evidence-based treatment options.",
+  alternates: { canonical: "/glossary/hormonal-acne" },
+  openGraph: {
+    title: "Hormonal acne | Lumen glossary",
+    description:
+      "Definition, the hormonal mechanism, distinguishing features, and treatment options graded by evidence.",
+    url: "/glossary/hormonal-acne",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Hormonal acne"
+  description="Acne pattern correlated with the menstrual cycle, typically flaring in late luteal phase. Driven by androgen-sebum interaction and inflammatory shifts."
+  path="/glossary/hormonal-acne"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Hormonal acne", path: "/glossary/hormonal-acne" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Hormonal acne
+
+**Hormonal acne** is the acne pattern that correlates with menstrual cycle phases, typically flaring in the late [luteal phase](/glossary/luteal-phase) (the week before menstruation). It is one of the more visible cyclical symptoms and a common complaint even in people who otherwise do not consider themselves "acne prone".
+
+*This is informational, not medical advice. Talk to your provider or dermatologist if cyclical breakouts are severe, persistent, or scarring.*
+
+## What it looks like
+
+The hormonal acne pattern:
+
+- Deeper, cystic lesions rather than surface whiteheads
+- Concentrated along the jawline, chin, and lower cheeks
+- Sometimes shoulders, upper back, or chest
+- Predictable timing: appears 7 to 10 days before menstruation, resolves within a week of bleeding starting
+- Often repeats in the same spots cycle after cycle
+
+Surface acne distributed across the forehead and full face is more often related to skincare friction, products, or generalized acne rather than cycle-driven.
+
+## The mechanism
+
+The cyclical acne mechanism centers on androgen-sebum interaction:
+
+- **[Androgens](/glossary/androgens-women)** stimulate sebaceous glands to produce sebum. Both [testosterone](/glossary/testosterone-in-women) and DHEA contribute.
+- **[Estrogen](/glossary/estrogen)** raises [SHBG](/glossary/shbg), which binds free testosterone and reduces its effect on skin. When estrogen drops in late luteal, free testosterone effect rises proportionally.
+- **[Progesterone](/glossary/progesterone)** has weak androgenic activity at the receptor level and can directly stimulate sebum production.
+- **[Inflammation](/glossary/inflammation-cycle) shifts** in late luteal increase the inflammatory response to clogged pores, turning subclinical comedones into visible inflammatory lesions.
+
+The combination peaks in late luteal: high progesterone activity, declining estrogen, relatively higher free testosterone effect, and rising inflammatory tone.
+
+[PCOS](/glossary/pcos) amplifies hormonal acne because androgen production is elevated throughout the cycle, not just in late luteal.
+
+## What the research supports
+
+- The cyclical premenstrual acne flare is well documented, affecting roughly 60 to 70% of acne-prone people who menstruate.
+- Combined oral contraceptives with specific progestins (drospirenone, norgestimate) have strong evidence for reducing hormonal acne.
+- Spironolactone (an anti-androgen) has good evidence for cyclical and PCOS-related acne in adults.
+- Topical retinoids reduce both inflammatory and non-inflammatory acne when used consistently.
+- Phase-specific skincare routines marketed under [cycle syncing](/glossary/phase-aligned-skincare) (different products per phase) lack strong evidence beyond general skincare principles.
+
+## What helps
+
+**Skincare basics with evidence:**
+
+- Topical retinoid (adapalene OTC, tretinoin Rx) used consistently across the cycle.
+- Benzoyl peroxide for acute lesions.
+- Avoid heavy moisturizers and pore-clogging ingredients in the late luteal week.
+- Do not aggressively exfoliate during a flare. It worsens inflammation.
+
+**Systemic options (talk to a provider):**
+
+- Combined hormonal contraceptive with appropriate progestin.
+- Spironolactone 25 to 200mg daily for adult women.
+- Isotretinoin for severe, treatment-resistant cases.
+
+**Lifestyle:**
+
+- High-glycemic diet may worsen acne broadly. Effect of dairy is mixed and individual.
+- Sleep deficit and cortisol elevation worsen cycle acne. Protect sleep in late luteal.
+- Stress amplifies inflammatory response.
+
+**Weakly supported:**
+
+- "Cycle syncing skincare" with different products in each phase. General skincare principles are more impactful than phase rotation.
+- Most over-the-counter "hormone balancing" supplement blends for acne.
+
+## Hormonal acne and cycle syncing
+
+The defensible application: anticipate the late-luteal flare and adjust skincare proactively. Increase retinoid use a few days before the typical flare window. Avoid heavy makeup or product layering in those days. Avoid skin treatments (peels, extractions) right before the expected flare. The [phase-aligned skincare](/glossary/phase-aligned-skincare) page covers practical phase routines.
+
+What is not supported: completely different skincare routines for each phase. The retinoid-plus-gentle-cleanser baseline is more important than phase rotation.
+
+## When to talk to a provider
+
+- Severe cystic acne, especially with scarring.
+- Acne combined with hirsutism, irregular cycles, or weight gain ([PCOS](/glossary/pcos) screening).
+- Sudden onset acne after a long clear period, especially in adulthood.
+- Acne that has not responded to over-the-counter regimens for 12 weeks.
+- Acne paired with menstrual irregularity or absent periods.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="hormonal-acne"
+  title="Hormonal acne"
+  toc={[
+    { id: "what-it-looks-like", label: "What it looks like" },
+    { id: "the-mechanism", label: "The mechanism" },
+    { id: "what-the-research-supports", label: "What research supports" },
+    { id: "what-helps", label: "What helps" },
+    { id: "hormonal-acne-and-cycle-syncing", label: "And cycle syncing" },
+    { id: "when-to-talk-to-a-provider", label: "When to see a provider" },
+  ]}
+/>
+
+</div>

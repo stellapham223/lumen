@@ -1,0 +1,102 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Follicular wave: the cohort of follicles developing each cycle",
+  description:
+    "A follicular wave is the cohort of 15 to 20 ovarian follicles that develop each cycle. One becomes dominant and ovulates; the rest regress.",
+  alternates: { canonical: "/glossary/follicular-wave" },
+  openGraph: {
+    title: "Follicular wave | Lumen glossary",
+    description:
+      "Definition, how one follicle becomes dominant, and the implications for fertility and cycle disorders.",
+    url: "/glossary/follicular-wave",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Follicular wave"
+  description="The cohort of 15 to 20 ovarian follicles that develop each menstrual cycle. One becomes dominant; the rest regress."
+  path="/glossary/follicular-wave"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Follicular wave", path: "/glossary/follicular-wave" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Follicular wave
+
+A **follicular wave** is the cohort of ovarian [follicles](/glossary/ovarian-follicle) that develop together during a single [menstrual cycle](/glossary/menstrual-cycle). Each wave typically contains 15 to 20 antral follicles competing for [FSH](/glossary/fsh) stimulation. Through the wave, one follicle becomes dominant and is the one that releases an egg at [ovulation](/glossary/ovulation); the rest regress (atresia).
+
+The wave concept matters because it makes sense of why one follicle wins per cycle, why fraternal twins are uncommon, and why fertility treatments like IVF can produce multiple mature follicles when FSH is given exogenously.
+
+## How a wave develops
+
+Follicles do not jump from primordial (dormant) to dominant in one cycle. The full timeline is roughly 6 months:
+
+1. **Primordial to antral (months 1 to 5).** Slow, FSH-independent recruitment from the dormant pool. Most follicles drop out at this stage.
+2. **Antral selection (last cycle, days 1 to 5).** A pool of antral follicles is responsive to FSH at the start of a cycle. Roughly 15 to 20 enter the wave.
+3. **Dominant follicle selection (days 5 to 8).** Rising estrogen from the wave suppresses FSH (negative feedback). The most FSH-sensitive follicle keeps growing despite falling FSH; the rest run out of stimulus and regress.
+4. **Dominant follicle maturation (days 8 to 14).** The selected follicle continues growing and producing estrogen until it reaches roughly 18 to 25 mm at ovulation.
+
+Only the antral-to-ovulation stage (the last 2 to 3 weeks) is responsive to current-cycle FSH. The earlier stages happen continuously in the background.
+
+## Why one follicle becomes dominant
+
+The wave is a competition for a limited resource (FSH). Each follicle's chance of becoming dominant depends on:
+
+- **FSH receptor density.** Follicles with more receptors are more sensitive to declining FSH.
+- **Granulosa cell numbers.** More cells, more estrogen output.
+- **Local growth factor signaling.** Inhibins, activins, AMH levels in the follicular fluid.
+- **Vascular supply.** Better blood flow lets the follicle keep growing.
+
+The first follicle to outpace the others creates a self-reinforcing situation: more estrogen, more inhibin B, more FSH suppression, which kills off the smaller follicles. Selection is usually complete by cycle day 7 or 8.
+
+## Are there multiple waves per cycle?
+
+The classic single-wave model has been challenged by ultrasound studies suggesting many women have 2 or 3 follicular waves per cycle, with smaller waves preceding the dominant ovulatory wave. The clinical implications are debated; for most users, the single-wave model is good enough for understanding cycle biology.
+
+## When the wave goes wrong
+
+Common patterns of disrupted follicular waves:
+
+- **No dominant follicle selected.** Common in [PCOS](/glossary/pcos); many small antral follicles accumulate but none takes over. Results in [anovulatory cycles](/glossary/anovulatory-cycle).
+- **Multiple dominant follicles.** Two follicles reach dominance, both ovulate. Fraternal twins (about 1 in 80 natural pregnancies); more common with age and certain fertility treatments.
+- **Dominant follicle that does not rupture.** Luteinized unruptured follicle syndrome. The [LH surge](/glossary/lh-surge) occurs but the follicle stays intact. Hormones look like ovulation occurred ([BBT](/glossary/basal-body-temperature) rises, mid-luteal progesterone rises), but no egg is released.
+- **Premature wave.** Aging ovaries may start a wave earlier, contributing to the shorter cycles often seen in early [perimenopause](/glossary/perimenopause).
+
+## Follicular waves and IVF
+
+In natural cycles, the body suppresses all but one follicle to reach dominance. IVF protocols override this by giving exogenous FSH at doses high enough to rescue multiple follicles from atresia. This can produce 5 to 20 or more mature follicles in a single cycle, which are then retrieved for fertilization. The number of follicles that respond is highly age- and [ovarian reserve](/glossary/ovarian-reserve)-dependent.
+
+## Follicular waves and cycle syncing
+
+For practical [cycle syncing](/glossary/cycle-syncing) purposes, the wave concept is mostly background biology. What matters for planning is the hormonal output of the dominant follicle: the rising estrogen of the [follicular phase](/glossary/follicular-phase) that drives the cognitive lift many women notice in the late follicular days. The wave dynamics determine when ovulation happens (which sets cycle length), but they do not produce day-to-day changes you can plan around the way the hormone profile does.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="follicular-wave"
+  title="Follicular wave"
+  toc={[
+    { id: "how-a-wave-develops", label: "How a wave develops" },
+    { id: "why-one-follicle-becomes-dominant", label: "Becoming dominant" },
+    { id: "are-there-multiple-waves-per-cycle", label: "Multiple waves?" },
+    { id: "when-the-wave-goes-wrong", label: "Disrupted waves" },
+    { id: "follicular-waves-and-ivf", label: "In IVF" },
+    { id: "follicular-waves-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

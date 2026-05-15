@@ -1,0 +1,128 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "PMDD (Premenstrual Dysphoric Disorder): symptoms, diagnosis, and treatment",
+  description:
+    "PMDD is the severe form of PMS, affecting 3 to 8% of menstruating women. Clinical diagnosis, core symptoms, the mechanism, and evidence-based treatment options.",
+  alternates: { canonical: "/glossary/pmdd" },
+  openGraph: {
+    title: "PMDD (Premenstrual Dysphoric Disorder) | Lumen glossary",
+    description:
+      "What PMDD is, how it differs from PMS, the diagnostic criteria, and treatment options that have evidence behind them.",
+    url: "/glossary/pmdd",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="PMDD (Premenstrual Dysphoric Disorder)"
+  description="A severe form of premenstrual syndrome with mood disturbance significant enough to impair daily life. Affects 3 to 8% of menstruating women and requires prospective tracking across two cycles for diagnosis."
+  path="/glossary/pmdd"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "PMDD", path: "/glossary/pmdd" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# PMDD (Premenstrual Dysphoric Disorder)
+
+**PMDD** is a severe form of [PMS](/glossary/pms) marked by mood disturbance significant enough to impair work, relationships, or daily function. It affects roughly 3 to 8% of menstruating women and is classified in the DSM-5 as a depressive disorder, separate from PMS.
+
+*This is informational, not medical advice. Talk to your provider if you suspect PMDD or have suicidal thoughts at any cycle phase.*
+
+## How PMDD differs from PMS
+
+PMS and PMDD sit on the same biological spectrum, but the threshold for diagnosis is clinical impact, not just symptom count.
+
+- **PMS:** recurring premenstrual symptoms that are uncomfortable but do not significantly disrupt function.
+- **PMDD:** symptoms severe enough to meet DSM-5 criteria, with at least one core mood symptom (depression, [anxiety](/glossary/premenstrual-anxiety), [irritability](/glossary/premenstrual-irritability), or affective lability) and significant impairment.
+
+The diagnostic gold standard is prospective daily tracking across two consecutive cycles, not a single questionnaire. Many people who suspect PMDD actually meet criteria for a non-cyclical mood disorder that simply worsens premenstrually, which is a different treatment path.
+
+## Core symptoms
+
+PMDD symptoms confine themselves to the late [luteal phase](/glossary/luteal-phase) (roughly the week before menstruation) and resolve within a few days of bleeding starting. The DSM-5 lists eleven possible symptoms; at least five must be present, including one core mood symptom.
+
+- Marked depressed mood, hopelessness, or self-deprecating thoughts
+- Marked anxiety, tension, or feeling "on edge"
+- Marked affective lability (sudden mood shifts)
+- Persistent irritability or anger, increased conflict
+- Decreased interest in usual activities
+- Difficulty concentrating, [cycle brain fog](/glossary/period-brain)
+- Lethargy, fatigue, [energy crash](/glossary/energy-crash)
+- Appetite changes, [cravings](/glossary/premenstrual-cravings), or overeating
+- [Sleep disruption](/glossary/cyclical-insomnia)
+- Feeling overwhelmed or out of control
+- Physical symptoms ([breast tenderness](/glossary/breast-tenderness), [bloating](/glossary/cyclical-bloating), joint pain, headaches)
+
+The cyclical timing is the diagnostic clue. A clinical mood disorder rolls across all four cycle phases; PMDD does not.
+
+## The mechanism
+
+PMDD is not caused by abnormal hormone levels. Most studies find that women with PMDD have hormone profiles indistinguishable from controls. The current model is heightened brain sensitivity to normal cyclical hormone shifts, specifically:
+
+- **[Allopregnanolone](/glossary/allopregnanolone) sensitivity.** Allopregnanolone is a [progesterone](/glossary/progesterone) metabolite that modulates GABA receptors. People with PMDD appear to have a paradoxical GABA response: instead of calming, the late-luteal allopregnanolone shift triggers anxiety and irritability.
+- **[Serotonin](/glossary/serotonin-cycle) signaling.** [Estrogen](/glossary/estrogen) supports serotonin function, and the late-luteal estrogen drop appears to hit serotonin signaling harder in PMDD brains.
+
+This sensitivity model also explains why SSRIs work quickly in PMDD (often within a single cycle) rather than the four to six weeks typical for clinical depression.
+
+## Treatment options with evidence
+
+**Strongly supported:**
+
+- **SSRIs**, either continuous or luteal-phase-only dosing (days 14 to 28). Sertraline, fluoxetine, and paroxetine have the most data. Effect is rapid in PMDD, often within the first treated cycle.
+- **Combined hormonal contraceptives** with drospirenone and a shortened pill-free interval (such as Yaz) have FDA approval for PMDD.
+- **GnRH agonists** with add-back hormone therapy for severe, treatment-resistant cases. Used short-term.
+
+**Moderately supported:**
+
+- Cognitive behavioral therapy adapted for PMDD.
+- Aerobic exercise across the cycle.
+- [Magnesium](/glossary/magnesium-pms) (200 to 400mg glycinate) and [vitamin B6](/glossary/vitamin-b6-pms) (50 to 100mg), modest effect.
+
+**Weakly supported:**
+
+- Phase-specific food prescriptions. Evidence is thin.
+- Most over-the-counter supplement blends marketed for PMDD.
+
+## PMDD and cycle syncing
+
+Cycle syncing as a scheduling overlay can help with symptom management: planning fewer high-stakes commitments in the late luteal week, protecting sleep, scaling back social demands. But cycle syncing is not a treatment for PMDD. Lifestyle changes alone are usually not enough; clinical treatment is the foundation.
+
+The [luteal phase complete guide](/blog/luteal-phase-complete-guide) covers scheduling adjustments that complement (not replace) treatment.
+
+## When to seek immediate help
+
+- Suicidal thoughts, plans, or self-harm urges. PMDD raises suicide risk; do not wait for the cycle to pass.
+- A sudden worsening of symptoms in your late 30s or 40s, which can signal [perimenopause](/glossary/perimenopause) overlay.
+- Symptoms that do not resolve within a few days of menstrual onset, which suggests a non-cyclical mood disorder.
+
+The International Association for Premenstrual Disorders (IAPMD) provides peer support and provider directories specific to PMDD.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="pmdd"
+  title="PMDD (Premenstrual Dysphoric Disorder)"
+  toc={[
+    { id: "how-pmdd-differs-from-pms", label: "PMDD vs PMS" },
+    { id: "core-symptoms", label: "Core symptoms" },
+    { id: "the-mechanism", label: "The mechanism" },
+    { id: "treatment-options-with-evidence", label: "Treatment options" },
+    { id: "pmdd-and-cycle-syncing", label: "PMDD and cycle syncing" },
+    { id: "when-to-seek-immediate-help", label: "When to seek help" },
+  ]}
+/>
+
+</div>

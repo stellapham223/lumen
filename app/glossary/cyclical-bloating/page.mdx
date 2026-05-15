@@ -1,0 +1,128 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Cyclical bloating: why it happens in the luteal phase and what helps",
+  description:
+    "Cyclical bloating is the fluid and abdominal distension common in the late luteal phase, driven by progesterone-related sodium retention. Mechanism, timing, and practical relief.",
+  alternates: { canonical: "/glossary/cyclical-bloating" },
+  openGraph: {
+    title: "Cyclical bloating | Lumen glossary",
+    description:
+      "Why fluid retention spikes in late luteal, the mechanism, and what actually helps.",
+    url: "/glossary/cyclical-bloating",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Cyclical bloating"
+  description="Fluid retention and abdominal distension common in the late luteal phase, driven primarily by progesterone-related sodium retention and reduced gut motility."
+  path="/glossary/cyclical-bloating"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Cyclical bloating", path: "/glossary/cyclical-bloating" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Cyclical bloating
+
+**Cyclical bloating** is the fluid retention and abdominal distension that tracks the late [luteal phase](/glossary/luteal-phase), peaks in the day or two before menstruation, and resolves within the first 1 to 3 days of bleeding. It is one of the most common [PMS](/glossary/pms) symptoms.
+
+*This is informational, not medical advice. Talk to your provider if bloating is severe, persists past menstruation, or comes with pain, weight loss, or changes in bowel habits.*
+
+## What it feels like
+
+The pattern:
+
+- Visible abdominal distension, clothes feel tighter
+- Weight on the scale up 1 to 4 pounds (mostly water, not fat)
+- Puffiness in fingers, ankles, or face
+- A sense of fullness even after light meals
+- Resolution within a few days of menstrual onset
+
+The cyclical pattern (resolves with bleeding, returns next cycle) is the diagnostic clue. Persistent bloating across the whole cycle is a different issue and warrants evaluation.
+
+## The mechanism
+
+Two overlapping pathways:
+
+- **[Progesterone](/glossary/progesterone)-related sodium retention.** Progesterone competes with aldosterone at receptor sites, which initially raises aldosterone activity (water retention). Estrogen also contributes to fluid retention. The combined effect peaks in late luteal.
+- **Reduced gut motility.** Progesterone relaxes smooth muscle, which slows GI transit. The combination of slower motility and shifted gut microbiome activity can produce gas-driven distension alongside fluid retention. This overlap is part of why [cyclical IBS](/glossary/cyclical-ibs) flares cluster in late luteal.
+
+[Prostaglandins](/glossary/inflammation-cycle) rising in late luteal also affect gut contractility and can drive both bloating and the diarrhea-then-bloating-then-diarrhea pattern many people experience.
+
+## What the research supports
+
+- Cyclical fluid retention is well documented. Weight fluctuation across the cycle in the 1 to 3 pound range is normal.
+- The fluid retention is hormonal, not from "eating too much salt" specifically, though high-sodium intake amplifies it.
+- Effect sizes vary widely between people. Some experience strong bloating; others barely notice.
+- [Magnesium](/glossary/magnesium-pms) has modest evidence for reducing late-luteal water retention.
+
+## What helps
+
+**Practical adjustments:**
+
+- Reduce ultra-processed and high-sodium foods in the luteal week.
+- Maintain hydration. Drinking less water increases retention, not decreases it.
+- Eat fiber consistently (not just suddenly the day bloating shows up).
+- Limit carbonated drinks if gas-driven distension is a factor.
+- Avoid new restrictive diets in late luteal; the friction is high and bloating often gets worse.
+
+**Modestly supported supplementation:**
+
+- [Magnesium](/glossary/magnesium-pms) 200 to 400mg glycinate or citrate.
+- [Vitamin B6](/glossary/vitamin-b6-pms) 50 to 100mg.
+
+**Movement:**
+
+- Walking and gentle aerobic exercise help with both fluid retention and gut motility.
+- [Yoga and stretching](/glossary/phase-aligned-workouts) targeting hip and abdominal areas can give symptomatic relief.
+
+**Weakly supported:**
+
+- "Detox" teas and diuretic supplements. Risk of dehydration outweighs benefit.
+- Phase-specific elimination diets for bloating.
+
+## Cyclical bloating and cycle syncing
+
+The cycle syncing application is recognizing that the late luteal week is not the right time to start a restrictive diet, attempt new workout intensity that requires precise body image confidence, or schedule body-image-sensitive events (photoshoots, fittings) if you have flexibility. Plan those for follicular or ovulatory days where possible.
+
+The [luteal phase complete guide](/blog/luteal-phase-complete-guide) covers practical adjustments for the late-luteal symptom cluster.
+
+## When to talk to a provider
+
+- Bloating that does not resolve with menstruation.
+- Bloating paired with unexplained weight loss, persistent pain, or blood in stool.
+- Sudden change in bloating pattern, especially with bowel habit changes.
+- Bloating severe enough to impair eating or breathing.
+- A new "early satiety" pattern (feeling full after very small amounts) in someone over 40.
+
+Persistent or progressive bloating is the symptom flag for several conditions (including ovarian issues) that need evaluation. The cyclical pattern is the reassuring feature; loss of that pattern is not.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="cyclical-bloating"
+  title="Cyclical bloating"
+  toc={[
+    { id: "what-it-feels-like", label: "What it feels like" },
+    { id: "the-mechanism", label: "The mechanism" },
+    { id: "what-the-research-supports", label: "What research supports" },
+    { id: "what-helps", label: "What helps" },
+    { id: "cyclical-bloating-and-cycle-syncing", label: "And cycle syncing" },
+    { id: "when-to-talk-to-a-provider", label: "When to see a provider" },
+  ]}
+/>
+
+</div>

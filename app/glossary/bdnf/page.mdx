@@ -1,0 +1,119 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "BDNF (Brain-Derived Neurotrophic Factor): the cycle's learning protein",
+  description:
+    "BDNF is a protein that supports neuron growth, synaptic plasticity, and learning. Estrogen upregulates BDNF across the cycle, which is the mechanistic basis for the follicular learning advantage.",
+  alternates: { canonical: "/glossary/bdnf" },
+  openGraph: {
+    title: "BDNF | Lumen glossary",
+    description:
+      "Brain-Derived Neurotrophic Factor: how estrogen modulates it across the cycle and why it matters for learning.",
+    url: "/glossary/bdnf",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="BDNF (Brain-Derived Neurotrophic Factor)"
+  description="Protein that supports neuron growth, synaptic plasticity, and learning. Upregulated by estrogen, which is the mechanistic basis for the follicular learning advantage."
+  path="/glossary/bdnf"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "BDNF", path: "/glossary/bdnf" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# BDNF (Brain-Derived Neurotrophic Factor)
+
+**BDNF** is a protein that supports the growth, survival, and adaptive rewiring of neurons. It is one of the most studied molecules in the neuroscience of learning, memory, and mood. For the [menstrual cycle](/glossary/menstrual-cycle), BDNF matters because [estrogen](/glossary/estrogen) directly upregulates its expression in the hippocampus and prefrontal cortex. That hormonal-protein link is the cleanest mechanistic explanation for why many users report sharper learning and faster skill acquisition in the late [follicular phase](/glossary/follicular-phase).
+
+## What BDNF does
+
+BDNF is a member of the neurotrophin family. Functionally, it supports four overlapping processes:
+
+- **Synaptic plasticity.** BDNF strengthens the connections between neurons that fire together, which is the cellular basis of learning.
+- **Neurogenesis.** BDNF supports the birth of new neurons in the hippocampus, a region critical for memory.
+- **Neuron survival.** Higher BDNF correlates with longer neuronal lifespan and resilience to stress.
+- **Mood regulation.** Low BDNF is consistently observed in depression; antidepressants partially work by raising BDNF over weeks.
+
+In short: more BDNF generally means a brain better at adapting, encoding, and recovering.
+
+## How BDNF cycles with estrogen
+
+Animal and human research shows that estrogen, particularly estradiol, increases BDNF expression in the hippocampus and prefrontal cortex. The relationship is dose-dependent: as estradiol rises through the late follicular days, BDNF rises with it. The pattern across a typical 28-day cycle:
+
+- **Early follicular (days 1 to 5):** estrogen low, BDNF baseline.
+- **Mid-to-late follicular (days 6 to 13):** estrogen climbing, BDNF rising.
+- **Ovulatory (days 14 to 16):** estrogen peaks, BDNF near peak.
+- **Early luteal (days 17 to 22):** secondary estrogen rise, BDNF moderately elevated.
+- **Late luteal (days 23 to 28):** estrogen drops, BDNF declines.
+
+Evidence suggests the late follicular window is where the brain has both the highest BDNF and the strongest [dopamine](/glossary/dopamine-cycle) signaling, which is why this phase is associated with novelty-seeking, motivation, and faster encoding of new material.
+
+## The follicular learning advantage
+
+The phrase "follicular learning advantage" describes a pattern documented across multiple studies: verbal fluency, certain forms of spatial reasoning, and pattern recognition tend to improve slightly in the late follicular window compared with luteal or menstrual phases. The effect size at the population level is modest. Individual variation is large.
+
+BDNF is one of the proposed mechanisms, alongside estrogen's effect on [neuroplasticity](/glossary/neuroplasticity-cycle) and on dopamine and acetylcholine systems. The [hormone-cognition link](/glossary/hormone-cognition) summarizes the full picture with citations.
+
+For practical scheduling, this is the reason [cycle syncing](/glossary/cycle-syncing) recommends placing learning-heavy work (new skills, dense reading, conceptual problem solving) in the late follicular window when possible.
+
+## BDNF and exercise
+
+Aerobic exercise is one of the most reliable ways to acutely raise BDNF, independent of cycle phase. The acute spike from a single moderate-to-hard cardio session is on the order of 10 to 30 percent. Regular exercise raises baseline BDNF over weeks.
+
+Combining exercise with the late follicular window is one of the better-supported pieces of [phase-aligned training](/glossary/phase-aligned-workouts): the BDNF boost from cardio compounds with the estrogen-driven baseline rise.
+
+## BDNF and the late-luteal mood drop
+
+When estrogen drops in late luteal, BDNF drops with it. This is one proposed contributor to the cognitive and mood symptoms of [PMS](/glossary/pms) and [PMDD](/glossary/pmdd). The brain that adapted to elevated BDNF for two weeks experiences a relative withdrawal: dimmer mood, slower thinking, lower stress tolerance.
+
+This does not mean low BDNF causes PMS directly. Research is mixed on whether absolute BDNF levels differ between users with severe PMDD and those without. The withdrawal model (rate of change, not absolute level) parallels the [allopregnanolone](/glossary/allopregnanolone) withdrawal model for GABA.
+
+## Can you raise BDNF directly?
+
+The reliable levers, in rough order of evidence:
+
+- **Aerobic exercise.** Strongest evidence. Acute and chronic effects.
+- **Sleep.** Deep sleep supports BDNF. Sleep loss reduces it.
+- **Caloric restriction and intermittent fasting.** Some evidence for modest increases.
+- **Omega-3 fatty acids.** Mixed but supportive evidence.
+- **Stress reduction.** Chronic cortisol reduces BDNF.
+
+Supplements marketed as "BDNF boosters" (lion's mane, curcumin, others) have animal evidence but limited rigorous human trials.
+
+## Related reading
+
+- [Estrogen](/glossary/estrogen): the upstream hormone driving BDNF cycling
+- [Neuroplasticity (cycle modulation)](/glossary/neuroplasticity-cycle): the broader adaptive process BDNF supports
+- [Hormone-cognition link](/glossary/hormone-cognition): the full mechanism
+- [Follicular phase complete guide](/blog/follicular-phase-complete-guide): how to use the learning window
+
+</article>
+
+<GlossarySidebar
+  currentSlug="bdnf"
+  title="BDNF"
+  toc={[
+    { id: "what-bdnf-does", label: "What BDNF does" },
+    { id: "how-bdnf-cycles-with-estrogen", label: "How it cycles" },
+    { id: "the-follicular-learning-advantage", label: "Follicular learning advantage" },
+    { id: "bdnf-and-exercise", label: "Exercise" },
+    { id: "bdnf-and-the-late-luteal-mood-drop", label: "Late-luteal drop" },
+    { id: "can-you-raise-bdnf-directly", label: "Raising BDNF" },
+  ]}
+/>
+
+</div>

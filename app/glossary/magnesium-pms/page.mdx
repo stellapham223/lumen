@@ -1,0 +1,118 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Magnesium for PMS: evidence, dosing, and which form to use",
+  description:
+    "Magnesium has moderate evidence for reducing PMS symptoms, particularly mood, bloating, and headaches. Typical effective dosing is 200 to 400mg daily of glycinate or citrate. Mechanism and cautions.",
+  alternates: { canonical: "/glossary/magnesium-pms" },
+  openGraph: {
+    title: "Magnesium for PMS | Lumen glossary",
+    description:
+      "What the evidence says about magnesium for PMS, effective dosing, and which form to choose.",
+    url: "/glossary/magnesium-pms",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Magnesium (for PMS)"
+  description="Essential mineral with moderate evidence for reducing PMS symptoms when supplemented at 200 to 400mg daily. Glycinate and citrate forms are best tolerated."
+  path="/glossary/magnesium-pms"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Magnesium for PMS", path: "/glossary/magnesium-pms" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Magnesium (for PMS)
+
+**Magnesium** is an essential mineral involved in over 300 enzymatic reactions, including muscle relaxation, neurotransmitter regulation, and sleep architecture. It is one of the supplements with the most credible evidence for [PMS](/glossary/pms) symptom reduction, though the effect size in trials is moderate rather than large.
+
+*Consult a provider before starting supplements, especially if pregnant, breastfeeding, or on medications.*
+
+## What the evidence says
+
+Multiple randomized trials and meta-analyses have studied magnesium for PMS. The honest summary:
+
+- **Moderate evidence for mood symptoms.** Irritability, anxiety, and low mood show consistent improvement in trials, with effect sizes in the small to moderate range.
+- **Moderate evidence for fluid retention and bloating.** Several trials show reductions in [cyclical bloating](/glossary/cyclical-bloating) and breast tenderness.
+- **Reasonable evidence for [menstrual migraine](/glossary/menstrual-migraine) prophylaxis** in users who get cycle-linked headaches.
+- **Less evidence for cramping ([dysmenorrhea](/glossary/dysmenorrhea))** despite popular claims; trials are mixed.
+
+The 2017 Cochrane-style reviews and the 2020 American Family Physician update both list magnesium among the better-supported PMS interventions, alongside [vitamin B6](/glossary/vitamin-b6-pms) and [omega-3](/glossary/omega-3-pms).
+
+This is not a knockout-effect supplement. Most users see modest improvement; some see meaningful change; some notice nothing.
+
+## Why it might work
+
+Magnesium plays several roles relevant to PMS:
+
+- **Cofactor for serotonin synthesis** ([serotonin](/glossary/serotonin-cycle) drops in late luteal as estrogen declines).
+- **Modulates GABA receptors** ([GABA](/glossary/gaba) tone drops in late luteal with [allopregnanolone](/glossary/allopregnanolone) withdrawal).
+- **NMDA receptor antagonism** (reduces glutamate-driven excitability).
+- **Muscle relaxation** (relevant to cramping and tension).
+- **Vascular smooth muscle effect** (mechanism for migraine).
+
+Many users are also borderline deficient at baseline; the supplemental effect may be partly correcting a low-grade deficit.
+
+## Dosing
+
+Typical effective range in trials: **200 to 400mg of elemental magnesium daily**. Start at the lower end for 2 weeks, then move up if tolerated.
+
+Three things to know:
+
+1. **Forms matter.** Bioavailability and tolerability vary widely.
+   - **Glycinate (or bisglycinate):** well absorbed, calming, low GI side effects. Best choice for mood and sleep.
+   - **Citrate:** decent absorption, mildly laxative. Useful if constipation is part of the symptom pattern.
+   - **L-threonate:** crosses blood-brain barrier; some evidence for cognitive effects. More expensive.
+   - **Oxide:** poorly absorbed; mostly useful as a laxative. Avoid as a PMS supplement.
+2. **Continuous vs cyclic dosing.** Most trials use daily continuous dosing. Some users only take it during the second half of the cycle (days 15 to 28), which has plausible rationale but less direct trial support.
+3. **Timing.** Evening dosing pairs well with the sleep-supporting effect.
+
+## Common side effects and cautions
+
+- **Loose stools or diarrhea.** Especially with citrate or oxide; usually dose-dependent.
+- **Nausea.** Reduce dose or take with food.
+- **Low blood pressure** at high doses (rare at typical PMS doses).
+- **Interactions:** can reduce absorption of certain antibiotics (quinolones, tetracyclines) and thyroid medications. Separate by 4 hours.
+- **Caution in kidney disease.** Reduced clearance can lead to accumulation. Discuss with a provider.
+
+Magnesium is broadly safe for healthy users at the doses used for PMS. Severe toxicity is rare and typically requires kidney impairment.
+
+## Where it fits
+
+Magnesium is reasonable as a first-line supplement for moderate PMS, alongside the higher-evidence interventions (sleep, aerobic exercise, reducing caffeine in late luteal). It is not a substitute for treatment of [PMDD](/glossary/pmdd) or severe symptoms, which warrant clinical evaluation.
+
+## Related reading
+
+- [Vitamin B6 for PMS](/glossary/vitamin-b6-pms): often paired with magnesium
+- [Omega-3 for PMS](/glossary/omega-3-pms): another moderately supported option
+- [PMS](/glossary/pms): the symptom complex this addresses
+
+</article>
+
+<GlossarySidebar
+  currentSlug="magnesium-pms"
+  title="Magnesium (for PMS)"
+  toc={[
+    { id: "what-the-evidence-says", label: "What the evidence says" },
+    { id: "why-it-might-work", label: "Why it might work" },
+    { id: "dosing", label: "Dosing" },
+    { id: "common-side-effects-and-cautions", label: "Side effects and cautions" },
+    { id: "where-it-fits", label: "Where it fits" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

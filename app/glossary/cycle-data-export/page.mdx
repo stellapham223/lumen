@@ -1,0 +1,137 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Cycle data export: why it matters and which apps support it",
+  description:
+    "Cycle data export is the ability to download your cycle history as CSV, PDF, or structured data. Important for provider visits, app switching, and not being locked in. How major apps compare.",
+  alternates: { canonical: "/glossary/cycle-data-export" },
+  openGraph: {
+    title: "Cycle data export | Lumen glossary",
+    description:
+      "Why export matters, what to look for, and how major apps compare.",
+    url: "/glossary/cycle-data-export",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Cycle data export"
+  description="The ability to download cycle history (period dates, symptoms, biomarker logs) from a tracking app in a portable format (CSV, PDF, or structured data). Important for provider visits, switching apps, and avoiding vendor lock-in."
+  path="/glossary/cycle-data-export"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Cycle data export", path: "/glossary/cycle-data-export" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Cycle data export
+
+**Cycle data export** is the ability to download your full cycle history from a [period tracker](/glossary/period-tracker) or [cycle syncing app](/glossary/cycle-syncing) in a portable format, CSV, PDF, or structured data (JSON, XML). It is a basic data-rights feature that some apps treat as standard and others paywall or restrict.
+
+The export matters for three reasons: provider visits, app switching, and personal backup.
+
+## Why export matters
+
+**Provider visits.** A 6 to 12 month log of cycles, symptoms, and biomarkers is far more useful in a gynecology, endocrinology, or fertility appointment than verbal recall. A printable PDF summarizing cycle lengths, [PMS](/glossary/pms) severity, [cramps](/glossary/dysmenorrhea), [migraines](/glossary/menstrual-migraine), or irregular bleeding can lead to faster diagnosis. For conditions like [PCOS](/glossary/pcos), [endometriosis](/glossary/endometriosis), [perimenopause](/glossary/perimenopause), or [PMDD](/glossary/pmdd), the data is often the diagnostic input.
+
+**App switching.** Cycle tracking is most useful when it spans years. If your current app changes its pricing, privacy policy, or features and you want to switch, export is the only way to bring your history along. Apps without export trap your data and make switching costly.
+
+**Personal backup.** Cloud services shut down, accounts get locked, devices get lost. A periodic exported file is insurance against any of these.
+
+**Legal protection.** In jurisdictions with restrictive reproductive law, having your own copy of your data, and being able to delete the cloud copy after export, reduces exposure to third-party data demands.
+
+## What a good export includes
+
+The minimum useful export:
+
+- Period start and end dates for each cycle
+- Cycle length per cycle
+- Any logged symptoms with dates
+- Biomarker data ([BBT](/glossary/basal-body-temperature), [cervical mucus](/glossary/cervical-mucus-tracking), LH, etc.) if tracked
+- Notes or annotations
+
+Better exports include:
+
+- A summary PDF designed for provider sharing
+- Multiple formats (CSV for analysis, PDF for sharing)
+- Date range selection
+- Inclusion of context fields (medications, supplements, life events)
+
+## How major apps compare
+
+The landscape shifts, but roughly:
+
+**Strong export support.** Clue (CSV, PDF), Apple Health (XML), Read Your Body (CSV, full history), Kindara (CSV). Generally privacy-forward apps that treat your data as yours.
+
+**Limited or paywalled export.** Flo and some other tracker-syncing hybrids restrict full export to premium tiers or limit format options.
+
+**No export, or workaround required.** A handful of apps offer no export at all; some require email requests for a manual data dump.
+
+Check the current state before signing up: privacy policies and feature lists change. Search "[app name] export data" before committing months of logging.
+
+## Apple Health as a hub
+
+For iOS users, Apple Health's cycle tracking is a good baseline because:
+
+- Data stays on-device, end-to-end encrypted across devices
+- Export is supported via the Apple Health XML export
+- Other apps can read from and write to Apple Health, so logging once propagates to multiple tools
+- No subscription, no ads, no third-party data sharing
+
+The tradeoff: the native cycle tracking UI is sparse compared to dedicated apps. Many users keep Apple Health as the source of truth and use a specialized app for the cycle syncing layer.
+
+## Lumen and export
+
+The [Lumen phase calculator](/plan) is currently account-free, so there is no history to export, the math happens client-side from inputs you provide. As Lumen adds account-based features in future versions, data export will be a baseline guarantee, not a premium tier. Your cycle data is yours.
+
+## What to ask before signing up
+
+Before committing to an app for cycle tracking:
+
+1. Does it support export? In what format?
+2. Is export free, or paywalled?
+3. Does the export include all logged fields, or only period dates?
+4. Can you delete your account and have all data removed?
+5. Is the privacy policy specific about whether data is sold or shared with third parties?
+
+For the broader privacy posture, see [privacy-first tracking](/glossary/privacy-first-tracking). For app comparisons including export support, see [best cycle syncing app](/blog/best-cycle-syncing-app) and [free cycle syncing apps compared](/blog/free-cycle-syncing-apps-compared).
+
+## When you should export now
+
+Export your data periodically as a habit. Quarterly works for most users. Specific triggers to export immediately:
+
+- Before an app update that changes pricing or terms
+- Before a provider visit where cycle data is relevant
+- Before deleting an app or switching
+- After 6+ cycles of consistent logging, just to have a baseline
+
+The act of exporting also surfaces what the app actually stores about you, useful context for privacy decisions.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="cycle-data-export"
+  title="Cycle data export"
+  toc={[
+    { id: "why-export-matters", label: "Why it matters" },
+    { id: "what-a-good-export-includes", label: "What good export includes" },
+    { id: "how-major-apps-compare", label: "How apps compare" },
+    { id: "apple-health-as-a-hub", label: "Apple Health hub" },
+    { id: "lumen-and-export", label: "Lumen and export" },
+    { id: "what-to-ask-before-signing-up", label: "What to ask" },
+    { id: "when-you-should-export-now", label: "When to export" },
+  ]}
+/>
+
+</div>

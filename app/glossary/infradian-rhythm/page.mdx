@@ -1,0 +1,114 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Infradian rhythm: the longer-than-daily biological cycle",
+  description:
+    "An infradian rhythm is any biological rhythm longer than 24 hours. The menstrual cycle is the primary female infradian rhythm, running roughly 28 days alongside the circadian rhythm.",
+  alternates: { canonical: "/glossary/infradian-rhythm" },
+  openGraph: {
+    title: "Infradian rhythm | Lumen glossary",
+    description:
+      "Definition, biological basis, and why the menstrual cycle is the primary female infradian rhythm.",
+    url: "/glossary/infradian-rhythm",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Infradian rhythm"
+  description="A biological rhythm with a period longer than 24 hours. The menstrual cycle is the primary female infradian rhythm, running roughly 28 days."
+  path="/glossary/infradian-rhythm"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Infradian rhythm", path: "/glossary/infradian-rhythm" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Infradian rhythm
+
+An **infradian rhythm** is any biological rhythm with a period longer than 24 hours. The word comes from Latin (infra, "below", in the sense of "lower frequency than"). The most familiar daily cycle, the [circadian rhythm](/glossary/circadian-rhythm), is the reference point: rhythms shorter than 24 hours are ultradian; rhythms longer than 24 hours are infradian.
+
+For women and people who menstruate, the [menstrual cycle](/glossary/menstrual-cycle) is the primary infradian rhythm, running roughly 28 days on average (with normal variation between 21 and 35 days). It is the rhythm at the center of [cycle syncing](/glossary/cycle-syncing) as a practice.
+
+## Where the term comes from
+
+"Infradian" comes from chronobiology, the field that studies biological rhythms. Halberg and colleagues coined the modern usage in the mid-twentieth century to categorize rhythms by their frequency relative to a day. The taxonomy:
+
+- **Ultradian.** Period under 24 hours. Examples: 90-minute sleep cycles, hourly cortisol pulses, heart rate.
+- **Circadian.** Period roughly 24 hours. Examples: sleep-wake cycle, core body temperature, melatonin.
+- **Infradian.** Period over 24 hours. Examples: menstrual cycle, seasonal patterns, lunar tides in some organisms.
+
+Cycle syncing's central pitch is that women's biology runs on both the circadian and a roughly monthly infradian rhythm, and that ignoring the infradian piece leaves performance on the table.
+
+## Examples of infradian rhythms
+
+The menstrual cycle is the most prominent female infradian rhythm, but it is not the only one. Other examples include:
+
+- **Seasonal affective patterns.** Mood and sleep changes tied to seasonal daylight shifts. Annual rhythm.
+- **Hibernation cycles** in some mammals. Annual rhythm.
+- **Migration patterns** in birds and fish. Annual to multi-year rhythm.
+- **Tidal rhythms** in coastal organisms. Roughly 12.4-hour and 24.8-hour periods.
+- **Lunar rhythms** in some invertebrates. Roughly 29.5-day period.
+
+The menstrual cycle's roughly 28-day length is close to the lunar month, which has generated a great deal of speculation but no robust evidence of lunar synchronization in humans.
+
+## How the menstrual cycle works as an infradian rhythm
+
+The menstrual cycle is an infradian rhythm because the hormone profile, body temperature, sleep architecture, and several cognitive variables follow a roughly 28-day pattern. The drivers:
+
+- **[HPO axis](/glossary/hpo-axis)** (hypothalamus to pituitary to ovary) oscillation. The pituitary releases [FSH](/glossary/fsh) and [LH](/glossary/lh) in a pattern that drives follicle growth, [ovulation](/glossary/ovulation), and corpus luteum formation.
+- **[Estrogen](/glossary/estrogen)** rises through the [follicular phase](/glossary/follicular-phase), peaks near ovulation, dips, rises again, then drops in late luteal.
+- **[Progesterone](/glossary/progesterone)** is flat in follicular, rises in [luteal phase](/glossary/luteal-phase), drops sharply in late luteal.
+
+The hormone profile drives downstream cycling in body temperature, sleep architecture, neurotransmitter tone ([dopamine](/glossary/dopamine-cycle), [serotonin](/glossary/serotonin-cycle), GABA), and inflammation.
+
+## Why circadian and infradian interact
+
+The two rhythms are not independent. They interact in several documented ways:
+
+- **Sleep architecture.** Both the circadian sleep-wake cycle and the menstrual cycle affect sleep. Late luteal sleep is shorter and more fragmented even when bedtime is held constant.
+- **Body temperature.** Circadian temperature has a roughly 1°F amplitude daily. Progesterone elevation in luteal phase shifts the entire temperature curve upward by roughly 0.5°F.
+- **Cortisol.** The daily cortisol curve interacts with cycle-phase variation in cortisol amplitude.
+- **Melatonin.** Cycle phase affects melatonin amplitude, which can affect sleep timing.
+
+For practical purposes, this means honoring the circadian basics (consistent sleep timing, morning light, evening dim) supports infradian rhythm health, and vice versa. Disrupting one tends to disrupt the other.
+
+## Why this matters for cycle syncing
+
+The infradian framing is the philosophical core of cycle syncing as a practice. The claim is not just "cycles exist". It is "cycles are a rhythm, like the daily one, and the same logic that makes us protect sleep and morning light for circadian health should make us treat cycle phase as a planning variable".
+
+How far this claim takes you in practice is the source of most cycle syncing debate. The [does cycle syncing work](/blog/does-cycle-syncing-work) review grades each application of the infradian framing against current evidence.
+
+## Related reading
+
+- [Circadian rhythm (vs infradian)](/glossary/circadian-rhythm): the daily rhythm reference point
+- [Menstrual cycle](/glossary/menstrual-cycle): the primary female infradian rhythm
+- [Cycle syncing](/glossary/cycle-syncing): the practice built around the infradian framing
+- [Alisa Vitti](/glossary/alisa-vitti): popularized the infradian framing in cycle syncing
+
+</article>
+
+<GlossarySidebar
+  currentSlug="infradian-rhythm"
+  title="Infradian rhythm"
+  toc={[
+    { id: "where-the-term-comes-from", label: "Where the term comes from" },
+    { id: "examples-of-infradian-rhythms", label: "Examples" },
+    { id: "how-the-menstrual-cycle-works-as-an-infradian-rhythm", label: "Menstrual cycle as infradian" },
+    { id: "why-circadian-and-infradian-interact", label: "Circadian interaction" },
+    { id: "why-this-matters-for-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

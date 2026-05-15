@@ -1,0 +1,99 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Corpus luteum: the post-ovulation progesterone factory",
+  description:
+    "The corpus luteum is the hormone-producing structure formed from the ruptured follicle after ovulation. It produces progesterone for roughly 14 days unless pregnancy occurs.",
+  alternates: { canonical: "/glossary/corpus-luteum" },
+  openGraph: {
+    title: "Corpus luteum | Lumen glossary",
+    description:
+      "Definition, what it produces, why the luteal phase is fixed at 14 days, and clinical relevance.",
+    url: "/glossary/corpus-luteum",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Corpus luteum"
+  description="Hormone-producing structure formed from a follicle after ovulation. Produces progesterone for roughly 14 days unless pregnancy occurs."
+  path="/glossary/corpus-luteum"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Corpus luteum", path: "/glossary/corpus-luteum" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Corpus luteum
+
+The **corpus luteum** (Latin for "yellow body") is the temporary endocrine structure formed from the [ovarian follicle](/glossary/ovarian-follicle) after [ovulation](/glossary/ovulation). It produces [progesterone](/glossary/progesterone), a smaller amount of [estrogen](/glossary/estrogen), and several other hormones for roughly 14 days. If pregnancy does not occur, it breaks down, hormone levels fall, and [menstruation](/glossary/menstruation) begins.
+
+## How it forms
+
+Before ovulation, a dominant follicle in the ovary contains a developing egg surrounded by granulosa and theca cells. When the [LH surge](/glossary/lh-surge) triggers follicle rupture and egg release, the remaining cells of the follicle wall do not just disperse. Under continued LH stimulation, they transform: granulosa cells enlarge and start producing progesterone. The tissue takes on a yellowish appearance from accumulated lipids (the source of the name).
+
+This transformation, called luteinization, is what converts the follicle into the corpus luteum within roughly 24 to 48 hours after ovulation.
+
+## What the corpus luteum produces
+
+The corpus luteum is the primary source of progesterone in the [luteal phase](/glossary/luteal-phase):
+
+- **[Progesterone](/glossary/progesterone).** Peaks roughly 7 days after ovulation (mid-luteal). Maintains the [endometrium](/glossary/endometrium), raises [basal body temperature](/glossary/basal-body-temperature) by roughly 0.5°F (0.3°C), and modulates the brain through neurosteroids like [allopregnanolone](/glossary/allopregnanolone).
+- **Estrogen.** A second smaller rise (the post-ovulation estrogen peak).
+- **Inhibin A.** Suppresses FSH, which prevents a new follicular cohort from starting until the current cycle ends.
+- **Relaxin.** Helps prepare tissues for possible pregnancy.
+
+The mid-luteal progesterone level is the clinical marker used to confirm ovulation occurred (typically over 3 ng/mL roughly 7 days post-ovulation).
+
+## Why the luteal phase is roughly fixed
+
+The corpus luteum has a built-in lifespan of roughly 12 to 14 days unless it receives a pregnancy signal. Without that signal (hCG from an implanting embryo), the corpus luteum undergoes programmed breakdown (luteolysis), progesterone and estrogen drop sharply, and the endometrial lining sheds.
+
+This is why the [luteal phase](/glossary/luteal-phase) stays close to 14 days even when overall [cycle length](/glossary/cycle-length) varies. Cycle-length variation is almost entirely follicular-phase variation; the luteal phase is set by the corpus luteum lifespan.
+
+## What changes if pregnancy occurs
+
+If a fertilized egg implants (around 6 to 10 days post-ovulation), the developing embryo produces human chorionic gonadotropin (hCG), which signals to the corpus luteum to keep producing progesterone. The corpus luteum then survives for roughly 10 weeks of pregnancy, supporting the endometrium and developing pregnancy, before the placenta takes over progesterone production.
+
+## Clinical conditions involving the corpus luteum
+
+- **[Luteal phase defect](/glossary/luteal-phase-defect).** Inadequate progesterone production by the corpus luteum, producing short luteal phases (under 10 days) and/or low mid-luteal progesterone. Associated with implantation difficulties.
+- **Corpus luteum cysts.** Sometimes the corpus luteum fills with fluid and persists as a small cyst. Usually resolves on its own within 1 to 3 months.
+- **Hemorrhagic corpus luteum.** A corpus luteum cyst that bleeds; usually self-limited but can rarely require intervention.
+
+## The corpus luteum and PMS
+
+PMS symptoms cluster in the late luteal days as the corpus luteum's hormone output starts to fall. The estrogen-and-progesterone drop in the late luteal phase is what drives the serotonin and [allopregnanolone](/glossary/allopregnanolone) declines that contribute to [PMS](/glossary/pms) and, in some women, [PMDD](/glossary/pmdd). The corpus luteum is not directly causing the symptoms; the rapid hormone withdrawal as it breaks down is.
+
+## The corpus luteum and cycle syncing
+
+For cycle syncing, the corpus luteum's lifespan defines the luteal phase window. The [early luteal phase](/glossary/early-luteal-phase) (corpus luteum at peak output) is the detail-focus window many cycle syncing protocols target for editing, QA, and closing work. The [late luteal phase](/glossary/late-luteal-phase) (corpus luteum breaking down) is the PMS window where most cycle syncing models recommend reducing demands.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="corpus-luteum"
+  title="Corpus luteum"
+  toc={[
+    { id: "how-it-forms", label: "How it forms" },
+    { id: "what-the-corpus-luteum-produces", label: "What it produces" },
+    { id: "why-the-luteal-phase-is-roughly-fixed", label: "Luteal phase length" },
+    { id: "what-changes-if-pregnancy-occurs", label: "In pregnancy" },
+    { id: "clinical-conditions-involving-the-corpus-luteum", label: "Clinical conditions" },
+    { id: "the-corpus-luteum-and-pms", label: "Corpus luteum and PMS" },
+    { id: "the-corpus-luteum-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

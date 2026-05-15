@@ -1,0 +1,113 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Endocrine system (cycle): the hormone network behind the menstrual cycle",
+  description:
+    "The endocrine system is the network of hormone-producing glands. The pituitary, ovaries, thyroid, and adrenals all interact with and influence the menstrual cycle.",
+  alternates: { canonical: "/glossary/endocrine-system" },
+  openGraph: {
+    title: "Endocrine system (cycle) | Lumen glossary",
+    description:
+      "How the pituitary, ovaries, thyroid, and adrenals interact across the menstrual cycle.",
+    url: "/glossary/endocrine-system",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Endocrine system (cycle)"
+  description="The network of hormone-producing glands that drive and modulate the menstrual cycle: pituitary, ovaries, thyroid, adrenals."
+  path="/glossary/endocrine-system"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Endocrine system", path: "/glossary/endocrine-system" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Endocrine system (cycle)
+
+The **endocrine system** is the network of hormone-producing glands that regulate body functions through chemical signals. For the [menstrual cycle](/glossary/menstrual-cycle), the relevant glands are the hypothalamus, pituitary, ovaries, thyroid, adrenals, and pancreas. They interact through feedback loops, and disruption of any of them can produce cycle changes.
+
+## The core cycle axis: HPO
+
+The primary axis driving the menstrual cycle is the [hypothalamic-pituitary-ovarian (HPO) axis](/glossary/hpo-axis):
+
+1. **Hypothalamus.** Releases gonadotropin-releasing hormone (GnRH) in pulses.
+2. **Pituitary.** Responds by releasing [FSH](/glossary/fsh) and [LH](/glossary/lh).
+3. **Ovaries.** Respond by growing [follicles](/glossary/ovarian-follicle) and producing [estrogen](/glossary/estrogen) and (post-ovulation) [progesterone](/glossary/progesterone) from the [corpus luteum](/glossary/corpus-luteum).
+
+The HPO axis runs on feedback: rising estrogen and progesterone normally suppress FSH and LH, except in the late follicular phase, when high estrogen triggers a switch to positive feedback that produces the LH surge.
+
+## Thyroid: the modulator that's often missed
+
+The thyroid gland produces hormones that affect metabolic rate, energy, and cycle regulation. Both hyperthyroidism and hypothyroidism can disrupt the menstrual cycle:
+
+- **Hypothyroidism.** Often causes heavy, longer, or more painful periods. Can also produce anovulation or amenorrhea in severe cases. Elevated TSH raises [prolactin](/glossary/prolactin), which can independently suppress ovulation.
+- **Hyperthyroidism.** Often causes light, infrequent, or absent periods.
+
+Thyroid testing (TSH, free T4) is standard in any workup for cycle irregularity, especially when combined with energy, weight, or temperature symptoms. See [thyroid cycle interactions](/glossary/thyroid-cycle) for more.
+
+## Adrenals: stress and androgens
+
+The adrenal glands sit on top of the kidneys and produce several hormones relevant to the cycle:
+
+- **[Cortisol](/glossary/cortisol-cycle).** The primary stress hormone. Chronic elevation can suppress the HPO axis (one mechanism of stress-induced [hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea)).
+- **[DHEA](/glossary/dhea) and DHEA-S.** Precursors that can be converted to androgens or estrogens. DHEA levels decline with age.
+- **[Androgens](/glossary/androgens-women).** Including small amounts of testosterone. Adrenal androgens contribute meaningfully to circulating androgen levels, especially in PCOS.
+
+In PCOS, a subset of patients have adrenal-dominant androgen excess (vs ovarian-dominant), which affects treatment choice.
+
+## Pancreas: insulin and the cycle
+
+The pancreas produces insulin, which interacts with the cycle in several ways:
+
+- **[Insulin sensitivity](/glossary/insulin-sensitivity-cycle).** Drops in the luteal phase for most women; insulin resistance is slightly higher then.
+- **PCOS.** Insulin resistance is a core feature in many cases. High insulin drives ovarian androgen production, contributing to the irregular ovulation, acne, and hirsutism of PCOS.
+- **Type 1 diabetes and cycle.** Can complicate glucose control, especially around menstruation and ovulation, when hormone shifts affect insulin needs.
+
+## The pineal gland and circadian-cycle interaction
+
+The pineal gland produces melatonin in response to darkness, driving the [circadian rhythm](/glossary/circadian-rhythm). The circadian system interacts with the [infradian](/glossary/infradian-rhythm) menstrual cycle:
+
+- Sleep disruption can blunt the LH surge and delay ovulation.
+- Shift work is associated with cycle irregularity.
+- Melatonin is sometimes used in fertility contexts for egg quality, though evidence is preliminary.
+
+## Why the endocrine system matters for cycle syncing
+
+[Cycle syncing](/glossary/cycle-syncing) is built around the HPO axis pattern, but other endocrine systems can override it:
+
+- **Thyroid dysfunction.** Can dampen the typical follicular energy lift; fix thyroid first, sync later.
+- **Adrenal stress.** Chronic high cortisol can flatten cycle differences.
+- **PCOS.** Often produces irregular or absent cycle patterns that the four-phase model does not map to cleanly.
+- **Insulin resistance.** Can amplify luteal-phase symptoms.
+
+This is why cycle syncing is one layer of a broader hormonal health picture, not a standalone protocol. If cycle syncing is not producing noticeable effects, an endocrine workup (thyroid, fasting insulin, vitamin D, possibly DHEA-S) is often more useful than tweaking the phase-by-phase plan.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="endocrine-system"
+  title="Endocrine system"
+  toc={[
+    { id: "the-core-cycle-axis-hpo", label: "Core cycle axis (HPO)" },
+    { id: "thyroid-the-modulator-thats-often-missed", label: "Thyroid" },
+    { id: "adrenals-stress-and-androgens", label: "Adrenals" },
+    { id: "pancreas-insulin-and-the-cycle", label: "Pancreas" },
+    { id: "the-pineal-gland-and-circadian-cycle-interaction", label: "Pineal and circadian" },
+    { id: "why-the-endocrine-system-matters-for-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

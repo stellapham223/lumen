@@ -1,0 +1,132 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Cycle map: a visual layout of the four phases with hormone overlay",
+  description:
+    "A cycle map is a visual representation of the four cycle phases on a calendar with hormone overlay. Used for cycle syncing planning and personal pattern tracking.",
+  alternates: { canonical: "/glossary/cycle-map" },
+  openGraph: {
+    title: "Cycle map | Lumen glossary",
+    description:
+      "Definition, what a cycle map includes, how to build a personal one, and how to use it for planning.",
+    url: "/glossary/cycle-map",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Cycle map"
+  description="A visual representation of the four menstrual cycle phases on a calendar with hormone profile overlay."
+  path="/glossary/cycle-map"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Cycle map", path: "/glossary/cycle-map" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Cycle map
+
+A **cycle map** is a visual representation of the four [cycle phases](/glossary/cycle-phase) laid out on a calendar, typically with a hormone profile overlay showing how [estrogen](/glossary/estrogen) and [progesterone](/glossary/progesterone) change across the cycle. Cycle maps make abstract hormone shifts concrete, which makes them useful for planning and for noticing personal patterns.
+
+## What a cycle map typically includes
+
+A standard cycle map combines several layers on one visual:
+
+- **Day numbers.** Day 1 of the cycle (first day of bleeding) through the last day before the next period.
+- **Phase blocks.** Color-coded segments for [menstrual phase](/glossary/menstrual-phase), [follicular phase](/glossary/follicular-phase), [ovulatory phase](/glossary/ovulatory-phase), and [luteal phase](/glossary/luteal-phase).
+- **Hormone curves.** Estrogen, progesterone, and sometimes [LH](/glossary/lh) and [FSH](/glossary/fsh) shown as overlaid line graphs.
+- **Phase transitions.** [Phase transition](/glossary/phase-transition) windows highlighted.
+- **Activity recommendations.** Optional: training, work, food, social patterns annotated per phase.
+
+The hormone overlay matters: without it, the four phases look like equal blocks, which obscures the rapid changes that drive how each phase actually feels. With hormones plotted, the [LH surge](/glossary/lh-surge) and luteal hormone drop become visible.
+
+## The standard 28-day cycle map
+
+The default cycle map shows a 28-day cycle, which is convenient but misleading. Only about 12% of women have exactly 28-day cycles. Real cycles vary in length, with [cycle length](/glossary/cycle-length) variation coming almost entirely from the [follicular phase](/glossary/follicular-phase).
+
+A more accurate cycle map shows the standard 28-day reference, but with annotation explaining that:
+
+- Days are approximate, not fixed
+- Cycle length variation lengthens or shortens the follicular phase
+- The luteal phase stays close to 14 days
+- Phase boundaries are fuzzy, not sharp
+
+For users with a non-28-day cycle, the [phase calculator](/plan) generates a personalized version with phase windows scaled to actual cycle length.
+
+## Building a personal cycle map
+
+A personal cycle map differs from a textbook one in several ways:
+
+- **Actual cycle length.** Based on the user's average over the last 3 to 6 cycles.
+- **Personal symptom overlay.** Symptoms logged across cycles can be plotted on the map to show when individual patterns occur.
+- **Personal phase transitions.** Some women's transitions cluster on different days than the textbook average.
+- **Phase activity preferences.** Adjusted to what the individual finds works (not all generic cycle syncing recommendations apply).
+
+Most [period tracker apps](/glossary/period-tracker) and some [cycle tracking wearables](/glossary/cycle-tracking-wearable) generate basic personalized cycle maps from logged data. More detailed versions can be built manually using spreadsheet templates or planner pages.
+
+## How to use a cycle map
+
+The two main uses:
+
+**For planning.** Layer the cycle map on top of work and personal calendars. When you can choose timing, schedule:
+
+- High-stakes presentations, pitches, or interviews in late follicular / ovulatory windows
+- New project kickoffs and learning-heavy work in [late follicular phase](/glossary/late-follicular-phase)
+- Editing, QA, and closing work in [early luteal phase](/glossary/early-luteal-phase)
+- Lighter demands in [late luteal phase](/glossary/late-luteal-phase) and [menstrual phase](/glossary/menstrual-phase)
+- Difficult conversations or negotiations in follicular days when possible
+
+**For self-knowledge.** Use the cycle map to notice patterns over multiple cycles:
+
+- Energy and mood swings that map to phases
+- Symptoms that cluster predictably (e.g., migraines at hormone drops)
+- Sleep patterns that shift by phase
+- Athletic performance variation
+
+After 3 to 6 months of tracking against the cycle map, individual patterns become visible enough to make planning more accurate than generic phase advice.
+
+## Cycle map limitations
+
+A cycle map is a simplification, and some limitations matter:
+
+- **Phase blocks oversimplify.** Hormones change continuously, not in jumps.
+- **Population averages may not match you.** Your peak estrogen, transition days, and symptom patterns may differ from textbook averages by several days.
+- **The model assumes ovulation.** [Anovulatory cycles](/glossary/anovulatory-cycle), most hormonal birth control, [perimenopause](/glossary/perimenopause), and [PCOS](/glossary/pcos) all break the standard cycle map. Adapted versions exist for some of these contexts (see [cycle syncing on birth control](/blog/cycle-syncing-on-birth-control), [PCOS syncing](/glossary/cycle-syncing-pcos), [perimenopause syncing](/glossary/cycle-syncing-perimenopause)).
+- **Static maps don't update.** Cycles vary month to month; a map that doesn't adjust to actual cycle data is less useful than one that does.
+
+## Cycle map vs cycle syncing chart
+
+These two terms overlap but have different emphases:
+
+- **Cycle map.** Focused on the hormone profile and phase layout. Used for visualization and self-knowledge.
+- **Cycle syncing chart.** Includes the cycle map plus detailed activity-to-phase recommendations (workouts, food, work, social). See the [cycle syncing chart guide](/blog/cycle-syncing-chart).
+
+The cycle map is the foundation; the cycle syncing chart is what you build on top of it for planning.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="cycle-map"
+  title="Cycle map"
+  toc={[
+    { id: "what-a-cycle-map-typically-includes", label: "What it includes" },
+    { id: "the-standard-28-day-cycle-map", label: "Standard 28-day map" },
+    { id: "building-a-personal-cycle-map", label: "Building a personal map" },
+    { id: "how-to-use-a-cycle-map", label: "How to use it" },
+    { id: "cycle-map-limitations", label: "Limitations" },
+    { id: "cycle-map-vs-cycle-syncing-chart", label: "Vs cycle syncing chart" },
+  ]}
+/>
+
+</div>

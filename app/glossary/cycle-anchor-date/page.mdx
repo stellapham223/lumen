@@ -1,0 +1,115 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Cycle anchor date: day 1 as the reference for phase prediction",
+  description:
+    "Cycle anchor date is day 1 of your current period, the reference point for predicting all four cycle phases. Definition, why it matters, how to choose it correctly, and edge cases.",
+  alternates: { canonical: "/glossary/cycle-anchor-date" },
+  openGraph: {
+    title: "Cycle anchor date | Lumen glossary",
+    description:
+      "Day 1 of your current period as the reference for predicting all four phases of the cycle.",
+    url: "/glossary/cycle-anchor-date",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Cycle anchor date"
+  description="Day 1 of the current menstrual period, used as the reference point for predicting all four cycle phases. The starting input for any phase calculator."
+  path="/glossary/cycle-anchor-date"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Cycle anchor date", path: "/glossary/cycle-anchor-date" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Cycle anchor date
+
+The **cycle anchor date** is day 1 of your current menstrual period, the reference point used to predict all four phases of the [menstrual cycle](/glossary/menstrual-cycle). Lumen's positioning is that good phase prediction starts with a clean anchor; the underlying rationale is that the entire calculation depends on this one input being accurate. Get the anchor wrong by two or three days, and every phase prediction downstream drifts by the same amount.
+
+The anchor is also the input that needs the most frequent re-confirmation. Cycles drift; the previous anchor expires the moment a new period starts.
+
+## What counts as day 1
+
+Day 1 is the **first day of full menstrual flow**, not spotting. The convention matters because spotting can precede a true period by 1 to 3 days, and counting from spotting will push every phase prediction forward by that amount.
+
+Operational rule: day 1 is the day you would need a pad or tampon (not a panty liner) for normal daily activity. If you wake up to spotting and the flow becomes full by lunch, day 1 is that calendar day. If spotting persists for three days before flow starts, day 1 is the day flow starts, not the first spotting day.
+
+[Mid-cycle spotting](/glossary/mid-cycle-spotting), implantation spotting, and breakthrough bleeding on hormonal contraceptives are not anchor candidates. They are not menstrual phases.
+
+## Why the anchor is the input that matters most
+
+Every phase prediction in a [phase calculator](/glossary/phase-calculator) is derived from two inputs: the anchor date and the average cycle length. Of the two, the anchor carries more leverage. Cycle length usually shifts by 1 to 2 days across cycles for most people; anchor errors are usually in the same range, but they compound across the cycle.
+
+A 3-day anchor error means your predicted [late luteal phase](/glossary/late-luteal-phase) starts 3 days off, which is roughly the entire duration of the PMS-symptomatic window. The recovery guardrails will land in the wrong week.
+
+## How to choose the anchor
+
+Three rules:
+
+1. **Use the date day 1 actually started, not when you noticed.** If your period started overnight, day 1 is the calendar day of the start, not the morning you logged it.
+2. **Use full flow, not spotting.** See above.
+3. **Re-confirm at the next period.** The anchor expires on day 1 of the next cycle. See [cycle re-anchoring](/glossary/cycle-reanchoring).
+
+The [Lumen phase calculator](/plan) prompts you for the anchor and the average cycle length. Two cycles of accurate logging is enough to ground the average.
+
+## When the anchor is hard to pin down
+
+A few cases where day 1 is ambiguous:
+
+- **Prolonged spotting before flow.** Use the first day of full flow.
+- **Continuous light bleeding** (some PCOS presentations, some IUD users, perimenopause). The calendar method is unreliable here; track ovulation directly with [BBT](/glossary/basal-body-temperature) or [OPK](/glossary/opk) instead.
+- **First cycle after coming off birth control.** The first withdrawal bleed is not always a "real" cycle in the hormonal sense. Wait 1 to 2 cycles for the anchor to be diagnostic. See [coming off birth control](/glossary/coming-off-birth-control).
+- **Postpartum.** Lochia is not a period. The first true period after delivery is the anchor. See [postpartum cycle return](/glossary/postpartum-cycle-return).
+- **Perimenopause.** Anchors get less reliable as cycles become irregular. The framework starts breaking down; ovulation tracking is needed.
+
+## What the anchor does not tell you
+
+The anchor predicts phase ranges. It does not confirm:
+
+- **That ovulation occurred.** Some cycles are [anovulatory](/glossary/anovulatory-cycle); the bleed is breakthrough, not a real cycle. Only [BBT](/glossary/basal-body-temperature) or [progesterone](/glossary/progesterone) testing confirms ovulation.
+- **That the cycle will run the predicted length.** Cycle length drifts. The anchor sets the start; the next anchor will confirm or correct the prediction.
+- **That symptoms will follow the predicted phase.** Phase predicts hormonal context; individual variation is large.
+
+The anchor is necessary but not sufficient.
+
+## Lumen's positioning
+
+The [Lumen phase calculator](/plan) treats the anchor as the most important input on the form. The product asks for day 1 explicitly (not "when did you start tracking", not "when did you notice"). The calculation re-runs the moment you provide a new anchor. The free version stores the anchor in your browser only; see [privacy-first tracking](/glossary/privacy-first-tracking).
+
+## Related reading
+
+- [Cycle re-anchoring](/glossary/cycle-reanchoring): updating the anchor each cycle
+- [Cycle length](/glossary/cycle-length): the other key input
+- [Phase calculator](/glossary/phase-calculator): the tool that uses the anchor
+- [How to start cycle syncing](/blog/how-to-start-cycle-syncing): the starter plan
+
+</article>
+
+<GlossarySidebar
+  currentSlug="cycle-anchor-date"
+  title="Cycle anchor date"
+  toc={[
+    { id: "what-counts-as-day-1", label: "What counts as day 1" },
+    { id: "why-the-anchor-is-the-input-that-matters-most", label: "Why it matters most" },
+    { id: "how-to-choose-the-anchor", label: "How to choose it" },
+    { id: "when-the-anchor-is-hard-to-pin-down", label: "Hard cases" },
+    { id: "what-the-anchor-does-not-tell-you", label: "What it does not say" },
+    { id: "lumens-positioning", label: "Lumen's positioning" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

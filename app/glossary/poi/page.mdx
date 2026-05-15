@@ -1,0 +1,143 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Premature ovarian insufficiency (POI): definition, diagnosis, and cycle implications",
+  description:
+    "Premature ovarian insufficiency (POI) is the loss of ovarian function before age 40. Affects about 1% of women. Diagnosis, hormonal profile, and what cycle syncing looks like.",
+  alternates: { canonical: "/glossary/poi" },
+  openGraph: {
+    title: "Premature ovarian insufficiency (POI) | Lumen glossary",
+    description:
+      "Causes, diagnostic markers, and the practical implications for cycle tracking and management.",
+    url: "/glossary/poi",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Premature ovarian insufficiency (POI)"
+  description="Loss of normal ovarian function before age 40, characterized by irregular or absent periods, elevated FSH, and low estrogen. Affects about 1% of women of reproductive age."
+  path="/glossary/poi"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Premature ovarian insufficiency (POI)", path: "/glossary/poi" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Premature ovarian insufficiency (POI)
+
+**Premature ovarian insufficiency (POI)** is the loss of normal ovarian function before age 40, producing irregular or absent periods, elevated [FSH](/glossary/fsh), and low [estrogen](/glossary/estrogen). It affects roughly 1% of women of reproductive age, with about 0.1% under age 30 and 0.01% under age 20. POI is sometimes called premature menopause, but the terms are not identical: POI can be intermittent, and spontaneous ovulation occurs in some users even after diagnosis.
+
+*This is informational, not medical advice. POI requires medical evaluation, has implications for bone, cardiovascular, and cognitive health, and benefits significantly from coordinated care.*
+
+## How POI is diagnosed
+
+Diagnostic criteria typically require:
+
+- **Age under 40.**
+- **Amenorrhea or oligomenorrhea** for 4 or more months.
+- **Two FSH measurements in the menopausal range** (commonly over 25 IU/L, depending on lab), drawn at least 4 weeks apart.
+- **Low estradiol** consistent with reduced ovarian function.
+
+Workup also investigates underlying causes:
+
+- **Karyotype and FMR1 premutation testing** (Turner syndrome, Fragile X-associated POI).
+- **Autoimmune screening** (thyroid, adrenal, others).
+- **History of chemotherapy, radiation, or pelvic surgery.**
+- **Family history** of early menopause.
+
+In many cases, no specific cause is identified ("idiopathic POI").
+
+## Common symptoms
+
+POI often presents with symptoms similar to [perimenopause](/glossary/perimenopause) or menopause but occurring decades earlier:
+
+- **Irregular or absent periods.**
+- **Hot flashes and night sweats.**
+- **Sleep disruption.**
+- **Vaginal dryness, painful intercourse.**
+- **Mood changes,** including anxiety and depressive symptoms.
+- **Brain fog,** word-retrieval difficulty.
+- **Fatigue.**
+- **Difficulty conceiving.**
+
+POI symptoms can be more abrupt and intense than gradual perimenopause because the hormonal drop happens at a younger physiology that has not adapted to it.
+
+## The underlying biology
+
+POI represents a substantial loss of [ovarian reserve](/glossary/ovarian-reserve) at an early age. Remaining follicles do not respond normally to FSH signals, ovulation becomes erratic or absent, and estrogen drops. About 5 to 10% of users with POI conceive spontaneously after diagnosis, which is why "premature menopause" is misleading; the function is impaired, not entirely lost.
+
+Underlying causes can include:
+
+- **Genetic.** Turner syndrome, Fragile X premutation, other chromosomal or single-gene changes.
+- **Autoimmune.** Particularly associated with autoimmune thyroid disease and adrenal insufficiency.
+- **Iatrogenic.** Chemotherapy, pelvic radiation, ovarian surgery.
+- **Idiopathic.** No identified cause in many cases.
+
+## Cycle syncing with POI
+
+The four-phase cycle assumes a regular ovulatory pattern. POI usually does not produce one.
+
+Practical adaptations:
+
+- **Calendar prediction does not work.** Cycle length and ovulation timing are unreliable.
+- **Track ovulation directly when ovulation occurs.** [OPKs](/glossary/opk) and [basal body temperature](/glossary/basal-body-temperature) can identify the occasional cycle that includes ovulation.
+- **Use the work-mode rotation without calendar mapping.** A 28-day rotation of work modes can still provide structure, with the biological rationale being weaker.
+- **Symptom tracking matters more than phase tracking.** Vasomotor and mood symptom patterns guide management more usefully than trying to identify phases.
+
+## Treatment angles
+
+POI management addresses both symptoms and long-term health risks:
+
+- **Menopausal hormone therapy ([HRT](/glossary/hrt))** is typically recommended until at least the average age of natural menopause (around 51) to protect bone, cardiovascular, and brain health. POI users generally receive higher hormone doses than older menopausal users.
+- **Combined hormonal contraceptives** are an alternative for some users, though dosing for symptom and bone protection may favor MHT.
+- **Calcium, vitamin D, and weight-bearing exercise** for bone health.
+- **Cardiovascular risk monitoring.**
+- **Fertility care** if pregnancy is desired (donor egg IVF is the dominant option; spontaneous conception is possible but unpredictable).
+- **Mental health support;** POI diagnosis carries significant emotional weight, particularly around fertility loss.
+
+All of these should be coordinated with a provider.
+
+## POI and the menstrual cycle
+
+A few practical implications:
+
+- POI is not strictly equivalent to early menopause; intermittent ovulation can occur for years.
+- Contraception is needed if pregnancy is to be avoided, even with a POI diagnosis.
+- Long-term health risks (bone, cardiovascular, cognitive) are real and merit active management.
+- Cycle tracking moves from phase prediction to symptom monitoring and ovulation detection when it occurs.
+
+## Related reading
+
+- [Ovarian reserve](/glossary/ovarian-reserve): the underlying biological measure
+- [Menopause](/glossary/menopause): the later, age-typical version of ovarian function loss
+- [Hormone replacement therapy](/glossary/hrt): a foundational management option
+- [Hypothalamic amenorrhea](/glossary/hypothalamic-amenorrhea): a competing cause of early cycle loss (reversible, lab profile different)
+
+</article>
+
+<GlossarySidebar
+  currentSlug="poi"
+  title="Premature ovarian insufficiency (POI)"
+  toc={[
+    { id: "how-poi-is-diagnosed", label: "How it's diagnosed" },
+    { id: "common-symptoms", label: "Common symptoms" },
+    { id: "the-underlying-biology", label: "The biology" },
+    { id: "cycle-syncing-with-poi", label: "Cycle syncing with POI" },
+    { id: "treatment-angles", label: "Treatment angles" },
+    { id: "poi-and-the-menstrual-cycle", label: "Cycle implications" },
+  ]}
+/>
+
+</div>

@@ -1,0 +1,118 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Depo-Provera (medroxyprogesterone injection): mechanism, cycle effects, and slow return",
+  description:
+    "Depo-Provera is a progestin injection given every 11 to 13 weeks. It suppresses ovulation strongly and cycle return after stopping can take 6 to 18 months. What it means for cycle syncing.",
+  alternates: { canonical: "/glossary/depo-provera" },
+  openGraph: {
+    title: "Depo-Provera | Lumen glossary",
+    description:
+      "How the Depo shot works, why cycle return is slow, and the cycle syncing implications.",
+    url: "/glossary/depo-provera",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Depo-Provera"
+  description="Intramuscular injection of medroxyprogesterone acetate given every 11 to 13 weeks. Suppresses ovulation strongly. Cycle return after stopping is slower than other methods."
+  path="/glossary/depo-provera"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Depo-Provera", path: "/glossary/depo-provera" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Depo-Provera injection
+
+**Depo-Provera** (depot medroxyprogesterone acetate, or DMPA) is a progestin injection given every 11 to 13 weeks, typically into the upper arm or hip muscle. A subcutaneous version (Depo-SubQ Provera 104) is also available. Each shot delivers a high dose of medroxyprogesterone designed to maintain suppressive blood levels for the full interval.
+
+Typical-use efficacy is around 96%, perfect-use above 99%. The gap reflects late or missed shots.
+
+*This is informational, not medical advice. Contraceptive choice should be discussed with a qualified provider.*
+
+## How it works
+
+Depo-Provera produces sustained progestin levels that:
+
+1. **Suppress [ovulation](/glossary/ovulation)** by inhibiting the LH surge through HPO axis suppression. The dominant mechanism, more complete than the [mini-pill](/glossary/mini-pill).
+2. **Thicken cervical mucus.**
+3. **Thin the endometrium.**
+
+Ovulation suppression is strong and reliable across the 11 to 13 week interval, which is why dosing tolerance is fairly forgiving compared to daily oral methods.
+
+## Cycle implications
+
+Depo is one of the most cycle-suppressive contraceptives. For most users, the [menstrual cycle](/glossary/menstrual-cycle) is essentially absent: no [follicular phase](/glossary/follicular-phase), no ovulation, no [luteal phase](/glossary/luteal-phase), no [progesterone](/glossary/progesterone) rise (the synthetic progestin is constant, not cyclic).
+
+Bleeding patterns:
+
+- About 50% of users have irregular spotting in the first year.
+- By the end of the first year, around 50% stop bleeding entirely (amenorrhea), and this rises to 70% by 2 years.
+
+[Cycle syncing](/glossary/cycle-syncing) by hormonal phase does not apply. The structural 28-day rotation can still be used as a productivity framework, but the biology underneath it is paused.
+
+## Slow cycle return after stopping
+
+The single most distinctive feature of Depo, and a frequent surprise to users, is the slow return of fertility and ovulation after discontinuation. Unlike pills, where ovulation often returns within weeks, Depo can suppress ovulation for **6 to 18 months** after the last shot. Median time to conception after discontinuation is roughly 9 to 10 months.
+
+This is not an indication of permanent harm; cycles do return for the large majority. But users planning conception within the next year should consider a different method.
+
+## Common side effects
+
+- **Irregular bleeding or amenorrhea.**
+- **Weight gain.** Depo is the contraceptive most consistently associated with weight gain at the population level, averaging 4 to 5 lbs in the first year for users prone to it.
+- **Mood changes**, including depression in a subset of users.
+- **Decreased libido.**
+- **Headaches.**
+- **Acne.**
+- **Bone density loss.** Reversible after discontinuation, but the FDA has a boxed warning recommending no more than 2 years of use unless other methods are unsuitable. Particularly relevant in adolescents (peak bone-building years) and users with osteoporosis risk factors.
+
+## When to consider
+
+- Want highly effective contraception with infrequent administration (4 shots per year).
+- Difficulty with daily pills or with the idea of a long-term implant or IUD.
+- Estrogen is contraindicated.
+- Heavy bleeding or [endometriosis](/glossary/endometriosis) pain that may respond to ovulation suppression.
+
+## When NOT to consider
+
+- Planning to conceive within the next 12 to 18 months.
+- History of bone density issues, eating disorders, or low bone mass.
+- History of significant depression that worsens on hormonal contraception.
+- Concerned about weight changes.
+
+## Related reading
+
+- [Contraceptive implant](/glossary/contraceptive-implant): alternative long-acting progestin method
+- [Coming off birth control](/glossary/coming-off-birth-control): what to expect after stopping
+- [Cycle syncing on birth control](/blog/cycle-syncing-on-birth-control): adapting the framework
+
+</article>
+
+<GlossarySidebar
+  currentSlug="depo-provera"
+  title="Depo-Provera injection"
+  toc={[
+    { id: "how-it-works", label: "How it works" },
+    { id: "cycle-implications", label: "Cycle implications" },
+    { id: "slow-cycle-return-after-stopping", label: "Slow cycle return" },
+    { id: "common-side-effects", label: "Common side effects" },
+    { id: "when-to-consider", label: "When to consider" },
+    { id: "when-not-to-consider", label: "When NOT to consider" },
+  ]}
+/>
+
+</div>

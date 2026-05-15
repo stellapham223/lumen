@@ -1,0 +1,119 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Menopause: permanent end of menstruation, defined and explained",
+  description:
+    "Menopause is the permanent end of menstruation, diagnosed after 12 consecutive months without a period. Average age 51 in the US. Definition, symptoms, and what changes hormonally.",
+  alternates: { canonical: "/glossary/menopause" },
+  openGraph: {
+    title: "Menopause | Lumen glossary",
+    description:
+      "Definition, average age, hormonal changes, symptoms, and the distinction from perimenopause and postmenopause.",
+    url: "/glossary/menopause",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Menopause"
+  description="Permanent end of menstruation, diagnosed after 12 consecutive months without a period. Average age 51 in the US."
+  path="/glossary/menopause"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Menopause", path: "/glossary/menopause" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Menopause
+
+**Menopause** is the permanent end of menstruation. It is technically a single moment in time: the point at which 12 consecutive months have passed without a [menstrual period](/glossary/menstruation), in the absence of other causes (pregnancy, illness, medication). In the US, the average age is roughly 51, with most women reaching menopause between 45 and 55.
+
+## The three stages around menopause
+
+The terms are often used loosely; the precise definitions:
+
+- **[Perimenopause](/glossary/perimenopause).** The transitional years leading up to menopause. Cycles become irregular, hormone surges flatten, vasomotor symptoms (hot flashes) and sleep disruption often appear. Typically lasts 4 to 8 years.
+- **Menopause.** The single point 12 months after the final period. A retrospective diagnosis.
+- **[Postmenopause](/glossary/postmenopause).** All years after that 12-month mark. The state of permanent reproductive cycle absence.
+
+In everyday use, "menopause" often refers to all three. In clinical contexts, the distinctions matter.
+
+## What changes hormonally
+
+Menopause reflects the depletion of the [ovarian reserve](/glossary/ovarian-reserve). Once too few follicles remain to sustain regular ovulation, the cycle stops:
+
+- **[Estrogen](/glossary/estrogen).** Drops dramatically; postmenopausal levels are typically under 10% of premenopausal peak.
+- **[Progesterone](/glossary/progesterone).** Drops to near-zero because no [corpus luteum](/glossary/corpus-luteum) forms.
+- **[FSH](/glossary/fsh) and [LH](/glossary/lh).** Rise sharply, since they're no longer suppressed by ovarian hormones. High FSH is one of the clinical markers used to confirm menopause.
+- **[Testosterone](/glossary/testosterone-in-women).** Declines gradually but does not drop as sharply as estrogen.
+
+The drop in estrogen drives most symptoms and most of the longer-term health changes (bone density loss, cardiovascular risk shifts, urogenital changes).
+
+## Common symptoms
+
+Symptoms occur primarily in perimenopause and the first few postmenopausal years. The most common:
+
+- **Hot flashes and night sweats.** Affect up to 80% of women; typically last 1 to 10 years post-menopause.
+- **Sleep disruption.** Often tied to night sweats, but estrogen drop also independently affects [sleep architecture](/glossary/sleep-architecture-cycle).
+- **Mood changes.** Anxiety, irritability, depressed mood; risk highest in women with prior history of depression or [PMS/PMDD](/glossary/pmdd).
+- **Vaginal dryness and urogenital changes.** Often persistent without treatment.
+- **Cognitive complaints.** Brain fog, word-finding difficulties; usually transient.
+- **Joint aches.** A frequently reported but under-discussed symptom.
+- **Weight redistribution.** Tends toward central / abdominal fat gain.
+
+Severity varies widely. Roughly 25% of women have minimal symptoms; another 25% have severe symptoms that significantly affect quality of life.
+
+## Diagnosis
+
+Menopause is a clinical diagnosis based on 12 months of amenorrhea in an age-appropriate context. Hormone testing (FSH, estradiol) can support the diagnosis when the picture is unclear, especially in younger women or those on hormonal contraception. FSH consistently over 30 IU/L with low estradiol fits a menopausal pattern.
+
+The Stages of Reproductive Aging Workshop (STRAW) staging system is the clinical framework for documenting where someone is in the perimenopause-to-postmenopause transition.
+
+## Treatment options
+
+The main interventions for symptomatic menopause:
+
+- **[Hormone replacement therapy (HRT)](/glossary/hrt).** Most effective for hot flashes, night sweats, and urogenital symptoms. Risk-benefit profile depends on age, time since menopause, and personal medical history.
+- **Non-hormonal medications.** Certain SSRIs/SNRIs, gabapentin, oxybutynin, and (more recently) NK3 receptor antagonists like fezolinetant for hot flashes.
+- **Vaginal estrogen.** Local treatment for vaginal and urogenital symptoms with minimal systemic exposure.
+- **Lifestyle.** Strength training, cardio, sleep prioritization, and dietary changes. Modest effects on symptoms; significant effects on long-term cardiovascular and bone health.
+
+## When menopause comes early
+
+- **Early menopause.** Before age 45. Affects roughly 5% of women.
+- **[Premature ovarian insufficiency (POI)](/glossary/poi).** Before age 40. Often requires HRT until typical menopause age (about 51) to protect bone and cardiovascular health.
+
+Surgical menopause (after removal of both ovaries) and chemotherapy-induced menopause can occur at any age, with abrupt symptom onset due to sudden estrogen withdrawal.
+
+## Menopause and cycle syncing
+
+The four-phase [cycle syncing](/glossary/cycle-syncing) model does not apply postmenopausally; there is no cycle to sync to. In [perimenopause](/glossary/perimenopause), the model breaks down progressively as cycles become irregular and anovulatory. The [perimenopause cycle syncing guide](/glossary/cycle-syncing-perimenopause) covers what still applies and what to do instead.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="menopause"
+  title="Menopause"
+  toc={[
+    { id: "the-three-stages-around-menopause", label: "Three stages" },
+    { id: "what-changes-hormonally", label: "Hormonal changes" },
+    { id: "common-symptoms", label: "Common symptoms" },
+    { id: "diagnosis", label: "Diagnosis" },
+    { id: "treatment-options", label: "Treatment options" },
+    { id: "when-menopause-comes-early", label: "Early menopause" },
+    { id: "menopause-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

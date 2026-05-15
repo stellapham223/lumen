@@ -1,0 +1,115 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Lactational Amenorrhea Method (LAM): when breastfeeding is contraception",
+  description:
+    "LAM uses exclusive breastfeeding as contraception in the first 6 months postpartum. Up to 98% effective if all three criteria are met. Definition, the criteria, when it stops working, and what comes next.",
+  alternates: { canonical: "/glossary/lam" },
+  openGraph: {
+    title: "Lactational Amenorrhea Method (LAM) | Lumen glossary",
+    description:
+      "How LAM works, the three strict criteria, and when it stops being reliable.",
+    url: "/glossary/lam",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Lactational Amenorrhea Method (LAM)"
+  description="A short-term postpartum contraceptive method that uses exclusive breastfeeding to suppress ovulation. Up to 98% effective when three criteria are met: the baby is under 6 months, the mother is amenorrheic, and breastfeeding is exclusive and frequent."
+  path="/glossary/lam"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Lactational Amenorrhea Method (LAM)", path: "/glossary/lam" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Lactational Amenorrhea Method (LAM)
+
+The **Lactational Amenorrhea Method (LAM)** is a short-term postpartum contraceptive method that uses exclusive breastfeeding to suppress [ovulation](/glossary/ovulation). It is the only [Fertility Awareness Method (FAM)](/glossary/fam) variant explicitly time-limited, valid only during the first 6 months postpartum, and only when three specific criteria are met simultaneously.
+
+When all three criteria hold, efficacy is up to 98% over those first 6 months. When any one fails, efficacy drops sharply and a different method is needed.
+
+*This is informational, not medical advice. Effective contraception requires consistent use; talk to a provider before relying on any FAM method.*
+
+## The three criteria
+
+LAM is valid only when **all three** of these hold:
+
+1. **The baby is under 6 months old.**
+2. **The mother is amenorrheic.** No periods or menstrual bleeding since postpartum bleeding (lochia) resolved. Spotting in the first 56 days postpartum does not count as menstrual bleeding for LAM.
+3. **Breastfeeding is exclusive and frequent.** No formula, no solids, no significant supplementation. Breastfeeding at least every 4 hours during the day, every 6 hours at night. No long stretches of pumping in place of nursing (effectiveness is lower with pumping than direct nursing).
+
+If any one of these fails, LAM is no longer valid and a backup or alternative method should start immediately.
+
+## How LAM works biologically
+
+During [lactation](/glossary/lactational-amenorrhea), nursing triggers [prolactin](/glossary/prolactin) release. High prolactin suppresses GnRH pulses from the hypothalamus, which suppresses [LH](/glossary/lh) and [FSH](/glossary/fsh), which prevents follicle development and ovulation. The mechanism is the same one that produces [postpartum cycle return](/glossary/postpartum-cycle-return) delay.
+
+The key word is **frequent** breastfeeding. Prolactin levels rise sharply during nursing and decline over hours. Long gaps between feeds allow prolactin to fall, GnRH pulses to resume, and ovulation to become possible. This is why the frequency criterion is strict.
+
+## Efficacy data
+
+In controlled studies, when all three criteria are strictly met:
+
+- **Perfect-use failure rate.** Roughly 0.5 to 2% in the first 6 months.
+- **Typical-use failure rate.** Roughly 2% in the first 6 months when users are well-counseled.
+
+Failure rates rise sharply outside the criteria. If the baby starts solids, feeding intervals lengthen, or any spotting beyond day 56 occurs, LAM efficacy drops to roughly the same as unprotected intercourse during breastfeeding.
+
+## When LAM stops working
+
+Each of these ends LAM:
+
+- **Baby reaches 6 months.** Whether breastfeeding continues or not, the protective effect of LAM is not relied upon past 6 months.
+- **Menstrual bleeding returns.** The first true period after postpartum bleeding is the signal that ovulation has resumed (or is about to). LAM ends; another method must start.
+- **Breastfeeding pattern changes.** Solids introduced, formula supplementation, sleeping through the night with long feeding gaps, pumping substituted for direct nursing, all reduce prolactin enough to allow ovulation.
+
+Importantly, **the first ovulation after birth typically occurs before the first period.** Waiting for a period to start a new method risks pregnancy in the cycle before that period.
+
+## What comes after LAM
+
+Once any of the three criteria fails, the user transitions to another method. Common options postpartum:
+
+- **[Progestin-only pill (mini-pill)](/glossary/mini-pill).** Safe during breastfeeding.
+- **[Hormonal IUD](/glossary/hormonal-iud).** Safe during breastfeeding, long-acting.
+- **[Copper IUD](/glossary/copper-iud).** Hormone-free, long-acting.
+- **[Contraceptive implant](/glossary/contraceptive-implant).** Safe during breastfeeding, long-acting.
+- **Barrier methods.** Condoms, diaphragm, cervical cap.
+- **Sympto-thermal FAM.** Possible once cycles return and stabilize, but the postpartum return is often irregular at first.
+
+Combined hormonal contraceptives (pill, ring, patch) containing estrogen are typically not recommended in the first 6 weeks postpartum and may reduce milk supply if started before lactation is established.
+
+## LAM and cycle syncing
+
+During the LAM window, the [menstrual cycle](/glossary/menstrual-cycle) is suspended. There are no [follicular](/glossary/follicular-phase) or [luteal phases](/glossary/luteal-phase) in the hormonal sense; cycle syncing's four-phase framework does not apply. Energy, sleep, and mood are governed by lactation hormones, sleep deprivation, and recovery, not cyclic estrogen and progesterone.
+
+Once LAM ends and cycles return, the typical [postpartum cycle return](/glossary/postpartum-cycle-return) is irregular for the first 2 to 6 cycles. Direct biomarker tracking ([BBT](/glossary/basal-body-temperature), [cervical mucus](/glossary/cervical-mucus-tracking)) is more useful than calendar prediction during this window. The [Lumen phase calculator](/plan) becomes reliable once cycles stabilize.
+
+</article>
+
+<GlossarySidebar
+  currentSlug="lam"
+  title="Lactational Amenorrhea Method (LAM)"
+  toc={[
+    { id: "the-three-criteria", label: "Three criteria" },
+    { id: "how-lam-works-biologically", label: "How it works" },
+    { id: "efficacy-data", label: "Efficacy data" },
+    { id: "when-lam-stops-working", label: "When it stops" },
+    { id: "what-comes-after-lam", label: "What comes after" },
+    { id: "lam-and-cycle-syncing", label: "Cycle syncing context" },
+  ]}
+/>
+
+</div>

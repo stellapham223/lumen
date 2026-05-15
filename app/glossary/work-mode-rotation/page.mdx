@@ -1,0 +1,126 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Work-mode rotation: the four cycle phases as work modes",
+  description:
+    "Work-mode rotation maps four work modes (Reflect, Build, Connect, Finish) onto the four cycle phases. Definition, mapping, rationale, and honest limits on rigidity.",
+  alternates: { canonical: "/glossary/work-mode-rotation" },
+  openGraph: {
+    title: "Work-mode rotation | Lumen glossary",
+    description:
+      "Mapping four work modes (Reflect, Build, Connect, Finish) onto the four cycle phases.",
+    url: "/glossary/work-mode-rotation",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Work-mode rotation"
+  description="Mapping four work modes (Reflect, Build, Connect, Finish) onto the four phases of the menstrual cycle. The core scheduling overlay in cycle-aware productivity."
+  path="/glossary/work-mode-rotation"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Work-mode rotation", path: "/glossary/work-mode-rotation" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Work-mode rotation
+
+**Work-mode rotation** is the practice of mapping four work modes (Reflect, Build, Connect, Finish) onto the four phases of the [menstrual cycle](/glossary/menstrual-cycle). Lumen's positioning is that the modes are useful default labels for biasing weekly planning; the underlying rationale is that each phase has a distinct hormonal profile that tilts attention, energy, and social interest in a different direction. The mapping is a starting point, not a doctrine.
+
+The four modes serve as a planning shorthand. Instead of asking "what should I do today" against a calendar week, you ask "what mode am I in this week" against the cycle.
+
+## The four modes
+
+- **Reflect.** Review, journaling, planning the next month, lower-demand admin. Strategic thinking without execution pressure.
+- **Build.** Deep work, learning, drafting, project kickoff, harder workouts. Generative output.
+- **Connect.** Meetings, pitches, collaboration, sales calls, networking. Communication-forward work.
+- **Finish.** Editing, error-checking, QA, closing tasks, organizing. Detail-oriented execution.
+
+The labels are deliberately wide. The point is to bias the calendar, not to prescribe the day.
+
+## The mapping to phases
+
+The default mapping:
+
+- **Menstrual phase (days 1 to 5): Reflect.** Hormones at baseline, energy often low, but introspective work lands well. Use for retrospectives, journaling, planning the next cycle.
+- **Follicular phase (days 6 to 13): Build.** Rising [estrogen](/glossary/estrogen) supports novelty-seeking and learning via [BDNF](/glossary/bdnf) and dopamine. See [deep work in follicular](/glossary/deep-work-follicular).
+- **Ovulatory phase (days 14 to 16): Connect.** Peak estrogen and the [LH surge](/glossary/lh-surge) coincide with peak verbal fluency. Communication-heavy work lands easier.
+- **Early luteal phase (days 17 to 22): Finish.** [Progesterone](/glossary/progesterone) dominance + secondary estrogen rise supports focused detail orientation. See [editing in luteal](/glossary/editing-luteal).
+- **Late luteal phase (days 23 to 28): Recover (not a mode, a guardrail).** Reduce non-essential demands. Prioritize sleep. This is the part of the cycle where over-scheduling produces the most damage.
+
+## Why these four modes
+
+The modes are not arbitrary. They map onto established categories of knowledge work:
+
+- **Reflect** corresponds to strategic and reflective practice.
+- **Build** corresponds to generative deep work.
+- **Connect** corresponds to communication and collaboration.
+- **Finish** corresponds to convergent, detail-oriented execution.
+
+Most knowledge workers already rotate through these modes; cycle-aware productivity just adds biological default placements. If your existing rhythm already matches this mapping, you have less work to do.
+
+## What the evidence says
+
+The mode-to-phase mapping leans on the well-supported cognitive evidence:
+
+- **Verbal fluency** peaks in late follicular and ovulatory phases, which is why Connect lands there.
+- **Working memory and novel learning** peak in late follicular, which is why Build lands there.
+- **Detail orientation and error detection** tend to sharpen in early luteal, which is why Finish lands there.
+
+Effect sizes are modest. Individual variation is large. The mapping is a population-level tilt; your personal version may differ. The [does cycle syncing work](/blog/does-cycle-syncing-work) review grades the cognitive evidence in detail.
+
+## How to use the rotation
+
+Three practical rules:
+
+1. **Bias, do not rigidly assign.** Place two or three high-leverage tasks against the friendliest mode per cycle. Let the rest float.
+2. **Re-anchor each cycle.** Update phase predictions on day 1 of each new period. See [cycle re-anchoring](/glossary/cycle-reanchoring).
+3. **Observe before adopting.** Track which mode-phase pairings actually pay off for you across two or three cycles before committing to the full rotation.
+
+The [cycle syncing schedule template](/blog/cycle-syncing-schedule-template) provides a starter weekly layout against each mode.
+
+## Limits and honest hedging
+
+The rotation does not survive contact with all work contexts:
+
+- **Reactive work** (support, ops, on-call) sets its own cadence. The rotation only applies to discretionary time.
+- **Team-coupled cadences** override individual rotation. You cannot move a sprint kickoff to your follicular phase if the team is on a fixed schedule.
+- **Irregular cycles** break the calendar prediction. See [cycle tracking](/glossary/cycle-tracking) and direct ovulation tracking for those cases.
+- **Hormonal birth control** suppresses natural cycling. The rotation has limited applicability. See [cycle syncing on birth control](/blog/cycle-syncing-on-birth-control).
+
+## Related reading
+
+- [Cycle-aware productivity](/glossary/cycle-aware-productivity): the broader framework
+- [Phase-based scheduling](/glossary/phase-based-scheduling): the scheduling mechanic
+- [Deep work in follicular](/glossary/deep-work-follicular): the Build mode
+- [Editing in luteal](/glossary/editing-luteal): the Finish mode
+
+</article>
+
+<GlossarySidebar
+  currentSlug="work-mode-rotation"
+  title="Work-mode rotation"
+  toc={[
+    { id: "the-four-modes", label: "The four modes" },
+    { id: "the-mapping-to-phases", label: "Mapping to phases" },
+    { id: "why-these-four-modes", label: "Why these modes" },
+    { id: "what-the-evidence-says", label: "What evidence says" },
+    { id: "how-to-use-the-rotation", label: "How to use it" },
+    { id: "limits-and-honest-hedging", label: "Limits" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

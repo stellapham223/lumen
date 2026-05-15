@@ -1,0 +1,108 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Withdrawal bleeding: what the placebo-week bleed actually is",
+  description:
+    "The bleed during the placebo week of the combined pill is not a true period. It is withdrawal bleeding, triggered by the abrupt removal of synthetic hormones. Mechanism, clinical context, and why skipping it is safe.",
+  alternates: { canonical: "/glossary/withdrawal-bleeding" },
+  openGraph: {
+    title: "Withdrawal bleeding | Lumen glossary",
+    description:
+      "What the bleed on the combined pill actually is, why it is not a period, and whether skipping it is safe.",
+    url: "/glossary/withdrawal-bleeding",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Withdrawal bleeding"
+  description="Bleeding triggered by the abrupt removal of exogenous estrogen and progestin during the placebo week of a combined hormonal contraceptive. Not a true menstrual period."
+  path="/glossary/withdrawal-bleeding"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Withdrawal bleeding", path: "/glossary/withdrawal-bleeding" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Withdrawal bleeding
+
+**Withdrawal bleeding** is the bleed that occurs during the placebo week (or ring-free or patch-free week) of a [combined hormonal contraceptive](/glossary/combined-hormonal-contraceptive). It looks like a period, often feels like one, but mechanistically it is something different. The bleeding is triggered by the abrupt drop in synthetic estrogen and progestin levels when active pills stop, which causes the thin contraceptive-suppressed endometrium to shed.
+
+This is an important distinction in cycle education, because the scheduled bleed on hormonal contraception is often confused with a natural menstrual period.
+
+*This is informational, not medical advice. Bleeding concerns on contraception should be discussed with a qualified provider.*
+
+## How it differs from a true period
+
+A true [menstruation](/glossary/menstruation) follows a specific sequence:
+
+1. [Follicular phase](/glossary/follicular-phase) estrogen builds the endometrium.
+2. [Ovulation](/glossary/ovulation) happens.
+3. The [corpus luteum](/glossary/corpus-luteum) produces [progesterone](/glossary/progesterone) for roughly two weeks.
+4. The corpus luteum dies, progesterone drops, and the thick estrogen-progesterone-prepared endometrium sheds.
+
+Withdrawal bleeding skips most of this:
+
+1. No follicular phase (ovulation was suppressed).
+2. No ovulation, no corpus luteum.
+3. Endometrium is thin, kept that way by continuous synthetic progestin.
+4. When active hormones stop, the support is withdrawn and the thin lining sheds.
+
+Because there is no follicular buildup, withdrawal bleeds tend to be lighter, shorter, and more predictable than natural periods, which is part of why combined hormonal contraceptives are prescribed for heavy bleeding ([menorrhagia](/glossary/menorrhagia)) or [endometriosis](/glossary/endometriosis).
+
+## Why the placebo week exists
+
+The original 21/7 schedule (21 days of active pills, 7 days of placebo) was not a medical necessity. It was a design choice in the 1960s intended to mimic a natural monthly cycle and make the pill more socially acceptable. There is no medical reason the body needs to bleed monthly on contraception.
+
+Modern formulations reflect this:
+
+- **Extended-cycle regimens** (Seasonale, Seasonique) schedule a withdrawal bleed every 3 months.
+- **Continuous regimens** (Amethyst, Lybrel-style protocols) eliminate the bleed entirely.
+- **24/4 regimens** (Yaz, Loestrin) shorten the placebo week to 4 days for fewer hormonal swings.
+
+Many users skip placebos with their provider's guidance for travel, athletic events, or simply because they prefer no bleed. This is medically safe for most users on combined contraceptives.
+
+## Why this matters for cycle understanding
+
+Three things follow from understanding withdrawal bleeding:
+
+1. **Withdrawal bleeding is not a sign that the cycle is "working" or that fertility is intact.** A user can have a regular monthly withdrawal bleed and still have no underlying ovulation.
+2. **Skipping the bleed by skipping placebos is medically benign.** No harmful buildup occurs because the endometrium was thin to start with.
+3. **For cycle syncing purposes, withdrawal bleeding does not mark a new follicular phase.** You are not entering a Reflect or Build phase hormonally; you are simply experiencing a planned hormonal valley.
+
+## What changes after you stop contraception
+
+After stopping a combined hormonal contraceptive, the next bleed is typically withdrawal bleeding from the last active dose. The first true period usually follows within 4 to 8 weeks, sometimes longer for users with [post-pill amenorrhea](/glossary/post-pill-amenorrhea). The [coming off birth control](/glossary/coming-off-birth-control) entry covers what to expect.
+
+## Related reading
+
+- [Combined hormonal contraceptive](/glossary/combined-hormonal-contraceptive): the methods that produce withdrawal bleeding
+- [Menstruation](/glossary/menstruation): the natural counterpart
+- [Cycle syncing on birth control](/blog/cycle-syncing-on-birth-control): adapting the framework
+
+</article>
+
+<GlossarySidebar
+  currentSlug="withdrawal-bleeding"
+  title="Withdrawal bleeding"
+  toc={[
+    { id: "how-it-differs-from-a-true-period", label: "Vs a true period" },
+    { id: "why-the-placebo-week-exists", label: "Why the placebo week exists" },
+    { id: "why-this-matters-for-cycle-understanding", label: "Why this matters" },
+    { id: "what-changes-after-you-stop-contraception", label: "After stopping" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

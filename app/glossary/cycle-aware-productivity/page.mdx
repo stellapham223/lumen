@@ -1,0 +1,126 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Cycle-aware productivity: framework, scope, and what it is not",
+  description:
+    "Cycle-aware productivity is a planning framework that uses menstrual cycle phase as one input into work mode and recovery choices. Distinct from period tracking. Definition, scope, and honest limits.",
+  alternates: { canonical: "/glossary/cycle-aware-productivity" },
+  openGraph: {
+    title: "Cycle-aware productivity | Lumen glossary",
+    description:
+      "A productivity framework that uses cycle phase as an input for work mode planning. Distinct from period tracking.",
+    url: "/glossary/cycle-aware-productivity",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Cycle-aware productivity"
+  description="A planning framework that uses menstrual cycle phase as an input into work mode and recovery decisions. Distinct from period tracking, which only records symptoms."
+  path="/glossary/cycle-aware-productivity"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Cycle-aware productivity", path: "/glossary/cycle-aware-productivity" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Cycle-aware productivity
+
+**Cycle-aware productivity** is a planning framework that uses menstrual cycle phase as one input into decisions about work mode, recovery, and meeting placement. Lumen's positioning is that this is a planning practice for knowledge workers, not a wellness identity. The underlying rationale: cycle-driven shifts in cognition, sleep, and mood are measurable, and treating the four phases of the [menstrual cycle](/glossary/menstrual-cycle) as planning context produces better calendar decisions than ignoring them.
+
+The framework is a layer on top of normal productivity practice. It does not replace your task management system, your circadian planning, or your judgment about workload. It adds one variable.
+
+## What cycle-aware productivity is not
+
+Three things cycle-aware productivity is often confused with:
+
+- **Not period tracking.** A period tracker logs what happened (bleeding, symptoms, mood). Cycle-aware productivity uses phase prediction as an input into future planning. See [cycle tracking](/glossary/cycle-tracking) for the recording side.
+- **Not deterministic.** Phase does not dictate output. A bad sleep, a stressful meeting, or a head cold will dominate phase effects on any given day. Phase is a tilt, not a rule.
+- **Not a wellness protocol.** Cycle-aware productivity does not prescribe foods, supplements, or skincare. Those add-ons sit under [cycle syncing](/glossary/cycle-syncing) more broadly and have weaker evidence.
+
+## How it works in practice
+
+The practice has four steps:
+
+1. **Track your cycle.** Anchor on day 1 of your last period (see [cycle anchor date](/glossary/cycle-anchor-date)). Record cycle length over two or three cycles to get an average.
+2. **Predict phases.** Use a [phase calculator](/glossary/phase-calculator) such as the one at [Lumen](/plan) to map the anchor to four phase ranges.
+3. **Bias your planning.** Use [phase-based scheduling](/glossary/phase-based-scheduling) to place a few high-leverage tasks against the friendliest phase, and to set recovery guardrails for late luteal.
+4. **Re-anchor each cycle.** Cycles drift. See [cycle re-anchoring](/glossary/cycle-reanchoring).
+
+The framework only needs a few high-leverage placements per cycle to pay off. Trying to micromanage every task against phase is the failure mode that produces burnout, not productivity.
+
+## What the research supports
+
+The cognitive evidence is the load-bearing part of cycle-aware productivity. Three findings carry weight:
+
+- **Verbal fluency and working memory** show measurable variation across phase, with peaks tending toward late [follicular phase](/glossary/follicular-phase) and the [ovulatory phase](/glossary/ovulatory-phase).
+- **Detail orientation and error detection** tend to be sharper in [early luteal](/glossary/early-luteal-phase), useful for editing and QA.
+- **Sleep architecture** shifts in [late luteal](/glossary/late-luteal-phase), with reduced slow-wave sleep and more fragmentation.
+
+Effect sizes are modest. Individual variation is large. The honest framing: a population-level tilt, not a personal certainty. The [does cycle syncing work](/blog/does-cycle-syncing-work) review grades the evidence in detail.
+
+## The four work modes
+
+Cycle-aware productivity maps each phase to a default work mode (see [work-mode rotation](/glossary/work-mode-rotation)):
+
+- **Menstrual (days 1 to 5):** Reflect. Lower-demand review and planning.
+- **Follicular (days 6 to 13):** Build. Deep work, learning, project kickoff.
+- **Ovulatory (days 14 to 16):** Connect. Meetings, pitches, collaboration.
+- **Early luteal (days 17 to 22):** Finish. Editing, QA, closing tasks.
+- **Late luteal (days 23 to 28):** Recover. Maintenance, lower demands, sleep priority.
+
+The mapping is a starting point, not a doctrine. Adjust based on your own pattern after two or three cycles of observation.
+
+## Who it helps
+
+Cycle-aware productivity tends to help most in three contexts:
+
+- **Solo knowledge workers** with calendar control: writers, designers, researchers, founders, consultants.
+- **Long-cycle creative projects** where you can choose when to do which kind of work.
+- **People who struggle with late luteal week** and benefit from setting recovery guardrails in advance.
+
+It helps less when your work is reactive, team-coupled, or shift-based. In those contexts, the value is mostly in late luteal recovery planning rather than active scheduling.
+
+## Limits and honest hedging
+
+Three honest limits:
+
+- **Irregular cycles** break calendar-based prediction. [PCOS](/glossary/pcos), [perimenopause](/glossary/perimenopause), and [post-pill amenorrhea](/glossary/post-pill-amenorrhea) require direct ovulation tracking with [BBT](/glossary/basal-body-temperature) or [OPK](/glossary/opk).
+- **Hormonal birth control** suppresses natural cycling. See [cycle syncing on birth control](/blog/cycle-syncing-on-birth-control) for what does and does not translate.
+- **The effect is not magic.** Sleep, stress, and basic habits still dominate. Treat phase as a small bias layer, not a transformation.
+
+## Related reading
+
+- [Phase-based scheduling](/glossary/phase-based-scheduling): the scheduling mechanic
+- [Work-mode rotation](/glossary/work-mode-rotation): the four-mode mapping
+- [How to start cycle syncing](/blog/how-to-start-cycle-syncing): a starter plan
+- [Cycle syncing beginner plan](/blog/cycle-syncing-beginner-plan): a four-week ramp
+
+</article>
+
+<GlossarySidebar
+  currentSlug="cycle-aware-productivity"
+  title="Cycle-aware productivity"
+  toc={[
+    { id: "what-cycle-aware-productivity-is-not", label: "What it is not" },
+    { id: "how-it-works-in-practice", label: "How it works" },
+    { id: "what-the-research-supports", label: "What research supports" },
+    { id: "the-four-work-modes", label: "The four work modes" },
+    { id: "who-it-helps", label: "Who it helps" },
+    { id: "limits-and-honest-hedging", label: "Limits" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

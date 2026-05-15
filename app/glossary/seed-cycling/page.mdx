@@ -1,0 +1,129 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Seed cycling: practice, claims, and why the evidence is anecdotal only",
+  description:
+    "Seed cycling means eating flax and pumpkin seeds in follicular, sesame and sunflower in luteal. Popular in wellness; evidence is anecdotal only. Definition, claimed mechanism, and an honest evidence read.",
+  alternates: { canonical: "/glossary/seed-cycling" },
+  openGraph: {
+    title: "Seed cycling | Lumen glossary",
+    description:
+      "Eating specific seeds in each half of the cycle. Evidence is anecdotal only.",
+    url: "/glossary/seed-cycling",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Seed cycling"
+  description="The practice of eating flax and pumpkin seeds in the follicular phase, then sesame and sunflower seeds in the luteal phase. Claimed to balance hormones; evidence is anecdotal only with no controlled trials."
+  path="/glossary/seed-cycling"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Seed cycling", path: "/glossary/seed-cycling" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Seed cycling
+
+**Seed cycling** is the practice of eating one tablespoon of flax and pumpkin seeds daily during the [follicular phase](/glossary/follicular-phase), then switching to sesame and sunflower seeds during the [luteal phase](/glossary/luteal-phase), with the claim that this rotation supports hormone balance and reduces PMS symptoms. Lumen's positioning is that this is a wellness practice with anecdotal evidence only; the underlying rationale: the proposed mechanism (lignans and seed oils modulating estrogen and progesterone) is biologically plausible at the cellular level, but no controlled human trials test the seed-cycling protocol itself.
+
+The honest framing: it is unlikely to harm. It is unlikely to do what its proponents claim. Eating more seeds is generally good for you regardless of the day of your cycle.
+
+## The protocol
+
+Standard seed cycling instructions:
+
+- **Days 1 to 14 (follicular and ovulatory phases):** 1 tablespoon ground flax + 1 tablespoon raw pumpkin seeds daily.
+- **Days 15 to 28 (luteal phase):** 1 tablespoon raw sesame + 1 tablespoon raw sunflower seeds daily.
+- **Reset on day 1 of the next period.**
+
+The seeds are typically ground fresh, sprinkled on yogurt, oatmeal, or smoothies. Some protocols recommend a "moon cycling" version for users without a cycle (set day 1 to the new moon).
+
+## The claimed mechanism
+
+The proposed biology:
+
+- **Flax and pumpkin seeds** are rich in lignans, [phytoestrogens](/glossary/phytoestrogens) that weakly bind estrogen receptors. The claim: in follicular phase, these lignans support estrogen activity.
+- **Sesame and sunflower seeds** contain different phytoestrogens and higher levels of selenium and vitamin E. The claim: in luteal phase, these nutrients support progesterone production.
+- **Cycle-rotation** mimics the natural hormonal pattern.
+
+The mechanism sounds intuitive. The leap from "lignans bind estrogen receptors in vitro" to "eating two tablespoons of seeds per day on the right days corrects a hormonal imbalance and reduces PMS" is much larger than the claim acknowledges.
+
+## What the evidence actually shows
+
+No controlled trials test the seed-cycling protocol specifically. The supporting claims rest on:
+
+- **In-vitro studies** of lignans and isoflavones binding hormone receptors.
+- **General studies on flaxseed** and breast cancer risk, hot flash reduction, and lipid profiles. These typically use larger doses (10 to 25 grams per day, vs. the 7 to 8 grams in a typical seed-cycling protocol).
+- **Anecdotal reports** from wellness practitioners. These are not blinded and are subject to placebo, regression to the mean, and confirmation bias.
+
+The honest read: there is no good evidence that the rotation matters. Eating flax seeds daily across the whole cycle is supported by some general research; eating them only in the first half adds no known benefit.
+
+## Why people report it works
+
+Three plausible reasons users report symptom improvement on seed cycling:
+
+- **Placebo effect.** Real and well-documented in PMS interventions, often 30 to 40% symptom improvement.
+- **Diet improvement.** Adding whole foods to a low-fiber, low-omega-3 diet improves PMS regardless of timing.
+- **Regression to the mean.** Users typically start a new protocol during a bad cycle. The next cycle is usually less bad. The protocol gets the credit.
+
+None of these require the rotation mechanism to be real.
+
+## What is reasonable to do
+
+If you want to add seeds to your diet:
+
+- **Eat flax, pumpkin, sesame, and sunflower seeds daily across the whole cycle.** All are nutritious; the omega-3 and fiber content is well-supported.
+- **Skip the rotation.** No good evidence supports it.
+- **Skip the moon-cycling version.** If you do not have a cycle, the mechanism (such as it is) does not apply.
+- **Do not expect PMS relief.** If PMS is a problem, [magnesium](/glossary/magnesium-pms), [vitamin B6](/glossary/vitamin-b6-pms), and [omega-3](/glossary/omega-3-pms) have controlled-trial evidence; seeds do not.
+
+## When to actually seek treatment
+
+Seed cycling sometimes substitutes for real treatment. If you have:
+
+- **Severe PMS or [PMDD](/glossary/pmdd):** SSRI in the luteal phase, combined hormonal contraceptives, or other targeted treatments outperform any food protocol.
+- **Suspected [PCOS](/glossary/pcos) or [endometriosis](/glossary/endometriosis):** Diagnostic workup and medical treatment are the path. Seed cycling will not address either condition.
+- **Hypothalamic amenorrhea ([FHA](/glossary/fha)):** Energy availability is the issue; adding two tablespoons of seeds will not restore the cycle.
+
+## Lumen's positioning
+
+Lumen does not recommend seed cycling. The framing here is honest: the protocol is harmless, unlikely to do what is claimed, and should not substitute for real treatment of cyclic symptoms. The [phase-aligned nutrition](/glossary/phase-aligned-nutrition) glossary entry covers the broader nutrition picture; the [does cycle syncing work](/blog/does-cycle-syncing-work) review grades the evidence in detail.
+
+## Related reading
+
+- [Phase-aligned nutrition](/glossary/phase-aligned-nutrition): the broader nutrition framework
+- [Phytoestrogens](/glossary/phytoestrogens): the proposed mechanism
+- [Magnesium for PMS](/glossary/magnesium-pms): a well-supported alternative
+- [PMS](/glossary/pms): the condition seed cycling claims to address
+
+</article>
+
+<GlossarySidebar
+  currentSlug="seed-cycling"
+  title="Seed cycling"
+  toc={[
+    { id: "the-protocol", label: "The protocol" },
+    { id: "the-claimed-mechanism", label: "Claimed mechanism" },
+    { id: "what-the-evidence-actually-shows", label: "What evidence shows" },
+    { id: "why-people-report-it-works", label: "Why people report it works" },
+    { id: "what-is-reasonable-to-do", label: "What to do instead" },
+    { id: "when-to-actually-seek-treatment", label: "When to seek treatment" },
+    { id: "lumens-positioning", label: "Lumen's positioning" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

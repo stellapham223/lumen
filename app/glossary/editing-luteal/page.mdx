@@ -1,0 +1,134 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "Editing in the luteal phase: detail orientation and error detection",
+  description:
+    "Editing in the luteal phase means reserving detail-oriented review work for early luteal. Higher error detection sensitivity. Lumen positioning. Definition, evidence, and how to use it.",
+  alternates: { canonical: "/glossary/editing-luteal" },
+  openGraph: {
+    title: "Editing in the luteal phase | Lumen glossary",
+    description:
+      "Reserving detail-oriented editing for early luteal phase. Higher error detection sensitivity.",
+    url: "/glossary/editing-luteal",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="Editing in the luteal phase"
+  description="The practice of reserving detail-oriented editing, QA, and error-checking work for the early luteal phase, when progesterone-supported attention tilts toward detail orientation."
+  path="/glossary/editing-luteal"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "Editing in luteal", path: "/glossary/editing-luteal" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# Editing in the luteal phase
+
+**Editing in the luteal phase** is the practice of reserving detail-oriented work (editing, QA, error-checking, organizing) for the [early luteal phase](/glossary/early-luteal-phase), roughly days 17 to 22. Lumen's positioning is that this is the second-highest-leverage placement in cycle-aware productivity, after [deep work in follicular](/glossary/deep-work-follicular); the underlying rationale: [progesterone](/glossary/progesterone) dominance combined with the secondary estrogen rise tilts attention toward stability, finishing, and error sensitivity. The evidence is more anecdotal than the follicular cognitive evidence, but the pattern is reported consistently enough to plan around.
+
+The pairing matters. Generative work in follicular produces drafts; editing in early luteal closes them out. The cycle produces a natural draft-review rhythm if you let it.
+
+## What editing means here
+
+The Finish-mode tasks that map well to early luteal:
+
+- **Writers:** Line editing, proofreading, structural review of an existing draft.
+- **Engineers:** Code review, refactoring, bug fixes, QA passes.
+- **Designers:** Detail polish, accessibility review, design system enforcement.
+- **Researchers:** Data checking, manuscript revision, methodology review.
+- **Founders:** Reviewing contracts, financial cleanup, process audit.
+
+The common thread: convergent, detail-oriented work on existing artifacts. Not generative; not novel-material-heavy. The output is a cleaned-up version of something that already exists.
+
+## Why early luteal specifically
+
+The luteal phase spans roughly days 14 to 28. The detail-orientation advantage is concentrated in the **early luteal window** (days 17 to 22), not the late luteal week (days 23 to 28) when PMS symptoms cluster.
+
+The hormonal pattern:
+
+- **Progesterone peaks** around day 21 to 22, supporting steady-state attention via GABA modulation.
+- **Estrogen has a secondary peak** in early luteal, sustaining cognitive support.
+- **Body temperature is elevated** by 0.3 to 0.5 degrees C, which most users adapt to within days.
+- **Sleep often deepens** in early luteal, before the late-luteal disruption.
+
+By [late luteal](/glossary/late-luteal-phase), the picture flips: both hormones drop sharply, [allopregnanolone](/glossary/allopregnanolone) withdrawal increases mood reactivity, and PMS symptoms degrade focus. Editing in late luteal is not what this placement recommends.
+
+## What the evidence supports
+
+The detail-orientation pattern is reported consistently but is less rigorously studied than the follicular cognitive advantage:
+
+- **Anecdotal reports** across many cycle syncing practitioners describe higher detail focus and lower novelty-seeking in early luteal.
+- **Sustained attention** and vigilance tasks show modest improvement in some luteal studies.
+- **Working memory** is generally lower in luteal than follicular, but the trade-off is toward stability and persistence.
+- **Error detection sensitivity** has not been directly measured in good controlled trials. The claim is plausible but inferential.
+
+The honest framing: this placement rests more on consistent self-report than on strong experimental evidence. Use it as a starting hypothesis; track whether it matches your own pattern across two or three cycles.
+
+## The practical placement
+
+The default editing block:
+
+- **Day 17 to day 22 of a 28-day cycle.** Adjust proportionally for longer or shorter cycles.
+- **Afternoon blocks** often work better than morning here; the steady-state hormonal pattern supports longer continuous focus.
+- **Pair with the follicular draft.** What you generated in follicular is what you edit now. The two placements work as a draft-and-review pair.
+- **Stop before late luteal.** When PMS symptoms begin (typically days 23 to 25), shift to maintenance work.
+
+## Common mistakes
+
+Three failure modes:
+
+- **Editing in late luteal.** PMS symptoms degrade attention and increase irritability. Editing in this window tends to produce harsh feedback and missed errors. Stop at day 22.
+- **Editing in follicular.** The novelty-seeking pull makes detail work feel boring. The generative output is higher; the editing output is lower. Swap them.
+- **Forcing the placement.** If your personal pattern shows better editing in another phase, follow your data. The default is a starting hypothesis.
+
+## When the placement does not apply
+
+Three contexts where this loses force:
+
+- **Reactive editing work** (support, bug-fix queues) cannot be batched against phase.
+- **Team-coupled review cycles** (sprint reviews, deadline-driven QA) override individual preference.
+- **Irregular cycles** break the calendar prediction. See [cycle re-anchoring](/glossary/cycle-reanchoring).
+- **Hormonal birth control** flattens the natural progesterone curve, which may reduce the early-luteal advantage. See [cycle syncing on birth control](/blog/cycle-syncing-on-birth-control).
+
+## Lumen's positioning
+
+The [Lumen phase calculator](/plan) flags early luteal as the Finish window. The [cycle syncing schedule template](/blog/cycle-syncing-schedule-template) gives a starter weekly layout. The framing is honest: the placement is plausible, consistently self-reported, and less rigorously studied than the follicular advantage. Treat it as a useful default, refine against your own data.
+
+## Related reading
+
+- [Early luteal phase](/glossary/early-luteal-phase): the phase itself
+- [Deep work in follicular](/glossary/deep-work-follicular): the paired placement
+- [Work-mode rotation](/glossary/work-mode-rotation): the four-mode framework
+- [Luteal phase](/glossary/luteal-phase): the broader phase definition
+
+</article>
+
+<GlossarySidebar
+  currentSlug="editing-luteal"
+  title="Editing in luteal"
+  toc={[
+    { id: "what-editing-means-here", label: "What editing means" },
+    { id: "why-early-luteal-specifically", label: "Why early luteal" },
+    { id: "what-the-evidence-supports", label: "What evidence supports" },
+    { id: "the-practical-placement", label: "The placement" },
+    { id: "common-mistakes", label: "Common mistakes" },
+    { id: "when-the-placement-does-not-apply", label: "When it does not apply" },
+    { id: "lumens-positioning", label: "Lumen's positioning" },
+    { id: "related-reading", label: "Related reading" },
+  ]}
+/>
+
+</div>

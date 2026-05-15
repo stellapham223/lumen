@@ -1,0 +1,119 @@
+import { GlossarySidebar } from "@/components/GlossarySidebar";
+import {
+  DefinedTermJsonLd,
+  BreadcrumbJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "FSH (Follicle Stimulating Hormone): role, cycle pattern, and testing",
+  description:
+    "FSH is released by the pituitary to stimulate ovarian follicle growth in early follicular phase. Its cycle pattern, role in ovulation, and use as a fertility marker.",
+  alternates: { canonical: "/glossary/fsh" },
+  openGraph: {
+    title: "FSH (Follicle Stimulating Hormone) | Lumen glossary",
+    description:
+      "What FSH does, how it cycles, and why it is a key fertility marker.",
+    url: "/glossary/fsh",
+    type: "article",
+  },
+};
+
+<DefinedTermJsonLd
+  term="FSH (Follicle Stimulating Hormone)"
+  description="Pituitary hormone that stimulates ovarian follicle growth in the early follicular phase. Peaks early in the cycle, falls as estrogen rises. Used clinically as a marker of ovarian reserve and menopausal status."
+  path="/glossary/fsh"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Glossary", path: "/glossary" },
+    { name: "FSH", path: "/glossary/fsh" },
+  ]}
+/>
+
+<div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 xl:gap-16">
+
+<article>
+
+# FSH (Follicle Stimulating Hormone)
+
+**FSH** is a pituitary hormone that does exactly what the name says: it stimulates the growth of ovarian follicles. It is released by the anterior pituitary gland under direction from the hypothalamus, as part of the [HPO axis](/glossary/hpo-axis). FSH is the first major hormonal event of each [menstrual cycle](/glossary/menstrual-cycle), and its rise during menstruation is what recruits the next batch of follicles into the [follicular wave](/glossary/follicular-wave).
+
+## How FSH cycles
+
+FSH does not have a single dramatic peak like [LH](/glossary/lh). The pattern is more of a slow swell and fade:
+
+- **Days 1 to 5 (menstrual phase).** FSH rises modestly. Low estrogen and progesterone remove the negative feedback that was suppressing pituitary output.
+- **Days 6 to 10 (early-to-mid follicular).** FSH plateaus and starts to fall as the growing follicles produce more [estrogen](/glossary/estrogen), which feeds back to suppress FSH.
+- **Day 12 to 13 (late follicular).** FSH has a small mid-cycle bump alongside the [LH surge](/glossary/lh-surge), then drops.
+- **Luteal phase.** FSH stays low, suppressed by progesterone from the [corpus luteum](/glossary/corpus-luteum).
+
+The mid-cycle FSH bump is overshadowed by the much larger LH surge that triggers ovulation, but FSH plays a supporting role in final follicle maturation.
+
+## What FSH does
+
+The functional role of FSH:
+
+- **Recruits follicles.** Several follicles begin growing in response to FSH each cycle. Only one usually becomes the [dominant follicle](/glossary/ovarian-follicle); the others undergo atresia.
+- **Stimulates granulosa cells.** These are the cells inside the follicle that produce estrogen. FSH drives them to convert androgens (made by adjacent theca cells under LH stimulation) into estradiol.
+- **Supports egg maturation.** The growing follicle protects and matures the egg inside it.
+
+The two-cell, two-gonadotropin model is the textbook summary: LH acts on theca cells to make androgens, FSH acts on granulosa cells to convert those androgens into estrogen. Both are needed for normal cycling.
+
+## FSH as a fertility marker
+
+The clinically useful application of FSH is as a marker of [ovarian reserve](/glossary/ovarian-reserve), how many eggs are left.
+
+- **Day 3 FSH** is the standard timing. Drawn on days 2, 3, or 4 of the cycle.
+- **FSH below 10 mIU/mL:** generally reassuring for ovarian reserve.
+- **FSH between 10 and 15 mIU/mL:** diminished ovarian reserve. Fertility outlook reduced.
+- **FSH above 15 mIU/mL on day 3:** strongly suggestive of diminished reserve.
+- **FSH above 25 mIU/mL with low estradiol:** consistent with [perimenopause](/glossary/perimenopause) or [menopause](/glossary/menopause).
+
+FSH rises with age because aging ovaries are less responsive, so the pituitary has to push harder to get the same follicular response. This is why FSH eventually stays high after menopause.
+
+A day 3 FSH should always be interpreted alongside day 3 estradiol. Falsely low FSH can occur if estradiol is already elevated on day 3 (an early estrogen rise can suppress FSH and mask diminished reserve).
+
+## FSH and perimenopause
+
+Perimenopause is marked by rising and increasingly erratic FSH, but a single high reading is not enough to confirm anything. FSH can swing widely cycle to cycle in perimenopause. Multiple readings over several months tell a clearer story than one snapshot.
+
+After menopause, FSH stays consistently high (often over 30 mIU/mL) because there is no follicular estrogen feedback to suppress it.
+
+## FSH in PCOS
+
+In [PCOS](/glossary/pcos), the pattern flips: LH tends to run high while FSH stays relatively low, producing a high LH-to-FSH ratio (often over 2:1). The low FSH contributes to the follicular stalling that defines PCOS, where follicles start growing but never reach dominance and ovulation.
+
+## FSH and hormonal contraception
+
+Combined hormonal contraceptives ([pill](/glossary/combined-hormonal-contraceptive), patch, ring) suppress FSH and LH, which is how they prevent ovulation. Testing FSH on hormonal contraception is not meaningful for assessing ovarian reserve. To check FSH, you need to be off hormonal contraception for at least one full cycle, ideally two.
+
+## Synthetic FSH in fertility treatment
+
+Injectable FSH (Gonal-F, Follistim, others) is the basis of ovarian stimulation in IVF. It overrides the normal feedback loop, recruiting many follicles at once instead of just one dominant follicle. Doses are titrated based on response and monitored with serial ultrasounds plus estradiol levels.
+
+## Related reading
+
+- [LH](/glossary/lh): the partner gonadotropin
+- [HPO axis](/glossary/hpo-axis): the regulatory loop
+- [Ovarian follicle](/glossary/ovarian-follicle): what FSH grows
+- [Ovarian reserve](/glossary/ovarian-reserve): what day 3 FSH measures
+- [Perimenopause](/glossary/perimenopause): when FSH starts rising erratically
+
+</article>
+
+<GlossarySidebar
+  currentSlug="fsh"
+  title="FSH (Follicle Stimulating Hormone)"
+  toc={[
+    { id: "how-fsh-cycles", label: "How it cycles" },
+    { id: "what-fsh-does", label: "What it does" },
+    { id: "fsh-as-a-fertility-marker", label: "Fertility marker" },
+    { id: "fsh-and-perimenopause", label: "Perimenopause" },
+    { id: "fsh-in-pcos", label: "In PCOS" },
+    { id: "fsh-and-hormonal-contraception", label: "On contraception" },
+    { id: "synthetic-fsh-in-fertility-treatment", label: "Synthetic FSH" },
+  ]}
+/>
+
+</div>
