@@ -17,6 +17,12 @@ export function Navbar() {
         </Link>
         <div className="flex items-center gap-0.5 sm:gap-2 text-[10px] uppercase tracking-[0.16em] sm:tracking-[0.2em] text-[color:var(--color-on-surface-variant)]">
           <Link
+            href="/calculator"
+            className="rounded px-2 py-2 sm:px-3 font-semibold transition-colors hover:text-[color:var(--color-primary)]"
+          >
+            Calculators
+          </Link>
+          <Link
             href="/blog"
             className="rounded px-2 py-2 sm:px-3 font-semibold transition-colors hover:text-[color:var(--color-primary)]"
           >
