@@ -5,6 +5,8 @@ import {
   BLOG_POSTS,
   GLOSSARY_TERMS,
 } from "@/lib/site";
+import { CALCULATOR_PAGES } from "@/lib/calculator-pages";
+import { PHASE_PAGES } from "@/lib/phase-pages";
 import { publishBulk } from "@/lib/indexing/google";
 import { submitUrls } from "@/lib/indexing/indexnow";
 import {
@@ -16,7 +18,7 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 export const maxDuration = 300; // 5 min for bulk Google submissions
 
-type Scope = "glossary" | "blog" | "all";
+type Scope = "glossary" | "blog" | "calculator" | "phase" | "all";
 type Provider = "google" | "indexnow" | "both";
 
 // Rate-limit window: don't resubmit the same URL within this many days.
@@ -41,11 +43,21 @@ function buildUrlList(scope: Scope): string[] {
     for (const p of BLOG_POSTS) {
       urls.push(`${BASE_URL}/blog/${p.slug}`);
     }
-    if (scope === "all") {
-      urls.push(`${BASE_URL}/blog`);
-      urls.push(`${BASE_URL}/glossary`);
-      urls.push(`${BASE_URL}/`);
+  }
+  if (scope === "calculator" || scope === "all") {
+    for (const p of CALCULATOR_PAGES) {
+      urls.push(`${BASE_URL}/calculator/${p.slug}`);
     }
+  }
+  if (scope === "phase" || scope === "all") {
+    for (const p of PHASE_PAGES) {
+      urls.push(`${BASE_URL}/${p.slug}`);
+    }
+  }
+  if (scope === "all") {
+    urls.push(`${BASE_URL}/blog`);
+    urls.push(`${BASE_URL}/glossary`);
+    urls.push(`${BASE_URL}/`);
   }
   return urls;
 }

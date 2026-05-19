@@ -155,6 +155,20 @@ export const BLOG_POSTS = [
       "Skip the food chart. The lever that moves cognitive performance across your cycle is when you eat, not what you eat. An evidence-honest take on meal timing, intermittent fasting, and caffeine across the menstrual cycle.",
     publishedAt: "2026-06-23",
   },
+  {
+    slug: "pcos-renamed-pmos",
+    title: "PCOS renamed to PMOS: what the May 2026 announcement means",
+    description:
+      "PCOS has been officially renamed PMOS (Polyendocrine Metabolic Ovarian Syndrome) in a Lancet paper led by Helena Teede. What changed, why, and what it means for diagnosis and care.",
+    publishedAt: "2026-05-19",
+  },
+  {
+    slug: "pmos-vs-pcos",
+    title: "PMOS vs PCOS: are they the same? Symptoms, diagnosis, and what changes",
+    description:
+      "PMOS and PCOS refer to the same clinical condition. PMOS is the new 2026 name; PCOS is the old one. What stays the same, what shifts, and what to ask your doctor.",
+    publishedAt: "2026-05-19",
+  },
 ] as const;
 
 // Glossary manifest: single source for index, sidebar related pills, sitemap.

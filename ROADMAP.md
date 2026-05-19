@@ -84,6 +84,7 @@ Quick takeaway aside under each H1 with 45-57 word bold direct answer. Implement
 - Affiliate links in articles (low-friction, embed disclosure)
 - Email list build (lead magnet PDF + monthly digest)
 - Backlink outreach (often skipped, critical)
+- News-jacking content when event with audience overlap trends (e.g., PCOS→PMOS rename 2026-05-12, Helena Teede / Lancet). News-angle posts ship within 48h of event detection. Not part of tier programmatic plan. Window typically 4 weeks before authority sites catch up.
 
 ### Exit → Phase 2 (ALL must hold)
 - 10k organic pageviews/month sustained 2 consecutive months
@@ -226,6 +227,10 @@ Loose plan, depends on Phase 1-3 results:
 **Sprint 2 ✅** (2026-04-28) — SEO + AEO foundation shipped.
 **Sprint 3 Phase 3.0 ✅** (2026-04-28) — Keyword research via Ahrefs free. [Audience-mismatch insight](docs/keyword_research_2026_04.md).
 **Sprint 3 Phase 3.1 ✅** (2026-04-28) — 5 MDX SEO test pages shipped. Test E measurement window: 2026-05-19 (3 weeks).
+
+**Test E ✅ PASS (2026-05-19)** — 3 of 5 pages in top 30, 1 page in top 11. [Results](docs/TEST_E_RESULT_2026-05-19.md). **Phase 3.2 GO unlocked.**
+
+**Direction decision (2026-05-19): Option C Parallel** — ship Phase 3.2 Tier 1 calculator pages AND BoFu content concurrently for 4 weeks, let GSC data decide whether tool-intent or content-intent ranks faster. Double-down on the winner at 2026-06-16.
 
 **Phase 3.1.5 ✅** (shipped via blog audit pass): AI Overview optimization on existing 5 posts — Quick takeaway aside with 45-57 word bold direct answer under each H1. Pattern documented in [BLOG_AUDIT_PLAYBOOK.md §1](docs/BLOG_AUDIT_PLAYBOOK.md).
 

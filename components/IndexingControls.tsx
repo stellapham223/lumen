@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-type Scope = "glossary" | "blog" | "all";
+type Scope = "glossary" | "blog" | "calculator" | "phase" | "all";
 type Provider = "google" | "indexnow" | "both";
 
 type Summary = {
@@ -65,7 +65,7 @@ export function IndexingControls() {
           Scope
         </legend>
         <div className="flex flex-wrap gap-3 text-[14px]">
-          {(["glossary", "blog", "all"] as const).map((s) => (
+          {(["glossary", "blog", "calculator", "phase", "all"] as const).map((s) => (
             <label key={s} className="inline-flex items-center gap-2 cursor-pointer">
               <input
                 type="radio"

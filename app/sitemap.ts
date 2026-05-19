@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 import { BASE_URL, BLOG_POSTS, GLOSSARY_TERMS } from "@/lib/site";
+import { CALCULATOR_PAGES } from "@/lib/calculator-pages";
+import { PHASE_PAGES } from "@/lib/phase-pages";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -33,6 +35,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(post.publishedAt),
       changeFrequency: "monthly" as const,
       priority: 0.7,
+    })),
+    ...CALCULATOR_PAGES.map((p) => ({
+      url: `${BASE_URL}/calculator/${p.slug}`,
+      lastModified: new Date(p.publishedAt),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+    ...PHASE_PAGES.map((p) => ({
+      url: `${BASE_URL}/${p.slug}`,
+      lastModified: new Date(p.publishedAt),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
     })),
     ...GLOSSARY_TERMS.filter((t) => t.status === "Published").map((t) => ({
       url: `${BASE_URL}/glossary/${t.slug}`,

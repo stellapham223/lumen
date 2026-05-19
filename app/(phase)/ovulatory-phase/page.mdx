@@ -1,0 +1,277 @@
+import {
+  ArticleJsonLd,
+  BreadcrumbJsonLd,
+  FaqJsonLd,
+} from "@/components/JsonLd";
+import { CalculatorWidget } from "@/components/CalculatorWidget";
+
+export const metadata = {
+  title: "Ovulatory phase: when ovulation happens and how to know",
+  description:
+    "An evidence-based reference on the ovulatory phase: the 3 to 5 day window of egg release, how to detect ovulation, fertile window math, and an embedded ovulation calculator.",
+  alternates: { canonical: "/ovulatory-phase" },
+  openGraph: {
+    title: "Ovulatory phase: when ovulation happens and how to know",
+    description:
+      "Evidence-based reference on the ovulatory phase: detection, fertile window, variations.",
+    url: "/ovulatory-phase",
+    type: "article",
+  },
+};
+
+<ArticleJsonLd
+  headline="Ovulatory phase: when ovulation happens and how to know"
+  description="Evidence-based reference on the ovulatory phase and ovulation detection."
+  path="/ovulatory-phase"
+  datePublished="2026-05-19"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    {
+      name: "Ovulatory phase",
+      path: "/ovulatory-phase",
+    },
+  ]}
+/>
+<FaqJsonLd
+  faqs={[
+    {
+      question: "When does ovulation happen in the cycle?",
+      answer:
+        "Ovulation happens about 14 days before the start of the next period. For a 28-day cycle, that means around day 14. For longer cycles, it shifts proportionally; for a 32-day cycle, around day 18. The 14-day luteal phase is the more stable part of the cycle; follicular length is what usually varies.",
+    },
+    {
+      question: "How long is the ovulatory phase?",
+      answer:
+        "The actual ovulation event takes 24 hours or less. The ovulatory phase as a cycle-syncing window is typically 3 to 5 days, covering the LH surge, the egg release, and the day after when the corpus luteum begins forming. The fertile window (when conception is biologically possible) is longer because sperm can survive several days.",
+    },
+    {
+      question: "How can I tell I am ovulating?",
+      answer:
+        "The most reliable signals are: cervical mucus becoming clear and stretchy (like raw egg white), an LH surge detected by ovulation prediction kits, and a basal body temperature rise of 0.3 to 0.5 °C in the following days. Many women also report mid-cycle pain (mittelschmerz), libido increase, and breast tenderness around ovulation.",
+    },
+    {
+      question: "What is the fertile window?",
+      answer:
+        "The fertile window is the span when conception is biologically possible. The egg lives about 24 hours, but sperm can survive up to 5 days. So the window is roughly 5 days before ovulation through 1 day after, a 6 to 7 day span centered on ovulation. The most fertile days are the 2 days before ovulation and the day of ovulation itself.",
+    },
+    {
+      question: "Can ovulation skip a month?",
+      answer:
+        "Yes. Anovulatory cycles (cycles without ovulation) happen occasionally even in healthy women, especially in adolescence and perimenopause. Stress, intense exercise, significant weight change, and underlying conditions (PMOS, thyroid dysfunction) can suppress ovulation. Persistent anovulation warrants medical evaluation, especially for fertility planning.",
+    },
+  ]}
+/>
+
+# Ovulatory phase
+
+<aside className="my-8 hairline bg-[color:var(--color-surface-container-lowest)] p-4 sm:p-6 lg:p-8">
+  <div className="eyebrow text-[color:var(--color-primary)] mb-3">Quick takeaway</div>
+  <p className="m-0 text-[15px] sm:text-[16px] leading-relaxed text-[color:var(--color-on-surface)]">
+    <strong>Ovulation happens about 14 days before your next period. The ovulatory phase is the 3 to 5 day window covering the LH surge, egg release, and corpus luteum formation. The fertile window is 6 to 7 days because sperm survive several days.</strong> Body signals plus LH testing give the most reliable ovulation detection.
+  </p>
+</aside>
+
+This is an evidence-based reference on the ovulatory phase: physiology, how to detect ovulation, the fertile window math, and what changes can suppress ovulation. For the ovulation calculator without the depth, see [ovulation calculator](/calculator/ovulation).
+
+<CalculatorWidget mode="ovulation" />
+
+## What the ovulatory phase is
+
+The ovulatory phase is the part of the cycle when the mature follicle releases its egg. The release itself (ovulation) takes 24 hours or less, but the surrounding window of related hormonal events spans 3 to 5 days. The phase sits between the follicular phase (when the follicle was maturing) and the luteal phase (when the corpus luteum that formed from the released follicle produces progesterone).
+
+Three key events define the ovulatory phase:
+
+1. **The LH surge**. About 24 to 36 hours before ovulation, luteinizing hormone (LH) spikes sharply. This is the trigger.
+2. **Egg release**. The mature follicle ruptures and releases its egg into the fallopian tube. This is the actual ovulation event.
+3. **Corpus luteum formation**. The empty follicle structure becomes the corpus luteum, which starts producing progesterone.
+
+The egg, once released, lives about 24 hours unless fertilized. If fertilization happens in this window, the embryo travels down the fallopian tube to implant in the uterus several days later.
+
+## When ovulation happens in the cycle
+
+The most reliable way to estimate ovulation day is from the next period, not from the current cycle's start. The luteal phase (between ovulation and the next period) is the more stable part of the cycle, typically 14 days. The follicular phase before ovulation is what varies.
+
+So the formula is: **ovulation = next period date minus 14 days**.
+
+For typical cycles:
+
+| Cycle length | Estimated ovulation day |
+|---|---|
+| 24 days | Day 10 |
+| 26 days | Day 12 |
+| 28 days | Day 14 |
+| 30 days | Day 16 |
+| 32 days | Day 18 |
+| 35 days | Day 21 |
+
+These are estimates for a standard model. Individual luteal phases range from 10 to 16 days, so ovulation can be 2 days earlier or later than the formula predicts.
+
+## Hormones during the ovulatory phase
+
+The ovulatory phase has the most dramatic hormonal pattern of any phase:
+
+- **Estrogen**: peaks just before ovulation, then drops sharply during egg release. Rises again in early luteal.
+- **LH**: spikes sharply 24 to 36 hours before ovulation, then crashes. This is the most distinctive ovulatory signal.
+- **FSH**: smaller mid-cycle rise alongside LH, but less dramatic.
+- **Progesterone**: starts to rise as the corpus luteum forms. Goes from "low" to "rising" in this window.
+- **Testosterone**: brief spike, contributing to libido and confidence in some women.
+
+The combination of estrogen peak, brief estrogen drop, testosterone spike, and progesterone start produces a distinctive hormonal cocktail that many women feel as a peak in energy, libido, and social confidence.
+
+## How to detect ovulation
+
+Multiple methods, in order of reliability:
+
+### LH testing (ovulation predictor kits)
+
+Strip tests that detect LH in urine. When LH surges, the test turns positive 24 to 36 hours before ovulation. This is the most direct prospective signal. Cost: a few dollars per test. Use daily starting 4 to 5 days before expected ovulation. Available at any pharmacy.
+
+### Basal body temperature (BBT)
+
+Body temperature rises 0.3 to 0.5 °C in the day or two after ovulation, driven by progesterone. BBT confirms ovulation retrospectively (after it has happened). Requires consistent daily measurement first thing in the morning. Useful for tracking patterns across cycles, not for in-the-moment detection.
+
+### Cervical mucus
+
+Cervical mucus changes through the cycle: dry to sticky to wet/stretchy as ovulation approaches. Fertile mucus is clear and stretchy, resembling raw egg white. This signal is free and surprisingly accurate. It is the central indicator in the sympto-thermal method.
+
+### Mittelschmerz (mid-cycle pain)
+
+About 20 percent of women experience a one-sided pelvic pain or cramp around ovulation. The pain comes from the follicle rupturing or from fluid release into the pelvis. Useful as a confirmation but not present in everyone.
+
+### Symptom logging
+
+Libido increase, breast tenderness, mild bloating, heightened sense of smell, and mood changes can cluster around ovulation. Less reliable on their own; useful in combination with other signals.
+
+### Fertility monitors
+
+Devices that combine LH and sometimes estrogen detection. Higher accuracy than LH strips alone but more expensive (200 to 400 USD). Useful for women with irregular cycles or who have struggled to identify ovulation.
+
+## The fertile window math
+
+Conception requires viable sperm to meet a viable egg. The math:
+
+- The egg lives **24 hours** after release. Maybe 12 to 24 hours of fertility.
+- Sperm can live **up to 5 days** in the reproductive tract (typically 3 days, occasionally 5+).
+- Therefore: viable sperm deposited up to 5 days BEFORE ovulation can still fertilize an egg released later.
+
+That gives a fertile window of about **5 days before ovulation to 1 day after**, or 6 to 7 days total centered on ovulation.
+
+Most fertile days: the 2 days before ovulation and the day of ovulation. Pregnancy rates from intercourse on these days are highest.
+
+For trying to conceive: aim for every-other-day intercourse starting 5 days before expected ovulation. Daily is fine; abstinence longer than a few days lowers sperm motility.
+
+For avoiding pregnancy: calendar-based avoidance alone is not reliable enough for most use cases. Combine with sympto-thermal method or another method.
+
+## What can suppress or delay ovulation
+
+Ovulation depends on a chain of hormonal signaling that can be disrupted by:
+
+- **Stress**. Cortisol disrupts GnRH pulsing from the hypothalamus, which can delay or prevent the LH surge.
+- **Significant weight loss or gain**. Either direction can affect ovulation.
+- **Intense exercise with low energy availability**. The body shuts down ovulation as a protective response to insufficient calories.
+- **Sleep disruption and shift work**. Chronic circadian disruption affects reproductive hormones.
+- **Illness, especially with high fever**. Acute illness can delay ovulation in that cycle.
+- **Travel across time zones**. Significant time zone changes can shift cycles.
+- **Hormonal birth control**. Combined methods suppress ovulation by design.
+- **PMOS (formerly PCOS)**. Often disrupts normal follicular development; cycles may be anovulatory. See [PCOS renamed to PMOS](/blog/pcos-renamed-pmos).
+- **Hypothalamic amenorrhea**. Severe restriction or stress can shut down ovulation entirely; periods stop. This is medical.
+- **Thyroid dysfunction**. Both hypo- and hyperthyroidism can affect ovulation.
+- **Perimenopause**. Anovulatory cycles become more common starting in late 30s to mid 40s.
+
+An occasional anovulatory cycle is normal. Persistent anovulation (3+ cycles in a row, or chronic irregularity) warrants medical evaluation.
+
+## What is well supported about ovulatory phase cognition and behavior
+
+The ovulatory phase has the most popular claims attached to it. The evidence picture:
+
+**Verbal fluency peaks**. Multiple studies show small but consistent improvements in verbal-fluency tasks around ovulation. Replicated across populations.
+
+**Libido increases in some women**. Self-reported libido tends to peak around ovulation, driven by the testosterone spike and the biological function of the window.
+
+**Risk preferences may shift**. Some studies suggest modest changes in risk-taking and economic decision-making around ovulation, but the effect is small and inter-individually variable.
+
+**Social and self-presentation behaviors**. Older research suggested women dress and behave differently around ovulation. Recent replication attempts have weakened these claims. Treat the effects as small if real.
+
+**Spatial reasoning may shift opposite to verbal fluency**. Some studies show small spatial-task improvements when estrogen is lower; ovulation is not the spatial-task peak.
+
+## When the ovulatory phase looks different
+
+### On hormonal birth control
+
+Combined hormonal contraception suppresses ovulation entirely. There is no ovulatory phase in the natural sense. Mini-pills (progestin-only) and hormonal IUDs may or may not suppress ovulation depending on the user. See [cycle syncing on birth control](/blog/cycle-syncing-on-birth-control).
+
+### With PMOS (formerly PCOS)
+
+Ovulation is often infrequent or absent in PMOS. The follicular phase fails to progress to a clear ovulation event. This is one reason fertility planning is harder in PMOS. Letrozole or clomiphene can be used to induce ovulation when fertility is the goal.
+
+### In perimenopause
+
+Anovulatory cycles become more common. A cycle with bleeding but no actual ovulation still produces a period (from the unopposed estrogen building and then withdrawing the lining). But there is no fertile window in those cycles.
+
+### Post-pill recovery
+
+Ovulation may not return for 1 to 3 cycles after stopping the pill. Most women resume ovulating within 3 months. If you have not detected ovulation 6 months post-pill, see a doctor.
+
+### With breastfeeding
+
+Exclusive breastfeeding suppresses ovulation in most women for the first 4 to 6 months postpartum. Ovulation can return before the first postpartum period, which is why "I have not had a period yet" is not a reliable contraceptive sign.
+
+## Frequently asked questions
+
+<details className="hairline bg-[color:var(--color-surface-container-lowest)] p-5 my-3">
+  <summary className="cursor-pointer font-display text-[16px] sm:text-[18px] font-medium text-[color:var(--color-primary)]">
+    When does ovulation happen in the cycle?
+  </summary>
+  <p className="mt-3 text-[14px] sm:text-[15px] leading-relaxed text-[color:var(--color-on-surface)]">
+    About 14 days before the start of the next period. For a 28-day cycle, around day 14. For longer cycles, it shifts proportionally; for a 32-day cycle, around day 18. The 14-day luteal phase is the more stable part of the cycle; follicular length is what usually varies.
+  </p>
+</details>
+
+<details className="hairline bg-[color:var(--color-surface-container-lowest)] p-5 my-3">
+  <summary className="cursor-pointer font-display text-[16px] sm:text-[18px] font-medium text-[color:var(--color-primary)]">
+    How long is the ovulatory phase?
+  </summary>
+  <p className="mt-3 text-[14px] sm:text-[15px] leading-relaxed text-[color:var(--color-on-surface)]">
+    The actual ovulation event takes 24 hours or less. The ovulatory phase as a cycle-syncing window is typically 3 to 5 days. The fertile window is longer because sperm can survive several days.
+  </p>
+</details>
+
+<details className="hairline bg-[color:var(--color-surface-container-lowest)] p-5 my-3">
+  <summary className="cursor-pointer font-display text-[16px] sm:text-[18px] font-medium text-[color:var(--color-primary)]">
+    How can I tell I am ovulating?
+  </summary>
+  <p className="mt-3 text-[14px] sm:text-[15px] leading-relaxed text-[color:var(--color-on-surface)]">
+    The most reliable signals are cervical mucus becoming clear and stretchy, an LH surge detected by ovulation prediction kits, and a basal body temperature rise of 0.3 to 0.5 °C in the following days. Many women also report mid-cycle pain, libido increase, and breast tenderness.
+  </p>
+</details>
+
+<details className="hairline bg-[color:var(--color-surface-container-lowest)] p-5 my-3">
+  <summary className="cursor-pointer font-display text-[16px] sm:text-[18px] font-medium text-[color:var(--color-primary)]">
+    What is the fertile window?
+  </summary>
+  <p className="mt-3 text-[14px] sm:text-[15px] leading-relaxed text-[color:var(--color-on-surface)]">
+    The 5 days before ovulation through 1 day after, a 6 to 7 day span. The most fertile days are the 2 days before ovulation and the day of ovulation itself.
+  </p>
+</details>
+
+<details className="hairline bg-[color:var(--color-surface-container-lowest)] p-5 my-3">
+  <summary className="cursor-pointer font-display text-[16px] sm:text-[18px] font-medium text-[color:var(--color-primary)]">
+    Can ovulation skip a month?
+  </summary>
+  <p className="mt-3 text-[14px] sm:text-[15px] leading-relaxed text-[color:var(--color-on-surface)]">
+    Yes. Anovulatory cycles happen occasionally even in healthy women, especially in adolescence and perimenopause. Stress, intense exercise, weight change, and underlying conditions can suppress ovulation. Persistent anovulation warrants medical evaluation.
+  </p>
+</details>
+
+## Hub: related phases and posts
+
+The ovulatory phase is one part of a four-phase cycle. Each phase has its own physiology and reference page:
+
+- [Menstrual phase](/menstrual-phase): bleeding, hormone floor
+- [Follicular phase](/follicular-phase): rising estrogen, energy lift
+- [Luteal phase](/luteal-phase): progesterone-dominant, PMS window
+- [Ovulation calculator](/calculator/ovulation): see your estimated ovulation date
+
+For broader context on cycle syncing and the evidence behind it, see [is cycle syncing legit](/blog/is-cycle-syncing-legit). For app comparisons including ovulation tracking features, see [best cycle syncing app](/blog/best-cycle-syncing-app).
