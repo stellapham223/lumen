@@ -169,6 +169,55 @@ export const BLOG_POSTS = [
       "PMOS and PCOS refer to the same clinical condition. PMOS is the new 2026 name; PCOS is the old one. What stays the same, what shifts, and what to ask your doctor.",
     publishedAt: "2026-05-19",
   },
+  {
+    slug: "best-period-tracking-apps",
+    title: "Best period tracking apps in 2026: a privacy-conscious comparison",
+    description:
+      "Honest 2026 comparison of period tracking apps: Flo, Clue, Stardust, Natural Cycles, Apple Health. Tracking accuracy, privacy posture, free-tier limits.",
+    publishedAt: "2026-05-20",
+  },
+  {
+    slug: "best-cycle-tracking-wearables",
+    title: "Best cycle tracking wearables in 2026: Oura vs Whoop vs Apple Watch",
+    description:
+      "An honest 2026 comparison of cycle tracking wearables: Oura, Whoop, Apple Watch, Garmin. What each measures, what it predicts, and where the data actually shines.",
+    publishedAt: "2026-05-20",
+  },
+  {
+    slug: "best-period-products",
+    title: "Best period products in 2026: cups, discs, underwear, pads",
+    description:
+      "An honest comparison of period product categories in 2026: menstrual cups, discs, period underwear, organic pads, tampons. Cost, learning curve, eco impact.",
+    publishedAt: "2026-05-20",
+  },
+  {
+    slug: "best-sleep-products-luteal-phase",
+    title: "Best sleep products for luteal phase: cooling, weighted, blackout",
+    description:
+      "Luteal phase sleep is disrupted by elevated basal temperature and REM disruption. The product categories that actually help: cooling sheets, weighted blankets, sleep masks.",
+    publishedAt: "2026-05-20",
+  },
+  {
+    slug: "cycle-syncing-workouts-luteal-phase",
+    title: "Cycle syncing workouts for luteal phase: what the evidence supports",
+    description:
+      "Luteal phase workout recommendations, honestly graded. What the evidence supports, what is overstated, and a practical 2-week luteal training template.",
+    publishedAt: "2026-05-20",
+  },
+  {
+    slug: "cycle-syncing-food-follicular-phase",
+    title: "Cycle syncing food for follicular phase: what the evidence supports",
+    description:
+      "Follicular phase nutrition recommendations, honestly graded. Most phase-food prescriptions are not evidence-based; here is what is, and what to eat on a real follicular day.",
+    publishedAt: "2026-05-20",
+  },
+  {
+    slug: "post-pill-cycle-recovery",
+    title: "Post-pill cycle recovery: what to expect after stopping hormonal birth control",
+    description:
+      "Stopping the pill or other hormonal contraception starts a recovery period of irregular cycles for most women. What is normal, when to seek help, evidence-graded support.",
+    publishedAt: "2026-05-20",
+  },
 ] as const;
 
 // Glossary manifest: single source for index, sidebar related pills, sitemap.

@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { BASE_URL, BLOG_POSTS, GLOSSARY_TERMS } from "@/lib/site";
 import { CALCULATOR_PAGES } from "@/lib/calculator-pages";
 import { PHASE_PAGES } from "@/lib/phase-pages";
+import { CYCLE_DAY_PAGES } from "@/lib/cycle-day-pages";
+import { SYMPTOM_PAGES } from "@/lib/symptom-pages";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -31,6 +33,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${BASE_URL}/cycle-day`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/symptoms`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
       url: `${BASE_URL}/methodology`,
       lastModified: now,
       changeFrequency: "monthly",
@@ -53,6 +67,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(p.publishedAt),
       changeFrequency: "monthly" as const,
       priority: 0.85,
+    })),
+    ...CYCLE_DAY_PAGES.map((p) => ({
+      url: `${BASE_URL}/cycle-day/${p.day}`,
+      lastModified: new Date(p.publishedAt),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+    ...SYMPTOM_PAGES.map((p) => ({
+      url: `${BASE_URL}/symptoms/${p.slug}`,
+      lastModified: new Date(p.publishedAt),
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
     })),
     ...GLOSSARY_TERMS.filter((t) => t.status === "Published").map((t) => ({
       url: `${BASE_URL}/glossary/${t.slug}`,

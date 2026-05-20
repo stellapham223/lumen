@@ -1,0 +1,171 @@
+import Link from "next/link";
+import {
+  ArticleJsonLd,
+  BreadcrumbJsonLd,
+  FaqJsonLd,
+} from "@/components/JsonLd";
+
+export const metadata = {
+  title: "PMS mood swings: mechanism and management",
+  description:
+    "PMS mood swings are hormone-withdrawal symptoms: estrogen, allopregnanolone, and serotonin all drop in late luteal. Evidence-graded management.",
+  alternates: { canonical: "/symptoms/pms-mood-swings" },
+  openGraph: {
+    title: "PMS mood swings: mechanism and management",
+    description:
+      "Mechanism of PMS mood swings and evidence-graded interventions.",
+    url: "/symptoms/pms-mood-swings",
+    type: "article",
+  },
+};
+
+<ArticleJsonLd
+  headline="PMS mood swings: mechanism and management"
+  description="The hormone-withdrawal mechanism behind PMS mood symptoms and evidence-graded management."
+  path="/symptoms/pms-mood-swings"
+  datePublished="2026-05-20"
+/>
+<BreadcrumbJsonLd
+  items={[
+    { name: "Lumen", path: "/" },
+    { name: "Symptoms", path: "/symptoms" },
+    { name: "PMS mood swings", path: "/symptoms/pms-mood-swings" },
+  ]}
+/>
+<FaqJsonLd
+  faqs={[
+    {
+      question: "Why do my moods swing right before my period?",
+      answer:
+        "Three neurotransmitter systems drop together in late luteal. Estrogen falls, taking serotonin and dopamine support with it. Progesterone falls, removing the GABA-mediated calming effect of allopregnanolone. The brain experiences this as a withdrawal pattern, which presents as irritability, anxiety, low mood, and emotional reactivity. The symptoms are biological, predictable, and resolve within 1 to 3 days of period onset.",
+    },
+    {
+      question: "How is PMS mood different from PMDD?",
+      answer:
+        "PMS mood symptoms are common (affecting roughly 75% of menstruating women to some degree) and manageable. PMDD (premenstrual dysphoric disorder) is severe: clinically significant mood disruption, work or relationship impact, suicidal ideation in some cases, predictable cycle timing, full resolution at period. PMDD affects 3 to 8% of menstruating women and is a clinical diagnosis with specific treatment paths.",
+    },
+    {
+      question: "Do antidepressants help PMS mood symptoms?",
+      answer:
+        "For PMDD, yes. SSRIs (sertraline, fluoxetine, paroxetine) have strong evidence and can be taken either continuously or only in the luteal phase. The luteal-only dosing schedule is well-established for PMDD. For typical PMS, SSRIs are usually unnecessary; lifestyle interventions are tried first.",
+    },
+    {
+      question: "Does exercise help PMS mood symptoms?",
+      answer:
+        "Yes, modestly. Regular aerobic exercise (3 to 5 times per week, 30+ minutes) reduces PMS mood symptoms in trials. The mechanism likely involves endorphin release, serotonin support, and improved sleep. The benefit is from consistent exercise across the cycle, not just luteal week.",
+    },
+    {
+      question: "When are PMS mood swings severe enough to see a doctor?",
+      answer:
+        "If symptoms cause significant disruption to work, relationships, or daily function, if you have thoughts of self-harm, or if mood symptoms persist past period onset, seek evaluation. PMDD is treatable; depression with cyclical worsening is treatable; thyroid issues and other conditions can mimic PMS. Severe PMS mood symptoms are not something to manage alone.",
+    },
+  ]}
+/>
+
+# PMS mood swings: mechanism and management
+
+<aside className="my-8 hairline bg-[color:var(--color-surface-container-lowest)] p-6 sm:p-8">
+  <div className="eyebrow text-[color:var(--color-primary)] mb-3">Quick takeaway</div>
+  <p className="m-0 text-[16px] leading-relaxed text-[color:var(--color-on-surface)]">
+    <strong>PMS mood swings are hormone-withdrawal symptoms: estrogen, allopregnanolone (progesterone metabolite), and serotonin all drop together in late luteal, producing irritability, anxiety, low mood, and emotional reactivity.</strong> Symptoms peak day 23 to 28 and resolve within 1 to 3 days of period onset. Effective management combines lifestyle (sleep, exercise, steady blood sugar), supplements (B6, magnesium, omega-3), and for severe cases, SSRIs. Severe symptoms may indicate PMDD and warrant clinical evaluation.
+  </p>
+</aside>
+
+This guide explains the neurochemistry behind PMS mood symptoms, grades interventions by evidence strength, and clarifies when symptoms cross into clinical territory.
+
+## What is happening: the mechanism
+
+PMS mood symptoms are not "feeling moody because of hormones" in a vague sense. They have a specific neurochemical mechanism.
+
+**Estrogen withdrawal.** Estrogen supports serotonin synthesis, serotonin receptor sensitivity, and dopamine signaling. As estrogen falls sharply in late luteal, all three drop with it. The result is reduced mood stability, reduced motivation, and reduced reward-system function.
+
+**Allopregnanolone withdrawal.** Allopregnanolone is a progesterone metabolite that acts on GABA receptors (the brain's primary inhibitory system, the same system targeted by benzodiazepines and alcohol). In mid-luteal when progesterone is high, allopregnanolone is high, supporting calm and sleep. When progesterone falls in late luteal, allopregnanolone falls with it. The withdrawal pattern is similar to benzodiazepine withdrawal, scaled down: anxiety, irritability, sleep disruption.
+
+**Cortisol response shifts.** Stress reactivity changes across the cycle. In late luteal, the HPA axis (stress system) is more reactive in some women, meaning the same stressor produces a larger physiological response.
+
+The combined effect is a brain operating with less serotonin, less GABA modulation, and higher stress reactivity. This is not lack of emotional regulation; it is changed neurochemistry.
+
+## What you might feel
+
+- Irritability that surprises you (small things provoke larger reactions)
+- Anxiety, particularly anticipatory anxiety about minor concerns
+- Tearfulness, often unprovoked
+- Low mood or flatness
+- Reduced patience for social interactions
+- Sensitivity to perceived criticism
+- Sleep disruption (difficulty falling asleep, mid-night wakings)
+- Concentration difficulty
+- A sense that you "are not yourself"
+
+The specific cluster varies by individual. The defining features are cycle timing (peak day 23 to 28), full resolution within 1 to 3 days of period, and recurrence across multiple cycles.
+
+## What helps: evidence-graded
+
+### Strong evidence
+
+**Aerobic exercise across the cycle.** Three to five sessions per week, 30+ minutes. Reduces PMS mood symptoms in multiple trials. Mechanism likely involves endorphin release, BDNF, serotonin support, and improved sleep architecture. The benefit comes from consistency, not luteal-week intensity.
+
+**Sleep environment optimization.** Cooler room (65 to 68°F), light bedding, no late caffeine, no alcohol in luteal week. The disrupted sleep of late luteal feeds the mood symptoms; protecting sleep is high-leverage.
+
+**SSRIs for PMDD (clinical decision).** Sertraline, fluoxetine, or paroxetine taken either continuously or only in the luteal phase. Luteal-only dosing (starting around day 14 to 16 and stopping at period onset) is well-established for PMDD and avoids the sexual side effects sometimes associated with continuous use. This is a clinician conversation, not a self-start intervention.
+
+### Moderate evidence
+
+**Vitamin B6** 50 to 100 mg daily. Cofactor in serotonin synthesis. Modest reduction in PMS mood symptoms in trials. Doses over 200 mg can cause peripheral neuropathy with long use; stay under that ceiling.
+
+**Magnesium glycinate** 200 to 400 mg daily. Supports calm, sleep, and modest PMS reduction. Best taken consistently.
+
+**Omega-3 (EPA/DHA)** 1 to 2 g daily. Anti-inflammatory; modest mood benefits in trials.
+
+**Calcium** 1,000 to 1,200 mg daily. One of the more replicated PMS supplement findings. Most easily met through diet (dairy or fortified plant milk); supplementation is reasonable if dietary intake is low.
+
+### Light evidence
+
+**Chasteberry (vitex)** 20 to 40 mg daily of standardized extract. Some evidence for PMS reduction, possibly via dopamine modulation. Slow onset (3 cycles minimum). Avoid if pregnant or on hormonal birth control.
+
+**Saffron** 30 mg daily. Some trials show comparable efficacy to SSRIs at this dose for depression and PMS mood, with much weaker evidence base. Reasonable to try.
+
+**St. John's wort.** Effective for mild to moderate depression in general; less specific evidence for PMS. Significant drug interactions (interferes with hormonal birth control, SSRIs, others). Discuss with a clinician before starting.
+
+### What does not have strong evidence
+
+- "PMS support" multi-herb supplements with proprietary blends and no published trials.
+- Seed cycling, despite popularity on social media.
+- Adaptogens marketed broadly for mood (ashwagandha, rhodiola). May help generally; not specifically validated for PMS.
+- Restrictive elimination diets specifically targeting PMS.
+
+## Demand reduction
+
+The interventions above target physiology. The other lever is demand management. Late luteal is a low-capacity window for most women. The interventions work better when paired with a less demanding week.
+
+- Schedule heavy emotional work in early luteal or follicular when possible.
+- Decline new commitments in late luteal.
+- Build social recovery time into late luteal.
+- Communicate cycle context to close relationships when appropriate; "I'm in late luteal, my mood is more reactive" is sometimes useful information.
+
+This is not "PMS as excuse." It is "PMS as predictable input that deserves planning."
+
+## When to see a clinician
+
+Symptoms that warrant evaluation:
+
+- Significant disruption to work, relationships, or daily function every cycle
+- Suicidal thoughts or severe depression timed to luteal phase
+- Symptoms that persist past period onset (suggests mood disorder rather than PMS alone)
+- New severe symptoms after previously mild PMS pattern
+- Symptoms not responding to lifestyle interventions over 3 cycles
+- Cycles that vary by more than 7 days (irregular cycles can compound mood symptoms)
+
+PMDD is treatable. Depression with cyclical worsening is treatable. Thyroid dysfunction can present as worsening PMS. The right move is a clinician conversation, not increasing supplement doses.
+
+## A note on perimenopause
+
+PMS that newly worsens in late 30s or early 40s may be perimenopause rather than a change in your underlying PMS pattern. Hormonal fluctuations become wider and less predictable in perimenopause, and mood symptoms can intensify. The pattern shifts (cycles shorten, then become irregular, then space out before stopping). Different management framework; worth flagging to a clinician.
+
+## Related
+
+- [Cycle day 25 (late luteal)](/cycle-day/25)
+- [Luteal phase fatigue](/symptoms/luteal-phase-fatigue)
+- [PMDD glossary](/glossary/pmdd)
+- [PMS glossary](/glossary/pms)
+- [Allopregnanolone glossary](/glossary/allopregnanolone)
